@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v službách Office 365 ProPlus pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 096d6a368965ecedcff3807bbbf3e90649eb8562
-ms.sourcegitcommit: 6145cfe372725bedab7bc6a80adab100561f74fd
+ms.openlocfilehash: 069b21632044354afded61ccc9b1d099cd9cda98
+ms.sourcegitcommit: 8dd9721bd618ae6e4d27f2c45c5dc8e3219858ac
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34106903"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250398"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
 
@@ -85,6 +85,9 @@ Chápeme, že chcete mať možnosť rozhodnúť sa, ktoré typy pripojených fun
 - Povoliť používanie pripojených funkcií v Office
 
 Ak nenakonfigurujete tieto nastavenia politiky, budú pre vašich používateľov k dispozícii všetky tieto pripojené funkcie. Vaši používatelia tak získajú všetky funkcie a možnosti, ktoré sú dostupné prostredníctvom služieb Office 365 ProPlus. Chápeme však, že na spĺňanie určitých požiadaviek vašej spoločnosti môže byť potrebné vypnúť niektoré alebo všetky tieto pripojené služby.
+
+> [!IMPORTANT]
+> V súčasnosti sa vyskytuje problém s týmito 4 nastaveniami politiky. Pracujeme na jeho odstránení. Ak chcete zatiaľ vypnúť niektoré z týchto nastavení politiky pomocou nástroja Group Policy Management, je potrebné vybrať prepínač **Povolené** a potom vybrať možnosť **Zakázané** z rozbaľovacieho zoznamu v sekcii **Možnosti**. Výberom prepínača **Zakázané** sa tieto nastavenia politiky nezakážu.
 
 Ak sa rozhodnete neposkytovať používateľom niektoré typy pripojených funkcií, príkazy pre tieto funkcie na páse s nástrojmi alebo v ponuke budú neaktívne alebo sa pri pokuse o použitie týchto pripojených funkcií používateľom zobrazí chybové hlásenie. V takom prípade sa spoločnosti Microsoft nebudú odosielať žiadne [požadované údaje služieb](required-service-data.md) pre tieto pripojené funkcie.
 
