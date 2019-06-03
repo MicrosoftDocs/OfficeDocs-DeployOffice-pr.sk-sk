@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v službách Office 365 ProPlus pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 069b21632044354afded61ccc9b1d099cd9cda98
-ms.sourcegitcommit: 8dd9721bd618ae6e4d27f2c45c5dc8e3219858ac
+ms.openlocfilehash: a28da8a54ecb37f6fd26576ce2dfb4614521dd19
+ms.sourcegitcommit: c4147043c5e6581d58a6d09edbf95266e67dd796
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250398"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34545473"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
 
@@ -84,10 +84,10 @@ Chápeme, že chcete mať možnosť rozhodnúť sa, ktoré typy pripojených fun
 - Povoliť používanie dodatočných voliteľných pripojených funkcií v Office
 - Povoliť používanie pripojených funkcií v Office
 
-Ak nenakonfigurujete tieto nastavenia politiky, budú pre vašich používateľov k dispozícii všetky tieto pripojené funkcie. Vaši používatelia tak získajú všetky funkcie a možnosti, ktoré sú dostupné prostredníctvom služieb Office 365 ProPlus. Chápeme však, že na spĺňanie určitých požiadaviek vašej spoločnosti môže byť potrebné vypnúť niektoré alebo všetky tieto pripojené služby.
+Ak nenakonfigurujete tieto nastavenia politiky, budú pre vašich používateľov k dispozícii všetky tieto pripojené funkcie. Vaši používatelia tak získajú všetky funkcie a možnosti, ktoré sú dostupné prostredníctvom služieb Office 365 ProPlus. Chápeme však, že na spĺňanie určitých požiadaviek vašej spoločnosti môže byť potrebné vypnúť niektoré alebo všetky tieto pripojené funkcie.
 
 > [!IMPORTANT]
-> V súčasnosti sa vyskytuje problém s týmito 4 nastaveniami politiky. Pracujeme na jeho odstránení. Ak chcete zatiaľ vypnúť niektoré z týchto nastavení politiky pomocou nástroja Group Policy Management, je potrebné vybrať prepínač **Povolené** a potom vybrať možnosť **Zakázané** z rozbaľovacieho zoznamu v sekcii **Možnosti**. Výberom prepínača **Zakázané** sa tieto nastavenia politiky nezakážu.
+> Problém týkajúci sa vypnutia týchto 4 nastavení politiky bol nedávno opravený publikovaním nových súborov šablón na správu (ADMX/ADML) v utorok 28. mája 2019. Stiahnite a nainštalujte si aktualizované súbory skupinovej politiky z [Centra sťahovania softvéru](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
 
 Ak sa rozhodnete neposkytovať používateľom niektoré typy pripojených funkcií, príkazy pre tieto funkcie na páse s nástrojmi alebo v ponuke budú neaktívne alebo sa pri pokuse o použitie týchto pripojených funkcií používateľom zobrazí chybové hlásenie. V takom prípade sa spoločnosti Microsoft nebudú odosielať žiadne [požadované údaje služieb](required-service-data.md) pre tieto pripojené funkcie.
 
@@ -204,11 +204,11 @@ Niektorí správcovia uprednostňujú zmenu nastavení priamo v databáze Regis
 
 |**Nastavenie politiky** |**Nastavenie databázy Registry**  |**Hodnoty**  |
 |---------|---------|---------|---------|
-|Konfigurácia úrovne diagnostických údajov o klientskom softvéri, ktoré služby Office odosielajú spoločnosti Microsoft  | OdoslaťTelemetriu |1 = Povinné <br/> 2 = Voliteľné <br/> 3 = Žiadne|
-|Povoliť používanie pripojených funkcií na analýzu obsahu v Office  | ZakázanýObsahPoužívateľa | 1 = Povolené <br/> 2 = Zakázané|
-|Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office  | ZakázanéSťahovanieObsahu | 1 = Povolené <br/> 2 = Zakázané|
-|Povoliť používanie dodatočných voliteľných pripojených funkcií v Office   |  OdpojenýStav |1 = Povolené <br/> 2 = Zakázané|
-|Povoliť používanie pripojených funkcií v Office | PovolenéPripojenéSlužbyOvládača  | 1 = Povolené <br/> 2 = Zakázané|
+|Konfigurácia úrovne diagnostických údajov o klientskom softvéri, ktoré služby Office odosielajú spoločnosti Microsoft  | SendTelemetry |1 = Povinné <br/> 2 = Voliteľné <br/> 3 = Žiadne|
+|Povoliť používanie pripojených funkcií na analýzu obsahu v Office  | UserContentDisabled | 1 = Povolené <br/> 2 = Zakázané|
+|Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office  | DownloadContentDisabled | 1 = Povolené <br/> 2 = Zakázané|
+|Povoliť používanie dodatočných voliteľných pripojených funkcií v Office   | ControllerConnectedServicesEnabled  |1 = Povolené <br/> 2 = Zakázané|
+|Povoliť používanie pripojených funkcií v Office | DisconnectedState  | 1 = Povolené <br/> 2 = Zakázané|
 
 Ak chcete vytvoriť súbor .reg pre nastavenia ochrany osobných údajov, otvorte Poznámkový blok a skopírujte doň nasledujúce riadky. Upravte hodnoty podľa svojich potrieb a potom súbor uložte. Uistite sa, že názov súboru obsahuje príponu .reg
 
