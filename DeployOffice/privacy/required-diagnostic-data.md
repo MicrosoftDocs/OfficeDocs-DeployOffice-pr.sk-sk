@@ -30,16 +30,16 @@ ms.locfileid: "34106939"
 
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Tieto údaje neobsahujú meno ani e-mailovú adresu používateľa, obsah súborov používateľa ani informácie o aplikáciách, ktoré nesúvisia s balíkom Office.
 
-Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou nástroja Diagnostic Data Viewer, čo je zobrazovač diagnostických údajov.
+Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou Zobrazovača diagnostických údajov.
 
 ***Povinné diagnostické údaje*** sú minimom potrebným na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
 
-Povinné diagnostické údaje pomáhajú identifikovať problémy s balíkom Office, ktoré môžu súvisieť s konfiguráciu zariadenia alebo softvéru. Pomáhajú napríklad určiť, či funkcia balíka Office zlyháva častejšie pri konkrétnej verzii operačného systému, či ide o novo zavedené funkcie alebo či sa to stáva, ak sú niektoré funkcie balíka Office vypnuté. Povinné diagnostické údaje pomáhajú zistiť, diagnostikovať a riešiť tieto problémy rýchlejšie, čím sa znižuje ich vplyv na používateľov alebo organizácie.
+Povinné diagnostické údaje pomáhajú identifikovať problémy s balíkom Office, ktoré môžu súvisieť s konfiguráciou zariadenia alebo softvéru. Pomáhajú napríklad určiť, či funkcia balíka Office zlyháva častejšie pri konkrétnej verzii operačného systému, či ide o novo zavedené funkcie alebo či sa to stáva, ak sú niektoré funkcie balíka Office vypnuté. Povinné diagnostické údaje pomáhajú zistiť, diagnostikovať a riešiť tieto problémy rýchlejšie, čím sa znižuje ich vplyv na používateľov alebo organizácie.
 
 Ďalšie informácie o diagnostických údajoch sa nachádzajú v témach:
 
 - [Voliteľné diagnostické údaje pre Office](optional-diagnostic-data.md)
-- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Používanie Zobrazovača diagnostických údajov s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné témy:
 
@@ -77,7 +77,7 @@ Nasledujúca tabuľka obsahuje zoznam kategórií povinných diagnostických úd
 
 ## <a name="categories-and-data-fields-that-are-common-for-all-events"></a>Kategórie a údajové polia, ktoré sú spoločné pre všetky udalosti
 
-Existuje niekoľko informácií o udalostiach, ktoré sú spoločné pre všetky udalosti bez ohľadu na kategóriu alebo podtyp údajov. Tieto spoločné informácie, ktoré sa niekedy označujú ako *údajové zmluvy*, sú usporiadané do kategórií. Každá kategória obsahuje polia. Tieto polia sú metaúdaje a vlastnosti jednotlivých udalostí. Tieto informácie môžete zobraziť pomocou zobrazovača diagnostických údajov.
+Existuje niekoľko informácií o udalostiach, ktoré sú spoločné pre všetky udalosti bez ohľadu na kategóriu alebo podtyp údajov. Tieto spoločné informácie, ktoré sa niekedy označujú ako *údajové zmluvy*, sú usporiadané do kategórií. Každá kategória obsahuje polia. Tieto polia sú metaúdaje a vlastnosti jednotlivých udalostí. Tieto informácie môžete zobraziť pomocou Zobrazovača diagnostických údajov.
 
 Kategórie informácií, ktoré sa o udalostiach zhromažďujú, možno rozdeliť do dvoch skupín:
 
@@ -86,7 +86,7 @@ Kategórie informácií, ktoré sa o udalostiach zhromažďujú, možno rozdeli
 
 ### <a name="information-common-to-all-events"></a>*Informácie spoločné pre všetky udalosti*
 
-Informácie, ktoré sú spoločné pre všetky udalosti. sa zhromažďujú v nasledujúcich kategóriách.
+Informácie, ktoré sú spoločné pre všetky udalosti, sa zhromažďujú v nasledujúcich kategóriách.
 
 #### <a name="app"></a>Aplikácia 
 
@@ -178,7 +178,7 @@ Táto kategória obsahuje tieto polia:
 
   - **Channel** – kanál, prostredníctvom ktorého sa produkt vydáva. Umožňuje identifikovať, či má problém na niektorý z našich distribučných kanálov iný vplyv ako na ostatné.
 
-  - **Fork** -identifikuje rozvetvenie produktu. Umožňuje mechanizmu zhrnúť údaje v rámci množiny čísel zostáv na identifikáciu problémov týkajúcich sa daného vydania.
+  - **Fork**  – identifikuje rozvetvenie produktu. Umožňuje mechanizmu zhrnúť údaje v rámci množiny čísel zostáv na identifikáciu problémov týkajúcich sa daného vydania.
 
 #### <a name="session"></a>Relácia 
 
@@ -224,7 +224,7 @@ Informácie na pochopenie úspešnosti samotnej udalosti zberu údajov.
 
 Táto kategória obsahuje tieto polia:
 
-  - **AggMode** – hovorí, ako má systém agregovať výsledky aktivity. Umožňuje obmedziť množstvo informácií nahratých zo zariadenia používateľa agregáciou výsledkov aktivity do jednej udalosti, ktorá sa odosiela pravidelne.
+  - **AggMode** – určuje, ako má systém agregovať výsledky aktivity. Umožňuje obmedziť množstvo informácií nahratých zo zariadenia používateľa agregáciou výsledkov aktivity do jednej udalosti, ktorá sa odosiela pravidelne.
 
   - **Count** – označuje, koľkokrát sa aktivita vyskytla, ak počet pochádza z agregovanej udalosti. Umožňuje určiť, ako často bola aktivita úspešná alebo neúspešná na základe agregačného režimu aktivity.
 
@@ -1609,7 +1609,7 @@ Výsledok pridania konta do Outlooku v novom profile v zobrazení Office Backs
 
 Zhromažďujú sa tieto polia:
 
-  - **AccountCreationResult** – výsledok (úspešnosť, zlyhanie, zrušenie atď) pridania konta do Outlooku.
+  - **AccountCreationResult** – výsledok (úspešnosť, zlyhanie, zrušenie atď.) pridania konta do Outlooku.
 
   - **AccountCreationTime** – čas trvania pokusu o vytvorenie konta
 
@@ -1721,7 +1721,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
 
-  - **Data\_Doc\_IsSyncBacked:bool** – overuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu
+  - **Data\_Doc\_IsSyncBacked:bool** – overuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -1851,11 +1851,11 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsOcsSupported:bool** – či dokument podporuje spoluautorstvo pomocou novej služby OCS
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – či sa dokument otvára z lokálnej vyrovnávacej pamäte
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäte
 
   - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
 
-  - **Data\_Doc\_IsSyncBacked:bool** – či sa dokument otvára z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu
+  - **Data\_Doc\_IsSyncBacked:bool** – zobrazuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -1903,9 +1903,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data_FullDownloadRoundTripCount:long** – počet návštev servera potrebných na stiahnutie celého dokumentu.
   
-  - **Data_IsProtocolRunInIncOpenMode:bool** – či sa spustil protokol pre prírastkové sťahovanie, čo je sťahovanie, pri ktorom sa časti dokumentu stihnu po jeho počiatočnom zobrazení používateľovi.
+  - **Data_IsProtocolRunInIncOpenMode:bool** – či sa spustil protokol pre prírastkové sťahovanie, čo je sťahovanie, pri ktorom sa časti dokumentu stiahnu po jeho počiatočnom zobrazení používateľovi.
 
-  - **Data\_MethodId:long** – ktorý riadok kódu sa interne vykonal ako posledný
+  - **Data\_MethodId:long** – zobrazuje, ktorý riadok kódu sa interne vykonal ako posledný
 
   - **Data\_StopwatchDuration:long** – celkový čas aktivity
 
@@ -1977,7 +1977,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
 
-  - **Data\_Doc\_IsSyncBacked:bool** – či sa dokument otvára z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu
+  - **Data\_Doc\_IsSyncBacked:bool** – zobrazuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -2297,7 +2297,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
 
-  - **Data\_Doc\_IsSyncBacked:bool** – či sa dokument otvára z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu
+  - **Data\_Doc\_IsSyncBacked:bool** – zobrazuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -2515,7 +2515,7 @@ Zhromažďujú sa tieto polia:
 
   - **CountOArtErrors** – celkový počet chýb v OArt
 
-  - **CountOtherErrors** – celkový počet ostatných chýb
+  - **CountOtherErrors** – zobrazuje celkový počet ostatných chýb
 
   - **FirstSlideShowError** – prvý výskyt chyby v prezentácii
 
@@ -3619,7 +3619,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsIncrementalOpen:bool** – či bol dokument otvorený prírastkovo (novou funkciou, ktorá otvorí dokument bez potreby stiahnutia celého dokumentu)
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – či sa dokument otvára z lokálnej vyrovnávacej pamäte
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäte
 
   - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
 
@@ -4051,11 +4051,11 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsOcsSupported:bool** – určuje, či dokument podporuje spolutvorbu pomocou novej služby OCS
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – či sa dokument otvára z lokálnej vyrovnávacej pamäte
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – zobrazuje, či sa dokument otvára z lokálnej vyrovnávacej pamäte
 
   - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
 
-  - **Data\_Doc\_IsSyncBacked:bool** – či sa dokument otvára z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu
+  - **Data\_Doc\_IsSyncBacked:bool** – či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -4121,7 +4121,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_FCreateNewFromTemplate** – označuje, či ide o nový dokument zo šablóny
 
-  - **Data_FErrorAfterDocWinCreation:boolean** – či sa po vytvorení okna dokumentu vyskytla nejaká chyba alebo výnimka.
+  - **Data_FErrorAfterDocWinCreation:boolean** – zobrazuje, či sa po vytvorení okna dokumentu vyskytla nejaká chyba alebo výnimka.
 
   - **Data\_FileUrlLocation** – preddefinovaná množina hodnôt miesta uloženia dokumentu (NetworkShare, LocalDrive, ServerOther atď.)
 
@@ -5221,7 +5221,7 @@ Zhromažďujú sa tieto polia:
 
   - **ShowSafeModeDlg** – či sa relácia otvorila v núdzovom režime
 
-  - **ShowScanPstDlg** – či sa pri kontrole opravy ukladacieho priestoru zobrazilo chybové hlásenie
+  - **ShowScanPstDlg** – zobrazuje, či sa pri kontrole opravy ukladacieho priestoru zobrazilo chybové hlásenie
 
 #### <a name="officeperformanceboot"></a>Office.Performance.Boot
 
@@ -5229,19 +5229,19 @@ Táto udalosť sa zhromažďuje pri spustení aplikácie balíka Office. Obsahuj
 
 Zhromažďujú sa tieto polia:
 
-  - **ActivationKind** – či sa aplikácia spustila spustením z ponuky Štart, otvorením súboru alebo prostredníctvom automatizácie OLE.
+  - **ActivationKind** – zobrazuje, či sa aplikácia spustila spustením z ponuky Štart, otvorením súboru alebo prostredníctvom automatizácie OLE.
 
-  - **FirstBoot** – či išlo o prvé spustenie aplikácie.
+  - **FirstBoot** – zobrazuje, či išlo o prvé spustenie aplikácie.
 
   - **InitializationDuration** – trvanie prvej inicializácie procesu balíka Office v mikrosekundách.
 
-  - **InterruptionMessageId** – ak bolo spustenie prerušené dialógovým oknom s výzvou pre používateľa na zadanie údajov, ID tohto dialógového okna.
+  - **InterruptionMessageId** – ID dialógového okna, ak bolo spustenie prerušené dialógovým oknom s výzvou pre používateľa na zadanie údajov.
 
-  - **TotalWorkingSetMB** – množstvo pamäte v megabajtoch v pracovnej množine procesu.
+  - **TotalWorkingSetMB** – množstvo pamäte v megabajtoch v pracovnej sade procesu.
 
-  - **VirtualSetMB** – množstvo pamäte v megabajtoch vo virtuálnej množine procesu. (Len MacOS/iOS)
+  - **VirtualSetMB** – množstvo pamäte v megabajtoch vo virtuálnej sade procesu. (Len MacOS/iOS)
 
-  - **WorkingSetPeakMB** – najmäčie množstvo pamäte v megabajtoch, ktoré bolo doteraz v pracovnej množine procesu.
+  - **WorkingSetPeakMB** – najväčšie množstvo pamäte v megabajtoch, ktoré bolo doteraz v pracovnej sade procesu.
 
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
@@ -5277,9 +5277,9 @@ Zhromažďujú sa tieto polia:
   
   - **Data_InsiderLevelNew** – nová úroveň programu Insider vybratá používateľom.
   
-  - **Data_IsInternalUser** – označuje, či aplikácia je spustená s povereniami konta @microsoft.com.
+  - **Data_IsInternalUser** – označuje, či je aplikácia spustená s prihlasovacími údajmi konta @microsoft.com.
   
-  - **Data_IsInternalUserInit** – označuje, či kód dokázal určiť, či je aplikácia spustená s povereniami konta @microsoft.com.
+  - **Data_IsInternalUserInit** – označuje, či kód dokázal určiť, či je aplikácia spustená s prihlasovacími údajmi konta @microsoft.com.
   
   - **Data_OpenNewsletterWebpage** – keď je zapnutá funkcia odberu bulletinu programu Office Insider a používateľ prepne na úroveň programu Insider z produkčnej verzie, označuje, či sa spustila navigácia v prehliadači na prepojenie na predplatné bulletinu pre program Office Insider.
 
