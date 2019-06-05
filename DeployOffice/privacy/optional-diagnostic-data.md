@@ -3,7 +3,7 @@ title: Voliteľné diagnostické údaje pre Office
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľných diagnostických údajoch v balíku Office vrátane niekoľkých príkladov udalostí.
 hideEdit: true
-ms.openlocfilehash: 1df576e8f5f1b3ed9fff11651ff4dd2b28d47229
-ms.sourcegitcommit: b3fd057154853fc588d0e83b4d632b6e9a051a3c
+ms.openlocfilehash: 852c53ad208cf02150de2e64e9e55d69015dda14
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32435874"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701200"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Voliteľné diagnostické údaje pre Office
 
@@ -30,7 +30,7 @@ ms.locfileid: "32435874"
 
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Tieto údaje neobsahujú meno ani e-mailovú adresu používateľa, obsah súborov používateľa ani informácie o aplikáciách, ktoré nesúvisia s balíkom Office.
 
-Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom. Niektoré diagnostické údaje sú povinné a niektoré sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou zobrazovača diagnostických údajov.
+Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou zobrazovača diagnostických údajov.
 
 ***Voliteľné diagnostické údaje*** sú dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy.
 
