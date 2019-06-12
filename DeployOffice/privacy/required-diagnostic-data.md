@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: a5ac5dfded3dbb51693b5d15616675b067c59dc3
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: d42f2bd20e3e2169e58d6f5c0a563f1b117ea847
+ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701713"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813317"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -65,6 +65,7 @@ Nasledujúca tabuľka obsahuje zoznam kategórií povinných diagnostických úd
 | **Používanie produktov a služieb**    | [Úspešnosť funkcie aplikácie](#application-feature-success-subtype)   | Úspešnosť fungovania aplikácie. Obmedzené na otvorenie a zatvorenie aplikácie a dokumentov, úpravu súborov a zdieľanie súborov (spoluprácu). |
 | | [Stav a spustenie aplikácie](#application-status-and-boot-subtype)    | Určenie, či sa vyskytli konkrétne udalosti funkcie, napríklad spustenie alebo ukončenie a či je funkcia spustená.   |
 | | [Konfigurácia zjednodušenia ovládania balíka Office](#office-accessibility-configuration-subtype)  | Funkcie zjednodušenia ovládania balíka Office       |
+| | [Ochrana osobných údajov](#privacy-subtype)| Nastavenia ochrany osobných údajov v Office|
 | **Výkon produktov a služieb**       | [Neočakávané ukončenie (zlyhanie) aplikácie](#unexpected-application-exit-crash-subtype)  | Neočakávané ukončenia aplikácie a stav aplikácie, keď sa to stane.    |
 |  | [Výkon funkcie aplikácie](#application-feature-performance-subtype)  | Dlhý čas odozvy alebo nízky výkon v prípadoch ako spustenie aplikácie alebo otvorenie súboru. |
 |  | [Chyba aktivity aplikácie](#application-activity-error-subtype)   | Chyby funkčnosti funkcie alebo používateľského rozhrania.  |
@@ -971,6 +972,7 @@ Toto sú podtypy údajov v tejto kategórii:
 - [Úspešnosť funkcie aplikácie](#application-feature-success-subtype)
 - [Stav a spustenie aplikácie](#application-status-and-boot-subtype)
 - [Konfigurácia zjednodušenia ovládania balíka Office](#office-accessibility-configuration-subtype)
+- [Ochrana osobných údajov](#privacy-subtype)
 
 
 ### <a name="application-feature-success-subtype"></a>*Podtyp Úspešnosť funkcie aplikácie*
@@ -4000,8 +4002,12 @@ Zhromažďujú sa tieto polia:
   - **Data\_CheckRequiredPartsLoaded** – trvanie spustenia metódy CheckRequiredPartsLoaded v milisekundách
 
   - **Data\_CheckWebSharingViolationForIncOpen** – trvanie spustenia metódy CheckWebSharingViolationForIncOpen v milisekundách
+   
+  - **Data_CloseAndReopenWithoutDiscard** – označuje, či bol dokument zavretý a opäť otvorený počas otvoreného procesu bez vyhodenia.
 
   - **Data\_ContentTransaction** – preddefinovaná množina hodnôt určujúcich, kedy je možné vytvoriť transakciu (AllowedOnLoadDocument, AllowedOnOpenComplete atď.)
+
+  - **Data_CorrelationId** – identifikátor GUID odoslaný do PowerPointu procesom ProtocolHandler na koreláciu telemetrie. ProtocolHandler je samostatný proces, ktorý spracováva prepojenia balíka Office pre operačný systém.
 
   - **Data\_CppUncaughtExceptionCount:long** – nezachytené natívne výnimky počas spustenej aktivity
 
@@ -4912,7 +4918,51 @@ Zhromažďujú sa tieto polia:
 
   - Žiadne
 
-## <a name="product-and-service-performance-data-events"></a>Udalosti údajov v kategórii Výkon produktov a služieb
+### <a name="privacy-subtype"></a>*Podtyp ochrany osobných údajov*
+
+Nastavenia ochrany osobných údajov v Office 
+
+#### <a name="officeintelligentserviceprivacyconsentprivacyevent"></a>Office.IntelligentService.PrivacyConsent.PrivacyEvent
+
+Táto udalosť predstavuje akciu spustenú používateľom alebo systémom, ktorá je súčasťou ochrany osobných údajov pre Office. Spustí sa v dialógových oknách ochrany osobných údajov First Run, dialógové okno Ochrana osobných údajov konta a upozornenia na ochranu osobných údajov. Udalosť sa používa na pochopenie nasledujúcich krokov: používateľský súhlas s nastavením ochrany osobných údajov v Office, používateľská zmena nastavenia ochrany osobných údajov v Office a aktualizácia nastavenia ochrany osobných údajov balíka Office v používateľských reláciách.
+
+Zhromažďujú sa tieto polia:
+
+  - **Data_ActionId** – akcia používateľa v dialógovom okne Ochrana osobných údajov
+
+  - **Data_ControllerConnectedServicesState** – nastavenie politiky používateľa s dodatočnými voliteľnými pripojenými možnosťami
+
+  - **Data_DownloadedContentServiceGroupState** – používateľské nastavenie pre stiahnutý obsah 
+ 
+  - **Data_ForwardLinkId** – prepojenie na dokumentáciu k ochrane osobných údajov pre scenár používateľa
+
+  - **Data_HRESULT** – záznam chýb počas interakcie s dialógovým oknom Ochrana osobných údajov
+
+  - **Data_IsEnterpriseUser** – Kategória používateľských licencií
+
+  - **Data_OfficeServiceConnectionState** – nastavenie pre používateľov pripojených služieb
+
+  - **Data_RecordRegistry** – záznam zobrazujúci dialógové okno podnikovej ochrany osobných údajov
+
+  - **Data_Scenario** – scenár prvého spustenia založený na používateľskej licencie a kategórie
+
+  - **Data_SeenInsidersDialog** – záznam znázorňujúci dialógové okno Ochrana osobných údajov insiderov
+
+  - **Data_SendTelemetryOption** – používateľské nastavenie pre telemetriu
+
+  - **Data_SendTelemetryOptionPolicy** – používateľské nastavenie ochrany osobných údajov pre telemetriu
+
+  - **Data_UserCategory** – typ používateľského konta  
+
+  - **Data_UserCCSDisabled** – prepísanie používateľom pre ďalšie voliteľné pripojené funkcie
+
+   - **Data_UserContentServiceGroupState** – nastavenie používateľa na analyzovanie obsahu
+
+  - **Data_WillShowDialogs** – záznam používateľa, ktorý potrebuje vidieť dialógové okná ochrany osobných údajov First Run
+
+
+
+## <a name="product-and-service-performance-data-events"></a>Udalosti údajov v kategórii Výkon produktov a služieb
 
 Toto sú podtypy údajov v tejto kategórii:
 - [Neočakávané ukončenie (zlyhanie) aplikácie](#unexpected-application-exit-crash-subtype)

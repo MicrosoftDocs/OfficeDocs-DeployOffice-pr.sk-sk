@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 81b5ff2e1451f910f2e9695dba488d39d27b7241
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 291ec1b925b021f3d35e504d95649a7bdd34adc0
+ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701292"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813353"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -2717,6 +2717,14 @@ Zhromažďujú sa tieto polia:
   - **IdentityChanged** – vždy pravda. Identita sa zmenila.
 
   - **TimerDetectedChange** – či sa zmena zistila pravidelne časovým pingom.
+
+### <a name="officesystemprivacyfallbacktosettingsstore"></a>Office.System.PrivacyFallbackToSettingsStore
+
+Používa sa na určenie, či sa vyskytnú zlyhania pri čítaní nastavení ochrany osobných údajov používateľa z roamingového ukladacieho priestoru.
+
+Zhromažďujú sa tieto polia:
+
+  - **Tag** – značka kódu označujúca, ktoré nastavenie sa vrátilo späť do ukladacieho priestoru nastavení.
 
 ### <a name="officesystemsessiondatao365"></a>Office.System.SessionDataO365
 
