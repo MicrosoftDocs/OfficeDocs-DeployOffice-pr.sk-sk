@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 291ec1b925b021f3d35e504d95649a7bdd34adc0
-ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
+ms.openlocfilehash: 14b2426d021e5c559cabd3c969f80df9131cc9b9
+ms.sourcegitcommit: 22ae0005d3106ff02949fb613b82e0245abfa49f
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34813353"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35817985"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -50,7 +50,7 @@ Nasledujúca tabuľka obsahuje zoznam nevyhnutných služieb pre Office a ich po
 | ------ | ---- |
 | [Overovanie](#authentication-events) | Overovanie je služba v rámci viacerých platforiem, ktorá potvrdzuje identitu používateľa pre Office. Vyžaduje sa na to, aby ste sa mohli prihlásiť do balíka Office, aktivovať licenciu na Office a pristupovať k súborom uloženým v cloude a zároveň poskytuje konzistentné používanie v rámci rôznych relácií balíka Office a zariadení.    |
 | [Klikni a spusti](#click-to-run-events) | Klikni a spusti je technológia inštalácie, ktorá sa používa na inštaláciu a aktualizáciu balíka Office vo Windowse. Kontroluje dostupnosť nových verzií balíka Office a ak je k dispozícii nová verzia, stiahne a nainštaluje ju.Služba Klikni a spusti rozpoznáva potrebu, sťahuje a inštaluje aktualizácie balíka Office vrátane aktualizácií zabezpečenia.     |
-| [Rozšírená konfiguračná služba (ECS)](#experimentation-and-configuration-service-ecs-events) | Služba ECS umožňuje spoločnosti Microsoft meniť konfiguráciu inštalácií balíka Office bez nutnosti opätovného nasadenia balíka Office. Používa sa na riadenie postupného nasadzovania funkcií alebo aktualizácií, pričom vplyv nasadenia sa monitoruje zo zhromaždených diagnostických údajov. Používa sa aj na zmiernenie problémov funkcie alebo aktualizácie so zabezpečením a výkonom. Okrem toho služba ECS podporuje zmeny konfigurácie týkajúce sa diagnostických údajov na pomoc pri zabezpečovaní zhromažďovania príslušných udalostí. |
+| [Rozšírená konfiguračná služba (ECS)](#enhanced-configuration-service-ecs-events) | Služba ECS umožňuje spoločnosti Microsoft meniť konfiguráciu inštalácií balíka Office bez nutnosti opätovného nasadenia balíka Office. Používa sa na riadenie postupného nasadzovania funkcií alebo aktualizácií, pričom vplyv nasadenia sa monitoruje zo zhromaždených diagnostických údajov. Používa sa aj na zmiernenie problémov funkcie alebo aktualizácie so zabezpečením a výkonom. Okrem toho služba ECS podporuje zmeny konfigurácie týkajúce sa diagnostických údajov na pomoc pri zabezpečovaní zhromažďovania príslušných udalostí. |
 | [Licenčná služba](#licensing-events)     | Licenčná služba je cloudová služba, ktorá podporuje aktiváciu balíka Office pre nové inštalácie a uchováva licenciu v zariadeniach po aktivovaní balíka Office. Registruje každé zariadenie používateľa a aktivuje Office, kontroluje stav predplatného na Office a spravuje kódy Product key.    |
 | [Services Configuration](#services-configuration-events)  | Služba Services Configuration umožňuje vykonávať aktualizácie nastavení konfigurácie balíka Office na povolenie alebo zakázanie klientskych funkcií. Zavolá sa vždy, keď sa spustí aplikácia balíka Office a poskytuje podrobné informácie o iných konfiguráciách a službách balíka Office. Služba Services Configuration tiež riadi, ktoré služby sú určené ako nevyhnutné služby.  |
 | [Telemetria](#telemetry-events)  | Služba telemetrie slúži na zhromažďovanie diagnostických údajov z aplikácií balíka Office. Umožňuje zhromažďovať diagnostické údaje vytvorené balíkom Office, a to požadované aj voliteľné diagnostické údaje. Je zodpovedná aj za zhromažďovanie diagnostických údajov služieb v rámci požadovaných údajov služieb pre Office.  |
@@ -2395,7 +2395,7 @@ Zhromažďujú sa tieto polia:
   - **Data\_targetBuild** – verzia balíka Office, na ktorú sa aktualizuje
 
 
-## <a name="experimentation-and-configuration-service-ecs-events"></a>Udalosti služby Experimentation and Configuration Service (ECS)
+## <a name="enhanced-configuration-service-ecs-events"></a>Udalosti rozšírenej konfiguračnej služby (ECS)
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
 
@@ -2448,7 +2448,7 @@ Je to dôležité na zistenie, koľko používateľov má problémy s aktivácio
 
 Zhromažďujú sa tieto polia:
 
-  - **Acid** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu
+  - **ACID** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu
 
   - **ReferralData** – identifikátor výrobcu OEM, ktorý nainštaloval balík Office do počítača
 
@@ -2480,7 +2480,7 @@ Táto udalosť sa zhromažďuje v každej relácii, ktorá nahlasuje licenčný 
 
 Zhromažďujú sa tieto polia:
 
-  - **Acid** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu 
+  - **ACID** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu 
 
   - **IsSessionLicensing** – či je v súčasnosti spustený režim aktivácie v zdieľanom počítači alebo nie 
 
@@ -2536,7 +2536,7 @@ V prípade problémov s postupom aktivácie sa spustí licenčný sprievodca a o
 
 Zhromažďujú sa tieto polia:
 
-  - **Acid** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu
+  - **ACID** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu
 
   - **LicenseStatus** – stav licencie na Office, ktorú používateľ používa
 
@@ -2556,7 +2556,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensinglicexitofficeprocess"></a>Office.Licensing.LicExitOfficeProcess 
 
-Ak dôjde k ukončeniu/zlyhaniu balíka Office z dôvodu licenčných problémov, odošleme tento signál na signalizáciu tejto skutočnosti. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Ak dôjde k ukončeniu alebo zlyhaniu balíka Office z dôvodu licenčných problémov, odošleme tento signál na signalizáciu tejto skutočnosti. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -2578,7 +2578,7 @@ Táto udalosť sa zhromažďuje, ak používateľ neprijal zobrazenú zmluvu EUL
 
 Zhromažďujú sa tieto polia:
 
-  - **Acid** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu
+  - **ACID** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu
 
   - **OptInShown** – signalizuje, či sa dialógové okno s vyjadrením výslovného súhlasu zobrazované pri prvom spustení aplikácie už zobrazilo
 
@@ -2602,7 +2602,7 @@ Táto udalosť sa zhromažďuje v každej relácii zariadenia, ktoré používa 
 
 Zhromažďujú sa tieto polia:
 
-  - **Acid** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu 
+  - **ACID** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu 
 
   - **AllAcids** – zoznam všetkých identifikátorov GUID produktu, pre ktorý je používateľ v súčasnosti licencovaný 
 
@@ -2616,7 +2616,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingofficeclientlicensingdolicensevalidation"></a>Office.Licensing.OfficeClientLicensing.DoLicenseValidation 
 
-Toto sú metaúdaje licencovania, ktoré sa zhromažďujú zo zariadenia pri každom spustení a ktoré hlásia identifikátor acid licencie, stav a typ licencie a ďalšie vlastnosti licencie, ktoré sú dôležité pri identifikácii množiny funkcií dostupných používateľovi. Je to dôležité pri identifikácii množiny funkcií dostupných používateľovi a toho, či používateľovi chýba nejaká funkcia. Používa sa aj pri výpočte denného a mesačného počtu aktívnych používateľov a v rôznych ďalších zostavách rôznych tímov v rámci Office (marketing/DIG/licencpvanie), pretože informuje o type produktu, ktorý používateľ používa, či ide o produkt s predplatným a či chýbajú nejaké kritické funkcie.
+Toto sú metaúdaje licencovania, ktoré sa zhromažďujú zo zariadenia pri každom spustení a ktoré hlásia identifikátor acid licencie, stav a typ licencie a ďalšie vlastnosti licencie, ktoré sú dôležité pri identifikácii množiny funkcií dostupných používateľovi. Je to dôležité pri identifikácii množiny funkcií dostupných používateľovi a toho, či používateľovi chýba nejaká funkcia. Používa sa aj pri výpočte denného a mesačného počtu aktívnych používateľov a v rôznych ďalších zostavách rôznych tímov v rámci Office, pretože informuje o type produktu, ktorý používateľ používa, či ide o produkt s predplatným a či chýbajú nejaké kritické funkcie.
 
 Zhromažďujú sa tieto polia:
 
@@ -2866,7 +2866,7 @@ Zhromažďujú sa tieto polia:
 
   - **InstallMethod** – či bola aktuálna zostava balíka Office inovovaná zo staršej zostavy, vrátená na staršiu zostavu alebo nanovo nainštalovaná.
 
-  - **PreviousBuild** – verzia balíka Office, na ktorú bola táto zostava inovovaná alebo z ktorej bola vrátená.
+  - **PreviousBuild** – verzia balíka Office Táto zostava bola inovovaná na alebo vrátená späť zo služieb.
 
   - **State** – stav, na ktorý sa relácia zmenila.
 
@@ -3438,7 +3438,7 @@ Zhromažďujú sa tieto polia:
 
   - **InteractionSessionID** – identifikátor relácie.
 
-  - **PreviousBuild** – verzia balíka Office, na ktorú bola táto zostava inovovaná alebo z ktorej bola vrátená.
+  - **PreviousBuild** – verzia balíka Office Táto zostava bola inovovaná na alebo vrátená späť zo služieb.
 
   - **State** – stav, na ktorý sa relácia zmenila.
 
