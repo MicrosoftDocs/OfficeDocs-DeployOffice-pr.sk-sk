@@ -2395,7 +2395,7 @@ Zhromažďujú sa tieto polia:
   - **Data\_targetBuild** – verzia balíka Office, na ktorú sa aktualizuje
 
 
-## <a name="enhanced-configuration-service-ecs-events"></a>Udalosti rozšírenej konfiguračnej služby (ECS)
+## <a name="enhanced-configuration-service-ecs-events"></a>Udalosti služby Enhanced Configuration Service (ECS)
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
 
@@ -2492,13 +2492,13 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensinggetentitlement"></a>Office.Licensing.GetEntitlement 
 
-Túto udalosť zhromažďujeme, keď používateľ nastavuje zariadenie a volá sa licenčná služba na zistenie, či prihlásený používateľ má nárok na Office alebo nie. Táto udalosť nahlasuje výsledok tohto volania. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Túto udalosť zhromažďujeme, keď používateľ nastavuje zariadenie a volá sa licenčná služba, aby sa zistilo, či prihlásený používateľ má nárok na Office alebo nie. Táto udalosť nahlasuje výsledok tohto volania. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Táto udalosť nezhromažďuje žiadne polia.
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
-V každej relácii kontrolujeme, či od posledného obnovenia licencie uplynulo 72 hodín, a pokúšame sa predĺžiť platnosť aktuálnej licencie. Táto udalosť nahlasuje úspech alebo neúspech volania, ktoré uskutočňujeme na zaručenie, že môžeme predĺžiť platnosť licencie a ponechať inštaláciu balíka Office používateľa funkčnú. Je to dôležité na diagnostiku problémov používateľa súvisiacich s predplatným a na zistenie regresií pre používateľov s už aktivovaným predplatným.
+V každej relácii kontrolujeme, či od posledného obnovenia licencie uplynulo 72 hodín, a pokúšame sa predĺžiť platnosť aktuálnej licencie. Táto udalosť nahlasuje úspech alebo neúspech volania, ktoré uskutočňujeme preto, aby sa zaručilo, že môžeme predĺžiť platnosť licencie a ponechať inštaláciu balíka Office používateľa funkčnú. Je to dôležité na diagnostiku problémov používateľa súvisiacich s predplatným a na zistenie regresií pre používateľov s už aktivovaným predplatným.
 
 Zhromažďujú sa tieto polia:
 
@@ -2866,7 +2866,7 @@ Zhromažďujú sa tieto polia:
 
   - **InstallMethod** – či bola aktuálna zostava balíka Office inovovaná zo staršej zostavy, vrátená na staršiu zostavu alebo nanovo nainštalovaná.
 
-  - **PreviousBuild** – verzia balíka Office Táto zostava bola inovovaná na alebo vrátená späť zo služieb.
+  - **PreviousBuild** – verzia balíka Office, na ktorú bola táto zostava bola inovovaná alebo z ktorej bola vrátená na staršiu verziu.
 
   - **State** – stav, na ktorý sa relácia zmenila.
 
@@ -3438,7 +3438,7 @@ Zhromažďujú sa tieto polia:
 
   - **InteractionSessionID** – identifikátor relácie.
 
-  - **PreviousBuild** – verzia balíka Office Táto zostava bola inovovaná na alebo vrátená späť zo služieb.
+  - **PreviousBuild** – verzia balíka Office, na ktorú bola táto zostava bola inovovaná alebo z ktorej bola vrátená na staršiu verziu.
 
   - **State** – stav, na ktorý sa relácia zmenila.
 

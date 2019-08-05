@@ -111,7 +111,7 @@ Táto kategória obsahuje tieto polia:
 
 #### <a name="consent"></a>Súhlas
 
-Informácie o súhlase používateľov ohľadom diagnostických údajov a pripojených funkcií.
+Informácie o súhlase používateľov týkajúcom sa diagnostických údajov a online funkcií.
 
 Táto kategória obsahuje tieto polia:
 
@@ -123,29 +123,29 @@ Táto kategória obsahuje tieto polia:
 
   - **DiagnosticConsentConsentTime** – označuje, kedy používateľ poskytol súhlas ohľadom diagnostických údajov.
 
-  - **ServiceConnectionState** – označuje, či sa používateľ rozhodol použiť alebo nepoužiť všetky pripojené funkcie.
+  - **ServiceConnectionState** – označuje, či sa používateľ rozhodol použiť alebo nepoužiť všetky online funkcie.
 
-  - **ServiceConnectionStateSourceLocation** – označuje, ako sa používateľ rozhodol, či použiť všetky pripojené funkcie.
+  - **ServiceConnectionStateSourceLocation** – označuje, ako sa používateľ rozhodol, či použiť všetky online funkcie.
 
-  - **ServiceConnectionStateConsentTime** – označuje, kedy sa používateľ rozhodol, či použiť všetky pripojené funkcie.
+  - **ServiceConnectionStateConsentTime** – označuje, kedy sa používateľ rozhodol, či použiť všetky online funkcie.
 
-  - **ControllerConnectedServicesState** – označuje, či má používateľ prístup k voliteľným pripojeným funkciám.
+  - **ControllerConnectedServicesState** – označuje, či má používateľ prístup k voliteľným online funkciám.
 
-  - **ControllerConnectedServicesStateSourceLocation** – označuje, ako používateľ uskutočnil výber voliteľných pripojených funkcií.
+  - **ControllerConnectedServicesStateSourceLocation** – označuje, ako používateľ uskutočnil výber voliteľných online funkcií.
 
-  - **ControllerConnectedServicesStateConsentTime** – označuje, kedy používateľ zvolil stav voliteľných pripojených funkcií.
+  - **ControllerConnectedServicesStateConsentTime** – označuje, kedy používateľ zvolil stav voliteľných online funkcií.
 
-  - **UserContentDependentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť pripojené funkcie analýzy obsahu.
+  - **UserContentDependentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť online funkcie na analýzu obsahu.
 
-  - **UserContentDependentStateSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť pripojené funkcie, ktoré analyzujú obsah.
+  - **UserContentDependentStateSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah.
 
-  - **UserContentDependentStateConsentTime** – označuje, kedy sa používateľ rozhodol zapnúť alebo vypnúť pripojené funkcie, ktoré analyzujú obsah.
+  - **UserContentDependentStateConsentTime** – označuje, kedy sa používateľ rozhodol zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah.
 
-  - **DownloadContentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť pripojené funkcie, ktoré sťahujú online obsah.
+  - **DownloadContentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
 
-  - **DownloadContentStateSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť pripojené funkcie, ktoré sťahujú online obsah.
+  - **DownloadContentStateSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
 
-  - **DownloadContentStateConsentTime** – označuje, kedy používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť pripojené funkcie, ktoré sťahujú online obsah.
+  - **DownloadContentStateConsentTime** – označuje, kedy používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
 
 #### <a name="device"></a>Zariadenie 
 
@@ -4930,7 +4930,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data_ActionId** – akcia používateľa v dialógovom okne Ochrana osobných údajov
 
-  - **Data_ControllerConnectedServicesState** – nastavenie politiky používateľa s dodatočnými voliteľnými pripojenými možnosťami
+  - **Data_ControllerConnectedServicesState** – nastavenie politiky používateľa s doplnkovými voliteľnými online funkciami
 
   - **Data_DownloadedContentServiceGroupState** – používateľské nastavenie pre stiahnutý obsah 
  
@@ -4940,11 +4940,11 @@ Zhromažďujú sa tieto polia:
 
   - **Data_IsEnterpriseUser** – Kategória používateľských licencií
 
-  - **Data_OfficeServiceConnectionState** – nastavenie pre používateľov pripojených služieb
+  - **Data_OfficeServiceConnectionState** – nastavenie pre používateľov online funkcií
 
   - **Data_RecordRegistry** – záznam zobrazujúci dialógové okno podnikovej ochrany osobných údajov
 
-  - **Data_Scenario** – scenár prvého spustenia založený na používateľskej licencie a kategórie
+  - **Data_Scenario** – scenár prvého spustenia založený na používateľskej licencii a kategórii
 
   - **Data_SeenInsidersDialog** – záznam znázorňujúci dialógové okno Ochrana osobných údajov insiderov
 
@@ -4954,7 +4954,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data_UserCategory** – typ používateľského konta  
 
-  - **Data_UserCCSDisabled** – prepísanie používateľom pre ďalšie voliteľné pripojené funkcie
+  - **Data_UserCCSDisabled** – prepísanie používateľom pre doplnkové voliteľné online funkcie
 
    - **Data_UserContentServiceGroupState** – nastavenie používateľa na analyzovanie obsahu
 
