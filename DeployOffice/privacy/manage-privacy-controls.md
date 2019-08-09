@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v službách Office 365 ProPlus pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 5d38a944c7fe0c2c17cb6cd50339908b1cb7ae6e
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 55c6c6477d4c03d94048c98c961179686eb29c83
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701255"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238985"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
 
@@ -41,6 +41,9 @@ Päť nových nastavení politiky:
 - Povoliť používanie pripojených funkcií v Office
 
 Tieto nastavenia politiky je možné implementovať pomocou buď skupinovej politiky, alebo [cloudovej služby politiky pre Office](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Ak používate skupinovú politiku, musíte si z [centra sťahovania softvéru Microsoft](https://www.microsoft.com/download/details.aspx?id=49030) stiahnuť najnovšiu verziu súborov šablón na správu (ADMX/ADML).
+
+> [!NOTE]
+> Ďalšie informácie o spravovaní ovládacích prvkov na ochranu osobných údajov pre Office pre Mac nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
 
 Ak používate nástroj Group Policy Management, všetky tieto nastavenia politiky sa nachádzajú v časti User Configuration (Konfigurácia používateľa)\\Policies (Politiky)\\Administrative Templates (Nástroje na správu)\\Microsoft Office 2016\\Privacy (Ochrana osobných údajov)\\Trust Center (Centrum dôveryhodnosti).
 
@@ -115,9 +118,9 @@ Okrem pripojených funkcií uvedených vyššie, ktoré sú súčasťou plánu s
 
 Tieto pripojené funkcie sú iné, pretože sa na ne nevzťahuje komerčná zmluva vašej spoločnosti so spoločnosťou Microsoft. Voliteľné pripojené funkcie ponúka priamo spoločnosť Microsoft a riadia sa [zmluvou o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement), nie [podmienkami poskytovania online služieb](https://www.microsoft.com/licensing/product-licensing/products). V niektorých prípadoch sa prostredníctvom týchto voliteľných funkcií poskytujú obsah alebo funkcie tretích strán a môžu sa na ne vzťahovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md).
 
-Pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto voliteľné pripojené funkcie budú k dispozícii pre vašich používateľov.
+Pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto voliteľné online funkcie budú k dispozícii pre vašich používateľov.
 
-Aj keď sa rozhodnete tieto voliteľné pripojené funkcie sprístupniť používateľom, vaši používatelia budú mať možnosť vypnúť ich ako celok kliknutím na položku **Súbor** > **Konto** > **Ochrana osobných údajov konta** > **Spravovať nastavenia**. Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
+Aj keď sa rozhodnete tieto voliteľné pripojené funkcie sprístupniť používateľom, vaši používatelia ich budú môcť vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
 
 Taktiež platí, že niektoré tieto voliteľné pripojené funkcie sa považujú aj za pripojené funkcie na analýzu obsahu alebo na sťahovanie online obsahu. Napríklad vkladanie online obrázkov je voliteľná pripojená funkcia, ktorá využíva službu Microsoft Bing, ale považuje sa aj za pripojenú funkciu na sťahovanie online obsahu. Preto ak vypnete nastavenie politiky *Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office*, funkcia vkladania online obrázkov nebude vašim používateľom k dispozícii. Nebude k dispozícii, ani ak ste zapli nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office*. Ďalšie informácie o tom, ktoré pripojené analyzujú obsah alebo sťahujú online obsah, sa nachádzajú v téme [Pripojené funkcie v Office](connected-experiences.md).
 
@@ -172,9 +175,9 @@ Vo všeobecnosti platí, že ak je jedno nastavenie politiky nakonfigurované na
 
 Došlo k niekoľkým zmenám používateľského rozhrania služieb Office 365 ProPlus týkajúcim sa ochrany osobných údajov, ktoré si vaši používatelia môžu všimnúť a pýtať sa na ne. Tieto zmeny sú priamym dôsledkom nových ovládacích prvkov na ochranu osobných údajov a nastavení politiky dostupných od verzie 1904.
 
-### <a name="dialog-about-optional-connected-experiences"></a>Dialógové okno o voliteľných pripojených funkciách
+### <a name="dialog-about-optional-connected-experiences"></a>Dialógové okno o voliteľných online funkciách
 
-Ak ste sa rozhodli poskytnúť používateľom [voliteľné pripojené funkcie](optional-connected-experiences.md), pri prvom otvorení aplikácie balíka po aktualizácii na verziu 1904 sa používateľom zobrazí informačné dialógové okno. Toto dialógové okno informuje používateľov, že ste im poskytli možnosť používať tieto voliteľné pripojené funkcie a informuje ich, že môžu prejsť na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a zmeniť toto nastavenie.
+Ak ste sa rozhodli poskytnúť používateľom [voliteľné online funkcie](optional-connected-experiences.md), pri prvom otvorení aplikácie balíka Office po aktualizácii na verziu 1904 alebo novšiu sa používateľom zobrazí informačné dialógové okno. Toto dialógové okno informuje používateľov, že ste im poskytli možnosť používať tieto voliteľné pripojené funkcie a informuje ich, že môžu prejsť na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a zmeniť toto nastavenie.
 
 ### <a name="privacy-settings-removed-from-the-office-ui"></a>Nastavenia ochrany osobných údajov odstránené z používateľského rozhrania balíka Office
 

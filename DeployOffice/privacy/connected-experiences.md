@@ -1,5 +1,5 @@
 ---
-title: Pripojené funkcie v Office
+title: Online funkcie v Office
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -11,30 +11,32 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Tento článok poskytuje správcom služieb Office informácie o pripojených funkciách v balíku Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
+description: Tento článok poskytuje správcom služieb Office informácie o online funkciách v balíku Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: 3b0ac61cf01a588e3af85d1eb83d4b2fd7e8b63e
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 1ae21c76eb0cc4addcc0a26e7ca1330aef99eee1
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701799"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238236"
 ---
-# <a name="connected-experiences-in-office"></a>Pripojené funkcie v Office
+# <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
 > [!IMPORTANT]
 > Informácie v tomto článku sa týkajú verzie 1904 alebo novšej verzie nasledujúceho klientskeho softvéru balíka Office nainštalovaného v počítači s Windowsom:
 > - Office 365 ProPlus a Office 365 Business
 > - Office 365 Personal, Office 365 Home alebo iné verzie balíka Office, ktoré sú súčasťou predplatného služieb Office 365.
 > - Project a Visio, ktoré sú súčasťou niektorých plánov predplatného, ako sú napríklad Project Online Professional alebo Visio Online Plan 2.
+>
+> Informácie platia aj pre verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
 
-Office pozostáva z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom pripojených funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive alebo preklad obsahu wordového dokumentu do iného jazyka.
+Office pozostáva z klientskych softvérových aplikácií a online funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom online funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive alebo preklad obsahu wordového dokumentu do iného jazyka.
 
-## <a name="connected-experiences-that-analyze-your-content"></a>Pripojené funkcie na analýzu obsahu
+## <a name="connected-experiences-that-analyze-your-content"></a>Online funkcie na analýzu obsahu
 
-Pripojené funkcie na analýzu obsahu sú funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Príkladmi sú PowerPoint Designer alebo editor vo Worde.
+Online funkcie na analýzu obsahu sú funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Príkladmi sú PowerPoint Designer alebo editor vo Worde.
 
-V nasledujúcej tabuľke sa nachádza zoznam pripojených funkcií na analýzu obsahu a tiež prepojenia na ďalšie informácie o nich.
+V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu a tiež prepojenia na ďalšie informácie o nich.
 
 | **Názov**   | **Ďalšie informácie**   |
 | ----------- | ------------------ |
@@ -57,11 +59,11 @@ V nasledujúcej tabuľke sa nachádza zoznam pripojených funkcií na analýzu o
 | Transformácia na webovú stránku   | [Skonvertovanie wordového dokumentu na webovú stránku Swaya](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Preklad textu do iného jazyka](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
-## <a name="connected-experiences-that-download-online-content"></a>Pripojené funkcie na sťahovanie online obsahu
+## <a name="connected-experiences-that-download-online-content"></a>Online funkcie na sťahovanie online obsahu
 
-Pripojené funkcie na sťahovanie online obsahu sú funkcie, ktoré umožňujú vyhľadať a sťahovať online obsah vrátane šablón, obrázkov, 3D modelov, videí a referenčných materiálov na vylepšenie vašich dokumentov. Napríklad šablóny balíka Office alebo funkcia Rýchly štart v PowerPointe.
+Online funkcie na sťahovanie online obsahu sú funkcie, ktoré umožňujú vyhľadať a sťahovať online obsah vrátane šablón, obrázkov, 3D modelov, videí a referenčných materiálov na vylepšenie vašich dokumentov. Napríklad šablóny balíka Office alebo funkcia Rýchly štart v PowerPointe.
 
-V nasledujúcej tabuľke sa nachádza zoznam pripojených funkcií na sťahovanie online obsahu a tiež prepojenia na ďalšie informácie o nich.
+V nasledujúcej tabuľke sa nachádza zoznam online funkcií na sťahovanie online obsahu a tiež prepojenia na ďalšie informácie o nich.
 
 | **Názov**      | **Ďalšie informácie**  |
 | ------------- | ------------- |
@@ -81,11 +83,11 @@ V nasledujúcej tabuľke sa nachádza zoznam pripojených funkcií na sťahovani
 | Šablóny  | [Stiahnutie bezplatných, vopred vytvorených šablón](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 | Panel počasia (Outlook)| [Zmena mesta, v ktorom sa bude v kalendári na paneli počasia sledovať počasie](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
-## <a name="other-connected-experiences"></a>Ďalšie pripojené funkcie
+## <a name="other-connected-experiences"></a>Ďalšie online funkcie
 
-Okrem pripojených funkcií na analýzu obsahu a pripojených funkcií na sťahovanie online obsahu sú v balíku Office k dispozícii aj nejaké ďalšie pripojené funkcie.
+Okrem online funkcií na analýzu obsahu a online funkcií na sťahovanie online obsahu sú v balíku Office k dispozícii aj nejaké ďalšie online funkcie.
 
-V nasledujúcej tabuľke sa nachádza zoznam týchto ďalších pripojených funkcií a tiež prepojenia na ďalšie informácie o nich.
+V nasledujúcej tabuľke sa nachádza zoznam týchto ďalších online funkcií a tiež prepojenia na ďalšie informácie o nich.
 
 | **Názov**      | **Ďalšie informácie**  |
 | ------------- | ------------- |
@@ -121,23 +123,27 @@ V nasledujúcej tabuľke sa nachádza zoznam týchto ďalších pripojených fun
 | Kým ste boli preč |[Prijatie upozornenia, keď člen tímu aktualizuje zdieľaný súbor](https://support.office.com/article/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 
-## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Výber dostupnosti týchto pripojených funkcií na používanie
+## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Výber dostupnosti týchto online funkcií na používanie
 
-Môžete sa rozhodnúť, či určité typy pripojených funkcií, napríklad pripojené funkcie na sťahovanie online obsahu, sú k dispozícii na používanie. Spôsob voľby závisí od toho, či ste prihlásení do balíka Office pomocou konta Microsoft, ako je napríklad osobná e-mailová adresa outlook.com, alebo pomocou pracovného alebo školského konta.
+Môžete sa rozhodnúť, či určité typy online funkcií, napríklad online funkcie na sťahovanie online obsahu, sú k dispozícii na používanie. Spôsob voľby závisí od toho, či ste prihlásení do balíka Office pomocou konta Microsoft, ako je napríklad osobná e-mailová adresa outlook.com, alebo pomocou pracovného alebo školského konta.
 
-Ak ste prihlásení pomocou konta Microsoft, otvorte aplikáciu balíka Office, napríklad Word, a prejdite na položky **Súbor** > **Konto** > **Ochrana osobných údajov konta**  >  **Spravovať nastavenia**. V časti **Pripojené funkcie** sa môžete rozhodnúť, či určité typy pripojených funkcií, napríklad pripojené funkcie na analýzu obsahu, sú k dispozícii na používanie. Ak neupravíte nastavenia v okne **Spravovať nastavenia**, všetky pripojené funkcie budú k dispozícii.
+Ak ste prihlásení pomocou konta Microsoft, otvorte aplikáciu balíka Office, napríklad Word, a prejdite na položky **Súbor** > **Konto** > **Ochrana osobných údajov konta**  >  **Spravovať nastavenia**. V časti **Online funkcie** sa môžete rozhodnúť, či určité typy online funkcií, napríklad online funkcie na analýzu obsahu, sú k dispozícii na používanie. Ak neupravíte nastavenia v okne **Spravovať nastavenia**, všetky online funkcie budú k dispozícii.
 
-Ak ste prihlásení pomocou pracovného alebo školského konta, o dostupnosti týchto pripojených funkcií rozhoduje správca vo vašej organizácii. Ak prejdete do okna **Súbor** > **Konto** > **Ochrana osobných údajov konta** > **Spravovať nastavenia**, nezobrazia sa žiadne voľby.
+Ak ste prihlásení pomocou pracovného alebo školského konta, o dostupnosti týchto online funkcií rozhoduje správca vo vašej organizácii. Ak prejdete do okna **Súbor** > **Konto** > **Ochrana osobných údajov konta** > **Spravovať nastavenia**, nezobrazia sa žiadne možnosti online funkcií.
 
-Ak ste správcom organizácie, pomocou nastavení politiky môžete určiť, či tieto pripojené funkcie budú dostupné pre vašich používateľov. Ak nepoužijete tieto nastavenia politiky, všetky pripojené funkcie budú k dispozícii pre vašich používateľov. Ďalšie informácie o používaní týchto nastavení politiky nájdete v článku [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md).
+> [!NOTE]
+> Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
 
-Ak sa rozhodnete vypnúť niektoré typy pripojených funkcií, príkazy pre tieto funkcie na páse s nástrojmi alebo v ponuke budú neaktívne alebo sa pri pokuse o použitie týchto pripojených funkcií zobrazí chybové hlásenie.
+Ak ste správcom organizácie, pomocou nastavení politiky môžete určiť, či tieto online funkcie budú dostupné pre vašich používateľov. Ak nepoužijete tieto nastavenia politiky, všetky online funkcie budú k dispozícii pre vašich používateľov. Ďalšie informácie o používaní týchto nastavení politiky nájdete v témach [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md) a [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
 
-Aj keď sa rozhodnete vypnúť tieto pripojené funkcie, niektoré funkcie balíka Office zostanú dostupné, napríklad synchronizácia poštovej schránky v Outlooku, a aplikácie Teams a Skype for Business budú aj naďalej fungovať. Taktiež platí, že niekoľko služieb, ktoré sú nevyhnutné na fungovanie balíka Office, sa nedá vypnúť, ako je napríklad licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie balíka Office.
+Ak sa rozhodnete vypnúť niektoré typy online funkcií, príkazy pre tieto funkcie na páse s nástrojmi alebo v ponuke budú neaktívne alebo sa pri pokuse o použitie týchto online funkcií zobrazí chybové hlásenie.
+
+Aj keď sa rozhodnete vypnúť tieto online funkcie, niektoré funkcie balíka Office zostanú dostupné, napríklad synchronizácia poštovej schránky v Outlooku, a aplikácie Teams a Skype for Business budú aj naďalej fungovať. Taktiež platí, že niekoľko služieb, ktoré sú nevyhnutné na fungovanie balíka Office, sa nedá vypnúť, ako je napríklad licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie balíka Office.
 
 ## <a name="related-topics"></a>Súvisiace témy
 
 - [Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus](overview-privacy-controls.md)
-- [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md)
+- [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md)
 - [Požadované údaje služieb pre Office](required-service-data.md)
 - [Nevyhnutné služby pre Office](essential-services.md)
+- [Nastavenia ochrany osobných údajov konta](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

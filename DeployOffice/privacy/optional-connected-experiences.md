@@ -13,19 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: f1d8c16b7e267d49735814ee9d393c578dbf3c28
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: e20a2cd70b8c5fbc47abac7288627cd2783855e7
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701339"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239150"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
 Ak máte pracovné alebo školské konto, správca vo vašej organizácii vám možno poskytol možnosť používať jednu alebo viacero cloudových služieb (ďalej len „voliteľné pripojené funkcie“) pri používaní aplikácií balíka Office 365 ProPlus. Tieto cloudové služby sú voliteľné. Ich používanie je na vás. Poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). V niektorých prípadoch sa môžu uplatňovať aj ďalšie podmienky. Tento článok obsahuje zoznam cloudových služieb, vysvetlenie ich podmienok používania a informácie o tom, ako ich môžete kedykoľvek zapnúť alebo vypnúť.
 
 > [!NOTE]
-> Ak ste správcom, pozrite si tému [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md), kde sa dozviete, ako používateľom povoliť alebo zakázať používanie týchto voliteľných pripojených funkcií.
+> Ak ste správcom, pozrite si nasledujúce témy, v ktorých sa dozviete, ako používateľom povoliť alebo zakázať používanie týchto voliteľných online funkcií:
+> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
+> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Ak používate služby, s akými podmienkami používania musíte súhlasiť?
 
@@ -50,6 +52,10 @@ Keď používate Office Obchod, licencia na vaše používanie samotnej lokality
 ### <a name="insert-online-video"></a>Vloženie online videa
 
 Funkcia [Vloženie Online videa](https://support.office.com/article/8340EC69-4CEE-4FE1-AB96-4849154BC6DB) umožňuje vkladať videosúbory do dokumentu. Na funkciu vkladania online videa sa vzťahuje [zmluva o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). V prípade pristupovania k obsahu tretích strán sa na vás môžu vzťahovať dodatočné podmienky používania. Napríklad keď sa pripojíte k službe YouTube, budú sa uplatňovať jej [podmienky používania](https://www.youtube.com/t/terms) a [zásady ochrany osobných údajov](https://policies.google.com/privacy). Spoločnosť Microsoft môže v budúcnosti pridať ďalších poskytovateľov videomateriálu.
+
+### <a name="microsoft-error-reporting-program-merp"></a>Program na hlásenie chýb spoločnosti Microsoft (Microsoft Error Reporting Program, MERP) 
+
+Pri zlyhaní klientskych aplikácií balíka Office, ktoré sa spúšťajú v zariadeniach Mac, sa program MERP pripojí k službe Watson.microsoft.com a odošle diagnostické údaje. Program vlastní spoločnosť Microsoft a vzťahujú sa naň podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/). Program MERP sa nevzťahuje na klientske aplikácie balíka Office, ktoré sa spúšťajú vo Windowse.
 
 ### <a name="research"></a>Zdroje informácií
 
@@ -80,9 +86,13 @@ Navrhnúť funkciu je funkcia, ktorá umožňuje odosielať nápady týkajúce s
 
 Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office 365 ProPlus v zariadení s Windowsom, prejdite na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberte položku **Spravovať nastavenia**. Ak vám správca neumožnil používať tieto funkcie, zobrazí sa hlásenie, že nastavenia ochrany osobných údajov spravuje správca vo vašej organizácii a rozhodol sa zakázať voliteľné pripojené funkcie.
 
+Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
+
 ## <a name="your-privacy-settings"></a>Nastavenia ochrany osobných údajov
 
 Ak vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office 365 ProPlus v zariadení s Windowsom, nastavenia môžete kedykoľvek spravovať tak, že prejdete na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberiete položku **Spravovať nastavenia**. Keď sú povolené, budete mať možnosť používať služby opísané v tomto článku, keď ich chcete použiť. Keď sú zakázané, nebudú dostupné.
+
+Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
 
 ## <a name="diagnostic-data"></a>Diagnostické údaje
 
@@ -93,3 +103,4 @@ Pri používaní voliteľných cloudových služieb opísaných v tomto článku
 
 - [Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus](overview-privacy-controls.md)
 - [Požadované údaje služieb pre Office](required-service-data.md)
+- [Nastavenia ochrany osobných údajov konta](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
