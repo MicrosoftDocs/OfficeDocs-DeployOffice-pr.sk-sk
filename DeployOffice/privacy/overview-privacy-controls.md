@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: a362a50b3d75e0792623745ef32fb93b4e458a41
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: ab024c4ce2eb4d81809880b607e084932658be3c
+ms.sourcegitcommit: 3f2319ff2f8fcde87ae5ffefa3b956a8239c4aed
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238946"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36441616"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus
 
@@ -65,9 +65,10 @@ Vaši používatelia nebudú môcť zmeniť úroveň diagnostických údajov vo 
 Tieto diagnostické údaje nezahŕňajú mená používateľov, e-mailové adresy ani obsah ich súborov balíka Office. Náš systém vytvorí jedinečný identifikátor, ktorá sa priradí k diagnostickým údajom používateľa. Keď prijmeme diagnostické údaje, že niektorá z aplikácií zlyhala 100-krát, tento jedinečný identifikátor nám umožňuje určiť, či zlyhala 100-krát u jedného používateľa alebo raz u 100 rôznych používateľov. Tento jedinečný identifikátor nepoužívame na identifikáciu konkrétneho používateľa.
 
 Na zobrazenie toho, aké diagnostické údaje sa odosielajú spoločnosti Microsoft, môžete použiť zobrazovač diagnostických údajov, ktorý si môžete bezplatne stiahnuť a nainštalovať z Microsoft Storu.
-Ďalšie informácie nájdete v nasledujúcich témach:
 
-- [Povinné diagnostické údaje pre Office](required-diagnostic-data.md)
+Ďalšie informácie sa nachádzajú v nasledujúcich témach:
+
+- [Požadované diagnostické údaje pre Office](required-diagnostic-data.md)
 - [Voliteľné diagnostické údaje pre Office](optional-diagnostic-data.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
