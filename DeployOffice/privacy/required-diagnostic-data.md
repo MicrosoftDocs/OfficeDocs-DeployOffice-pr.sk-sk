@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: e6078bf96c60d0f01aeaea0cabe32f135a8fa1a3
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 6a03f23d77aef8f2c8f6548cf462a33194d8a4aa
+ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238915"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36656133"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -954,27 +954,19 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeprogrammabilityadd-insinternalsetconnectenterprise"></a>Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
-Udalosť vygenerovaná pri načítaní doplnku COM v zariadení Enterprise. Desktop Analytics: načítania v počte \# sa použijú ako menovateľ na výpočet stavu (zlyhania \#/načítania \#) pri výpočte metriky stavu pre okruhy Pilot a Production v podnikových scenároch. Vyžaduje si to, aby údaje boli presné, nie vzorkované, keďže počet zariadení je nižší (100 až 1000).
+Udalosť vygenerovaná pri načítaní doplnku COM v zariadení Enterprise. 
 
 Zhromažďujú sa tieto polia:
 
+  - **Výsledok aktivity** – stav pripojenia
+
   - **Add-inconnectFlag** – aktuálne správanie pri načítaní
-
-  - **Add-inDescription** – popis doplnku
-
-  - **Add-inFileName** – názov súboru doplnku bez cesty k súboru
-
-  - **Add-inFriendlyName** – popisný názov doplnku
 
   - **Add-inId** – ID triedy doplnku
 
-  - **Add-inProgId** – ID programu doplnku
-
-  - **Add-inProvider** – poskytovateľ doplnku
-
   - **Add-inTimeDateStamp** – časová pečiatka doplnku z metaúdajov knižnice DLL
 
-  - **Add-inVersion** – verzia doplnku
+  - **IsBootInProgress** – či sa aplikácia balíka Office zavádza
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -3016,13 +3008,11 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officepowerpointpptmacshellprintinfo"></a>Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
-Zhromažďujú sa vždy, keď sa dokončí operácia tlače PDF súboru alebo exportovania PDF súboru a obsahuje informácie o type rozloženia, ako aj úspešnosti operácie. Tieto informácie sú kritické pri identifikácii úspešnosti operácií tlače PDF súborov a exportu PDF súborov pre našu aplikáciu.
+Zhromažďujú sa vždy, keď sa dokončí operácia exportovania PDF súboru a obsahuje informácie o úspešnosti operácie. Tieto informácie sú kritické pri identifikácii úspešnosti operácií exportovania PDF súborov pre našu aplikáciu.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_ExportAsPDFSucceed** – boolovská hodnota označujúca, či bol export PDF súboru úspešný.
-
-- **Data_SavePrintLayoutType** – typ rozloženia pri tlači v čase začatia operácie tlače alebo exportu.
 
 
 #### <a name="officepowerpointpptsharedslideshowfailure"></a>Office.PowerPoint.PPT.Shared.SlideShow.Failure
@@ -5602,10 +5592,9 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
-Udalosť vygenerovaná pri zlyhaní doplnku COM
+Udalosť vygenerovaná pri zlyhaní doplnku COM v spotrebiteľskej verzii aplikácií balíka Office. 
 
-Počítačová analýza: používa sa ako čitateľ vo výpočte stavu špecifického pre podnik pre doplnky, ktoré sa používajú na odvodenie počas pilotného procesu, či je doplnok „pripravený na inováciu“ v produkčnom okruhu.  
-Globálne prehľady: používa sa na výpočet globálnej „pripravenosti“ nešpecifickej pre podnik pre doplnok, ktorý sa potom uverejní na lokalite readyforwindows.com a v ďalších nástrojoch, ako je napríklad Readiness Toolkit
+Použitie: používa sa na výpočet globálnej „adaptácie“ balíka Office 365 ProPlus nešpecifickej pre podnik pre doplnok, ktorý sa potom uverejní na lokalite readyforwindows.com a v ďalších nástrojoch, ako je napríklad Readiness Toolkit. Podnikoví zákazníci tak môžu overiť, či sú doplnky nasadené v organizáciách kompatibilné s najnovšími verziami balíka Office 365 ProPlus a podľa toho naplánovať inováciu. 
 
 Zhromažďujú sa tieto polia:
 
@@ -5617,17 +5606,17 @@ Zhromažďujú sa tieto polia:
 
 - **AddinId** – identifikátor triedy doplnku
 
-- **AddinProgId** – identifikátor programu doplnku
+- **AddinProgId** – nefunkčné
 
-- **AddinFriendlyName** – popisný názov doplnku
+- **AddinFriendlyName** – nefunkčné
 
 - **AddinTimeDateStamp** – časová pečiatka doplnku z metaúdajov knižnice DLL
 
-- **AddinVersion** – verzia doplnku
+- **AddinVersion** – nefunkčné
 
-- **AddinFileName** – názov súboru doplnku bez cesty k súboru
+- **AddinFileName** – nefunkčné
 
-- **VSTOAddIn** – či doplnok je VSTO
+- **VSTOAddIn** – či je doplnok VSTO
 
 - **AddinConnectFlag** – správanie pri aktuálnom načítaní
 
@@ -5635,34 +5624,33 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeextensibilitycomaddinunhandledexceptionenterprise"></a>Office.Extensibility.COMAddinUnhandledExceptionEnterprise
 
-Udalosť vygenerovaná pri zlyhaní doplnku COM.  Používa sa ako čitateľ vo výpočte stavu špecifického pre podnik pre doplnky, ktoré sa používajú na odvodenie počas pilotného procesu, či je doplnok „pripravený na inováciu“ v produkčnom okruhu.
+Udalosť vygenerovaná pri zlyhaní doplnku COM v podnikovej verzii aplikácií balíka Office.
 
-Zhromažďujú sa tieto polia (tieto polia sa zapisujú ako zástupné objekty, aby sa zabránilo porušeniu existujúcich skriptov: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName):
+Použitie: používa sa na výpočet globálnej „adaptácie“ balíka Office 365 ProPlus nešpecifickej pre podnik pre doplnok, ktorý sa potom uverejní na lokalite readyforwindows.com a v ďalších nástrojoch, ako je napríklad Readiness Toolkit. Podnikoví zákazníci tak môžu overiť, či sú doplnky nasadené v organizáciách kompatibilné s najnovšími verziami balíka Office 365 ProPlus a podľa toho naplánovať inováciu. 
 
+- **ScopeId** – rozsah aktuálneho vlákna
 
-- **AddinConnectFlag** – správanie pri aktuálnom načítaní.
+- **Method** – metóda balíka Office, kde došlo k výnimke
 
-- **AddinFileName** – prázdne pole – zastarané.
+- **Interface** – rozhranie balíka Office, kde došlo k výnimke
 
-- **AddinFriendlyName** – prázdne pole – zastarané.
+- **AddinId** – identifikátor triedy doplnku
 
-- **AddinId** – ID triedy doplnku.
+- **AddinProgId** – nefunkčné
 
-- **AddinProgId** – prázdne pole – zastarané.
+- **AddinFriendlyName** – nefunkčné
 
-- **AddinTimeDateStamp** – časová pečiatka doplnku z metaúdajov knižnice DLL.
+- **AddinTimeDateStamp** – časová pečiatka doplnku z metaúdajov knižnice DLL
 
-- **AddinVersion** – prázdne pole – zastarané.
+- **AddinVersion** – nefunkčné
 
-- **Interface** – rozhranie balíka Office, kde došlo k výnimke.
+- **AddinFileName** – nefunkčné
 
-- **LoadAttempts** – počet pokusov o načítanie doplnku.
+- **VSTOAddIn** – či je doplnok VSTO
 
-- **Method** – metóda balíka Office, kde došlo k výnimke.
+- **AddinConnectFlag** – správanie pri aktuálnom načítaní
 
-- **ScopeId** – rozsah aktuálneho vlákna.
-
-- **VSTOAddIn** – či doplnok je VSTO.
+- **LoadAttempts** – počet pokusov o načítanie doplnku
 
 #### <a name="officeextensibilitysandboxodpactivationheartbeat"></a>Office.Extensibility.Sandbox.ODPActivationHeartbeat
 
@@ -6051,6 +6039,10 @@ Táto udalosť sa zhromažďuje pri spustení aplikácie balíka Office. Obsahuj
 Zhromažďujú sa tieto polia:
 
   - **ActivationKind** – zobrazuje, či sa aplikácia spustila spustením z ponuky Štart, otvorením súboru alebo prostredníctvom automatizácie OLE.
+  
+  - **BootToStart** – či používateľ zvolil zobrazenie domovskej obrazovky po spustení aplikácie.
+
+  - **DocLocation** – pri otváraní dokumentu označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
 
   - **FirstBoot** – zobrazuje, či išlo o prvé spustenie aplikácie.
 
@@ -6063,6 +6055,36 @@ Zhromažďujú sa tieto polia:
   - **VirtualSetMB** – množstvo pamäte v megabajtoch vo virtuálnej sade procesu. (Len MacOS/iOS)
 
   - **WorkingSetPeakMB** – najväčšie množstvo pamäte v megabajtoch, ktoré bolo doteraz v pracovnej sade procesu.
+
+#### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+
+Sledovanie aktivity, či sa blok Office Insider môže zobrazovať používateľovi na karte Konto v používateľskom rozhraní Office Backstage.
+
+Zhromažďujú sa tieto polia:
+
+  - **Data_CanShow** – označuje, či sa blok Office Insider môže zobrazovať používateľovi na karte Konto v používateľskom rozhraní Office Backstage.
+  
+  - **Data_Event** – nepoužíva sa
+
+  - **Data_EventInfo** – nepoužíva sa
+
+  - **Data_Reason** – nepoužíva sa
+ 
+
+#### <a name="officeuxofficeinsiderregistercurrentinsider"></a>Office.UX.OfficeInsider.RegisterCurrentInsider
+
+Kritický signál na sledovanie úspechu alebo neúspechu registrácie používateľov pomocou zostáv programu Office Insider, ktorí neboli registrovaní ako insideri pre Office. Hlavným scenárom sú aktuálni insideri pre Office, ktorí sa do programu Office Insider pridali ešte pred zavedením registrácie insiderov pre Office.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_RegisterInsider** – stav registrácie v programe Office Insider.
+
+- **Data_RegisterInsiderHr** – výsledný kód registrácie v programe Office Insider.
+
+- **Data_RegistrationStateCurrent** – aktuálny stav registrácie
+
+- **Data_RegistrationStateDesired** – požadovaný stav registrácie
+
 
 #### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office.UX.OfficeInsider.ShowOfficeInsiderDlg
 
@@ -6086,19 +6108,11 @@ Zhromažďujú sa tieto polia:
 
 - **Data_RegisterInsiderHr** – výsledný kód registrácie v programe Office Insider.
 
-#### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+- **Data_RegistrationStateCurrent** – aktuálny stav registrácie
 
-Sledovanie aktivity, či sa blok Office Insider môže zobrazovať používateľovi na karte Konto v používateľskom rozhraní Office Backstage.
+- **Data_RegistrationStateDesired** – požadovaný stav registrácie
 
-Zhromažďujú sa tieto polia:
 
-  - **Data_CanShow** – označuje, či sa blok Office Insider môže zobrazovať používateľovi na karte Konto v používateľskom rozhraní Office Backstage.
-  
-  - **Data_Event** – nepoužíva sa
-
-  - **Data_EventInfo** – nepoužíva sa
-
-  - **Data_Reason** – nepoužíva sa
 
 
 #### <a name="officevisiosharedvisiofilerender"></a>Office.Visio.Shared.VisioFileRender
