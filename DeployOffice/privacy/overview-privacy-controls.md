@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: ab024c4ce2eb4d81809880b607e084932658be3c
-ms.sourcegitcommit: 3f2319ff2f8fcde87ae5ffefa3b956a8239c4aed
+ms.openlocfilehash: 329d3de3fd4ff20518a8a49f01d7c5bfcd75342b
+ms.sourcegitcommit: de39739d7ab82666ff1389be360d74c518ae97f6
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36441616"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980369"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus
 
@@ -37,7 +37,8 @@ Súčasťou týchto zmien sú nové a aktualizované prvky používateľského 
 > - Tieto zmeny sa vzťahujú aj na:
 >   - Verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
 >   - Verziu 1904 alebo novšie verzie počítačových verzií Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako napríklad Project Online Professional alebo Visio Online (plán 2).
-> - Očakáva sa, že ovládacie prvky na ochranu osobných údajov vydané vo verzii 1904 budú k dispozícii v polročnom kanáli (pre vybraných používateľov) v septembri 2019 a v polročnom kanáli v januári 2020.
+> - Tieto ovládacie prvky na ochranu osobných údajov sú zahrnuté vo verzii 1908 polročného kanála (pre vybraných používateľov) s dátumom vydania 10. septembra 2019. Očakáva sa, že budú k dispozícii v polročnom kanáli v januári 2020.
+> - Tieto ovládacie prvky na ochranu osobných údajov sú naplánované tak, aby boli k dispozícii v druhej polovici októbra 2019 pre verzie Excelu, OneNotu, PowerPointu, Visia a Wordu v systéme iOS. Na začiatku októbra poskytneme ďalšie informácie.
 > - Tieto nové a vylepšené ovládacie prvky na ochranu osobných údajov rozšírime do ďalších klientov balíka Office vrátane aplikácie Teams a mobilných aplikácií. Podrobnejšie informácie o týchto zmenách poskytneme v nadchádzajúcich mesiacoch. Naďalej budeme starostlivo počúvať vaše pripomienky a vylepšovať všetky klientske aplikácie a služby služieb Office 365.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostické údaje odosielané zo služieb Office 365 ProPlus spoločnosti Microsoft
