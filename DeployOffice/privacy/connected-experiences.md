@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom služieb Office informácie o online funkciách v balíku Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: 1ae21c76eb0cc4addcc0a26e7ca1330aef99eee1
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 04d71fcd601f76d2613dda9bd00dccd24ab8e950
+ms.sourcegitcommit: 27db488cae3bd23342bc0d902c53b5bf89ae30a7
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238236"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37379782"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -47,6 +47,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | Editor    | [Editor je váš asistent pre písanie](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Návrhy     | [Návrhy v Exceli](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Konvertovanie písania rukou na text, na tvar, na matematický výraz | [Konvertovanie textu písaného rukou na tvary, text alebo matematický výraz v PowerPointe pre Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Vloženie údajov z obrázka| [Vloženie údajov z obrázka](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Živé popisy a titulky |  [Prezentujte s automatickými popismi alebo titulkami v reálnom čase v PowerPointe](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Mapy vo funkcii Power View   | [Mapy vo funkcii Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Služba na zobrazovanie prezentácií balíka Office  | [Vysielanie powerpointovej prezentácie vzdialeným divákom](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
