@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 785cd7f3e881d61be0ee3ee72924efb695e2f5a7
-ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
+ms.openlocfilehash: 82068f529e341a71557e65e6b7d060bab878bcbe
+ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656205"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386934"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -584,7 +584,28 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_PrereqFailure\_Type** – predbežné zlyhanie, ktoré sa vyskytlo
 
-  - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Office 365 ProPlus
+  - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Office 365 ProPlus
+
+### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
+
+Hlási stav nového kanála aktualizácií Klikni a spusti („Repoman“) a či boli aktualizácie balíka Office úspešne stiahnuté a použité.
+
+Zhromažďujú sa tieto polia:
+
+  - **ApplySucceeded** – hodnota true označuje, že kanál úspešne použil aktualizáciu balíka Office. V opačnom prípade má hodnotu false.
+  
+  - **DownloadSucceeded** – hodnota true označuje, že kanál úspešne stiahol aktualizáciu balíka Office. V opačnom prípade má hodnotu false.
+
+  - **ErrorCode** – kód poslednej chyby, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
+
+  - **ErrorDetails** – ďalšie informácie o chybe, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
+ 
+  - **ErrorMessage** – hlásenie poslednej chyby, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
+
+  - **OpenStreamSessionSucceeded** – hodnota true označuje, že kanál úspešne vytvoril reláciu na streamovanie aktualizácie balíka Office. V opačnom prípade má hodnotu false.
+
+  - **RepomanErrorMessage** – chybové hlásenie prijaté z knižnice repoman.dll.
+ 
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigure"></a>Office.ClickToRun.Scenario.InstallTaskConfigure
 
@@ -1822,7 +1843,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -2658,6 +2679,13 @@ Zhromažďujú sa tieto polia:
 
   - **UnmergedConfigs** – zoznam nezlúčených konfigurácií
 
+### <a name="officeexperimentationtriggeranalysis"></a>Office.Experimentation.TriggerAnalysis
+
+Táto udalosť umožňuje obmedziť analýzu používania produktov a metrík výkonu (napríklad zlyhaní, zablokovaní a podobne) na podmnožinu používateľov alebo zariadení oprávnených na používanie danej funkcie, čím prispieva k zabezpečeniu správneho fungovania produktu.
+
+Zhromažďujú sa tieto polia:
+
+  - **FeatureGate** – identifikuje množinu funkcií, na ktoré sa vzťahuje analýza aktivačných udalostí.
 
 ## <a name="licensing-events"></a>Udalosti licenčnej služby
 
@@ -9410,7 +9438,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
+- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -10392,7 +10420,7 @@ Zhromažďujú sa tieto polia:
 
   - **ComputerSystemProductUuidHash** – jednosmerný hash identifikátora UUID základnej dosky.
 
-  - **DeviceClass** – identifikátor typu zariadenia, v ktorom je Office spustený.
+  - **DeviceClass** – identifikátor typu zariadenia, v ktorom je Office spustený.
 
   - **DeviceMake** – identifikátor rodiny hardvérového systému zariadenia, v ktorom je Office spustený.
 
@@ -10920,7 +10948,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officesystemsystemhealthungracefulapplicationexitwin32"></a>Office.System.SystemHealthUngracefulApplicationExitWin32
 
-Používa sa na zaznamenanie metriky zlyhania.
+Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončení pomocou Správcu úloh, zablokovaní aplikácie a podobne) klientskych aplikácií Office, ako je napríklad Word, Excel, PowerPoint alebo Outlook. Na meranie stavu klientskych produktov Office používame metriky neočakávaného ukončenia aplikácií. Ide o signál so zásadnou dôležitosťou pre firemnú prevádzku, na základe ktorého môžu technici zaoberajúci sa produktmi Office posudzovať stabilitu produktov.
 
 Zhromažďujú sa tieto polia:
 
@@ -10932,11 +10960,7 @@ Zhromažďujú sa tieto polia:
 
   - **CrashedAppRevision** – identifikátor verzie revízie ovplyvneného procesu.
 
-  - **CrashedConfigIds** – konfigurácia priradená zlyhanému procesu.
-
   - **CrashedEcsETag** – identifikátor experimentu pre zlyhaný proces.
-
-  - **CrashedImpressionId** – identifikátor impresie zlyhaného procesu.
 
   - **CrashedModuleName** – názov zlyhávajúceho modulu.
 
@@ -10952,7 +10976,9 @@ Zhromažďujú sa tieto polia:
 
   - **ExceptionCode** – identifikátor výnimky.
 
-  - **HexExceptionAddress** – adresa v programe, kde došlo k zlyhaniu, v hexadecimálnom formáte.
+  - **HexCrashTag** – jedinečný identifikátor kódu zlyhania.
+
+  - **HexExceptionAddress** – adresa v programe, kde došlo k zlyhaniu, v hexadecimálnom formáte.
 
   - **HexExceptionCode** – identifikátor výnimky v hexadecimálnom formáte.
 
@@ -10977,6 +11003,8 @@ Zhromažďujú sa tieto polia:
   - **PreviousBuild** – predchádzajúca nainštalovaná verzia zostavy.
 
   - **UAEOSEnvironment** – identifikátor prostredia operačného systému.
+
+  - **UninitLibletId** – jedinečný identifikátor zlyhávajúcej súčasti zlyhania.
 
   - **VerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie.
 
