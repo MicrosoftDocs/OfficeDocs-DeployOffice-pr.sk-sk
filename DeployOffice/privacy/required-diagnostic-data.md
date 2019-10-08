@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: 6a03f23d77aef8f2c8f6548cf462a33194d8a4aa
-ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
+ms.openlocfilehash: a5770d3ed30f86dfbf1cb1dfc4a45bbb15179da8
+ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656133"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386980"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -122,33 +122,33 @@ Táto kategória obsahuje tieto polia:
 
   - **DiagnosticConsentLevel** – označuje úroveň súhlasu ohľadom diagnostických údajov, ktorý používateľ udelil.
 
-  - **DiagnosticConsentSourceLocation** – označuje, ako používateľ poskytol súhlas ohľadom diagnostických údajov.
+  - **DiagnosticConsentSourceLocation** – označuje, ako používateľ poskytol súhlas s diagnostickými údajmi.
 
-  - **DiagnosticConsentConsentTime** – označuje, kedy používateľ poskytol súhlas ohľadom diagnostických údajov.
+  - **DiagnosticConsentConsentTime** – označuje, kedy používateľ poskytol súhlas s diagnostickými údajmi. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
 
   - **ServiceConnectionState** – označuje, či sa používateľ rozhodol použiť alebo nepoužiť všetky online funkcie.
 
   - **ServiceConnectionStateSourceLocation** – označuje, ako sa používateľ rozhodol, či použiť všetky online funkcie.
 
-  - **ServiceConnectionStateConsentTime** – označuje, kedy sa používateľ rozhodol, či použiť všetky online funkcie.
+  - **ServiceConnectionStateConsentTime** – označuje, kedy sa používateľ rozhodol, či použiť všetky online funkcie. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
 
   - **ControllerConnectedServicesState** – označuje, či má používateľ prístup k voliteľným online funkciám.
 
   - **ControllerConnectedServicesStateSourceLocation** – označuje, ako používateľ uskutočnil výber voliteľných online funkcií.
 
-  - **ControllerConnectedServicesStateConsentTime** – označuje, kedy používateľ zvolil stav voliteľných online funkcií.
+  - **ControllerConnectedServicesStateConsentTime** – označuje, kedy používateľ zvolil stav voliteľných online funkcií. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
 
   - **UserContentDependentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť online funkcie na analýzu obsahu.
 
   - **UserContentDependentStateSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah.
 
-  - **UserContentDependentStateConsentTime** – označuje, kedy sa používateľ rozhodol zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah.
+  - **UserContentDependentStateConsentTime** – označuje, kedy sa používateľ rozhodol zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
 
   - **DownloadContentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
 
   - **DownloadContentStateSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
 
-  - **DownloadContentStateConsentTime** – označuje, kedy používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
+  - **DownloadContentStateConsentTime** – označuje, kedy používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
 
 #### <a name="device"></a>Zariadenie 
 
@@ -305,6 +305,10 @@ Táto kategória obsahuje tieto polia:
   - **MotherboardUUIDHash** – hodnota hash jedinečného identifikátora základnej dosky. Umožňuje klasifikovať údaje na základe kontingenčného ovládacieho prvku zariadenia.
 
   - **Name** – názov zariadenia. Umožňuje klasifikovať údaje na základe kontingenčného ovládacieho prvku zariadenia.
+  
+  - **NetworkCost** – označuje náklady na sieť alebo typ siete, napríklad účtované podľa objemu údajov alebo účtované podľa objemu údajov nad limit.
+  
+  - **NetworkCountry** – kód krajiny odosielateľa, na základe neočistenej IP adresy klienta.
 
   - **NumProcPhysCores** – počet fyzických jadier v počítači. Umožňuje klasifikovať údaje na základe kontingenčného ovládacieho prvku zariadenia.
 
@@ -614,6 +618,65 @@ Zhromažďujú sa tieto polia:
 - **sessionID** – náhodne vytvorený identifikátor GUID na identifikáciu relácie aplikácie
 
 - **UTCReplace_AppSessionGuid** – konštantná boolovská hodnota. Vždy hodnota True.
+
+#### <a name="officeonenotefirstrunfirstrun"></a>Office.OneNote.FirstRun.FirstRun
+
+Kritický signál, ktorý sa používa na zaistenie, že noví používatelia môžu úspešne spustiť a používať OneNote po prvýkrát.  Telemetria sa zhromažďuje na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu spustiť aplikáciu po prvýkrát, môže to vyvolať incident s vysokou závažnosťou.
+
+- **AfterOneDriveFrozenAccountError** – označuje chybu z OneDrivu, keď je konto zmrazené.
+
+- **Attempt** – koľkokrát sa vyžaduje zopakovanie pokusu o prvé spustenie.
+
+- **IsDefaultNotebookCreated** – označuje, či OneNote vytvoril predvolený poznámkový blok používateľa alebo nie.
+
+- **IsDelayedSignIn** – označuje, či prvé spustenie je v režime odloženého prihlásenia, v ktorom sa nevyžaduje prihlásenie používateľa.
+
+- **IsMSA** – označuje, či konto je kontom Microsoft alebo nie.
+
+#### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
+
+Kritický signál, ktorý sa používa na zaistenie, že noví individuálni používatelia (konto Microsoft) môžu úspešne spustiť a používať OneNote po prvýkrát.
+Telemetria spôsobu používania používaná na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu spustiť aplikáciu po prvýkrát, môže to vyvolať incident s vysokou závažnosťou.
+
+Zhromažďujú sa tieto polia:
+
+- **Attempt** – koľkokrát sa vyžaduje zopakovanie pokusu o prvé spustenie.
+
+- **Error A** – objekt chyby OneNotu označuje chybu pri výskyte chyby pri prvom spustení, ak sa vyskytla.
+
+- **FAllowAddingGuide** – označuje, či OneNote umožní vytvoriť sprievodný poznámkový blok alebo nie.
+
+- **FrozenOneDriveAccount** – označuje, či konto OneDrivu je zmrazené alebo nie.
+
+- **IsDefaultNotebookCreated** – označuje, či OneNote vytvoril predvolený poznámkový blok používateľa alebo nie.
+
+- **NoInternetConnection** – označuje, či zariadenie nemá internetové pripojenie.
+
+- **ProvisioningFailure** – objekt chyby OneNotu označujúci chybu zriaďovania, ak sa vyskytla.
+
+- **ProvisioningFinishedTime** – označuje čas ukončenia, kedy OneNote dokončí zriaďovanie poznámkového bloku pri prvom spustení.
+
+- **ProvisioningStartedTime** – označuje čas začiatku, kedy OneNote začne zriaďovanie poznámkového bloku pri prvom spustení.
+
+- **ShowSuggestedNotebooks** – označuje, či OneNote zobrazí funkciu navrhovaného poznámkového bloku alebo nie.
+
+#### <a name="officeonenotefirstrunfirstrunfororgid"></a>Office.OneNote.FirstRun.FirstRunForOrgId
+
+Kritický signál, ktorý sa používa na zaistenie, že noví podnikoví používatelia (AAD/ID organizácie) môžu úspešne spustiť a používať OneNote po prvýkrát.  Telemetria spôsobu používania používaná na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu spustiť aplikáciu po prvýkrát, môže to vyvolať incident s vysokou závažnosťou.
+
+- **Attempt** – koľkokrát sa vyžaduje zopakovanie pokusu o prvé spustenie.
+
+- **Error** – objekt chyby OneNotu označuje chybu pri prvom spustení, ak sa vyskytla.
+
+- **FAllowAddingGuide** – označuje, či OneNote umožní vytvoriť sprievodný poznámkový blok alebo nie.
+
+- **IsDefaultNotebookCreated** – označuje, či OneNote vytvoril predvolený poznámkový blok používateľa alebo nie.
+
+- **ProvisioningFailure** – objekt chyby OneNotu označuje chybu zriaďovania, ak sa vyskytla.
+
+- **ProvisioningFinishedTime** – označuje čas ukončenia, kedy OneNote dokončí zriaďovanie poznámkového bloku pri prvom spustení.
+
+- **ProvisioningStartedTime** – označuje čas začiatku, kedy OneNote začne zriaďovanie poznámkového bloku pri prvom spustení.
 
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
@@ -1173,6 +1236,489 @@ Toto sú podtypy údajov v tejto kategórii:
 
 Úspešnosť fungovania aplikácie. Obmedzené na otvorenie a zatvorenie aplikácie a dokumentov, úpravu súborov a zdieľanie súborov (spoluprácu).
 
+#### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcCreateRepublishingLicense.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+#### <a name="ipcgetlicenseproperty"></a>IpcGetLicenseProperty
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcGetLicenseProperty.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicensePropertyType** – typ vlastnosti licencie.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+#### <a name="ipcgetserializedlicenseproperty"></a>IpcGetSerializedLicenseProperty
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcGetSerializedLicenseProperty.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicensePropertyType** – typ vlastnosti licencie.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+#### <a name="ipcgettemplateissuerlist"></a>IpcGetTemplateIssuerList
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcGetTemplateIssuerList.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.AuthCallbackProvided** – označuje, či poskytuje spätné volanie overovania ako vstup volania rozhrania API alebo nie.
+
+- **RMS.ConnectionInfo.ExtranetUrl** – extranetová URL adresa informácií o pripojení.
+
+- **RMS.ConnectionInfo.ExtranetUrl** – intranetová URL adresa informácií o pripojení.
+
+- **RMS.ConnectionMode** – režim pripojenia medzi klientom a serverom služby správy prístupových práv: online alebo offline.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.GuestTenant** – ID hosťovského nájomníka pre používateľa.
+
+- **RMS.HomeTenant** – ID domáceho nájomníka pre používateľa.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Identity.ExtranetUrl** – extranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+ 
+- **RMS.Identity.IntranetUrl** – intranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.Status** – prvé získanie certifikátu Rights Account Certificate zo servera alebo predĺženie certifikátu Rights Account Certificate. 
+
+- **RMS.Identity.Type** – typ používateľského konta, napríklad konto Windows alebo konto Live.
+
+- **RMS.Identity.UserProvided** – označuje, či e-mailová adresa používateľa bola alebo nebola zadaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.IssuerId** – ID servera služby správy prístupových práv, ktorý vydáva certifikát Rights Account Certificate. 
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.RACType** – typ certifikátu Rights Accounts Certificate.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+- **UserInfo.UserObjectId** – ID objektu používateľa.
+
+#### <a name="ipcgettemplatelist"></a>IpcGetTemplateList
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcGetTemplateList.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.AuthCallbackProvided** – označuje, či poskytuje spätné volanie overovania ako vstup volania rozhrania API alebo nie.
+
+- **RMS.ConnectionInfo.ExtranetUrl** – extranetová URL adresa informácií o pripojení.
+
+- **RMS.ConnectionInfo.ExtranetUrl** – intranetová URL adresa informácií o pripojení.
+
+- **RMS.ConnectionMode** – režim pripojenia medzi klientom a serverom služby správy prístupových práv: online alebo offline.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.GuestTenant** – ID hosťovského nájomníka pre používateľa.
+
+- **RMS.HomeTenant** – ID domáceho nájomníka pre používateľa.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Identity.ExtranetUrl** – extranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+ 
+- **RMS.Identity.IntranetUrl** – intranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.Status** – prvé získanie certifikátu Rights Account Certificate zo servera alebo predĺženie certifikátu Rights Account Certificate. 
+
+- **RMS.Identity.Type** – typ používateľského konta, napríklad konto Windows alebo konto Live.
+
+- **RMS.Identity.UserProvided** – označuje, či e-mailová adresa používateľa bola alebo nebola zadaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.IssuerId** – ID servera služby správy prístupových práv, ktorý vydáva certifikát Rights Account Certificate. 
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.RACType** – typ certifikátu Rights Accounts Certificate.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+- **RMS.TemplatesCount** – počet šablón
+
+- **UserInfo.UserObjectId** – ID objektu používateľa.
+
+#### <a name="ipcpcreatelicensefromscratch"></a>IpcpCreateLicenseFromScratch
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcpCreateLicenseFromScratch.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.GuestTenant** – ID hosťovského nájomníka pre používateľa.
+
+- **RMS.HomeTenant** – ID domáceho nájomníka pre používateľa.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Identity.ExtranetUrl** – extranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.IntranetUrl** – intranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.UserProvided** – označuje, či e-mailová adresa používateľa bola alebo nebola zadaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.IssuerId** – ID servera služby správy prístupových práv, ktorý vydáva certifikát Rights Account Certificate. 
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.RACType** – typ certifikátu Rights Accounts Certificate.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+- **RMS.TokenProvided** – označuje, či poskytuje token ako vstup volania API alebo nie. 
+
+- **RMS.UserProvided** – označuje, či poskytuje používateľa ako vstup volania API alebo nie. 
+
+- **UserInfo.UserObjectId** – ID objektu používateľa. 
+
+#### <a name="ipcpcreatelicensefromtemplate"></a>IpcpCreateLicenseFromTemplate
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcpCreateLicenseFromTemplate. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.AuthCallbackProvided** – označuje, či poskytuje spätné volanie overovania ako vstup volania rozhrania API alebo nie.
+
+- **RMS.ConnectionMode** – režim pripojenia medzi klientom a serverom služby správy prístupových práv: online alebo offline.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+- **RMS.TokenProvided** – označuje, či poskytuje token ako vstup volania API alebo nie. 
+
+- **RMS.UserProvided** – označuje, či poskytuje používateľa ako vstup volania API alebo nie. 
+
+#### <a name="ipcpgettemplatelistforuser"></a>IpcpGetTemplateListForUser
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcpGetTemplateListForUser. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.AuthCallbackProvided** – označuje, či poskytuje spätné volanie overovania ako vstup volania rozhrania API alebo nie.
+
+- **RMS.ConnectionInfo.ExtranetUrl** – extranetová URL adresa informácií o pripojení.
+
+- **RMS.ConnectionInfo.ExtranetUrl** – intranetová URL adresa informácií o pripojení.
+
+- **RMS.ConnectionMode** – režim pripojenia medzi klientom a serverom služby správy prístupových práv: online alebo offline.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.GuestTenant** – ID hosťovského nájomníka pre používateľa.
+
+- **RMS.HomeTenant** – ID domáceho nájomníka pre používateľa.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Identity.ExtranetUrl** – extranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.IntranetUrl** – intranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.Status** – prvé získanie certifikátu Rights Account Certificate zo servera alebo predĺženie certifikátu Rights Account Certificate. 
+
+- **RMS.Identity.Type** – typ používateľského konta, napríklad konto Windows alebo konto Live.
+
+- **RMS.Identity.UserProvided** – označuje, či e-mailová adresa používateľa bola alebo nebola zadaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.IssuerId** – ID servera služby správy prístupových práv, ktorý vydáva certifikát Rights Account Certificate. 
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.RACType** – typ certifikátu Rights Accounts Certificate.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+- **RMS.TemplatesCount** – počet šablón.
+
+- **RMS.TokenProvided** – označuje, či poskytuje token ako vstup volania API alebo nie. 
+    
+- **RMS.UserProvided** – označuje, či poskytuje používateľa ako vstup volania API alebo nie. 
+
+- **UserInfo.UserObjectId** – ID objektu používateľa. 
+
+#### <a name="ipcpserializelicense"></a>IpcpSerializeLicense
+
+Zhromažďuje sa, keď sa používateľ pokúsi použiť ochrany IRM na dokument. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcpSerializeLicense.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.AuthCallbackProvided** – označuje, či poskytuje spätné volanie overovania ako vstup volania rozhrania API alebo nie.
+
+- **RMS.ConnectionMode** – režim pripojenia medzi klientom a serverom služby správy prístupových práv: online alebo offline.
+
+- **RMS.ContentId** – ID obsahu dokumentu.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.GuestTenant** – ID hosťovského nájomníka pre používateľa.
+
+- **RMS.HomeTenant** – ID domáceho nájomníka pre používateľa.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Identity.ExtranetUrl** – extranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.IntranetUrl** – intranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.Status** – prvé získanie certifikátu Rights Account Certificate zo servera alebo predĺženie certifikátu Rights Account Certificate. 
+
+- **RMS.Identity.Type** – typ používateľského konta, napríklad konto Windows alebo konto Live.
+
+- **RMS.Identity.UserProvided** – označuje, či e-mailová adresa používateľa bola alebo nebola zadaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.IssuerId** – ID servera služby správy prístupových práv, ktorý vydáva certifikát Rights Account Certificate. 
+
+- **RMS.KeyHandle** – pamäťová adresa popisovača kľúča.
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.RACType** – typ certifikátu Rights Accounts Certificate.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+- **RMS.TokenProvided** – označuje, či poskytuje token ako vstup volania API alebo nie. 
+
+- **RMS.UserProvided** – označuje, či poskytuje používateľa ako vstup volania API alebo nie. 
+
+- **UserInfo.UserObjectId** – ID objektu používateľa. 
+
+#### <a name="ipcsetlicenseproperty"></a>IpcSetLicenseProperty
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcSetLicenseProperty. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla. 
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicensePropertyType** – typ vlastnosti licencie.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.StatusCode** – ID scenára definované rozhraním API
+
+
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
 Generuje sa pri spustení klienta, ak koncový používateľ povolil tabuľu telemetrie balíka Office.  Zhromažďuje informácie o tom, kedy agent telemetrie balíka Office nahral údaje do priečinka na zdieľanie. Primárnym využítím tejto udalosti je monitorovanie stavu agenta telemetrie balíka Office a jej druhotným využitím je odhad používania tabule telemetrie balíka Office.
@@ -1200,7 +1746,21 @@ Zhromažďuje sa len vtedy, ak koncový používateľ (s najväčšou pravdepod
 
 Zhromažďujú sa tieto polia:
 
-  - **Data.CollectionTime** – časová pečiatka toho, kedy sa zaznamenala udalosť zlyhania
+  - **Data.CollectionTime** – časová pečiatka toho, kedy sa zaznamenala udalosť zlyhania.
+
+#### <a name="office_apple_cisauthticketwithidentity"></a>Office_Apple_CISAuthTicketWithIdentity
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zachytávanie zlyhaní generovania tokenov overovania počas nákupu v aplikácii v Macu (udalosť zaznamenáva prijatý kód chyby).  Táto udalosť sa používa na zisťovanie a pomoc pri riešení problémov so zlyhaniami generovania tokenov overovania
+
+Zhromažďujú sa tieto polia:
+
+- **Data_EmptyAuthToken** – zhromažďujeme reťazec označujúci, kde v postupe aktivovania trvalej licencie došlo k chybe.
+
+- **Data_TicketAuthError** – kód chyby označujúci príčinu zlyhania
+
+- **Data_ValidIdentity** – či má klient platnú identitu
+
+
 
 #### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
 
@@ -1310,7 +1870,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data.Doc.AssistedReadingReasons** – nastaví sa, ak je v dokumente zavedená ochrana elektronických údajov
 
-  - **Data.Doc.ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu
+  - **Data.Doc.AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+  - **Data.Doc.ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
   - **Data.Doc.EdpState** – nastavenie ochrany elektronických údajov dokumentu
 
@@ -1416,7 +1978,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data.FullyQualifiedDomainName** – zastarané, náhrada je Data\_Doc\_Fqdn
 
-  - **Data.Input.FileOpenState** – stav požadovaný aplikáciou (Na čítanie alebo Na čítanie a zapisovanie atď.) **-**
+  - **Data.Input.FileOpenState** – stav vyžiadaný aplikáciou (čítanie, čítanie a zápis atď.)
 
   - **Data.Input.OpenAsync** – asynchrónne otvorenie požadované aplikáciou
 
@@ -1562,7 +2124,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data.Doc.AssistedReadingReasons** – nastaví sa, ak je v dokumente zavedená ochrana elektronických údajov
 
-  - **Data.Doc.ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu
+  - **Data.Doc.AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+  - **Data.Doc.ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
   - **Data.Doc.EdpState** – nastavenie ochrany elektronických údajov dokumentu
 
@@ -1817,6 +2381,84 @@ Zhromažďujú sa tieto polia:
 
 - **EventName** – názov udalosti, ktorá sa práve zaznamenáva
 
+#### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
+
+Zaznamenáva sa, keď používateľ otvorí kartu osoby. Používa sa na pozorovanie kritických anomálií v mierach zlyhania spustenia funkcie Live Persona Card.
+
+Zhromažďujú sa tieto polia:
+
+- **Data.appContextId** – náhodne vygenerovaný identifikátor používaný na identifikáciu rôznych kont v tej istej aplikácii.
+
+- **Data.AppInfo.Name** – názov používanej služby (karta profilu)
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor karty osoby
+
+- **Data.cardPersonaCorrelationId** – globálne jedinečný identifikátor konkrétnej osoby zobrazenej na karte
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+
+- **Data.clientType** – typ zariadenia, v ktorom je aplikácia spustená.
+
+- **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
+
+- **Data.exportName** – človekom čitateľný názov akcie používateľa, napr. „OpenedPersonaCard“
+
+- **Data.exportType** – kategória udalosti pre požiadavku na export GDPR
+
+- **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
+
+- **Data.hostAppRing** – kruh, v ktorom bola aplikácia distribuovaná
+
+- **Data.OTelJS.Version** – verzia zapisovača OTel
+
+- **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
+
+- **Data.tenantAadObjectId** – nájomník, ku ktorému je priradené predplatné používateľa. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť.
+
+- **Data.userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft (duplikát poľa Data.UserInfo.Id).
+
+- **Data.UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft. 
+
+- **Data.UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **Data.UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.UserPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft (duplikát poľa Data.UserInfo.MsaId).
+
+- **Data.version** – verzia služby (karta profilu).
+
+- **Data.viewType** – definuje typ zobrazenej karty profilu.
+
+- **NetworkCost** – označuje typ nákladov na sieť (účtované podľa objemu údajov, účtované podľa objemu údajov nad limit atď.).
+
+- **NetworkCountry** – kód krajiny odosielateľa, na základe neočistenej IP adresy klienta.
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne.
+
+    - **bandwidthEstimateMbps** – odhad efektívnej šírky pásma v Mbit/s.
+
+    - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie 
+
+    - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
+
+    - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie. 
+
+    - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
+
+    - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
+
+    - **networkEffectiveType** – efektívny typ sieťového pripojenia, napr. „slow-2g Online“ na identifikáciu, či je používateľ v čase zobrazenia karty osoby pripojený na internet.
+
+    - **networkType** – typ sieťového pripojenia používaného zariadenia.
+
+    - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
+
+    - **roundTripEstimateMs** – odhadovaný efektívny čas výmeny údajov aktuálneho pripojenia v milisekundách.
+
+    - **wasOpenedAsCompactCard** – používa sa na identifikáciu, či karta bola pôvodne otvorená v kompaktnom zobrazení.
+
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -1957,6 +2599,34 @@ Zhromažďujú sa tieto polia:
 -  **TimeToMedianResultInMs** – označuje medián času OneNotu potrebného na vyhľadanie všetkých zhôd.
 
 
+#### <a name="officeonenotestickynotesnotecreated"></a>Office.OneNote.StickyNotes.NoteCreated
+
+Toto je kritický signál, ktorý sa používa na monitorovanie schopnosti používateľov Rýchlych poznámok vytvárať poznámky v aplikácii.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu vytvoriť poznámku, môže to vyvolať incident s vysokou závažnosťou.
+
+Zhromažďujú sa tieto polia:
+
+- **NoteLocalId** – rozlíšiteľný jedinečný identifikátor priradený poznámke, keď používateľ vytvorí poznámku v rámci aplikácii.
+
+- **IsExportable** – príznak označujúci, či táto udalosť bola výsledkom akcie používateľa alebo nie. Mala by byť nastavená na hodnotu True, pretože NoteCreated je akcia spustená používateľom.
+
+- **StickyNotes-SDKVersion** – číslo verzie označujúce verziu aplikácie Rýchle poznámky, ktorú používateľ používa. Umožňuje identifikovať, ktoré verzie produktu zobrazujú problém, aby sa správne určila jeho priorita.
+
+
+#### <a name="officeonenotestickynotesnoteviewed"></a>Office.OneNote.StickyNotes.NoteViewed
+
+Toto je kritický signál, ktorý sa používa na monitorovanie schopnosti používateľov Rýchlych poznámok vytvárať poznámky v aplikácii.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu vytvoriť poznámku, môže to vyvolať incident s vysokou závažnosťou.
+
+Zhromažďujú sa tieto polia:
+
+- **HasImages** – príznak označujúci, či zobrazená poznámka obsahuje poznámku.
+
+- **IsExportable** – príznak označujúci, či táto udalosť bola výsledkom akcie používateľa alebo nie. Mala by byť nastavená na hodnotu True, pretože NoteViewed je akcia spustená používateľom.
+
+- **NoteLocalId** – rozlíšiteľný jedinečný identifikátor priradený poznámke, keď používateľ vytvorí poznámku v rámci aplikácii.
+
+- **StickyNotes-SDKVersion** – číslo verzie označujúce verziu aplikácie Rýchle poznámky, ktorú používateľ používa. Umožňuje identifikovať, ktoré verzie produktu zobrazujú problém, aby sa správne určila jeho priorita.
+
+
 #### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
  
 Táto udalosť zaznamenáva výsledok synchronizácie poznámkového bloku. Používa sa na zistenie počtu jedinečných cieľov synchronizácie vo výpočte skóre synchronizácie OneNotu.
@@ -2040,8 +2710,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
 
-Kritický signál sa používa na zaistenie, aby používatelia OneNotu mohli úspešne spustiť aplikáciu.
-Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu spustiť aplikáciu v okne výkonu, môže to vyvolať incident s vysokou závažnosťou.
+Kritický signál sa používa na zaistenie, aby používatelia OneNotu mohli úspešne spustiť aplikáciu. Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu spustiť aplikáciu v okne výkonu, môže to vyvolať incident s vysokou závažnosťou.
 
 Zhromažďujú sa tieto polia:     Žiadne
 
@@ -2091,13 +2760,6 @@ Zhromažďujú sa tieto polia:
 
   - **Result** – výsledok pokusu o aktualizáciu hesla. Príklad: „Success“ (úspešný pokus) alebo „Fail\_AllowLessSecureAppsDisabled“ (neúspešný pokus)
 
-#### <a name="officeoutlookdesktopprovidersloadproviderlibrary"></a>Office.Outlook.Desktop.Providers.LoadProviderLibrary
-
-Táto udalosť sleduje úspešnosť alebo zlyhanie rozhrania MAPI pri pokuse načítať knižnicu DLL poskytovateľa (napr. contab32.dll, emsmdb32.dll, knižnicu DLL používanú doplnkom). Operácia rozhrania MAPI zodpovedná za načítanie knižníc DLL poskytovateľa je pre základom pre povinné operácie Outlooku ako aj rozšíriteľnosť (cez doplnky alebo vlastných poskytovateľov ukladacieho priestoru/prenosu/adresára). Aktívne monitorujeme úspešné alebo neúspešné výsledky tejto operácie s cieľom zabezpečiť, aby tieto základné funkcie rozhrania MAPI fungovali podľa očakávaní.
-
-Zhromažďujú sa tieto polia:
-
-  - **Štandardná aktivita HVA** bez vlastnej údajovej časti
 
 #### <a name="officeoutlookdesktopstorescreatenewstore"></a>Office.Outlook.Desktop.Stores.CreateNewStore
 
@@ -2193,6 +2855,8 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_AssistedReadingReasons:long** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou
 
+  - **Data_Doc_AsyncOpenKind:long** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
   - **Data\_Doc\_ChunkingType:long** – ako je dokument uložený v SharePointe
 
   - **Data\_Doc\_EdpState:long** – stav ochrany podnikových údajov v dokumente
@@ -2221,11 +2885,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsOcsSupported:bool** – či dokument podporuje spoluautorstvo pomocou novej služby OCS
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäte
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäti
 
-  - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
-  - **Data\_Doc\_IsSyncBacked:bool** – overuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
+  - **Data\_Doc\_IsSyncBacked:bool** – overuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -2239,7 +2901,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_ResourceIdHash:string** – hodnota hash identifikátora zdroja pre dokumenty uložené v cloude
 
-  - **Data\_Doc\_ServerDocId:string** – nezmeniteľný identifikátor pre dokumenty uložené v cloude
+  - **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
+
+  - **Data\_Doc\_ServerDocId:string** – nemenný identifikátor pre dokumenty uložené v cloude
 
   - **Data\_Doc\_ServerProtocol:long** – preddefinovaná množina hodnôt toho, ktorý protokol sa používa na komunikáciu so serverom (HTTP, Cobalt, WOPI atď.)
 
@@ -2327,6 +2991,8 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_AssistedReadingReasons:long** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou
 
+  - **Data_Doc_AsyncOpenKind:long** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
   - **Data\_Doc\_ChunkingType:long** – ako je dokument uložený v SharePointe
 
   - **Data\_Doc\_EdpState:long** – stav ochrany podnikových údajov v dokumente
@@ -2355,11 +3021,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsOcsSupported:bool** – či dokument podporuje spoluautorstvo pomocou novej služby OCS
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäte
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – otvára sa dokument z lokálnej vyrovnávacej pamäti?
 
-  - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
-  - **Data\_Doc\_IsSyncBacked:bool** – zobrazuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
+  - **Data\_Doc\_IsSyncBacked:bool** – otvára sa dokument z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu?
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -2373,7 +3037,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_ResourceIdHash:string** – hodnota hash identifikátora zdroja pre dokumenty uložené v cloude
 
-  - **Data\_Doc\_ServerDocId:string** – nezmeniteľný identifikátor pre dokumenty uložené v cloude
+  - **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
+
+  - **Data\_Doc\_ServerDocId:string** – nemenný identifikátor pre dokumenty uložené v cloude
 
   - **Data\_Doc\_ServerProtocol:long** – preddefinovaná množina hodnôt toho, ktorý protokol sa používa na komunikáciu so serverom (HTTP, Cobalt, WOPI atď.)
 
@@ -2449,6 +3115,8 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_AssistedReadingReasons:long** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou
 
+  - **Data_Doc_AsyncOpenKind:long** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
   - **Data\_Doc\_ChunkingType:long** – ako je dokument uložený v SharePointe
 
   - **Data\_Doc\_EdpState:long** – stav ochrany podnikových údajov v dokumente
@@ -2477,11 +3145,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsOcsSupported:bool** – či dokument podporuje spoluautorstvo pomocou novej služby OCS
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäte
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäti
 
-  - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
-  - **Data\_Doc\_IsSyncBacked:bool** – zobrazuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
+  - **Data\_Doc\_IsSyncBacked:bool** – otvára sa dokument z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu?
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -2495,7 +3161,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_ResourceIdHash:string** – hodnota hash identifikátora zdroja pre dokumenty uložené v cloude
 
-  - **Data\_Doc\_ServerDocId:string** – nezmeniteľný identifikátor pre dokumenty uložené v cloude
+  - **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
+
+  - **Data\_Doc\_ServerDocId:string** – nemenný identifikátor pre dokumenty uložené v cloude
 
   - **Data\_Doc\_ServerProtocol:long** – preddefinovaná množina hodnôt toho, ktorý protokol sa používa na komunikáciu so serverom (HTTP, Cobalt, WOPI atď.)
 
@@ -2591,6 +3259,8 @@ Zhromažďujú sa tieto polia:
 
 - **Data_DstDoc_AssistedReadingReasons:long** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
 
+- **Data_DstDoc_AsyncOpenKind:long** – označuje, či bola otvorená verzia nového cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
 - **Data_DstDoc_ChunkingType:long** – ako je dokument uložený v SharePointe.
 
 - **Data_DstDoc_EdpState:long** – stav ochrany podnikových údajov v dokumente.
@@ -2674,6 +3344,8 @@ Zhromažďujú sa tieto polia:
 - **Data_SrcDoc_AccessMode:long** – ako bol otvorený tento dokument (iba na čítanie | čítanie a zapisovanie).
 
 - **Data_SrcDoc_AssistedReadingReasons:long** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
+
+- **Data_SrcDoc_AsyncOpenKind:long** – označuje, či bola otvorená verzia pôvodného cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
 
 - **Data_SrcDoc_ChunkingType:long** – ako je dokument uložený v SharePointe. 
 
@@ -2768,6 +3440,8 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_AssistedReadingReasons:long** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
 
+- **Data_Doc_AsyncOpenKind:long** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
 - **Data_Doc_ChunkingType:long** – ako je dokument uložený v SharePointe.
 
 - **Data_Doc_EdpState:long** – stav ochrany podnikových údajov v dokumente.
@@ -2798,9 +3472,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäti.
 
-- **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
-- **Data_Doc_IsSyncBacked:bool** – otvára sa dokument z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu?
+- **Data_Doc_IsSyncBacked:bool** – označuje, či sa dokument otvára z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu
 
 - **Data_Doc_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.).
 
@@ -2813,6 +3485,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_ReadOnlyReasons:long** – preddefinovaná množina hodnôt dôvodu označenia dokumentu Len na čítanie (uzamknutý na serveri, konečná verzia dokumentu, úpravy chránené heslom atď.).
 
 - **Data_Doc_ResourceIdHash:string** – hodnota hash identifikátora zdroja pre dokumenty uložené v cloude.
+
+- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
 - **Data_Doc_ServerDocId:string** – nezmeniteľný identifikátor pre dokumenty uložené v cloude.
 
@@ -2843,6 +3517,8 @@ Zhromažďujú sa tieto polia:
 - **Data_DstDoc_AccessMode:long** – ako bol otvorený tento dokument (iba na čítanie | čítanie a zapisovanie).
 
 - **Data_DstDoc_AssistedReadingReasons:long** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
+
+- **Data_DstDoc_AsyncOpenKind:long** – označuje, či bola otvorená verzia nového cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
 
 - **Data_DstDoc_ChunkingType:long** – ako je dokument uložený v SharePointe.
 
@@ -2925,6 +3601,8 @@ Zhromažďujú sa tieto polia:
 - **Data_SrcDoc_AccessMode:long** – ako bol otvorený tento dokument (iba na čítanie | čítanie a zapisovanie).
 
 - **Data_SrcDoc_AssistedReadingReasons:long** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
+
+- **Data_SrcDoc_AsyncOpenKind:long** – označuje, či bola otvorená verzia pôvodného cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
 
 - **Data_SrcDoc_ChunkingType:long** – ako je dokument uložený v SharePointe.
 
@@ -3398,6 +4076,68 @@ Zhromažďujú sa tieto polia:
 
 - **Data.warningMessage** – upozorňujúca správa hlásená službou.
 
+
+#### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
+
+Táto udalosť sleduje zoskupovanie funkcií pre používateľov. Pomáha nám určiť úspech alebo neúspech skupín funkcií.
+
+Zhromažďujú sa tieto polia:
+
+  - **Data\_Enable:bool** – hodnota true označuje, že funkcia je povolená pre aktuálneho používateľa
+
+  - **Data\_Feature:string** – názov funkcie
+
+  - **Data\_Flighted:bool** – hodnota true označuje, že funkcia je povolená
+
+  - **Data\_Licensed:bool** – hodnota true označuje, že na funkciu sa vzťahuje kontrola licencie
+
+  - **Data\_Subscriber:bool** – hodnota true označuje, že používateľ má predplatenú licenciu
+
+#### <a name="officevisiosharedrefreshsmartdiagram"></a>Office.Visio.Shared.RefreshSmartDiagram
+
+Táto udalosť zachytáva zlyhania obnovenia diagramu, keď je súbor vytvorený cez DV. Pomáha nám to ladiť zlyhania a problémy v obnovení údajov v diagrame DV.
+
+Zhromažďujú sa tieto polia:
+
+  - **Data\_ConnectorsBasedOnSequence:bool** – má hodnotu true, ak obnovený diagram bol pôvodne vytvorený pomocou konektora na základe možnosti postupnosti
+
+  - **Data\_DialogError**:**string** – chyba počas obnovovania inteligentného diagramu
+
+  - **Data\_FileError:string** – reťazec chyby, keď pripojený excelový súbor je neplatný
+
+  - **Data\_OverwriteSelected**:**bool** – má hodnotu true, ak používateľ počas obnovenia vybral možnosť prepísania diagramu
+
+  - **Data\_WarningShown**:**bool** – má hodnotu true, ak sa počas obnovenia údajov používateľovi zobrazila nejaká výstraha
+
+#### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
+
+Táto udalosť zachytáva zlyhania spätného zapisovania Excelu, keď je súbor vytvorený cez DV. Pomáha nám to ladiť zlyhania a problémy v spätnom zapisovaní údajov do Excelu v diagrame DV.
+
+Zhromažďujú sa tieto polia:
+
+  - **Data\_ConnectorsBasedOnSequence:bool** – hodnota true znamená, že konektory sú vytvorené na základe nastavení postupnosti
+
+  - **Data\_DataSourceType:string** – toto pole označuje, či je diagram vytvorený z tabuľky alebo z vlastného rozsahu
+
+  - **Data\_DialogError:string** – typ vlastnej chyby počas vytvárania inteligentného diagramu prostredníctvom Excelu
+
+  - **Data\_NoOfShapesAdded:int** – počet tvarov pridaných počas funkcie spätného zapisovania do Excelu
+
+  - **Data\_NoOfShapesDeleted:int** – počet tvarov odstránených počas funkcie spätného zapisovania do Excelu
+
+  - **Data\_OverwriteSelected:bool** – má hodnotu true, ak používateľ vybral možnosť prepísania údajov
+
+  - **Data\_SourceDataModified:bool** – hodnota true označuje, že zdrojové údaje sú upravené
+
+  - **Data\_WarningShown:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha aktualizácie údajov
+
+  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha z dôvodu prítomnosti vzorca v Exceli
+
+  - **Data\_WarningShownToAddNextStepID:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha z dôvodu chýbajúceho identifikátora ďalšieho kroku v Exceli
+
+  - **Data\_WarningShownToConvertToTable:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha na skonvertovanie excelových údajov do tabuľkového formátu
+
+
 #### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
 
 Táto udalosť zaznamenáva štatistické údaje dokumentu pre každý dokument, keď sa Office Word zavrie alebo pozastaví.  Udalosť sa používa na koreláciu úprav dokumentu, veľkosti dokumentu atď. s chybami ukladania dokumentu, zdieľania dokumentu a online spolupráce na dokumente.
@@ -3474,6 +4214,130 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_UsesCustomTemplate** – označuje, či bol dokument vytvorený pomocou vlastnej šablóny
 
+#### <a name="officewordfileopenuserinitiatedopen"></a>Office.Word.FileOpen.UserInitiatedOpen 
+
+Táto udalosť označuje, že Office Word otvára dokument na základe akcie používateľa, nie priamo z programu. Obsahuje aj kritické údaje o výkone otvárania súboru a je udalosťou spustenia aplikácie z pohľadu používateľa.  Udalosť monitoruje, či otvorenie súboru funguje podľa očakávaní. Používa sa aj na vypočítanie počtu aktívnych používateľov a zariadení za mesiac a metriky spoľahlivosti cloudu. 
+ 
+Zhromažďujú sa tieto polia:
+
+- **Data_AddDocTelemRes** – hlási, či sme dokázali správne vyplniť ďalšie hodnoty týkajúce sa telemetrie dokumentu v udalosti. Používa sa na diagnostiku kvality údajov. 
+
+- **Data_BytesAsynchronous** – počet bajtov (komprimovaných), bez ktorých podľa nás dokážeme otvoriť dokument, ak by sme ich dostali predtým, než používateľ chce začať upravovať, prípadne uložiť. 
+
+- **Data_BytesAsynchronousWithWork** – počet bajtov (komprimovaných), bez ktorých by sme možno dokázali otvoriť súbor, ale vyžadovalo by to značné investície do kódu. 
+
+- **Data_BytesSynchronous** – počet bajtov (komprimovaných), ktoré musíme mať predtým, než môžeme začať otvárať súbor. 
+
+- **Data_BytesUnknown** – počet bajtov v častiach dokumentu, ktoré podľa nás nenájdeme. 
+
+- **Data_Doc_AccessMode** – označuje, či je dokument iba na čítanie alebo sa dá upraviť. 
+
+- **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou. 
+
+- **Data_Doc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu. 
+
+- **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu. 
+
+- **Data_Doc_Ext** – prípona dokumentu (docx, xlsb, pptx atď.). 
+
+- **Data_Doc_FileFormat** – verzia protokolu formátu súboru. 
+
+- **Data_Doc_Fqdn** – názov domény OneDrivu alebo SharePointu Online. 
+
+- **Data_Doc_FqdnHash** – jednosmerná hodnota hash zákazníkom identifikovateľného názvu domény. 
+
+- **Data_Doc_IdentityTelemetryId** – jednosmerná hodnota hash identity používateľa, ktorá sa používa na vykonanie otvorenia. 
+
+- **Data_Doc_InitializationScenario** – zaznamenáva, ako bol dokument otvorený. 
+
+- **Data_Doc_IOFlags** – hlási údaje o príznakoch vo vyrovnávacej pamäti, ktoré sa používajú na nastavenie možností požiadavky. 
+
+- **Data_Doc_IrmRights** – akcie povolené politikou ochrany elektronických údajov, ktorá platí pre dokument alebo používateľa. 
+
+- **Data_Doc_IsIncrementalOpen** – príznak, ktorý označuje, že dokument bol otvorený prírastkovo. 
+
+- **Data_Doc_IsOcsSupported** – príznak, ktorý označuje, že dokument je podporovaný v službe spolupráce. 
+
+- **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline. 
+
+- **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu. 
+
+- **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint). 
+
+- **Data_Doc_LocationDetails** – označuje, ktorý známy priečinok poskytol lokálne uložený dokument. 
+
+- **Data_Doc_NumberCoAuthors** – počet používateľov v relácii spoločných úprav. 
+
+- **Data_Doc_PasswordFlags** – označuje množinu príznakov hesla Na čítanie alebo Na čítanie a zapisovanie. 
+
+- **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie. 
+
+- **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov. 
+
+- **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov. 
+
+- **Data_Doc_ServerProtocol** – verzia protokolu použitá na komunikáciu so službou. 
+
+- **Data_Doc_ServerType** – typ servera, ktorý ponúka službu (SharePoint, OneDrive, WOPI atď.). 
+
+- **Data_Doc_ServerVersion** – verzia servera, ktorý ponúka službu. 
+
+- **Data_Doc_SessionId** – verzia servera, ktorý ponúka službu. 
+
+- **Data_Doc_SharePointServiceContext** – diagnostické informácie z požiadaviek v SharePointe Online. 
+
+- **Data_Doc_SizeInBytes** – indikátor veľkosti dokumentu. 
+
+- **Data_Doc_SpecialChars** – indikátor špeciálnych znakov v URL adrese alebo ceste k dokumentu. 
+
+- **Data_Doc_StreamAvailability** – indikátor označujúci, či je stream dokumentu k dispozícii alebo vypnutý. 
+
+- **Data_Doc_SyncBackedType** – indikátor typu dokumentu (lokálne alebo podľa služby). 
+
+- **Data_Doc_UrlHash** – jednosmerná hodnota hash na vytvorenie identifikátora Naïve dokumentu. 
+
+- **Data_Doc_WopiServiceId** – obsahuje jedinečný identifikátor poskytovateľa služieb WOPI. 
+
+- **Data_EditorDisablingRename** – identifikátor prvého editora, ktorý spôsobil vypnutie možnosti premenovania. 
+
+- **Data_EditorsCount** – počet editorov v dokumente. 
+
+- **Data_ForceReadWriteReason** – celočíselná hodnota vyjadrujúca príčinu vynútenia prechodu súboru do režimu čítania/zapisovania. 
+
+- **Data_FSucceededAfterRecoverableFailure** – označuje, že otvorenie bolo úspešné po oprave zlyhania počas otvárania dokumentu. 
+
+- **Data_LastLoggedTag** – jedinečná značka pre lokalitu volania kódu, ktorá sa používa na identifikovanie, keď pokus o otvorenie zlyhá dvakrát (používa sa na diagnostiku kvality údajov). 
+
+- **Data_LinkStyles** – označuje, či vytvárame prepojenie na štýly šablóny. 
+
+- **Data_MainPdod** – identifikátor dokumentu v procese programu Office Word. 
+
+- **Data_Measurements** – šifrovaný reťazec obsahujúci časové rozdelenie jednotlivých častí otvárania. Používa sa na diagnostikovanie výkonu otvárania. 
+
+- **Data_MoveDisabledReason** – chyba, pri ktorej sa vypne možnosť premiestnenia dokumentu. 
+
+- **Data_MoveFlightEnabled** – označuje, či je zapnutá skupina funkcií premiestňovania. 
+
+- **Data_OpenInitiateKind** – typ scenára, v ktorom používatelia spustili túto operáciu otvorenia súboru. 
+
+- **Data_PartsUnknown** – počet častí dokumentu, pre ktoré sa nám nepodarilo získať údaje. 
+
+- **Data_RecoverableFailureInitiationLocationTag** – jedinečná značka pre lokalitu volania kódu, ktorá sa používa na identifikovanie miesta v kóde, kde sme sa pokúsili opraviť súbor pred jeho otvorením. 
+
+- **Data_RenameDisabledReason** – chyba, ktorá spôsobuje vypnutie možnosti premenovania tohto dokumentu. 
+
+- **Data_RenameFlightEnabled** – či je zapnutá skupina funkcií premenovania. 
+
+- **Data_SecondaryTag** – jedinečná značka pre lokalitu volania kódu, ktorá sa používa na pridanie doplňujúcich údajov o zlyhaní na otvorenie. 
+
+- **Data_TemplateFormat** – formát súboru šablóny, na ktorej je dokument založený. 
+
+- **Data_UsesNormal** – označuje, či otvorený dokument je založený na normálnej šablóne. 
+
+- **Data_VerboseMeasurements** – šifrovaný reťazec obsahujúci podrobné časové rozdelenie jednotlivých častí otvárania.  Používa sa na meranie výkonu, je zapnutý len pre interné okruhy. 
+
+
+
 #### <a name="officewordfilesaveactcmdgosubsaveas"></a>Office.Word.FileSave.ActCmdGosubSaveAs
 
 Táto udalosť označuje, že používateľ ukladá zmeny do nového dokumentu. Udalosť monitoruje, či ukladanie do nového dokumentu funguje podľa očakávaní. Používa sa aj na vypočítanie počtu aktívnych používateľov a zariadení za mesiac a metriky spoľahlivosti cloudu.
@@ -3487,8 +4351,10 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_AccessMode** – označuje, či je dokument iba na čítanie alebo sa dá upraviť.
 
 - **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
-    
-- **Data_Doc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+
+- **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+- **Data_Doc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu.
 
@@ -3514,8 +4380,6 @@ Zhromažďujú sa tieto polia:
     
 - **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline.
 
-- **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
 - **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu.
 
 - **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
@@ -3529,6 +4393,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie.
 
 - **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
+
+- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
 - **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
 
@@ -3578,8 +4444,10 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_AccessMode** – označuje, či je dokument iba na čítanie alebo sa dá upraviť.
 
 - **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
+
+- **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
     
-- **Data_Doc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+- **Data_Doc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu.
 
@@ -3605,8 +4473,6 @@ Zhromažďujú sa tieto polia:
     
 - **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline.
 
-- **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
 - **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu.
 
 - **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
@@ -3620,6 +4486,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie.
 
 - **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
+
+- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
 - **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
 
@@ -3676,7 +4544,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
 
-- **Data_Doc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+- **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+- **Data_Doc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu.
 
@@ -3702,8 +4572,6 @@ Zhromažďujú sa tieto polia:
     
 - **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline.
 
-- **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
 - **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu.
 
 - **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
@@ -3717,6 +4585,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie.
 
 - **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
+
+- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
 - **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
 
@@ -3795,7 +4665,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
 
-- **Data_Doc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+- **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+- **Data_Doc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu.
 
@@ -3819,8 +4691,6 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline.
 
-- **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
 - **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu.
 
 - **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
@@ -3832,6 +4702,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie.
 
 - **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
+
+- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
 - **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
 
@@ -3855,9 +4727,11 @@ Zhromažďujú sa tieto polia:
 
 - **Data_DstDoc_AccessMode** – označuje, či je cieľový dokument iba na čítanie alebo editovateľný.
 
-- **Data_DstDoc_AssistedReadingReasons** – preddefinovaná množina hodnôt toho, prečo bol cieľový dokument otvorený v režime asistovaného čítania.
+- **Data_DstDoc_AssistedReadingReasons** – preddefinovaná množina hodnôt toho, prečo bol cieľový dokument otvorený v režime čítania s asistenciou.
+
+- **Data_DstDoc_AsyncOpenKind** – označuje, či bola otvorená verzia nového cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
     
-- **Data_DstDoc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+- **Data_DstDoc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_DstDoc_EdpState** – nastavenie ochrany elektronických údajov cieľového dokumentu.
 
@@ -3943,7 +4817,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_SrcDoc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
 
-- **Data_SrcDoc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+- **Data_SrcDoc_AsyncOpenKind** – označuje, či bola otvorená verzia pôvodného cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+- **Data_SrcDoc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_SrcDoc_EdpState** – nastavenie ochrany elektronických údajov zdrojového dokumentu.
 
@@ -4010,66 +4886,6 @@ Zhromažďujú sa tieto polia:
 - **Data_SrcDocIsUnnamedOrNew** – označuje, či ukladaný dokument je nový.
 
 
-#### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
-
-Táto udalosť sleduje zoskupovanie funkcií pre používateľov. Pomáha nám určiť úspech alebo neúspech skupín funkcií.
-
-Zhromažďujú sa tieto polia:
-
-  - **Data\_Enable:bool** – hodnota true označuje, že funkcia je povolená pre aktuálneho používateľa
-
-  - **Data\_Feature:string** – názov funkcie
-
-  - **Data\_Flighted:bool** – hodnota true označuje, že funkcia je povolená
-
-  - **Data\_Licensed:bool** – hodnota true označuje, že na funkciu sa vzťahuje kontrola licencie
-
-  - **Data\_Subscriber:bool** – hodnota true označuje, že používateľ má predplatenú licenciu
-
-#### <a name="officevisiosharedrefreshsmartdiagram"></a>Office.Visio.Shared.RefreshSmartDiagram
-
-Táto udalosť zachytáva zlyhania obnovenia diagramu, keď je súbor vytvorený cez DV. Pomáha nám to ladiť zlyhania a problémy v obnovení údajov v diagrame DV.
-
-Zhromažďujú sa tieto polia:
-
-  - **Data\_ConnectorsBasedOnSequence:bool** – má hodnotu true, ak obnovený diagram bol pôvodne vytvorený pomocou konektora na základe možnosti postupnosti
-
-  - **Data\_DialogError**:**string** – chyba počas obnovovania inteligentného diagramu
-
-  - **Data\_FileError:string** – reťazec chyby, keď pripojený excelový súbor je neplatný
-
-  - **Data\_OverwriteSelected**:**bool** – má hodnotu true, ak používateľ počas obnovenia vybral možnosť prepísania diagramu
-
-  - **Data\_WarningShown**:**bool** – má hodnotu true, ak sa počas obnovenia údajov používateľovi zobrazila nejaká výstraha
-
-#### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
-
-Táto udalosť zachytáva zlyhania spätného zapisovania Excelu, keď je súbor vytvorený cez DV. Pomáha nám to ladiť zlyhania a problémy v spätnom zapisovaní údajov do Excelu v diagrame DV.
-
-Zhromažďujú sa tieto polia:
-
-  - **Data\_ConnectorsBasedOnSequence:bool** – hodnota true znamená, že konektory sú vytvorené na základe nastavení postupnosti
-
-  - **Data\_DataSourceType:string** – toto pole označuje, či je diagram vytvorený z tabuľky alebo z vlastného rozsahu
-
-  - **Data\_DialogError:string** – typ vlastnej chyby počas vytvárania inteligentného diagramu prostredníctvom Excelu
-
-  - **Data\_NoOfShapesAdded:int** – počet tvarov pridaných počas funkcie spätného zapisovania do Excelu
-
-  - **Data\_NoOfShapesDeleted:int** – počet tvarov odstránených počas funkcie spätného zapisovania do Excelu
-
-  - **Data\_OverwriteSelected:bool** – má hodnotu true, ak používateľ vybral možnosť prepísania údajov
-
-  - **Data\_SourceDataModified:bool** – hodnota true označuje, že zdrojové údaje sú upravené
-
-  - **Data\_WarningShown:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha aktualizácie údajov
-
-  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha z dôvodu prítomnosti vzorca v Exceli
-
-  - **Data\_WarningShownToAddNextStepID:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha z dôvodu chýbajúceho identifikátora ďalšieho kroku v Exceli
-
-  - **Data\_WarningShownToConvertToTable:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha na skonvertovanie excelových údajov do tabuľkového formátu
-
 #### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
 
 Táto udalosť označuje, že Office Word upravuje dokument, v ktorom sa zmenil interný stav dokumentu na zmenený (dirty). Umožňuje spoločnosti Microsoft vyhodnotiť stav funkcie úpravy dokumentu. Udalosť predstavuje signál úprav používateľa. Používa sa aj na vypočítanie počtu aktívnych používateľov a zariadení za mesiac.
@@ -4095,9 +4911,254 @@ Zhromažďujú sa tieto polia:
   - **Data\_UrlHash** – hodnota hash cesty dokumentu
 
   - **Data\_ViewKind** – typ zobrazenia Wordu
+
+
+#### <a name="parselicenseop"></a>ParseLicenseOp
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM.  Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú pri vykonávaní operácie analýzy licencií. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera zapisovača.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.Duration** – celkový čas na dokončenie operácie.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z operácie, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.Result** – úspech alebo zlyhanie operácie.
+
+- **RMS.ScenarioId** – ID scenára definované klientom služby správy prístupových práv.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv. 
+
+- **RMS.StatusCode** – kód stavu výsledku operácie.
+
+- **RMS.VerifyCertChainDuration** – čas trvania na overenie reťazca certifikátu.
+
+- **RMS.VerifySignatureDuration** – čas trvania na overenie podpisu.
+
+#### <a name="storeop"></a>StoreOp
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM.  Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú pri vykonávaní operácie priestoru na ukladanie licencií služby správy prístupových práv. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.ContentId** – ID obsahu v licencii koncového používateľa.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z operácie, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.OperationName** – názov operácie
+
+- **RMS.Result** – úspech alebo zlyhanie operácie.
+
+- **RMS.ScenarioId** – ID scenára definované klientom služby správy prístupových práv.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv. 
+
+- **RMS.StatusCode** – kód stavu výsledku operácie.
+
+- **RMS.Url** – URL adresa servera služby správy prístupových práv.
+
+
 ### <a name="application-status-and-boot-subtype"></a>*Podtyp Stav aplikácie a podtyp spustenia*
 
 Určenie, či sa vyskytli konkrétne udalosti funkcie, napríklad spustenie alebo ukončenie, a či je funkcia spustená.
+
+#### <a name="dnslookupop"></a>DnsLookupOp
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM.  Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú pri vykonávaní operácie vyhľadania informácií o serveri DNS. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.Duration** – celkový čas na dokončenie operácie.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z operácie, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.NoOfDomainsSearched** – Počet prehľadaných domén.  
+
+- **RMS.NoOfDomainsSkipped** – Počet vynechaných domén. 
+
+- **RMS.Result** – úspech alebo zlyhanie operácie.
+
+- **RMS.ScenarioId** – ID scenára definované klientom služby správy prístupových práv.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv. 
+
+- **RMS.StatusCode** – kód stavu výsledku operácie.
+
+#### <a name="getuserop"></a>GetUserOp
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM.  Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú pri vykonávaní operácie získavania používateľských certifikátov. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.ContentId** – ID obsahu.
+
+- **RMS.Duration** – celkový čas na dokončenie operácie.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z operácie.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.Result** – úspech alebo zlyhanie operácie.
+
+- **RMS.ScenarioId** – ID scenára definované klientom služby správy prístupových práv.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv. 
+
+- **RMS.StatusCode** – kód stavu výsledku operácie.
+
+- **RMS.Type** – typ používateľských informácií.
+
+#### <a name="httpop"></a>HttpOp
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM.  Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú pri vykonávaní operácie požiadavky http.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+    
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.CallBackStatus** – stav vráteného výsledku spätného volania overovania.
+
+- **RMS.CallbackTime** – čas trvania spätného volania overovania. 
+
+- **RMS.CorrelationId** – ID korelácie požiadavky http
+
+- **RMS.DataSize** – veľkosť údajov požiadavky HTTP
+
+- **RMS.Duration** – celkový čas na dokončenie operácie.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z operácie, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha vnorená operácia HTTP. 
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.OperationName** – názov operácie.
+
+- **RMS.Result** – úspech alebo zlyhanie operácie.
+
+- **RMS.ScenarioId** – ID scenára definované klientom služby správy prístupových práv.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv. 
+
+- **RMS.StatusCode** – kód stavu výsledku operácie.
+
+- **RMS.Url** – URL adresa servera služby správy prístupových práv.
+
+- **RMS.WinhttpCallbackStatus** – stav výsledku spätného volania winhttp.
+
+#### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcCreateOauth2Token.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+    
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
 
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
@@ -4115,9 +5176,11 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_AppSizeWidth** – šírka okna doplnku
 
-  - **Data\_AppURL** – URL adresa doplnku; zaznamenáva úplnú URL adresu doplnkov z obchodu a URL doménu pre doplnky iné ako z obchodu
+  - **Data\_AppURL** – URL adresa doplnku; zaznamenáva úplnú URL adresu doplnkov z obchodu a URL doménu pre doplnky iné ako z obchodu.
 
-  - **Data\_AuthorsCount:integer** – počet autorov, ktorí upravovali dokument v tejto relácií
+  - **Data_Doc_AsyncOpenKind:long** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+  - **Data\_AuthorsCount:integer** – počet autorov, ktorí upravovali dokument v tejto relácií.
 
   - **Data\_BackgroundPages:integer** – počet strán na pozadí v diagrame
 
@@ -4147,9 +5210,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsIncrementalOpen:bool** – či bol dokument otvorený prírastkovo (novou funkciou, ktorá otvorí dokument bez potreby stiahnutia celého dokumentu)
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – overuje, či sa dokument otvára z lokálnej vyrovnávacej pamäte
-
-  - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – či sa dokument otvára z lokálnej vyrovnávacej pamäte
 
   - **Data\_Doc\_IsSyncBacked:bool** – má hodnotu true, ak ide o serverový dokument, ktorý existuje lokálne a je synchronizovaný so serverom (napr. prostredníctvom klientskej aplikácie OneDrive alebo ODB)
 
@@ -4157,7 +5218,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_LocationDetails:long** – preddefinovaná množina hodnôt podrobnejšieho umiestnenia (priečinok pre dočasné súbory, priečinok na ukladanie stiahnutých súborov, dokumenty vo OneDrive, obrázky vo OneDrive)
 
-  - **Data\_Doc\_ResourceIdHash:string** – hodnota hash identifikátora zdroja pre dokumenty uložené v cloude
+  - **Data\_Doc\_ResourceIdHash:string** – hodnota hash identifikátora zdroja pre dokumenty uložené v cloude.
+
+  - **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
   - **Data\_Doc\_ServerDocId:string** – nemenný identifikátor pre dokumenty uložené v cloude
 
@@ -4213,7 +5276,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_HasCustPatterns:bool** – má hodnotu true, ak súbor obsahuje vlastné vzory
 
-  - **Data\_HasDynConn:bool** – má hodnotu true, ak dokument obsahuje dynamické pripojenie
+  - **Data\_HasDynConn:bool** – má hodnotu true, ak dokument obsahuje dynamické pripojenie.
 
   - **Data\_HasScaledPages:bool** – má hodnotu true, ak dokument obsahuje strany so zmenou mierky
 
@@ -4493,7 +5556,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_AccessMode:long** – ako bol otvorený tento dokument (iba na čítanie alebo na čítanie a zapisovanie)
 
-  - **Data\_Doc\_AssistedReadingReasons:long** – preddefinovaná množina hodnôt toho, prečo bol dokument otvorený v režime asistovaného čítania
+  - **Data\_Doc\_AssistedReadingReasons:long** – preddefinovaná množina hodnôt toho, prečo bol dokument otvorený v režime čítania s asistenciou.
+
+  - **Data_Doc_AsyncOpenKind:long** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
 
   - **Data\_Doc\_ChunkingType:long** – ako je dokument uložený v SharePointe
 
@@ -4523,11 +5588,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsOcsSupported:bool** – určuje, či dokument podporuje spolutvorbu pomocou novej služby OCS
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – zobrazuje, či sa dokument otvára z lokálnej vyrovnávacej pamäte
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool** – či sa dokument otvára z lokálnej vyrovnávacej pamäte
 
-  - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
-  - **Data\_Doc\_IsSyncBacked:bool** – či sa dokument otvára z priečinka, ktorý používa aplikáciu OneDrivu na synchronizáciu a zálohovanie
+  - **Data\_Doc\_IsSyncBacked:bool** – či sa dokument otvára z priečinka, ktorý používa aplikáciu synchronizácie zálohovania OneDrivu
 
   - **Data\_Doc\_Location:long** – preddefinovaná množina hodnôt miesta uloženia dokumentu (lokálne, SharePoint, WOPI, sieť atď.)
 
@@ -4540,6 +5603,8 @@ Zhromažďujú sa tieto polia:
   - **Data\_Doc\_ReadOnlyReasons:long** – preddefinovaná množina hodnôt dôvodu označenia dokumentu Len na čítanie (uzamknutý na serveri, konečná verzia dokumentu, úpravy chránené heslom atď.)
 
   - **Data\_Doc\_ResourceIdHash:string** – hodnota hash identifikátora zdroja pre dokumenty uložené v cloude
+
+  - **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
   - **Data\_Doc\_ServerDocId:string** – nemenný identifikátor pre dokumenty uložené v cloude
 
@@ -4959,7 +6024,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
 
-- **Data_Doc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+- **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+- **Data_Doc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu.
 
@@ -4985,8 +6052,6 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline.
 
-- **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
 - **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu.
 
 - **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
@@ -5000,6 +6065,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie.
 
 - **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
+
+- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
 - **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov. 
 
@@ -5082,7 +6149,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
 
-- **Data_Doc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+- **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+- **Data_Doc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu.
 
@@ -5108,8 +6177,6 @@ Zhromažďujú sa tieto polia:
     
 - **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline.
 
-- **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
 - **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu.
 
 - **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
@@ -5123,6 +6190,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie.
 
 - **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
+
+- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
 - **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
 
@@ -5201,9 +6270,11 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_AccessMode** – označuje, či je dokument iba na čítanie alebo editovateľný
 
-  - **Data\_Doc\_AssistedReadingReasons** – preddefinovaná množina hodnôt toho, prečo bol dokument otvorený v režime asistovaného čítania
+  - **Data\_Doc\_AssistedReadingReasons** – preddefinovaná množina hodnôt toho, prečo bol dokument otvorený v režime čítania s asistenciou.
 
-  - **Data\_Doc\_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu
+  - **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+  - **Data\_Doc\_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu
 
   - **Data\_Doc\_EdpState** – nastavenie ochrany elektronických údajov dokumentu
 
@@ -5229,8 +6300,6 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline
 
-  - **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
   - **Data\_Doc\_IsSyncBacked** – príznak, ktorý označuje, že v počítači existuje automaticky synchronizovaná kópia dokumentu
 
   - **Data\_Doc\_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.)
@@ -5244,6 +6313,8 @@ Zhromažďujú sa tieto polia:
   - **Data\_Doc\_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie
 
   - **Data\_Doc\_ResourceIdHash** – anonymizovaný identifikátor dokumentu, ktorý sa používa na diagnostiku problémov
+
+  - **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
   - **Data\_Doc\_ServerDocId** – nemenný anonymizovaný identifikátor dokumentu, ktorý sa používa na diagnostiku problémov
 
@@ -5326,7 +6397,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
 
-- **Data_Doc_ChunkingType** – jednotky slúžiace na prírastkové otvorenie dokumentu.
+- **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
+
+- **Data_Doc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
 
 - **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu.
 
@@ -5352,8 +6425,6 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline.
 
-- **Data_Doc_IsRtcAlwaysOn** – má hodnotu true, ak je kanál v reálnom čase (RTC) pre tento súbor vždy zapnutý.
-
 - **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu.
 
 - **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
@@ -5367,6 +6438,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie.
 
 - **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
+
+- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
 
 - **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov. 
 
@@ -5423,6 +6496,83 @@ Zhromažďujú sa tieto polia:
 - **Data_TemplateFormat** – formát súboru šablóny, na ktorej je dokument založený.
 
 - **Data_UsesNormal** – označuje, či otvorený dokument je založený na normálnej šablóne.
+
+
+#### <a name="renewuserop"></a>RenewUserOp
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM.  Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú pri vykonávaní operácie obnovenia používateľských certifikátov. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera zapisovača.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.Duration** – celkový čas na dokončenie operácie.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z operácie, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.Result** – úspech alebo zlyhanie operácie.
+
+- **RMS.ScenarioId** – ID scenára definované klientom služby správy prístupových práv.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv. 
+
+- **RMS.StatusCode** – kód stavu výsledku operácie.
+
+- **RMS.Type** – typ používateľských informácií.
+
+#### <a name="servicediscoveryop"></a>ServiceDiscoveryOp
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM.  Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú pri vykonávaní operácie zisťovania služby. 
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.Duration** – celkový čas na dokončenie operácie.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z operácie, ak sa vyskytla.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.OperationName** – názov operácie
+
+- **RMS.Result** – úspech alebo zlyhanie operácie.
+
+- **RMS.ScenarioId** – ID scenára definované klientom služby správy prístupových práv.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv. 
+
+- **RMS.StatusCode** – kód stavu výsledku operácie.
 
 
 ### <a name="office-accessibility-configuration-subtype"></a>*Podtyp Konfigurácia zjednodušenia ovládania balíka Office*
@@ -5737,7 +6887,7 @@ Zhromažďujú sa tieto polia:
 
   - **ElapsedHanging** – čas nereagovania strávený vo volaní
 
-#### <a name="officepowerpointsession"></a>**Office.PowerPoint.Session**
+#### <a name="officepowerpointsession"></a>Office.PowerPoint.Session
 
 Zhromažďuje použitia funkcie v jednotlivých reláciách PowerPointu.Tieto údaje sa používajú na výpočet pomeru neželaného ukončenia PowerPointu pri používaní funkcie. Pomer neželaného ukončenia PowerPointu je kľúčový signál na zaručenie, že PowerPoint funguje podľa očakávania.
 
@@ -5889,6 +7039,12 @@ Zhromažďujú sa tieto polia:
 
   - **ProgID** – identifikátor programu doplnku
 
+#### <a name="officeprogrammabilitytelemetrymacrofileopened"></a>Office.Programmability.Telemetry.MacroFileOpened 
+
+Spúšťa sa pri otváraní súboru obsahujúceho makrá (VBA) v zariadení, ktoré bolo zaradené do aplikácií Office ako služby (OAAS) správcom IT a kde boli služby Office 365 ProPlus aktivované pomocou podnikovej licencie. Udalosť sa používa na porozumenie stavu súborov obsahujúcich makrá (VBA) v nájomníkovi a porovnáva sa s udalosťou Office.Programmability.Telemetry.VbaTelemetryBreak, ktorá sleduje chyby v súboroch obsahujúcich VBA. 
+
+Nezhromažďujú sa žiadne polia.
+
 #### <a name="officesystemsystemhealthungracefulappexitmacandios"></a>Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
 Udalosť spustenia, ktorá zachytáva neúspešné ukončenia aplikácie na ďalšie skúmanie.
@@ -5950,6 +7106,75 @@ Zhromažďujú sa tieto polia:
 
 Dlhý čas odozvy alebo nízky výkon v prípadoch ako spustenie aplikácie alebo otvorenie súboru.
 
+#### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytnú pri uskutočnení volania API IpcpBootstrapUser.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.ApplicationScenarioId** – ID scenára poskytnuté aplikáciou.
+
+- **RMS.AuthCallbackProvided** – označuje, či poskytuje spätné volanie overovania ako vstup volania rozhrania API alebo nie.
+
+- **RMS.ConnectionInfo.ExtranetUrl** – extranetová URL adresa informácií o pripojení.
+
+- **RMS.ConnectionInfo.IntranetUrl** – intranetová URL adresa informácií o pripojení.
+
+- **RMS.ConnectionMode** – režim pripojenia medzi klientom a serverom služby správy prístupových práv: online alebo offline.
+
+- **RMS.Duration** – celkový čas na dokončenie volania API.
+
+- **RMS.DurationWithoutExternalOps** – celkový čas mínus spotrebované externé operácie, ako je napríklad latencia siete.
+
+- **RMS.ErrorCode** – kód chyby vrátený z volania API, ak sa vyskytla.
+
+- **RMS.GuestTenant** – ID hosťovského nájomníka pre používateľa.
+
+- **RMS.HomeTenant** – ID domáceho nájomníka pre používateľa.
+
+- **RMS.HttpCall** – označuje, či prebieha operácia HTTP.
+
+- **RMS.Identity.ExtranetUrl** – extranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.IntranetUrl** – intranetová URL adresa servera služby správy prístupových práv pre používateľa zhromažďovaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.Identity.Status** – prvé získanie certifikátu Rights Account Certificate zo servera alebo predĺženie certifikátu Rights Account Certificate. 
+
+- **RMS.Identity.Type** – typ používateľského konta, napríklad konto Windows alebo konto Live.
+
+- **RMS.Identity.UserProvided** – označuje, či e-mailová adresa používateľa bola alebo nebola zadaná počas získavania nového certifikátu Rights Account Certificate zo servera.
+
+- **RMS.IssuerId** – ID servera služby správy prístupových práv, ktorý vydáva certifikát Rights Account Certificate.  
+
+- **RMS.LicenseFormat** – formát licencie: Xrml alebo Json.
+
+- **RMS.RACType** – typ certifikátu Rights Accounts Certificate.
+
+- **RMS.Result** – úspech alebo zlyhanie volania API.
+
+- **RMS.ScenarioId** – ID scenára definované rozhraním API.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
+- **RMS.ServerType** – typ servera služby správy prístupových práv. 
+
+- **RMS.StatusCode** – kód stavu vráteného výsledku.
+
+- **RMS.TemplatesCount** – počet šablón.
+
+- **RMS.TokenProvided** – označuje, či poskytuje token ako vstup volania API alebo nie. 
+
+- **RMS.UserProvided** – označuje, či poskytuje používateľa ako vstup volania API alebo nie. 
+
+- **UserInfo.UserObjectId** – ID objektu používateľa.
 #### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
 
 Keď zákazník použije doplnok balíka Office a zavolá rozhranie Rich API na poskytnutie služby, spustí sa táto udalosť. Používa sa na meranie spoľahlivosti služby, jej výkonu a používania pri vyvolaní metódy rozhrania Rich API.
@@ -6493,6 +7718,35 @@ Zhromažďujú sa tieto polia:
   - **FirstTimeStamp** – čas prvého výskytu chyby
 
   - **Trackback** – jedinečný identifikátor konkrétnej chyby
+
+#### <a name="renewidentityfailure"></a>RenewIdentityFailure
+
+Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM. Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú, keď sa nepodarí obnoviť používateľské certifikáty.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo.ClientHierarchy** – hierarchia klienta, ktorá označuje, že aplikácia sa spúšťa v produkčnom prostredí alebo vo vývojárskom prostredí.
+
+- **AppInfo.Name** – názov aplikácie.
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **Failure.Category** – kategória zlyhania „nespracovaná chyba“
+
+- **Failure.Detail** – podrobné informácie o zlyhaní
+
+- **Failure.Id** – ID zlyhania
+
+- **Failure.Signature** – podpis zlyhania, ktorý je rovnaký ako názov udalosti
+
+- **iKey** – ID servera služby zapisovania do denníka.
+
+- **RMS.HRESULT** – výsledok obnovenia používateľského certifikátu
+
+- **RMS.ScenarioId** – ID scenára definované klientom služby správy prístupových práv.
+
+- **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Udalosti údajov v kategórii Pripojiteľnosť a konfigurácia zariadenia
 
