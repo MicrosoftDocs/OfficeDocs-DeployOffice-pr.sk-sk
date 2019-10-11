@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v službách Office 365 ProPlus pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 55c6c6477d4c03d94048c98c961179686eb29c83
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 041e7c5df5bb046843b07bedc4a8ee9b3848903d
+ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238985"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417352"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
 
@@ -119,6 +119,16 @@ Okrem pripojených funkcií uvedených vyššie, ktoré sú súčasťou plánu s
 Tieto pripojené funkcie sú iné, pretože sa na ne nevzťahuje komerčná zmluva vašej spoločnosti so spoločnosťou Microsoft. Voliteľné pripojené funkcie ponúka priamo spoločnosť Microsoft a riadia sa [zmluvou o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement), nie [podmienkami poskytovania online služieb](https://www.microsoft.com/licensing/product-licensing/products). V niektorých prípadoch sa prostredníctvom týchto voliteľných funkcií poskytujú obsah alebo funkcie tretích strán a môžu sa na ne vzťahovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md).
 
 Pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto voliteľné online funkcie budú k dispozícii pre vašich používateľov.
+
+> [!NOTE]
+> Nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* je tiež možné nakonfigurovať tak, aby sa vzťahovalo na aplikácie balíka Office pre web:
+> - Excel pre web
+> - OneNote pre web
+> - PowerPoint pre web
+> - Visio pre web
+> - Word na webe
+>
+> Tieto aplikácie balíka Office pre web sú naplánované na začatie používania nového ovládacieho prvku ochrany osobných údajov pre voliteľné pripojené funkcie v polovici októbra 2019, ale nastavenie politiky môžete nakonfigurovať už teraz. Ak chcete nakonfigurovať toto nastavenie politiky pre tieto aplikácie balíka Office pre web, musíte použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md).
 
 Aj keď sa rozhodnete tieto voliteľné pripojené funkcie sprístupniť používateľom, vaši používatelia ich budú môcť vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
 
