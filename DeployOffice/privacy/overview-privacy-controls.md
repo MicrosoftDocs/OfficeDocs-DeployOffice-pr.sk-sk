@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: 329d3de3fd4ff20518a8a49f01d7c5bfcd75342b
-ms.sourcegitcommit: de39739d7ab82666ff1389be360d74c518ae97f6
+ms.openlocfilehash: 708c8b1dae02f54d4c6a6195cec9513c8639b62d
+ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "36980369"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417442"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus
 
@@ -39,6 +39,7 @@ Súčasťou týchto zmien sú nové a aktualizované prvky používateľského 
 >   - Verziu 1904 alebo novšie verzie počítačových verzií Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako napríklad Project Online Professional alebo Visio Online (plán 2).
 > - Tieto ovládacie prvky na ochranu osobných údajov sú zahrnuté vo verzii 1908 polročného kanála (pre vybraných používateľov) s dátumom vydania 10. septembra 2019. Očakáva sa, že budú k dispozícii v polročnom kanáli v januári 2020.
 > - Tieto ovládacie prvky na ochranu osobných údajov sú naplánované tak, aby boli k dispozícii v druhej polovici októbra 2019 pre verzie Excelu, OneNotu, PowerPointu, Visia a Wordu v systéme iOS. Na začiatku októbra poskytneme ďalšie informácie.
+> - Väčšina aplikácií balíka Office pre web sú naplánované na začatie používania nového ovládacieho prvku ochrany osobných údajov pre [voliteľné pripojené funkcie](optional-connected-experiences.md) v polovici októbra 2019. Sú to tieto aplikácie: Excel pre web, OneNote pre web, PowerPoint pre web, Visio pre web a Word pre web. Ešte predtým môžete použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md) a nakonfigurovať príslušné [nastavenie politiky](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
 > - Tieto nové a vylepšené ovládacie prvky na ochranu osobných údajov rozšírime do ďalších klientov balíka Office vrátane aplikácie Teams a mobilných aplikácií. Podrobnejšie informácie o týchto zmenách poskytneme v nadchádzajúcich mesiacoch. Naďalej budeme starostlivo počúvať vaše pripomienky a vylepšovať všetky klientske aplikácie a služby služieb Office 365.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostické údaje odosielané zo služieb Office 365 ProPlus spoločnosti Microsoft
