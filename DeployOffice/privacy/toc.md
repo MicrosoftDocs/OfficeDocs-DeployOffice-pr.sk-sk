@@ -2,6 +2,7 @@
 ## [Prehľad ovládacích prvkov na ochranu osobných údajov](overview-privacy-controls.md)
 ## [Spravovanie ovládacích prvkov na ochranu osobných údajov s nastaveniami politiky](manage-privacy-controls.md)
 ## [Spravovanie ovládacích prvkov na ochranu osobných údajov pomocou predvolieb (Mac)](mac-privacy-preferences.md)
+## [Spravovanie ovládacích prvkov na ochranu osobných údajov pomocou predvolieb (iOS)](ios-privacy-preferences.md)
 
 ## Diagnostické údaje
 ### [Požadované diagnostické údaje](required-diagnostic-data.md)
