@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov na ochranu osobných údajov v balíku Office pre Mac pomocou predvolieb.
 hideEdit: true
-ms.openlocfilehash: 01bb31f3b6c307ec1dc4762b54fea17185dcf27d
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: a1fdd9f7d0fe2095b3a32f61f885f724f2259188
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36246322"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510228"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-for-mac"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb
 
@@ -34,7 +34,8 @@ Okrem toho je k dispozícii nové nastavenie predvolieb týkajúce sa dialógov
 Ďalšie informácie o diagnostických údajoch a online funkciách nájdete v téme [Prehľad ovládacích prvkov na ochranu osobných údajov](overview-privacy-controls.md).
 
 > [!NOTE]
-> Ďalšie informácie o podobných nastaveniach balíka Office v počítačoch s Windowsom nájdete v téme [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
+> - Ďalšie informácie o podobných nastaveniach balíka Office v počítačoch s Windowsom nájdete v téme [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md).
+> - Ďalšie informácie o podobných nastaveniach balíka Office v zariadeniach so systémom iOS nájdete v téme [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md).
 
 ## <a name="setting-preferences"></a>Nastavenie predvolieb
 
@@ -52,14 +53,13 @@ Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka 
 |**Možné hodnoty**  | `BasicDiagnosticData` *(nastaví sa úroveň Požadované)* <br/> `FullDiagnosticData` *(nastaví sa úroveň Voliteľné)* <br/> `ZeroDiagnosticData` *(nastaví sa úroveň Žiadne)* |
 |**Dostupnosť** |Verzia 16.28 a novšie verzie |
 
+Od nových inštalácií vezie 16.30 platí, že ak túto predvoľbu nenastavíte, v prípade, že sa používatelia s predplatným na Office 365 prihlásili pomocou pracovného alebo školského konta, alebo ak majú používatelia multilicenčnú verziu balíka Office 2019 pre Mac, spoločnosti Microsoft sa odosielajú len požadované diagnostické údaje. Títo používatelia si tiež nemôžu zmeniť úroveň diagnostických údajov, bez ohľadu na to, ako ste túto predvoľbu nastavili.
+
 > [!NOTE]
-> Ak nastavíte túto predvoľbu, použije sa aj v nasledujúcich produktoch:
-> - Verzia 1.00.217856 a novšie verzie aplikácie Teams pre Mac
-> - Verzia 16.28 a novšie verzie Skypu for Business pre Mac
+> - Ak inštalujete verziu 16.28 alebo 16.29 a nenastavíte túto predvoľbu, spoločnosti Microsoft sa odosielajú voliteľné aj požadované diagnostické údaje. Ak potom inovujete na verziu 16.30 alebo novšiu, spoločnosti Microsoft sa budú naďalej odosielať voliteľné aj požadované diagnostické údaje, ak pomocou tejto predvoľby nenastavíte inú hodnotu.
+> - Ak nastavíte túto predvoľbu, použije sa aj na verziu 1.00.217856 a novšie verzie aplikácie Teams pre Mac a na verziu 16.28 a novšie verzie Skypu for Business pre Mac.
 
-Ak túto predvoľbu nenastavíte, v prípade, že sa používatelia s predplatným na Office 365 prihlásili pomocou pracovného alebo školského konta, alebo ak majú používatelia multilicenčnú verziu balíka Office 2019 pre Mac, spoločnosti Microsoft sa odošlú voliteľné aj požadované diagnostické údaje. Títo používatelia si tiež nemôžu zmeniť úroveň diagnostických údajov, bez ohľadu na to, ako ste túto predvoľbu nastavili.
-
-V prípade ostatných používateľov, ako sú napríklad používatelia v domácnosti s predplatným na Office 365, sa odošlú iba požadované diagnostické údaje, pokiaľ si používateľ nezvolí možnosť odosielať aj voliteľné diagnostické údaje v okne **Predvoľby** > **Ochrana osobných údajov**.
+V prípade ostatných používateľov, ako sú napríklad používatelia v domácnosti s predplatným na Office 365, sa odosielajú iba požadované diagnostické údaje, pokiaľ si používateľ nezvolí možnosť odosielať aj voliteľné diagnostické údaje v okne **Predvoľby** > **Ochrana osobných údajov**.
 
 ## <a name="preference-setting-for-connected-experiences-that-analyze-your-content"></a>Nastavenia predvolieb pre online funkcie na analýzu obsahu
 

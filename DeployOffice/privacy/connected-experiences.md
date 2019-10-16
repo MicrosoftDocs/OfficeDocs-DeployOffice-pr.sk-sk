@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom služieb Office informácie o online funkciách v balíku Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: 04d71fcd601f76d2613dda9bd00dccd24ab8e950
-ms.sourcegitcommit: 27db488cae3bd23342bc0d902c53b5bf89ae30a7
+ms.openlocfilehash: 8b9038bdff83c786616ae87565e6ae66ac85516a
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37379782"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510434"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -135,7 +135,11 @@ Ak ste prihlásení pomocou pracovného alebo školského konta, o dostupnosti t
 > [!NOTE]
 > Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
 
-Ak ste správcom organizácie, pomocou nastavení politiky môžete určiť, či tieto online funkcie budú dostupné pre vašich používateľov. Ak nepoužijete tieto nastavenia politiky, všetky online funkcie budú k dispozícii pre vašich používateľov. Ďalšie informácie o používaní týchto nastavení politiky nájdete v témach [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md) a [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
+Ak ste správcom organizácie, pomocou nastavení politiky môžete určiť, či tieto online funkcie budú dostupné pre vašich používateľov. Ak nepoužijete tieto nastavenia politiky, všetky online funkcie budú k dispozícii pre vašich používateľov. Ďalšie informácie o používaní týchto nastavení politiky nájdete v týchto článkoch: 
+
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 
 Ak sa rozhodnete vypnúť niektoré typy online funkcií, príkazy pre tieto funkcie na páse s nástrojmi alebo v ponuke budú neaktívne alebo sa pri pokuse o použitie týchto online funkcií zobrazí chybové hlásenie.
 

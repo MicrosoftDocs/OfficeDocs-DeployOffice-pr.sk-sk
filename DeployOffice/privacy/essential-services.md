@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 82068f529e341a71557e65e6b7d060bab878bcbe
-ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
+ms.openlocfilehash: a482854210e5f609a41e6a810c3c3338a19586e7
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386934"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510480"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -42,7 +42,8 @@ Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné té
 
 - [Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus](overview-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus s nastaveniami politiky](manage-privacy-controls.md)
-- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou preferencií](mac-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Zoznam nevyhnutných služieb pre Office 
 
@@ -703,7 +704,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -855,7 +856,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -931,7 +932,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1007,7 +1008,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1083,7 +1084,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1235,7 +1236,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1311,7 +1312,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1463,7 +1464,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1539,7 +1540,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1615,7 +1616,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1691,7 +1692,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1767,7 +1768,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1919,7 +1920,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1995,7 +1996,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -2083,7 +2084,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -2159,7 +2160,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -2243,7 +2244,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -2331,7 +2332,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -9274,7 +9275,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
+- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -9315,7 +9316,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
+- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -9356,7 +9357,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
+- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 

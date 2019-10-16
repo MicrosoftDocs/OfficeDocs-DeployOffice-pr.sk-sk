@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: 708c8b1dae02f54d4c6a6195cec9513c8639b62d
-ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
+ms.openlocfilehash: 24a3d30d05fb2a1456e10d8a8036f31c25c14db7
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417442"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510730"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus
 
@@ -38,7 +38,7 @@ Súčasťou týchto zmien sú nové a aktualizované prvky používateľského 
 >   - Verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
 >   - Verziu 1904 alebo novšie verzie počítačových verzií Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako napríklad Project Online Professional alebo Visio Online (plán 2).
 > - Tieto ovládacie prvky na ochranu osobných údajov sú zahrnuté vo verzii 1908 polročného kanála (pre vybraných používateľov) s dátumom vydania 10. septembra 2019. Očakáva sa, že budú k dispozícii v polročnom kanáli v januári 2020.
-> - Tieto ovládacie prvky na ochranu osobných údajov sú naplánované tak, aby boli k dispozícii v druhej polovici októbra 2019 pre verzie Excelu, OneNotu, PowerPointu, Visia a Wordu v systéme iOS. Na začiatku októbra poskytneme ďalšie informácie.
+> - Tieto ovládacie prvky na ochranu osobných údajov sú k dispozícii pre verziu 2.30 a novšie verzie Excelu, OneNotu, PowerPointu a Wordu pre iOS, ako aj pre verziu 1.17 a novšie verzie Visio Viewera pre iOS.
 > - Väčšina aplikácií balíka Office pre web sú naplánované na začatie používania nového ovládacieho prvku ochrany osobných údajov pre [voliteľné pripojené funkcie](optional-connected-experiences.md) v polovici októbra 2019. Sú to tieto aplikácie: Excel pre web, OneNote pre web, PowerPoint pre web, Visio pre web a Word pre web. Ešte predtým môžete použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md) a nakonfigurovať príslušné [nastavenie politiky](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
 > - Tieto nové a vylepšené ovládacie prvky na ochranu osobných údajov rozšírime do ďalších klientov balíka Office vrátane aplikácie Teams a mobilných aplikácií. Podrobnejšie informácie o týchto zmenách poskytneme v nadchádzajúcich mesiacoch. Naďalej budeme starostlivo počúvať vaše pripomienky a vylepšovať všetky klientske aplikácie a služby služieb Office 365.
 
@@ -74,6 +74,7 @@ Na zobrazenie toho, aké diagnostické údaje sa odosielajú spoločnosti Micros
 - [Voliteľné diagnostické údaje pre Office](optional-diagnostic-data.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-office-365-proplus"></a>Pripojené funkcie pre Office 365 ProPlus
@@ -99,6 +100,7 @@ Vaši používatelia sa nebudú môcť rozhodnúť zapnúť alebo vypnúť tieto
 - [Pripojené funkcie v Office](connected-experiences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 
 ## <a name="optional-connected-experiences-for-office-365-proplus"></a>Voliteľné online funkcie pre Office 365 ProPlus
 
@@ -115,6 +117,7 @@ Aj keď sa rozhodnete tieto voliteľné online funkcie sprístupniť používate
 - [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus s nastaveniami politiky](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Požadované údaje služieb pre online funkcie
 

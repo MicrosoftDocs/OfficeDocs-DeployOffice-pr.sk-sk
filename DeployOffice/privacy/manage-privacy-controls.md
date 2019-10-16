@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v službách Office 365 ProPlus pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 041e7c5df5bb046843b07bedc4a8ee9b3848903d
-ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
+ms.openlocfilehash: 5f3b63c65d43827befe58ba600c7957410f2d3c0
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417352"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510308"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
 
@@ -43,7 +43,9 @@ Päť nových nastavení politiky:
 Tieto nastavenia politiky je možné implementovať pomocou buď skupinovej politiky, alebo [cloudovej služby politiky pre Office](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Ak používate skupinovú politiku, musíte si z [centra sťahovania softvéru Microsoft](https://www.microsoft.com/download/details.aspx?id=49030) stiahnuť najnovšiu verziu súborov šablón na správu (ADMX/ADML).
 
 > [!NOTE]
-> Ďalšie informácie o spravovaní ovládacích prvkov na ochranu osobných údajov pre Office pre Mac nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
+> - Ďalšie informácie o spravovaní ovládacích prvkov na ochranu osobných údajov pre Office pre Mac nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
+> - Ďalšie informácie o podobných nastaveniach balíka Office v zariadeniach so systémom iOS nájdete v téme [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md).
+
 
 Ak používate nástroj Group Policy Management, všetky tieto nastavenia politiky sa nachádzajú v časti User Configuration (Konfigurácia používateľa)\\Policies (Politiky)\\Administrative Templates (Nástroje na správu)\\Microsoft Office 2016\\Privacy (Ochrana osobných údajov)\\Trust Center (Centrum dôveryhodnosti).
 
