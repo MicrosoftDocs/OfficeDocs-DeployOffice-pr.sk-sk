@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľných diagnostických údajoch v balíku Office vrátane niekoľkých príkladov udalostí.
 hideEdit: true
-ms.openlocfilehash: d772a649a78a88112a270e839834cbe48141217f
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: ab40e68df1ed91b1aff7510383d47967e8f13ccb
+ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510182"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38067114"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Voliteľné diagnostické údaje pre Office
 
@@ -51,6 +51,7 @@ Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné té
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus s nastaveniami politiky](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
 
 ## <a name="categories-of-optional-diagnostic-data"></a>Kategórie voliteľných diagnostických údajov
 

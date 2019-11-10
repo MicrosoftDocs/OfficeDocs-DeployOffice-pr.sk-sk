@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v službách Office 365 ProPlus pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 5f3b63c65d43827befe58ba600c7957410f2d3c0
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 31db528fe639b8685acf56d88d4a4bf8dd406bd3
+ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510308"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38067474"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
 
@@ -45,6 +45,7 @@ Tieto nastavenia politiky je možné implementovať pomocou buď skupinovej poli
 > [!NOTE]
 > - Ďalšie informácie o spravovaní ovládacích prvkov na ochranu osobných údajov pre Office pre Mac nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
 > - Ďalšie informácie o podobných nastaveniach balíka Office v zariadeniach so systémom iOS nájdete v téme [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md).
+> - Ďalšie informácie o podobných nastaveniach balíka Office v zariadeniach s Androidom nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md).
 
 
 Ak používate nástroj Group Policy Management, všetky tieto nastavenia politiky sa nachádzajú v časti User Configuration (Konfigurácia používateľa)\\Policies (Politiky)\\Administrative Templates (Nástroje na správu)\\Microsoft Office 2016\\Privacy (Ochrana osobných údajov)\\Trust Center (Centrum dôveryhodnosti).
