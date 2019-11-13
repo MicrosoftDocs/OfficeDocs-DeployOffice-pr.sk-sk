@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: f59c737a41c3075f9c29c49f623d88f9876bf32d
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 7e9207148c9f294e9a1e41d353fa3cdd8878f88c
+ms.sourcegitcommit: 5be570c4403e82352142b3297507cf314815bdea
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067295"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38276509"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -47,9 +47,9 @@ Poznámka: Nastavenie ochrany osobných údajov, ktoré je opísané nižšie, n
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Funkcie, ktoré využívajú iné online služby vlastnené spoločnosťou Microsoft a/alebo tretími stranami
 
-### <a name="office-store"></a>Office Obchod 
+### <a name="help--suggest-a-feature"></a>Pomocník > Navrhnúť funkciu
 
-Keď používate Office Obchod, licencia na vaše používanie samotnej lokality obchodu sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). Na [doplnky pre Office](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) stiahnuté prostredníctvom Office Obchodu sa však vzťahujú podmienky používania poskytovateľa doplnku. Môžu to byť rôzne iné organizácie a podniky a niektoré môžu účtovať poplatok za používanie. Budete si musieť skontrolovať povolenia, zásady ochrany osobných údajov a licenčné podmienky pre každý doplnok, aby ste sa dozvedeli, aké podmienky sa na vás vzťahujú a mohli sa rozhodnúť, či s podmienkami danej organizácie súhlasíte.
+Navrhnúť funkciu je funkcia, ktorá umožňuje odosielať nápady týkajúce sa používania Outlooku. Vaše návrhy sa poskytujú priamo službe tretej strany s názvom UserVoice. Ak odošlete nápady pomocou funkcie Navrhnúť funkciu, uplatňujú sa [podmienky poskytovania služby a zásady ochrany osobných údajov služby UserVoice](https://outlook.uservoice.com/tos).
 
 ### <a name="insert-online-video"></a>Vloženie online videa
 
@@ -58,6 +58,10 @@ Funkcia [Vloženie Online videa](https://support.office.com/article/8340EC69-4CE
 ### <a name="microsoft-error-reporting-program-merp"></a>Program na hlásenie chýb spoločnosti Microsoft (Microsoft Error Reporting Program, MERP) 
 
 Pri zlyhaní klientskych aplikácií balíka Office, ktoré sa spúšťajú v zariadeniach Mac, sa program MERP pripojí k službe Watson.microsoft.com a odošle diagnostické údaje. Program vlastní spoločnosť Microsoft a vzťahujú sa naň podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/). Program MERP sa nevzťahuje na klientske aplikácie balíka Office, ktoré sa spúšťajú vo Windowse.
+
+### <a name="office-store"></a>Office Obchod 
+
+Keď používate Office Obchod, licencia na vaše používanie samotnej lokality obchodu sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). Na [doplnky pre Office](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) stiahnuté prostredníctvom Office Obchodu sa však vzťahujú podmienky používania poskytovateľa doplnku. Môžu to byť rôzne iné organizácie a podniky a niektoré môžu účtovať poplatok za používanie. Budete si musieť skontrolovať povolenia, zásady ochrany osobných údajov a licenčné podmienky pre každý doplnok, aby ste sa dozvedeli, aké podmienky sa na vás vzťahujú a mohli sa rozhodnúť, či s podmienkami danej organizácie súhlasíte.
 
 ### <a name="research"></a>Zdroje informácií
 
@@ -70,19 +74,6 @@ Funkcia [Zdroje informácií](https://support.office.com/article/b862efc5-9a7b-4
 
 [Panel počasia](https://support.office.com/article/d11b7532-7c58-489e-8103-5cc5d727b06b) v Outlooku zobrazuje predpovede počasia pre geografické polohy podľa vášho výberu. Pri používaní sa Panel počasia v Outlooku predvolene pripája k službe MSN Počasie. Službu MSN vlastní spoločnosť Microsoft a vzťahujú sa na ňu podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/). Pri používaní Panela počasia v Outlooku so službou MSN spoločnosť Microsoft nezisťuje vašu polohu a mestá, ktoré sa rozhodnete zobraziť, nie sú s vami prepojené. Môžete [zmeniť toto predvolené nastavenie](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) a pripájať sa k iným poskytovateľom informácií o počasí. Ak sa rozhodnete používať iného poskytovateľa informácií o počasí, budete si musieť skontrolovať zásady ochrany osobných údajov a licenčné podmienky daného poskytovateľa, aby ste sa dozvedeli, aké podmienky sa na vás vzťahujú.
 
-## <a name="experiences-that-allow-you-to-submit-feedback"></a>Funkcie, ktoré umožňujú poskytnúť pripomienky
-
-### <a name="help--feedback"></a>Pomocník > Spätná väzba
-
-Keď prejdete na položku **Pomocník** > **Spätná väzba** a poskytnete pripomienky alebo sa pri používaní aplikácie balíka Office 365 ProPlus rozhodnete odpovedať na niektorú z našich požiadaviek prieskumu Zaujímajú nás vaše pripomienky, informácie, ktoré poskytnete, sa odošlú spoločnosti Microsoft a uplatňujú sa podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [zásad ochrany osobných údajov](https://privacy.microsoft.com/). Keď odošlete pripomienky pomocou tlačidla Spätná väzba, môžete voliteľne odoslať aj svoju e-mailovú adresu a/alebo snímku obrazovky. Nie sú to povinné informácie.  
-
-#### <a name="outlook-is-an-exception"></a>Outlook je výnimkou
-
-Funkcia **Pomocník** > **Spätná väzba** v Outlooku sa líši od funkcie **Pomocník** > **Spätná väzba** v ostatných aplikáciách balíka Office 365 ProPlus. Keď odošlete pripomienky pomocou funkcie **Pomocník** > **Spätná väzba** v Outlooku, umožníte tým spoločnosti Microsoft získať denníky Outlooku na vyriešenie možných problémov s výkonom. Tieto denníky môžu obsahovať osobné informácie, napríklad vaše meno, e-mailovú adresu, obsah vášho e-mailu alebo hľadané výrazy. Táto služba je vám poskytovaná prostredníctvom licenčnej zmluvy vašej organizácie so spoločnosťou Microsoft. V dôsledku toho platí, že ak sa rozhodnete odoslať pripomienky prostredníctvom tlačidla Spätná väzba v Outlooku, nevytvára sa samostatný zmluvný vzťah so spoločnosťou Microsoft a nastavenie ochrany osobných údajov opísané v tomto článku sa neuplatňuje.
-
-### <a name="help--suggest-a-feature"></a>Pomocník > Navrhnúť funkciu
-
-Navrhnúť funkciu je funkcia, ktorá umožňuje odosielať nápady týkajúce sa používania Outlooku. Vaše návrhy sa poskytujú priamo službe tretej strany s názvom UserVoice. Ak odošlete nápady pomocou funkcie Navrhnúť funkciu, uplatňujú sa [podmienky poskytovania služby a zásady ochrany osobných údajov služby UserVoice](https://outlook.uservoice.com/tos).
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Ako zistiť, či vám správca umožnil používať voliteľné pripojené funkcie
 
