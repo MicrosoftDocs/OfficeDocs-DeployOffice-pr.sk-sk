@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v službách Office 365 ProPlus pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 31db528fe639b8685acf56d88d4a4bf8dd406bd3
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
+ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067474"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639349"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
 
@@ -90,10 +90,7 @@ Chápeme, že chcete mať možnosť rozhodnúť sa, ktoré typy pripojených fun
 - Povoliť používanie dodatočných voliteľných pripojených funkcií v Office
 - Povoliť používanie pripojených funkcií v Office
 
-Ak nenakonfigurujete tieto nastavenia politiky, budú pre vašich používateľov k dispozícii všetky tieto pripojené funkcie. Vaši používatelia tak získajú všetky funkcie a možnosti, ktoré sú dostupné prostredníctvom služieb Office 365 ProPlus. Chápeme však, že na spĺňanie určitých požiadaviek vašej spoločnosti môže byť potrebné vypnúť niektoré alebo všetky tieto pripojené funkcie.
-
-> [!IMPORTANT]
-> Problém týkajúci sa vypnutia týchto 4 nastavení politiky bol nedávno opravený publikovaním nových súborov šablón na správu (ADMX/ADML) v utorok 28. mája 2019. Stiahnite a nainštalujte si aktualizované súbory skupinovej politiky z [Centra sťahovania softvéru](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
+Ak nenakonfigurujete tieto nastavenia politiky, budú pre vašich používateľov k dispozícii všetky tieto pripojené funkcie. Vaši používatelia tak získajú všetky funkcie a možnosti, ktoré sú dostupné prostredníctvom služieb Office 365 ProPlus. Chápeme však, že na spĺňanie určitých požiadaviek vašej spoločnosti môže byť potrebné vypnúť niektoré alebo všetky tieto pripojené služby.
 
 Ak sa rozhodnete neposkytovať používateľom niektoré typy pripojených funkcií, príkazy pre tieto funkcie na páse s nástrojmi alebo v ponuke budú neaktívne alebo sa pri pokuse o použitie týchto pripojených funkcií používateľom zobrazí chybové hlásenie. V takom prípade sa spoločnosti Microsoft nebudú odosielať žiadne [požadované údaje služieb](required-service-data.md) pre tieto pripojené funkcie.
 
@@ -131,7 +128,7 @@ Pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných p
 > - Visio pre web
 > - Word na webe
 >
-> Tieto aplikácie balíka Office pre web sú naplánované na začatie používania nového ovládacieho prvku ochrany osobných údajov pre voliteľné pripojené funkcie v polovici októbra 2019, ale nastavenie politiky môžete nakonfigurovať už teraz. Ak chcete nakonfigurovať toto nastavenie politiky pre tieto aplikácie balíka Office pre web, musíte použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md).
+> Ak chcete nakonfigurovať toto nastavenie politiky pre tieto aplikácie balíka Office pre web, musíte použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md).
 
 Aj keď sa rozhodnete tieto voliteľné pripojené funkcie sprístupniť používateľom, vaši používatelia ich budú môcť vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
 
