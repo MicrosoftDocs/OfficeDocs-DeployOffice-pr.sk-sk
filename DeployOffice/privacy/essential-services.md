@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: a482854210e5f609a41e6a810c3c3338a19586e7
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 25f594865089d35cb46ebfcc9b97d6b048f6298d
+ms.sourcegitcommit: ad2bb6e42b2432a2cb9370594cd50f3a14f2fbe3
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510480"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310695"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -44,6 +44,7 @@ Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné té
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus s nastaveniami politiky](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Zoznam nevyhnutných služieb pre Office 
 
@@ -10058,6 +10059,15 @@ Zhromažďujú sa tieto polia:
 Služba Services Configuration nezhromažďuje žiadne požadované diagnostické údaje služieb.
 
 ## <a name="telemetry-events"></a>Udalosti služby telemetrie
+
+### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na sledovanie stavu postupu výslovného súhlasu s telemetriou pri prvom spustení. Zhromažďujeme kód, ktorý označuje, aký typ možností zhromažďovania diagnostických údajov používateľ vybral.
+
+Zhromažďujú sa tieto polia:
+
+ - **Data_EventId** – Kód označujúci preferenciu zhromažďovania diagnostických údajov vybratú používateľom.
+
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 
