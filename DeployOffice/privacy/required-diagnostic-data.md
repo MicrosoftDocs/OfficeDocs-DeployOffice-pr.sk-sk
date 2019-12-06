@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: 0437779d269d4de7132961ce2edc37363d10b309
-ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
+ms.openlocfilehash: b345c9c8f3138f9c38900dd36dc9983f83623341
+ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639395"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39837693"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -3118,7 +3118,7 @@ Zhromažďujú sa tieto polia:
 -  **TimeToMedianResultInMs** – označuje medián času OneNotu potrebného na vyhľadanie všetkých zhôd.
 
 
-#### <a name="officeonenotestickynotesnotecreated"></a>Office.OneNote.StickyNotes.NoteCreated
+#### <a name="officeonenotestickynotesnotecreated-on-ios-onenotestickynotesnotecreated-on-android"></a>Office.OneNote.StickyNotes.NoteCreated (v iOS), OneNote.StickyNotes.NoteCreated (v Androide)
 
 Toto je kritický signál, ktorý sa používa na monitorovanie schopnosti používateľov Rýchlych poznámok vytvárať poznámky v aplikácii.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu vytvoriť poznámku, môže to vyvolať incident s vysokou závažnosťou.
 
@@ -3131,7 +3131,7 @@ Zhromažďujú sa tieto polia:
 - **StickyNotes-SDKVersion** – číslo verzie označujúce verziu aplikácie Rýchle poznámky, ktorú používateľ používa. Umožňuje identifikovať, ktoré verzie produktu zobrazujú problém, aby sa správne určila jeho priorita.
 
 
-#### <a name="officeonenotestickynotesnoteviewed"></a>Office.OneNote.StickyNotes.NoteViewed
+#### <a name="officeonenotestickynotesnoteviewed-on-ios-onenotestickynotesnoteviewed-on-android"></a>Office.OneNote.StickyNotes.NoteViewed (v iOS), OneNote.StickyNotes.NoteViewed (v Androide)
 
 Toto je kritický signál, ktorý sa používa na monitorovanie schopnosti používateľov Rýchlych poznámok vytvárať poznámky v aplikácii.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu vytvoriť poznámku, môže to vyvolať incident s vysokou závažnosťou.
 
@@ -4657,68 +4657,6 @@ Zhromažďujú sa tieto polia:
   - **Data\_WarningShownToConvertToTable:bool** – hodnota true označuje, že používateľovi sa zobrazila výstraha na skonvertovanie excelových údajov do tabuľkového formátu
 
 
-#### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
-
-Táto udalosť zaznamenáva štatistické údaje dokumentu pre každý dokument, keď sa Office Word zavrie alebo pozastaví.  Udalosť sa používa na koreláciu úprav dokumentu, veľkosti dokumentu atď. s chybami ukladania dokumentu, zdieľania dokumentu a online spolupráce na dokumente.
-
-Zhromažďujú sa tieto polia:
-
-- **Data_BkmkRefCount** – počet odkazov na záložky v dokumente.
-
-- **Data_CharacterCount** – počet znakov v dokumente.
-
-- **Data_CharactersWithSpaceCount** – počet znakov vrátane medzier v dokumente.
-
-- **Data_ChartCount** – počet grafov v dokumente.
-
-- **Data_CitationCount** – počet citácií v dokumente.
-
-- **Data_DocumentLocation** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
-
-- **Data_ETW_TrackbackTag** – identifikuje miesto v kóde, z ktorého sa táto udalosť spustila (zatvorenie alebo pozastavenie).
-
-- **Data_EndnoteDocCount** – počet vysvetliviek v dokumente.
-
-- **Data_FootnoteDocCount** – počet poznámok pod čiarou v dokumente.
-
-- **Data_HasBibliography** – označuje, či dokument obsahuje bibliografiu.
-
-- **Data_HasHeader** – označuje, či dokument obsahuje hlavičku.
-
-- **Data_IsImeUsed** – označuje, či bol v dokumente použitý editor IME.
-
-- **Data_IsPageCountInProgress** – označuje, či sa momentálne spracúva počet strán v dokumente..
-    
-- **Data_IsTouchUsed** – označuje, či bol v dokumente použitý dotykový vstup.
-
-- **Data_IsTrackChangesOn** – označuje, či bolo v dokumente zapnuté sledovanie zmien.
-
-- **Data_LineCount** – počet riadkov v dokumente.
-
-- **Data_MainPdod** – identifikátor dokumentu v procese programu Office Word.
-
-- **Data_PageCount** – počet strán v dokumente.
-
-- **Data_PageNumberFieldCount** – počet polí pre číslo strany v dokumente.
-
-- **Data_ParagraphCount** – počet odsekov v dokumente.
-
-- **Data_PicCount** – počet obrázkov v dokumente.
-
-- **Data_RsidCount** – identifikátor počtu uložených revízií v dokumente.
-
-- **Data_TocCount** – počet obsahov v dokumente.
-
-- **Data_UrlHash** – jednosmerná hodnota hash na vytvorenie identifikátora Naïve dokumentu.
-
-- **Data_UserActionID** – toto údajové pole sa nepoužíva (hodnota je vždy 0).
-
-- **Data_UserActionName** – vždy „DocumentStatsOnCloseAndSuspend“.
-
-- **Data_UserInteractionTimeMsec** – počet milisekúnd, počas ktorých používateľ aktívne pracoval s dokumentom.
-    
-- **Data_WordCount** – počet slov v dokumente.
-
 #### <a name="officewordfilenewcreatenewfile"></a>Office.Word.FileNew.CreateNewFile
 
 Táto udalosť označuje vytvorenie nového dokumentu v programe Office Word a sleduje úspešnosť alebo zlyhanie tejto operácie. Udalosť sa používa na monitorovanie, či tvorba nového dokumentu funguje podľa očakávaní. Používa sa aj na vypočítanie počtu aktívnych používateľov a zariadení za mesiac a metriky spoľahlivosti cloudu.
@@ -4952,102 +4890,6 @@ Zhromažďujú sa tieto polia:
 - **Data_RenameFlightEnabled** – či je zapnutá skupina funkcií premenovania.
 
     
-#### <a name="officewordfilesaveactfconfirmsavedoccoreautorecoverysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreAutoRecoverySave
-
-Táto udalosť označuje, že Office Word ukladá automaticky obnovený dokument, ktorý ešte nebol uložený. Umožňuje spoločnosti Microsoft zisťovať chyby automatického obnovenia, čo je dôležité pre bezpečnosť údajov v dokumente.  Udalosť monitoruje, či ukladanie automaticky obnoveného dokumentu funguje podľa očakávaní. Používa sa aj na vypočítanie počtu aktívnych používateľov a zariadení za mesiac a metriky spoľahlivosti cloudu.
-
-Zhromažďujú sa tieto polia:
-
-- **Data_DetachedDuration** – ako dlho bola aktivita odpojená od vlákna.
-
-- **Data_Doc_AccessMode** – označuje, či je dokument iba na čítanie alebo sa dá upraviť.
-
-- **Data_Doc_AssistedReadingReasons** – preddefinovaná množina hodnôt, prečo bol dokument otvorený v režime čítania s asistenciou.
-
-- **Data_Doc_AsyncOpenKind** – označuje, či bola otvorená verzia cloudového dokumentu uložená vo vyrovnávacej pamäti a ktorá logika asynchrónneho obnovenia sa použila.
-    
-- **Data_Doc_ChunkingType** – jednotky použité na prírastkové otvorenie dokumentu.
-
-- **Data_Doc_EdpState** – nastavenie ochrany elektronických údajov dokumentu.
-
-- **Data_Doc_Ext** prípona dokumentu (docx, xlsb, pptx atď.)
-
-- **Data_Doc_FileFormat** – verzia protokolu formátu súboru.
-
-- **Data_Doc_Fqdn** – názov domény OneDrivu alebo SharePointu Online.
-
-- **Data_Doc_FqdnHash** – jednosmerná hodnota hash zákazníkom identifikovateľného názvu domény.
-
-- **Data_Doc_IdentityTelemetryId** – jednosmerná hodnota hash identity používateľa, ktorá sa používa na vykonanie otvorenia.
-
-- **Data_Doc_InitializationScenario** – zaznamenáva, ako bol dokument otvorený.
-
-- **Data_Doc_IOFlags** – hlási údaje o príznakoch vo vyrovnávacej pamäti, ktoré sa používajú na nastavenie možností požiadavky.
-
-- **Data_Doc_IrmRights** – akcie povolené politikou ochrany elektronických údajov, ktorá platí pre dokument alebo používateľa.
-
-- **Data_Doc_IsIncrementalOpen** – príznak, ktorý označuje, že dokument bol otvorený prírastkovo.
-
-- **Data_Doc_IsOcsSupported** – príznak, ktorý označuje, že dokument je podporovaný v službe spolupráce.
-    
-- **Data_Doc_IsOpeningOfflineCopy** – príznak, ktorý označuje, že bola otvorená kópia dokumentu v režime offline.
-
-- **Data_Doc_IsSyncBacked** – príznak, ktorý označuje, že v počítači sa nachádza automaticky synchronizovaná kópia dokumentu.
-
-- **Data_Doc_Location** – označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
-
-- **Data_Doc_LocationDetails** – označuje, ktorý známy priečinok poskytol lokálne uložený dokument.
-
-- **Data_Doc_NumberCoAuthors** – počet používateľov v relácii spoločných úprav.
-
-- **Data_Doc_PasswordFlags** – označuje množinu príznakov hesla Na čítanie alebo Na čítanie a zapisovanie.
-
-- **Data_Doc_ReadOnlyReasons** – dôvody, prečo bol dokument otvorený iba na čítanie.
-
-- **Data_Doc_ResourceIdHash** – anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
-
-- **Data_Doc_RtcType** – označuje, ako bol kanál v reálnom čase (RTC) nastavený pre aktuálny súbor (vypnutý, nepodporovaný, na požiadanie, vždy zapnutý atď.).
-
-- **Data_Doc_ServerDocId** – nezmeniteľný anonymný identifikátor dokumentov, ktorý sa používa na diagnostiku problémov.
-
-- **Data_Doc_ServerProtocol** – verzia protokolu použitá na komunikáciu so službou.
-
-- **Data_Doc_ServerType** – typ servera, ktorý ponúka službu (SharePoint, OneDrive, WOPI atď.).
-
-- **Data_Doc_ServerVersion** – verzia servera, ktorý ponúka službu.
-
-- **Data_Doc_SessionId** – identifikuje konkrétnu reláciu úprav dokumentu v rámci plnej relácie.
-
-- **Data_Doc_SharePointServiceContext** – diagnostické informácie z požiadaviek v SharePointe Online.
-
-- **Data_Doc_SizeInBytes** – indikátor veľkosti dokumentu.
-
-- **Data_Doc_SpecialChars** – indikátor špeciálnych znakov v URL adrese alebo ceste k dokumentu.
-
-- **Data_Doc_StreamAvailability** – indikátor označujúci, či je stream dokumentu k dispozícii alebo vypnutý.
-
-- **Data_Doc_SyncBackedType** – indikátor typu dokumentu (lokálne alebo podľa služby).
-
-- **Data_Doc_UrlHash** – jednosmerná hodnota hash na vytvorenie identifikátora Naïve dokumentu.
-
-- **Data_Doc_WopiServiceId** – obsahuje jedinečný identifikátor poskytovateľa služieb WOPI.
-
-- **Data_FailureClass** – celé číslo predstavujúce triedu zlyhania pri zlyhaniach prechodu na OCS.
-    
-- **Data_MainPdod** – identifikátor dokumentu v procese programu Office Word.
-
-- **Data_MoveFlightEnabled** – či je zapnutá skupina funkcií premiestňovania.
-
-- **Data_OCSSyncbackSaveStarted** – príznak, ktorý označuje, že toto uloženie súvisí s uložením so synchronizáciou zálohovania.
-
-- **Data_RenameDisabledReason** – chyba, ktorá spôsobuje vypnutie možnosti premenovania tohto dokumentu.
-
-- **Data_RenameFlightEnabled** – či je zapnutá skupina funkcií premenovania.
-
-- **Data_SaveInitiateKind** – celé číslo, ktoré označuje spôsob spustenia ukladania.
-
-- **Data_SrcDocIsUnnamedOrNew** – označuje, či ukladaný dokument je nový.
-
 
 #### <a name="officewordfilesaveactfconfirmsavedoccorequerysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
@@ -7358,7 +7200,7 @@ Zhromažďujú sa tieto polia:
 
 Udalosť vygenerovaná pri zlyhaní doplnku COM v spotrebiteľskej verzii aplikácií balíka Office. 
 
-Použitie: používa sa na výpočet globálnej „adaptácie“ balíka Office 365 ProPlus nešpecifickej pre podnik pre doplnok, ktorý sa potom uverejní na lokalite readyforwindows.com a v ďalších nástrojoch, ako je napríklad Readiness Toolkit. Podnikoví zákazníci tak môžu overiť, či sú doplnky nasadené v organizáciách kompatibilné s najnovšími verziami balíka Office 365 ProPlus a podľa toho naplánovať inováciu. 
+Použitie: používa sa na výpočet globálnej „adaptácie“ balíka Office 365 ProPlus nešpecifickej pre podnik pre doplnok, ktorý potom používajú nástroje, ako je napríklad Readiness Toolkit. Podnikoví zákazníci tak môžu overiť, či sú doplnky nasadené v organizáciách kompatibilné s najnovšími verziami balíka Office 365 ProPlus a podľa toho naplánovať inováciu. 
 
 Zhromažďujú sa tieto polia:
 
@@ -7390,7 +7232,7 @@ Zhromažďujú sa tieto polia:
 
 Udalosť vygenerovaná pri zlyhaní doplnku COM v podnikovej verzii aplikácií balíka Office.
 
-Použitie: používa sa na výpočet globálnej „adaptácie“ balíka Office 365 ProPlus nešpecifickej pre podnik pre doplnok, ktorý sa potom uverejní na lokalite readyforwindows.com a v ďalších nástrojoch, ako je napríklad Readiness Toolkit. Podnikoví zákazníci tak môžu overiť, či sú doplnky nasadené v organizáciách kompatibilné s najnovšími verziami balíka Office 365 ProPlus a podľa toho naplánovať inováciu. 
+Použitie: používa sa na výpočet globálnej „adaptácie“ balíka Office 365 ProPlus nešpecifickej pre podnik pre doplnok, ktorý potom používajú nástroje, ako je napríklad Readiness Toolkit. Podnikoví zákazníci tak môžu overiť, či sú doplnky nasadené v organizáciách kompatibilné s najnovšími verziami balíka Office 365 ProPlus a podľa toho naplánovať inováciu. 
 
 - **ScopeId** – rozsah aktuálneho vlákna
 
@@ -7430,7 +7272,9 @@ Zhromažďujú sa tieto polia:
 
 - **AssetId** – ID položky aplikácie.
 
-- **ErrorCode** – celkový strávený čas. 
+- **ErrorCode** – celkový strávený čas.
+
+- **IsDebug** – signalizuje, či relácia je reláciou ladenia
 
 - **NumberOfAddinsActivated** – počítadlo aktivovaných doplnkov.
 
