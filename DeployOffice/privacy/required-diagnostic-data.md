@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: b345c9c8f3138f9c38900dd36dc9983f83623341
-ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
+ms.openlocfilehash: a6003b44bc31f8165e9e102104c4b25336efd4cc
+ms.sourcegitcommit: 17f7bf4bfa65042ad44dfff23489c6a538a004e8
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39837693"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39906627"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -680,6 +680,16 @@ Kritický signál, ktorý sa používa na zaistenie, že noví podnikoví použ�
 
 - **ProvisioningStartedTime** – označuje čas začiatku, kedy OneNote začne zriaďovanie poznámkového bloku pri prvom spustení.
 
+#### <a name="officeonenotefirstrunmrureadernotebookentries"></a>Office.OneNote.FirstRun.MruReaderNoteBookEntries 
+
+Signál, ktorý sa používa na zaznamenanie všetkých problémov, ktoré sa vyskytli pri načítavaní poznámkových blokov počas prvého spustenia.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov pri prvom spustení.
+
+Zhromažďujú sa tieto polia: 
+
+- **OnPremNBCount** – počet poznámkových blokov na lokálnom serveri
+
+- **TotalNBCount** – celkový počet poznámkových blokov priradených k používateľskému kontu
+
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
 Sleduje, či bol stiahnutý balík pre dynamické plátno. Berie do úvahy konfiguráciu softvéru, pretože balík musí byť úspešne stiahnutý, aby umožnil klientovi vykresliť správne prostredie. Veľmi dôležité najmä v rámci spotrebiteľských predplatných, kde pomocou plátna informujeme používateľa, že platnosť licencie uplynula. Slúži na sledovanie metaúdajov balíka dynamického obsahu, ktorý bol stiahnutý a uložený do vyrovnávacej pamäte produktom, ako aj výsledky operácií vykonaných s balíkom: zlyhania stiahnutia, zlyhania rozbalenia, zlyhania kontrol konzistentnosti, počet výskytov vo vyrovnávacej pamäti, využitia balíka, zdroje sťahovania.
@@ -737,6 +747,63 @@ Zaznamenáva jednotky SKU Visia, či ide o Standard alebo Professional. Potrebn
 Zhromažďujú sa tieto polia:
 
   - **Data\_VisioSKU**:**integer** – 0 pre jednotky SKU Standard a 1 pre jednotky SKU Professional
+
+#### <a name="onenoteapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated
+
+Zaznamenávajú sa informácie o stave aktivácie aplikácie.  Údaje sa monitorujú s cieľom zabezpečiť, aby sme identifikovali výkyvy pri problémoch s aktiváciou. Údaje tiež analyzujeme preto, aby sme zistili oblasti na vylepšenie.
+
+Zhromažďujú sa tieto polia: 
+
+- **INSTALL_LOCATION** – označuje, či je aplikácia predinštalovaná alebo stiahnutá z obchodu
+
+#### <a name="onenoteresetstatus"></a>OneNote.ResetStatus 
+
+Signál, ktorý sa používa na zaznamenanie všetkých problémov, ktoré sa vyskytli pri pokuse používateľa o resetovanie aplikácie.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených počas resetovania. 
+
+Zhromažďujú sa tieto polia: 
+
+- **Kontá** – označuje typy kont používaných na prihlásenie do aplikácie
+
+- **Typ generického reťazca** – vráti sa, ak ide úplné obnovenie v rámci obnovenia notes_light_data
+
+- **LaunchPoint** – bod, v ktorom sa spúšťa resetovanie. Možné hodnoty: Tlačidlo Odhlásiť, Zlyhanie pri odhlásení, Spustené v službe Intune
+
+- **Pass** – označuje, či bolo resetovanie úspešné
+
+#### <a name="onenotesigninsignincompleted"></a>OneNote.SignIn.SignInCompleted 
+
+Kritický signál, ktorý označuje, či ide o úspešné prihlásenie alebo nie. Telemetria sa zhromažďuje na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby.
+
+Zhromažďujú sa tieto polia: 
+
+- **CompletionState** – konečný stav prihlásenia – úspešný alebo neúspešný. A prípady zlyhania
+
+- **EntryPoint** – označuje, kde sa prihlásenie začalo
+
+- **Hresult** – kód chyby
+
+- **ID balíka poskytovateľa** – v prípade automatického prihlásenia
+
+- **Result** – Úspešné, Neúspešné, Neznáme, Zrušené
+
+- **ServerType** – vráti typ servera, ktorý ponúka službu 
+
+- **SignInMode** – prihlásenie alebo registrácia, alebo automatické prihlásenie alebo zrýchlená registrácia
+
+#### <a name="onenotesigninsigninstarted"></a>OneNote.SignIn.SignInStarted 
+
+Signál, ktorý sa používa na označenie všetkých problémov, ktoré sa vyskytli počas používania panela hlásení.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených počas používania panela hlásení.
+
+Zhromažďujú sa tieto polia: 
+
+- **EntryPoint** – označuje, kde sa prihlásenie začalo
+
+- **Výsledok** – výsledok postupu prihlásenia
+
+- **ServerType** – vráti typ servera, ktorý ponúka službu 
+
+- **SignInMode** – prihlásenie alebo registrácia, alebo automatické prihlásenie alebo zrýchlená registrácia
+
 
 ### <a name="office-add-in-configuration-subtype"></a>*Podtyp Konfigurácia doplnkov balíka Office*
 
@@ -1721,6 +1788,75 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.StatusCode** – ID scenára definované rozhraním API
 
+#### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
+
+Táto udalosť pomáha porozumieť, s akou inou aplikáciou Microsoft v zariadení naša aplikácia získala bezobslužné jediné prihlásenie, z ktorého vstupného bodu a tak ďalej. Pomáha tiež pochopiť príčinu zlyhania s nezískaním bezobslužného jediného prihlásenia.  Získame lepší prehľad napríklad o tom, s ktorou aplikáciou Microsoft v zariadení získavame jediné prihlásenie. Ide o neúspešné prípady, keď jednoduché prihlásenie nefunguje podľa očakávaní.
+
+Zhromažďujú sa tieto polia:
+
+- **AccountType** – označuje typ konta, s ktorým sa vyskytuje jediné prihlásenie, ako je napríklad osobné konto Microsoft alebo pracovné konto.
+
+- **EntryPoint** – označuje vstupný bod v aplikácii, odkiaľ sa jediné prihlásenie spustilo.
+
+- **ErrorCode** – označuje kód chyby pokusu o jediné prihlásenie.
+
+- **ErrorDescription** – označuje chybové hlásenie pokusu o jediné prihlásenie.
+
+- **HResult** – označuje kód stavu výsledku pokusu o jediné prihlásenie.
+
+- **ProviderPackageId** – iná aplikácia Microsoft v zariadení, z ktorej dochádza k jedinému prihláseniu.
+
+#### <a name="officeandroidphonenumbersignins"></a>Office.Android.PhoneNumberSignIns
+
+Táto udalosť pomôže porozumieť, či sa používateľ prihlásil alebo zaregistroval s kontom založeným na telefónnom čísle alebo s e-mailovým osobným kontom Microsoft.  Táto udalosť pomáha zistiť počet používateľov, ktorí sa prihlasujú alebo registrujú s osobným kontom Microsoft založeným na telefónnom čísle.
+
+Zhromažďujú sa tieto polia:
+
+- **EntryPoint** – označuje vstupný bod v aplikácii, odkiaľ sa prihlásenie spustilo.
+
+- **IsEmailMissing** – chýba e-mail v informáciách o profile konta?
+
+- **IsPhoneNumberMissing** – chýba telefónne číslo v informáciách o profile konta?
+
+- **UserDecision** – označuje používateľom vykonaný výber, ako je napríklad prihlásenie alebo registrácia, alebo prihlásenie neskôr.
+
+#### <a name="officeandroidusersignindecision"></a>Office.Android.UserSignInDecision
+
+Táto udalosť pomáha porozumieť, v ktorej fáze postupu používateľovi zlyháva prihlasovanie, prečo sa nedarí prihlásiť sa, koľko používateľov sa úspešne prihlásilo z ktorého vstupného bodu v aplikácii a podobne.  Táto udalosť pomôže s prihlasovacími liekovými údajmi, čo pomáha porozumieť, v ktorých fázach prihlásenie zlyháva u viacerých používateľov a podobne.
+
+Zhromažďujú sa tieto polia:
+
+- **AccountType** – označuje typ konta, s ktorým sa pokúšate prihlásiť, ako je napríklad osobné konto alebo pracovné konto.
+
+- **AfterLicensingState** – označuje stav licencií aplikácií po dokončení prihlásenia.
+
+- **AllowedEditsWithoutSignIn** – označuje, koľko voľných úprav uplynulo pred pokusom o prihlásenie.
+
+- **BeforeLicensingState** – označuje stav licencií aplikácií pred pokusom o prihlásenie.
+
+- **CompletionState** – označuje fázu dokončenia prihlásenia.
+
+- **EntryPoint** – označuje vstupný bod v aplikácii, odkiaľ sa prihlásenie spustilo.
+
+- **HRDAutoAcceleratedSignUpAttemptCount** – označuje počet pokusov o zrýchlenú registráciu.
+
+- **HRDAutoAcceleratedSignUpQuitCount** – označuje počet zrušení zrýchlenej registrácie.
+
+- **HResult** – označuje kód stavu výsledku operácie prihlásenia.
+
+- **IsPhoneOnlyAuthFeatureEnabled** – je povolené prihlasovanie s telefónnym číslom alebo nie?
+
+- **LicenseActivationHResult** – označuje kód stavu pokusu o aktiváciu licencie.
+
+- **LicenseActivationMessageCode** – označuje kód správy z licenčnej služby.
+
+- **NoFreeEditsTreatmentValue** – sú povolené voľné úpravy alebo nie?
+
+- **SignUpAttemptCount** – označuje počet pokusov o registráciu.
+
+- **StartMode** – označuje režim, v ktorom sa spustil pokus o prihlásenie.
+
+- **UserDecision** – označuje používateľom vykonaný výber, ako je napríklad prihlásenie alebo registrácia, alebo prihlásenie neskôr.
 
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
@@ -1950,6 +2086,102 @@ Zhromažďujú sa tieto polia:
 - **Data_Ext** – Prípona súboru obmedzená na prvé štyri znaky prípony alebo menej.
 
 - **Data_ServiceType** – Abstraktná kategorizácia umiestnenia súboru, ako je napríklad „SharePoint“, „OneDrive“, „Lokálne“, „WOPI“ atď.
+
+#### <a name="office_docsui_fileoperations_opendocumentmeasurements"></a>Office_DocsUI_FileOperations_OpenDocumentMeasurements
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platformy iOS. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov, najmä informácií o výkone.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_AppDuration** – trvanie spracovania aplikácie počas operácie otvorenia súboru.
+
+- **Data_BootDuration** – trvanie procesu spustenia otvorenia súboru.
+
+- **Data_ClickOrigin** – reťazec označujúci, z ktorej časti bolo prepojenie, keď používateľ klikol na prepojenie v Outlooku pre iOS a otvoril súbor v aplikácii balíka Office.
+
+- **Data_ClickTime** – čas Unix Epoch, keď používateľ klikol na prepojenie v Outlooku pre iOS a otvoril súbor v aplikácii balíka Office.
+
+- **Data_DetachedDuration** – trvanie procesu odpojenia udalosti. 
+
+- **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
+
+- **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
+
+- **Data_Doc_ChunkingType** – enumerácia označujúca typ algoritmu blokov údajov súboru.
+
+- **Data_Doc_EdpState** – enumerácia označujúca stav ochrany podnikových údajov súboru.
+
+- **Data_Doc_Ext** – prípona súboru.
+
+- **Data_Doc_Fqdn** – názov hostiteľa servera súboru.
+
+- **Data_Doc_FqdnHash** – identifikátor GUID, ktorý jednoznačne označuje názov hostiteľa servera.
+
+- **Data_Doc_IdentityTelemetryId** – identifikátor GUID, ktorý jednoznačne označuje identitu použitú na otvorenie súboru.
+
+- **Data_Doc_InitializationScenario** – enumerácia označujúca podrobný typ scenára otvorenia súboru.
+
+- **Data_Doc_IOFlags** – enumerácia označujúca príznaky IO operácie otvorenia súboru, napríklad či je súbor uložený vo vyrovnávacej pamäti alebo nie.
+
+- **Data_Doc_IsCloudCollabEnabled** – či je alebo nie je pre súbor zapnutá spolupráca v cloude.
+
+- **Data_Doc_IsIncrementalOpen** – či sa súbor otvoril alebo neotvoril cez prírastkové otvorenie.
+
+- **Data_Doc_IsOcsSupported** – či súbor podporuje alebo nepodporuje službu spolupráce v Office.
+
+- **Data_Doc_IsOpeningOfflineCopy** – či sa súbor otvoril z offline kópie z vyrovnávacej pamäte.
+
+- **Data_Doc_IsPrefetched** – či bol alebo nebol súbor prednačítaný pred výskytom operácie otvorenia.
+
+- **Data_Doc_IsSyncBacked** – či sa cloudový súbor vyskytuje lokálne a synchronizuje so serverom alebo nie.
+
+- **Data_Doc_Location** – enumerácia označujúca umiestnenie súboru, napríklad lokálne alebo v cloude.
+
+- **Data_Doc_ReadOnlyReasons** – enumerácia označujúca dôvod, prečo je súbor iba na čítanie.
+
+- **Data_Doc_ResourceIdHash** – identifikátor GUID, ktorý jednoznačne označuje ID zdroja servera súboru.
+
+- **Data_Doc_RtcType** – enumerácia označujúca typ kanála v reálnom čase (RTC) použitého súborom.
+
+- **Data_Doc_ServerDocId** – identifikátor GUID, ktorý jednoznačne označuje ID dokumentu na serveri.
+
+- **Data_Doc_ServerProtocol** – enumerácia označujúca serverový protokol cloudového súboru.
+
+- **Data_Doc_ServerType** – enumerácia označujúca serverový typ cloudového súboru.
+
+- **Data_Doc_ServerVersion** – enumerácia označujúca serverovú verziu cloudového súboru.
+
+- **Data_Doc_SessionId** – celé číslo, ktoré sa zvýši o 1 pri každej operácii otvorenia súboru v relácii.
+
+- **Data_Doc_SharePointServiceContext** – reťazec, ktorý sa používa na koreláciu denníkov na strane klienta a na strane servera, zvyčajne ide o druh ID.
+
+- **Data_Doc_SizeInBytes** – veľkosť súboru v bajtoch.
+
+- **Data_Doc_SpecialChars** – enumerácia, ktorá označuje, aký typ špeciálneho znaku obsahuje URL adresa súboru.
+
+- **Data_Doc_UrlHash** – identifikátor GUID, ktorý jednoznačne označuje URL adresu súboru.
+
+- **Data_Doc_UsedWrsDataOnOpen** – či bol alebo nebol súbor otvorený prírastkovo pomocou údajov WRS vopred uložených vo vyrovnávacej pamäti.
+
+- **Data_Doc_WopiServiceId** – reťazec, ktorý označuje, z ktorej služby súbor WOPI (Web Application Open Platform Interface Protocol) pochádza.
+
+- **Data_InclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií.
+
+- **Data_InitializationReason** – enumerácia označujúca spôsob otvorenia súboru, napríklad z ktorého prvku používateľského rozhrania alebo spustenie inou aplikáciou.
+
+- **Data_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
+
+- **Data_OpenInPlace** – či sa súbor musí alebo nemusí kopírovať do izolovaného kontajnera balíka Office pred jeho otvorením používateľom.
+
+- **Data_OpenStartTime** – čas Unix Epoch, keď sa spustilo otvorenie súboru.
+
+- **Data_SilhouetteDuration** – trvanie vykresľovania otvorenia súboru.
+
+- **Data_SourceApplication** – reťazec, ktorý označuje ID zväzku zdrojovej aplikácie, keď bolo otvorenie súboru spustené inou aplikáciou.
+
+- **Data_StopwatchDuration** – trvanie od začiatku udalosti po koniec udalosti.
+
+- **Data_TimeSplitMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie, časovou pečiatkou a trvaním.
 
 #### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
 
@@ -2999,6 +3231,32 @@ Zhromažďujú sa tieto polia:
 
   - **Data.Log** – hlásenie vlastného denníka s informáciou o úspešnosti alebo neúspešnosti predbežnej kontroly
 
+
+#### <a name="officeonenotecanvasinkinkstrokelogger"></a>Office.OneNote.Canvas.Ink.InkStrokeLogger 
+
+Táto udalosť sa používa na zisťovanie a diagnostiku chyby s vysokou frekvenciou, na ktorú používateľ narazí pri používaní funkcie písania rukou.  Táto možnosť sa použije na určenie najvhodnejšieho režimu opravy tohto problému. 
+
+Zhromažďujú sa tieto polia:
+
+- **CurrentCanvasZoomFactor** – aktuálny faktor priblíženia plátna.
+
+- **CurrentNotebook** – identifikátor aktuálneho aktívneho poznámkového bloku.
+
+- **CurrentPage** – identifikátor aktuálnej aktívnej strany.
+
+- **CurrentSection** – identifikátor aktuálnej aktívnej sekcie.
+
+- **DefaultCanvasZoomFactor** – predvolený faktor priblíženia plátna.
+
+- **InkStrokeCount** – celkový počet ťahov perom od posledného záznamu denníka.
+
+- **InkStrokeWithLayerInkEffect** – počet ťahov perom s efektom vrstveného písania rukou od posledného záznamu denníka.
+
+- **InkStrokeWithoutPressureCount** – počet ťahov perom bez tlaku od posledného záznamu denníka.
+
+- **InkStrokeWithPencilInkEffect** – počet ťahov perom s efektom písania ceruzkou od posledného záznamu denníka.
+
+- **InkStrokeWithTilt** – počet ťahov perom s naklonením od posledného záznamu denníka.
 
 #### <a name="officeonenotenavigationcreatepage"></a>Office.OneNote.Navigation.CreatePage
 
@@ -5273,6 +5531,25 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ViewKind** – typ zobrazenia Wordu
 
+#### <a name="onenotecanvaspageopened"></a>OneNote.Canvas.PageOpened 
+
+Signál, ktorý sa používa na zaznamenanie, keď sa otvorí strana.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených pri otvorení strany vo OneNote.
+
+Zhromažďujú sa tieto polia: 
+
+- **JOT_ID** – objekt otvorenej strany
+
+- **TIME_TAKEN_IN_MS** – čas potrebný na otvorenie strany
+
+#### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
+
+Signál, ktorý sa používa na označenie všetkých problémov, ktoré sa vyskytli počas používania panela hlásení.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených počas používania panela hlásení.
+
+Zhromažďujú sa tieto polia: 
+
+- **Message_Bar_Type** – vráti, či používateľ používa starý alebo nový panel hlásení
+
+- **Message_Type** – vráti ID chybového hlásenia
 
 #### <a name="parselicenseop"></a>ParseLicenseOp
 
@@ -5521,6 +5798,26 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.StatusCode** – kód stavu vráteného výsledku.
 
+#### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
+
+Dôležité pri zachytávaní metriky výkonu aplikácie s ohľadom na čas odozvy aplikácie od spustenia.  Spoločnosť Microsoft používa túto možnosť na zber času potrebného na odozvu aplikácie a tiež na zisťovanie scenárov, ktoré môžu mať vplyv na čas spustenia v aplikáciách WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **AppLaunchResponsiveTimeInMilliSec** – čas odozvy spustenia aplikácie
+
+- **AppSuspendedDuringBoot** – Boolovská hodnota, ktorá označuje, či bola aplikácia pozastavená počas štartu
+
+- **CollectionTime** – čas udalosti
+
+- **FileActivationAttempted** – Boolovská hodnota, ktorá označuje, či došlo k pokusu o aktiváciu súboru
+
+- **FirstIdleOnAppThreadTimeInMilliSec** – čas nečinnosti vlákna aplikácie
+
+- **IsThisFirstLaunch** – Boolovská hodnota, ktorá označuje, či ide o prvé spustenie aplikácie
+
+- **UserDialogInterruptionDuringBoot** – Boolovská hodnota, ktorá označuje, či sa počas štartu zobrazilo nejaké blokujúce používateľské rozhranie
+
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
 Táto udalosť zaznamenáva informácie o neočakávaných vypnutiach balíka Office. Umožňuje nám to identifikovať zlyhania alebo nereagovania v produkte, aby ich bolo možné riešiť.
@@ -5645,7 +5942,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_InitAddinsTime:integer** – čas potrebný na inicializovanie a načítanie COM Add
 
-  - **Data\_InitBrandTime:integer** – čas potrebný na inicializovanie úvodnej obrazovky a značkových komponentov balíka Office
+  - **Data\_InitBrandTime:integer** – čas potrebný na inicializovanie úvodnej obrazovky a značkových komponentov balíka Office
 
   - **Data\_InitGimmeTime:integer** – čas potrebný na inicializovanie komponentu balíka Office
 
@@ -5831,6 +6128,125 @@ Zhromažďujú sa tieto polia:
 
 - **TotalTime** – celkový strávený čas.
 
+#### <a name="onenoteappappbootcomplete"></a>OneNote.App.AppBootComplete 
+
+Kritický signál, ktorý sa používa na zaistenie, že noví individuálni používatelia (konto Microsoft) môžu úspešne spustiť a používať OneNote po prvýkrát.  Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby.  Ak používatelia nemôžu spustiť aplikáciu po prvýkrát, môže to vyvolať incident s vysokou závažnosťou.
+
+Zhromažďujú sa tieto polia: 
+
+- **ACTIVITY_BOOT_TIME_IN_MS** – čas potrebný na dokončenie vytvorenia aktivity
+
+- **ACTIVITY_NAME** – názov aktivity otvorenej pri spustení 
+
+- **ANY_DIALOG_SHOWN** – označuje, či sa počas spúšťania zobrazí dialógové okno
+
+- **APP_SUSPEND_DURING_EVENT** – označuje, či bolo spustenie preložené
+
+- **APP_THREAD_CREATION_WAIT_TIME_TIME_FOR_APP_THREAD_CREATION** – čas potrebný na vytvorenie vlákien aplikácie
+
+- **AVAILABLE_MEMORY_IN_MB** – celková pamäť dostupná v zariadení 
+
+- **AVG_SNAPSHOT_POPULATION_TIME** – priemerný čas potrebný na načítanie štruktúr poznámkového bloku počas používania aplikácie
+
+- **BOOT_END_AT_VIEW** – podkategória názvu aktivity (názov zobrazenia)
+
+- **BOOT_SNAPSHOTS** – detail načítaní štruktúr poznámkového bloku pre kontá použité v aplikácii
+
+- **COREAPP_STARTUP_ACCOUNT_SETUP_STARTUP_ACCOUNT_SETUP** – čas potrebný na kontrolu a spustenie skúsenosti jediného prihlásenia
+
+- **CRASH_INTERACTION_DURING_BOOT> 0** – označuje, či aplikácia zlyhala počas poslednej relácie
+
+- **DALVIK_HEAP_LIMIT_IN_MB** – zastarané
+
+- **DELAY_LOAD_STICKY_NOTES** – označuje, či sa rýchle poznámky zobrazujú s oneskorením alebo nie
+
+- **FISHBOWL_SHOWN_DURING_EVENT** – označuje inštancie, kde sa obsah nesynchronizuje
+
+- **HAS_LOGCAT_LOGGING_IMPACT_ON_BOOT** – označuje, či majú protokoly vplyv na čas spúšťania
+
+- **INIT_SNAPSHOT_DURATION** – čas potrebný na získanie štruktúry poznámkového bloku pre používateľské kontá
+
+- **IS_COLD_BOOT** – označuje, či sa aplikácia spustí, keď nebola spustená na pozadí
+
+- **IS_FIRST_LAUNCH** – označuje, či ide o prvé spustenie aplikácie v zariadení 
+
+- **IS_PHONE** – označuje, či zariadenie je telefón alebo tablet
+
+- **IS_RECENT_PAGES_AVAILABLE_ON_FRAGMENT_CREATION** – označuje, či je používateľské rozhranie pripravené a čaká, kedy bude obsah k dispozícii 
+
+- **IS_REHYDRATE_LAUNCH** – označuje, či aplikáciu vypol systém
+
+- **IS_UPGRADE** – označuje, či sa aplikácia spúšťa po inovácii
+
+- **JOT_MAIN_APP_CREATE_TIME_MAIN_APP_CREATE_TIME** – čas potrebný na vytvorenie súčasti JOT (súčasť so zdieľaným kódom) 
+
+- **JOT_MAIN_APP_INIT_TIME_MAIN_APP_INIT_TIME** – čas potrebný na inicializáciu súčasti JOT
+
+- **LAUNCH_POINT** – označuje, či je aplikácia otvorená z miniaplikácie alebo ikony aplikácie alebo hypertextového prepojenia alebo zo zdieľania atď.
+
+- **MSO_ACTIVATION_TIME_ACTIVATION_TIME** – čas potrebný na inicializáciu MSO
+
+- **NATIVE_LIBRARIES_LOAD_TIME** – čas potrebný na načítania knižníc
+
+- **NAVIGATION_CREATE_TO_NAVIGATION_RESUME_CREATE_TO_NAVIGATION_RESUME** – čas potrebný na dokončenie navigácie
+
+- **NAVIGATION_RESUME_TO_BOOT_END_RESUME_TO_BOOT_END** – čas potrebný na meranie oneskorenia v načítaní stránky po štarte.
+
+- **NAVIGATION_SET_CONTENT_VIEW_TIME_SET_CONTENT_VIEW_TIME** – čas potrebný na zobrazenie obsahu
+
+- **NUMBER_Of_RUNNING_PROCESSES** – označuje počet spustených aktívnych procesov
+
+- **NUMBER_OF_SNAPSHOTS** – počet načítaní štruktúry poznámkového bloku počas štartu
+
+- **OFFICEASSETMANAGER_INITIALIZATION_TIME** – čas potrebný na rozbalenie a inicializáciu správcu položiek
+
+- **PROCESS_BOOT_TIME_IN_MS** – čas potrebný na dokončenie vytvorenia procesu
+
+- **ROOT_ACTIVITY_CREATE_ACTIVITY_CREATE** – čas potrebný na prechod z koreňovej vrstvy 
+
+- **ROOT_ACTIVITY_DISK_CHECK_ACTIVITY_DISK_CHECK** – zastarané
+
+- **ROOT_ACTIVITY_LAUNCH_NEXTACTIVITY_ACTIVITY_LAUNCH_NEXTACTIVITY** – zastarané
+
+- **ROOT_ACTIVITY_PROCESS_INTENT_ACTIVITY_PROCESS_INTENT** – zastarané 
+
+- **ROOT_ACTIVITY_SESSION_ACTIVITY_SESSION** – čas potrebný na prechod z koreňovej vrstvy 
+
+- **ROOT_TO_NAVIGATION_TRANSITION_TO_NAVIGATION_TRANSITION** – čas potrebný na spracovanie navigácie z koreňa
+
+- **SNAPSHOT_PUBLISH_TO_RENDERING_END_PUBLISH_TO_RENDERING_END** – čas potrebný na dokončenie vykresľovania obsahu
+
+- **SPLASH_ACTIVITY_SESSION_ACTIVITY_SESSION** – čas potrebný na zobrazenie úvodnej obrazovky
+
+- **SPLASH_TO_ROOT_TRANSITION_TO_ROOT_TRANSITION** – čas potrebný na prechod z koreňovej vrstvy 
+
+- **TIME_BETWEEN_PROCESS_BOOT_AND_ACTIVITY_BEGIN_IN_MS** – čas medzi vytvorením procesu a aktivity 
+
+- **TIME_TAKEN_IN_MS** – čas potrebný na dokončenie štartu
+ 
+- **TOTAL_MEMORY_IN_MB** – celková pamäť zariadenia
+ 
+- **USER_INTERACTED_DURING_EVENT** – označuje, či došlo k interakcii používateľa počas štartovania
+
+#### <a name="onenoteapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground 
+
+Signál, ktorý sa používa na označenie toho, že aplikácia OneNote sa nachádza v popredí.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. 
+
+Zhromažďujú sa tieto polia: Žiadne
+
+#### <a name="onenoteapplaunch"></a>OneNote.AppLaunch
+
+Kritický signál sa používa na zaistenie, aby používatelia OneNotu mohli úspešne spustiť aplikáciu.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. 
+
+Zhromažďujú sa tieto polia: 
+
+- **FirstLaunchTime** – zaznamenáva čas, kedy bola aplikácia spustená prvýkrát
+
+- **InstallLocation** – označuje, či je aplikácia predinštalovaná alebo stiahnutá z obchodu
+
+- **is_boot_completed_ever** – označuje, či sa aplikácia predtým v zariadení úspešne spustila
+
+- **NewOneNoteUser** – identifikujte, či je používateľ novým používateľom
 
 #### <a name="officeoutlookdesktopexchangepuidandtenantcorrelation"></a>Office.Outlook.Desktop.ExchangePuidAndTenantCorrelation
 
@@ -6338,7 +6754,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officetelemetryengineisprelaunch"></a>Office.TelemetryEngine.IsPreLaunch
 
-Vzťahuje sa na všetky aplikácie UWP balíka Office.  Táto udalosť sa spustí pri prvom spustení aplikácie balíka Office po inovácii/inštalácii z obchodu. Je súčasťou základných diagnostických údajov, ktoré sa používajú na sledovanie, či ide o reláciu spustenia alebo nie.
+Vzťahuje sa na všetky aplikácie UWP balíka Office.  Táto udalosť sa spustí pri prvom spustení aplikácie balíka Office po inovácii/inštalácii z obchodu. Je súčasťou základných diagnostických údajov, ktoré sa používajú na sledovanie, či ide o reláciu spustenia alebo nie.
 
 Zhromažďujú sa tieto polia:
 
@@ -7661,6 +8077,67 @@ Zhromažďujú sa tieto polia:
 
 - **Error** – Obsahuje chybové hlásenie, že sa vracia objekt chyby.
 
+#### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
+
+Dôležité pri zachytávaní metriky výkonu aplikácie s ohľadom na čas odozvy aplikácie od spustenia.  Spoločnosť Microsoft používa túto možnosť na zber času potrebného na odozvu aplikácie a tiež na zisťovanie scenárov, ktoré môžu mať vplyv na čas spustenia v aplikáciách WXP.
+
+Zhromažďujú sa tieto polia:
+ 
+- **AnyCrashInteractionDuringBoot** – Boolovská hodnota pre každé zlyhanie, ktoré sa vyskytne počas štartu
+
+- **AppActivationTimeInMs** – čas fázy aplikácie
+
+- **AppSuspendedDuringBoot** – Boolovská hodnota pre pozastavenie aplikácie počas štartu
+
+- **AvailableMemoryInMB** – dostupná pamäť
+
+- **CollectionTime** – čas udalosti
+
+- **DalvikHeapLimitInMB** – informácie o haldách
+
+- **DocumentRecoveryInvoked** – Boolovská hodnota, ktorá označuje, či bol nejaký dokument obnovený
+
+- **ExtractionDone** – čas extrakcie natívnej knižnice
+
+- **FastBootGainTimeInMs** – čas potrebný na dokončenie rýchleho štartu
+
+- **FileActivationAttempted** – Boolovská hodnota, ktorá označuje, či bolo spustenie aplikácie spôsobené aktiváciou súboru
+
+- **HasLogcatLoggingImpactOnBoot** – Boolovská hodnota, ktorá označuje, či logcat ovplyvnil čas štartu
+
+- **IsThisFirstLaunch** – Boolovská hodnota, ktorá označuje, či ide o prvé spustenie aplikácie
+
+- **LatencyTimeInMilliSec** – oneskorenie v milisekundách
+
+- **LibrarySharingTimeInMs** – čas na zdieľanie knižníc
+
+- **LoadMinLibsTimeInMs** – čas načítania minimálnej množiny knižníc
+
+- **MruListingTimeInMs** – čas potrebný na načítanie MRU
+
+- **NativeLibrariesLoadTime** – čas načítania knižnice CPP
+
+- **NumberOfRunningProcesses** – počet spustených procesov
+
+- **NumberOfRunningProcesses** – počet spustených procesov
+
+- **NumberOfRunningServices** – počet spustených služieb
+
+- **OfficeActivityTimeInMs** – čas na inicializáciu OfficeActivity
+
+- **PostAppInitTimeInMs** – čas fázy aplikácie
+
+- **PreAppInitializationTime** – čas inicializácie fázy aplikácie
+
+- **PreAppInitTimeInMs** – čas fázy aplikácie
+
+- **TotalMemoryInMB** – celková pamäť
+
+- **UIRaaSDownloadLanguagePackageBoot** – informácie týkajúce sa stiahnutia jazykového balíka
+
+- **UserDialogInterruptionDuringBoot** – Boolovská hodnota pre každé blokujúce dialógové okno, ktoré sa zobrazí počas štartu
+
+
 #### <a name="office_apple_apple_appboot_mac"></a>Office_Apple_Apple_AppBoot_Mac
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase potrebnom na spustenie aplikácie, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
@@ -8120,6 +8597,655 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Timeout** – ako dlho nereagovanie trvalo
 
+  #### <a name="officeandroidadalsigninuiprompts"></a>Office.Android.ADALSignInUIPrompts
+
+Táto udalosť označuje, že sa používateľovi zobrazila výzva na prihlásenie do školského alebo pracovného konta.  Táto udalosť pomáha porozumieť stavu prihlásenia našich aplikácií a vykonať príslušné akcie, keď si všimneme neočakávané opakované výzvy na prihlásenie. 
+
+Zhromažďujú sa tieto polia:
+
+- **LastLoginDelta** – čas od posledného úspešného prihlásenia.
+
+- **PreviousIdentityCredProviderState** – označuje stav konta.
+
+- **PreviousIdentityState** – označuje stav konta, napríklad uplynutie platnosti relácie. 
+
+- **SignInResultCode** – označuje kód výsledku ukončenia výzvy na prihlásenie.
+
+- **UseCache** – označuje, či sme vynútili výzvu pre používateľa na opätovné zadanie hesla.
+
+- **UserType** – označuje, či ide o existujúce konto alebo nové konto.
+
+#### <a name="officeandroidandroidappdocsfileoperationends"></a>Office.Android.AndroidAppDocsFileOperationEnds
+
+Údaje telemetrie Critical Docs Android Only (AppDocs) pre koncové operácie Súbor Nový/Otvoriť/Uložiť ako. Týmto sa zachytávajú kódy chýb pre zlyhania týchto operácií AppDocsOperations.  Spoločnosť Microsoft používa túto možnosť na identifikovanie zlyhaní v rôznych operáciách súborov a presnej vrstvy, v ktorej došlo k zlyhaniu aplikácií WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **AccessMode** – hodnota enumerácie režimu prístupu pre súbor. Hodnoty – None, ReadOnly, ReadOnlyUpgradable, ReadWrite
+
+- **BlockingUIShown** – Boolovská hodnota, ktorá označuje, či sa zobrazilo blokovacie používateľské rozhranie kdekoľvek v postupe.
+
+- **ContentUriAuthority** – autorita URL adresy obsahu z SAF
+
+- **Correlation** – identifikátor GUID pre ID korelácie v súvislosti s operáciou
+
+- **DocId** – ID dokumentu vygenerované AppDocs
+
+- **DocInstanceId** – DocInstanceId ID inštancie dokumentu vygenerované AppDocs, ktoré je zamerané na inštanciu operácie v dokumente
+
+- **DocIsEnterpriseProtected** – Boolovská hodnota, ktorá označuje, či je dokument chránený.
+
+- **DocUserId** – ID používateľa z vrstvy overenia MS
+
+- **DocUserIdProvider** – enumerácia predstavujúca poskytovateľa ID používateľa, 0 = neznáme, 1 = LiveId; 2 = OrgId, 3 = SSPI, 4 = ADAL
+
+- **DurationInMs** – čas v milisekundách na ukončenie operácie súboru
+
+- **EndReason** – hodnota enumerácie pre dôvod ukončenia.  Hodnoty – None, Success, Failure, Cancel
+
+- **ErrorCode** – kód chyby pre operáciu súboru
+
+- **Extension** – prípona otvoreného súboru.
+
+- **FileSourceLocation** – hodnota enumerácie pre umiestnenie súboru. Možné hodnoty: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **FILETIME** – čas udalosti
+
+- **FirstBCSClientError_Info** – informácie o kóde chyby v súvislosti s konverziami súborov
+
+- **HttpStatusCode**-http – kód odozvy HTTP pre žiadosť o webovú službu
+
+- **InitalizationReason** – vstupný bod pre otvorenie súboru
+
+- **K2FileIOHresult** – kód Hresult pre ukončenie operácie otvorenia súboru
+
+- **LastBCSClientError_TagId** – posledná chyba klienta BCS (Binary Conversion Service)
+
+- **OfficeWebServiceApiStatusFlag** – príznak stavu pre žiadosť o webovú službu
+
+- **OpEndEventId** – značka, ktorá predstavuje miesto, kde sa operácia v skutočnosti ukončila
+
+- **OpFlags** – príznaky parametrov operácií s dokumentom, ktoré používa vrstva AppDocs.
+
+- **OpSeqNum** – číslo, ktoré predstavuje postupnosť volaní súvisiacich s operáciami súborov vo vrstve AppDocs
+
+- **OpType** – enumerácia typu operácie. Hodnoty: "None", "CreateDocument", "OpenDocument", "CopyDocument", "CloseDocument", "SaveDocument", "OpenVersion", "CloseVersion"
+
+- **PreFetchState** – enumerácia stavu prednačítania šablón pre operácie vytvorenia nových súborov.
+
+- **ProviderApp** – názov balíka aplikácie, z ktorej sa súbor otvoril
+
+- **ScopeInstanceId** – ID inštancie rozsahu, ktoré sa používa na pripojenie kontextu údajov k aktivitám
+
+- **Size** – veľkosť súboru
+
+- **State** – hodnota enumerácie pre stav súboru. Hodnoty: None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **TemplateName** – názov binárnej šablóny v šablóne dokumentu zo služby šablón, napríklad TF10002009.dotx.
+
+- **UriScheme** – schéma URL adresy
+
+#### <a name="officeandroidandroidautherror"></a>Office.Android.AndroidAuthError
+
+Táto udalosť označuje zlyhania základného overenia počas bezobslužného obnovovania tokenu, načítanie prihlasovacej stránky zo služby a podobne.  Táto udalosť pomáha porozumieť stavu prihlásenia našich aplikácií, vykonaným pokusom o prihlásenie, a vykonať príslušné akcie, keď si všimneme neočakávané zlyhania. 
+
+Zhromažďujú sa tieto polia:
+
+- **ADALErrorCode** – označuje kód chyby pri zobrazení výzvy na prihlásenie alebo bezobslužného pokusu o načítanie tokenu pre pracovné konto.
+
+- **ADALRawErrorCode** – označuje kód chyby RAW pri zobrazení výzvy na prihlásenie alebo bezobslužného pokusu o načítanie tokenu pre pracovné konto.
+
+- **ErrorGroup** – označuje typ konta, napríklad osobné konto alebo pracovné konto, alebo lokálne pracovné konto.
+
+- **IDCRLErrorCode** – označuje kód chyby pri zobrazení výzvy na prihlásenie pre osobné konto.
+
+- **IDCRLRawErrorCode** – označuje kód chyby RAW pri zobrazení výzvy na prihlásenie pre osobné konto.
+
+- **LiveOAuthErrorCode** – označuje kód chyby počas bezobslužného pokusu o obnovenie tokenu pre osobné konto.
+
+- **LiveOAuthRawErrorCode** – označuje kód chyby RAW počas bezobslužného pokusu o obnovenie tokenu pre osobné konto.
+
+- **NTLMErrorCode** – označuje kód chyby pri zobrazení výzvy na prihlásenie pre lokálne pracovné konto.
+
+#### <a name="officeandroidandroidfileasyncsavestatus"></a>Office.Android.AndroidFileAsyncSaveStatus
+
+Zachytáva údaje o stave asynchrónnych uložení súborov a rôzne kódy chýb z rôznych súčastí.  Spoločnosť Microsoft používa tieto údaje na analýzu toho, či došlo k strate údajov používateľa v aplikácii počas ukladania súborov v aplikáciách WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **FileExtension** – prípona súboru
+
+- **FileIOSaveHResult** – hodnota HResult operácie uloženia súboru
+
+- **FileIOSaveIsCopy** – Boolovská hodnota, ktorá označuje, či sa v rámci operácie ukladá kópia.
+
+- **FileSize** – veľkosť súboru
+
+- **FileSourceLocation** – enumerácia pre umiestnenie zdroja súboru. Hodnoty: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+#### <a name="officeandroidandroidfileopenreliability"></a>Office.Android.AndroidFileOpenReliability
+
+Zachytáva údaje o stave otvorenia súboru a rôzne kódy chýb na identifikovanie toho, aké zlyhania otvorenia súboru sú očakávané a neočakávané a ktorá časť kódu ich nahlasuje.  Spoločnosť Microsoft používa tieto údaje na analýzu príčin zlyhaní otvorení súborov a výpočet kritickej metriky, napríklad miery úspešnosti otvorení súborov v aplikáciách WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **AccessMode** – enumerácia režimu prístupu
+
+- **AppDocsFileOpenErrorCode** – kód chyby AppDocs v prípade zlyhania otvorenia súboru
+
+- **ContentUriAuthority** – autorita URL adresy obsahu z SAF
+
+- **DownloadCsiError** – hlásenie chyby pri sťahovaní z CSI
+
+- **FileExtension** – prípona súboru
+
+- **FileOpenEndErrorCode** – kód chyby v prípade zlyhania otvorenia súboru
+
+- **FileOpenStatus** – enumerácia stavu otvorenia súboru
+
+- **FileSize** – veľkosť súboru
+
+- **FileSourceLocation** – enumerácia umiestnenia súboru
+
+- **FirstBCSClientError_Info** – posledná chyba klienta BCS (Binary Conversion Service)
+
+- **IfWordFileOpenCancelled** – či bolo otvorenie súboru vo Worde zrušené používateľom
+
+- **InitializationReason** – enumerácia pre vstupný bod otvorenia súboru
+
+- **IsAutoSaveDisabled** – či je automatické ukladanie vypnuté počas otvorenia súboru
+
+- **IsFileEmpty** – Boolovská hodnota, ktorá označuje, či je súbor prázdny
+
+- **K2FileIOHresult** – hodnota Hresult pre ukončenie operácie súboru
+
+- **OpenCsiError** – hlásenie chyby otvorenia súboru vo vrstve CSI
+
+- **OpEndEventId** – značka, kde sa operácia v skutočnosti ukončila
+
+- **PPTHresult** – hodnota Hresult v PPT
+
+- **PPTIsExpectedError** – klasifikácia chyby PPT pre očakávané/neočakávané zlyhanie otvorenia súboru 
+
+- **PPTTag** – značka chyby v PPT
+
+- **ProviderApp** – názov balíka aplikácie, z ktorej sa súbor otvoril
+
+- **ProviderFileSize** – veľkosť súboru zachytená pri otváraní súboru prostredníctvom aktivácie súboru
+
+- **Stae** – enumerácia stavu otvorenia súboru
+
+- **UriScheme** – schéma URL adresy
+
+- **WordErrortag** – značka chyby vo Worde
+
+- **WordFileCorruptionReason** – dôvod poškodenia, ktorý môže spôsobiť zlyhanie otvorenia wordového súboru
+
+- **WordFileOpenErrorCode** – špecifický kód chyby otvorenia súboru vo Worde.
+
+- **WordFileTypeFromDod** – typ súboru určený Wordom na základe skutočného formátu súboru
+
+- **WordFileTypeFromExtension** – typ súboru určený Wordom na základe prípony súboru
+
+#### <a name="officeandroidandroidfilesavestatus"></a>Office.Android.AndroidFileSaveStatus
+
+Dôležité na zachytávanie údajov o stave uložení súborov a rôznych kódov chýb z rôznych súčastí.  Spoločnosť Microsoft používa tieto údaje na analýzu toho, či došlo k strate údajov používateľa v aplikácii počas ukladania súborov v aplikáciách WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **AccessMode** – Hodnoty** – None, ReadOnly, ReadOnlyUpgradable, ReadWrite.
+
+- **AppDocsEndReason** – enumerácia pre dôvod ukončenia uloženia súboru AppDocs EndReason.  Hodnoty: None, Success, Failure, Cancel.
+
+- **AppDocsErrorCode** – posledný kódu chyby pri zlyhaní ukladania súboru
+
+- **AppDocsTriggeringSaveDetails** – pole, ktoré označuje, či AppDocs spúšťa uloženie
+
+- **DocInstanceId** – DocInstanceId ID inštancie dokumentu vygenerované AppDocs, ktoré je zamerané na inštanciu operácie v dokumente
+
+- **ExcelFileSaveResult** – špecifický kód HResult v Exceli
+
+- **FileExtension** – prípona súboru.
+
+- **FileIOSaveErrorCode** – kód chyby vo FileIO
+
+- **FileIOSaveHResult** – kód HResult vo FileIO
+
+- **FileIOSaveIsCopy** – Boolovská hodnota, ktorá označuje, či ide o operáciu kópie.
+
+- **FileSize** – veľkosť súboru
+
+- **FileSourceLocation** – enumerácia umiestnenia súboru.  Hodnoty: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **OpFlags** – príznaky operácie uloženia
+
+- **PPTFileSaveFailHresult** – kód HResult v PPT pri zlyhaní uloženia
+
+- **PPTFileSaveFailTag** – značka v PPT pri zlyhaní uloženia
+
+- **State** – enumerácia stavu otvorenia súboru. 
+
+- **Hodnoty** – None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **WordFileCopyErrorTrackbackTag** – značka odkazu pri zlyhaní vo fáze CopyDocument vo Worde
+
+- **WordFileSaveCancelReason** – značka odkazu pri zrušeniach vo Worde
+
+- **WordFileSaveEid** – špecifický kód chyby pre Word
+
+- **WordFileSaveErrorTrackbackTag** – značka odkazu pri zlyhaniach uloženia
+
+- **WordFileSaveOpResult** – enumerácia pre stav výsledku 0 v prípade úspechu, 1 v prípade zlyhania, 2 v prípade zrušenia
+
+- **WordFileSaveSuccess** – enumerácia pre špecifické podrobnosti vo Worde pri úspešnej operácii uloženia súborov.
+
+#### <a name="officeandroidandroidofficeactivationlatency"></a>Office.Android.AndroidOfficeActivationLatency
+
+Dôležité údaje na zhromažďovanie komplexného času otvorenia súborov pre všetky otvorenia súborov v aplikáciách Windows, Excel a PowerPoint.  Spoločnosť Microsoft používa túto možnosť na zistenie metriky pre výkon našich aplikácií pri otváraní súborov
+
+Zhromažďujú sa tieto polia:
+
+- **AppBootingOccured** – Boolovská hodnota na kontrolu, či je štart aplikácie dokončený
+
+- **ApplicationBootTime** – čas potrebný počas konkrétnej fázy štartu aplikácie
+
+- **AppSuspendedDuringBoot** – Boolovská hodnota, ktorou sa kontroluje, či bola aplikácia pozastavená počas štartu
+
+- **BlockingUIShownDuringFileOpen** – Boolovská hodnota, ktorá označuje, či sa počas operácie otvorenia súboru zobrazilo nejaké blokovacie dialógové okno
+
+- **CachedInfoAvailable** – Boolovská hodnota, ak hľadáte informácie vo vyrovnávacej pamäti špecifické pre operáciu otvorenia súboru
+
+- **DocumentRecoveryInvoked** – Boolovská hodnota, ktorá označuje, či nejaký dokument čakal na obnovenie
+
+- **EndToEndActivationTime** – čas potrebný na vykreslenie súboru pre súbory otvorené mimo aplikácie
+
+- **EndToEndFileOpenTime** – čas potrebný na vykreslenie súboru pre súbory otvorené v rámci aplikácie
+
+- **FileOpenPhaseDurationInMs** – čas operácie otvorenia súboru spotrebovaný v konkrétnej fáze
+
+- **FileSourceLocation** – hodnota enumerácie pre umiestnenie súboru, napríklad None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **InitalizationReason** – vstupný bod pre otvorenie súboru
+
+- **InitialBootPhaseTime** – čas potrebný počas konkrétnej fázy štartu aplikácie
+
+- **IsThisFirstLaunch** – Boolovská hodnota, ktorá označuje, či je toto prvé spustenie aplikácie
+
+- **MinimumLibraryLoadPhaseTime** – čas potrebný počas konkrétnej fázy štartu aplikácie
+
+- **MinimumLibraryLoadPhaseTime** – čas potrebný počas konkrétnej fázy štartu aplikácie
+
+- **MinimumLibraryLoadPhaseTime** – čas potrebný počas konkrétnej fázy štartu aplikácie
+
+- **PostAppInitTimeInMs** – čas potrebný počas konkrétnej fázy štartu aplikácie
+
+- **PPTRenderPhase** – čas, ktorý sa vzťahuje na konkrétnu fázu vo vykresľovaní v PPT
+
+- **PreAppInitTimeInMs** – čas potrebný počas konkrétnej fázy štartu aplikácie
+
+- **ProviderApp** – názov balíka aplikácie, z ktorej sa súbor otvoril
+
+- **TelemetryReason** – hodnota enumerácie, ktorá je podobná ako InitialisationReason, ale podrobnejšia ohľadom vstupného bodu otvorenia súboru.
+
+- **UserDialogInterruptionDuringBoot** – Boolovská hodnota, ktorá označuje, či sa počas štartu zobrazilo nejaké blokujúce dialógové okno
+
+- **XLRenderPhase** – čas, ktorý sa vzťahuje na konkrétnu fázu vo vykresľovaní v Exceli
+
+#### <a name="officeandroidappdocsfileoperationends"></a>Office.Android.AppDocsFileOperationEnds
+
+Údaje telemetrie Critical Docs Android Only (AppDocs) pre koncové operácie Súbor Nový/Otvoriť/Uložiť ako. Týmto sa zachytávajú kódy chýb pre zlyhania týchto operácií AppDocsOperations.  Spoločnosť Microsoft používa túto možnosť na identifikovanie zlyhaní v rôznych operáciách súborov a presnej vrstvy, v ktorej došlo k zlyhaniu aplikácií WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **AccessMode** – hodnota enumerácie režimu prístupu pre súbor.  Hodnoty: None, ReadOnly, ReadOnlyUpgradable, ReadWrite
+
+- **BlockingUIShown** – Boolovská hodnota, ktorá označuje, či sa zobrazilo blokovacie používateľské rozhranie kdekoľvek v postupe.
+
+- **ContentUriAuthority** – autorita URL adresy obsahu z SAF
+
+- **Correlation** – identifikátor GUID pre ID korelácie v súvislosti s operáciou
+
+- **DocId** – ID dokumentu vygenerované AppDocs
+
+- **DocInstanceId** – DocInstanceId ID inštancie dokumentu vygenerované AppDocs, ktoré je zamerané na inštanciu operácie v dokumente
+
+- **DocIsEnterpriseProtected** – Boolovská hodnota, ktorá označuje, či je dokument chránený.
+
+- **DocUserId** – ID používateľa z vrstvy overenia MS
+
+- **DocUserIdProvider** – enumerácia predstavujúca poskytovateľa ID používateľa, 0 = neznáme, 1 = LiveId; 2 = OrgId, 3 = SSPI, 4 = ADAL
+
+- **DurationInMs** – čas v milisekundách na ukončenie operácie súboru
+
+- **EndReason** – hodnota enumerácie pre dôvod ukončenia.  Hodnoty: None, Success, Failure, Cancel
+
+- **ErrorCode** – kód chyby pre operáciu súboru
+
+- **Extension** – prvé štyri znaky prípony otvoreného súboru.
+
+- **FileSourceLocation** – hodnota enumerácie pre umiestnenie súboru. Možné hodnoty: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **FILETIME** – čas udalosti
+
+- **FirstBCSClientError_Info** – informácie o kóde chyby v súvislosti s konverziami súborov
+
+- **HttpStatusCode**-http – kód odozvy HTTP pre žiadosť o webovú službu
+
+- **InitalizationReason** – vstupný bod pre otvorenie súboru
+
+- **K2FileIOHresult** – kód Hresult pre ukončenie operácie otvorenia súboru
+
+- **LastBCSClientError_TagId** – posledná chyba klienta BCS (Binary Conversion Service)
+
+- **OfficeWebServiceApiStatusFlag** – príznak stavu pre žiadosť o webovú službu
+
+- **OpEndEventId** – značka, ktorá predstavuje miesto, kde sa operácia v skutočnosti ukončila
+
+- **OpFlags** – príznaky parametrov operácií s dokumentom, ktoré používa vrstva AppDocs.
+
+- **OpSeqNum** – číslo, ktoré predstavuje postupnosť volaní súvisiacich s operáciami súborov vo vrstve AppDocs
+
+- **OpType** – enumerácia typu operácie. Hodnoty: "None", "CreateDocument", "OpenDocument", "CopyDocument", "CloseDocument", "SaveDocument", "OpenVersion", "CloseVersion"
+
+- **PreFetchState** – enumerácia stavu prednačítania šablón pre operácie vytvorenia nových súborov.
+
+- **ProviderApp** – názov balíka aplikácie, z ktorej sa súbor otvoril
+
+- **ScopeInstanceId** – ID inštancie rozsahu, ktoré sa používa na pripojenie kontextu údajov k aktivitám
+
+- **Size** – veľkosť súboru
+
+- **State** – hodnota enumerácie pre stav súboru. Hodnoty: None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **TemplateName** – názov binárnej šablóny v šablóne dokumentu zo služby šablón, napríklad TF10002009.dotx.
+
+- **UriScheme** – schéma URL adresy
+
+#### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
+
+Telemetria chýb binárnej konverzie pri operáciách tlače a zdieľania vo formáte PDF.  Spoločnosť Microsoft používa túto možnosť na identifikáciu bodov zlyhania počas konverzií BCS v aplikáciách WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **DocumentFileSize** – veľkosť súboru.
+
+- **FileExtension** – prvé štyri znaky prípony súboru.
+
+- **IsFileDirty** – Boolovská hodnota, ktorá označuje, či sa v súbore nenachádzali neuložené zmeny.
+
+- **Location** – enumerácia umiestnenia súboru.  Hodnoty: OneDrive, SharePoint, Dropbox, Others
+
+- **PDFConversionError** – značka, kde sa vyskytne chyba pri konverzii PDF
+
+- **PdfConversionErrorCode** – kód chyby konverzie PDF
+
+- **PdfConversionHRStatus** – kód stavu konverzie PDF
+
+- **PdfConversionResult** – enumerácia výsledku konverzie PDF.  Hodnoty: "Success", "Failed", "Cancelled"
+
+- **PdfFileSize** – veľkosť PDF súboru
+
+#### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
+
+Telemetria kritických chýb v prípade zlyhania databázy pri prehľadávaní súborov a pridávaní miest.  Spoločnosť Microsoft používa túto možnosť na identifikovanie problémov s poškodením databázy v aplikáciách, ktoré môžu brániť používateľovi v pridávaní miest alebo prehľadávaní cez aplikáciu v rámci aplikácií WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **ClientTransactionId** – identifikátor GUID, ktorý sa odovzdá do DSC na účely konkrétnej žiadosti o uplatnenie nároku.
+
+- **CollectionTime** – čas dokončenia kúpy predplatného
+
+- **CountryCode** – kód krajiny klienta, ktorý sa odošle do DSC na účely žiadosti klienta o uplatnenie nároku
+
+- **GoPremiumEntryPoint** – vstupný bod spustenia nákupu 
+
+- **IsActivateExistingSubscription** – Boolovská hodnota, ktorá označuje, či sa našlo existujúce predplatné, ktoré bolo aktivované.
+
+- **IsErrorRetriable** – Boolovská hodnota, ktorá označuje, či je možné zopakovať pokus o uplatnenie nároku
+
+- **IsPreviousPurchase** – Boolovská hodnota, ktorá označuje, či došlo k aktivácii pri predchádzajúcom zakúpení predplatného
+
+- **IsProvisioningTriggeredByRetry** – Boolovská hodnota, ktorá označuje, či došlo k opakovanému pokusu
+
+- **LanguageCode** – kód jazyka klienta, ktorý sa odošle do DSC na účely žiadosti klienta o uplatnenie nároku
+
+- **ProductIdentifier** – názov jednotky SKU, ktorú sa klient pokúša zakúpiť
+
+- **ProvisioningHttpStatusCode** – kód stavu poskytovania HTTP
+
+- **ProvisioningStatusCode** – kód stavu poskytovania
+
+- **PurchaseOrderId** – identifikátor nákupnej objednávky z obchodu Google/Samsung
+
+- **RedemptionTaskHR** – kód HResult úlohy uplatnenia nároku na predplatné
+
+- **SubscriptionProvisioningSucceeded** – Boolovská hodnota pre úspešný výsledok poskytovania predplatného
+
+- **SubscriptionPurchaseHR** – kód HResult úlohy zakúpenia predplatného
+
+- **SubscriptionType** – enumerácia typu predplatného alebo jednotiek SKU.
+
+- **TCID** – kliknutie na ikonu, ktorým sa spustí proces predplatného
+
+#### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
+
+Telemetria kritických chýb v prípade zlyhania databázy pri prehľadávaní súborov a pridávaní miest.  Spoločnosť Microsoft používa túto možnosť na identifikovanie problémov s poškodením databázy v aplikáciách, ktoré môžu brániť používateľovi v pridávaní miest alebo prehľadávaní cez aplikáciu v rámci aplikácií WXP.
+
+Zhromažďujú sa tieto polia:
+
+- **ErrorAt** – hodnota značky: informácie o mieste, kde sa vyskytlo zlyhanie
+
+- **ExceptionErrorMessage** – podrobné chybové hlásenie
+
+#### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
+
+Túto udalosť zaznamenáme v prípade, že sa pri načítavaní zdieľaných knižníc vyskytnú chyby. Chyby pri načítavaní knižníc sa môžu vyskytnúť z dvoch dôvodov: 1) Nainštalovaná aplikácia nie je kompatibilná so zariadením. 2) Knižnica, ktorú sa pokúšame načítať, môže byť poškodená z dôvodu chýb v jej extrahovaní pre nedostatok miesta na disku alebo v pamäti.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_ExceptionMessage** – hlásenie výnimky zobrazené rozhraním Android API System.loadlibrary
+
+- **Data_FreeSpaceInMB** – dostupné voľné miesto v zariadení
+
+- **Data_nickName** – názov knižnice, ktorá sa nedá načítať.
+
+#### <a name="officeandroidintuneintunejavacopyfailedattempts"></a>Office.Android.Intune.IntuneJavaCopyFailedAttempts
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri ukladaní lokálnej kópie chránených cloudových dokumentov služby Intune.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- **Data_FileCreationFailedErrorCode** – kód chyby priradený k procesu
+
+#### <a name="officeandroidintuneintunejavaexceptionadaltokenformam"></a>Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri získavaní tokenu ADAL pre zdroje služby Intune.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- **Data_ErrorCode** – kód chyby priradený k procesu
+
+#### <a name="officeandroidintuneintunejavaexceptionapppolicy"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicy
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s načítaním politík identity pre aktuálny proces.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+ 
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionapppolicyforcontext"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s načítaním politík identity pre aktuálnu aktivitu.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+ 
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionauthenticationcallback"></a>Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s registráciou na spätné volanie overovania spravovaných kont.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptiongetaccountstatesync"></a>Office.Android.Intune.IntuneJavaExceptionGetAccountStateSync
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti so spravovaným kontom.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+ 
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptiongetissavetolocationallowed"></a>Office.Android.Intune.IntuneJavaExceptionGetIsSaveToLocationAllowed
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri načítavaní politiky v súvislosti s ukladaním do lokálneho umiestnenia.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptiongetpolicyforidentity"></a>Office.Android.Intune.IntuneJavaExceptionGetPolicyForIdentity
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s načítaním politík identity.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptiongetprotectioninfofromdescriptor"></a>Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromDescriptor
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s informáciami o ochrane.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+  
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptiongetprotectioninfofrompath"></a>Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromPath
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s informáciami o ochrane.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptiongetuipolicyidentity"></a>Office.Android.Intune.IntuneJavaExceptionGetUIPolicyIdentity
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s načítaním politík používateľského rozhrania pre spravované konto.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionisidentitymanaged"></a>Office.Android.Intune.IntuneJavaExceptionIsIdentityManaged
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s identifikovaním, či je konto spravované.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta.
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionnullenrollmentmanager"></a>Office.Android.Intune.IntuneJavaExceptionNullEnrollmentManager
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s registráciou súčastí na spätné volanie.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionprotect"></a>Office.Android.Intune.IntuneJavaExceptionProtect
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s ochranou spravovaného dokumentu.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta.
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionprotectfromdescriptorifrequired"></a>Office.Android.Intune.IntuneJavaExceptionProtectFromDescriptorIfRequired
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s ochranou spravovaného dokumentu.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionregisteraccountsync"></a>Office.Android.Intune.IntuneJavaExceptionRegisterAccountSync
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s registráciou spravovania konta cez Intune.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionsetuipolicyidentitysync"></a>Office.Android.Intune.IntuneJavaExceptionSetUIPolicyIdentitySync
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s nastavením politík pre spravované konto.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionunregisteraccountsync"></a>Office.Android.Intune.IntuneJavaExceptionUnregisterAccountSync
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti so scenármi vzdialeného vymazania pre spravovanie cez Intune.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidintuneintunejavaexceptionupdatetoken"></a>Office.Android.Intune.IntuneJavaExceptionUpdateToken
+
+Telemetria kritických chýb na sledovanie zlyhaní pre jednotlivé rozhrania API služby Intune. Táto telemetria sa zapisuje do denníka v prípade chýb pri volaní rozhraní API služby Intune v súvislosti s tokenom overenia aktualizácie pre spravované konto.  Spoločnosť Microsoft používa tieto údaje na identifikovanie chýb počas nasadenia a po nasadení služby Intune v rámci aplikácie, po prihlásení do aplikácie pomocou pracovného konta
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
+#### <a name="officeandroidlicenseactivationfailure"></a>Office.Android.LicenseActivationFailure
+
+Telemetria kritických chýb na sledovanie zlyhaní pri aktivácii licencií pre kontá O365 v aplikáciách W/X/P.  Spoločnosť Microsoft používa túto možnosť na analýzu zlyhaní aktivácie zakúpenej licencie na O365.
+
+Zhromažďujú sa tieto polia:
+
+- **EntryPoint** – enumerácia vstupného bodu spustenia procesu aktivácie licencie
+
+- **HResult** – kód chyby pri zlyhaní
+
+- **IsGallatin** – Boolovská hodnota na kontrolu, či ide o konto Gallatin
+
+- **MessageCode** – enumerácia označujúca bod zlyhania aktivácie
+
+- **PreviousEntryPoint** – enumerácia vstupného bodu spustenia procesu aktivácie licencie
+
+- **StateAfterActivation** – enumerácia označujúca stav licencie aplikácie pred spustením procesu aktivácie
+
+- **StateBeforeActivation** – enumerácia označujúca stav licencie aplikácie pred spustením procesu aktivácie
+
+- **UserAccountType** – enumerácia označujúca, či ide o osobné konto alebo podnikové konto.
+
+#### <a name="officeandroidmsasigninuiprompts"></a>Office.Android.MSASignInUIPrompts
+
+Táto udalosť označuje, že sa používateľovi zobrazila výzva na prihlásenie do osobného konta.  Táto udalosť pomáha porozumieť stavu prihlásenia našich aplikácií a vykonať príslušné akcie, keď si všimneme neočakávané opakované výzvy na prihlásenie. 
+
+Zhromažďujú sa tieto polia:
+
+- **ExternalCacheRefreshError** – kód chyby pokusu o obnovenie tokenu pred zobrazením výzvy na prihlásenie.
+
+- **LastLoginDelta** – čas od posledného úspešného prihlásenia.
+
+- **MSAserverUAID** – ID korelácie s údajmi telemetrie služby.
+
+- **PreviousIdentityState** – označuje stav konta, napríklad uplynutie platnosti relácie. 
+
+- **SignInResultCode** – označuje kód výsledku ukončenia výzvy na prihlásenie.
+
+- **UseCache** – označuje, či sme vynútili výzvu pre používateľa na opätovné zadanie hesla.
+
+- **UserType** – označuje, či ide o existujúce konto alebo nové konto.
+
+- **WasIdentitySignedOut** – označuje, či sa konto nachádzalo v stave odhlásenia.
+
+
 #### <a name="office_apple_licensing_mac_dractivationfailures"></a>Office_Apple_Licensing_Mac_DRActivationFailures
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zaznamenanie zlyhaní aktivácie Digital River (udalosť zaznamená kľúč a produkt, ktorý bol použitý na aktiváciu, ako aj prijatý kód chyby).  Táto udalosť sa používa na zisťovanie a pomoc pri riešení problémov s aktiváciou (problémy s Digital River).
@@ -8577,3 +9703,13 @@ Táto udalosť sa zhromažďuje vždy, keď PowerPoint zistí, že internetové 
 Zhromažďujú sa tieto polia:
 
 - **Data\_IsNexusDetected:bool** – zobrazuje, či je k dispozícii internetové pripojenie pri volaní služby Nexus (hodnota true) alebo pri volaní rozhrania API všeobecnej webovej služby (hodnota false)
+
+#### <a name="officeserviceabilitymanagerofficesvcmgrprofile"></a>Office.ServiceabilityManager.OfficeSvcMgrProfile
+
+Táto udalosť sa spúšťa pri spustení služby Office Serviceability Manager a je rozhodujúca pre poskytovanie presných prehľadov v súvislosti so stavom nasadenia a zlyhaniami aplikácií a doplnkov v rámci nájomníka zákazníka, a to tak, že nám umožňuje generovať prehľady pre správcov IT, aby mohli bezpečne zavádzať aktualizácie pre podnikové počítače.  
+
+Zhromažďujú sa tieto polia:
+
+- **DeviceIdJoinToken** – používa sa na spojenie údajov telemetrie celkového stavu a stavu nasadenia s inými funkčnými údajmi, ktoré sa zhromažďujú prostredníctvom kanála služieb.
+
+- **TenantAssociationKeyStamped** – boolovský príznak, ktorý sa používa na určenie počtu spravovaných zariadení v ekosystéme balíka Office.
