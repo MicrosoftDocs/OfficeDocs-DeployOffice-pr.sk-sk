@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 25f594865089d35cb46ebfcc9b97d6b048f6298d
-ms.sourcegitcommit: ad2bb6e42b2432a2cb9370594cd50f3a14f2fbe3
+ms.openlocfilehash: 4410d94ea0179200fce0cd4dd16aebd62a21a2f6
+ms.sourcegitcommit: 4ec332a6f7457f08aa17fdbb7ee7f308a449887f
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38310695"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962860"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -423,6 +423,37 @@ Zhromažďujú sa tieto polia:
   - **Wamapi** – identifikuje, ktoré rozhranie WAM API sa volá
 
   - **Wamtelemetrybatch** – v súčasnosti sa nepoužíva. V budúcnosti bude umožňovať súčasti WAM odosielať doplňujúce informácie o udalosti overovania.
+
+### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
+ 
+Táto udalosť sa zaznamená, keď sa v zozname kont poskytovaných súčasťou TokenSharingManager nájde konto s platným tokenom obnovenia.  Tento scenár sa týka jediného prihlásenia (SSO).
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **AccountType** – zaznamenáva typ konta
+
+- **ProviderPackageID** – zaznamenáva ID balíka aplikácie, ktorá poskytla toto konto
+
+### <a name="onenotesigninssoexternalappsinvalidaccount"></a>OneNote.SignIn.SSOExternalAppsInvalidAccount
+
+Táto udalosť sa zaznamená, keď sa vyskytne chyba pri pokuse o získanie tokenu obnovenia pre konto v zozname kont poskytovaných súčasťou TokenSharingManager. Tento scenár sa týka jediného prihlásenia (SSO).
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **RawError** – zaznamenáva nespracované chyby získané pri pokuse o získanie tokenu obnovenia s daným kontom
+
+### <a name="onenotestickynotesfetchtokencompleted"></a>OneNote.StickyNotes.FetchTokenCompleted
+ 
+Táto udalosť sa zaznamenáva po overení, keď sa dokončí načítanie tokenu obnovenia.
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **ErrorMessage** – ak načítanie tokenu zlyhalo, do tohto poľa sa zaznamená chybové hlásenie 
+
+- **Výsledok** – zaznamená výsledok pokusu o načítanie tokenu
+
+- **StickyNoteAccountType** – zaznamená typ konta, pre ktoré sa aplikácia pokúšala načítať token obnovenia
+
 
 ## <a name="click-to-run-events"></a>Udalosti služby Klikni a spusti
 
@@ -2531,13 +2562,19 @@ Táto udalosť nahlasuje akciu, ktorá vyvodzuje záver zo vstupu získaného po
 
 - **PRID** – reťazcová hodnota predstavujúca požadovaný identifikátor vydania produktu v scenári spotrebiteľskej inštalácie (napríklad „O365ProPlusRetail“)
 
-- **ProductsToAdd** – sarializovaný reťazec, ktorý klientovi C2R udáva pokyn, ktoré kombinácie produktu a kultúry má nainštalovať
+- **PridsToMigrateFromCentennial** – reťazec produktov balíka Office na migrovanie z inštalácií z Obchodu na technológiu Klikni a spusti
 
-- **ProductsToRemove** – sarializovaný reťazec, ktorý klientovi C2R udáva pokyn, ktoré kombinácie produktu a kultúry má odinštalovať
+- **ProductsToAdd** – serializovaný reťazec, ktorý klientovi C2R udáva pokyn, ktoré kombinácie produktu a kultúry má nainštalovať
+
+- **ProductsToMigrateFromO15C2R** – reťazec produktov a kultúr balíka Office na migrovanie z inštalácie balíka Office 2013 s technológiou Klikni a spusti
+
+- **ProductsToRemove** – serializovaný reťazec, ktorý klientovi C2R udáva pokyn, ktoré kombinácie produktu a kultúry má odinštalovať
 
 - **SharedComputerLicensing** – boolovská hodnota signalizujúca, či správca IT požadoval, aby inštalačný program povolil funkciu „SharedComputerLicensing“
 
 - **ShouldActivate** – boolovská hodnota signalizujúca, či správca IT vo svojom súbore configuration.xml vyžiadal pokus a automatickú aktiváciu licencie
+
+- **ShouldUninstallCentennial ** – Boolovský príznak označujúci, či sa produkty balíka Office z Obchodu majú odinštalovať.
 
 - **VersionToInstall** – reťazcová hodnota verzie balíka Office „16.0.xxxxx.yyyy“, ktorá sa inštaluje
  
@@ -2602,15 +2639,21 @@ Táto udalosť nahlasuje parametre použité na inštaláciu balíka Office
 
 - **PlatformToInstall** – reťazec označujúci konečné rozhodnutie o tom, či sa má nainštalovať balík Office x86 alebo x64.
 
-- **ProductsToRemove** – sarializovaný reťazec, ktorý klientovi C2R udáva pokyn, ktoré kombinácie produktu a kultúry má odinštalovať
-
 - **PRID** – reťazcová hodnota predstavujúca požadovaný identifikátor vydania produktu v scenári spotrebiteľskej inštalácie (napríklad „O365ProPlusRetail“)
 
-- **ProductsToAdd** – sarializovaný reťazec, ktorý klientovi C2R udáva pokyn, ktoré kombinácie produktu a kultúry má nainštalovať
+- **PridsToMigrateFromCentennial** – reťazec produktov balíka Office na migrovanie z inštalácií z Obchodu na technológiu Klikni a spusti
+
+- **ProductsToAdd** – serializovaný reťazec, ktorý klientovi C2R udáva pokyn, ktoré kombinácie produktu a kultúry má nainštalovať
+
+- **ProductsToMigrateFromO15C2R** – reťazec produktov a kultúr balíka Office na migrovanie z inštalácie balíka Office 2013 s technológiou Klikni a spusti
+
+- **ProductsToRemove** – serializovaný reťazec, ktorý klientovi C2R udáva pokyn, ktoré kombinácie produktu a kultúry má odinštalovať
 
 - **SharedComputerLicensing** – boolovská hodnota signalizujúca, či správca IT požadoval, aby inštalačný program povolil funkciu „SharedComputerLicensing“
 
 - **ShouldActivate** – boolovská hodnota signalizujúca, či správca IT vo svojom súbore configuration.xml vyžiadal pokus a automatickú aktiváciu licencie
+
+- **ShouldUninstallCentennial ** – Boolovský príznak označujúci, či sa produkty balíka Office z Obchodu majú odinštalovať.
 
 - **VersionToInstall** – reťazcová hodnota verzie balíka Office „16.0.xxxxx.yyyy“, ktorá sa inštaluje
 
@@ -2651,6 +2694,37 @@ Táto udalosť nahlasuje prijaté akcie s vplyvom na zariadenie, ako sú určen�
 - **VersionToInstall** – reťazcová hodnota verzie balíka Office „16.0.xxxxx.yyyy“, ktorá sa inštaluje
 
 
+### <a name="officeserviceabilitymanagerinventoryaddonresults"></a>Office.ServiceabilityManager.InventoryAddon.Results
+
+Táto udalosť sa zaznamená, keď sa dokončí volanie webovej služby uskutočnené v rámci doplnku Click-to-Run Serviceability Manager Inventory, a to bez ohľadu na to, či je úspešné alebo zlyhá. Je to v podstate posledná operácia v rámci doplnku na sledovanie celkového stavu operácie.
+
+Zhromažďujú sa tieto polia:
+
+-  **WebCallSource** – hodnota enumerácie (určená ako celé číslo), ktorá označuje doplnok Serviceability Manager  ktorý bol zdrojom volania:
+   - Inventory: 0
+   - Inventory Configuration: 1
+   - Inventory Policy: 2
+   - Inventory Network Status: 3
+
+- **Result** – príznaky číselného kódu chyby vrátené rozhraniami API volania webovej služby balíka Office.
+
+### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
+
+Táto udalosť sa zaznamená, keď zlyhá volanie webovej služby uskutočnené v rámci doplnku Click-to-Run Serviceability Manager.
+
+Zhromažďujú sa tieto polia:
+
+- **Add-on** – doplnok Click-to-Run Serviceability Manager, z ktorého sa uskutočnilo volanie webovej služby. Môže mať hodnoty ako inventory, manageability atď. zakódované ako číselná hodnota.
+
+- **Correlation ID** – náhodne generovaný identifikátor GUID špecifický pre aktuálnu inštanciu, ktorý sa odosiela do webovej služby na koreláciu volaní medzi klientom a serverom.
+
+- **ErrorInfo** – informácie o číselnom kóde chyby vrátené rozhraniami API volania webovej služby balíka Office.
+
+- **Function** – funkcia v kóde, z ktorej sa uskutočnilo aktuálne volanie.
+
+- **Status** – kód stavu protokolu HTTP vrátený volaním do webovej služby, napríklad 404, 500 atď.
+
+
 ## <a name="enhanced-configuration-service-ecs-events"></a>Udalosti služby Enhanced Configuration Service (ECS)
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
@@ -2688,6 +2762,14 @@ Táto udalosť umožňuje obmedziť analýzu používania produktov a metrík v
 Zhromažďujú sa tieto polia:
 
   - **FeatureGate** – identifikuje množinu funkcií, na ktoré sa vzťahuje analýza aktivačných udalostí.
+
+### <a name="onenoteflightdefault"></a>OneNote.FlightDefault
+ 
+Táto udalosť sa zaznamenáva, keď OneNote požiada server ECS o hodnoty skupiny funkcií.  Používa sa na povolenie experimentálnych funkcií používateľom, ktorí vyjadrili súhlas s prijímaním takýchto skupín funkcií.
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **ConfigParam** –Konfigurácia, pre ktorú sa pristupuje k hodnote
 
 ## <a name="licensing-events"></a>Udalosti licenčnej služby
 
@@ -2757,7 +2839,10 @@ Zhromažďujú sa tieto polia:
 
 Túto udalosť zhromažďujeme, keď používateľ nastavuje zariadenie a volá sa licenčná služba, aby sa zistilo, či prihlásený používateľ má nárok na Office alebo nie. Táto udalosť nahlasuje výsledok tohto volania. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
-Táto udalosť nezhromažďuje žiadne polia.
+Zhromažďujú sa tieto polia:
+
+- **EntitlementCount** – Počet nárokov používateľa
+
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
@@ -2766,6 +2851,26 @@ V každej relácii kontrolujeme, či od posledného obnovenia licencie uplynulo 
 Zhromažďujú sa tieto polia:
 
   - **Mode** – enumerátor predstavujúci postup licencovania balíka Office, ktorý sa používa v tomto zariadení
+
+### <a name="officelicensinginclientpinredemptioncallpinredemptionapi"></a>Office.Licensing.InClientPinRedemption.CallPinRedemptionAPI
+
+Táto telemetria sleduje výsledky volania služby na uplatnenie PIN balíka Office.
+
+Zhromažďujú sa tieto polia:
+
+- **ClientTransactionId** – jedinečný identifikátor volania služby.
+
+- **ErrorCategory** – každý typ chyby môže spadať do všeobecnejšej kategórie, ako je napríklad „možnosť opakovaného pokusu“.
+
+- **ErrorType** – dôvod zlyhania, napríklad že už uplatnil niekto iný.
+
+- **InAFOFlow** – Boolovská hodnota signalizujúca, či ide o postup uplatňovania AFO.
+
+- **StatusCode** – jednoslovný výsledok volania služby, napríklad „Created“.
+
+- **StatusMessage** – podrobné informácie o kóde stavu, napríklad „Successfully provisioned“.
+
+- **UsingNulApi** – boolovská hodnota určujúca, či používame nový postup licencovania.
 
 ### <a name="officelicensinginrfm"></a>Office.Licensing.InRFM 
 
@@ -2915,6 +3020,26 @@ Táto udalosť sa spustí, ak z nejakého dôvodu nie je možné aktivovať pou�
 
 Táto udalosť nezhromažďuje žiadne polia.
 
+### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
+
+Používateľom s predinštalovaným balíkom Office v nových počítačoch, ktorí nemajú nárok na Office, sa zobrazí dialógové okno, v ktorom môžu vyskúšať, kúpiť si alebo zadať kód Product Key na získanie licencie. Táto udalosť zachytáva akciu používateľa v dialógovom okne. Táto udalosť sa používa na sledovanie akcie používateľa vykonanej v dialógovom okne, ktoré sa zobrazilo používateľom bez nároku na Office, ak bol Office predinštalovaný v zariadení, a pomáha určiť, či používateľ má alebo nemá platnú licenciu.
+
+Zhromažďujú sa tieto polia:
+
+- **Buy** – označuje, či používateľ klikol na tlačidlo zakúpenia
+
+- **ForceAutoActivate** – označuje, či sa má vykonať pokus o aktiváciu v aplikácii
+
+- **GoBackToSignIn** – označuje, či sa používateľ chcel prihlásiť znova (napr. s iným kontom)
+
+- **IsPin** – označuje, či používateľ zadal PIN
+
+- **ProductKey** – označuje, či sa používateľ pokúsil zadať kód Product Key
+
+- **Try** – označuje, či používateľ klikol na tlačidlo vyskúšania
+
+- **UserDismissed** – označuje, či používateľ zrušil dialógové okno, a teda je v režime odkladu alebo režime s obmedzenou funkčnosťou, pretože si nezvolil nákup balíka Office ani získanie skúšobnej verzie.
+
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
 
 Máme experiment, ktorý používateľovi umožňuje vyskúšať a nastaviť automatické platby za Office priamo z aplikácie bez opustenia kontextu aplikácie. Táto udalosť nahlasuje úspech alebo zlyhanie tohto experimentu spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
@@ -2957,6 +3082,149 @@ Zhromažďujú sa tieto polia:
 
   - **UninstallProduct** – označuje, či sa starý produkt v rámci konverzie odinštaluje
 
+### <a name="officelicensingtelemetryflowolsresults"></a>Office.Licensing.TelemetryFlow.OLSResults
+
+Keď je používateľ bez platnej licencie, uskutočníme niekoľko volaní služby, aby sme používateľa mohol dostať do stavu s licenciou a aktivovať mu produkt Office.  Táto udalosť sa spustí pri volaní licenčnej služby balíka Office s cieľom skontrolovať, či používateľ má nejaké nároky.  Táto udalosť sa bude používať na sledovanie stavu licencovania používateľa po volaní licenčnej služby balíka Office a stavu klienta Office po pokuse o aktiváciu balíka Office.
+
+Zhromažďujú sa tieto polia:
+
+- **EntitlementPickerShown** – označuje, či používateľ mal viacero nárokov či si musel spomedzi nich manuálne vybrať na získanie licencie
+
+- **GetAuthResult** – označuje rôzne stavy, v ktorých sa klient môže nachádzať, napríklad ak dostal prázdny kód Product Key z licenčnej služby balíka Office alebo ak mal nárok na iný produkt a Office sa musí skonvertovať na nový produkt
+
+- **GetEntitlementCount** – označuje počet nárokov používateľa
+
+- **GetEntitlementsSucceeded** – označuje, či volanie rozhrania API licenčnej služby balíka Office na získanie nárokov používateľa bolo úspešné
+
+- **GetKeySucceeded** – označuje, či volanie rozhrania API licenčnej služby balíka Office na získanie kódu bolo úspešné
+
+- **GetNextUserLicenseResult** – označuje, či moderný postup licencovania fungoval a či používateľ získal licenciu
+
+- **InstallKeyResult** – uvádza rôzne príčiny, prečo sa používateľ môže nachádzať v stave zlyhania, napríklad ak zlyhala aktivácia alebo inštalácia kódu
+
+- **NotInitializedBeforeWhileAdding** – toto pole je len informačné a označuje, či sa udalosť pridala do mapy manažéra telemetrie bez výslovnej registrácie
+
+- **NotInitializedBeforeWhileSending** – toto pole je len informačné a označuje, či sa vykonal pokus o odoslanie udalosti bez predchádzajúcej výslovnej registrácie v mape manažéra telemetrie
+
+- **SentOnDestruction** – toto pole je len informačné a označuje, či sa udalosť pridala do mapy manažéra telemetrie a bola výslovne odoslaná
+
+- **Tag** – používa sa na určenie miesta v kóde, odkiaľ sa udalosť odoslala
+
+- **VerifyEntitlementsResult** – označuje rôzne stavy, v ktorých sa používateľ môže nachádzať po overení nárokov získaných z licenčnej služby balíka Office
+
+### <a name="officelicensingtelemetryflowsearchforbindingresult"></a>Office.Licensing.TelemetryFlow.SearchForBindingResult
+
+Výrobcovia OEM predávajú počítače dodávané s balíkom Office (jednoročné predplatné alebo trvalá licencia).  Za tieto produkty balíka Office sa platí, keď si zákazník kúpi počítač. Počítače, ktoré sú nastavené s určitým registračným kľúčom (OOBEMode: OEMTA), môžu mať priradenú väzbu balíka Office.  Pri spustení balíka Office v týchto zariadeniach vykonávame servisné kontroly na zistenie, či sa našla väzba balíka Office zodpovedajúca počítaču.
+
+Táto aktivita telemetrie sleduje miesta úspechu a zlyhania pri vyhľadávaní väzby, aby sme mohli zabezpečiť, že počítače, ktoré majú väzbu, ju môžu úspešne načítať, a že naše služby fungujú.  Táto aktivita nesleduje zariadenia, u ktorých po skontrolovaní s našimi službami zistíme, že nemajú priradenú žiadnu väzbu.
+
+Zhromažďujú sa tieto polia:
+
+- **GenuineTicketFailure** – označuje zlyhanie HRESULT pri pokuse o získanie originálneho tiketu/kódu Product Key Windowsu (WPK) zariadenia.
+
+- **PinValidationFailure** – označuje dôvod zlyhania procesu overenia PIN. Možné chyby:
+    - GeoBlocked
+    - InvalidFormat
+    - InvalidPin
+    - InvalidState
+    - InvalidVersion
+    - Unknown
+    - Used
+
+- **PinValidationResult** – označuje výsledok overenia PIN pre PIN, ktorý sme nedokázali získať.
+
+- **Pkpn** – rozsah pkpn, do ktorého PIN patrí.
+
+- **Success** – označuje, že sme úspešne načítali platnú väzbu balíka Office (PIN) pre zariadenie.
+
+- **Tag** – označuje, v ktorom kroku sa prestala hľadať väzba. Možné značky:
+  - 0x03113809  žiaden internet/chyba služby pri overovaní PIN
+   - 0x0311380a  zlyhanie overenia PIN, odoslané s poľom PinValidationFailure
+  - 0x0310410f  úspech, odoslané s poľom Success
+  - 0x0311380d  chyby s možnosťou opakovaného pokusu (problémy s internetom, neznáme chyby)
+  - 0x0311380e  chyby bez možnosti opakovaného pokusu (platnosť ponuky väzby uplynula)
+  - 0x0311380f  iné chyby (nedá sa licencovať)
+  - 0x03104111  nepodarilo sa získať PIN pre Office, odoslané s poľom PinValidationResult
+
+- **WpkBindingFailure** – označuje kód chyby získania PIN pre Office naviazaného na WPK počítača.
+
+### <a name="officelicensingtelemetryflowshowafodialogs"></a>Office.Licensing.TelemetryFlow.ShowAFODialogs
+
+Po úspešnom získaní platného PIN pre Office naviazaného na počítač s predinštalovaným balíkom Office sa používateľovi zobrazí dialógové okno prihlásenia alebo dialógové okno uplatnenia.  Po uplatnení PIN sa zobrazí dialógové okno zmluvy EULA.  V rámci modernizácie AFO sme tieto dve dialógové okná aktualizovali tak, aby obsahovali viac informácií o produkte balíka Office, ktorý sa dodáva s počítačom.  Táto telemetria slúži na sledovanie, či naša funkcia úspešne znižuje problémy používateľov pri uplatňovaní ich produktu sledovaním priebehu a výstupných bodov procesu uplatnenia (ktoré dialógové okno bolo zrušené).
+
+Zhromažďujú sa tieto polia:
+
+- **ActionCreateAccount** – používateľ sa rozhodol vytvoriť konto.
+
+- **ActionSignIn** – používateľ sa rozhodol prihlásiť sa.
+
+- **DialogRedemption** – zobrazuje sa dialógové okno uplatnenia AFO.
+
+- **DialogSignIn** – zobrazuje sa dialógové okno prihlásenia AFO.
+
+- **OExDetails** – podrobnosti o chybe, ktorú získame, keď sa zrušilo dialógové okno prihlásenia identity.
+
+- **OExType** – typ chyby, ktorú získame, keď sa zrušilo dialógové okno prihlásenia identity.
+
+- **Tag** – označuje, v ktorom kroku používateľ ukončil proces uplatnenia AFO. Možné značky:
+    - 0x0311380b    Používateľ zrušil dialógové okno prihlásenia identity z dialógového okna uplatnenia
+    - 0x0311380c    Nepodarilo sa automaticky načítať identitu po prihlásení používateľa z dialógového okna uplatnenia
+    - 0x03113810    Nepodarilo sa načítať demografické informácie konta (kód krajiny, jazyk, menu, ponuku skúšobnej verzie a marketingové preferencie)
+    - 0x03113805    Používateľ zrušil dialógové okno prihlásenia identity z dialógového okna prihlásenia
+    - 0x03113806    Nepodarilo sa automaticky načítať identitu po prihlásení používateľa z dialógového okna prihlásenia
+    - 0x03113807    Nepodarilo sa automaticky načítať identitu
+    - 0x03113811    Používateľ zavrel dialógové okno prihlásenia/uplatnenia
+    - 0x03113812    Používateľ zavrel dialógové okno súhlasu so zmluvou EULA
+    - 0x03113808    Používateľ prijal zmluvu EULA
+
+- **UseInAppRedemption** – označuje, či k uplatneniu dochádza v aplikácii alebo či k uplatneniu získaného PIN dochádza na webe (vopred vyplnené).
+
+- **UseModernAFO** – označuje, či používame nové alebo staré prostredie AFO.
+
+### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
+
+Keď majú nové zariadenia predinštalovaný Office a používateľ nemá nárok, zobrazí sa mu dialógové okno, ktoré používateľovi umožňuje vyskúšať, zakúpiť alebo zadať kód Product Key, aby používateľ mohol získať licenciu. Táto udalosť sleduje, či sa dialógové okno zobrazilo. Táto udalosť pomáha vedieť, či sa používateľovi zobrazilo dialógové okno na vyskúšanie, zakúpenie alebo zadanie kódu Product Key, a pomôže nám určiť, či používateľ mal možnosť získať licenciu.
+
+Zhromažďujú sa tieto polia: 
+
+- **ActiveView** – označuje ID dialógového okna zobrazeného používateľovi
+
+- **CurrentOOBEMode** – označuje režim predinštalovania (režim OOBE ako AFO, OEM atď.)
+
+- **NotInitializedBeforeWhileAdding** – toto pole je len informačné a označuje, či sa udalosť pridala do mapy manažéra telemetrie bez výslovnej registrácie
+
+- **SentOnDestruction** – toto pole je len informačné a označuje, či sa udalosť pridala do mapy manažéra telemetrie a bola výslovne odoslaná
+
+- **ShowTryButton** – označuje, či sa v dialógovom okne zobrazilo tlačidlo Vyskúšať
+
+- **Tag** – používa sa na určenie miesta v kóde, odkiaľ sa udalosť odoslala
+
+### <a name="officelicensingtelemetryflowtrialflow"></a>Office.Licensing.TelemetryFlow.TrialFlow
+
+Keď sa používateľ balíka Office predinštalovaného v zariadení bez platnej licencie pokúša získať skúšobnú verziu, spustí túto udalosť.  Používa sa na zistenie, akým postupom používateľ získal skúšobnú verziu a či sa počas získavania skúšobnej verzie prostredníctvom nákupov v rámci aplikácie vyskytli nejaké chyby.  V závislosti od akcie používateľa a výsledku nákupu v rámci aplikácie môže používateľ skončiť bez platnej licencie.
+
+Zhromažďujú sa tieto polia:
+
+- **HasConnectivity** – označuje, či používateľ má pripojenie na internet, a ak nemá, používateľ bude možno musieť využiť obdobie odkladu päť dní alebo sa môže nachádzať v režime s obmedzenou funkčnosťou
+
+- **InAppTrialPurchase** – signalizuje, či je skupina funkcií povolená na spustenie súpravy Store Purchase SDK na zaznamenanie PI a zakúpenia skúšobnej verzie zo samotnej aplikácie
+
+- **IsRS1OrGreater** – označuje, či verzia operačného systému je novšia ako RS1, pretože súprava SDK Store Purchase sa má používať, len ak je verzia operačného systému novšia ako RS1
+
+- **NotInitializedBeforeWhileAdding** – toto pole je len informačné a označuje, či sa udalosť pridala do mapy manažéra telemetrie bez výslovnej registrácie
+
+- **OEMSendToWebForTrial** – signalizuje, či je skupina funkcií povolená, aby používatelia mohli prejsť na web na uplatnenie skúšobnej verzie
+
+- **StoreErrorConditions** – označuje rôzne podmienky, na základe ktorých mohla súprava SDK Store Purchase zlyhať
+
+- **StoreErrorHResult** – označuje kód chyby vrátený zo súpravy SDK Store Purchase
+
+- **StorePurchaseStatusResult** – označuje výsledok volania súpravy SDK Store Purchase a či používateľ uskutočnil nákup, čo pomôže pri určení, či má používateľ získať licenciu na používanie balíka Office
+
+- **Tag** – používa sa na určenie miesta v kóde, odkiaľ sa udalosť odoslala
+
+- **UserSignedInExplicitly** – označuje, či sa používateľ výslovne prihlásil a v takom prípade používateľov presmerujeme na web na skúšobnú verziu
+
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
 Ak z nejakého dôvodu nie je možné priradiť licenciu používateľovi, nainštaluje sa kľúč odkladu a odošle sa tento signál, ktorý to vyjadruje. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
@@ -2966,6 +3234,14 @@ Zhromažďujú sa tieto polia:
   - **OpportunisticTokenRenewalAttempted** – signalizuje, či sa vykonal pokus o oportunistické obnovenie pre používateľa v režime aktivácie v zdieľanom počítači
 
   - **ReArmResult** – označuje výsledok obnovenia aktivačného obdobia pre nainštalovaný kľúč, čím sa môže predĺžiť platnosť aktuálnej licencie
+
+### <a name="onenoteenrollmentresult"></a>OneNote.EnrollmentResult
+ 
+Táto udalosť zaznamenáva stav pri registrácii v službe Intune.  Tento scenár sa týka kont s podporu služby Intune.
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **EnrollmentResult** – stav registrácie v službe Intune
 
 ## <a name="microsoft-autoupdate-mau-events"></a>Udalosti služby Microsoft AutoUpdate (MAU)
 
@@ -10053,6 +10329,33 @@ Zhromažďujú sa tieto polia:
 
 - **Source** – enumerácia, ktorá označuje, ktorá udalosť spustila používateľské rozhranie, t. j. vytvorenie nového obrazu redx, chyba synchronizácie v používateľskom rozhraní synchronizácie, zobrazené dialógové okno chyby atď.
 
+### <a name="onenoteappprovisioningmovelocalnotebooktoonlinenotebookfailed"></a>OneNote.App.Provisioning.MoveLocalNotebookToOnlineNotebookFailed
+ 
+Táto udalosť sa zaznamenáva v prípade zlyhania premiestnenia lokálneho poznámkového bloku na jednotku.  Tento scenár sa týka používateľa s oneskoreným prihlásením. Keď sa používateľ prihlási, jeho lokálny poznámkový blok sa premiestni do jeho ukladacieho priestoru vo OneDrive. 
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **ErrorMsg** – chybové hlásenie zodpovedajúce zlyhaniu.
+
+### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
+ 
+Táto udalosť sa zaznamenáva v prípade zlyhania vytvorenia poznámkového bloku.  
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **NetworkConnection** – zaznamenáva aktuálny typ pripojenia zariadenia, napr. Wi-Fi, offline, 3G 
+
+- **ServerType** – zaznamenáva typ servera, v ktorom bol poznámkový blok vytvorený.
+
+### <a name="onenotesyncfirstrunerror"></a>OneNote.Sync.FirstRunError
+ 
+Táto udalosť sa zaznamenáva v prípade zlyhania synchronizácie rýchlych poznámok pre používateľa počas prvého spustenia v zariadení.  Týka sa scenára prvého spustenia.
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **NetworkConnection** – zaznamenáva aktuálny typ pripojenia zariadenia, napr. Wi-Fi, offline, 3G
+
+- **ServerType** – zaznamenáva typ servera, v ktorom bol poznámkový blok rýchlych poznámok vytvorený.
 
 ## <a name="services-configuration-events"></a>Udalosti služby Services Configuration
 
