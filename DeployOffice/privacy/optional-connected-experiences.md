@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: 7e9207148c9f294e9a1e41d353fa3cdd8878f88c
-ms.sourcegitcommit: 5be570c4403e82352142b3297507cf314815bdea
+ms.openlocfilehash: ab9404b93157875589f2625be51a9e30cc3d0795
+ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38276509"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41024469"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -37,7 +37,15 @@ Je dôležité vedieť, že na tieto voliteľné cloudové služby sa nevzťahuj
 
 ## <a name="experiences-that-rely-on-bing"></a>Funkcie, ktoré využívajú službu Bing
 
-Niektoré cloudové služby využívajú službu Microsoft Bing. Microsoft Bing je samostatná služba mimo balíka Office 365 ProPlus a spoločnosť Microsoft ju riadi nezávisle od balíka Office 365 ProPlus. V aplikáciách balíka Office 365 ProPlus ju využívajú tieto funkcie: [3D mapy](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartogramy](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Vkladanie online obrázkov](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Vkladanie online 3D modelov](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Rýchly štart v PowerPointe](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Vyhľadávač](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) a [Inteligentné vyhľadávanie](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). Licencia na tieto funkcie sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a vzťahuje sa na ne [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v organizácii Office 365 ProPlus, sa odošlú do služby Microsoft Bing. Nie sú vám prepojené organizáciou Bing.
+Niektoré cloudové služby využívajú službu Microsoft Bing. Microsoft Bing je samostatná služba mimo balíka Office 365 ProPlus a spoločnosť Microsoft ju riadi nezávisle od balíka Office 365 ProPlus. V aplikáciách balíka Office 365 ProPlus ju využívajú tieto funkcie: [3D mapy](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartogramy](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Vkladanie online obrázkov](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Vkladanie online 3D modelov](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Rýchly štart v PowerPointe](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Vyhľadávač](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) a [Inteligentné vyhľadávanie](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+
+Funkcie využívajúce Bing v Outlooku pre iOS a Android:
+
+- **Návrhy polohy:**   Keď do položky kalendára pridáte verejné miesto s adresou, do poľa Miesto sa zahrnie celá adresa.
+- **Zaujímavé kalendáre:**   Môžete sa [prihlásiť na odber](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) kalendárov o svojich obľúbených športových tímoch alebo televíznych seriáloch.
+
+
+ Licencia na tieto funkcie využívajúce Bing sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a vzťahuje sa na ne [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v organizácii Office 365 ProPlus, sa odošlú do služby Microsoft Bing. Nie sú vám prepojené organizáciou Bing.
 
 ## <a name="experiences-that-rely-on-linkedin"></a>Funkcie, ktoré využívajú službu LinkedIn
 
@@ -47,9 +55,13 @@ Poznámka: Nastavenie ochrany osobných údajov, ktoré je opísané nižšie, n
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Funkcie, ktoré využívajú iné online služby vlastnené spoločnosťou Microsoft a/alebo tretími stranami
 
+### <a name="help--contact-support"></a>Pomocník > Kontaktovať podporu
+
+V Outlooku pre iOS a Android môžete nahlásiť problémy a spojiť sa s tímom podpory prostredníctvom položky **Nastavenia** > **Pomoc a pripomienky** > **Kontaktovať podporu**. Táto funkcia využíva službu poskytovanú spoločnosťou HelpShift a uplatňujú sa [podmienky poskytovania služby](https://www.helpshift.com/legal/terms/) a [zásady ochrany osobných údajov](https://www.helpshift.com/legal/privacy/) spoločnosti HelpShift.
+
 ### <a name="help--suggest-a-feature"></a>Pomocník > Navrhnúť funkciu
 
-Navrhnúť funkciu je funkcia, ktorá umožňuje odosielať nápady týkajúce sa používania Outlooku. Vaše návrhy sa poskytujú priamo službe tretej strany s názvom UserVoice. Ak odošlete nápady pomocou funkcie Navrhnúť funkciu, uplatňujú sa [podmienky poskytovania služby a zásady ochrany osobných údajov služby UserVoice](https://outlook.uservoice.com/tos).
+Navrhnúť funkciu je funkcia, ktorá umožňuje odosielať nápady týkajúce sa používania Outlooku. Vaše návrhy sa poskytujú priamo službe tretej strany s názvom UserVoice. Ak odošlete nápady pomocou funkcie Navrhnúť funkciu, uplatňujú sa [podmienky poskytovania služby](https://outlook.uservoice.com/tos) a [zásady ochrany osobných údajov](https://outlook.uservoice.com/tos#privacy-policy) služby UserVoice.
 
 ### <a name="insert-online-video"></a>Vloženie online videa
 

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom služieb Office informácie o online funkciách v balíku Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: 5bf39e1fbe7e56b77496cfc0756484a9a1c051a0
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: a2f2a951db371336be1b425b0db45e5e72ea9d75
+ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067564"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41024379"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -29,8 +29,10 @@ ms.locfileid: "38067564"
 > - Project a Visio, ktoré sú súčasťou niektorých plánov predplatného, ako sú napríklad Project Online Professional alebo Visio Online Plan 2.
 >
 > Informácie platia aj pre verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
+>
+> Tieto informácie sa vzťahujú na verziu Outlooku pre iOS a Android, ktorá by mala byť vydaná koncom januára 2020.
 
-Office pozostáva z klientskych softvérových aplikácií a online funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom online funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive alebo preklad obsahu wordového dokumentu do iného jazyka.
+Office pozostáva z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom online funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive alebo preklad obsahu wordového dokumentu do iného jazyka.
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Online funkcie na analýzu obsahu
 
@@ -49,13 +51,16 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | Konvertovanie písania rukou na text, na tvar, na matematický výraz | [Konvertovanie textu písaného rukou na tvary, text alebo matematický výraz v PowerPointe pre Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Vloženie údajov z obrázka| [Vloženie údajov z obrázka](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Živé popisy a titulky |  [Prezentujte s automatickými popismi alebo titulkami v reálnom čase v PowerPointe](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
+| Návrhy polohy | Keď do položky kalendára pridáte verejné miesto s adresou, Outlook pre iOS a Android zahrnie do poľa Miesto celú adresu. |
 | Mapy vo funkcii Power View   | [Mapy vo funkcii Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Služba na zobrazovanie prezentácií balíka Office  | [Vysielanie powerpointovej prezentácie vzdialeným divákom](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
 | PowerPoint Designer   | [Vytváranie profesionálnych rozložení snímok s nástrojom PowerPoint Designer](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publikovanie v službe Power BI   | [Publikovanie v službe Power BI prostredníctvom Excelu](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publikovanie do služby Microsoft Stream    | [Zmena prezentácie na video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Zdroje informácií   | [Pridanie alebo zmena služieb zdrojov informácií](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| Skenovanie vizitky|  [Pridanie kontaktov v Outlooku pre Android skenovaním alebo ťuknutím](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 | Inteligentné vyhľadávanie   | [Získajte prehľad o tom, na čom pracujete, s inteligentným vyhľadávaním](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+| Navrhované odpovede | [Čo sú navrhované odpovede?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Ťuknutie pre Word (pridanie zo súborov)   | [Vyhľadanie a použitie požadovaného obsahu v požadovanom čase bez nutnosti opustiť Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Transformácia na webovú stránku   | [Skonvertovanie wordového dokumentu na webovú stránku Swaya](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Preklad textu do iného jazyka](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
@@ -68,14 +73,19 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na sťahovanie onli
 
 | **Názov**      | **Ďalšie informácie**  |
 | ------------- | ------------- |
+| Aplikácie kalendára| [Čo sú aplikácie kalendára?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Cloudové písma                 | [Cloudové písma v balíku Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
 | Typy údajov                  | [Typy údajov Exceli: Akcie a Geografia](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
+| Najčastejšie otázky |Po výbere položky **Nastavenia** > **Pomoc a pripomienky** > **Najčastejšie otázky** v Outlooku pre iOS a Android sa zobrazí stránka [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Efekty písania rukou                 | [Kreslenie a písanie rukou v Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Vloženie ikon                | [Vkladanie ikon v Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Vkladanie formulárov služby Microsoft Forms      | [Vloženie formulára alebo testu do PowerPointu](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
 | Vkladanie online 3D modelov     | [Kreatívna práca s 3D modelmi](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | Vkladanie online obrázkov      | [Vkladanie obrázkov](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
 | Vloženie online videa     | [Vloženie videa z YouTube alebo z inej lokality](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| Zaujímavé kalendáre| [Prihláste sa na odber kalendára](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) o svojich obľúbených športových tímoch alebo televíznych seriáloch v Outlooku pre iOS a Android. |
+| Návrhy polohy | Keď do položky kalendára pridáte verejné miesto s adresou, Outlook pre iOS a Android zahrnie do poľa Miesto celú adresu. |
+| Mapy v podrobnostiach udalosti | Zistite, kam treba ísť, s [mapami](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) v podrobnostiach udalosti v Outlooku pre iOS a Android. |
 | Pomocník pre Office                 | Po výbere položky **Pomocník** > **Pomocník** na páse s nástrojmi alebo stlačení klávesu F1 v aplikácii balíka Office   |
 | Vyhľadávanie online tvarov (Visio) | [Vyhľadanie ďalších tvarov a vzorkovníc](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | Rýchly štart v PowerPointe     | [Preskúmanie témy pomocou funkcie Rýchly štart v PowerPointe](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
