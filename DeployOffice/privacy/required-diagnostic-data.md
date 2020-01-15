@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: a6003b44bc31f8165e9e102104c4b25336efd4cc
-ms.sourcegitcommit: 17f7bf4bfa65042ad44dfff23489c6a538a004e8
+ms.openlocfilehash: 74f80a494eff6f82310a89cbcc52e10d0a324e15
+ms.sourcegitcommit: 752267dddf9c011bb91136f6223f641053450599
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39906627"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41109514"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -2391,6 +2391,139 @@ Zhromažďujú sa tieto polia:
 
 - **SolutionId** – ID riešenia
 
+#### <a name="officefeedeventsinitializing"></a>Office.Feed.Events.Initializing
+
+Údaje o tejto udalosti sa zhromažďujú pri inicializácii informačného kanála. Táto udalosť sa používa na označenie toho, že informačný kanál sa spúšťa, a diagnostiku problémov so spoľahlivosťou pri spustení informačného kanála.
+
+- **AppInfo.Language** – jazyk aplikácie vo formáte značiek jazyka skupiny IETF.
+
+- **AppInfo.Name** – názov používanej súčasti (informačný kanál balíka Office).
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **clientCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+
+- **clientType** – aplikácia, v ktorej súčasť spustená.
+
+- **DeviceInfo.Make** – názov výrobcu zariadenia alebo výrobcu OEM zariadenia.
+
+- **DeviceInfo.NetworkProvider** – sieť alebo mobilný operátor, ako je napríklad AT&T.
+
+- **DeviceInfo.NetworkType** – typ sieťových pripojení zariadenia, ako je napríklad káblové, Wi-Fi alebo WWAN (dátové/mobilné).
+
+- **DeviceInfo.OsName** – názov operačného systému zariadenia.
+
+- **DeviceInfo.SDKUid** – jednoznačne identifikuje zariadenie z perspektívy SDK telemetrie.
+
+- **eventId** –identifikátor názvu udalosti. 
+
+- **EventInfo.SdkVersion** – verzia SDK telemetrie, ktorú klient použil na generovanie udalosti.
+
+- **eventpriority** – hodnota enumerácie priority odoslania udalosti.
+
+- **feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie.
+
+- **hostAppRing** – populácia používateľov, ktorým sa aplikácia distribuovala.
+
+- **properties** – obsahuje dodatočné metaúdaje alebo vlastnosti zhromaždené pre každú udalosť.
+        
+    - **ClientTimeStamp** – časová pečiatka zaznamenania udalosti v klientovi.
+
+- **publicEventName** – názov udalosti pre verejnosť.  
+
+- **region** – geografická oblasť služby informačných kanálov, ku ktorej je používateľ pripojený. 
+
+- **tenantAadObjectId** – globálne jedinečný identifikátor pre podnikového nájomníka používateľa.
+
+- **type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť, QoS.
+
+- **userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft.
+
+- **UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft.
+
+- **UserInfo.IdType** – určuje typ ID používateľa. 
+
+- **UserInfo.Language** – jazyk používateľa vo formáte značiek jazyka skupiny IETF.
+
+- **UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **UserInfo.TimeZone** – časové pásmo používateľa vzťahujúce sa na čas UTC.
+
+- **userPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **version** – verzia klienta informačného kanála.
+
+#### <a name="officefeedeventsofficefeeddidappear"></a>Office.Feed.Events.OfficeFeedDidAppear
+
+Údaje o tejto udalosti sa zhromažďujú pri zobrazení informačného používateľovi. Táto udalosť sa používa na overenie toho, či informačný kanál dokončil krok spúšťania, a diagnostiku problémov so spoľahlivosťou pri spustení informačného kanála.
+
+- **AppInfo.Language** – jazyk aplikácie vo formáte značiek jazyka skupiny IETF.
+
+- **AppInfo.Name** – názov používanej súčasti (informačný kanál balíka Office).
+
+- **AppInfo.Version** – verzia aplikácie.
+
+- **clientCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+
+- **clientType** – aplikácia, v ktorej súčasť spustená.
+
+- **DeviceInfo.Make** – názov výrobcu zariadenia alebo výrobcu OEM zariadenia.
+
+- **DeviceInfo.NetworkProvider** – sieť alebo mobilný operátor, ako je napríklad AT&T.
+
+- **DeviceInfo.NetworkType** – typ sieťových pripojení zariadenia, ako je napríklad káblové, Wi-Fi alebo WWAN (dátové/mobilné).
+
+- **DeviceInfo.OsName** – názov operačného systému zariadenia.
+
+- **DeviceInfo.SDKUid** – jednoznačne identifikuje zariadenie z perspektívy SDK telemetrie.
+
+- **eventId** –identifikátor názvu udalosti.
+
+- **EventInfo.SdkVersion** – verzia SDK telemetrie, ktorú klient použil na generovanie udalosti.
+
+- **eventpriority** – hodnota enumerácie priority odoslania udalosti.
+
+- **feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie.
+
+- **hostAppRing** – populácia používateľov, ktorým sa aplikácia distribuovala.
+
+- **properties** – obsahuje dodatočné metaúdaje alebo vlastnosti zhromaždené pre každú udalosť.
+        
+  - **bridgeWaitingTime** – metrika na diagnostiku výkonu pri vykresľovaní informačného kanála.
+    
+  - **ClientTimeStamp** – časová pečiatka zaznamenania udalosti v klientovi.
+        
+  - **renderTime** – metrika na diagnostiku výkonu pri vykresľovaní informačného kanála.
+
+- **publicEventName** – názov udalosti pre verejnosť.  
+
+- **region** – geografická oblasť služby informačných kanálov, ku ktorej je používateľ pripojený. 
+
+- **tenantAadObjectId** – globálne jedinečný identifikátor pre podnikového nájomníka používateľa.
+
+- **type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť, QoS.
+
+- **userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft.
+
+- **UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft.
+
+- **UserInfo.IdType** – určuje typ ID používateľa. 
+
+- **UserInfo.Language** – jazyk používateľa vo formáte značiek jazyka skupiny IETF.
+
+- **UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **UserInfo.TimeZone** – časové pásmo používateľa vzťahujúce sa na čas UTC.
+
+- **userPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **version** – verzia klienta informačného kanála.
+
+
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Umožňuje zistiť, či sa súbor úspešne otvoril z vrstvy FIO. Umožňuje sledovanie stavu funkcie a monitorovanie.
@@ -3131,6 +3264,191 @@ Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámc
 Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunPanelName** – Názov panela, z ktorého skäsenosť začala.
+
+#### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
+
+Prihlásime sa, keď sa bude používateľ nachádzať v aplikácii, ktorá načíta kartu osoby pri očakávaní, že používateľ otvorí živú kartu osoby.  Údaje sa používajú na určenie toho, či sa karta načíta správne. 
+
+Zhromažďujú sa tieto polia: 
+
+- **Data.appContextId** – náhodne vygenerovaný identifikátor používaný na identifikáciu rôznych kont v tej istej aplikácii.
+
+- **Data.AppInfo.Name** – názov používanej služby (karta profilu)
+
+- **Data.AppInfo_Id** – názov hostiteľskej aplikácie
+
+- **Data.AppInfo_Version** – verzia hostiteľskej aplikácie
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor karty osoby
+
+- **Data.cardPersonaCorrelationId** – globálne jedinečný identifikátor konkrétnej osoby zobrazenej na karte
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+
+- **Data.clientType** – typ zariadenia, v ktorom je aplikácia spustená.
+
+- **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
+
+- **Data.eventpriority** – hodnota enumerácie priority odoslania udalosti.
+
+- **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
+
+- **Data.OTelJS.Version** – verzia zapisovača OTel
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne:
+
+  - **accountType** – označuje, či používateľ patrí k organizácii alebo spotrebiteľovi.
+
+  - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie
+
+  - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
+
+  - **ClientTimeStamp** – čas v aplikácii, keď sa udalosť zaznamenala.
+
+  - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie.
+
+  - **contextType** – v akom kontexte (aplikácii) sa karta spustila.
+
+  - **ecsConfigIds** – identifikátory verzií pre funkcie povolené na karte.
+
+  - **ecsTagId** – ID značiek pre funkcie.
+
+  - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
+
+  - **flights** – funkcie zapnuté na karte.
+
+  - **fromCache** – označuje, či boli údaje načítané z pamäte.
+
+  - **hasFinePointer** – označuje, či je v zariadení funkcia ukazovateľa myši.
+
+  - **hasHoverEvents** – označuje, či je v zariadení funkcia ukázania myšou.
+
+  - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
+
+  - **offlineResolved** – označuje, či sa údaje načítavali v režime offline.
+
+  - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
+
+- **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
+
+- **Data.tenantAadObjectId** – nájomník, ku ktorému je priradené predplatné používateľa. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť.
+
+- **Data.userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft (duplikát poľa Data.UserInfo.Id).
+
+- **Data.UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft.
+
+- **Data.UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **Data.UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.userPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft (duplikát poľa Data.UserInfo.MsaId).
+
+- **Data.version** – verzia služby (karta profilu).
+
+- **Data.workloadCulture** – kultúra nastavená v hostiteľskej aplikácii
+
+- **DeviceInfo_Id** – globálne jedinečný identifikátor zariadenia pre zariadenie
+
+- **DeviceInfo_Make** – značka operačného systému.
+
+- **DeviceInfo_Model** – model zariadenia.
+
+- **DeviceInfo_OsName** – názov operačného systému zariadenia.
+
+- **DeviceInfo_OsVersion** – verzia operačného systému.
+
+- **DeviceInfo_SDKUid** – jednoznačne identifikuje zariadenie z perspektívy SDK telemetrie.
+
+#### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
+
+Zaznamenáva sa, keď používateľ otvorí rozbalenú kartu osoby. Používa sa na pozorovanie kritických anomálií v mierach zlyhania spustenia funkcie Live Persona Card.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo_Id** – názov hostiteľskej aplikácie.
+
+- **AppInfo_Version** – verzia hostiteľskej aplikácie.
+
+- **Data.appContextId** – náhodne vygenerovaný identifikátor používaný na identifikáciu rôznych kont v tej istej aplikácii.
+
+- **Data.AppInfo.Name** – názov používanej služby (karta profilu)
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor karty osoby
+
+- **Data.cardPersonaCorrelationId** – globálne jedinečný identifikátor konkrétnej osoby zobrazenej na karte
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+
+- **Data.clientType** – typ zariadenia, v ktorom je aplikácia spustená.
+
+- **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
+
+- **Data.exportName** – človekom čitateľný názov akcie používateľa, napr. „OpenedPersonaCard“
+
+- **Data.exportType** – kategória udalosti pre požiadavku na export GDPR
+
+- **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
+
+- **Data.hostAppRing** – kruh, v ktorom bola aplikácia distribuovaná
+
+- **Data.OTelJS.Version** – verzia zapisovača OTel
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne:
+
+  - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie 
+
+  - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
+
+  - **clientScenario** – na identifikovanie funkcie v aplikácii, v ktorej sa otvorila karta osoby.
+
+  - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie. 
+
+  - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
+
+  - **hasPersonalInsightRing** – prehľady v Office alebo LinkedIne môžu byť pre používateľa k dispozícii.
+
+  - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
+
+  - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
+
+  - **section** – aktívna časť rozbalenej karty.
+
+- **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
+
+- **Data.tenantAadObjectId** – nájomník, ku ktorému je priradené predplatné používateľa. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť.
+
+- **Data.userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft (duplikát poľa Data.UserInfo.Id).
+
+- **Data.UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft. 
+
+- **Data.UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **Data.UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.UserPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft (duplikát poľa Data.UserInfo.MsaId).
+
+- **Data.version** – verzia služby (karta profilu).
+
+- **DeviceInfo_Id** – globálne jedinečný identifikátor zariadenia pre zariadenie
+
+- **DeviceInfo_Make** – značka operačného systému.
+
+- **DeviceInfo_Model** – model zariadenia.
+
+- **DeviceInfo_OsName** – názov operačného systému zariadenia.
+
+- **DeviceInfo_OsVersion** – verzia operačného systému.
+
+- **DeviceInfo_SDKUid** – jednoznačne identifikuje zariadenie z perspektívy SDK telemetrie.
+
+- **NetworkCost** – označuje typ nákladov na sieť (účtované podľa objemu údajov, účtované podľa objemu údajov nad limit atď.).
+
+- **NetworkCountry** – kód krajiny odosielateľa, na základe neočistenej IP adresy klienta.
+
 
 #### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
@@ -4174,7 +4492,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_SrcDoc_ServerType:long** – preddefinovaná množina hodnôt typu servera (SharePoint, DropBox, WOPI).
 
-- **Data_SrcDoc_ServerVersion:long** – overuje, či je server založený na Office14, Office15 alebo Office16Data_SrcDoc_SessionId:long – vygenerovaný identifikátor GUID, ktorý identifikuje inštanciu dokumentu v rámci tej istej relácie procesu.
+- **Data_SrcDoc_ServerVersion:long** – overuje, či je server založený na Office14, Office15 alebo Office16.
+
+- **Data_SrcDoc_SessionId:long** – vygenerovaný identifikátor GUID, ktorý identifikuje inštanciu dokumentu v rámci tej istej relácie procesu.
 
 - **Data_SrcDoc_SharePointServiceContext:string** – nepriehľadný reťazec, zvyčajne GridManagerID.FarmID. Pomáha pri korelácii denníkov na strane klienta a na strane servera
 
@@ -7689,6 +8009,8 @@ Zhromažďujú sa tieto polia:
 - **AssetId** – ID položky aplikácie.
 
 - **ErrorCode** – celkový strávený čas.
+
+- **IsAugmentationScenario** – označuje, či je slučka zväčšenia zodpovedná za spustenie ovládacieho prvku OSF (Office Solutions Framework).
 
 - **IsDebug** – signalizuje, či relácia je reláciou ladenia
 
