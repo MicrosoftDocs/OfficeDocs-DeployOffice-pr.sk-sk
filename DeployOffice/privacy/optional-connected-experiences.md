@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: ab9404b93157875589f2625be51a9e30cc3d0795
-ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
+ms.openlocfilehash: 3cba95a89c0a1f108485565101d10deea5a70a38
+ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41024469"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41917720"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -30,6 +30,8 @@ Ak máte pracovné alebo školské konto, správca vo vašej organizácii vám m
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
+>
+> Väčšinu voliteľných online funkcií je možné spravovať aj pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie. Napríklad funkciu vkladania online obrázkov je možné spravovať aj pomocou nastavenia politiky *Povoliť používanie online funkcií na sťahovanie online obsahu v Office*.
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Ak používate služby, s akými podmienkami používania musíte súhlasiť?
 
