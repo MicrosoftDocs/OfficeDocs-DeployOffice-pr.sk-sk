@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 4410d94ea0179200fce0cd4dd16aebd62a21a2f6
-ms.sourcegitcommit: 4ec332a6f7457f08aa17fdbb7ee7f308a449887f
+ms.openlocfilehash: d5c5fc824e380741287f0393cdae947d1aabda2d
+ms.sourcegitcommit: 6f5af9a707a833b84202040f998361383f488d23
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962860"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225007"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -78,6 +78,17 @@ Tieto udalosti môžete zobraziť pomocou zobrazovača diagnostických údajov.
 
 Tieto udalosti diagnostických údajov sa zhromažďujú, keď sa Office pokúša získať token overenia, či už bez zobrazenia výzvy alebo prostredníctvom zobrazenia výzvy.
 
+### <a name="officeandroidmsaguesttoaad"></a>Office.Android.MSAGuestToAAD
+
+Táto udalosť pomáha pri pochopení, koľkým používateľom sa zobrazuje výzva na zadanie hesla osobného konta pri prístupe k pracovnému zdroju, keďže ich osobné konto môže byť platným hosťom pre nájomníka pracovného konta.
+
+Tieto údaje nám pomáhajú porozumieť, koľkým používateľom sa zobrazujú opakované výzvy na prihlásenie na prioritizáciu získavania tokenov AAD bez výziev na základe kontrolného výrazu SAML (Security Assertion Markup Language) pre konto Microsoft.
+
+Zhromažďujú sa tieto polia:
+
+- **Tag** – označuje, že používateľovi sa zobrazila výzva na prihlásenie pre osobné konto počas pristupovania k pracovnému zdroju.
+
+
 ### <a name="officeidentityfbapromptwin32"></a>Office.Identity.FbaPromptWin32
 
 Zhromažďuje sa, keď sa v balíku Office používateľovi zobrazí výzva na prihlásenie typu Forms-Based-Auth.
@@ -86,7 +97,7 @@ Spolu so získaním skrytého tokenu výzvy na overenie umožňujú určiť, či
 
 Výzvy na prihlásenie typu Forms-Based-Auth (FBA) sa používajú pre niektoré lokálne scenáre overovania a zvyčajne sa chceme uistiť, že sa to nedeje, pretože všetky by mali používať prihlásenie typu Modern-Auth z dôvodov chýb zabezpečenia súvisiacich s prihlásením typu FBA.
 
-**Zhromažďujú sa tieto polia:**
+Zhromažďujú sa tieto polia:
 
   - **AuthScheme** – používaná schéma overovania
 
@@ -477,7 +488,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Platform** – inštalácia typu x64 alebo x86
 
-  - **Data\_PrereqFailure\_Type** – predbežné zlyhanie, ktoré sa vyskytlo, napr. operačný súbor nie je podporovaný
+  - **Data\_PrereqFailure\_Type** – zlyhanie základnej požiadavky, ktoré sa vyskytlo, napr. operačný súbor nie je podporovaný
 
   - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Office 365 ProPlus
 
@@ -2693,6 +2704,11 @@ Táto udalosť nahlasuje prijaté akcie s vplyvom na zariadenie, ako sú určen�
 
 - **VersionToInstall** – reťazcová hodnota verzie balíka Office „16.0.xxxxx.yyyy“, ktorá sa inštaluje
 
+### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
+
+Táto udalosť sa používa na získanie štandardných metaúdajov pri každom spustení doplnku Inventory, ktorý je súčasťou programu Office Serviceability Manager a používa sa na informácie o inventári balíka Office o zariadeniach, pre ktoré sa správca IT rozhodol. Metaúdaj, ktoré nás obzvlášť zaujíma, sú ID relácie, a používa sa na prepojenie na iné údaje uložené v rámci cloudovej služby na nájomníka.
+
+Táto udalosť neobsahuje žiadne dodatočné polia, pretože len metaúdaje sú relevantné.
 
 ### <a name="officeserviceabilitymanagerinventoryaddonresults"></a>Office.ServiceabilityManager.InventoryAddon.Results
 
@@ -3863,7 +3879,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="controller_checkwindow_updatecheckcancel"></a>controller_checkwindow_updatecheckcancel
 
-Táto udalosť označuje, že proces kontroly aktualizácií bol zrušený (buď používateľom alebo systémom). Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
+Táto udalosť označuje, že proces kontroly aktualizácií bol zrušený (buď používateľom, alebo systémom). Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
 Zhromažďujú sa tieto polia:
 
@@ -3904,7 +3920,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="controller_checkwindow_updatecheckcanceluser"></a>controller_checkwindow_updatecheckcanceluser
 
-Táto udalosť označuje, že proces kontroly aktualizácií bol zrušený používateľom.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
+Táto udalosť označuje, že proces vyhľadávania aktualizácií bol zrušený používateľom.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
 Zhromažďujú sa tieto polia:
 
@@ -5298,7 +5314,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
 
-Táto udalosť označuje, že používateľ zrušil akciu po zobrazení hárku aktualizácie so zoznamom aktualizácií. Táto udalosť sa používa na vysvetlenie dôvodov neaktualizovania (t .j. že používateľ ju vedome zrušil). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že používateľ zrušil akciu po zobrazení hárka aktualizácie so zoznamom aktualizácií. Táto udalosť sa používa na vysvetlenie dôvodov neaktualizovania (t .j. že používateľ ju vedome zrušil). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
