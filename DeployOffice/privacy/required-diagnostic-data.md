@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: 74f80a494eff6f82310a89cbcc52e10d0a324e15
-ms.sourcegitcommit: 752267dddf9c011bb91136f6223f641053450599
+ms.openlocfilehash: bd9a5754a8741ee3cc96bf843c59f8f509bc1738
+ms.sourcegitcommit: de34e0fff15c3bd099df452d8f4771398f9dfaf6
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41109514"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42265478"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -1305,6 +1305,321 @@ Toto sú podtypy údajov v tejto kategórii:
 
 Úspešnosť fungovania aplikácie. Obmedzené na otvorenie a zatvorenie aplikácie a dokumentov, úpravu súborov a zdieľanie súborov (spoluprácu).
 
+#### <a name="account_action"></a>account_action
+
+Potrebné na zabezpečenie správneho fungovania konfigurácie konta a používa sa na monitorovanie stavu vytvárania konta, možnosti pridávania nových e-mailových kont a monitorovania mäkkých resetov kont 
+
+Zhromažďujú sa tieto polia: 
+
+- **account_calendar_count** – koľko kalendárov má konto
+ 
+- **action** – typ vykonanej akcie, napr. create_account alebo delete_account.
+ 
+- **duration_seconds** – trvanie akcie
+ 
+- **entry_point** – vstupný bod akcie, spôsob spustenia akcie používateľom
+ 
+- **has_hx** – označuje, či má zariadenie konto, ktoré používa našu novú službu synchronizácie pošty, nejedná sa nevyhnutne o konto, v ktorom bola akcia vykonaná
+ 
+- **is_hx** – ide o konto používajúce našu novú službu synchronizácie pošty
+ 
+- **is_shared_mailbox** – označuje, či sa akcia vzťahuje na zdieľanú poštovú schránku
+ 
+- **number_of_accounts** – celkový počet kont, v ktorých bola akcia vykonaná
+ 
+- **result** – výsledok akcie, napr. úspech alebo neúspech.
+   
+- **server_type** – typ servera pre konto, podobný ako pre account_type
+ 
+- **shared_type** – typ zdieľaného konta (ak je konto zdieľané)
+ 
+- **scope** – rozsah akcie, pre akciu delete je to this_device alebo all_devices
+ 
+- **total_calendar_accounts** – počet kont kalendárov v aplikácii v čase akcie
+ 
+- **total_email_accounts** – počet e-mailových kont v aplikácii v čase akcie
+ 
+- **total_file_accounts** – počet kont súborov v aplikácii v čase akcie
+
+#### <a name="app_error"></a>app_error
+
+Sleduje použité kritické chyby aplikácie, aby sme mohli zabrániť problémom, ktoré by mohli spôsobiť zlyhanie aplikácie alebo zabránenie čítaniu e-mailov.
+
+Zhromažďujú sa tieto polia: 
+
+- **clientName** – názov klienta pre cloudový súbor, kde sa vyskytla chyba (ak je k dispozícii).
+
+- **cloudfile_error_type** – typ chyby, ktorá sa vyskytla pre cloudový súbor (ak je k dispozícii).
+
+- **cloudfile_response_name** – názov odozvy pre chybu, ktorá sa vyskytla pre cloudový súbor (ak je k dispozícii).
+
+- **component_name** – názov súčasti aplikácie, v ktorej sa vyskytla chyba, napríklad pošta alebo kalendár.
+
+- **debug_info** – informácie o chybe, ktorá sa vyskytla pre cloudový súbor, slúžiace na určenie príčiny chyby.
+
+- **error_origin_identifier** – pôvod chyby, ktorá sa vyskytla pri koncepte, v ktorom sa vyskytla chyba (ak je k dispozícii).
+
+- **error_type** – typ chyby, ktorá sa vyskytla. Medzi príklady patrí ukladanie konceptu, odoslanie konceptu a chyba cloudového súboru.
+
+- **exrule** – hodnota rozšíreného pravidla (vzťahuje sa iba na chyby opakovania plánovania)
+
+- **exdate** – dátum rozšíreného pravidla (vzťahuje sa iba na chyby opakovania plánovania)
+
+- **has_attachments** – znázorňuje, či má koncept, v ktorom sa vyskytla chyba, prílohy (ak je k dispozícii).
+
+- **is_IRM_protected** – znázorňuje, či je koncept, v ktorom sa vyskytla chyba, chránený Správou prístupových práv k informáciám (ak je k dispozícii).
+
+- **is_legitimate** – znázorňuje, či chyba pochádza z programovacej chyby alebo nie. Chyby programovania sa považujú za neoprávnené.
+
+- **is_local** – znázorňuje, či je koncept, v ktorom sa vyskytla chyba, synchronizovaný so serverom (ak je k dispozícii).
+
+- **is_recoverable** – znázorňuje, či je možné obnovenie po chybe alebo či ide o závažnú chybu.
+
+- **rdate** – dátum pravidla opakovania (vzťahuje sa iba na chyby opakovania plánovania) 
+
+- **rrule** – samotné pravidlo opakovania (vzťahuje sa iba na chyby opakovania plánovania) 
+
+- **rrule_error_message** – chybové hlásenie o analýze pravidla opakovania (vzťahuje sa iba na chyby opakovania plánovania)
+
+- **rrule_error_type** – typ chyby analýzy pravidla opakovania (vzťahuje sa iba na chyby opakovania plánovania)
+
+- **status_code** –kód stavu chyby, ktorá sa vyskytla. Pomáha pochopiť príčinu chyby.
+
+Možné vlastnosti sú aj všetky znaky. Pomáha pochopiť znaky v texte hlásenia konceptu, keď sa vyskytla chyba. Možné vlastnosti sú napríklad „a“, „b“ alebo „c“.
+
+#### <a name="app_launch_report"></a>app_launch_report
+
+Táto udalosť nám umožňuje zistiť a vyriešiť problémy spôsobujúce pomalé alebo neúplné spúšťanie Outlooku, čo používateľom sťažuje používanie aplikácie. Patria sem informácie o konkrétnych povolených funkciách a o dĺžke trvania spustenia konkrétnych častí.
+
+Zhromažďujú sa tieto polia: 
+
+- **is_agenda_widget_active** – uvádza, či je miniaplikácia agendy aktívna.
+
+- **is_alert_available** – hovorí nám, či má aplikácia nakonfigurované povolenie upozornení v oznámeniach.
+
+- **is_background_refresh_available** – hovorí, či je aplikácia nakonfigurovaná tak, aby sa mohla aktualizovať na pozadí.
+
+- **is_badge_available** – hovorí nám, či má aplikácia nakonfigurované povolenie štítkov v oznámeniach.
+
+- **is_intune_managed** – hovorí nám, či je aplikácia spravovaná službou Intune.
+
+- **is_registered_for_remote_notifications** – hovorí nám, či má aplikácia zaregistrované vzdialené oznámenia.
+
+- **is_sound_available** – hovorí nám, či má aplikácia nakonfigurované povolenie zvukov v oznámeniach.
+
+- **is_watch_app_installed** – uvádza, či bola nainštalovaná hodinková aplikácia Outlook.
+
+- **is_watch_paired** – hovorí nám, či je hodinková aplikácia Outlook spárovaná s hlavnou aplikáciou Outlook.
+
+- **launch_to_db_ready_ms** – hovorí nám množstvo času od spustenia aplikácie Outlook po moment, kedy bola databáza pripravená.
+
+- **num_calendar_accounts** – uvádza počet kont kalendára v aplikácii.
+
+- **num_cloud_file_accounts** – uvádza počet kont ukladacieho priestoru v aplikácii.
+
+- **num_hx_calendar_accounts** – uvádza počet kont kalendára v aplikácii, ktoré sú pripojené k našej novej službe synchronizácie pošty.
+
+- **num_hx_mail_accounts** – uvádza počet poštových kont v aplikácii, ktoré sú pripojené k našej novej službe synchronizácie pošty.
+
+- **num_calendar_accounts** – uvádza počet poštových kont v aplikácii.
+
+#### <a name="calendar_action"></a>calendar_action
+
+Používa sa na sledovanie akéhokoľvek možného nepriaznivého vplyvu na schopnosť vykonávať základné akcie kalendára, ako je vytváranie alebo úprava udalostí.  Udalosť tiež môže obsahovať rad názvov vlastností a to, či sa zmenili, alebo nie. Napríklad „title_changed“, „online_meeting_changed“ a „description_changed“ sú názvy zahrnutých vlastností, vďaka ktorým dokážeme zistiť, či sa vyskytli nejaké problémy s úpravou určitých vlastností.
+
+Zhromažďujú sa tieto polia: 
+
+- **account_sfb_enabled** – pomáha správne nakonfigurovať Skype for Business. 
+
+- **action** – typ akcie, ktorá bola vykonaná v kalendári. Patria sem akcie ako otvorenie, úpravy, pridanie skratky, odloženie atď. Pomáha zabezpečiť, aby kalendár fungoval podľa očakávania a nič sa nepokazilo. 
+
+- **action_result** – výsledok akcie vykonanej na súčastiach kalendára. Môžu sem patriť hodnoty ako úspech, neúspech, neznáme a časový limit. Slúži na sledovanie úspešnosti akcií a na zistenie, či neexistuje rozsiahly problém s akciami v kalendári. 
+
+- **attendee_busy_status** – voľný/zaneprázdnený stav účastníka, ktorého sa akcia týka. Táto hodnota môže byť voľný, zaneprázdnený alebo nezáväzne. Pomáha pochopiť, či sa vyskytol problém s akciami týkajúcimi sa určitého zaneprázdneného stavu. 
+
+- **availability** – hodnota dostupnosti, ak sa hodnota voľný/zaneprázdnený na schôdzi zmenila. Pomáha pochopiť, či sa vyskytli problémy s nastavením určitej hodnoty dostupnosti. 
+
+- **calendar_onlinemeeting_default_provider** – obsahuje predvoleného poskytovateľa online schôdzí, ktorý sa používa pri vytváraní online schôdzí podporovaných serverom. Patrí sem napríklad Skype, Skype for Business, Hangouts a Teams for Business. Pomáha diagnostikovať možné problémy pri vytváraní online schôdzí niektorých poskytovateľov. 
+
+- **calendar_onlinemeeting_enabled** – má hodnotu true, ak kalendár podporuje tvorbu online schôdzí podporovaných serverom na základe predvoleného poskytovateľa online schôdzí. Pomáha pochopiť, či sa vyskytli nejaké problémy s kalendármi s povolenými online schôdzami. 
+
+- **calendar_type** – typ kalendára, v ktorom sa udalosť bude nachádzať po úprave schôdze používateľom. Možné hodnoty sú primárny, sekundárny, zdieľaný a skupinový. Pomáha pochopiť, či sa vyskytli problémy s niektorým typom kalendára. 
+
+- **delete_action_origin** – pôvod vykonanej akcie odstránenia. Patria sem hodny ako navigačný panel, panel s nástrojmi a tabletkový panel s nástrojmi.  Pomáha pochopiť, či sa vyskytli nejaké problémy pri odstraňovaní schôdze z určitého umiestnenia. 
+
+- **distribution_list_count** – počet účastníkov v distribučných zoznamoch. Pomáha sledovať, či sa nevyskytli problémy s účastníkmi v distribučných zoznamoch. 
+
+- **guest_count** – počet hostí na schôdzi.  Pomáha so správnym pridávaním hostí. 
+
+- **is_all_day** – spolu s „meeting_duration“ slúži na určenie toho, či ide o celodennú schôdzu. Pomáha pochopiť, či sa vyskytli nejaké problémy s akciami vykonanými počas celodenných schôdzí. 
+
+- **is_organizer** – pomáha pochopiť, či organizátor dokáže správne upravovať a vytvárať schôdze. 
+
+- **is_recurring** – pomáha pochopiť, či sa vyskytol problém, ktorý ovplyvňuje konkrétne opakované schôdze. 
+
+- **launch_point** – spúšťací bod akcie. Môže ísť o hodnoty ako napríklad hlavička miniaplikácie, päta miniaplikácie, celodenná miniaplikácia a klávesová skratka kalendára. Pomáha pochopiť kontext, v ktorom sa akcia spustila. 
+
+- **location_count** – počet umiestnení, ktoré sú nastavené pri vytvorení a upravení udalosti. Pomáha pochopiť, či sa vyskytli nejaké problémy s vytvorením alebo úpravou udalostí s určitým počtom umiestnení. 
+
+- **location_selection_source_type** – typ zdroja výberu umiestnenia. Môže ísť o hodnoty ako napríklad návrh na umiestnenie, vlastné a existujúce. Pomáha diagnostikovať všetky problémy s výberom umiestnenia z určitého zdroja. 
+
+- **location_session_id** – ID relácie výberu umiestnenia schôdze. Pomáha diagnostikovať všetky problémy s výberom umiestnenia na pridanie do schôdze. 
+
+- **location_type** – typ vybraného umiestnenia.  Obsahuje typy ako napríklad vlastné umiestnenie, konferenčná miestnosť a Bing. Pomáha pochopiť problémy s pridaním určitých typov umiestnení do schôdze. 
+
+- **meeting_duration** – dĺžka schôdze.  Pomáha zabezpečiť, aby mali schôdze nakonfigurované správne časy. 
+
+- **meeting_insights_type** – typ prehľadov schôdze v podrobnostiach o udalosti.  Patria sem súbor a správa. Pomáha pochopiť počet zobrazovaných prehľadov schôdze. 
+
+- **meeting_type** – typ online schôdze priradenej k akcii.  Patrí sem napríklad Skype, Skype for Business, Hangouts a Teams for Business. Pomáha zistiť, či sú online schôdze správne nakonfigurované. 
+
+- **origin** – pôvod akcie kalendára. Patria sem typy ako agenda, kalendár, miniaplikácia agendy atď. Pomáha lepšie zabezpečiť správne interakcie v rámci súčastí kalendára. 
+
+- **recurrence_scope** – typ opakovania schôdze, buď výskyt alebo rad.  Pomáha pochopiť, či sa vyskytli nejaké problémy s upravovaním rôznych typov opakovaní schôdze. 
+
+- **reminder_time** – čas pripomenutia schôdze, ak sa zmenila.  Používa sa na uistenie, že čas pripomenutia schôdze bol uložený správne. 
+
+- **reminders_count** – počet pripomenutí schôdze v prípade, že sa zmenili. Pomáha diagnostikovať všetky problémy s viacerými pripomenutiami udalosti. 
+
+- **sensitivity** – citlivosť schôdze. Patria sem typy ako normálna, osobná, súkromná a dôverná. Pomáha pochopiť, či bola správne nastavená citlivosť schôdze. 
+
+- **session_duration** – dĺžka trvania relácie v milisekundách. Pomáha pochopiť, či sa vyskytli problémy, ktoré zvyšujú čas potrebný na vykonanie akcie v kalendári. 
+
+- **shared_calendar_result** – výsledok akcie vykonanej v zdieľanom kalendári. Možné hodnoty sú ok, žiadne povolenie, neznáme, lokálny vlastník a vlastník je skupina. Nám pochopiť spoľahlivosť akcií vykonaných v zdieľaných kalendároch. 
+
+- **time_picker_origin** – pôvod nástroja na výber času pri akcii uloženia. Obsahuje hodnoty ako ďalšie možnosti a menej možností. Pomáha pochopiť, ako postupoval používateľ pri ukladaní schôdze a zabezpečiť správne fungovanie. 
+
+- **title** – automaticky navrhnutý názov z hodnôt definovaných aplikáciou. Patria sem hodnoty ako „Volať“, „Obed“ a „Skype“. Pomáha pochopiť, či je automatické navrhovanie názvu správne nakonfigurované. 
+
+- **txp** – typ objednania alebo rezervácie v udalosti (ak existuje). Patria sem typy ako rezervácia udalosti, rezervácia letu, rezervácia prenájmu auta atď. Pomáha pochopiť, či boli správne vykonané objednávacie/rezervačné karty. 
+
+- **upcoming_event_count** – počet nadchádzajúcich udalostí zobrazených v zobrazení nadchádzajúcich udalostí. Pomáha pochopiť, či sa vyskytli problémy so zobrazením nadchádzajúcich udalostí. 
+
+- **upcoming_event_seconds_until_event** – počet sekúnd do spustenia ďalšej naplánovanej udalosti. Pomáha pochopiť typické udalosti, ktoré sa zobrazujú v zobrazení nadchádzajúcich udalostí. 
+
+- **value** – podrobnosti špecifické pre konkrétnu akciu ako napríklad dĺžka oneskorenia upozornenia alebo kategória opakovať do. Pomáha pochopiť kontext, v ktorom bola akcia vykonaná. 
+
+#### <a name="combined_search_use"></a>combined_search_use
+
+Používa sa na sledovanie možného nepriaznivého vplyvu na schopnosť vykonávať kľúčové funkcie vyhľadávania ako napríklad vyhľadávanie pošty, kontaktov alebo udalostí.
+
+Zhromažďujú sa tieto polia:  
+
+- **account_switcher_action_type** – tento typ akcia zaznamená, či používateľ použije prepínač kont v jednoduchom zisťovaní alebo či sa rozhodne prepnúť konto.
+
+- **action** – typ akcie, ktorá bola vykonaná na vyhľadávanie. Identifikuje, či sa vyhľadávanie začalo, prebieha alebo skončilo a aké akcie sa počas neho uskutočnili, napr. či bol použitý mikrofón. Pomáha s poskytovaním správnych a užitočných vyhľadávaní.
+
+- **action_type** – typ akcie, ktorá bola vykonaná na vyhľadávanie. Identifikuje, či sa vyhľadávanie začalo, prebieha alebo skončilo a aké akcie sa počas neho uskutočnili, napr. či bol použitý mikrofón. Pomáha s poskytovaním správnych a užitočných vyhľadávaní. 
+
+- **answer_result_selected_count** – sleduje, koľkokrát bolo vyhľadávanie „úspešné“, t. j. našiel používateľ osobu, ktorú hľadal? Napísal e-mail? Založil si správu do záložiek? 
+
+- **contact_result_in_full_list_selected_count** – sleduje počet prípadov, kedy používateľ odoslal žiadosť „Zobraziť všetky kontakty“, keď bol počas kombinovanej relácie vyhľadávania vybratý úplný zoznam
+
+- **contact_result_selected_count** – sleduje, koľko bolo vybraných výsledkov kontaktov počas kombinovanej relácie vyhľadávania
+
+- **conversation_result_selected_count** – sleduje, koľko bolo vybraných konverzácií počas kombinovanej relácie vyhľadávania
+
+- **entrance_type** – určuje, ako používateľ spustil vyhľadávací dotaz – na karte Hľadať, v dotazoch s nulovými výsledkami, v nadpise vyhľadávania alebo vo výsledkoch vyhľadávania. 
+
+- **has_contact_results** – jednoducho označuje, či sa výsledky kontaktov zobrazujú vo vyhľadávacom dotaze, alebo nie.
+
+- **include_deleted** – označuje, či sa vo výsledkoch vyhľadávania zobrazujú odstránené možnosti 
+
+- **re_enter_search_tab** – Boolovská hodnota na určenie, či používateľ pred výberom výsledku vyhľadávania prepol karty
+
+- **result_selected_type** – s akým typom zobrazených údajov komunikuje používateľ, t. j. zobrazuje všetky kontakty, konverzácie, udalosti atď. 
+
+- **search_conversation_result_data** – obsahuje údaje o konverzácii vybratej z výsledku vyhľadávania vrátane typu konta (hx, ac atď.), či správu uchováva cloudová služba a to, či je zobrazené odsadenie strany rovnaká strana ako prvá správa. 
+
+- **search_origin** – odkiaľ pochádza vyhľadávanie, t. j. hlasový asistent, Cortana, napísané na klávesnici atď. 
+
+- **search_request_reason** – označuje dôvod odoslania žiadosti o vyhľadávanie v aplikácii; v skutočnosti označí súčasť alebo akciu používateľa, ktorá vyvolala vyhľadávanie.
+
+- **search_result_filter_type** – označuje typ filtra použitého na vyhľadávanie, zobrazí všetko alebo iba prílohy
+
+- **search_scope** – reťazec, ktorý označuje, aký typ konta hľadal používateľ v službe (t. j. Exchange, Gmail atď.) alebo či vyhľadával vo všetkých kontách. 
+
+- **search_session_ended_type** – označuje umiestnenie, kde bolo vyhľadávanie ukončené z dôvodu zrušenia alebo aktualizácie dotazu
+
+- **search_suggestion_type** – označuje dôvod návrhu vyhľadávania, t. j. ide o opravu pravopisu? Zakladá sa na histórii? Automatické dokončovanie?
+
+- **see_all_contacts_selected_count** – sleduje, koľkokrát bola počas kombinovanej relácie vyhľadávania vybraná možnosť „Zobraziť všetky kontakty“
+
+- **top_mail_result_selected_count** – sleduje, koľkokrát si používateľ vybral poskytnuté prvé výsledky. 
+
+#### <a name="compose_mail_accessory"></a>compose_mail_accessory
+
+Táto akcia umožňuje zistiť a vyriešiť problémy s kľúčovými akciami písania pošty, aby sa nevyskytol problém s priložením súboru, odfotením fotografie ako prílohy alebo odoslaním vašej dostupnosti.
+
+Zhromažďujú sa tieto polia: 
+
+- **action** – uvádza akciu, ktorej pokus o vykonanie prebehol pri zaznamenaní akcie. Medzi príklady patrí priloženie súboru a zobrazenie ďalších možností.
+
+- **icon_name** – uvádza názov ikony zobrazenej pri zaznamenaní akcie.
+
+#### <a name="conversation_view_action"></a>conversation_view_action
+
+Slúži na sledovanie možného nepriaznivého vplyvu na schopnosť zobraziť e-mailové správy a odpovedať na ne
+
+Zhromažďujú sa tieto polia:
+
+- **contains_mention** – uvádza, či bola v konverzácii použitá zmienka @, aby sme mohli zistiť problémy s e-mailovými zmienkami
+
+- **conversation_type** – uvádza, aký typ zobrazenia e-mailovej správy bol vykreslený, napríklad zobrazenie jednej správy alebo zobrazenie viacerých správ. Pomáha zistiť problémy súvisiace s konkrétnym typom správy v zobrazení e-mailovej konverzácie.
+
+- **suggested_reply_char_count** – uvádza, koľko znakov mali ponúkané navrhované odpovede (ak sú k dispozícii), aby sme mohli zistiť anomálie a problémy súvisiace s našimi návrhmi
+
+- **suggested_reply_click_pos** – uvádza, kde bola vykreslená navrhovaná odpoveď (ak je k dispozícii), aby sme mohli zistiť problémy s konkrétnym návrhom
+
+- **use_default_quick_reply_mode** – uvádza, či bol použitý predvolený režim rýchlej odpovede, aby sme mohli zistiť problémy s rýchlou odpoveďou na e-mail
+
+#### <a name="draft_action"></a>draft_action
+
+Slúži na sledovanie možného nepriaznivého vplyvu na schopnosť vytvárať a ukladať e-mailové koncepty.
+
+Zhromažďujú sa tieto polia: 
+
+- **action** – typ akcie (napríklad uložiť alebo zahodiť).
+ 
+- **draft_message_id** – ID správy konceptu
+
+- **is_groups** – označuje, či sa koncept odosiela do alebo z priečinka skupiny
+ 
+- **origin** – kde bol zahájený koncept, napr. detail správy, písanie
+ 
+- **thread_id** – ID vlákna konceptu konverzácie je priradené k
+
+#### <a name="drawer_event"></a>drawer_event
+
+Slúži na sledovanie možného nepriaznivého vplyvu na možnosť prístupu do priečinkov v doručenej pošte
+
+Zhromažďujú sa tieto polia:
+
+- **add_calendar_option** – označuje typ kalendára, ktorý sa pridá zo zásuvky (t. j. zaujímavý kalendár, kalendár pošty, zdieľaný kalendár), aby sme mohli zistiť problémy s konkrétnymi typmi kalendárov
+
+- **calendar_accounts_count** – označuje počet kont kalendárov, aby sme mohli zistiť problémy s počtom kont, ktoré máte
+
+- **calendar_apps_count** – označuje počet aplikácií kalendára nachádzajúcich sa v zariadení používateľa, aby sme mohli zistiť problémy s aplikáciami kalendára
+
+- **drawer_type** – označuje typ zásuvky (kalendár, e-mailový dotaz alebo dotaz s nulovými výsledkami), aby sme mohli zistiť problémy s typom zásuvky
+
+- **from_favorites** – označuje, či bola akcia prevzatá z obľúbených položiek, aby sme mohli zistiť problémy s obľúbenými položkami
+
+- **group_calendar_count** – označuje počet kalendárov pre konto, aby sme mohli zistiť problémy s kalendármi skupiny
+
+- **inbox_unread_count** – označuje počet neprečítaných správ v priečinku doručenej pošty, aby sme mohli zistiť problémy so zobrazením počtu neprečítaných správ.
+
+- **interesting_calendar_accounts_count** – označuje počet kont, ktoré majú nárok na zaujímavé kalendáre v zariadení, aby sme mohli zistiť problémy so zaujímavými kalendármi
+
+- **is_group_calendar** – označuje, či je kalendár kalendárom skupiny, aby sme mohli zistiť problémy s kalendármi skupiny
+
+- **mail_folder_type** – označuje typ poštového priečinka (t. j. doručená pošta, koncepty atď.), aby sme mohli zistiť problémy s typmi priečinkov.
+
+- **mail_accounts_count** – označuje počet poštových kont, aby sme mohli zistiť problémy s poštovými kontami.
+
+- **selected_group_calendar_count** – označuje počet kalendárov skupín vybratých a aktívnych v používateľskom rozhraní
+
+- **visibility_toggle** – označuje, či používateľ zapol alebo vypol daný kalendár, aby sme mohli zistiť problémy so zobrazením alebo skrytím kalendárov
 
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
@@ -1787,6 +2102,259 @@ Zhromažďujú sa tieto polia:
 - **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
 
 - **RMS.StatusCode** – ID scenára definované rozhraním API
+
+
+#### <a name="mail_action"></a>mail_action
+
+Slúži na sledovanie možného nepriaznivého vplyvu na schopnosť vykonávať dôležité akcie pošty (napríklad spustenie režimu rozdelenia pošty do vlákien) na zaistenie správneho fungovania aplikácie pre poštu.
+
+Zhromažďujú sa tieto polia:
+
+- **account** – konto, v ktorom sa akcia vykonala
+
+- **action** – sleduje vykonaný spôsob akcie, t. j. archivovať, odstrániť, označiť ako prečítané atď. 
+
+- **attachment_content_type** – typ obsahu stiahnutej prílohy 
+
+- **attachment_content_type_with_count** – sledovanie počtu príloh v e-maile
+
+- **attachment_download_result** – výsledok (t. j. úspech/neúspech) pre akciu stiahnutia prílohy
+
+- **attachment_download_time** – čas na akciu stiahnutia prílohy
+
+- **attachment_extn** – prípona súboru stiahnutej prílohy
+
+- **attachment_id** – identifikátor systému pre stiahnutú prílohu 
+
+- **attachment_size** – veľkosť prevzatej prílohy
+
+- **domain** – doména otvoreného dokumentu
+
+- **duration** – sleduje, koľko trvalo zobrazenie akcie ako čitateľného anglického reťazca (napr. 1 s, 4 h)
+
+- **error** – chybové hlásenie priradené k akcii 
+
+- **event_mode** – v akom type režimu udalosti to bolo (skupiny alebo iné). 
+
+- **Extension** – prípona prepojenia alebo prílohy priradenej k tejto akcii 
+
+- **internet_message_id** – ID správy sledovania
+
+- **is_group_escalation** – označuje, či sa správa o tom, že sa vykonala akcia, odoslala do poštovej schránky používateľa z dôvodu eskalácie (odber skupiny)
+
+- **is_rule** – označuje, či vykonaná akcia pošty resetuje prioritnú/inú klasifikáciu
+
+- **is_threaded_mode** – označuje, či bola správa v režime rozdelenia do vlákien alebo nie, t. j. ako sa správy zoskupujú
+
+- **is_unread** – označuje, či je správa, pre ktorú sa vykonala akcia, neprečítaná
+
+- **left_swipe_setting** – označuje, ktorá akcia bola nastavená na potiahnutie vľavo
+
+- **message_id** – ID serverovej správy zamerané na akciu alebo zoznam položiek oddelených čiarkami v prípade, že bola v akcii viac ako jedna položka.
+
+- **message_type** – označuje, pre aký typ správy sa vykonala akcia** (skupina alebo iný)
+
+- **origin** – zdroj akcie, t. j. potiahnutie bunky, dotaz s nulovými výsledkami, priame prepojenie, zobrazenie e-mailu, zoznam e-mailov atď.
+
+- **reported_to_msft** – po odoslaní e-mailu do priečinka nevyžiadanej pošty (nevyžiadaná pošta) alebo do koša (neoprávnené získavanie údajov) možno zvoliť nahlásenie akcie spoločnosti Microsoft.
+
+- **retry** – označuje, či bol zopakovaný pokus o vykonanie akcie
+
+- **right_swipe_setting** – označuje, ktorá akcia bola nastavená na potiahnutie vpravo 
+
+- **Klávesová skratka** – označuje, či sa použila klávesová skratka a aká klávesová skratka sa použila na naplánovanie správy, t. j. neskôr, zajtra, vybrať čas atď.
+
+- **size** – veľkosť prepojenia alebo prílohy priradenej k tejto akcii
+
+- **source_folder** – sleduje typ zdrojového priečinka, keď akcia označuje presun z jedného priečinka do druhého, t. j. do doručenej pošty, koša atď. 
+
+- **source_inbox** – označuje, v ktorom priečinku doručenej pošty prebieha akcia pošty (napríklad prioritné, iné atď.), stav – stav akcie, t. j. úspech alebo bod zlyhania
+
+- **target_folder** – označuje typ cieľového priečinka pri presune e-mailov z jedného priečinka do druhého
+
+- **thread_id** – ID vlákna konverzácie zameranej na akciu alebo zoznam položiek oddelených čiarkami v prípade, že bola vybraná viac ako jedna položka
+
+- **time_taken_to_fetch_access_token** – trvanie načítania tokenu prístupu do systému, ktorý sa používa na otvorenie prepojenia
+
+- **time_taken_to_fetch_drive_item** – trvanie načítania prostriedku OneDrivu po kliknutí
+
+- **time_taken_to_fetch_embed_viewer_resource** – trvanie inicializácie vloženého zobrazovača pri otváraní prepojení
+
+- **time_taken_to_load_embed_viewer** – trvanie inicializácie vloženého zobrazovača pri otváraní prepojení
+
+- **time_taken_to_load_link** trvanie dokončenia akcie načítania prepojenia
+
+- **time_taken_to_tap_attachment** – čas medzi otvorením správy a kliknutím na prílohu
+
+- **time_taken_to_tap_link** – trvanie od zobrazenia správy používateľom po kliknutie na prepojenie
+
+- **txp** – označuje, či existuje položka typu txp priradená k pošte, pre ktorú bola vykonaná akcia, t. j. rezervácia udalosti, rezervácia letu atď. 
+
+- **type** – typ dokumentu, ktorý sa otvára cez prepojenie
+
+#### <a name="mail_compose"></a>mail_compose
+
+Slúži na sledovanie možného nepriaznivého vplyvu na schopnosť vytvárať e-maily a odpovedať na ne, ako je napríklad problém s odpovedaním všetkým, formátovaním e-mailov alebo odosielaním e-mailov.
+
+Zhromažďujú sa tieto polia: 
+
+- **draft_message_id** – označuje ID konceptu konverzácie, ktorá sa vytvára ako koncept, aby sme mohli zistiť problémy s konceptami e-mailov
+
+- **message_id** – ID správy konverzácie, na ktorú sa vytvára odpoveď alebo ktorá sa preposiela, aby sme mohli zistiť problémy s konkrétnou správou
+
+- **origin** – uvádza, odkiaľ pochádza vytvorený obsah, napríklad odpovedať všetkým, nová správa alebo rýchla odpoveď. Pomáha zistiť problémy súvisiace s konkrétnym typom pôvodu odpovede.
+
+- **is_group_escalation** – označuje, či je správa eskalovaná skupinová správa, aby sme mohli zistiť problémy s vytváraním týkajúce sa skupín.
+
+- **is_link** – uvádza, či bol nový koncept vytvorený cez prepojenie. Pomáha zistiť problémy súvisiace s konceptmi vytvorenými z prepojení.
+
+- **is_force_touch** – uvádza, či bol nový koncept vytvorený pomocou akcie vynútenia. Pomáha zistiť problémy súvisiace s konceptmi vytvorenými z tejto konkrétnej akcie.
+
+- **is_groups** – označuje, či bola udalosť spustená v priestore skupiny, aby sme mohli zistiť problémy s vytváraním týkajúce sa skupín.
+
+- **source_inbox** – uvádza zdrojovú doručenú poštu, napríklad či ide o prioritnú alebo inú doručenú poštu
+
+- **thread_id** – ID vlákna konverzácie, na ktorú sa vytvára odpoveď alebo ktorá sa preposiela, aby sme mohli zistiť problémy s konkrétnym vláknom
+
+#### <a name="meeting_call_to_action"></a>meeting_call_to_action
+
+Používa sa na sledovanie možného nepriaznivého vplyvu na schopnosť vykonávať dôležité akcie schôdze, ako je vytváranie, úprava a odpovedanie na schôdze.
+
+Zhromažďujú sa tieto polia:
+
+- **event_mode** – označuje, či táto udalosť pochádza zo skupiny alebo nie, aby sme mohli zistiť problémy s udalosťami skupiny
+
+- **meeting_id** – ID schôdze, ktoré pomáha sledovať problémy počas celej životnosti schôdze, aby sme mohli zistiť problémy s konkrétnymi schôdzami
+
+- **meeting_provider** – označuje poskytovateľa online schôdze (napr. Teams alebo Skype for Business), aby sme mohli zistiť problémy s konkrétnymi poskytovateľmi online schôdzí
+
+- **notify_type** – označuje typ odpovede pre iné typy kont, aby sme mohli zistiť problémy s rôznymi typmi kont
+
+- **recurrence** – označuje frekvenciu tejto schôdze, t. j. výskyt alebo rad, aby sme mohli zistiť problémy s opakujúcimi sa radmi schôdzí
+
+- **response** – označuje typ odpovede v niektorých typoch kont, ako je napríklad prijatie alebo odmietnutie, aby sme mohli zistiť problémy s odpovedaním na udalosti
+
+- **response_message_length** – označuje dĺžku správy, aby sme mohli zistiť problémy s odpovedaním na schôdze
+
+- **review_time_proposal_action_type** – označuje odozvu používateľa v prípade návrhu nového termínu, aby sme mohli zistiť problémy s navrhovaním nového termínu
+
+- **send_response** – označuje, či sa odoslala odpoveď, aby sme mohli zistiť problémy s odosielaním odpovedí na pozvánku na schôdzu
+
+- **txp** – označuje, aký typ schôdze sa vygeneroval z rezervácií letov a doručení, aby sme mohli zistiť problémy s týmto typom schôdze
+
+- **with_message_enabled** – označuje, či používateľ môže odpovedať na správu, aby sme mohli zistiť problémy s odpovedaním na pozvánky na schôdzu
+
+#### <a name="office_android_docsui_fileoperations_opendocumentmeasurements"></a>Office_Android_DocsUI_FileOperations_OpenDocumentMeasurements
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android, a zaznamená, keď sa vykoná operácia otvorenia súboru. Udalosť pomôže pri zachovaní bezpečnosti, aktuálnosti a správneho výkonu operácie otvorenia súboru. Účelom zhromažďovania týchto údajov je neustále zlepšovanie výkonu otvárania súboru. 
+
+Zhromažďujú sa tieto polia:
+
+- **Data_AppDocsOperationDuration** – čas strávený v podvrstve počas operácie otvorenia súboru.
+
+- **Data_AppDuration** – trvanie spracovania aplikácie počas operácie otvorenia súboru. 
+
+- **Data_BootDuration** – čas trvania spustenia aplikácie pri otváraní súboru.
+
+- **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
+
+- **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
+
+- **Data_Doc_ChunkingType** – enumerácia označujúca typ algoritmu blokov údajov súboru.
+
+- **Data_Doc_EdpState** – enumerácia označujúca stav ochrany podnikových údajov súboru.
+
+- **Data_Doc_Ext** – prípona súboru.
+
+- **Data_Doc_Fqdn** – názov hostiteľa servera súboru.
+
+- **Data_Doc_FqdnHash** – globálne jedinečný identifikátor (GUID), ktorý jednoznačne označuje názov hostiteľa servera.
+
+- **Data_Doc_IdentityTelemetryId** – identifikátor GUID, ktorý jednoznačne označuje identitu použitú na otvorenie súboru. 
+
+- **Data_Doc_InitializationScenario** – enumerácia označujúca podrobný typ scenára otvorenia súboru.
+
+- **Data_Doc_IOFlags** – enumerácia označujúca príznaky IO operácie otvorenia súboru, napríklad či je súbor uložený vo vyrovnávacej pamäti alebo nie.
+
+- **Data_Doc_IsCloudCollabEnabled** – či je alebo nie je pre súbor zapnutá spolupráca v cloude.
+
+- **Data_Doc_IsIncrementalOpen** – či sa súbor otvoril alebo neotvoril cez prírastkové otvorenie.
+
+- **Data_Doc_IsOcsSupported** – či súbor podporuje alebo nepodporuje službu spolupráce v Office.
+
+- **Data_Doc_IsOpeningOfflineCopy** – či sa súbor otvoril z offline kópie z vyrovnávacej pamäte.
+
+- **Data_Doc_IsPrefetched** – či bol alebo nebol súbor prednačítaný pred výskytom operácie otvorenia.
+
+- **Data_Doc_IsSyncBacked** – či sa cloudový súbor vyskytuje lokálne a synchronizuje so serverom alebo nie.
+
+- **Data_Doc_Location** – enumerácia označujúca umiestnenie súboru, napríklad lokálne alebo v cloude.
+
+- **Data_Doc_ReadOnlyReasons** – enumerácia označujúca dôvod, prečo je súbor iba na čítanie.
+
+- **Data_Doc_ResourceIdHash** – identifikátor GUID, ktorý jednoznačne označuje ID zdroja servera súboru.
+
+- **Data_Doc_RtcType** – enumerácia označujúca typ kanála v reálnom čase (RTC) použitého súborom.
+
+- **Data_Doc_ServerDocId** – identifikátor GUID, ktorý jednoznačne označuje ID dokumentu na serveri.
+
+- **Data_Doc_ServerProtocol** – enumerácia označujúca serverový protokol cloudového súboru.
+
+- **Data_Doc_ServerType** – enumerácia označujúca serverový typ cloudového súboru.
+
+- **Data_Doc_ServerVersion** – enumerácia označujúca serverovú verziu cloudového súboru.
+
+- **Data_Doc_SessionId** – celé číslo, ktoré sa zvýši o 1 pri každej operácii otvorenia súboru v relácii.
+
+- **Data_Doc_SharePointServiceContext** – reťazec, ktorý sa používa na koreláciu denníkov na strane klienta a na strane servera, zvyčajne ide o druh ID.
+
+- **Data_Doc_SizeInBytes** – veľkosť súboru v bajtoch.
+
+- **Data_Doc_SpecialChars** – enumerácia, ktorá označuje, aký typ špeciálneho znaku obsahuje URL adresa súboru.
+
+- **Data_Doc_UrlHash** – identifikátor GUID, ktorý jednoznačne označuje URL adresu súboru.
+
+- **Data_Doc_UsedWrsDataOnOpen** – označuje, či bol alebo nebol súbor otvorený prírastkovo pomocou údajov WRS vopred uložených vo vyrovnávacej pamäti.
+
+- **Data_Doc_WopiServiceId** – reťazec, ktorý označuje, z ktorej služby súbor Web Application Open Platform Interface Protocol (WOPI) pochádza.
+
+- **Data_ErrorId_Code** – kód chyby indikujúci neúspech operácie zhromažďovania údajov
+
+- **Data_ErrorId_Tag** – značku v kóde, ktorá pomáha s nájdením bodu zlyhania
+
+- **Data_InclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií. 
+
+- **Data_InitializationReason** – enumerácia označujúca spôsob otvorenia súboru, napríklad prvok používateľského rozhrania, spustenie inou aplikáciou atď.
+
+- **Data_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
+
+- **Data_OfficeMobileInitReason** – enumerácia označujúca vstupný bod otvorenia súboru. 
+
+- **Data_SilhouetteDuration** – trvanie vykresľovania otvorenia súboru.
+
+- **Data_TimeSplitMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie, časovou pečiatkou a trvaním. 
+
+#### <a name="office_android_intune_intunecompliancerequest"></a>Office_Android_Intune_IntuneComplianceRequest
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android vrátane mobilného balíka Office, Wordu, Excelu, PowerPointu a OneNotu. Udalosť označuje pokus o prihlásenie do konta organizácie s licenciou Intune, v ktorom správca organizácie nakonfiguroval politiku vynútenia podmieneného prístupu k aplikácii. Používa sa na zistenie počtu koncových používateľov, ktorí sa pokúšajú používať aplikácie s touto konfiguráciou politiky, a v kombinácii s inou udalosťou Office_Android_Intune_IntuneComplianceStatus na zaistenie vynútenia nakonfigurovanej politiky. 
+
+Nezhromažďujú sa žiadne údajové polia.
+
+#### <a name="office_android_intune_intunecompliancestatus"></a>Office_Android_Intune_IntuneComplianceStatus
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android vrátane mobilného balíka Office, Wordu, Excelu, PowerPointu a OneNotu. Udalosť označuje pokus o prihlásenie do konta organizácie s licenciou Intune, v ktorom správca organizácie nakonfiguroval politiku vynútenia podmieneného prístupu k aplikácii. Táto udalosť označuje dodržiavanie súladu v aplikácii, v ktorej je používateľ prihlásený, a používa sa na skúmanie zlyhaní. Je skombinovaná s inou udalosťou Office_Android_Intune_IntuneComplianceRequest na zaistenie vynútenia nakonfigurovanej politiky.
+  
+Zhromažďujú sa tieto polia:
+
+- **Data_ComplianceStatus** – označuje stav dodržiavania súladu aplikácie počas prihlásenia s kódom chyby úspechu alebo neúspechu.
+  - -1 – Neznáma chyba
+  - 0 – Aplikácia je v súlade s politikami organizácie
+  - 1 – Aplikácia nie je v súlade s politikami organizácie
+  - 2 – Zlyhania súvisiace so službou
+  - 3 – Zlyhania súvisiace so sieťou
+  - 4 – Aplikácii sa nepodarilo načítať overovací token 
+  - 5 – Odpoveď ešte nebola prijatá zo služby
+  - 6 – Aplikácia Company Portal musí byť nainštalovaná
 
 #### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
 
@@ -3264,6 +3832,67 @@ Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámc
 Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunPanelName** – Názov panela, z ktorého skäsenosť začala.
+
+#### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
+
+Zaznamenávame, keď používateľ zatvorí kartu osoby.  Údaje sa používajú na určenie toho, či sa karta zatvorí správne. 
+
+Zhromažďujú sa tieto polia: 
+
+- **BatchId** – globálne jedinečný identifikátor v prípade, že bola vytvorená množina požiadaviek
+
+- **Data.appContextId** – náhodne vygenerovaný identifikátor používaný na identifikáciu rôznych kont v tej istej aplikácii.
+
+- **Data.AppInfo.Name** – názov používanej služby (karta profilu)
+
+- **Data.AppInfo_Id** – názov hostiteľskej aplikácie
+
+- **Data.AppInfo_Version** – verzia hostiteľskej aplikácie
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor karty osoby
+
+- **Data.cardPersonaCorrelationId** – globálne jedinečný identifikátor konkrétnej osoby zobrazenej na karte
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+
+- **Data.clientType** – typ zariadenia, v ktorom je aplikácia spustená.
+
+- **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
+
+- **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
+
+- **Data.OTelJS.Version** – verzia zapisovača OTel
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne:
+  - **ClientTimeStamp** – čas v aplikácii, keď sa udalosť zaznamenala.
+  - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie
+  - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
+  - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie.
+  - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
+  - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
+  - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
+
+- **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
+
+- **Data.tenantAadObjectId** – nájomník, ku ktorému je priradené predplatné používateľa. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť.
+
+- **Data.userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft (duplikát poľa Data.UserInfo.Id).
+
+- **Data.UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft.
+
+- **Data.UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **Data.UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.UserPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft (duplikát poľa Data.UserInfo.MsaId).
+
+- **Data.version** – verzia služby (karta profilu).
+
+- **Data_hostAppRing** – zavádzací okruh karty osoby
+
+- **Event_ReceivedTime** – čas zaznamenania udalosti v službe
 
 #### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
 
@@ -5861,6 +6490,12 @@ Zhromažďujú sa tieto polia:
 
 - **TIME_TAKEN_IN_MS** – čas potrebný na otvorenie strany
 
+#### <a name="onenotecapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken
+
+Tento signál sa používa na zabezpečenie toho, aby sa po prihlásení používateľa do aplikácie OneNote pre Android správne zriadili poznámkové bloky a aby používateš úspešne vytvoril novú poznámku.  Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby.
+
+Nezhromažďujú sa žiadne ďalšie polia.
+
 #### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
 
 Signál, ktorý sa používa na označenie všetkých problémov, ktoré sa vyskytli počas používania panela hlásení.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených počas používania panela hlásení.
@@ -5911,6 +6546,198 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.VerifySignatureDuration** – čas trvania na overenie podpisu.
 
+#### <a name="read_conversation"></a>read_conversation
+
+Slúži na sledovanie možného nepriaznivého vplyvu na stav a výkon vykresľovania e-mailovej správy
+
+Zhromažďujú sa tieto polia: 
+
+- **above_40fps** – počet vykreslených snímok nad 40 fps
+ 
+- **above_50fps** – počet vykreslených snímok nad 50 fps
+ 
+- **above_55fps** – počet vykreslených snímok nad 55 fps
+
+- **adal_id** – ID overenia konta v službe Active Directory, jedinečný identifikátor v systéme overovania spoločnosti Microsoft 
+
+- **component_name** – názov súčasti/zobrazenia, ktoré je aktívne počas filtrovania
+
+- **event_mode** – umiestnenie v aplikácii, kam zadal používateľ konverzáciu (skupiny alebo iné)
+
+- **internet_message_id** – ID sledovania pre najnovšiu správu v konverzácii
+      
+- **orientation** – orientácia obrazovky v čase udalosti (na výšku alebo na šírku)
+
+- **recent_message_id** – ID najnovšej správy v konverzácii
+
+- **suggested_reply_state** – stav navrhovaných odpovedí pre túto konverzáciu (nedostupné, dostupné, zobrazené, použité alebo zahodené)
+  
+- **total_count** – celkový počet snímok zobrazených súčasťou
+ 
+- **view_duration** – ako dlho mal používateľ zobrazenú súčasť
+
+#### <a name="save_attempt"></a>save_attempt
+
+Umožňuje identifikovať vplyv problémov spôsobených používateľmi pokúšajúcimi sa uložiť súbor vyhodnotením počtu ovplyvnených relácií a toho, či existujú spoločné prvky týchto relácií.
+
+Zhromažďujú sa tieto polia: 
+
+- **file_type** – typ súboru, ktorý sa používateľ pokúsil uložiť (napríklad .doc)
+
+- **origin** – označuje umiestnenie pôvodu pokusu o uloženie súboru (napríklad z e-mailu), aby sme mohli zistiť problémy s ukladaním súboru z určitého umiestnenia v aplikácii
+
+- **token_type** – typ tokenu slúžiaci na overenie konta s cieľom uloženia súboru, aby sme mohli zistiť problémy s overovaním týkajúce sa ukladania súboru
+
+#### <a name="send_message"></a>send_message
+
+Slúži na sledovanie možného nepriaznivého vplyvu na výkon a stav odosielania e-mailových správ.
+
+Zhromažďujú sa tieto polia:
+  
+- **account** – sleduje konto, v ktorom sa akcia vykonala
+
+- **compose_duration** – sleduje celkový čas, ktorý používateľ strávil vytváraním správy vrátane viacerých relácií konceptov
+
+- **draft_message_id** – sleduje ID odosielanej vytvorenej správy
+
+- **event_mode** – sleduje režim udalosti, ak sa vzťahuje na správu, („skupiny“ alebo „iné“)
+
+- **has_attachment** – označuje, či správa obsahuje prílohy
+
+- **has_mip_label** – označuje, či bola na správe označená značka MIP
+
+- **is_group_escalation** – označuje, či ide o skupinovú eskalovanú správu, „eskalovaná správa“ je správa, ktorá bola odoslaná do poštovej schránky používateľa z dôvodu eskalácie (odber skupiny).
+
+- **is_groups** – sleduje, či je odoslaná správa skupinová správa alebo nie
+
+- **key_stroke_count** – sleduje počet stláčania klávesov v odosielanej správe
+
+- **message_id** – sleduje ID správy, na ktorú sa odpovedá alebo ktorá sa preposiela
+
+- **origin** – označuje miesto spustenia vytvárania, t. j. nové, odpoveď, rýchla odpoveď atď.
+
+- **send_draft_origin** – označuje miesto spustenia odoslania, t. j. vytvorenie alebo rýchla odpoveď
+
+- **source_inbox** – označuje typ zdrojovej doručenej pošty pre referenčnú správu, 
+
+- **suggested_reply_state** – zachytáva stav navrhovanej odpovede pre odoslanú poštu, t. j. nedostupné, dostupné, zobrazené, použité alebo zahodené
+
+- **thread_id** – označuje ID vlákna konverzácie, na ktorú sa odpovedá alebo ktorá sa preposiela
+
+#### <a name="session"></a>session
+
+Umožňuje zistiť a vyriešiť situácie prílišného využívania batérie zariadenia a pomáha zistiť možnú príčinu.
+
+Zhromažďujú sa tieto polia: 
+
+- **battery_level** – uvádza úroveň nabitia batérie zariadenia, aby sme mohli určiť, kedy naša aplikácia negatívne vplýva na úroveň nabitia batérie zariadenia
+
+- **has_hx** – uvádza, že konto používa našu novú službu synchronizácie, aby sme mohli zistiť problémy spôsobené touto službou
+
+#### <a name="settings_action"></a>settings_action
+
+Umožňuje zistiť situácie, ktoré môžu mať nepriaznivý vplyv na vašu schopnosť konfigurovať nastavenia aplikácie, ako sú napríklad nastavenia oznámení, primárneho e-mailového konta a konfigurácia podpisu v e-mailoch.
+
+Zhromažďujú sa tieto polia: 
+
+- **account_order_changed** – kontroluje, či ste zmenili poradie kont na zabezpečenie správneho fungovania tejto konfigurácie 
+
+- **action** – možné akcie v nastaveniach ako napríklad odstránenie konta, aby sme mohli zistiť problémy a vylúčiť nepriaznivý vplyv
+
+- **auth_type** – typ overenia používaného v konte, vďaka ktorému zistíme, ktorú vrstvu synchronizácie servera používame, čo nám pomôže pri diagnostikovaní problémov 
+
+- **auth_type** – označuje typ overenia servera, vďaka ktorému zistíme, či sa vyskytol problém s určitým typom konta
+
+- **badge_count_state** – označuje, o aký počet štítkov používateľ požiadal, t. j. žiadne štítky, iba prioritná doručená pošta atď. 
+
+- **changed_folder** – zaznamenáva, či sa zmenil priečinok, čo pomáha pri diagnostikovaní problémov. 
+
+- **changed_folder** – určuje, či bola táto akcia archivovaná, plánovaná alebo to bola iná akcia.
+
+- **delete_scope** – počas odstránenia konta označuje, či ste konto odstránili z tohto zariadenia alebo zo všetkých zariadení s Outlookom.  
+
+- **delete_scope** – sleduje, či sa táto akcia týkala odstránenia osoby v tomto zariadení alebo vo všetkých zariadeniach (ak je k dispozícii). 
+
+- **enabled_state** – označuje, či sú správne nakonfigurované nastavenia automatických odpovedí, ukladania kontaktov a blokovania externých obrázkov  
+
+- **enabled_state** – označuje, či je povolený stav súvisiaci s akciou
+
+- **notification_state** – označuje, o aký počet štítkov používateľ požiadal, t. j. žiadne štítky, iba prioritná doručená pošta atď.,
+
+- **server_type** – podobne ako auth_type uvádza, aký typ konta máte s cieľom lepšej diagnostiky problémov. Príklady** – služby Office365, Gmail, Outlook
+
+- **server_type** – označuje typ servera, vďaka ktorému zistíme, či sa vyskytol problém s určitým typom servera
+
+- **setting_properties** – sleduje vzťah vlastností k akcii nastavenia 
+
+- **signature_setting** – označuje, či sa nastavenie použilo na všetky kontá alebo na jedno konto
+
+- **source** – označuje, čo je v nastaveniach alebo nastavení nerušiť zdrojom oznámení (ak je k dispozícii)
+
+- **state_changed_to** – slúži na kontrolu, či máte správne nakonfigurované nastavenie zapnúť/vypnúť prioritnej doručenej pošty 
+
+- **swipe_action** – slúži na kontrolu, či ste nakonfigurovali nejaké akcie potiahnutia na triedenie e-mailov, aby sme mohli zabezpečiť správne fungovanie tohto nastavenia 
+
+- **swipe_action** – označuje, čo sa používateľ pokúšal urobiť, t. j. označiť príznakom, odstrániť, archivovať, umožňuje zistiť, akú akciu chcel používateľ vykonať a či zlyhala alebo nie. 
+
+- **swipe_direction** – slúži na kontrolu, či boli pokyny na potiahnutie prstom (vľavo alebo vpravo) nakonfigurované správne
+
+- **swipe_direction** – označuje smer, ktorým používateľ nastavil potiahnutie prstom, t. j. zľava doprava alebo sprava doľava. Umožňuje nám to zistiť, či sa vyskytol problém s určitým smerom potiahnutia prstom.
+
+- **swipe_setting** – označuje podrobnosti nastavení potiahnutia prstom súvisiace s touto akciou (ak je k dispozícii)
+
+- **ui_mode_setting** – vybraný režim používateľského rozhrania (tmavé, svetlé, predvolené systémom, vybitá batéria atď.)
+
+#### <a name="sidebar_action"></a>sidebar_action
+
+Umožňuje zistiť situácie, ktoré môžu mať nepriaznivý vplyv na vašu schopnosť konfigurovať nastavenia aplikácie, ako sú napríklad nastavenia oznámení, primárneho e-mailového konta a konfigurácia podpisu v e-mailoch.
+
+Údajové polia, ktoré sú bežné pre aplikáciu Outlook Mobile pre túto udalosť v zariadeniach so systémom iOS a Android:
+
+- **Account** – sleduje konto a jeho údaje priradené k udalosti, hodnoty sledované v tomto údaji sa nachádzajú v spoločnej dokumentácii poľa 
+
+- **action** – sleduje typ akcie bočného panela, t. j. zamietnuté, vybraté tlačidlo Pomocník, bočný panel pošty atď., 
+
+- **from_favorites** – sleduje, či akcia pochádza z položky v priečinku Obľúbené položky 
+
+- **mail_folder_type** – aký typ priečinka bol vybraný pri akcii bočného panela (ak bol nejaký vybraný).
+
+- **sidebar_type** – sleduje typ bočného panela, ktorý je priradený k tejto udalosti, t. j. pošta alebo kalendár, aby sme mohli zabezpečiť správne fungovanie navigácie v nastavení obľúbených položiek
+
+Zhromažďujú sa tieto polia: 
+
+- **account_type** – označuje typ overenia konta, t. j. Gmail, Outlook atď. 
+
+- **account_has_groups** – pomáha so správnou konfiguráciou skupín, ak sa nachádzajú v konte
+
+- **calendar_accounts_count** – počet kont kalendára, ktorý nám pomôže so správnou konfiguráciou kont kalendára 
+
+- **calendar_apps_count** – počet aplikácií kalendára, ktorý nám pomôže so správnou konfiguráciou aplikácií zaujímavého kalendára 
+
+- **calendar_type** – typ kalendára, ktorý vlastníte (primárny kalendár, kalendár skupiny atď.) 
+
+- **cid_type** – označuje typ konta, ako je napríklad obchodné konto alebo konto Outlook.com.
+
+- **has_favorite_folders** – pomáha so správnou konfiguráciou obľúbených priečinkov 
+
+- **has_favorite_people** – pomáha so správnou konfiguráciou obľúbených ľudí/kontaktov 
+
+- **has_group_calendar** – pomáha so správnou konfiguráciou kalendárov skupín, ak ich máte 
+
+- **has_group_calendar_account** – pomáha nám so správnou konfiguráciou kalendárov skupín, ak ich máte 
+
+- **has_group_toggled** – pomáha so správnou konfiguráciou v prípade prepnutia kalendárov skupín 
+
+- **interesting_calendars_accounts_count** – počet kont zaujímavého kalendára, ktorý nám pomôže so správnou konfiguráciou kont zaujímavého kalendára 
+
+- **mail_accounts_count** – celkový počet e-mailových kont v bočnom paneli na zabezpečenie správnej konfigurácie 
+
+- **mail_folder_type** – typ priečinka, na ktorý používateľ ťukol, aby sa zabezpečila správna konfigurácia Môže to byť napríklad odstránený priečinok, nevyžiadaná pošta alebo priečinok odoslanej pošty. 
+
+- **mail_inbox_unread_count** – pomáha zabezpečiť, aby bol správne zobrazený a nakonfigurovaný počet neprečítaných správ 
+
+- **mail_subfolder_depth** – pomáha zabezpečiť úspešné zobrazenie konfigurácií poštového podpriečinka používateľa
+
 #### <a name="storeop"></a>StoreOp
 
 Zhromažďuje sa, keď sa používateľ pokúsi otvoriť dokument chránený technológiou IRM alebo použiť ochrany technológiou IRM.  Obsahuje informácie potrebné na správne preskúmanie a diagnostiku problémov, ktoré sa vyskytujú pri vykonávaní operácie priestoru na ukladanie licencií služby správy prístupových práv. 
@@ -5953,10 +6780,72 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.Url** – URL adresa servera služby správy prístupových práv.
 
+#### <a name="watchappv2"></a>watchAppV2
+
+Táto udalosť umožňuje zistiť a vyriešiť možné problémy s možnosťami hodiniek Apple Watch, ako je napríklad prijímanie oznámení a odpovedanie na e-maily.
+
+Zhromažďujú sa tieto polia: 
+
+- **app_action** – uvádza typy akcií, ktoré používateľ vykonal v hodinkách Apple Watch, napríklad „archive_message“, aby sme mohli zistiť problémy s konkrétnou akciou, ako je napríklad neschopnosť úspešne archivovať správy v hodinkách Apple Watch
+
+- **is_watch_app_installed** – uvádza, či používateľ nainštaloval aplikáciu Apple Watch vo svojom zariadení
+
+- **is_complication_enabled** – uvádza, či si používateľ pridal Outlook na obrazovku hodiniek Apple Watch, aby sme mohli zistiť problémy s obrazovkami hodiniek Apple Watch
+
+- **watch_os** – uvádza nainštalovanú verziu operačného systému hodiniek Apple Watch, aby sme mohli zistiť problémy s konkrétnymi verziami operačného systému hodiniek Apple Watch
+
 
 ### <a name="application-status-and-boot-subtype"></a>*Podtyp Stav aplikácie a podtyp spustenia*
 
 Určenie, či sa vyskytli konkrétne udalosti funkcie, napríklad spustenie alebo ukončenie, a či je funkcia spustená.
+
+#### <a name="app_startup"></a>app_startup
+
+Táto udalosť nám umožňuje zistiť a vyriešiť problémy spôsobujúce pomalé alebo neúplné spúšťanie Outlooku, čo používateľom sťažuje používanie aplikácie.  Patria sem informácie o konkrétnych povolených funkciách a o dĺžke trvania spustenia konkrétnych častí.
+
+Zhromažďujú sa tieto polia: 
+
+- **attach_base_context_millis** – čas medzi začiatkom základného kontextu a onCreate()
+
+- **device_ram_in_mb** – pamäť RAM dostupná v zariadení
+
+- **has_company_portal** – označuje, či je nainštalovaná aplikácia Company Portal
+
+- **hx_okhttp_mode** – označuje, či sa pri odosielaní a prijímaní sieťových požiadaviek protokolu HTTP používa súčasť novej služby na synchronizáciu e-mailov
+
+- **initial_activity_name** – aktivita operačného systému Android, ktorá spustila aplikáciu
+
+- **manufacturer** – výrobca zariadenia
+
+- **model** – model zariadenia
+
+- **on_create_millis** – čas potrebný v metóde onCreate()
+
+- **on_resume_millis** – čas potrebný v metóde onResume()
+
+- **time_until_attach** čas medzi načítaním triedy a začiatkom základného kontextu
+
+- **total_millis** – celkový čas od začiatku načítania triedy po dokončenie obnovenia aktivity operačného systému Android
+
+#### <a name="boot_time"></a>boot_time 
+
+Táto udalosť umožňuje zistiť výskyt kritických chýb aplikácie, ktoré by mohli spôsobiť jej zlyhanie alebo závažné problémy, ako je napríklad zobrazenie prázdnych riadkov v doručenej pošte. Táto udalosť zhromažďuje informácie, ktoré umožňujú kategorizovať a klasifikovať problémy, vďaka čomu dokážeme uprednostniť vplyv problémov na zákazníkov.
+
+Zhromažďujú sa tieto polia:
+
+- **black_list_reason** – uvádza, či existuje dôvod na ignorovanie týchto údajov. Medzi príklady patrí spustenie v dôsledku vzdialeného oznámenia a spustenie v dôsledku načítania na pozadí.
+
+- **step0_main** – uvádza čas, ktorý Outlook potreboval na presun do „hlavného“ kroku, ktorý definuje spoločnosť Apple.
+
+- **step1_appWillFinishLaunching** – uvádza čas, ktorý Outlook potreboval na prechod z „hlavného“ kroku do kroku „appWillFinishLaunching“, ktorý definuje spoločnosť Apple.
+
+- **step2_appDidFinishLaunching** – uvádza čas, ktorý Outlook potreboval na prechod z kroku „appWillFinishLaunching“ do kroku „appDidFinishLaunching“, ktorý definuje spoločnosť Apple.
+
+- **step3_engineStarted** – uvádza čas, ktorý Outlook potreboval na prechod z kroku „appDidFinishLaunching“ k spusteniu nástroja aplikácie, ktorý ukladá a synchronizuje údaje.
+
+- **step4_runLoopFirstIdle** – uvádza čas, ktorý Outlook potreboval na prechod z kroku „engineStarted“ do stavu bez ďalších krokov.
+
+- **total_time** – uvádza celkový čas, ktorý Outlook potreboval na dokončenie procesu spustenia.
 
 #### <a name="dnslookupop"></a>DnsLookupOp
 
@@ -6087,6 +6976,14 @@ Zhromažďujú sa tieto polia:
 - **RMS.Url** – URL adresa servera služby správy prístupových práv.
 
 - **RMS.WinhttpCallbackStatus** – stav výsledku spätného volania winhttp.
+
+#### <a name="initialized"></a>Initialized
+
+Umožňuje analyzovať stav rozhrania, ktoré umožňuje mobilným aplikáciám načítať nastavenia používateľov a ochrany osobných údajov v službách Office a diagnostikovať problémy s pripojiteľnosťou a nastavením ochrany osobných údajov.
+
+Zhromažďujú sa tieto polia:
+
+- **roamingSettingType** – identifikuje umiestnenie, z ktorého sa pokúšame čítať nastavenia
 
 #### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
 
@@ -7795,23 +8692,11 @@ Táto udalosť označuje, že Office Word číta nahlas text v dokumente. Predst
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_CharacterCount** – počet znakov v dokumente
-
-  - **Data\_CharactersWithSpaceCount**  – počet znakov a medzier v dokumente
-
-  - **Data\_IsPageCountInProgress** – počet spracúvaných strán
-
-  - **Data\_LineCount** – počet riadkov v dokumente
-
-  - **Data\_PageCount** – počet strán v dokumente
-
   - **Data\_ParagraphCount** – počet odsekov v dokumente
 
   - **Data\_Play** – či Word číta nahlas prvýkrát
 
   - **Data\_ViewKind** – typ zobrazenia dokumentu
-
-  - **Data\_WordCount** – počet slov v dokumente
 
 #### <a name="officewordaccessibilitylearningtoolsreadaloudstopreadaloud"></a>Office.Word.Accessibility.LearningTools.ReadAloud.StopReadAloud
 
@@ -7875,6 +8760,109 @@ Toto sú podtypy údajov v tejto kategórii:
 ### <a name="unexpected-application-exit-crash-subtype"></a>*Podtyp Neočakávané ukončenie (zlyhanie) aplikácie*
 
 Neočakávané ukončenia aplikácie a stav aplikácie, keď sa to stane.
+
+#### <a name="app_startup_reason"></a>app_startup_reason
+
+Táto akcia umožňuje zistiť a vyriešiť problémy, ktoré spôsobili zlyhanie Outlooku pri spustení aplikácie.  Táto udalosť zahŕňa informácie o príčinách zlyhania, aby sme mohli problém rýchlo odstrániť.
+
+Zhromažďujú sa tieto polia: 
+
+- **app_background_time** – trvanie aplikácie na pozadí počas poslednej relácie
+
+- **startup_reason_type** – označuje dôvod spúšťania aplikácie a uvádza, či išlo o dôsledok vynúteného ukončenia alebo o iný dôvod. 
+
+- **watch_status_info** – v prípade potreby sleduje nasledujúce informácie. 
+
+  - **is_watch_app_installed** – určuje, či má používateľ nainštalovanú aplikáciu hodiniek
+
+  - **is_watch_paired** – určuje, či je zariadenie so systémom iOS spárované s hodinkami
+
+  - **is_watch_supported_and_active** – označuje, či sú hodinky počas relácie podporované a aktívne
+
+Nasledujúce polia sa zhromažďujú iba pre službu Outlook Mobile pre iOS:
+
+- **clean_exit_reason** – reťazec slov, ktorý označuje, či bol dôvod na zastavenie aplikácie
+
+- **is_agenda_user** – označuje, či používateľ nedávno otvoril agendu, čo znamená, že sa pri spustení zapisuje disk
+
+- **is_watch_supported_and_active** – označuje, či sú hodinky počas relácie podporované a aktívne
+
+
+#### <a name="application_crash"></a>application_crash
+
+Používa sa na monitorovanie kritických zlyhaní aplikácie a pomáha zhromažďovať informácie o tom, prečo aplikácia zlyhávala a ako tomu predchádzať.
+
+Zhromažďujú sa tieto polia: 
+
+- **android.hardware.** – (napr. android.hardware.bluetooth) hodnoty hardvérovej konfigurácie poskytované platformou Android
+
+- **android.software.** – (e.g. android.software.device_admin) hodnoty softvérovej konfigurácie poskytované platformou Android
+
+- **android_version** – názov verzie systému Android v zariadení, ako znázorňuje android.os.Build.VERSION#RELEASE
+
+- **application_package_name** – názov balíka aplikácie, ako znázorňuje android.content.Context#getPackageName()
+
+- **application_stack_trace** – sledovanie zásobníka zlyhania
+
+- **application_version_code** – kód verzie aplikácie, ktorý je definovaný v aplikácii Outlook
+
+- **application_version_name** – názov verzie aplikácie, ktorý je definovaný v aplikácii Outlook 
+
+- **com.** (napr. com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) Konfiguračné hodnoty špecifické pre výrobcu, ktoré poskytuje platforma Androidu
+
+- **device_brand** – značka zariadenia (výrobca alebo operátor), ako znázorňuje android.os.Build#BRAND
+
+- **device_ID** – jedinečné ID zariadenia (IMEI)
+
+- **device_manufacturer** – výrobca zariadenia, ako znázorňuje android.os.Build#MANUFACTURER
+
+- **device_model** – model zariadenia, ako znázorňuje android.os.Build#MODEL
+
+- **device_name** – názov zariadenia, ako znázorňuje android.os.Build#DEVICE
+
+- **device_total_memory** – odhad celkovej veľkosti pamäte zariadenia na základe štatistík systému súborov.
+
+- **glEsVersion** – kľúč verzie systému OpenGL Embedded Systems
+
+
+#### <a name="crash_event"></a>crash_event
+
+Umožňuje zistiť a vyriešiť situácie kritických zlyhaní aplikácie a pomáha zhromažďovať informácie o tom, prečo aplikácia zlyhávala a ako tomu predchádzať.
+
+Zhromažďujú sa tieto polia: 
+
+- **crashTime** – dátum a čas zlyhania na pomoc so skúmaním
+
+- **exceptionName** – názov výnimky, ktorá spustila zlyhanie na pomoc so skúmaním
+
+- **hasHx** – uvádza, že konto používa našu novú službu synchronizácie, aby sme mohli zistiť problémy spôsobené touto službou
+
+- **incidentIdentifier** – jedinečné ID zostavy zlyhania, aby sme mohli vyhľadať príslušný problém
+
+- **isAppKill** – pomáha pochopiť, či bola aplikácia v zariadení vypnutá alebo zatvorená
+
+- **reportKey** – jedinečné ID pre inštaláciu aplikácie na zariadení na preskúmanie problému
+
+- **signal** – signál, ktorý spôsobil zlyhanie, čím získame ďalšie podrobnosti na preskúmanie zlyhania
+
+
+#### <a name="error"></a>Chyba
+
+Umožňuje pochopiť problémy, s ktorými sa mobilná aplikácia stretáva pri pokuse o načítanie nastavení ochrany osobných údajov zo servera.
+
+Zhromažďujú sa tieto polia:
+
+- **correlationId** – jedinečné ID pripojenia služby, ktoré vyústilo do chyby, čo nám umožňuje diagnostikovať problém
+
+- **errorCode** – identifikuje príslušný kód chyby prijatý zo služby, ktorý možno použiť na diagnostiku problému
+
+- **exceptionType** – typ chyby, ktorá sa vyskytuje v knižnici pri načítavaní nastavenia
+
+- **hlásenie** – identifikuje chybové hlásenie získané zo služby
+
+- **roamingSettingType** – identifikuje umiestnenie, z ktorého sa pokúšame čítať nastavenia
+
+- **settingId** – nastavenie, ktoré sa pokúsilo načítať
 
 #### <a name="officeappdomainunhandledexceptionhandlerfailed"></a>Office.AppDomain.UnhandledExceptionHandlerFailed
 
@@ -8302,10 +9290,165 @@ Zhromažďujú sa tieto polia:
 
 - **Event Name** – názov udalosti je kategória udalosti a označenie udalosti.
 
+#### <a name="telemetry_error"></a>telemetry_error
+
+Táto akcia umožňuje diagnostikovať a vyriešiť problémy, ktoré bránia generovaniu a odosielaniu potrebných diagnostických údajov. Tieto udalosti umožňujú zistiť, či chýbajú dôležité údaje, ktoré sú potrebné na identifikovanie problémov so zabezpečením alebo závažných problémov s fungovaním aplikácie.
+
+Zhromažďujú sa tieto polia: 
+
+- **timer_name** – uvádza, kde sa nachádza problém s telemetriou, napríklad v súčasti poštová schránka alebo v kalendári. Pomôže zistiť a vyriešiť problémy s telemetriou z konkrétnej časti aplikácie.
+
+- **type** – uvádza typ chyby časovača, ktorý nám pomôže zistiť, či sa v aplikácii vyskytnú nejaké problémy s odosielaním údajov diagnostickej telemetrie
+
+
+#### <a name="watchdog_anr"></a>watchdog_anr
+
+Potrebné na monitorovanie chýb výkonu aplikácie, aby sa predišlo tomu, že aplikácia prestane reagovať a obrazovka v aplikácii zamrzne (označované ako aplikácia nereaguje).
+
+Zhromažďujú sa tieto polia: 
+
+- **callstack** – zásobník kódu, v ktorom sa vyskytol stav aplikácia nereaguje
+ 
+- **caused_restart** – označuje, či mala aplikácia nútený reštart pre stav aplikácia nereaguje
+ 
+- **duration** – čas, kedy bolo zariadenie zamrznuté
+ 
+- **id** – jedinečné ID stavu aplikácia nereaguje
+ 
+- **interval** – nakonfigurovaná prahová hodnota na spustenie stavu aplikácia nereaguje
+ 
+- **is_application_object_initialized** – označuje, či stav aplikácia nereaguje nastal po úplnej inicializácii aplikácie alebo pred ňou
+ 
+- **last_known_is_in_foreground** – označuje, či bola aplikácia naposledy v popredí alebo na pozadí
+
 
 ### <a name="application-feature-performance-subtype"></a>*Podtyp Výkon funkcie aplikácie*
 
 Dlhý čas odozvy alebo nízky výkon v prípadoch ako spustenie aplikácie alebo otvorenie súboru.
+
+#### <a name="android_frame_metrics"></a>android_frame_metrics
+
+Umožňuje zistiť a vyriešiť situácie, keď naše súčasti aplikácie pre Android spôsobujú problémy s výkonom, napríklad v prípade, že nemôžete plynulo posúvať priečinok doručenej pošty.
+
+Zhromažďujú sa tieto polia: 
+
+- **animation_duration** – trvanie vykresľovania animácie v milisekundách
+
+- **command_issue_duration** – trvanie vydania príkazov pre platformu v milisekundách 
+
+- **draw_duration** – trvanie kreslenia používateľského rozhrania v milisekundách 
+
+- **input_handling_duration** – trvanie spracovania vstupu v milisekundách 
+
+- **layout_measure_duration** – trvanie merania rozloženia v milisekundách
+
+- **origin** – meraná súčasť aplikácie, napríklad kalendár alebo pošta
+
+- **sync_duration** – trvanie synchronizácie snímky v milisekundách
+
+- **swap_buffers_duration** – trvanie výmeny medzipamätí v milisekundách
+
+- **total_duration** – celkové trvanie vykresľovania snímky v milisekundách
+
+- **unknown_delay** – oneskorenie spôsobené neznámymi zdrojmi inými ako explicitne sledované trvania
+
+#### <a name="cal_component"></a>cal_component
+
+Táto udalosť umožňuje zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon súčastí používateľského rozhrania kalendára, čo by malo za následok problém s posúvaním kalendára.
+
+Zhromažďujú sa tieto polia: 
+
+- **account_counter** – sleduje počet kont priradených pre každý typ kalendára, napríklad 2 pre kalendár Gmail a to, či toto konto používa našu novú službu synchronizácie
+
+- **component_name** – uvádza názov súčasti kalendára ako napríklad zobrazenie Agenda alebo zobrazenie Deň, aby sme mohli zistiť problémy s výkonom, ktoré majú vplyv na konkrétnu súčasť kalendára
+
+- **display_frame_data** – sleduje čas strávený zobrazením každých 60 snímok, čo slúži na zistenie výskytu problémov s výkonom. 
+
+- **orientation** – uvádza, či bolo zariadenie v režime na výšku alebo na šírku, aby sme mohli zistiť problémy s výkonom, ktoré majú vplyv na konkrétnu orientáciu zariadenia
+
+- **view_duration** – uvádza, ako dlho trvalo vykresliť rôzne súčasti používateľského rozhrania kalendára, aby sme mohli zistiť problémy s výkonom, ktoré sa prejavia pri používaní kalendára
+
+#### <a name="conversation_load_time"></a>conversation_load_time
+
+Táto udalosť umožňuje zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon načítavania e-mailových konverzácií, aby sa vaše e-maily načítavali podľa očakávaní.
+
+Zhromažďujú sa tieto polia: 
+
+- **cid_type** – označuje, k akému typu konta patrí identifikátor CID
+
+- **time** – uvádza, ako dlho trvalo dokončenie načítania e-mailovej konverzácie.
+
+#### <a name="core_data_migration"></a>core_data_migration
+
+Umožňuje zistiť a vyriešiť situácie, pri ktorých sa vyskytla chyba pri aktualizácii e-mailových údajov vo vašom zariadení na novšiu verziu.
+
+Zhromažďujú sa tieto polia:
+
+- **db_size_megabytes** – sleduje veľkosť hlavnej databázy údajov zaokrúhlenú na najbližších 25 MB s maximálnou veľkosťou 500 MB
+
+- **db_wal_size_megabytes** – sleduje veľkosť hlavnej databázy údajov (s nezmeneným súborom hlavného ukladacieho priestoru) zaokrúhlenú na najbližší 1 MB s maximálnou veľkosťou 10 MB
+
+- **free_space_megabytes** – sleduje voľné miesto, ktoré je k dispozícii v sektoroch 10, 100, 1000, 10 000 a 100 000. 
+
+- **migration_duration_seconds** – sleduje trvania migrácie zaokrúhlené na niektorý z týchto časových intervalov – 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180 (180 a viac by malo byť len 180)
+
+#### <a name="core_data_performance"></a>core_data_performance
+
+Umožňuje zistiť a vyriešiť situácie, keď e-mailové údaje uložené vo vašom zariadení spôsobujú problémy s výkonom.
+
+Zhromažďujú sa tieto polia:
+
+- **Caller** – sleduje názov entity, ktorá vyvolala operáciu uloženia
+
+- **db_size_megabytes** – sleduje veľkosť hlavnej databázy údajov zaokrúhlenú na najbližších 25 MB s maximálnou veľkosťou 500 MB
+
+- **duration** – sleduje čas potrebný na dokončenie operácie
+
+- **entity** – sleduje názov entity, ktorá vyvolala operáciu načítania
+
+- **operation** – nespracovaná hodnota operácie uloženia, načítania alebo „rad čítania/zápisu blokovaný“
+
+#### <a name="inbox_component"></a>inbox_component
+
+Táto udalosť umožňuje zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon súčastí používateľského rozhrania doručenej pošty, čo by malo za následok nesprávne načítanie alebo zobrazenie e-mailových správ, avatara a stavu prečítané/neprečítané.
+
+Zhromažďujú sa tieto polia: 
+
+- **above_40fps** – počet vykreslených snímok nad 40 fps
+
+- **above_50fps** – počet vykreslených snímok nad 50 fps
+
+- **above_55fps** – počet vykreslených snímok nad 55 fps
+
+- **account_counter** – počet každého typu konta v zariadení, napríklad konto služieb Office 365 = 1 konto, konto Outlook.com = 1 konto.
+
+- **ad_not_shown_reason** – dôvod, prečo sa nezobrazujú reklamy
+
+- **ad_shown** – označuje, či sa zobrazila reklama (ak sú povolené reklamy)
+
+- **age** vek osoby (používa sa na potvrdenie dodržiavania vekových obmedzení reklám)
+
+- **component_name** – názov súčasti/zobrazenia, ktoré je aktívne počas filtrovania
+
+- **has_hx** – označuje, či má zariadenie aspoň 1 konto Hx (naša nová služba na synchronizáciu e-mailov)
+
+- **has_subscription** – označuje, či má zariadenie odber reklám
+
+- **is_all_accounts_inbox** – označuje, či je aktuálny priečinok doručenej pošty priečinok „všetky kontá“
+
+- **is_current_account** – označuje, či je aktuálne aktívne konto kontom reklamy
+
+- **load_error_code** – kód chyby pri načítavaní reklám
+
+- **network_error_code** – kód chyby siete pri žiadosti o reklamy
+
+- **orientation** – orientácia obrazovky v čase udalosti (na výšku alebo na šírku)
+
+- **sub_error_type** – podrobný typ chyby
+
+- **total_count** – celkový počet snímok zobrazených súčasťou
+
+- **view_duration** – ako dlho mal používateľ zobrazenú súčasť
 
 #### <a name="initial_page_landing"></a>Initial_page_landing 
  
@@ -8398,6 +9541,50 @@ Táto udalosť označuje, že analyzátor JSON vyhodil chybu.  Budeme môcť vyr
 Zhromažďujú sa tieto polia: 
 
 - **Error** – Obsahuje chybové hlásenie, že sa vracia objekt chyby.
+
+#### <a name="mail_filter_component"></a>mail_filter_component
+
+Táto udalosť umožňuje zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon filtrovania pošty, čo by malo za následok nesprávne načítanie alebo zobrazenie filtrov.
+
+Zhromažďujú sa tieto polia: 
+
+- **above_40fps** – počet vykreslených snímok nad 40 fps
+ 
+- **above_50fps** – počet vykreslených snímok nad 50 fps
+ 
+- **above_55fps** – počet vykreslených snímok nad 55 fps
+ 
+- **account_counter** – počet každého typu konta v zariadení, napríklad konto služieb Office 365 = 1 konto, konto Outlook.com = 1 konto.
+ 
+- **ad_not_shown_reason** – dôvod, prečo sa nezobrazujú reklamy
+ 
+- **ad_shown** – označuje, či sa zobrazila reklama (ak sú povolené reklamy)
+ 
+- **age** vek osoby (používa sa na potvrdenie dodržiavania vekových obmedzení reklám)
+ 
+- **component_name** – názov súčasti/zobrazenia, ktoré je aktívne počas filtrovania
+ 
+- **folder_type** – typ filtrovaného priečinka (napríklad Doručená pošta, Kôš, Nesystémový)
+ 
+- **has_hx** – označuje, či má zariadenie aspoň 1 konto Hx (nová služba na synchronizáciu e-mailov)
+ 
+- **has_subscription** – označuje, či má zariadenie odber reklám
+ 
+- **is_all_accounts_inbox** – označuje, či je aktuálny priečinok doručenej pošty priečinok „všetky kontá“
+ 
+- **is_current_account** – označuje, či je aktuálne aktívne konto kontom reklamy
+ 
+- **load_error_code** – kód chyby pri načítavaní reklám
+ 
+- **network_error_code** – kód chyby siete pri žiadosti o reklamy
+ 
+- **orientation** – orientácia obrazovky v čase udalosti (na výšku alebo na šírku)
+ 
+- **sub_error_type** – podrobný typ chyby
+ 
+- **total_count** – celkový počet snímok zobrazených súčasťou
+ 
+- **view_duration** – ako dlho mal používateľ zobrazenú súčasť
 
 #### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
@@ -8905,9 +10092,127 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_WasSuccessful:bool** – má hodnotu true, ak otvorenie ako bolo úspešné
 
+#### <a name="onenotesyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted
+
+Kritický signál sa používa na zabezpečenie toho, aby sa po prihlásení používateľa do aplikácie OneNote pre Android správne zriadili poznámkové bloky na zaistenie bezproblémového prístupu k nim. Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby
+
+Zhromažďujú sa tieto polia: 
+
+- **AppSuspendedDuringEvent** – vráti Boolovskú hodnotu, ktorá označuje, či bola aplikácia počas poskytovania pozastavená
+
+- **NetworkConnection** – typ sieťového pripojenia používaného zariadenia.
+
+- **NetworkDataExchange** – zaznamená počet bajtov vymenených počas poskytovania.
+
+- **ServerType** – vráti typ servera, ktorý ponúka službu
+
+- **TimeTakenInMilliSeconds** – vráti čas potrebný na dokončenie poskytovania v milisekundách
+
+#### <a name="onenotesyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted
+
+Kritický signál sa používa na zabezpečenie toho, aby sa po prihlásení používateľa do aplikácie OneNote pre Android správne zriadili poznámkové bloky na zaistenie bezproblémového prístupu k nim.  Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby
+
+Zhromažďujú sa tieto polia: 
+
+- **NetworkConnection** – typ sieťového pripojenia používaného zariadenia.
+
+- **ServerType** – vráti typ servera, ktorý ponúka službu
+
+#### <a name="perf_event"></a>perf_event
+
+Slúži na sledovanie možného nepriaznivého vplyvu na výkon načítavania rôznych častí aplikácie, ak chcete napríklad zabezpečiť, aby sa pri prvom otvorení aplikácie čo najskôr načítal priečinok doručenej pošty.
+
+Zhromažďujú sa tieto polia: 
+
+- **app_start_show_message_list** – označuje, že sa vyskytol problém s výkonom pri spustení aplikácie, čo spôsobilo, že načítanie zoznamu správ v priečinku doručenej pošty trvalo príliš dlho
+
+- **event_type** – uvádza typ udalosti výkonu, ktorá spôsobila problém s výkonom, aby sme mohli zistiť problémy s určitým typom.   
+
+- **extra_params** – vývojár sem môže pridať ďalšie parametre a poskytnúť nám tak ďalšie informácie o tom, čo môže spôsobovať tento problém s výkonom, t. j. kedy sa táto akcia začala a skončila atď. 
+
+- **total_time_elapsed** – uvádza čas potrebný na vykonanie udalosti výkonu, aby sme dokázali pochopiť závažnosť problému s výkonom
+
+#### <a name="performance_record"></a>performance_record
+
+Umožňuje zistiť a vyriešiť situácie, pri ktorých bolo využívanie pamäte a procesora aplikáciou kriticky vysoké, čo môže spôsobiť spomalenie zariadenia
+
+Zhromažďujú sa tieto polia: 
+
+- **category** – uvádza, či je aplikácia v popredí alebo na pozadí. Medzi možné hodnoty patria v popredí a na pozadí.
+
+- **cpu_usage** – uvádza vyťaženie procesora aplikáciou slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon
+
+- **is_watch_app_installed** – uvádza, či používateľ momentálne používa hodinky Apple Watch a či sú nainštalované, aby sme dokázali pochopiť nepriaznivý vplyv hodiniek na výkon
+
+- **is_watch_paired** – uvádza, či používateľ momentálne používa hodinky Apple Watch a či sú spárované so zariadením, aby sme dokázali pochopiť nepriaznivý vplyv hodiniek na výkon
+
+- **is_watch_supported_and_active** – uvádza, či používateľ momentálne používa hodinky Apple Watch a či sú aktívne, aby sme dokázali pochopiť nepriaznivý vplyv hodiniek na výkon
+
+- **memoAry_used_percentage** – uvádza percento pamäte vyťaženej aplikáciou slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon
+
+- **memory_used** – uvádza vyťaženie pamäte aplikáciou slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon
+
+
 ### <a name="application-activity-error-subtype"></a>*Podtyp Chyba aktivity aplikácie*
 
 Chyby funkčnosti funkcie alebo používateľského rozhrania.
+
+#### <a name="assertion"></a>assertion
+
+Táto udalosť umožňuje zistiť výskyt kritických chýb aplikácie, ktoré by mohli spôsobiť jej zlyhanie alebo závažné problémy, ako je napríklad zobrazenie prázdnych riadkov v doručenej pošte.
+
+Zhromažďujú sa tieto polia:
+
+- **count** – celkový počet položiek priradených k chybe; napríklad počet kalendárov s chybami
+
+- **has_hx** – uvádza, že konto používa našu novú službu synchronizácie, aby sme mohli zistiť problémy spôsobené touto službou
+
+- **host_name** – názov hostiteľa služby, ktorý sa podieľal na chybe, aby sme mohli zistiť problémy s konkrétnym hostiteľom
+
+- **host_type** – typ hostiteľa, ktorý sa podieľal na chybe, aby sme mohli zistiť problémy s konkrétnym typom hostiteľa
+
+- **message** – vlastná správa s tvrdením, ktorá sa používa na diagnostikovanie problému 
+
+- **origin** – pôvod chyby v kóde, aby sme mohli zistiť problémy s určitou časťou kódu
+
+- **stacktrace** – sledovanie zásobníka, v ktorom sa vyskytlo tvrdenie, aby sme mohli zistiť problémy s určitou časťou kódu
+
+- **type** – typ chyby tvrdenia, ktorá sa vyskytla, napríklad null_folder_name a compose_selected_null_account, aby sme mohli zistiť problémy s určitou časťou kódu
+
+#### <a name="edit_contact_error"></a>edit_contact_error
+
+Umožňuje zistiť a vyriešiť situácie, pri ktorých sa pri pokuse o zobrazenie alebo úpravu kontaktov v aplikácii objavili chyby.
+
+Zhromažďujú sa tieto polia: 
+
+- **errorType** – typ chyby, ktorá sa vyskytla, aby sme mohli diagnostikovať problém
+
+- **field** – pole kontaktu, ktoré sa používateľ pokúšal upraviť, aby sme mohli diagnostikovať problém
+
+- **version** – verzia služby karty kontaktu, ktorú používame na diagnostiku problému
+
+#### <a name="error_report"></a>error_report
+
+Táto udalosť rozpoznať zistiť, či sa vyskytli kritické chyby aplikácie, aby sme mohli zabrániť problémom, ktoré by mohli spôsobiť zlyhanie aplikácie alebo zabránenie čítaniu e-mailov. 
+
+Zhromažďujú sa tieto polia: 
+
+- **client-request-id** – identifikátor požiadavky klienta pre žiadosť, ktorá spôsobila chybu
+ 
+- **date** – dátumová pečiatka žiadosti, ktorá spôsobila chybu
+
+- **error** – typ chyby, napríklad get_mailbox_location_failed
+ 
+- **error_body** – telo chybového hlásenia
+ 
+- **is_x_mailbox_anchor_set** – označuje, či bola v žiadosti nastavená vlastnosť X-AnchorMailbox
+ 
+- **reason** – dôvod chyby, t. j. chybové hlásenie
+ 
+- **request-id** – identifikátor požiadavky servera pre žiadosť, ktorá spôsobila chybu
+ 
+- **source** – zdroj chyby v rámci infraštruktúry OM, zvyčajne je to „BE“ alebo „FE“
+
 
 #### <a name="officeairspacebackendwin32graphicsdriversofthang"></a>Office.AirSpace.Backend.Win32.GraphicsDriverSoftHang 
 
@@ -9906,6 +11211,20 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
 
+#### <a name="save_error"></a>save_error
+
+Umožňuje zistiť a vyriešiť situácie, pri ktorých sa vyskytla chyba pri pokuse o uloženie súboru.  Sleduje chyby spôsobené zlyhaniami uloženia súboru vrátane popisného chybového hlásenia, ktoré nám pomôžu pri riešení problému.
+
+Zhromažďujú sa tieto polia: 
+
+- **error** – typ chyby, ktorá sa vyskytla, aby sme mohli zistiť a vyriešiť problémy s konkrétnym typom chyby
+
+- **file_type** – typ súboru, ktorý sa používateľ pokúsil uložiť (napríklad .doc)
+
+- **origin** – označuje umiestnenie pôvodu pokusu o uloženie súboru (napríklad z e-mailu), aby sme mohli zistiť problémy s ukladaním súboru z určitého umiestnenia v aplikácii
+
+- **token_type** – typ tokenu slúžiaci na overenie konta s cieľom uloženia súboru, aby sme mohli zistiť problémy s overovaním týkajúce sa ukladania súboru
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Udalosti údajov v kategórii Pripojiteľnosť a konfigurácia zariadenia
 
@@ -9917,6 +11236,124 @@ Toto sú podtypy údajov v tejto kategórii:
 ### <a name="device-connectivity-and-configuration-subtype"></a>*Podtyp Pripojiteľnosť a konfigurácia zariadenia*
 
 Stav sieťového pripojenia a nastavenia zariadenia, napríklad pamäte.
+
+#### <a name="application_did_receive_memory_warning"></a>application_did_receive_memory_warning
+
+Táto udalosť sa odošle, keď zariadenie Apple oznámi, že aplikácia nemá dostatok pamäte. Uvádza, že sme ako súčasť správy pamäte zaviedli do zariadenia problém.
+
+Zhromažďujú sa tieto polia: 
+
+- **current_memory_used** – uvádza množstvo pamäte, ktorú aplikácia využívala v čase, keď sa vyskytol jej nedostatok.
+
+- **current_memory_used_percentage** – uvádza percentuálny podiel pamäte z celkovej veľkosti pamäte, ktorú aplikácia využívala a ktorá bola dostupná v čase, kde sa vyskytol jej nedostatok.
+
+- **currentVC** – uvádza zobrazenie, ktoré sa v súčasnosti zobrazuje, kde sa vyskytol nedostatok pamäte.
+
+- **has_hx** – uvádza, že konto používa našu novú službu synchronizácie, aby sme mohli zistiť problémy spôsobené touto službou
+
+- **is_watch_app_installed** – uvádza, či používateľ momentálne používa hodinky Apple Watch a či sú nainštalované, aby sme dokázali pochopiť nepriaznivý vplyv hodiniek na výkon
+
+- **is_watch_paired** – uvádza, či používateľ momentálne používa hodinky Apple Watch a či sú spárované so zariadením, aby sme dokázali pochopiť nepriaznivý vplyv hodiniek na výkon
+
+- **is_watch_supported_and_active** – uvádza, či používateľ momentálne používa hodinky Apple Watch a či sú aktívne, aby sme dokázali pochopiť nepriaznivý vplyv hodiniek na výkon
+
+- **rn_initialized** – uvádza, či bola funkcia React Native inicializovaná v čase, kde sa vyskytol nedostatok pamäte.
+
+- **running_time** – uvádza čas behu aplikácie v čase, kde sa vyskytol nedostatok pamäte.
+
+#### <a name="conversation_memory_leak"></a>conversation_memory_leak
+
+Umožňuje zistiť situácie, pri ktorých naše zobrazenie e-mailových konverzácií spotrebováva v zariadení väčšie množstvo pamäte, ako sa očakávalo.
+
+Zhromažďujú sa tieto polia:
+
+- Nezhromažďujú sa žiadne polia ani pridané údaje. Zhromažďujú sa len denníky v prípade pretekania pamäte súvisiaceho s vláknom konverzácie.
+
+#### <a name="core_data_corruption"></a>core_data_corruption
+
+Umožňuje zistiť situácie, pri ktorých sa nedarí zobraziť e-maily alebo kalendár, pretože miesto uloženia e-mailov v zariadení bolo poškodené.
+
+Zhromažďujú sa tieto polia:
+
+- **errorSource** – označuje, či sa jedná o akciu uložiť alebo vytvoriť
+
+- **sqlError** – číselný kód chyby, ktorý je uvedený na https://www.sqlite.org/c3ref/c_abort.html
+
+#### <a name="core_data_corruption_user_reset"></a>core_data_corruption_user_reset
+
+Umožňuje zistiť situácie, pri ktorých ste v aplikácii odstránili alebo vynulovali svoje konto a bolo to spôsobené poškodením e-mailových údajov uložených v zariadení.
+
+Zhromažďujú sa tieto polia:
+
+- **errorSource** – určuje, kde sa vyskytlo poškodenie bez ohľadu na to, či to bolo pri ukladaní alebo vytváraní
+
+#### <a name="core_data_diagnostics"></a>core_data_diagnostics 
+
+Umožňuje zistiť a vyriešiť situácie, pri ktorých náš e-mailový ukladací priestor spotrebováva príliš veľa ukladacieho priestoru v zariadení.
+
+Zhromažďujú sa tieto polia:
+
+- **db_size_megabytes** – sleduje veľkosť hlavnej databázy údajov zaokrúhlenú na najbližších 25 MB s maximálnou veľkosťou 500 MB
+
+#### <a name="general_properties_log"></a>general_properties_log
+
+Táto udalosť zhromažďuje informácie, ktoré umožňujú kategorizovať a klasifikovať problémy v aplikácii Outlook súvisiace s nastavením zjednodušenia ovládania a zariadenia.  Táto kategorizácia je potrebná na stanovenie priority vplyvu problémov na zákazníkov.
+
+Zhromažďujú sa tieto polia len pre iOS:
+
+- **bold_text** – uvádza, či má zariadenie zapnuté tučné písmo, aby sme mohli zistiť problémy s tučným písmom
+
+- **closed_captioning** – uvádza, či používateľ v zariadení zapol skryté titulky, aby sme mohli zistiť problémy so skrytými titulkami
+
+- **darker_system_colors** – uvádza, či používateľ v zariadení zapol tmavnutie systémových farieb, aby sme mohli zistiť problémy s týmto nastavením
+
+- **gray_scale** – uvádza, či používateľ v zariadení zapol odtiene sivej, aby sme mohli zistiť problémy s týmto nastavením
+
+- **guided_access** – uvádza, či používateľ v zariadení zapol riadený prístup, aby sme mohli zistiť problémy s týmto nastavením
+
+- **invert_colors** – uvádza, či používateľ v zariadení zapol nastavenie inverzie farieb, aby sme mohli zistiť problémy s týmto nastavením
+
+- **mono_audio** – uvádza, či používateľ v zariadení zapol nastavenie pre monofonický zvuk, aby sme mohli zistiť problémy s týmto nastavením
+
+- **reduce_motion** – uvádza, či používateľ v zariadení zapol nastavenie zníženia pohybu, aby sme mohli zistiť problémy s týmto nastavením
+
+- **reduce_transparency** – uvádza, či používateľ v zariadení zapol nastavenie na zníženie priehľadnosti, aby sme mohli zistiť problémy s týmto nastavením
+
+- **speak_screen** – uvádza, či používateľ v zariadení zapol nastavenie pre monofonický zvuk, aby sme mohli zistiť problémy s týmto nastavením
+
+- **speak_selection** – uvádza, či používateľ v zariadení zapol nastavenie Výber reči, aby sme mohli zistiť problémy s týmto nastavením
+
+- **switch_control** – uvádza, či používateľ v zariadení zapol nastavenie Prepnúť ovládanie, aby sme mohli zistiť problémy s týmto nastavením
+
+- **voice_over** – uvádza, či používateľ v zariadení zapol nastavenie funkcie VoiceOver, aby sme mohli zistiť problémy s týmto nastavením
+
+Zhromažďujú sa tieto polia len pre Android:
+
+- **braille** – uvádza, či používateľ v zariadení zapol nastavenie inverzie farieb, aby sme mohli zistiť problémy s týmto nastavením
+
+- **caption** – uvádza, či používateľ v zariadení zapol skryté titulky, aby sme mohli zistiť problémy so skrytými titulkami
+
+- **color_inversion** – uvádza, či používateľ v zariadení zapol nastavenie inverzie farieb, aby sme mohli zistiť problémy s týmto nastavením
+
+- **high_contrast** – uvádza, či používateľ v zariadení zapol nastavenie vysokého kontrastu, aby sme mohli zistiť problémy s týmto nastavením
+
+- **large_text** – uvádza, či má zariadenie zapnuté nastavenie veľkého písma, aby sme mohli zistiť problémy s týmto nastavením
+
+- **oem_preinstall** – uvádza, či bola naša aplikácia v zariadení predinštalovaná (platí len pre zariadenia Samsung)
+
+- **supported_abis** – uvádza, aký druh binárnych rozhraní aplikácie (ABI) podporuje platforma zariadenia, aby sme mohli zistiť problémy s týmto nastavením
+
+- **switch_access** – uvádza, či používateľ v zariadení zapol nastavenie Prepnúť prístup, aby sme mohli zistiť problémy s týmto nastavením
+
+- **talkback** – uvádza, či používateľ v zariadení zapol nastavenie pre službu TalkBack, aby sme mohli zistiť problémy s týmto nastavením
+
+#### <a name="low_storage_warning"></a>low_storage_warning
+
+Indikuje, kedy je v zariadení málo pamäte a slúži na monitorovanie toho, či naša aplikácia náhle nezaberá väčšinu ukladacieho priestoru zariadenia z dôvodu vysokého využitia pamäte
+
+Zhromažďujú sa tieto polia: 
+
+- **free_bytes** – množstvo voľného ukladacieho priestoru, ktorý je v zariadení k dispozícii
 
 #### <a name="officeairspaceairspacelocalblocklistdriverupdated"></a>Office.AirSpace.AirSpaceLocalBlocklistDriverUpdated
 
