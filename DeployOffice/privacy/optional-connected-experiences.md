@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: 3cba95a89c0a1f108485565101d10deea5a70a38
-ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
+ms.openlocfilehash: 0c48bd091998e12603e09fcc9b6ce42207e2d95b
+ms.sourcegitcommit: d07de5b2fc7ea02171b84ff34bf4db9686683ed5
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917720"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42340884"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -59,7 +59,7 @@ Poznámka: Nastavenie ochrany osobných údajov, ktoré je opísané nižšie, n
 
 ### <a name="help--contact-support"></a>Pomocník > Kontaktovať podporu
 
-V Outlooku pre iOS a Android môžete nahlásiť problémy a spojiť sa s tímom podpory prostredníctvom položky **Nastavenia** > **Pomoc a pripomienky** > **Kontaktovať podporu**. Táto funkcia využíva službu poskytovanú spoločnosťou HelpShift a uplatňujú sa [podmienky poskytovania služby](https://www.helpshift.com/legal/terms/) a [zásady ochrany osobných údajov](https://www.helpshift.com/legal/privacy/) spoločnosti HelpShift.
+V Outlooku pre iOS a Android môžete nahlásiť problémy a spojiť sa s tímom podpory prostredníctvom položky **Nastavenia** > **Pomoc a pripomienky** > **Kontaktovať podporu**. Táto skúsenosť vyžaduje službu spoločnosti Microsoft s názvom PowerLift, pričom sa na ňu vzťahujú podmienky [Zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [Vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/).
 
 ### <a name="help--suggest-a-feature"></a>Pomocník > Navrhnúť funkciu
 
