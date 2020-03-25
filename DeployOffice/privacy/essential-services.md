@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: d5c5fc824e380741287f0393cdae947d1aabda2d
-ms.sourcegitcommit: 6f5af9a707a833b84202040f998361383f488d23
+ms.openlocfilehash: 2d285e2e0494b08e6d17a0a72bd8465e6c8edce7
+ms.sourcegitcommit: 2b494bb428a3a1b837376c0ab9ef9c2357e3165f
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225007"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42939777"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -490,7 +490,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_PrereqFailure\_Type** – zlyhanie základnej požiadavky, ktoré sa vyskytlo, napr. operačný súbor nie je podporovaný
 
-  - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Office 365 ProPlus
+  - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Office 365 ProPlus
 
 ### <a name="officeclicktoruncorruptioncheck"></a>Office.ClickToRun.CorruptionCheck
 
@@ -823,7 +823,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1203,7 +1203,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1345,7 +1345,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
@@ -1421,7 +1421,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
@@ -1573,7 +1573,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
@@ -2277,7 +2277,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
@@ -2365,7 +2365,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
@@ -2513,7 +2513,7 @@ Zhromažďujú sa tieto polia:
 
 Táto udalosť nahlasuje výsledok pokusu o end-to-end inštaláciu
 
- - **ErrorCode** – celočíselná hodnota s nespracovanou výnimkou
+ - **ErrorCode** – celočíselná hodnota spojená s nespracovanou výnimkou
 
  - **ErrorDetails** – reťazec, ktorý popisuje umiestnenie, v ktorom sa vyskytla nespracovaná výnimka (funkcia, súbor, číslo riadka, ďalšie parametre určené pri výskyte výnimky)
 
@@ -2706,6 +2706,8 @@ Táto udalosť nahlasuje prijaté akcie s vplyvom na zariadenie, ako sú určen�
 
 ### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
 
+*[Táto udalosť sa odstránila z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
 Táto udalosť sa používa na získanie štandardných metaúdajov pri každom spustení doplnku Inventory, ktorý je súčasťou programu Office Serviceability Manager a používa sa na informácie o inventári balíka Office o zariadeniach, pre ktoré sa správca IT rozhodol. Metaúdaj, ktoré nás obzvlášť zaujíma, sú ID relácie, a používa sa na prepojenie na iné údaje uložené v rámci cloudovej služby na nájomníka.
 
 Táto udalosť neobsahuje žiadne dodatočné polia, pretože len metaúdaje sú relevantné.
@@ -2726,7 +2728,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
 
-Táto udalosť sa zaznamená, keď zlyhá volanie webovej služby uskutočnené v rámci doplnku Click-to-Run Serviceability Manager.
+Pri každom zlyhaní volania na WebService v rámci niektorého z doplnkov Office Serviceability Manager sa tento príkaz zapíše do denníka. Zlyhania môžu byť zapríčinené internými zlyhaniami alebo neschopnosťou pripojiť sa k WebService.
 
 Zhromažďujú sa tieto polia:
 
@@ -2735,6 +2737,8 @@ Zhromažďujú sa tieto polia:
 - **Correlation ID** – náhodne generovaný identifikátor GUID špecifický pre aktuálnu inštanciu, ktorý sa odosiela do webovej služby na koreláciu volaní medzi klientom a serverom.
 
 - **ErrorInfo** – informácie o číselnom kóde chyby vrátené rozhraniami API volania webovej služby balíka Office.
+
+- **ErrorMessage** – správa, ktorá poskytuje ďalšie informácie o zlyhaní. Každý typ chyby sa priradí do pevne kódovaného reťazca, pričom určité typy chyby sa potenciálne priradia do viacerých reťazcov v závislosti od konkrétnej podstaty zlyhania.
 
 - **Function** – funkcia v kóde, z ktorej sa uskutočnilo aktuálne volanie.
 
@@ -2876,9 +2880,9 @@ Zhromažďujú sa tieto polia:
 
 - **ClientTransactionId** – jedinečný identifikátor volania služby.
 
-- **ErrorCategory** – každý typ chyby môže spadať do všeobecnejšej kategórie, ako je napríklad „možnosť opakovaného pokusu“.
+- **ErrorCategory** – každý typ chyby môže spadať do všeobecnejšej kategórie, ako je napríklad „Retryable“.
 
-- **ErrorType** – dôvod zlyhania, napríklad že už uplatnil niekto iný.
+- **ErrorType** – dôvod zlyhania, napríklad „AlreadyRedeemedByOther“
 
 - **InAFOFlow** – Boolovská hodnota signalizujúca, či ide o postup uplatňovania AFO.
 
@@ -3054,7 +3058,7 @@ Zhromažďujú sa tieto polia:
 
 - **Try** – označuje, či používateľ klikol na tlačidlo vyskúšania
 
-- **UserDismissed** – označuje, či používateľ zrušil dialógové okno, a teda je v režime odkladu alebo režime s obmedzenou funkčnosťou, pretože si nezvolil nákup balíka Office ani získanie skúšobnej verzie.
+- **UserDismissed** - This tells if the user dismissed the dialog and thus would be in grace or reduced functionality mode because they didn't choose to buy office or get a trial
 
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
 
@@ -3110,7 +3114,7 @@ Zhromažďujú sa tieto polia:
 
 - **GetEntitlementCount** – označuje počet nárokov používateľa
 
-- **GetEntitlementsSucceeded** – označuje, či volanie rozhrania API licenčnej služby balíka Office na získanie nárokov používateľa bolo úspešné
+- **GetEntitlementsSucceeded** - Tells if the call to an Office Licensing Service API to retrieve the user's entitlements succeeded or not
 
 - **GetKeySucceeded** – označuje, či volanie rozhrania API licenčnej služby balíka Office na získanie kódu bolo úspešné
 
@@ -3154,13 +3158,13 @@ Zhromažďujú sa tieto polia:
 - **Success** – označuje, že sme úspešne načítali platnú väzbu balíka Office (PIN) pre zariadenie.
 
 - **Tag** – označuje, v ktorom kroku sa prestala hľadať väzba. Možné značky:
-  - 0x03113809  žiaden internet/chyba služby pri overovaní PIN
-   - 0x0311380a  zlyhanie overenia PIN, odoslané s poľom PinValidationFailure
-  - 0x0310410f  úspech, odoslané s poľom Success
-  - 0x0311380d  chyby s možnosťou opakovaného pokusu (problémy s internetom, neznáme chyby)
-  - 0x0311380e  chyby bez možnosti opakovaného pokusu (platnosť ponuky väzby uplynula)
-  - 0x0311380f  iné chyby (nedá sa licencovať)
-  - 0x03104111  nepodarilo sa získať PIN pre Office, odoslané s poľom PinValidationResult
+  - 0x03113809    žiaden internet/chyba služby pri overovaní PIN
+   - 0x0311380a    zlyhanie overenia PIN, odoslané s poľom PinValidationFailure
+  - 0x0310410f    úspech, odoslané s poľom Success
+  - 0x0311380d    chyby s možnosťou opakovaného pokusu (problémy s internetom, neznáme chyby)
+  - 0x0311380e    chyby bez možnosti opakovaného pokusu (platnosť ponuky väzby uplynula)
+  - 0x0311380f    iné chyby (nedá sa licencovať)
+  - 0x03104111    nepodarilo sa získať PIN pre Office, odoslané s poľom PinValidationResult
 
 - **WpkBindingFailure** – označuje kód chyby získania PIN pre Office naviazaného na WPK počítača.
 
@@ -3347,7 +3351,7 @@ Zhromažďujú sa tieto polia:
 
 Táto udalosť označuje, že sa vyskytli chyby pri pripájaní k pomocnému nástroju služby MAU (komponent, ktorý vykonáva inštaláciu aplikácie).  Táto udalosť označuje možné poškodenie aplikácie MAU. Zariadenie nebude môcť inštalovať aktualizácie.
 
-Zhromažďujú sa tieto polia: 
+Zhromažďujú sa tieto polia:    
 
 - **App** – proces aplikácie odosielajúci udalosť
 
@@ -11282,6 +11286,8 @@ Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončen
 
 Zhromažďujú sa tieto polia:
 
+  - **BootCompleted** – či bolo spustenie balíka Office dokončené v čase zlyhania.
+
   - **CrashedAppBuild** – identifikátor verzie zostavy ovplyvneného procesu.
 
   - **CrashedAppMajor** – identifikátor hlavnej verzie ovplyvneného procesu.
@@ -11298,6 +11304,8 @@ Zhromažďujú sa tieto polia:
 
   - **CrashedSessionInitTime** – čas začatia ovplyvneného procesu.
 
+  - **CrashTime ** – čas, ktorý signalizuje, že klient bol ukončený neželane.
+
   - **CrashType** – identifikátor typu zlyhania.
 
   - **DetectionTime** – čas zistenia neočakávaného ukončenia.
@@ -11305,6 +11313,12 @@ Zhromažďujú sa tieto polia:
   - **ExceptionAddress** – adresa v programe, kde došlo k zlyhaniu.
 
   - **ExceptionCode** – identifikátor výnimky.
+
+  - **HandOff** – či používateľ vytvoril a odovzdal proces balíka Office do novej relácie.
+
+  - **HasEdit** – či v klientovi, ktorý zlyhal, používateľ upravovaný dokument
+
+  - **HasOpen** či bol v klientovi, ktorý zlyhal, otvorený dokument.
 
   - **HexCrashTag** – jedinečný identifikátor kódu zlyhania.
 
@@ -11330,13 +11344,17 @@ Zhromažďujú sa tieto polia:
 
   - **ModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch.
 
+  - **OfficeUILang** – jazyk používateľského rozhrania zostavy balíka Office.
+
   - **PreviousBuild** – predchádzajúca nainštalovaná verzia zostavy.
+
+  - **SafeMode** či bola relácia spustená v núdzovom režime.
 
   - **UAEOSEnvironment** – identifikátor prostredia operačného systému.
 
   - **UninitLibletId** – jedinečný identifikátor zlyhávajúcej súčasti zlyhania.
 
-  - **VerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie.
+  - **VerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 ### <a name="officesystemungracefulapplicationexitdesktopappexit"></a>Office.System.UngracefulApplicationExit.DesktopAppExit
 
