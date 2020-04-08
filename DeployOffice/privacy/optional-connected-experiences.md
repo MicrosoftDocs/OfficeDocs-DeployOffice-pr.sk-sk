@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: 0c48bd091998e12603e09fcc9b6ce42207e2d95b
-ms.sourcegitcommit: d07de5b2fc7ea02171b84ff34bf4db9686683ed5
+ms.openlocfilehash: 9cfbae596b686e2be484756b848514d4c36108df
+ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42340884"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43166300"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -26,7 +26,7 @@ Ak máte pracovné alebo školské konto, správca vo vašej organizácii vám m
 
 > [!NOTE]
 > Ak ste správcom, pozrite si nasledujúce témy, v ktorých sa dozviete, ako používateľom povoliť alebo zakázať používanie týchto voliteľných online funkcií:
-> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
+> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus s nastaveniami politiky](manage-privacy-controls.md)
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
@@ -63,7 +63,7 @@ V Outlooku pre iOS a Android môžete nahlásiť problémy a spojiť sa s tímom
 
 ### <a name="help--suggest-a-feature"></a>Pomocník > Navrhnúť funkciu
 
-Navrhnúť funkciu je funkcia, ktorá umožňuje odosielať nápady týkajúce sa používania Outlooku. Vaše návrhy sa poskytujú priamo službe tretej strany s názvom UserVoice. Ak odošlete nápady pomocou funkcie Navrhnúť funkciu, uplatňujú sa [podmienky poskytovania služby](https://outlook.uservoice.com/tos) a [zásady ochrany osobných údajov](https://outlook.uservoice.com/tos#privacy-policy) služby UserVoice.
+Navrhnúť funkciu je funkcia, ktorá umožňuje odosielať nápady týkajúce sa používania Outlooku alebo Excelu. Vaše návrhy sa poskytujú priamo službe tretej strany s názvom UserVoice. Ak odošlete nápady pomocou funkcie Navrhnúť funkciu, uplatňujú sa [podmienky poskytovania služby](https://outlook.uservoice.com/tos) a [zásady ochrany osobných údajov](https://outlook.uservoice.com/tos#privacy-policy) služby UserVoice.
 
 ### <a name="insert-online-video"></a>Vloženie online videa
 
@@ -91,7 +91,7 @@ Funkcia [Zdroje informácií](https://support.office.com/article/b862efc5-9a7b-4
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Ako zistiť, či vám správca umožnil používať voliteľné pripojené funkcie
 
-Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office 365 ProPlus v zariadení s Windowsom, prejdite na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberte položku **Spravovať nastavenia**. Ak vám správca neumožnil používať tieto funkcie, zobrazí sa hlásenie, že nastavenia ochrany osobných údajov spravuje správca vo vašej organizácii a rozhodol sa zakázať voliteľné pripojené funkcie.
+Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office 365 ProPlus v zariadení s Windowsom, prejdite na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberte položku **Spravovať nastavenia**. Ak vám správca neumožnil používať tieto funkcie, zobrazí sa hlásenie: „Nastavenia ochrany osobných údajov spravuje správca vo vašej organizácii a rozhodol sa zakázať voliteľné pripojené funkcie“.
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
 

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom služieb Office informácie o online funkciách v balíku Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: 6dc32a1456402624ab28e0acbe9c3ef85b6add9d
-ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
+ms.openlocfilehash: 8939bb1f3a3be8cf256f3bd6912abc95c8b09d2a
+ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917630"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43166390"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -44,6 +44,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | ----------- | ------------------ |
 | 3D mapy\*    | [Začíname pracovať s 3D mapami](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automatický alternatívny text   | [Všetko, čo potrebujete na písanie efektívneho alternatívneho textu](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
+| Typy údajov                  | [Typy údajov Exceli: Akcie a Geografia](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktovanie  | [Diktovanie pomocou hlasu v balíku Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Editor    | [Editor je váš asistent pre písanie](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Návrhy     | [Návrhy v Exceli](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -77,7 +78,6 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na sťahovanie onli
 | ------------- | ------------- |
 | Aplikácie kalendára| [Čo sú aplikácie kalendára?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Cloudové písma                 | [Cloudové písma v balíku Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| Typy údajov                  | [Typy údajov Exceli: Akcie a Geografia](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Najčastejšie otázky |Po výbere položky **Nastavenia** > **Pomoc a pripomienky** > **Najčastejšie otázky** v Outlooku pre iOS a Android sa zobrazí stránka [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Efekty písania rukou                 | [Kreslenie a písanie rukou v Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Vloženie ikon                | [Vkladanie ikon v Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
@@ -109,7 +109,6 @@ V nasledujúcej tabuľke sa nachádza zoznam týchto ďalších online funkcií 
 | ------------- | ------------- |
 | @zmienka | [Označenie osoby pomocou @zmienky v komentároch na pripomienky](https://support.office.com/article/644bf689-31a0-4977-a4fb-afe01820c1fd). |
 |Diagram diskusie (Visio)|[Vytvorenie diagramu diskusie](https://support.office.com/article/642706c0-7e63-463b-8aa8-a9aa67367989)|
-| Chat | [Vylepšenie spolupráce s chatom v Microsoft Office](https://support.office.com/article/1ecc6c7f-0b02-4baa-b9d9-c9d67023bedd)  |
 | Čoskoro k dispozícii (Outlook)  |[Čoskoro k dispozícii](https://support.office.com/article/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Kontaktovanie oddelenia podpory | Po výbere položky **Pomocník** > **Kontaktovať technickú podporu** na páse s nástrojmi|
 | Vlastný Import (Visio)  | [Import údajov do tvarov v kresbe](https://support.office.com/article/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
