@@ -1,5 +1,5 @@
 ---
-title: Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus
+title: Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,20 +13,20 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
+description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus) vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: 784bbf08626e6dc8571c416a74511c9f5feeceec
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: e22388cb73a539e13f67163bf0b0e949b10be349
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067384"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993121"
 ---
-# <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus
+# <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
-Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní služieb Office 365 ProPlus.
+Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní služieb Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus).
 
-Od verzie 1904 služieb Office 365 ProPlus (vydanej 29. apríla 2019 v mesačnom kanáli) poskytujeme nové, aktualizované a vylepšené ovládacie prvky na ochranu osobných údajov pre tieto oblasti:
+Od verzie 1904 Aplikácií Microsoft 365 pre veľké organizácie poskytujeme nové, aktualizované a vylepšené ovládacie prvky na ochranu osobných údajov pre tieto oblasti:
 - ***Diagnostické údaje***, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom vo vašej organizácii.
 - ***Pripojené funkcie***, ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
 
@@ -36,20 +36,20 @@ Súčasťou týchto zmien sú nové a aktualizované prvky používateľského 
 > - Tieto zmeny sa vzťahujú na Access, Excel, OneNote, Outlook, PowerPoint, Publisher a Word.
 > - Tieto zmeny sa vzťahujú aj na:
 >   - Verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
->   - Verziu 1904 alebo novšie verzie počítačových verzií Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako napríklad Project Online Professional alebo Visio Online (plán 2).
-> - Tieto ovládacie prvky na ochranu osobných údajov sú zahrnuté vo verzii 1908 polročného kanála (pre vybraných používateľov) s dátumom vydania 10. septembra 2019. Očakáva sa, že budú k dispozícii v polročnom kanáli v januári 2020.
+>   - Verziu 1904 alebo novšie verzie počítačových verzií Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako napríklad Project Plan 5 alebo Visio Plan 2.
+> - Tieto ovládacie prvky na ochranu osobných údajov sú zahrnuté vo verzii 1908 alebo novšej polročného kanála (pre vybraných používateľov) a polročného kanála.
 > - Tieto ovládacie prvky na ochranu osobných údajov sú k dispozícii pre verziu 2.30 a novšie verzie Excelu, OneNotu, PowerPointu a Wordu pre iOS, ako aj pre verziu 1.17 a novšie verzie Visio Viewera pre iOS.
 > - Tieto ovládacie prvky na ochranu osobných údajov sú k dispozícii pre verziu 16.0.12226.10000 a novšie verzie Excelu, PowerPointu a Wordu pre Android, ako aj pre verziu 16.0.12228.20004 a novšie verzie OneNotu pre Android.
 > - Väčšina aplikácií balíka Office pre web používa nový ovládací prvok ochrany osobných údajov pre [voliteľné online funkcie](optional-connected-experiences.md). Sú to tieto aplikácie: Excel pre web, OneNote pre web, PowerPoint pre web, Visio pre web a Word pre web. Môžete použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md) a nakonfigurovať príslušné [nastavenie politiky](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
-> - Tieto nové a vylepšené ovládacie prvky na ochranu osobných údajov rozšírime do ďalších klientov balíka Office vrátane aplikácie Teams a mobilných aplikácií. Podrobnejšie informácie o týchto zmenách poskytneme v nadchádzajúcich mesiacoch. Naďalej budeme starostlivo počúvať vaše pripomienky a vylepšovať všetky klientske aplikácie a služby služieb Office 365.
+> - Tieto nové a vylepšené ovládacie prvky na ochranu osobných údajov rozšírime do ďalších klientov balíka Office vrátane aplikácie Teams a mobilných aplikácií. Podrobnejšie informácie o týchto zmenách poskytneme v nadchádzajúcich mesiacoch. Naďalej budeme starostlivo počúvať vaše pripomienky a vylepšovať všetky klientske aplikácie a služby služieb Office 365 (a Microsoft 365).
 
-## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostické údaje odosielané zo služieb Office 365 ProPlus spoločnosti Microsoft
+## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Diagnostické údaje odoslané z Aplikácií Microsoft 365 pre veľké organizácie do spoločnosti Microsoft
 
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Tieto údaje neobsahujú meno ani e-mailovú adresu používateľa, obsah súborov používateľa ani informácie o aplikáciách, ktoré nesúvisia s balíkom Office.
 
 Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom vo vašej organizácii.
 
-Existujú tri úrovne diagnostických údajov pre klientsky softvér služieb Office 365 ProPlus, z ktorých si môžete vybrať:
+Existujú tri úrovne diagnostických údajov pre klientsky softvér Aplikácie Microsoft 365 pre veľké organizácie, z ktorých si môžete vybrať:
 
 - **Požadované** Minimálne údaje potrebné na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
 
@@ -73,15 +73,15 @@ Na zobrazenie toho, aké diagnostické údaje sa odosielajú spoločnosti Micros
 
 - [Požadované diagnostické údaje pre Office](required-diagnostic-data.md)
 - [Voliteľné diagnostické údaje pre Office](optional-diagnostic-data.md)
-- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
 - [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-## <a name="connected-experiences-for-office-365-proplus"></a>Pripojené funkcie pre Office 365 ProPlus
+## <a name="connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Online funkcie pre Aplikácie Microsoft 365 pre veľké organizácie
 
-Office 365 ProPlus pozostáva z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom pripojených funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive for Business alebo preklad obsahu wordového dokumentu do iného jazyka.
+Aplikácie Microsoft 365 pre veľké organizácie pozostávajú z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom pripojených funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive for Business alebo preklad obsahu wordového dokumentu do iného jazyka.
 
 Chápeme, že chcete mať možnosť rozhodnúť sa, ktoré typy pripojených funkcií majú vaši používatelia k dispozícii pri práci s aplikáciami balíka Office. Ako správca organizácie máte k dispozícii nastavenia politiky, ktoré umožňujú určiť, či nasledovné typy pripojených funkcií budú k dispozícii pre vašich používateľov:
 
@@ -100,14 +100,14 @@ Vaši používatelia sa nebudú môcť rozhodnúť zapnúť alebo vypnúť tieto
 Ďalšie informácie sa nachádzajú v nasledujúcich témach:
 
 - [Pripojené funkcie v Office](connected-experiences.md)
-- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky](manage-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
 
-## <a name="optional-connected-experiences-for-office-365-proplus"></a>Voliteľné online funkcie pre Office 365 ProPlus
+## <a name="optional-connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Voliteľné Online funkcie pre Aplikácie Microsoft 365 pre veľké organizácie
 
-Okrem pripojených funkcií uvedených vyššie, ktoré sú súčasťou plánu služieb Office 365 ProPlus, existujú aj voliteľné pripojené funkcie a môžete k nim umožniť používateľom prístup so svojím kontom organizácie. Napríklad funkcie LinkedInu v asistentovi životopisu vo Worde alebo funkcia 3D máp v Exceli, ktorá využíva službu Bing.
+Okrem pripojených funkcií uvedených vyššie, ktoré sú súčasťou plánu Aplikácií Microsoft 365 pre veľké organizácie, existujú aj voliteľné pripojené funkcie a môžete k nim umožniť používateľom prístup so svojím kontom organizácie. Napríklad funkcie LinkedInu v asistentovi životopisu vo Worde alebo funkcia 3D máp v Exceli, ktorá využíva službu Bing.
 
 Ide o voliteľné pripojené funkcie, na ktoré sa nevzťahuje komerčná zmluva vašej spoločnosti so spoločnosťou Microsoft, ale riadia sa samostatnými podmienkami a ustanoveniami. Voliteľné pripojené funkcie ponúkané priamo spoločnosťou Microsoft sa riadia [zmluvou o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement), a nie [podmienkami poskytovania online služieb](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -117,8 +117,8 @@ Aj keď sa rozhodnete tieto voliteľné online funkcie sprístupniť používate
 
 Ďalšie informácie sa nachádzajú v nasledujúcich témach:
 
-- [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md)
-- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus s nastaveniami politiky](manage-privacy-controls.md)
+- [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
@@ -143,9 +143,9 @@ Ak sa rozhodnete neposkytovať používateľom kategóriu pripojených funkcií,
 
 Ďalšie informácie nájdete v téme [Požadované údaje služieb pre Office](required-service-data.md).
 
-## <a name="essential-services-for-office-365-proplus"></a>Nevyhnutné služby pre Office 365 ProPlus
+## <a name="essential-services-for-microsoft-365-apps-for-enterprise"></a>Nevyhnutné služby pre Aplikácie Microsoft 365 pre veľké organizácie
 
-Existuje tiež množina služieb, ktoré sú nevyhnutné pre fungovanie funkcií služieb Office 365 ProPlus a nedajú sa zakázať. Príkladom je licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie služieb Office 365 ProPlus. Požadované údaje týchto služieb sa zhromažďujú a odosielajú spoločnosti Microsoft bez ohľadu na ďalšie nastavenia, ktoré ste nakonfigurovali.
+Existuje tiež množina služieb, ktoré sú nevyhnutné pre fungovanie funkcií Aplikácií Microsoft 365 pre veľké organizácie a nedajú sa zakázať. Príkladom je licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie Aplikácií Microsoft 365 pre veľké organizácie. Požadované údaje týchto služieb sa zhromažďujú a odosielajú spoločnosti Microsoft bez ohľadu na ďalšie nastavenia, ktoré ste nakonfigurovali.
 
 Ďalšie informácie nájdete v téme [Nevyhnutné služby pre Office](essential-services.md).
 

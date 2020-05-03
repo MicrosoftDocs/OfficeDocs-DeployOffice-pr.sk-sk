@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 2d285e2e0494b08e6d17a0a72bd8465e6c8edce7
-ms.sourcegitcommit: 2b494bb428a3a1b837376c0ab9ef9c2357e3165f
+ms.openlocfilehash: 33f4c32c64713e63c02db95b93fc0295e2decb62
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42939777"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992852"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
 > [!IMPORTANT]
 > Informácie v tomto článku sa týkajú verzie 1904 alebo novšej verzie nasledujúceho klientskeho softvéru balíka Office nainštalovaného v počítači s Windowsom:
-> - Office 365 ProPlus a Office 365 Business
-> - Office 365 Personal, Office 365 Home alebo iné verzie balíka Office, ktoré sú súčasťou predplatného služieb Office 365.
-> - Project a Visio, ktoré sú súčasťou niektorých plánov predplatného, ako sú napríklad Project Online Professional alebo Visio Online Plan 2.
+> - Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus)
+> - Aplikácie Microsoft 365 pre podniky (predchádzajúci názov Office 365 Business)
+> - Microsoft 365 Personal, Microsoft 365 Family alebo iné verzie balíka Office, ktoré sú súčasťou predplatného na Microsoft 365.
+> - Počítačové aplikácie Project a Visio dodávané s niektorými plánmi predplatného, ako je napríklad Project Plan 5 alebo Visio Plan 2.
 >
 > Informácie platia aj pre verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
 
@@ -40,8 +41,8 @@ Office pozostáva z klientskych softvérových aplikácií a pripojených funkci
 
 Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné témy:
 
-- [Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus](overview-privacy-controls.md)
-- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus s nastaveniami politiky](manage-privacy-controls.md)
+- [Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
@@ -490,7 +491,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_PrereqFailure\_Type** – zlyhanie základnej požiadavky, ktoré sa vyskytlo, napr. operačný súbor nie je podporovaný
 
-  - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Office 365 ProPlus
+  - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Aplikácie Microsoft 365 pre veľké organizácie
 
 ### <a name="officeclicktoruncorruptioncheck"></a>Office.ClickToRun.CorruptionCheck
 
@@ -588,7 +589,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_OfficeVersion** – nainštalovaná verzia balíka Office
 
-  - **Data\_Sku** – nainštalovaná jednotka SKU, t. j. Office 365 ProPlus.en-us
+  - **Data\_Sku** – nainštalovaná jednotka SKU, t. j. Aplikácie Microsoft 365 pre veľké organizácie
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM Data\_SusClientID – identifikátor aktualizácie balíka Office v zariadení
 
@@ -628,7 +629,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_PrereqFailure\_Type** – predbežné zlyhanie, ktoré sa vyskytlo
 
-  - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Office 365 ProPlus
+  - **Data\_ProductReleaseId** – produkt, ktorý inštalujeme, t. j. Aplikácie Microsoft 365 pre veľké organizácie
 
 ### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
 
@@ -3061,6 +3062,8 @@ Zhromažďujú sa tieto polia:
 - **UserDismissed** - This tells if the user dismissed the dialog and thus would be in grace or reduced functionality mode because they didn't choose to buy office or get a trial
 
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
+
+*[Táto udalosť sa odstránila z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 Máme experiment, ktorý používateľovi umožňuje vyskúšať a nastaviť automatické platby za Office priamo z aplikácie bez opustenia kontextu aplikácie. Táto udalosť nahlasuje úspech alebo zlyhanie tohto experimentu spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
@@ -6144,6 +6147,8 @@ Zhromažďujú sa tieto polia:
 
 - **App** – proces aplikácie odosielajúci udalosť
 
+- **AppID** – identifikátor aplikácie, v ktorej došlo k zlyhaniu sťahovania.
+
 - **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
 
 - **AppVersionLong** – verzia aplikácie
@@ -6160,6 +6165,8 @@ Zhromažďujú sa tieto polia:
 
 - **DeviceInfo_OsBuild** – verzia operačného systému
 
+- **Error** – chyby pozorované počas sťahovania.
+
 - **Event_ReceivedTime** – čas prijatia telemetrie
 
 - **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
@@ -6168,13 +6175,15 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov sťahovanej aktualizácie a zistenú chybu.
+- **Payload** – obsahuje názov sťahovanej aktualizácie a zistenú chybu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor sťahovanej aktualizácie.
 
 
 ### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
@@ -6184,6 +6193,8 @@ Táto udalosť zaznamenáva úspešné stiahnutie súboru balíka. Použitá ces
 Zhromažďujú sa tieto polia:
 
 - **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
 
 - **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
 
@@ -6216,6 +6227,8 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor stiahnutej aktualizácie.
 
 
 ### <a name="fba_checkforupdate"></a>fba_checkforupdate
@@ -6324,6 +6337,8 @@ Zhromažďujú sa tieto polia:
 
 - **DeviceInfo_OsBuild** – verzia operačného systému
 
+- **Error** – obsahuje OSStatus (kód stavu Apple) zohľadňujúci stav spustenia.
+
 - **Event_ReceivedTime** – čas prijatia telemetrie
 
 - **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
@@ -6332,7 +6347,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje OSStatus (kód stavu Apple) zohľadňujúci stav spustenia.
+- **Payload** – obsahuje OSStatus (kód stavu Apple) zohľadňujúci stav spustenia. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -6340,6 +6355,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+- **Success** – Booleovský reťazec označujúci, či sa úspešne spustil proces deamon služby MAU.
 
 ### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
 
@@ -6636,6 +6652,8 @@ Zhromažďujú sa tieto polia:
 
 - **App** – proces aplikácie odosielajúci udalosť
 
+- **AppID** – identifikátor aplikácie.
+
 - **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
 
 - **AppVersionLong** – verzia aplikácie
@@ -6652,6 +6670,8 @@ Zhromažďujú sa tieto polia:
 
 - **DeviceInfo_OsBuild** – verzia operačného systému
 
+- **Error** – podrobnosti chyby, ktorá sa vyskytla pri spustení aplikácie po aktualizácii.
+
 - **Event_ReceivedTime** – čas prijatia telemetrie
 
 - **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
@@ -6660,7 +6680,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje identifikátor použitý na sledovanie aktivity aktualizácie a názov aplikácie, ktorá sa má spustiť.
+- **Payload** – obsahuje identifikátor použitý na sledovanie aktivity aktualizácie a názov aplikácie, ktorá sa má spustiť. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
     
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
     
@@ -6759,6 +6779,8 @@ Zhromažďujú sa tieto polia:
 
 - **App** – proces aplikácie odosielajúci udalosť
 
+- **AppID** – identifikátor aplikácie.
+
 - **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
 
 - **AppVersionLong** – verzia aplikácie
@@ -6775,6 +6797,8 @@ Zhromažďujú sa tieto polia:
 
 - **DeviceInfo_OsBuild** – verzia operačného systému
 
+- **Error** – podrobnosti chyby, ktorá sa vyskytla pri ukončení aplikácie.
+
 - **Event_ReceivedTime** – čas prijatia telemetrie
 
 - **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
@@ -6783,13 +6807,15 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje identifikátor použitý na sledovanie aktivity aktualizácie a identifikátor zväzku aplikácie. Môže tiež obsahovať reťazec chyby, ak služba Microsoft Autoupdate určí, že aplikácia je stále spustená aj po prijatí udalosti ukončenia.
+- **Payload** – obsahuje identifikátor použitý na sledovanie aktivity aktualizácie a identifikátor zväzku aplikácie. Môže tiež obsahovať reťazec chyby, ak služba Microsoft Autoupdate určí, že aplikácia je stále spustená aj po prijatí udalosti ukončenia. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie.
 
 
 ### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
@@ -6882,6 +6908,8 @@ Zhromažďujú sa tieto polia:
 
 - **App** – proces aplikácie odosielajúci udalosť
 
+- **AppID** – identifikátor aplikácie.
+
 - **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
 
 - **AppVersionLong** – verzia aplikácie
@@ -6898,6 +6926,8 @@ Zhromažďujú sa tieto polia:
 
 - **DeviceInfo_OsBuild** – verzia operačného systému
 
+- **Error** – podrobnosti chyby, ktorá sa vyskytla pri sťahovaní aktualizácie aplikácie.
+
 - **Event_ReceivedTime** – čas prijatia telemetrie
 
 - **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
@@ -6906,13 +6936,17 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje identifikátor použitý na sledovanie aktivity aktualizácie a názov aktualizácie.
+- **Payload** – obsahuje identifikátor použitý na sledovanie aktivity aktualizácie a názov aktualizácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie.
+
+- **UpdateName** – názov aktualizácie aplikácie.
 
 
 ### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
@@ -10550,6 +10584,8 @@ Zhromažďujú sa tieto polia:
 
   - **InstallMethod** – či bola aktuálna zostava balíka Office inovovaná zo staršej zostavy, vrátená na staršiu zostavu alebo nanovo nainštalovaná.
 
+  - **OfficeArchitectureText** – architektúra produktu balíka Office ako reťazca (napr. x86; arm).
+
   - **PreviousBuild** – verzia balíka Office, na ktorú bola táto zostava bola inovovaná alebo z ktorej bola vrátená na staršiu verziu.
 
   - **State** – stav, na ktorý sa relácia zmenila.
@@ -11286,6 +11322,8 @@ Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončen
 
 Zhromažďujú sa tieto polia:
 
+  - **AddinExecution** – príznak, ktorý informuje o tom, či bol doplnok spustený a nedokončil sa počas neočakávaného ukončenia aplikácie.
+
   - **BootCompleted** – či bolo spustenie balíka Office dokončené v čase zlyhania.
 
   - **CrashedAppBuild** – identifikátor verzie zostavy ovplyvneného procesu.
@@ -11343,6 +11381,8 @@ Zhromažďujú sa tieto polia:
   - **ModuleOffset** – odsadenie v bajtoch od základnej adresy, kde došlo k zlyhaniu.
 
   - **ModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch.
+
+  - **OfficeArchitectureText** – architektúra produktu balíka Office ako reťazca (napr. x86; arm).
 
   - **OfficeUILang** – jazyk používateľského rozhrania zostavy balíka Office.
 

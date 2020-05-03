@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania nastavení ochrany osobných údajov v zariadeniach so systémom iOS.
 hideEdit: true
-ms.openlocfilehash: d1a14d2e1bfe45710255467fcbce9ac4af2c9cb7
-ms.sourcegitcommit: 903d6bac7d8b7d8003863ac778c0b5bbdfa7a62a
+ms.openlocfilehash: 40fc1ec1f5b2abc587e1b5224dc7fe0a5a656f33
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37604298"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992121"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb
 
@@ -54,9 +54,18 @@ Slovník je vyjadrený ako množina dvojíc kľúča a hodnoty vo formáte XML. 
 
 Po odoslaní do zariadenia sa konfiguračný slovník bude nachádzať v kľúči `com.apple.managed.configuration`, kde sa prečíta, keď sa spustí aplikácia balíka Office.
 
+> [!NOTE]
+> Môžete použiť aj cloudovú službu politiky pre Office a tieto 4 nastavenia politiky:
+> - Konfigurácia úrovne diagnostických údajov o klientskom softvéri, ktoré služby Office odosielajú spoločnosti Microsoft
+> - Povoliť používanie pripojených funkcií na analýzu obsahu v Office
+> - Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office
+> - Povoliť používanie dodatočných voliteľných pripojených funkcií v Office
+>
+> Ďalšie informácie o použití cloudovej služby politiky pre Office nájdete v téme [Prehľad cloudovej služby politiky pre Office](../overview-office-cloud-policy-service.md).
+
 ## <a name="preference-setting-for-diagnostic-data"></a>Nastavenia predvolieb pre diagnostické údaje
 
-Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Ďalšie informácie nájdete v téme [Diagnostické údaje odosielané zo služieb Office 365 ProPlus spoločnosti Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-office-365-proplus-to-microsoft).
+Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Ďalšie informácie nájdete v téme [Diagnostické údaje odoslané z Aplikácií Microsoft 365 pre veľké organizácie do spoločnosti Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
 
 |||
 |:-----|:-----|
@@ -64,9 +73,9 @@ Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka 
 |**Typ údajov**  | Reťazec |
 |**Možné hodnoty**  | `BasicDiagnosticData` *(nastaví sa úroveň Požadované)* <br/> `FullDiagnosticData` *(nastaví sa úroveň Voliteľné)* <br/> `ZeroDiagnosticData` *(nastaví sa úroveň Žiadne)* |
 
-Ak túto predvoľbu nenastavíte, v prípade, že sa používatelia s predplatným na Office 365 prihlásili pomocou pracovného alebo školského konta, spoločnosti Microsoft sa odošlú len požadované diagnostické údaje. Títo používatelia si tiež nemôžu zmeniť úroveň diagnostických údajov, bez ohľadu na to, ako ste túto predvoľbu nastavili.
+Ak túto predvoľbu nenastavíte, v prípade, že sa používatelia s predplatným na Office 365 (alebo Microsoft 365) prihlásili pomocou pracovného alebo školského konta, spoločnosti Microsoft sa odošlú len požadované diagnostické údaje. Títo používatelia si tiež nemôžu zmeniť úroveň diagnostických údajov, bez ohľadu na to, ako ste túto predvoľbu nastavili.
 
-V prípade ostatných používateľov, ako sú napríklad používatelia v domácnosti s predplatným na Office 365, sa odosielajú iba požadované diagnostické údaje, pokiaľ si používateľ nezvolí možnosť odosielať aj voliteľné diagnostické údaje v okne **Nastavenia** > **Nastavenia ochrany osobných údajov**.
+V prípade ostatných používateľov, ako sú napríklad používatelia v domácnosti s predplatným na Office 365 (alebo Microsoft 365), sa odosielajú iba požadované diagnostické údaje, pokiaľ si používateľ nezvolí možnosť odosielať aj voliteľné diagnostické údaje v okne **Nastavenia** > **Nastavenia ochrany osobných údajov**.
 
 
 ## <a name="preference-setting-for-connected-experiences-that-analyze-your-content"></a>Nastavenia predvolieb pre online funkcie na analýzu obsahu
@@ -82,9 +91,9 @@ Online funkcie na analýzu obsahu sú funkcie, ktoré používajú obsah balíka
 
 Ak túto predvoľbu nenastavíte, používatelia budú mať online funkcie na analýzu obsahu k dispozícii.
 
-Ak používatelia majú predplatné na Office 365 a sú prihlásení s pracovným alebo školským kontom, nemôžu online funkcie na analýzu obsahu vypnúť.
+Ak používatelia majú predplatné na Office 365 (alebo Microsoft 365) a sú prihlásení s pracovným alebo školským kontom, nemôžu online funkcie na analýzu obsahu vypnúť.
 
-Ostatní používatelia, ako sú napríklad používatelia v domácnosti s predplatným na Office 365, majú možnosť online funkcie na analýzu obsahu vypnúť v okne **Nastavenia** > **Nastavenia ochrany osobných údajov**.
+Ostatní používatelia, ako sú napríklad používatelia v domácnosti s predplatným na Office 365 (alebo Microsoft 365), majú možnosť online funkcie na analýzu obsahu vypnúť v okne **Nastavenia** > **Nastavenia ochrany osobných údajov**.
 
 ## <a name="preference-setting-for-connected-experiences-that-download-online-content"></a>Nastavenie predvolieb pre online funkcie na sťahovanie online obsahu
 
@@ -99,9 +108,9 @@ Online funkcie na sťahovanie online obsahu sú funkcie, ktoré umožňujú vyh�
 
 Ak túto predvoľbu nenastavíte, používatelia budú mať online funkcie na sťahovanie online obsahu k dispozícii.
 
-Ak používatelia majú predplatné na Office 365 a sú prihlásení s pracovným alebo školským kontom, nemôžu online funkcie na sťahovanie online obsahu vypnúť.
+Ak používatelia majú predplatné na Office 365 (alebo Microsoft 365) a sú prihlásení s pracovným alebo školským kontom, nemôžu online funkcie na sťahovanie online obsahu vypnúť.
 
-Ostatní používatelia, ako sú napríklad používatelia v domácnosti s predplatným na Office 365, majú možnosť online funkcie na sťahovanie online obsahu vypnúť v okne **Nastavenia** > **Nastavenia ochrany osobných údajov**.
+Ostatní používatelia, ako sú napríklad používatelia v domácnosti s predplatným na Office 365 (alebo Microsoft 365), majú možnosť online funkcie na sťahovanie online obsahu vypnúť v okne **Nastavenia** > **Nastavenia ochrany osobných údajov**.
 
 ## <a name="preference-setting-for-optional-connected-experiences"></a>Nastavenia predvolieb pre voliteľné online funkcie
 
@@ -114,6 +123,6 @@ Okrem online funkcií uvedených vyššie existujú aj voliteľné online funkci
 |**Možné hodnoty**  | `TRUE` *(povolené)* <br/> `FALSE` *(zakázané)*|
 
 
-Ak túto predvoľbu nenastavíte, voliteľné online funkcie sú používateľom k dispozícii v prípade, že sa používatelia s predplatným na Office 365 prihlásili pomocou pracovného alebo školského konta. Ako ste túto predvoľbu nenastavili na hodnotu FALSE, títo používatelia majú možnosť voliteľné online funkcie vypnúť v okne **Nastavenia** > **Nastavenia ochrany osobných údajov**.
+Ak túto predvoľbu nenastavíte, voliteľné online funkcie sú používateľom k dispozícii v prípade, že sa používatelia s predplatným na Office 365 (alebo Microsoft 365) prihlásili pomocou pracovného alebo školského konta. Ako ste túto predvoľbu nenastavili na hodnotu FALSE, títo používatelia majú možnosť voliteľné online funkcie vypnúť v okne **Nastavenia** > **Nastavenia ochrany osobných údajov**.
 
-Ostatní používatelia, ako sú napríklad používatelia v domácnosti s predplatným na Office 365, nemajú možnosť vypnúť voliteľné online funkcie.
+Ostatní používatelia, ako sú napríklad používatelia v domácnosti s predplatným na Office 365 (alebo Microsoft 365), nemajú možnosť vypnúť voliteľné online funkcie.

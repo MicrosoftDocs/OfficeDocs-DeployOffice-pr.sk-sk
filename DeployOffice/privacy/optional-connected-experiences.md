@@ -13,20 +13,20 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: 9cfbae596b686e2be484756b848514d4c36108df
-ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
+ms.openlocfilehash: ecfe38bc6dbedd57ff1eb2ab4851c8e4dddab730
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166300"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993251"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
-Ak máte pracovné alebo školské konto, správca vo vašej organizácii vám možno poskytol možnosť používať jednu alebo viacero cloudových služieb (ďalej len „voliteľné pripojené funkcie“) pri používaní aplikácií balíka Office 365 ProPlus. Tieto cloudové služby sú voliteľné. Ich používanie je na vás. Poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). V niektorých prípadoch sa môžu uplatňovať aj ďalšie podmienky. Tento článok obsahuje zoznam cloudových služieb, vysvetlenie ich podmienok používania a informácie o tom, ako ich môžete kedykoľvek zapnúť alebo vypnúť.
+Ak máte pracovné alebo školské konto, správca vo vašej organizácii vám možno poskytol možnosť používať jednu alebo viacero cloudových služieb (ďalej len „voliteľné pripojené funkcie“) pri používaní aplikácií balíka Office, ako napríklad Word alebo Excel, ktoré sú súčasťou Aplikácií Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus). Tieto cloudové služby sú voliteľné. Ich používanie je na vás. Poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). V niektorých prípadoch sa môžu uplatňovať aj ďalšie podmienky. Tento článok obsahuje zoznam cloudových služieb, vysvetlenie ich podmienok používania a informácie o tom, ako ich môžete kedykoľvek zapnúť alebo vypnúť.
 
 > [!NOTE]
 > Ak ste správcom, pozrite si nasledujúce témy, v ktorých sa dozviete, ako používateľom povoliť alebo zakázať používanie týchto voliteľných online funkcií:
-> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus s nastaveniami politiky](manage-privacy-controls.md)
+> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 > - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
@@ -39,7 +39,7 @@ Je dôležité vedieť, že na tieto voliteľné cloudové služby sa nevzťahuj
 
 ## <a name="experiences-that-rely-on-bing"></a>Funkcie, ktoré využívajú službu Bing
 
-Niektoré cloudové služby využívajú službu Microsoft Bing. Microsoft Bing je samostatná služba mimo balíka Office 365 ProPlus a spoločnosť Microsoft ju riadi nezávisle od balíka Office 365 ProPlus. V aplikáciách balíka Office 365 ProPlus ju využívajú tieto funkcie: [3D mapy](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartogramy](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Vkladanie online obrázkov](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Vkladanie online 3D modelov](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Rýchly štart v PowerPointe](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Vyhľadávač](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) a [Inteligentné vyhľadávanie](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+Niektoré cloudové služby využívajú službu Microsoft Bing. Microsoft Bing je samostatná služba mimo Aplikácií Microsoft 365 pre veľké organizácie a spoločnosť Microsoft ju riadi nezávisle od Aplikácií Microsoft 365 pre veľké organizácie. V aplikáciách balíka Office vrátane Aplikácií Microsoft 365 pre veľké organizácie ju využívajú tieto funkcie: [3D mapy](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartogramy](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Vkladanie online obrázkov](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Vkladanie online 3D modelov](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Rýchly štart v PowerPointe](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Vyhľadávač](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) a [Inteligentné vyhľadávanie](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
 
 Funkcie využívajúce Bing v Outlooku pre iOS a Android:
 
@@ -47,11 +47,11 @@ Funkcie využívajúce Bing v Outlooku pre iOS a Android:
 - **Zaujímavé kalendáre:**   Môžete sa [prihlásiť na odber](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) kalendárov o svojich obľúbených športových tímoch alebo televíznych seriáloch.
 
 
- Licencia na tieto funkcie využívajúce Bing sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a vzťahuje sa na ne [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v organizácii Office 365 ProPlus, sa odošlú do služby Microsoft Bing. Nie sú vám prepojené organizáciou Bing.
+ Licencia na tieto funkcie využívajúce Bing sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a vzťahuje sa na ne [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v Aplikáciách Microsoft 365 pre veľké organizácie, sa odošlú do služby Microsoft Bing. Nie sú vám prepojené organizáciou Bing.
 
 ## <a name="experiences-that-rely-on-linkedin"></a>Funkcie, ktoré využívajú službu LinkedIn
 
-[Sprievodca životopisom](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) využíva vo Worde službu LinkedIn. Poskytuje tipy pre váš životopis. LinkedIn je iná spoločnosť vlastnená spoločnosťou Microsoft. Ak používate Sprievodcu životopisom, okrem [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti o ochrane osobných údajov](https://privacy.microsoft.com/) sa na vás vzťahuje aj [zmluva s používateľom a vyhlásenie o ochrane osobných údajov v službe LinkedIn](https://www.linkedin.com/legal/user-agreement). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v organizácii Office 365 ProPlus, sa odošlú do služby LinkedIn. Nie sú vám prepojené organizáciou LinkedIn. Na používanie tejto cloudovej služby nemusíte mať konto LinkedIn.
+[Sprievodca životopisom](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) využíva vo Worde službu LinkedIn. Poskytuje tipy pre váš životopis. LinkedIn je iná spoločnosť vlastnená spoločnosťou Microsoft. Ak používate Sprievodcu životopisom, okrem [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti o ochrane osobných údajov](https://privacy.microsoft.com/) sa na vás vzťahuje aj [zmluva s používateľom a vyhlásenie o ochrane osobných údajov v službe LinkedIn](https://www.linkedin.com/legal/user-agreement). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v Aplikáciách Microsoft 365 pre veľké organizácie, sa odošlú do služby LinkedIn. Nie sú vám prepojené organizáciou LinkedIn. Na používanie tejto cloudovej služby nemusíte mať konto LinkedIn.
 
 Poznámka: Nastavenie ochrany osobných údajov, ktoré je opísané nižšie, neriadi funkcie, ktoré vyžadujú pripojenie vášho konta LinkedIn k pracovnému alebo školskému kontu Microsoft. Informácie o riadení týchto typov funkcií (napríklad informácie z LinkedInu na [karte profilu](https://support.office.com/article/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) v Outlooku) nájdete v téme [Prepojenie kont LinkedIn a Microsoft](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
@@ -91,23 +91,23 @@ Funkcia [Zdroje informácií](https://support.office.com/article/b862efc5-9a7b-4
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Ako zistiť, či vám správca umožnil používať voliteľné pripojené funkcie
 
-Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office 365 ProPlus v zariadení s Windowsom, prejdite na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberte položku **Spravovať nastavenia**. Ak vám správca neumožnil používať tieto funkcie, zobrazí sa hlásenie: „Nastavenia ochrany osobných údajov spravuje správca vo vašej organizácii a rozhodol sa zakázať voliteľné pripojené funkcie“.
+Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office vrátane Aplikácií Microsoft 365 pre veľké organizácie v zariadení s Windowsom, prejdite na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberte položku **Spravovať nastavenia**. Ak vám správca neumožnil používať tieto funkcie, zobrazí sa hlásenie: „Nastavenia ochrany osobných údajov spravuje správca vo vašej organizácii a rozhodol sa zakázať voliteľné pripojené funkcie“.
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
 
 ## <a name="your-privacy-settings"></a>Nastavenia ochrany osobných údajov
 
-Ak vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office 365 ProPlus v zariadení s Windowsom, nastavenia môžete kedykoľvek spravovať tak, že prejdete na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberiete položku **Spravovať nastavenia**. Keď sú povolené, budete mať možnosť používať služby opísané v tomto článku, keď ich chcete použiť. Keď sú zakázané, nebudú dostupné.
+Ak vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office vrátane Aplikácií Microsoft 365 pre veľké organizácie v zariadení s Windowsom, nastavenia môžete kedykoľvek spravovať tak, že prejdete na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberiete položku **Spravovať nastavenia**. Keď sú povolené, budete mať možnosť používať služby opísané v tomto článku, keď ich chcete použiť. Keď sú zakázané, nebudú dostupné.
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
 
 ## <a name="diagnostic-data"></a>Diagnostické údaje
 
-Pri používaní voliteľných cloudových služieb opísaných v tomto článku môže spoločnosť Microsoft zhromažďovať diagnostické údaje (ako sú napríklad údaje o používaní, chybách a výkone) o výkone služieb pri ich používaní. Diagnostické údaje môžu obsahovať „osobné údaje“, ako sú definované v článku 4 európskeho nariadenia GDPR.Všetky diagnostické údaje, ktoré spoločnosť Microsoft zhromažďuje pri používaní akýchkoľvek aplikácií a služieb balíka Office 365 ProPlus, sú pseudonymizované podľa normy ISO/IEC 19944:2017, sekcie 8.3.3.
+Pri používaní voliteľných cloudových služieb opísaných v tomto článku môže spoločnosť Microsoft zhromažďovať diagnostické údaje (ako sú napríklad údaje o používaní, chybách a výkone) o výkone služieb pri ich používaní. Diagnostické údaje môžu obsahovať „osobné údaje“, ako sú definované v článku 4 európskeho nariadenia GDPR.Všetky diagnostické údaje, ktoré spoločnosť Microsoft zhromažďuje pri používaní akýchkoľvek aplikácií a služieb balíka Aplikácie Microsoft 365 pre veľké organizácie, sú pseudonymizované podľa normy ISO/IEC 19944:2017, sekcie 8.3.3.
 
 
 ## <a name="related-topics"></a>Súvisiace témy
 
-- [Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus](overview-privacy-controls.md)
+- [Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
 - [Požadované údaje služieb pre Office](required-service-data.md)
 - [Nastavenia ochrany osobných údajov konta](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
