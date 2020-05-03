@@ -1,4 +1,4 @@
-# Ochrana osobných údajov pre Office 365 ProPlus
+# Ochrana osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
 ## [Prehľad ovládacích prvkov na ochranu osobných údajov](overview-privacy-controls.md)
 
