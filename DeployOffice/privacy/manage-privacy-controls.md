@@ -1,5 +1,5 @@
 ---
-title: Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
+title: Použitie nastavení politiky na správu ovládacích prvkov ochrany osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,20 +13,20 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v službách Office 365 ProPlus pomocou nastavení politiky.
+description: V tomto článku správcovia balíka Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v Aplikáciách Microsoft 365 pre veľké organizácie (predtým Office 365 ProPlus) pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
-ms.sourcegitcommit: 6a091ca7e72cd7ce97793ebd0fdcfa2a6fa1a098
+ms.openlocfilehash: 284b9b8a2b0231f5079e34ec2b09e35dfd0d07ca
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42687244"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992987"
 ---
-# <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus pomocou nastavení politiky
+# <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Použitie nastavení politiky na správu ovládacích prvkov ochrany osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
-Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní služieb Office 365 ProPlus.
+Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní Aplikácií Microsoft 365 pre veľké organizácie (predtým Office 365 ProPlus).
 
-Od verzie 1904 služieb Office 365 ProPlus sú k dispozícii nové nastavenia politiky, ktoré umožňujú ovládať nastavenia týkajúce sa:
+Od verzie 1904 Aplikácií Microsoft 365 pre veľké organizácie sú k dispozícii nové nastavenia politiky, ktoré vám umožňujú ovládať nastavenia týkajúce sa:
 
 - ***diagnostických údajov***, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o používanom klientskom softvéri balíka Office,
 
@@ -50,9 +50,9 @@ Tieto nastavenia politiky je možné implementovať pomocou buď skupinovej poli
 
 Ak používate nástroj Group Policy Management, všetky tieto nastavenia politiky sa nachádzajú v časti User Configuration (Konfigurácia používateľa)\\Policies (Politiky)\\Administrative Templates (Nástroje na správu)\\Microsoft Office 2016\\Privacy (Ochrana osobných údajov)\\Trust Center (Centrum dôveryhodnosti).
 
-Tieto nové nastavenia politiky sa vzťahujú aj na počítačové verzie Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako sú napríklad Project Online Professional alebo Visio Online Plan 2. Vzťahujú sa aj na plán služieb Office 365 Business.
+Tieto nové nastavenia politiky sa týkajú aj počítačových verzií Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako je napríklad Project Plan 5 alebo Visio Plan 2. Týkajú sa aj Aplikácií Microsoft 365 pre podnikateľov (predtým Office 365 Business).
 
-Nejaké existujúce nastavenia politiky sa na služby Office 365 ProPlus už nebudú vzťahovať a tiež by ste mali vedieť o nejakých ďalších zmenách používateľského rozhrania týkajúcich sa nastavenia ochrany osobných údajov, pretože vaši používatelia si ich môžu všimnúť a pýtať sa na ne.
+Niektoré existujúce nastavenia politiky sa na Aplikácie Microsoft 365 pre veľké organizácie už nebudú vzťahovať a tiež by ste mali vedieť o niekoľkých zmenách používateľského rozhrania týkajúcich sa nastavení ochrany osobných údajov, pretože vaši používatelia si ich môžu všimnúť a pýtať sa na ne.
 
 Rovnako ako v prípade akýchkoľvek nových nastavení politiky by ste ich najskôr mali dôkladne otestovať v obmedzenom, kontrolovanom prostredí, aby sa zaručilo, že nastavenia, ktoré nakonfigurujete, majú požadovaný účinok, a až potom tieto nastavenia politiky implementovať v celej organizácii.
 
@@ -72,16 +72,16 @@ Ak zapnete toto nastavenie politiky, musíte určiť, aká úroveň diagnostick�
 
 Ak vypnete alebo nenakonfigurujete toto nastavenie politiky, spoločnosti Microsoft sa odosielajú voliteľné aj požadované diagnostické údaje.
 
-Ďalšie informácie o diagnostických údajoch sa nachádzajú v témach:
+Ďalšie informácie o diagnostických údajoch sa nachádzajú v témach:
 
-- [Prehľad ovládacích prvkov na ochranu osobných údajov pre Office 365 ProPlus](overview-privacy-controls.md)
+- [Prehľad ovládacích prvkov ochrany osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
 - [Požadované diagnostické údaje pre Office](required-diagnostic-data.md)
 - [Voliteľné diagnostické údaje pre Office](optional-diagnostic-data.md)
 - [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="policy-settings-for-connected-experiences"></a>Nastavenia politiky pre pripojené funkcie
 
-Office 365 ProPlus pozostáva z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom pripojených funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive for Business alebo preklad obsahu wordového dokumentu do iného jazyka.
+Aplikácie Microsoft 365 pre veľké organizácie pozostávajú z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom pripojených funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive for Business alebo preklad obsahu wordového dokumentu do iného jazyka.
 
 Chápeme, že chcete mať možnosť rozhodnúť sa, ktoré typy pripojených funkcií majú vaši používatelia k dispozícii pri práci s aplikáciami balíka Office. Preto sú k dispozícii štyri nové nastavenia politiky:
 
@@ -90,11 +90,11 @@ Chápeme, že chcete mať možnosť rozhodnúť sa, ktoré typy pripojených fun
 - Povoliť používanie dodatočných voliteľných pripojených funkcií v Office
 - Povoliť používanie pripojených funkcií v Office
 
-Ak nenakonfigurujete tieto nastavenia politiky, budú pre vašich používateľov k dispozícii všetky tieto pripojené funkcie. Vaši používatelia tak získajú všetky funkcie a možnosti, ktoré sú dostupné prostredníctvom služieb Office 365 ProPlus. Chápeme však, že na spĺňanie určitých požiadaviek vašej spoločnosti môže byť potrebné vypnúť niektoré alebo všetky tieto pripojené služby.
+Ak nenakonfigurujete tieto nastavenia politiky, budú pre vašich používateľov k dispozícii všetky tieto pripojené funkcie. Vaši používatelia tak získajú všetky funkcie a možnosti, ktoré sú dostupné prostredníctvom Aplikácií Microsoft 365 pre veľké organizácie. Chápeme však, že na spĺňanie určitých požiadaviek vašej spoločnosti môže byť potrebné vypnúť niektoré alebo všetky tieto pripojené služby.
 
 Ak sa rozhodnete neposkytovať používateľom niektoré typy pripojených funkcií, príkazy pre tieto funkcie na páse s nástrojmi alebo v ponuke budú neaktívne alebo sa pri pokuse o použitie týchto pripojených funkcií používateľom zobrazí chybové hlásenie. V takom prípade sa spoločnosti Microsoft nebudú odosielať žiadne [požadované údaje služieb](required-service-data.md) pre tieto pripojené funkcie.
 
-Vaši používatelia sa nebudú môcť rozhodnúť zapnúť alebo vypnúť tieto pripojené funkcie, ktoré sú súčasťou služieb Office 365 ProPlus, ak sú prihlásení do služieb Office pomocou poverení organizácie, ktoré sa niekedy označujú ako pracovné alebo školské konto.
+Vaši používatelia sa nebudú môcť rozhodnúť zapnúť alebo vypnúť tieto pripojené funkcie, ktoré sú súčasťou Aplikácií Microsoft 365 pre veľké organizácie, ak budú prihlásení do balíka Office pomocou prihlasovacích údajov organizácie, ktoré sa niekedy označujú ako pracovné alebo školské konto.
 
 ### <a name="policy-setting-for-connected-experiences-that-analyze-your-content"></a>Nastavenia politiky pre pripojené funkcie na analýzu obsahu
 
@@ -114,7 +114,7 @@ Majte na pamäti, že ak vypnete nastavenie politiky *Povoliť používanie prip
 
 ### <a name="policy-setting-for-optional-connected-experiences"></a>Nastavenia politiky pre voliteľné pripojené funkcie
 
-Okrem pripojených funkcií uvedených vyššie, ktoré sú súčasťou plánu služieb Office 365 ProPlus, existujú aj nejaké voliteľné pripojené funkcie a môžete k nim umožniť používateľom prístup so svojím kontom organizácie. Napríklad funkcie LinkedInu v asistentovi životopisu vo Worde alebo funkcia 3D máp v Exceli, ktorá využíva službu Bing. Ďalšie príklady nájdete v téme [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md)
+Okrem pripojených funkcií uvedených vyššie, ktoré sú súčasťou Aplikácií Microsoft 365 pre veľké organizácie, existujú aj voliteľné pripojené funkcie a používateľom k nim môžete umožniť prístup prostredníctvom konta organizácie. Napríklad funkcie LinkedInu v asistentovi životopisu vo Worde alebo funkcia 3D máp v Exceli, ktorá využíva službu Bing. Ďalšie príklady nájdete v téme [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md)
 
 Tieto pripojené funkcie sú iné, pretože sa na ne nevzťahuje komerčná zmluva vašej spoločnosti so spoločnosťou Microsoft. Voliteľné pripojené funkcie ponúka priamo spoločnosť Microsoft a riadia sa [zmluvou o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement), nie [podmienkami poskytovania online služieb](https://www.microsoft.com/licensing/product-licensing/products). V niektorých prípadoch sa prostredníctvom týchto voliteľných funkcií poskytujú obsah alebo funkcie tretích strán a môžu sa na ne vzťahovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md).
 
@@ -138,7 +138,7 @@ Je tu však jedna výnimka. Nastavenie politiky *Povoliť používanie dodatočn
 
 ### <a name="policy-setting-for-most-connected-experiences"></a>Nastavenia politiky pre väčšinu pripojených funkcií
 
-Pomocou nastavenia politiky *Povoliť používanie pripojených funkcií v Office* môžete určiť, či bude väčšina pripojených funkcií dostupných v službách Office 365 ProPlus k dispozícii vašim používateľom. Ak vypnete toto nastavenie politiky, tieto typy pripojených funkcií nebudú k dispozícii pre vašich používateľov:
+Pomocou nastavenia politiky *Povoliť používanie pripojených funkcií v Office* môžete určiť, či budú mať vaši používatelia k dispozícii väčšinu pripojených funkcií dostupných v Aplikáciách Microsoft 365 pre veľké organizácie. Ak vypnete toto nastavenie politiky, tieto typy pripojených funkcií nebudú k dispozícii pre vašich používateľov:
 
 - Funkcie na analýzu obsahu
 - Funkcie na sťahovanie online obsahu
@@ -150,13 +150,13 @@ Aj keď vypnete toto nastavenie politiky, niektoré funkcie balíka Office zosta
 
 ## <a name="existing-policy-settings-that-are-replaced-by-new-policy-settings"></a>Existujúce nastavenia politiky, ktoré nahrádzajú nové nastavenia politiky
 
-Od verzie 1904 sa dve existujúce nastavenia politiky už nevzťahujú na služby Office 365 ProPlus. Tieto nové nastavenia politiky sú:
+Od verzie 1904 sa dve existujúce nastavenia politiky už nevzťahujú na Aplikácie Microsoft 365 pre veľké organizácie. Tieto nové nastavenia politiky sú:
 
 - **Send personal information** (Odosielať osobné informácie), ktoré sa nachádza v časti User Configuration (Konfigurácia používateľa)\\Policies (Politiky)\\Administrative Templates (Nástroje na správu)\\Microsoft Office 2016\\Privacy (Ochrana osobných údajov)\\Trust Center (Centrum dôveryhodnosti).
 
 - **Online Content Options** (Možnosti online obsahu), ktoré sa nachádza v časti User Configuration (Konfigurácia používateľa)\\Policies (Politiky)\\Administrative Templates (Nástroje na správu)\\Microsoft Office 2016\\Tools (Nástroje) | Options (Možnosti) | General (Všeobecné) | Service Options... (Možnosti služieb...)\\Online Content (Online obsah).
 
-Od verzie 1904 nebude mať nakonfigurovanie týchto dvoch existujúcich nastavení politiky žiaden vplyv na služby Office 365 ProPlus. Tieto nastavenia sa už neuplatňujú, pretože ich nahrádzajú tieto nové nastavenia politiky:
+Od verzie 1904 nebude mať nakonfigurovanie týchto dvoch existujúcich nastavení politiky žiaden vplyv na Aplikácie Microsoft 365 pre veľké organizácie. Tieto nastavenia sa už neuplatňujú, pretože ich nahrádzajú tieto nové nastavenia politiky:
 
 - Povoliť používanie pripojených funkcií na analýzu obsahu v Office
 - Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office
@@ -183,7 +183,7 @@ Vo všeobecnosti platí, že ak je jedno nastavenie politiky nakonfigurované na
 
 ## <a name="privacy-related-changes-to-the-office-ui"></a>Zmeny používateľského rozhrania balíka Office týkajúce sa ochrany osobných údajov
 
-Došlo k niekoľkým zmenám používateľského rozhrania služieb Office 365 ProPlus týkajúcim sa ochrany osobných údajov, ktoré si vaši používatelia môžu všimnúť a pýtať sa na ne. Tieto zmeny sú priamym dôsledkom nových ovládacích prvkov na ochranu osobných údajov a nastavení politiky dostupných od verzie 1904.
+Došlo k niekoľkým zmenám používateľského rozhrania Aplikácií Microsoft 365 pre veľké organizácie týkajúcim sa ochrany osobných údajov, ktoré si vaši používatelia môžu všimnúť a pýtať sa na ne. Tieto zmeny sú priamym dôsledkom nových ovládacích prvkov na ochranu osobných údajov a nastavení politiky dostupných od verzie 1904.
 
 ### <a name="dialog-about-optional-connected-experiences"></a>Dialógové okno o voliteľných online funkciách
 
