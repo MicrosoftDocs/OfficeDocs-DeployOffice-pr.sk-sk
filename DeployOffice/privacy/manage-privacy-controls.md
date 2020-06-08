@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia balíka Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v Aplikáciách Microsoft 365 pre veľké organizácie (predtým Office 365 ProPlus) pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 284b9b8a2b0231f5079e34ec2b09e35dfd0d07ca
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: ca076099be15a5a4cd19ac7c99660bfe26de8eed
+ms.sourcegitcommit: edd1190877db7996206147ad1d691fd8e84f23b1
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992987"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44589043"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Použitie nastavení politiky na správu ovládacích prvkov ochrany osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
@@ -225,7 +225,7 @@ Niektorí správcovia uprednostňujú zmenu nastavení priamo v databáze Regis
 
 Ak chcete vytvoriť súbor .reg pre nastavenia ochrany osobných údajov, otvorte Poznámkový blok a skopírujte doň nasledujúce riadky. Upravte hodnoty podľa svojich potrieb a potom súbor uložte. Uistite sa, že názov súboru obsahuje príponu .reg
 
-```
+```console
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\office\16.0\common\privacy]
