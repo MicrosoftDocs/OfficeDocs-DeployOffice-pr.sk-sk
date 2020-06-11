@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus) vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: e22388cb73a539e13f67163bf0b0e949b10be349
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 134f7470354796679c9a8c69fac8dd2559302b72
+ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993121"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44663568"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
@@ -37,7 +37,7 @@ Súčasťou týchto zmien sú nové a aktualizované prvky používateľského 
 > - Tieto zmeny sa vzťahujú aj na:
 >   - Verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
 >   - Verziu 1904 alebo novšie verzie počítačových verzií Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako napríklad Project Plan 5 alebo Visio Plan 2.
-> - Tieto ovládacie prvky na ochranu osobných údajov sú zahrnuté vo verzii 1908 alebo novšej polročného kanála (pre vybraných používateľov) a polročného kanála.
+> - Tieto ovládacie prvky na ochranu osobných údajov sú zahrnuté vo verzii 1908 alebo novšej polročného kanála Enterprise (náhľad) a polročného kanála Enterprise.
 > - Tieto ovládacie prvky na ochranu osobných údajov sú k dispozícii pre verziu 2.30 a novšie verzie Excelu, OneNotu, PowerPointu a Wordu pre iOS, ako aj pre verziu 1.17 a novšie verzie Visio Viewera pre iOS.
 > - Tieto ovládacie prvky na ochranu osobných údajov sú k dispozícii pre verziu 16.0.12226.10000 a novšie verzie Excelu, PowerPointu a Wordu pre Android, ako aj pre verziu 16.0.12228.20004 a novšie verzie OneNotu pre Android.
 > - Väčšina aplikácií balíka Office pre web používa nový ovládací prvok ochrany osobných údajov pre [voliteľné online funkcie](optional-connected-experiences.md). Sú to tieto aplikácie: Excel pre web, OneNote pre web, PowerPoint pre web, Visio pre web a Word pre web. Môžete použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md) a nakonfigurovať príslušné [nastavenie politiky](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).

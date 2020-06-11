@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 33f4c32c64713e63c02db95b93fc0295e2decb62
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 74d827255ddbedb42cbe242229140d2c8eafea66
+ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992852"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44663188"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -2528,11 +2528,11 @@ Táto udalosť nahlasuje výsledok pokusu o end-to-end inštaláciu
 
 Táto udalosť nahlasuje akciu, ktorá vyvodzuje záver zo vstupu získaného pomocou udalosti CollectParameters
 
-- **BitField** – celočíselná hodnota argumentu BitField, ktorá signalizuje, či sa vyžaduje výslovný kanál inštalácie/aktualizácie (mesačný, Insiders Slow, Insiders Fast, polročný, polročný pre vybraných používateľov)
+- **BitField** – celočíselná hodnota argumentu BitField, ktorá signalizuje, či sa vyžaduje výslovný kanál inštalácie/aktualizácie. Napríklad kanál beta, aktuálny kanál (náhľad), aktuálny kanál, mesačný kanál Enterprise, polročný kanál Enterprise (náhľad) alebo polročný kanál Enterprise.
 
-- **ChannelID** – celé číslo predstavujúce hodnotu enumerácie vybratého kanála aktualizácie/inštalácie (mesačný, Insiders Slow, Insiders Fast, polročný, polročný pre vybraných používateľov, neplatný)
+- **ChannelID** – celé číslo predstavujúce hodnotu enumerácie vybratého kanála aktualizácie/inštalácie. Napríklad kanál beta, aktuálny kanál (náhľad), aktuálny kanál, mesačný kanál Enterprise, polročný kanál Enterprise (náhľad), polročný kanál Enterprise alebo neplatný.
 
-- **CMDMode** – priateľský reťazec zodpovedajúci tomu, ktorý prepínač celkového režimu sa zistil v argumentoch cmd odovzdaných do súboru exe.
+- **CMDMode** – priateľský reťazec zodpovedajúci tomu, ktorý prepínač celkového režimu sa zistil v argumentoch cmd odovzdaných do súboru exe.
 
 - **C2RClientUICulture** – kultúra klienta C2R na inštaláciu
 
@@ -2607,9 +2607,9 @@ Táto udalosť nahlasuje akciu, ktorá číta označený vstup z vloženého pod
 
 Táto udalosť nahlasuje parametre použité na inštaláciu balíka Office
 
-- **BitField** – celočíselná hodnota argumentu BitField, ktorá signalizuje, či sa vyžaduje výslovný kanál inštalácie/aktualizácie (mesačný, Insiders Slow, Insiders Fast, polročný, polročný pre vybraných používateľov)
+- **BitField** – celočíselná hodnota argumentu BitField, ktorá signalizuje, či sa vyžaduje výslovný kanál inštalácie/aktualizácie. Napríklad kanál beta, aktuálny kanál (náhľad), aktuálny kanál, mesačný kanál Enterprise, polročný kanál Enterprise (náhľad) alebo polročný kanál Enterprise.
 
-- **ChannelID** – celé číslo predstavujúce hodnotu enumerácie vybratého kanála aktualizácie/inštalácie (mesačný, Insiders Slow, Insiders Fast, polročný, polročný pre vybraných používateľov, neplatný)
+- **ChannelID** – celé číslo predstavujúce hodnotu enumerácie vybratého kanála aktualizácie/inštalácie. Napríklad kanál beta, aktuálny kanál (náhľad), aktuálny kanál, mesačný kanál Enterprise, polročný kanál Enterprise (náhľad), polročný kanál Enterprise alebo neplatný.
 
 - **CMDMode** – priateľský reťazec zodpovedajúci tomu, ktorý prepínač celkového režimu sa zistil v argumentoch cmd odovzdaných do súboru exe. Možnosti sú: autorun, configure, consumer, download, help, packager
 
