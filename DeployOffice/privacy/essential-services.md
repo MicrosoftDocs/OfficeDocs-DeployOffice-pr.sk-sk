@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 74d827255ddbedb42cbe242229140d2c8eafea66
-ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
+ms.openlocfilehash: a73cfa56d6da769e1ced46e58054e55419bb36e8
+ms.sourcegitcommit: fc906d2163687242e98fd1719055038758068424
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44663188"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800403"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -2719,13 +2719,22 @@ Táto udalosť sa zaznamená, keď sa dokončí volanie webovej služby uskutoč
 
 Zhromažďujú sa tieto polia:
 
+- **ActionDetail** – ďalšie podrobnosti pre prípad, že nastane porucha.
+   - Ak požiadavka HTTP uspeje, ActionDetail bude mať hodnotu 0.
+   - Ak pole Výsledok nie je v poriadku (t. j. hodnota nie je 0), čo znamená, že žiadosť sa neodoslala, v tomto poli sa zapíše interný kód chyby, ktorý je rovnaký ako pole Výsledok.
+   - Ak je pole Výsledok v poriadku (t. j. hodnota je 0), čo znamená, že kód odozvy HTTP > = 300, zapíše kód odozvy HTTP (napr. 404).
+
+- **Result** – príznaky číselného kódu chyby vrátené rozhraniami API volania webovej služby balíka Office. – napr. 3 by znamenalo, že sa vyskytol problém s inicializáciou hlavičiek HTTP.
+
+- **Type** – ďalšie informácie o type. V prípade inventára sú tieto informácie špecifikované typom odosielanej údajovej časti – napr. úplná alebo len zmeny. 
+
 -  **WebCallSource** – hodnota enumerácie (určená ako celé číslo), ktorá označuje doplnok Serviceability Manager  ktorý bol zdrojom volania:
    - Inventory: 0
    - Inventory Configuration: 1
    - Inventory Policy: 2
    - Inventory Network Status: 3
-
-- **Result** – príznaky číselného kódu chyby vrátené rozhraniami API volania webovej služby balíka Office.
+   - Serviceability Manager: 4
+   - Manageability: 5
 
 ### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
 
@@ -3143,6 +3152,8 @@ Táto aktivita telemetrie sleduje miesta úspechu a zlyhania pri vyhľadávaní 
 
 Zhromažďujú sa tieto polia:
 
+- **DexShouldRetry** – signalizuje, že sme narazili na problém s možnosťou opakovaného pokusu (internet a servery fungujú správne).
+
 - **GenuineTicketFailure** – označuje zlyhanie HRESULT pri pokuse o získanie originálneho tiketu/kódu Product Key Windowsu (WPK) zariadenia.
 
 - **PinValidationFailure** – označuje dôvod zlyhania procesu overenia PIN. Možné chyby:
@@ -3177,13 +3188,27 @@ Po úspešnom získaní platného PIN pre Office naviazaného na počítač s pr
 
 Zhromažďujú sa tieto polia:
 
-- **ActionCreateAccount** – používateľ sa rozhodol vytvoriť konto.
+- **ActionActivate** – signalizuje, že používateľ klikol na tlačidlo Aktivovať.
 
-- **ActionSignIn** – používateľ sa rozhodol prihlásiť sa.
+- **ActionChangeAccount** – signalizuje, že používateľ klikol na hypertextové prepojenie Použiť iné konto.
 
-- **DialogRedemption** – zobrazuje sa dialógové okno uplatnenia AFO.
+- **ActionCreateAccount** – signalizuje, že používateľ klikol na tlačidlo Vytvoriť konto.
 
-- **DialogSignIn** – zobrazuje sa dialógové okno prihlásenia AFO.
+- **ActionSignIn** – signalizuje, že používateľ klikol na tlačidlo Prihlásiť sa.
+
+- **CurrentView** – typ dialógového okna, ktoré používateľ zatvoril.
+
+- **DialogEULA** – signalizuje, že sme zobrazili dialógové okno Prijať zmluvu EULA. 
+
+- **DialogRedemption** – signalizuje, že sme zobrazili dialógové okno uplatňovania AFO.
+
+- **DialogSignIn** – signalizuje, že sme zobrazili dialógové okno prihlásenia do AFO.
+
+- **EmptyRedemptionDefaults** – signalizuje, že sme nedokázali načítať predvolené informácie o uplatnení.
+ 
+- **GetRedemptionInfo** – signalizuje, že načítavame demografické informácie týkajúce uplatnenia PIN.
+
+- **MalformedCountryCode** – signalizuje, že kód krajiny, ktorý je potrebný na uplatnenie PIN, má nesprávny tvar.
 
 - **OExDetails** – podrobnosti o chybe, ktorú získame, keď sa zrušilo dialógové okno prihlásenia identity.
 
@@ -3199,6 +3224,14 @@ Zhromažďujú sa tieto polia:
     - 0x03113811    Používateľ zavrel dialógové okno prihlásenia/uplatnenia
     - 0x03113812    Používateľ zavrel dialógové okno súhlasu so zmluvou EULA
     - 0x03113808    Používateľ prijal zmluvu EULA
+    - 0x03113811      Používateľ zavrel dialógové okno
+    - 0x2370e3a0      Používateľ zavrel dialógové okno
+    - 0x2370e3c1      Prejsť na web pre uplatnenie PIN
+    - 0x2370e3a1      Prejsť na web pre uplatnenie PIN
+    - 0x2370e3c0      Sekvencia dialógových okien je v slučke kvôli tomu, že používateľ prechádzal dopredu a dozadu v postupnosti dialógových okien
+    - 0x2370e3a3      Používateľ klikol na možnosť „Teraz nie“, ktorou sa preskočí ponuka AFO pre túto reláciu.
+    - 0x2370e3a2      Používateľ klikol na hypertextové prepojenie „Nikdy mi to nezobrazovať“, ktorým sa zakáže ponuka AFO.
+
 
 - **UseInAppRedemption** – označuje, či k uplatneniu dochádza v aplikácii alebo či k uplatneniu získaného PIN dochádza na webe (vopred vyplnené).
 
@@ -3230,7 +3263,7 @@ Zhromažďujú sa tieto polia:
 
 - **HasConnectivity** – označuje, či používateľ má pripojenie na internet, a ak nemá, používateľ bude možno musieť využiť obdobie odkladu päť dní alebo sa môže nachádzať v režime s obmedzenou funkčnosťou
 
-- **InAppTrialPurchase** – signalizuje, či je skupina funkcií povolená na spustenie súpravy Store Purchase SDK na zaznamenanie PI a zakúpenia skúšobnej verzie zo samotnej aplikácie
+- **InAppTrialPurchase** – signalizuje, či je skupina funkcií povolená na spustenie súpravy Store Purchase SDK na zaznamenanie PI a zakúpenia skúšobnej verzie zo samotnej aplikácie *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **IsRS1OrGreater** – označuje, či verzia operačného systému je novšia ako RS1, pretože súprava SDK Store Purchase sa má používať, len ak je verzia operačného systému novšia ako RS1
 
@@ -3238,15 +3271,15 @@ Zhromažďujú sa tieto polia:
 
 - **OEMSendToWebForTrial** – signalizuje, či je skupina funkcií povolená, aby používatelia mohli prejsť na web na uplatnenie skúšobnej verzie
 
-- **StoreErrorConditions** – označuje rôzne podmienky, na základe ktorých mohla súprava SDK Store Purchase zlyhať
+- **StoreErrorConditions** – označuje rôzne podmienky, na základe ktorých mohla súprava SDK Store Purchase zlyhať *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-- **StoreErrorHResult** – označuje kód chyby vrátený zo súpravy SDK Store Purchase
+- **StoreErrorHResult** – označuje kód chyby vrátený zo súpravy SDK Store Purchase *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-- **StorePurchaseStatusResult** – označuje výsledok volania súpravy SDK Store Purchase a či používateľ uskutočnil nákup, čo pomôže pri určení, či má používateľ získať licenciu na používanie balíka Office
+- **StorePurchaseStatusResult** – označuje výsledok volania súpravy SDK Store Purchase a či používateľ uskutočnil nákup, čo pomôže pri určení, či má používateľ získať licenciu na používanie balíka Office *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **Tag** – používa sa na určenie miesta v kóde, odkiaľ sa udalosť odoslala
 
-- **UserSignedInExplicitly** – označuje, či sa používateľ výslovne prihlásil a v takom prípade používateľov presmerujeme na web na skúšobnú verziu
+- **UserSignedInExplicitly** – označuje, či sa používateľ výslovne prihlásil a v takom prípade používateľov presmerujeme na web na skúšobnú verziu *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
