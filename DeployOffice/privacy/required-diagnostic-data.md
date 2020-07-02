@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: f08061e77e5757d61108e2eb4539986b90902bef
-ms.sourcegitcommit: 06da4eff4b399367017fc68fadb13df29e577e64
+ms.openlocfilehash: d3acec4d3e2b1758ca991dd9bec0a551e9ebfab7
+ms.sourcegitcommit: 5c82507780e8f46c01c951135419546b7b9dad52
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43998841"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811485"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -624,6 +624,8 @@ Okrem toho nasledujúce polia sú spoločné pre všetky udalosti Outlooku pre i
 - **DeviceInfo.NetworkProvider** – poskytovateľ siete zariadenia (napr. Verizon)
 
 - **gcc_restrictions_enabled** – informuje o tom, či boli v aplikácii použité obmedzenia GCC, aby sme mohli zabezpečiť zákazníkom GCC bezpečné využívanie našej aplikácie
+ 
+- **multi_window_mode** – uvádza, či používateľ s iPadom používa viacero okien, aby sme mohli zistiť problémy týkajúce sa používania viacerých okien.
 
 - **office_session_id** – jedinečný identifikátor na sledovanie relácie pripojených služieb balíka Office, ktorý pomáha pri zisťovaní konkrétnych problémov s integráciou služieb balíka Office v Outlooku, ako je napríklad Word
 
@@ -659,6 +661,20 @@ Toto sú podtypy údajov v tejto kategórii:
 
 Nainštalovaný produkt a verzia a stav inštalácie.
 
+#### <a name="add_sso_account"></a>add_sso_account
+
+Týmto sa spoločnosť Microsoft upozorní na úspech alebo zlyhanie pridania konta prostredníctvom jediného prihlásenia (SSO).
+
+Zhromažďujú sa tieto polia: 
+
+- **account_type** – typ konta pridaného pomocou SSO.
+
+- **action_origin** – uvádza, odkiaľ sa vygenerovala táto udalosť. (príklad hodnoty: sso_drawer, sso_add_account, sso_add_account_prompt, sso_settings, sso_oobe).
+
+- **provider** – identifikátor softvérového balíka poskytovateľa pre jediné prihlásenie.
+
+- **state** – aktuálny stav konta (príklad hodnoty: FAILED, PENDING, ADDED atď.)
+ 
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
 Platí pre všetky aplikácie win32. Pomáha pochopiť stav procesu aktualizácie balíka Office (úspešná alebo neúspešná s podrobnosťami chyby).
@@ -1249,6 +1265,34 @@ Zhromažďujú sa tieto polia:
 
 Chybové stavy dokumentu, funkcie a doplnku, ktoré môže ohroziť zabezpečenie, vrátane pripravenosti na aktualizáciu produktu.
 
+#### <a name="office_appguard_createcontainer"></a>Office_AppGuard_CreateContainer
+
+Zhromažďujeme kódy chýb a informácie o tom, či kontajner už existoval alebo nie. Tiež zhromažďujeme kódy chýb pre udalosť resetovania pre prípad, že sa nám nepodarí vytvoriť kontajner na prvý pokus. Údaje sa použijú na určenie percentuálneho podielu relácií, v ktorých úspešne vytvoríme kontajner na spustenie aplikácií Office Application Guard. Údaje tiež umožnia spoločnosti Microsoft identifikovať a riešiť kódy chýb z vytvorenia kontajnera.
+
+Zhromažďujú sa tieto polia:
+
+- **ErrorCode1** – typ kódu chyby nastavenia kontajnera.  
+
+- **ErrorCode2** – kód chyby z vykonania vytvorenia. 
+
+- **ErrorCode3** – dodatočný kód chyby. 
+
+- **Id** – jedinečný identifikátor (GUID) pre vytvorenie kontajnera.
+
+- **ResetError** – kód chyby z pokusu o resetovanie kontajnera po neúspešnom pokuse.
+
+- **ResetErrorCode1** – typ kódu chyby nastavenia kontajnera po príkaze resetovania. 
+
+- **ResetErrorCode2** – kód chyby z vykonania vytvorenia po príkaze resetovania.
+
+- **ResetErrorCode3** – dodatočný kód chyby po príkaze resetovania.
+
+- **ResetErrorType** – typ chyby počas resetovania: vytvorenie, príprava súboru alebo spustenie.
+
+- **WarmBoot** – určuje, či kontajner už bol vytvorený alebo nie.
+
+
+
 #### <a name="officesecurityactivationfilterclsidactivated"></a>Office.Security.ActivationFilter.CLSIDActivated
 
 Sleduje, kedy sa konkrétny identifikátor triedy (Flash, Silverlight atď.) aktivuje v Office. Umožňuje sledovať vplyv blokovania ovládacích prvkov Flash, Silverlight a Shockwave na koncových používateľov.
@@ -1684,7 +1728,15 @@ Zhromažďujú sa tieto polia:
 
 - **subtab_type** – sleduje, kde používateľ vybral výsledok z ktorej karty výsledku
 
-- **top_mail_result_selected_count** – sleduje, koľkokrát si používateľ vybral poskytnuté prvé výsledky. 
+- **top_mail_result_selected_count** – sleduje, koľkokrát si používateľ vybral poskytnuté prvé výsledky.
+
+- **ui_reload_result_count** – zaznamenáva časy opätovného načítania používateľského rozhrania z dôvodu aktualizácie množiny výsledkov (počas príslušného dotazu)
+
+- **ui_reload_result_time** – zaznamenáva celkový čas strávený opätovným načítaním používateľského rozhrania z dôvodu aktualizácie množiny výsledkov (počas príslušného dotazu)
+
+- **ui_reload_status_count** – zaznamenáva časy opätovného načítania používateľského rozhrania z dôvodu aktualizácie stavu (počas príslušného dotazu)
+
+- **ui_reload_status_time** – zaznamenáva celkový čas strávený opätovným načítaním používateľského rozhrania z dôvodu aktualizácie stavu (počas príslušného dotazu)
 
 #### <a name="compose_mail_accessory"></a>compose_mail_accessory
 
@@ -3194,7 +3246,7 @@ Zhromažďujú sa tieto polia:
 
 - **AppInfo.Version** – verzia aplikácie.
 
-- **clientCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+- **clientCorrelationId** – globálne jedinečný identifikátor relácie aplikácie.
 
 - **clientType** – aplikácia, v ktorej súčasť spustená.
 
@@ -3319,6 +3371,118 @@ Zhromažďujú sa tieto polia:
 
 - **version** – verzia klienta informačného kanála.
 
+
+#### <a name="officefeedbacksurveyfloodgateclientsurveytracked"></a>Office.Feedback.Survey.FloodgateClient.SurveyTracked
+
+Táto udalosť sleduje, keď zariadenie oprávnené na prieskum spustí aplikáciu. Používa sa na posúdenie stavu procesu výberu používateľov prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia:
+
+- **ExpirationTimeUTC** – dátum a čas uplynutia platnosti prieskumu
+
+- **SurveyName** – zobrazený názov prieskumu
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **UniqueId** – ID na identifikovanie jednotlivých položiek telemetrie
+
+#### <a name="officefeedbacksurveyfloodgateclienttriggermet"></a>Office.Feedback.Survey.FloodgateClient.TriggerMet
+
+Táto udalosť sleduje, keď zariadenie splnilo kritériá na zobrazenie prieskumu. Používa sa na posúdenie stavu procesu spustenia prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia:
+
+- **ExpirationTimeUTC** – dátum a čas uplynutia platnosti prieskumu
+
+- **SurveyName** – zobrazený názov prieskumu
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **UniqueId** – ID na identifikovanie jednotlivých položiek telemetrie
+
+#### <a name="officefeedbacksurveyfloodgateclientuserselected"></a>Office.Feedback.Survey.FloodgateClient.UserSelected
+
+Táto udalosť sleduje, keď zariadenie bolo vybraté na prieskum. Používa sa na posúdenie stavu procesu výberu používateľov prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia:
+
+- **ExpirationTimeUTC** – dátum a čas uplynutia platnosti prieskumu
+
+- **SurveyName** – zobrazený názov prieskumu
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **UniqueId** – ID na identifikovanie jednotlivých položiek telemetrie
+
+#### <a name="officefeedbacksurveyuiandroid"></a>Office.Feedback.Survey.UI.Android
+
+Táto udalosť v zariadení s Androidom sleduje, keď používateľ v zariadení má zobrazenú výzvu na prieskum a používateľské rozhranie prieskumu. Používa sa na posúdenie stavu funkcie prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia:
+
+- **ExpirationTimeUTC** – dátum a čas uplynutia platnosti prieskumu
+
+- **SurveyName** – zobrazený názov prieskumu
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **UniqueId** – ID na identifikovanie jednotlivých položiek telemetrie
+
+#### <a name="officefeedbacksurveyuiios"></a>Office.Feedback.Survey.UI.IOS
+
+Táto udalosť v zariadení s iOS sleduje, keď používateľ v zariadení má zobrazenú výzvu na prieskum a používateľské rozhranie prieskumu. Používa sa na posúdenie stavu funkcie prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia:
+
+- **ExpirationTimeUTC** – dátum a čas uplynutia platnosti prieskumu
+
+- **SurveyName** – zobrazený názov prieskumu
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **UniqueId** – ID na identifikovanie jednotlivých položiek telemetrie
+
+#### <a name="officefeedbacksurveyuimac"></a>Office.Feedback.Survey.UI.Mac
+
+Táto udalosť v Macu sleduje, keď používateľ v zariadení má zobrazenú výzvu na prieskum a používateľské rozhranie prieskumu. Používa sa na posúdenie stavu funkcie prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia:
+
+- **ExpirationTimeUTC** – dátum a čas uplynutia platnosti prieskumu
+
+- **SurveyName** – zobrazený názov prieskumu
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **UniqueId** – ID na identifikovanie jednotlivých položiek telemetrie
+
+#### <a name="officefeedbacksurveyuiwin32"></a>Office.Feedback.Survey.UI.Win32
+
+Táto udalosť v zariadení s Windowsom sleduje, keď používateľ v zariadení má zobrazenú výzvu na prieskum a používateľské rozhranie prieskumu. Používa sa na posúdenie stavu funkcie prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia:
+
+- **ExpirationTimeUTC** – dátum a čas uplynutia platnosti prieskumu
+
+- **SurveyName** – zobrazený názov prieskumu
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **UniqueId** – ID na identifikovanie jednotlivých položiek telemetrie
+
+#### <a name="officefeedbacksurveyuiwin32toast"></a>Office.Feedback.Survey.UI.Win32.Toast
+
+Táto udalosť sleduje, keď je zobrazená výzva na prieskum. Používa sa na posúdenie stavu procesu výzvy na prieskum, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia:
+
+- **ExpirationTimeUTC** – dátum a čas uplynutia platnosti prieskumu
+
+- **SurveyName** – zobrazený názov prieskumu
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **UniqueId** – ID na identifikovanie jednotlivých položiek telemetrie
 
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
@@ -4011,7 +4175,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="office_firstrun_apple_inapppurchasesattempted"></a>Office_FirstRun_Apple_InAppPurchasesAttempted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu nákupu aplikácie v rámci aplikácie. Zhromažďujeme údaje na sledovanie pokusov o nákupy v aplikácii a typu jednotky SKU, ktorá sa zakupuje (mesačné/ročné/domáce/osobné).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu nákupu aplikácie v rámci aplikácie. Zhromažďujeme údaje na sledovanie pokusov o nákupy v aplikácii a typu jednotky SKU, ktorá sa zakupuje (mesačné/ročné/domáce/osobné).
 
 Zhromažďujú sa tieto polia:
 
@@ -4060,6 +4224,81 @@ Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámc
 Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunPanelName** – Názov panela, z ktorého skäsenosť začala.
+
+#### <a name="officelivepersonacarduseractionsclosedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
+
+Táto udalosť sa zaznamená, keď používateľ zatvorí rozbalenú kartu osoby. Používa sa na pozorovanie kritických anomálií v mierach zlyhania zavretia funkcie Live Persona Card.
+
+Zhromažďujú sa tieto polia:
+
+- **AppInfo_Id** – názov hostiteľskej aplikácie.
+
+- **AppInfo_Version** – verzia hostiteľskej aplikácie.
+
+- **Data.appContextId** – náhodne vygenerovaný identifikátor používaný na identifikáciu rôznych kont v tej istej aplikácii.
+
+- **Data.AppInfo.Name** – názov používanej služby (karta profilu)
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor karty osoby
+
+- **Data.cardPersonaCorrelationId** – globálne jedinečný identifikátor konkrétnej osoby zobrazenej na karte
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+
+- **Data.clientType** – typ zariadenia, v ktorom je aplikácia spustená, napr. Outlook_Win32
+
+- **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
+
+- **Data.exportName** – človekom čitateľný názov akcie používateľa, napr. „ClosedExpandedPersonaCard“
+
+- **Data.exportType** – kategória udalosti pre požiadavku na export GDPR
+
+- **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
+
+- **Data.OTelJS.Version** – verzia zapisovača OTel
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne:
+
+   - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie 
+   - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
+   - **ClientTimeStamp** – čas výskytu udalosti v čase Unix Epoch
+   - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie. 
+   - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
+   - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
+   - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
+
+- **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
+
+- **Data.tenantAadObjectId** – nájomník, ku ktorému je priradené predplatné používateľa. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť.
+
+- **Data.userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft (duplikát poľa Data.UserInfo.Id).
+
+- **Data.UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft. 
+
+- **Data.UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **Data.UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.UserPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft (duplikát poľa Data.UserInfo.MsaId).
+
+- **Data.version** – verzia služby (karta profilu).
+
+- **DeviceInfo_Id** – globálne jedinečný identifikátor zariadenia pre zariadenie
+
+- **DeviceInfo_Make** – značka operačného systému.
+
+- **DeviceInfo_Model** – model zariadenia.
+
+- **DeviceInfo.NetworkCost** – označuje typ nákladov na sieť (účtované podľa objemu údajov, účtované podľa objemu údajov nad limit atď.)
+
+- **DeviceInfo_OsName** – názov operačného systému zariadenia.
+
+- **DeviceInfo_OsVersion** – verzia operačného systému.
+
+- **PipelineInfo.ClientCountry** – kód krajiny odosielateľa, na základe neočistenej IP adresy klienta
+
 
 #### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
 
@@ -6796,6 +7035,14 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ViewKind** – typ zobrazenia Wordu
 
+#### <a name="onenoteappnavigationratingreminderdialogshown"></a>OneNote.App.Navigation.RatingReminderDialogShown
+
+Kritický signál, ktorý sa používa na meranie efektivity logiky spúšťača pre pripomenutie hodnotenia. Toto dialógové okno sa zobrazí, keď používateľ splnil všetky podmienky na zobrazenie pripomenutia hodnotenia (počet aktívnych dní, v minulosti hodnotil alebo nie atď.). Používa sa na zaručenie logiky spúšťača pre pripomenutie hodnotenia. Ak sa používateľom zobrazí toto dialógové okno, poskytne nám spôsoby, ako získať pripomienky od zákazníkov v správnom čase a zlepšiť stav aplikácie.
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
 #### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(predchádzajúci názov)*, Office.OneNote.Android.Canvas.PageOpened
 
 Signál, ktorý sa používa na zaznamenanie, keď sa otvorí strana.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených pri otvorení strany vo OneNote.
@@ -6999,6 +7246,8 @@ Zhromažďujú sa tieto polia:
 - **enabled_state** – označuje, či sú správne nakonfigurované nastavenia automatických odpovedí, ukladania kontaktov a blokovania externých obrázkov  
 
 - **enabled_state** – označuje, či je povolený stav súvisiaci s akciou
+
+- **in_app_language** – vybratý jazyk v aplikácii, typ reťazca (predvolený, en-US, fa, ru atď.)  
 
 - **notification_state** – označuje, o aký počet štítkov používateľ požiadal, t. j. žiadne štítky, iba prioritná doručená pošta atď.,
 
@@ -7717,7 +7966,7 @@ Zhromažďujú sa tieto polia:
 
 - **UsesSharedRuntime** – označuje, či aplikácia používa sharedRuntime alebo nie.
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete"></a>OneNote.App.AppBootComplete *(predchádzajúci názov)*, Office.OneNote.Android.App.AppBootComplete 
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(predchádzajúci názov)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
 Kritický signál, ktorý sa používa na zaistenie, že noví individuálni používatelia (konto Microsoft) môžu úspešne spustiť a používať OneNote po prvýkrát.  Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby.  Ak používatelia nemôžu spustiť aplikáciu po prvýkrát, môže to vyvolať incident s vysokou závažnosťou.
 
