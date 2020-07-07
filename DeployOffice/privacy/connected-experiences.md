@@ -13,12 +13,11 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom balíka Office informácie o online funkciách v Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: 4ec1ffef4b8bc0e82a7a1ce96061a9c715636bea
-ms.sourcegitcommit: 7adeab733277e6ed3eafddcc1d4df20e2743a752
-ms.translationtype: HT
+ms.openlocfilehash: ed42864d90c0ec8f50e28248720ffc8c2f569713
+ms.sourcegitcommit: 85c6ac9351a9305b774fb2a63cb895f952b433d6
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44930430"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048568"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -37,7 +36,7 @@ Office pozostáva z klientskych softvérových aplikácií a pripojených funkci
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Online funkcie na analýzu obsahu
 
-Online funkcie na analýzu obsahu sú funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Príkladmi sú PowerPoint Designer alebo editor vo Worde.
+Online funkcie na analýzu obsahu sú funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Napríklad PowerPoint Designer alebo Translator.
 
 V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu a tiež prepojenia na ďalšie informácie o nich.
 
@@ -47,7 +46,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | Automatický alternatívny text   | [Všetko, čo potrebujete na písanie efektívneho alternatívneho textu](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Typy údajov                  | [Typy údajov Exceli: Akcie a Geografia](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktovanie  | [Diktovanie pomocou hlasu v balíku Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-| Editor    | [Editor je váš asistent pre písanie](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
+|Editor|[Editor je váš asistent pre písanie](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Návrhy     | [Návrhy v Exceli](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Konvertovanie písania rukou na text, na tvar, na matematický výraz | [Konvertovanie textu písaného rukou na tvary, text alebo matematický výraz v PowerPointe pre Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Vloženie údajov z obrázka| [Vloženie údajov z obrázka](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -60,6 +59,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | Publikovanie do služby Microsoft Stream    | [Zmena prezentácie na video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | *Zdroje informácií*\*   | [Pridanie alebo zmena služieb zdrojov informácií](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Skenovanie vizitky|  [Pridanie kontaktov v Outlooku pre Android skenovaním alebo ťuknutím](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+|*Kontrola podobnosti*\* (funkcia editora)|[Skontrolujte podobnosť vášho dokumentu s online zdrojmi](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Inteligentné vyhľadávanie*\*   | [Získajte prehľad o tom, na čom pracujete, s inteligentným vyhľadávaním](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Navrhované odpovede | [Čo sú navrhované odpovede?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Ťuknutie pre Word (pridanie zo súborov)   | [Vyhľadanie a použitie požadovaného obsahu v požadovanom čase bez nutnosti opustiť Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
