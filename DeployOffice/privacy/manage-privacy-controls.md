@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia balíka Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v Aplikáciách Microsoft 365 pre veľké organizácie (predtým Office 365 ProPlus) pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: ca076099be15a5a4cd19ac7c99660bfe26de8eed
-ms.sourcegitcommit: edd1190877db7996206147ad1d691fd8e84f23b1
+ms.openlocfilehash: 5f9cafff0f7baf12ed8f0f57d7561bc356fbb98b
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44589043"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087224"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Použitie nastavení politiky na správu ovládacích prvkov ochrany osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
@@ -40,7 +40,7 @@ Päť nových nastavení politiky:
 - Povoliť používanie dodatočných voliteľných pripojených funkcií v Office
 - Povoliť používanie pripojených funkcií v Office
 
-Tieto nastavenia politiky je možné implementovať pomocou buď skupinovej politiky, alebo [cloudovej služby politiky pre Office](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Ak používate skupinovú politiku, musíte si z [centra sťahovania softvéru Microsoft](https://www.microsoft.com/download/details.aspx?id=49030) stiahnuť najnovšiu verziu súborov šablón na správu (ADMX/ADML).
+Tieto nastavenia politiky je možné implementovať pomocou buď skupinovej politiky, alebo [cloudovej služby politiky pre Office](../overview-office-client-policy-service.md). Ak používate skupinovú politiku, musíte si z [centra sťahovania softvéru Microsoft](https://www.microsoft.com/download/details.aspx?id=49030) stiahnuť najnovšiu verziu súborov šablón na správu (ADMX/ADML).
 
 > [!NOTE]
 > - Ďalšie informácie o spravovaní ovládacích prvkov na ochranu osobných údajov pre Office pre Mac nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
@@ -98,7 +98,7 @@ Vaši používatelia sa nebudú môcť rozhodnúť zapnúť alebo vypnúť tieto
 
 ### <a name="policy-setting-for-connected-experiences-that-analyze-your-content"></a>Nastavenia politiky pre pripojené funkcie na analýzu obsahu
 
-Toto sú funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Príkladmi sú PowerPoint Designer alebo editor vo Worde. Zoznam týchto pripojených funkcií nájdete v téme [Pripojené funkcie v Office](connected-experiences.md).
+Toto sú funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Napríklad PowerPoint Designer alebo Translator. Zoznam týchto online funkcií nájdete v téme [Online funkcie v Office](connected-experiences.md).
 
 Pomocou nastavenia politiky *Povoliť používanie pripojených funkcií na analýzu obsahu v Office* môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto pripojené funkcie budú k dispozícii pre vašich používateľov.
 

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus) vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: 134f7470354796679c9a8c69fac8dd2559302b72
-ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
+ms.openlocfilehash: f5a957d57a7c8f95503091f456aef5a9c1e0fca7
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44663568"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087716"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
@@ -85,7 +85,7 @@ Aplikácie Microsoft 365 pre veľké organizácie pozostávajú z klientskych so
 
 Chápeme, že chcete mať možnosť rozhodnúť sa, ktoré typy pripojených funkcií majú vaši používatelia k dispozícii pri práci s aplikáciami balíka Office. Ako správca organizácie máte k dispozícii nastavenia politiky, ktoré umožňujú určiť, či nasledovné typy pripojených funkcií budú k dispozícii pre vašich používateľov:
 
-- **Funkcie na analýzu obsahu** Funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Príkladmi sú PowerPoint Designer alebo editor vo Worde.
+- **Funkcie na analýzu obsahu** Funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Napríklad PowerPoint Designer alebo Translator.
 
 - **Funkcie na sťahovanie online obsahu** Funkcie, ktoré umožňujú vyhľadať a sťahovať online obsah vrátane šablón, obrázkov, 3D modelov, videí a referenčných materiálov na vylepšenie vašich dokumentov. Napríklad šablóny balíka Office alebo funkcia Rýchly štart v PowerPointe.
 
