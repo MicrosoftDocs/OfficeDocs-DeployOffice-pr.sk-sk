@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: ecfe38bc6dbedd57ff1eb2ab4851c8e4dddab730
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: d5de9a7a1eb2f2a825feb28798e8f0d195476696
+ms.sourcegitcommit: 9e44d65a5d59339df7d6a2f1116462c0fb774f83
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993251"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068730"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -39,7 +39,7 @@ Je dôležité vedieť, že na tieto voliteľné cloudové služby sa nevzťahuj
 
 ## <a name="experiences-that-rely-on-bing"></a>Funkcie, ktoré využívajú službu Bing
 
-Niektoré cloudové služby využívajú službu Microsoft Bing. Microsoft Bing je samostatná služba mimo Aplikácií Microsoft 365 pre veľké organizácie a spoločnosť Microsoft ju riadi nezávisle od Aplikácií Microsoft 365 pre veľké organizácie. V aplikáciách balíka Office vrátane Aplikácií Microsoft 365 pre veľké organizácie ju využívajú tieto funkcie: [3D mapy](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartogramy](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Vkladanie online obrázkov](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Vkladanie online 3D modelov](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Rýchly štart v PowerPointe](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Vyhľadávač](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) a [Inteligentné vyhľadávanie](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+Niektoré cloudové služby využívajú službu Microsoft Bing. Microsoft Bing je samostatná služba mimo Aplikácií Microsoft 365 pre veľké organizácie a spoločnosť Microsoft ju riadi nezávisle od Aplikácií Microsoft 365 pre veľké organizácie. V aplikáciách balíka Office vrátane Aplikácií Microsoft 365 pre veľké organizácie ju využívajú tieto funkcie: [3D mapy](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartogramy](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Vkladanie online obrázkov](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Vkladanie online 3D modelov](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Rýchly štart v PowerPointe](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Vyhľadávač](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f), [Inteligentné vyhľadávanie](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) a [Kontrola podobnosti](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) (funkcia Editora).
 
 Funkcie využívajúce Bing v Outlooku pre iOS a Android:
 
