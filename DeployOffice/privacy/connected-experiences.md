@@ -13,11 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom balíka Office informácie o online funkciách v Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: ed42864d90c0ec8f50e28248720ffc8c2f569713
-ms.sourcegitcommit: 85c6ac9351a9305b774fb2a63cb895f952b433d6
+ms.openlocfilehash: 8910b00d5201e70131eb1eb0e696d9ce048eabad
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048568"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087156"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -46,7 +47,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | Automatický alternatívny text   | [Všetko, čo potrebujete na písanie efektívneho alternatívneho textu](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Typy údajov                  | [Typy údajov Exceli: Akcie a Geografia](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktovanie  | [Diktovanie pomocou hlasu v balíku Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-|Editor|[Editor je váš asistent pre písanie](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
+|Editor<sup>1</sup> |[Editor je váš asistent pre písanie](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Návrhy     | [Návrhy v Exceli](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Konvertovanie písania rukou na text, na tvar, na matematický výraz | [Konvertovanie textu písaného rukou na tvary, text alebo matematický výraz v PowerPointe pre Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Vloženie údajov z obrázka| [Vloženie údajov z obrázka](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -65,6 +66,8 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | Ťuknutie pre Word (pridanie zo súborov)   | [Vyhľadanie a použitie požadovaného obsahu v požadovanom čase bez nutnosti opustiť Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Transformácia na webovú stránku   | [Skonvertovanie wordového dokumentu na webovú stránku Swaya](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Preklad textu do iného jazyka](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
+
+<sup>1</sup> Základné funkcie Editora zostávajú dostupné, aj keď nie ste pripojení na internet. Tieto isté základné funkcie zostávajú k dispozícii aj v prípade, že sa rozhodnete zakázať používanie online funkcií na analýzu obsahu. V oboch prípadoch sa spoločnosti Microsoft neodosielajú žiadne údaje o používaní Editora.
 
 > [!NOTE]
 > \*Keď sú používatelia prihlásení pomocou pracovného alebo školského konta, online funkcie uvedené vyššie kurzívou sú voliteľné a poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [prehlásenia o ochrane osobných údajov](https://privacy.microsoft.com/), pričom sa môžu uplatňovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md). Ak ste správca, tieto online funkcie je možné spravovať pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie alebo pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných online funkcií v Office*.
@@ -95,6 +98,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na sťahovanie onli
 | *Vyhľadávač*\*    | [Vyhľadanie informácií do výskumnej práce vo Worde](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f). |
 | Chcem zistiť    | [Zrýchlenie práce s funkciou Chcem zistiť](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Šablóny  | [Stiahnutie bezplatných, vopred vytvorených šablón](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
+|*Odhady časov cestovania na karte Nadchádzajúce*\*|Ak sa rozhodnete povoliť Outlooku pre iOS a Android prístup k vašej polohe, na karte [Nadchádzajúce](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) v hornej časti priečinka doručenej pošty sa zobrazí odhad času cestovania na ďalšiu udalosť.|
 | *Panel počasia*\* (Outlook)| [Zmena mesta, v ktorom sa bude v kalendári na paneli počasia sledovať počasie](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]

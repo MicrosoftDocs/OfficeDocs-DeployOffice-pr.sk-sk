@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: V tomto článku správcovia služieb Office získajú informácie o postupoch spravovania nastavení ochrany osobných údajov v zariadeniach so systémom iOS.
 hideEdit: true
-ms.openlocfilehash: 40fc1ec1f5b2abc587e1b5224dc7fe0a5a656f33
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 6465a5b5e2103070170bdec8cd64b8bc044d46a3
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992121"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087862"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb
 
@@ -33,7 +33,9 @@ K dispozícii sú nové nastavenia predvolieb pre Office v zariadeniach so syst
 
 Tieto nastavenia predvolieb sa týkajú aplikácií:
 - Word pre iOS, Excel pre iOS a PowerPoint pre iOS verzie 2.30 a novšej.
+- Outlook pre iOS verzie 4.30.0 a novšej.
 - OneNote pre iOS verzie 16.30 a novšej.
+- OneDrive pre iOS verzie 11.19.11 a novšej.
 - Visio Viewer pre iOS verzie 1.17 a novšej.
 
 > [!NOTE]
@@ -59,7 +61,9 @@ Po odoslaní do zariadenia sa konfiguračný slovník bude nachádzať v kľúč
 > - Konfigurácia úrovne diagnostických údajov o klientskom softvéri, ktoré služby Office odosielajú spoločnosti Microsoft
 > - Povoliť používanie pripojených funkcií na analýzu obsahu v Office
 > - Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office
-> - Povoliť používanie dodatočných voliteľných pripojených funkcií v Office
+> - Povoliť používanie dodatočných voliteľných pripojených funkcií v Office
+>
+> Nastavenia ochrany osobných údajov pre Outlook pre iOS a OneDrive pre iOS je možné nakonfigurovať iba pomocou cloudovej služby politiky pre Office.
 >
 > Ďalšie informácie o použití cloudovej služby politiky pre Office nájdete v téme [Prehľad cloudovej služby politiky pre Office](../overview-office-cloud-policy-service.md).
 
