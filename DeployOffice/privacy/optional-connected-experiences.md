@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: d5de9a7a1eb2f2a825feb28798e8f0d195476696
-ms.sourcegitcommit: 9e44d65a5d59339df7d6a2f1116462c0fb774f83
+ms.openlocfilehash: 729329eeaa301cbb7bda61c0ec8d08ec9124729f
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068730"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087816"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -45,7 +45,7 @@ Funkcie využívajúce Bing v Outlooku pre iOS a Android:
 
 - **Návrhy polohy:**   Keď do položky kalendára pridáte verejné miesto s adresou, do poľa Miesto sa zahrnie celá adresa.
 - **Zaujímavé kalendáre:**   Môžete sa [prihlásiť na odber](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) kalendárov o svojich obľúbených športových tímoch alebo televíznych seriáloch.
-
+- **Odhady časov cestovania na karte Nadchádzajúce:** Vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). V Outlooku pre Android táto možnosť vyžaduje, aby Mapy Bing poskytli odhadované časy cestovania.
 
  Licencia na tieto funkcie využívajúce Bing sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a vzťahuje sa na ne [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v Aplikáciách Microsoft 365 pre veľké organizácie, sa odošlú do služby Microsoft Bing. Nie sú vám prepojené organizáciou Bing.
 
@@ -83,6 +83,10 @@ Funkcia [Zdroje informácií](https://support.office.com/article/b862efc5-9a7b-4
 
 > [!NOTE]
 > Funkcie Zdroje informácií (po anglicky Research) a Vyhľadávač (po anglicky Researcher) nie sú to isté. V novších verziách balíka Office je okrem funkcie Zdroje informácií k dispozícii aj funkcia Vyhľadávač. Vyhľadávač je novšia funkcia, ktorá využíva Bing, a je uvedená vyššie v časti [Funkcie, ktoré využívajú službu Bing](#experiences-that-rely-on-bing).
+
+### <a name="travel-time-in-up-next-in-outlook-for-ios"></a>Čas cestovania na karte Nadchádzajúce pre iOS
+
+Pre iOS platí, že vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Táto funkcia vyžaduje, aby služba Apple Maps od spoločnosti Apple poskytla odhadovaný čas cestovania. Platia [podmienky používania](https://www.apple.com/legal/internet-services/maps/) pre službu Apple Maps a [zásady ochrany osobných údajov](https://www.apple.com/legal/privacy) pre spoločnosť Apple.
 
 ### <a name="weather-bar-in-outlook"></a>Panel počasia v Outlooku
 
