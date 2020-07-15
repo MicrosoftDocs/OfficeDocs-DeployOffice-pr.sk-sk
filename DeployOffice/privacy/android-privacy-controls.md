@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia služieb Office informácie o postupoch spravovania nastavení ochrany osobných údajov pre Office v zariadeniach s Androidom.
 hideEdit: true
-ms.openlocfilehash: 38d68df0d3a12e6858568906a60973bad9d76709
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: 6086ecd1b2cd55bbf6cb4577879714f1d20a2f93
+ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
 ms.translationtype: HT
 ms.contentlocale: sk-SK
 ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087898"
+ms.locfileid: "45092133"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>Spravovanie nastavení ochrany osobných údajov pre Office v zariadeniach s Androidom pomocou nastavení politiky
 
@@ -35,11 +35,7 @@ Tieto nastavenia politiky sa týkajú nasledujúcich aplikácií:
 - Outlook pre Android verzie 4.1.71 a novšej.
 - OneNote pre Android verzie 16.0.12228.20004 a novšej.
 - OneDrive pre Android verzie 5.47 a novšej.
-
-> [!NOTE]
->- Tieto nastavenia politiky sa vzťahujú aj na verziu 16.0.12130.20272 a novšiu verejného náhľadu [mobilnej aplikácie Office](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/Introducing-Office-Your-new-go-to-mobile-app-for-getting-work/ba-p/977172) pre Android.
->- Pri používaní verejného náhľadu mobilnej aplikácie Office pre Android sa budú zhromažďovať denníky zlyhaní, ktoré môžu v niektorých prípadoch zahŕňať obsah.
->- Ak máte obavy v súvislosti so zhromažďovaním údajov z verejného náhľadu mobilnej aplikácie Office pre Android, mali by ste informovať používateľov, aby sa do aplikácie neprihlasovali pomocou svojich pracovných ani školských kont.
+- Aplikácia Office pre Android verzie 16.0.12430.20254 a novšej.
 
 ## <a name="policy-settings-available-for-office-on-android-devices"></a>Nastavenia politiky dostupné pre Office v zariadeniach s Androidom
 
