@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: a73cfa56d6da769e1ced46e58054e55419bb36e8
-ms.sourcegitcommit: fc906d2163687242e98fd1719055038758068424
+ms.openlocfilehash: f9010fcc04540073dde219dc765e1811aa8a42e5
+ms.sourcegitcommit: 7b24028ab20d4f43dbca85cea2617398b36a3180
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800403"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117215"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -2851,11 +2851,13 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingfullvalidation"></a>Office.Licensing.FullValidation 
 
-Táto udalosť sa zhromažďuje v každej relácii, ktorá nahlasuje licenčný stav zariadenia, a hlási chyby, ktoré sa používateľovi zobrazujú a pre ktoré nemôže používať aplikáciu. Táto udalosť označuje, či je stav zariadenia používateľa v poriadku alebo nie. Pre túto udalosť je vytvorené zisťovanie anomálie na rozpoznávanie, či regresia spôsobuje nevhodné správanie používateľa. Je to dôležité aj pri zisťovaní problémov používateľa a na monitorovanie stavu systému.
+Táto udalosť sa zhromažďuje v každej relácii, ktorá nahlasuje licenčný stav zariadenia, a hlási chyby, ktoré sa používateľovi zobrazujú a pre ktoré nemôže používať aplikáciu. Táto udalosť označuje, či je stav zariadenia používateľa v poriadku alebo nie. Pre túto udalosť je vytvorené zisťovanie anomálie na rozpoznávanie, či mechanizmus regresie alebo aktivácie spôsobuje nevhodné správanie používateľa. Je to dôležité aj pri zisťovaní problémov používateľa a na monitorovanie stavu systému.
 
 Zhromažďujú sa tieto polia:
 
   - **ACID** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu 
+  
+  - **ActivationAttributes** – Typ mechanizmu aktivácie, ktorý používateľ používa.
 
   - **IsSessionLicensing** – či je v súčasnosti spustený režim aktivácie v zdieľanom počítači alebo nie 
 
@@ -10458,6 +10460,27 @@ Zhromažďujú sa tieto polia:
 
  - **Data_EventId** – Kód označujúci preferenciu zhromažďovania diagnostických údajov vybratú používateľom.
 
+### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
+
+Udalosť sa spustí pri správnom ukončení klientskych aplikácií Office, ako je napríklad Word, Excel, PowerPoint alebo Outlook. Udalosť Graceful Exit používame na meranie stavu klientskych produktov Office. Má byť dôležitým signálom, na základe ktorého môžu technici zaoberajúci sa produktmi Office posudzovať stabilitu produktov.
+
+Zhromažďujú sa tieto polia:
+
+- **AppBuild** – identifikátor verzie zostavy ovplyvneného procesu.
+- **AppMajor** – identifikátor hlavnej verzie ovplyvneného procesu.
+- **AppMinor** – identifikátor vedľajšej verzie ovplyvneného procesu.
+- **AppRevision** – identifikátor verzie revízie ovplyvneného procesu.
+- **BootCompleted** – označuje, či proces balíka Office dokončil spúšťanie.
+- **DetectionTime** – čas zistenia neočakávaného ukončenia.
+- **EcsETag** – experimentálny identifikátor procesu.
+- **HasEdit** – označuje, či počas procesu balíka Office dochádzalo k úprave dokumentu.
+- **HasOpen** – označuje, či počas procesu balíka Office bol otvorený dokument.
+- **InstallMethod** – označuje, či bola aktuálna zostava balíka Office inovovaná zo staršej zostavy, vrátená na staršiu zostavu alebo nanovo nainštalovaná.
+- **OfficeUILang** – jazyk procesu balíka Office.
+- **PreviousBuild** – predchádzajúca nainštalovaná verzia zostavy.
+- **SafeMode** – označuje, či bol proces balíka Office spustený v núdzovom režime.
+- **SessionId** – jedinečný identifikátor procesu.
+- **SessionInitTime** – čas začatia ovplyvneného procesu.
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 
