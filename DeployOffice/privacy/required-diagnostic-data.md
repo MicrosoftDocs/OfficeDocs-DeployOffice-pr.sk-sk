@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: d3acec4d3e2b1758ca991dd9bec0a551e9ebfab7
-ms.sourcegitcommit: 5c82507780e8f46c01c951135419546b7b9dad52
+ms.openlocfilehash: 6638ac773e4b39f17648161421548f445d2194e7
+ms.sourcegitcommit: 0654f421d001168605f936dc54c9ee0a26fca844
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811485"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45156056"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -1291,6 +1291,36 @@ Zhromažďujú sa tieto polia:
 
 - **WarmBoot** – určuje, či kontajner už bol vytvorený alebo nie.
 
+#### <a name="office_appguard_launchfile"></a>Office_AppGuard_LaunchFile
+
+Táto udalosť označuje výsledok spustenia súboru spustenia služby Application Guard. Budeme môcť určiť percentuálny podiel relácií, v ktorých sme úspešne spustili wordový, excelový alebo powerpointový súbor a kódy chýb pre neúspešné pokusy.
+
+Zhromažďujú sa tieto polia:
+
+- **AppId** – určuje, ktorá aplikácia sa spúšťa.
+
+- **DetachedDuration** – určuje celkový čas trvania zlúčenej aktivity. 
+
+- **ErrorCode1** – typ kódu chyby nastavenia kontajnera.  
+
+- **ErrorCode2** – kód chyby z vykonania vytvorenia. 
+
+- **ErrorCode3** – dodatočný kód chyby. 
+
+- **FileId** – jedinečný identifikátor (GUID) vrátený z rozhrania API Windowsu po spustení súboru.
+
+- **Id** – jedinečný identifikátor (GUID) pre spustenie a vytvorenie súboru. Tento identifikátor sa používa na vytváranie súvislostí medzi udalosťami z Office a Windows.
+
+- **ResetError** – kód chyby z pokusu o resetovanie kontajnera po neúspešnom pokuse.
+
+- **ResetErrorCode1** – typ kódu chyby nastavenia kontajnera po príkaze resetovania. 
+
+- **ResetErrorCode2** – kód chyby z vykonania vytvorenia po príkaze resetovania.
+
+- **ResetErrorCode3** – dodatočný kód chyby po príkaze resetovania.  
+
+- **ResetErrorType** – typ chyby: vytvorenie, príprava súboru alebo spustenie.
+
 
 
 #### <a name="officesecurityactivationfilterclsidactivated"></a>Office.Security.ActivationFilter.CLSIDActivated
@@ -1747,6 +1777,11 @@ Zhromažďujú sa tieto polia:
 - **action** – uvádza akciu, ktorej pokus o vykonanie prebehol pri zaznamenaní akcie. Medzi príklady patrí priloženie súboru a zobrazenie ďalších možností.
 
 - **icon_name** – uvádza názov ikony zobrazenej pri zaznamenaní akcie.
+ 
+- **origin** – pôvod akcie. Možné hodnoty sú quick_reply a full_screen.
+
+- **toolbar_type** – označuje typ panela s nástrojmi, ktorý sa nachádza na stránke písania. Možné hodnoty sú compose_actions a formatting.
+
 
 #### <a name="conversation_view_action"></a>conversation_view_action
 
@@ -1761,6 +1796,8 @@ Zhromažďujú sa tieto polia:
 - **suggested_reply_char_count** – uvádza, koľko znakov mali ponúkané navrhované odpovede (ak sú k dispozícii), aby sme mohli zistiť anomálie a problémy súvisiace s našimi návrhmi
 
 - **suggested_reply_click_pos** – uvádza, kde bola vykreslená navrhovaná odpoveď (ak je k dispozícii), aby sme mohli zistiť problémy s konkrétnym návrhom
+
+- **suggested_reply_type** – označuje typ navrhovanej odpovede pre túto akciu. Možné hodnoty sú text, send_avail a create_meeting.
 
 - **use_default_quick_reply_mode** – uvádza, či bol použitý predvolený režim rýchlej odpovede, aby sme mohli zistiť problémy s rýchlou odpoveďou na e-mail
 
@@ -2508,6 +2545,8 @@ Zhromažďujú sa tieto polia:
 
 - **Data_BootDuration** – čas trvania spustenia aplikácie pri otváraní súboru.
 
+- **Data_ClosePreviouslyOpenedMarkers** – v niektorých scenároch otvárania súborov dôjde pred otvorením aktuálneho dokumentu k zatvoreniu predtým otvoreného dokumentu. Tento čas trvania medzi niektorými operáciami, ktoré prebiehajú v tomto prípade, sa zaznamenáva v reťazci, ktorý má formát \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
 
 - **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
@@ -2574,6 +2613,8 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ErrorId_Tag** – značku v kóde, ktorá pomáha s nájdením bodu zlyhania
 
+- **Data_FileOpenFlowMarkers** – pred začatím procesu otvorenia súboru sa vykonáva určité predbežné spracovanie. Tento čas trvania predbežného spracovania sa zaznamenáva v reťazci, ktorý má formát \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_InclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií. 
 
 - **Data_InitializationReason** – enumerácia označujúca spôsob otvorenia súboru, napríklad prvok používateľského rozhrania, spustenie inou aplikáciou atď.
@@ -2581,6 +2622,8 @@ Zhromažďujú sa tieto polia:
 - **Data_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
 
 - **Data_OfficeMobileInitReason** – enumerácia označujúca vstupný bod otvorenia súboru. 
+
+- **Data_RenderToInSpaceDuration** – Trvanie medzi ukončením vykresľovania a animáciou siluety/plátna.
 
 - **Data_SilhouetteDuration** – trvanie vykresľovania otvorenia súboru.
 
@@ -2723,6 +2766,681 @@ Zhromažďuje sa len vtedy, ak koncový používateľ (s najväčšou pravdepod
 Zhromažďujú sa tieto polia:
 
   - **Data.CollectionTime** – časová pečiatka toho, kedy sa zaznamenala udalosť zlyhania.
+
+#### <a name="office_docs_appdocs_operationopenfrommrubypath"></a>Office_Docs_AppDocs_OperationOpenFromMruByPath
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamenáva, keď sa vykoná operácia otvorenia súboru z cesty v zozname naposledy použitých súborov a používa sa na pochopenie a stanovenie priorít chýb používateľských skúseností na základe informácií o operáciách otvorenia súborov.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – ID aplikácie, ak nie je známa pred ukončením klásenia vyvolaného na operácii.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Stav CanContinue (môže pokračovať) pred vyvolaním popisovača začiatku.
+
+- **Data_DetachedDuration** – trvanie procesu odpojenia udalosti. 
+
+- **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
+
+- **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
+
+- **Data_Doc_ChunkingType** – enumerácia označujúca typ algoritmu blokov údajov súboru.
+
+- **Data_Doc_EdpState** – enumerácia označujúca stav ochrany podnikových údajov súboru.
+
+- **Data_Doc_Ext** – prvé štyri znaky prípony súboru.
+
+- **Data_Doc_Fqdn** – názov hostiteľa servera súboru.
+
+- **Data_Doc_FqdnHash** – identifikátor GUID, ktorý jednoznačne označuje názov hostiteľa servera.
+
+- **Data_Doc_IdentityTelemetryId** – jednosmerná hodnota hash identity používateľa, ktorá sa používa na vykonanie otvorenia.
+
+- **Data_Doc_InitializationScenario** – enumerácia označujúca podrobný typ scenára otvorenia súboru.
+
+- **Data_Doc_IOFlags** – enumerácia označujúca príznaky IO operácie otvorenia súboru, napríklad či je súbor uložený vo vyrovnávacej pamäti alebo nie.
+
+- **Data_Doc_IsCloudCollabEnabled** – označuje, či je alebo nie je pre súbor zapnutá spolupráca v cloude.
+
+- **Data_Doc_IsIncrementalOpen** – označuje, či sa súbor otvoril alebo neotvoril cez prírastkové otvorenie.
+
+- **Data_Doc_IsOcsSupported** – označuje, či súbor podporuje alebo nepodporuje službu spolupráce v Office.
+
+- **Data_Doc_IsOpeningOfflineCopy** – označuje, či sa súbor otvoril z offline kópie z vyrovnávacej pamäte.
+
+- **Data_Doc_IsPrefetched** – označuje, či súbor bol alebo nebol vopred načítaný pred výskytom operácie otvorenia.
+
+- **Data_Doc_IsSyncBacked** – označuje, či sa cloudový súbor vyskytuje lokálne a synchronizuje so serverom alebo nie.
+
+- **Data_Doc_Location** – enumerácia označujúca umiestnenie súboru, napríklad lokálne alebo v cloude.
+
+- **Data_Doc_ReadOnlyReasons** – enumerácia označujúca dôvod, prečo je súbor iba na čítanie.
+
+- **Data_Doc_ResourceIdHash** – identifikátor GUID, ktorý jednoznačne označuje ID zdroja servera súboru.
+
+- **Data_Doc_RtcType** – enumerácia označujúca typ kanála v reálnom čase (RTC) použitého súborom.
+
+- **Data_Doc_ServerDocId** – identifikátor GUID, ktorý jednoznačne označuje ID dokumentu na serveri.
+
+- **Data_Doc_ServerProtocol** – enumerácia označujúca serverový protokol cloudového súboru.
+
+- **Data_Doc_ServerType** – enumerácia označujúca serverový typ cloudového súboru.
+
+- **Data_Doc_ServerVersion** – enumerácia označujúca serverovú verziu cloudového súboru.
+
+- **Data_Doc_SessionId** – celé číslo, ktoré sa zvýši o 1 pri každej operácii otvorenia súboru v relácii.
+
+- **Data_Doc_SharePointServiceContext** – reťazec, ktorý sa používa na koreláciu denníkov na strane klienta a na strane servera, zvyčajne ide o druh ID.
+
+- **Data_Doc_SizeInBytes** – veľkosť súboru v bajtoch.
+
+- **Data_Doc_SpecialChars** – enumerácia, ktorá označuje, aký typ špeciálneho znaku obsahuje URL adresa súboru.
+
+- **Data_Doc_UrlHash** – identifikátor GUID, ktorý jednoznačne označuje URL adresu súboru.
+
+- **Data_Doc_UsedWrsDataOnOpen** – či bol alebo nebol súbor otvorený prírastkovo pomocou údajov WRS vopred uložených vo vyrovnávacej pamäti.
+
+- **Data_Doc_WopiServiceId** – reťazec, ktorý označuje, z ktorej služby súbor WOPI (Web Application Open Platform Interface Protocol) pochádza.
+
+- **Data_DocumentInputCurrency** – typ vstupu dokumentu, ktorý používa operácia.
+
+- **Data_DocumentOperation_AppId** – hodnota enumerácie predstavujúca ID aplikácie.
+
+- **Data_DocumentOperation_EndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_DocumentOperation_EndReason** – hodnota enumerácie predstavujúca dôvod ukončenia.
+
+- **Data_DocumentOperation_IsReinitialized** – označuje, sa znova inicializuje dokument, ktorý je už otvorený.
+
+- **Data_DocumentOperation_ParamsFlags** – príznaky enumerácie používané na spustenie operácie.
+
+- **Data_DocumentOperation_TelemetryReason** – vyjadrenie enumerácie vstupného bodu pre udalosť otvorenia. Príklad: otvorenie zo zoznamu naposledy otváraných súborov alebo prehľadávania, aktivácia súborov atď.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – označuje, či je kontext cieľového spustenia rovnaký ako kontext otvorenia.
+
+- **Data_FileIOInclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií.
+
+- **Data_FileIO_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
+
+- **Data_IsNameMissingInUrl** – označuje, či sa názov neanalyzoval z URL adresy.
+
+- **Data_IsPathMissingForLocalFile** – označuje, či ide o lokálny súbor bez cesty.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – označuje, či je nezbalené prepojenie podporované pre otvorenie.
+
+- **Data_LinksOpenRightScenario** – hodnota enumerácie pre scenár otvárania prepojení doprava.
+
+- **Data_OpEndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_RelatedPrevOpTelemetryReason** – označuje, či sa operácia týka predchádzajúcej operácie.
+
+- **Data_StopwatchDuration** – celkový čas aktivity.
+
+- **Data_UnpackLinkHint** – enumerácia predstavujúca potenciálnu akciu používateľa na základe prepojenia rozbalenia.
+
+- **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
+
+#### <a name="office_docs_appdocs_operationopenfrommrubyurl"></a>Office_Docs_AppDocs_OperationOpenFromMruByUrl
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamenáva, keď sa vykoná operácia otvorenia súboru z URL adresy v zozname naposledy použitých súborov a používa sa na pochopenie a stanovenie priorít používateľských skúseností na základe informácií o operáciách otvorenia súborov. 
+
+Zhromažďujú sa tieto polia:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – ID aplikácie, ak nie je známa pred ukončením klásenia vyvolaného na operácii.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Stav CanContinue (môže pokračovať) pred vyvolaním popisovača začiatku.
+
+- **Data_DetachedDuration** – trvanie procesu odpojenia udalosti. 
+
+- **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
+
+- **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
+
+- **Data_Doc_ChunkingType** – enumerácia označujúca typ algoritmu blokov údajov súboru.
+
+- **Data_Doc_EdpState** – enumerácia označujúca stav ochrany podnikových údajov súboru.
+
+- **Data_Doc_Ext** – prvé štyri znaky prípony súboru.
+
+- **Data_Doc_Fqdn** – názov hostiteľa servera súboru.
+
+- **Data_Doc_FqdnHash** – identifikátor GUID, ktorý jednoznačne označuje názov hostiteľa servera.
+
+- **Data_Doc_IdentityTelemetryId** – jednosmerná hodnota hash identity používateľa, ktorá sa používa na vykonanie otvorenia.
+
+- **Data_Doc_InitializationScenario** – enumerácia označujúca podrobný typ scenára otvorenia súboru.
+
+- **Data_Doc_IOFlags** – enumerácia označujúca príznaky IO operácie otvorenia súboru, napríklad či je súbor uložený vo vyrovnávacej pamäti alebo nie.
+
+- **Data_Doc_IsCloudCollabEnabled** – označuje, či je alebo nie je pre súbor zapnutá spolupráca v cloude.
+
+- **Data_Doc_IsIncrementalOpen** – označuje, či sa súbor otvoril alebo neotvoril cez prírastkové otvorenie.
+
+- **Data_Doc_IsOcsSupported** – označuje, či súbor podporuje alebo nepodporuje službu spolupráce v Office.
+
+- **Data_Doc_IsOpeningOfflineCopy** – označuje, či sa súbor otvoril z offline kópie z vyrovnávacej pamäte.
+
+- **Data_Doc_IsPrefetched** – označuje, či súbor bol alebo nebol vopred načítaný pred výskytom operácie otvorenia.
+
+- **Data_Doc_IsSyncBacked** – označuje, či sa cloudový súbor vyskytuje lokálne a synchronizuje so serverom alebo nie.
+
+- **Data_Doc_Location** – enumerácia označujúca umiestnenie súboru, napríklad lokálne alebo v cloude.
+
+- **Data_Doc_ReadOnlyReasons** – enumerácia označujúca dôvod, prečo je súbor iba na čítanie.
+
+- **Data_Doc_ResourceIdHash** – identifikátor GUID, ktorý jednoznačne označuje ID zdroja servera súboru.
+
+- **Data_Doc_RtcType** – enumerácia označujúca typ kanála v reálnom čase (RTC) použitého súborom.
+
+- **Data_Doc_ServerDocId** – identifikátor GUID, ktorý jednoznačne označuje ID dokumentu na serveri.
+
+- **Data_Doc_ServerProtocol** – enumerácia označujúca serverový protokol cloudového súboru.
+
+- **Data_Doc_ServerType** – enumerácia označujúca serverový typ cloudového súboru.
+
+- **Data_Doc_ServerVersion** – enumerácia označujúca serverovú verziu cloudového súboru.
+
+- **Data_Doc_SessionId** – celé číslo, ktoré sa zvýši o 1 pri každej operácii otvorenia súboru v relácii.
+
+- **Data_Doc_SharePointServiceContext** – reťazec, ktorý sa používa na koreláciu denníkov na strane klienta a na strane servera, zvyčajne ide o druh ID.
+
+- **Data_Doc_SizeInBytes** – veľkosť súboru v bajtoch.
+
+- **Data_Doc_SpecialChars** – enumerácia, ktorá označuje, aký typ špeciálneho znaku obsahuje URL adresa súboru.
+
+- **Data_Doc_UrlHash** – identifikátor GUID, ktorý jednoznačne označuje URL adresu súboru.
+
+- **Data_Doc_UsedWrsDataOnOpen** – či bol alebo nebol súbor otvorený prírastkovo pomocou údajov WRS vopred uložených vo vyrovnávacej pamäti.
+
+- **Data_Doc_WopiServiceId** – reťazec, ktorý označuje, z ktorej služby súbor WOPI (Web Application Open Platform Interface Protocol) pochádza.
+
+- **Data_DocumentInputCurrency** – typ vstupu dokumentu, ktorý používa operácia.
+
+- **Data_DocumentOperation_AppId** – hodnota enumerácie predstavujúca ID aplikácie.
+
+- **Data_DocumentOperation_EndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_DocumentOperation_EndReason** – hodnota enumerácie predstavujúca dôvod ukončenia.
+
+- **Data_DocumentOperation_IsReinitialized** – označuje, sa znova inicializuje dokument, ktorý je už otvorený.
+
+- **Data_DocumentOperation_ParamsFlags** – príznaky enumerácie používané na spustenie operácie.
+
+- **Data_DocumentOperation_TelemetryReason** – vyjadrenie enumerácie vstupného bodu pre udalosť otvorenia. Príklad: otvorenie zo zoznamu naposledy otváraných súborov alebo prehľadávania, aktivácia súborov atď.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – označuje, či je kontext cieľového spustenia rovnaký ako kontext otvorenia.
+
+- **Data_FileIOInclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií.
+
+- **Data_FileIO_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
+
+- **Data_IsNameMissingInUrl** – označuje, či sa názov neanalyzoval z URL adresy.
+
+- **Data_IsPathMissingForLocalFile** – označuje, či ide o lokálny súbor bez cesty.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – označuje, či je nezbalené prepojenie podporované pre otvorenie.
+
+- **Data_LinksOpenRightScenario** – hodnota enumerácie pre scenár otvárania prepojení doprava.
+
+- **Data_OpEndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_RelatedPrevOpTelemetryReason** – označuje, či sa operácia týka predchádzajúcej operácie.
+
+- **Data_StopwatchDuration** – celkový čas aktivity.
+
+- **Data_UnpackLinkHint** – enumerácia predstavujúca potenciálnu akciu používateľa na základe prepojenia rozbalenia.
+
+- **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
+
+
+#### <a name="office_docs_appdocs_operationopenfrompath"></a>Office_Docs_AppDocs_OperationOpenFromPath
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru z cesty a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – ID aplikácie, ak nie je známa pred ukončením klásenia vyvolaného na operácii.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Stav CanContinue (môže pokračovať) pred vyvolaním popisovača začiatku.
+
+- **Data_DetachedDuration** – trvanie procesu odpojenia udalosti. 
+
+- **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
+
+- **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
+
+- **Data_Doc_ChunkingType** – enumerácia označujúca typ algoritmu blokov údajov súboru.
+
+- **Data_Doc_EdpState** – enumerácia označujúca stav ochrany podnikových údajov súboru.
+
+- **Data_Doc_Ext** – prvé štyri znaky prípony súboru.
+
+- **Data_Doc_Fqdn** – názov hostiteľa servera súboru.
+
+- **Data_Doc_FqdnHash** – identifikátor GUID, ktorý jednoznačne označuje názov hostiteľa servera.
+
+- **Data_Doc_IdentityTelemetryId** – jednosmerná hodnota hash identity používateľa, ktorá sa používa na vykonanie otvorenia.
+
+- **Data_Doc_InitializationScenario** – enumerácia označujúca podrobný typ scenára otvorenia súboru.
+
+- **Data_Doc_IOFlags** – enumerácia označujúca príznaky IO operácie otvorenia súboru, napríklad či je súbor uložený vo vyrovnávacej pamäti alebo nie.
+
+- **Data_Doc_IsCloudCollabEnabled** – označuje, či je alebo nie je pre súbor zapnutá spolupráca v cloude.
+
+- **Data_Doc_IsIncrementalOpen** – označuje, či sa súbor otvoril alebo neotvoril cez prírastkové otvorenie.
+
+- **Data_Doc_IsOcsSupported** – označuje, či súbor podporuje alebo nepodporuje službu spolupráce v Office.
+
+- **Data_Doc_IsOpeningOfflineCopy** – označuje, či sa súbor otvoril z offline kópie z vyrovnávacej pamäte.
+
+- **Data_Doc_IsPrefetched** – označuje, či súbor bol alebo nebol vopred načítaný pred výskytom operácie otvorenia.
+
+- **Data_Doc_IsSyncBacked** – označuje, či sa cloudový súbor vyskytuje lokálne a synchronizuje so serverom alebo nie.
+
+- **Data_Doc_Location** – enumerácia označujúca umiestnenie súboru, napríklad lokálne alebo v cloude.
+
+- **Data_Doc_ReadOnlyReasons** – enumerácia označujúca dôvod, prečo je súbor iba na čítanie.
+
+- **Data_Doc_ResourceIdHash** – identifikátor GUID, ktorý jednoznačne označuje ID zdroja servera súboru.
+
+- **Data_Doc_RtcType** – enumerácia označujúca typ kanála v reálnom čase (RTC) použitého súborom.
+
+- **Data_Doc_ServerDocId** – identifikátor GUID, ktorý jednoznačne označuje ID dokumentu na serveri.
+
+- **Data_Doc_ServerProtocol** – enumerácia označujúca serverový protokol cloudového súboru.
+
+- **Data_Doc_ServerType** – enumerácia označujúca serverový typ cloudového súboru.
+
+- **Data_Doc_ServerVersion** – enumerácia označujúca serverovú verziu cloudového súboru.
+
+- **Data_Doc_SessionId** – celé číslo, ktoré sa zvýši o 1 pri každej operácii otvorenia súboru v relácii.
+
+- **Data_Doc_SharePointServiceContext** – reťazec, ktorý sa používa na koreláciu denníkov na strane klienta a na strane servera, zvyčajne ide o druh ID.
+
+- **Data_Doc_SizeInBytes** – veľkosť súboru v bajtoch.
+
+- **Data_Doc_SpecialChars** – enumerácia, ktorá označuje, aký typ špeciálneho znaku obsahuje URL adresa súboru.
+
+- **Data_Doc_UrlHash** – identifikátor GUID, ktorý jednoznačne označuje URL adresu súboru.
+
+- **Data_Doc_UsedWrsDataOnOpen** – či bol alebo nebol súbor otvorený prírastkovo pomocou údajov WRS vopred uložených vo vyrovnávacej pamäti.
+
+- **Data_Doc_WopiServiceId** – reťazec, ktorý označuje, z ktorej služby súbor WOPI (Web Application Open Platform Interface Protocol) pochádza.
+
+- **Data_DocumentInputCurrency** – typ vstupu dokumentu, ktorý používa operácia.
+
+- **Data_DocumentOperation_AppId** – hodnota enumerácie predstavujúca ID aplikácie.
+
+- **Data_DocumentOperation_EndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_DocumentOperation_EndReason** – hodnota enumerácie predstavujúca dôvod ukončenia.
+
+- **Data_DocumentOperation_IsReinitialized** – označuje, sa znova inicializuje dokument, ktorý je už otvorený.
+
+- **Data_DocumentOperation_ParamsFlags** – príznaky enumerácie používané na spustenie operácie.
+
+- **Data_DocumentOperation_TelemetryReason** – vyjadrenie enumerácie vstupného bodu pre udalosť otvorenia. Príklad: otvorenie zo zoznamu naposledy otváraných súborov alebo prehľadávania, aktivácia súborov atď.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – označuje, či je kontext cieľového spustenia rovnaký ako kontext otvorenia.
+
+- **Data_FileIOInclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií.
+
+- **Data_FileIO_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
+
+- **Data_IsNameMissingInUrl** – označuje, či sa názov neanalyzoval z URL adresy.
+
+- **Data_IsPathMissingForLocalFile** – označuje, či ide o lokálny súbor bez cesty.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – označuje, či je nezbalené prepojenie podporované pre otvorenie.
+
+- **Data_LinksOpenRightScenario** – hodnota enumerácie pre scenár otvárania prepojení doprava.
+
+- **Data_OpEndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_RelatedPrevOpTelemetryReason** – označuje, či sa operácia týka predchádzajúcej operácie.
+
+- **Data_StopwatchDuration** – celkový čas aktivity.
+
+- **Data_UnpackLinkHint** – enumerácia predstavujúca potenciálnu akciu používateľa na základe prepojenia rozbalenia.
+
+- **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
+
+#### <a name="office_docs_appdocs_operationopenfromprotocolhandler"></a>Office_Docs_AppDocs_OperationOpenFromProtocolHandler
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru z inej aplikácie pomocou rozhrania popisovača protokolu a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – ID aplikácie, ak nie je známa pred ukončením klásenia vyvolaného na operácii.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Stav CanContinue (môže pokračovať) pred vyvolaním popisovača začiatku.
+
+- **Data_DetachedDuration** – trvanie procesu odpojenia udalosti. 
+
+- **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
+
+- **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
+
+- **Data_Doc_ChunkingType** – enumerácia označujúca typ algoritmu blokov údajov súboru.
+
+- **Data_Doc_EdpState** – enumerácia označujúca stav ochrany podnikových údajov súboru.
+
+- **Data_Doc_Ext** – prvé štyri znaky prípony súboru.
+
+- **Data_Doc_Fqdn** – názov hostiteľa servera súboru.
+
+- **Data_Doc_FqdnHash** – identifikátor GUID, ktorý jednoznačne označuje názov hostiteľa servera.
+
+- **Data_Doc_IdentityTelemetryId** – jednosmerná hodnota hash identity používateľa, ktorá sa používa na vykonanie otvorenia.
+
+- **Data_Doc_InitializationScenario** – enumerácia označujúca podrobný typ scenára otvorenia súboru.
+
+- **Data_Doc_IOFlags** – enumerácia označujúca príznaky IO operácie otvorenia súboru, napríklad či je súbor uložený vo vyrovnávacej pamäti alebo nie.
+
+- **Data_Doc_IsCloudCollabEnabled** – označuje, či je alebo nie je pre súbor zapnutá spolupráca v cloude.
+
+- **Data_Doc_IsIncrementalOpen** – označuje, či sa súbor otvoril alebo neotvoril cez prírastkové otvorenie.
+
+- **Data_Doc_IsOcsSupported** – označuje, či súbor podporuje alebo nepodporuje službu spolupráce v Office.
+
+- **Data_Doc_IsOpeningOfflineCopy** – označuje, či sa súbor otvoril z offline kópie z vyrovnávacej pamäte.
+
+- **Data_Doc_IsPrefetched** – označuje, či súbor bol alebo nebol vopred načítaný pred výskytom operácie otvorenia.
+
+- **Data_Doc_IsSyncBacked** – označuje, či sa cloudový súbor vyskytuje lokálne a synchronizuje so serverom alebo nie.
+
+- **Data_Doc_Location** – enumerácia označujúca umiestnenie súboru, napríklad lokálne alebo v cloude.
+
+- **Data_Doc_ReadOnlyReasons** – enumerácia označujúca dôvod, prečo je súbor iba na čítanie.
+
+- **Data_Doc_ResourceIdHash** – identifikátor GUID, ktorý jednoznačne označuje ID zdroja servera súboru.
+
+- **Data_Doc_RtcType** – enumerácia označujúca typ kanála v reálnom čase (RTC) použitého súborom.
+
+- **Data_Doc_ServerDocId** – identifikátor GUID, ktorý jednoznačne označuje ID dokumentu na serveri.
+
+- **Data_Doc_ServerProtocol** – enumerácia označujúca serverový protokol cloudového súboru.
+
+- **Data_Doc_ServerType** – enumerácia označujúca serverový typ cloudového súboru.
+
+- **Data_Doc_ServerVersion** – enumerácia označujúca serverovú verziu cloudového súboru.
+
+- **Data_Doc_SessionId** – celé číslo, ktoré sa zvýši o 1 pri každej operácii otvorenia súboru v relácii.
+
+- **Data_Doc_SharePointServiceContext** – reťazec, ktorý sa používa na koreláciu denníkov na strane klienta a na strane servera, zvyčajne ide o druh ID.
+
+- **Data_Doc_SizeInBytes** – veľkosť súboru v bajtoch.
+
+- **Data_Doc_SpecialChars** – enumerácia, ktorá označuje, aký typ špeciálneho znaku obsahuje URL adresa súboru.
+
+- **Data_Doc_UrlHash** – identifikátor GUID, ktorý jednoznačne označuje URL adresu súboru.
+
+- **Data_Doc_UsedWrsDataOnOpen** – či bol alebo nebol súbor otvorený prírastkovo pomocou údajov WRS vopred uložených vo vyrovnávacej pamäti.
+
+- **Data_Doc_WopiServiceId** – reťazec, ktorý označuje, z ktorej služby súbor WOPI (Web Application Open Platform Interface Protocol) pochádza.
+
+- **Data_DocumentInputCurrency** – typ vstupu dokumentu, ktorý používa operácia.
+
+- **Data_DocumentOperation_AppId** – hodnota enumerácie predstavujúca ID aplikácie.
+
+- **Data_DocumentOperation_EndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_DocumentOperation_EndReason** – hodnota enumerácie predstavujúca dôvod ukončenia.
+
+- **Data_DocumentOperation_IsReinitialized** – označuje, sa znova inicializuje dokument, ktorý je už otvorený.
+
+- **Data_DocumentOperation_ParamsFlags** – príznaky enumerácie používané na spustenie operácie.
+
+- **Data_DocumentOperation_TelemetryReason** – vyjadrenie enumerácie vstupného bodu pre udalosť otvorenia. Príklad: otvorenie zo zoznamu naposledy otváraných súborov alebo prehľadávania, aktivácia súborov atď.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – označuje, či je kontext cieľového spustenia rovnaký ako kontext otvorenia.
+
+- **Data_FileIOInclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií.
+
+- **Data_FileIO_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
+
+- **Data_IsNameMissingInUrl** – označuje, či sa názov neanalyzoval z URL adresy.
+
+- **Data_IsPathMissingForLocalFile** – označuje, či ide o lokálny súbor bez cesty.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – označuje, či je nezbalené prepojenie podporované pre otvorenie.
+
+- **Data_LinksOpenRightScenario** – hodnota enumerácie pre scenár otvárania prepojení doprava.
+
+- **Data_OpEndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_RelatedPrevOpTelemetryReason** – označuje, či sa operácia týka predchádzajúcej operácie.
+
+- **Data_StopwatchDuration** – celkový čas aktivity.
+
+- **Data_UnpackLinkHint** – enumerácia predstavujúca potenciálnu akciu používateľa na základe prepojenia rozbalenia.
+
+- **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
+
+#### <a name="office_docs_appdocs_operationopenfromshell"></a>Office_Docs_AppDocs_OperationOpenFromShell
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru z prostredia (shell) a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – ID aplikácie, ak nie je známa pred ukončením klásenia vyvolaného na operácii.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Stav CanContinue (môže pokračovať) pred vyvolaním popisovača začiatku.
+
+- **Data_DetachedDuration** – trvanie procesu odpojenia udalosti. 
+
+- **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
+
+- **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
+
+- **Data_Doc_ChunkingType** – enumerácia označujúca typ algoritmu blokov údajov súboru.
+
+- **Data_Doc_EdpState** – enumerácia označujúca stav ochrany podnikových údajov súboru.
+
+- **Data_Doc_Ext** – prvé štyri znaky prípony súboru.
+
+- **Data_Doc_Fqdn** – názov hostiteľa servera súboru.
+
+- **Data_Doc_FqdnHash** – identifikátor GUID, ktorý jednoznačne označuje názov hostiteľa servera.
+
+- **Data_Doc_IdentityTelemetryId** – jednosmerná hodnota hash identity používateľa, ktorá sa používa na vykonanie otvorenia.
+
+- **Data_Doc_InitializationScenario** – enumerácia označujúca podrobný typ scenára otvorenia súboru.
+
+- **Data_Doc_IOFlags** – enumerácia označujúca príznaky IO operácie otvorenia súboru, napríklad či je súbor uložený vo vyrovnávacej pamäti alebo nie.
+
+- **Data_Doc_IsCloudCollabEnabled** – označuje, či je alebo nie je pre súbor zapnutá spolupráca v cloude.
+
+- **Data_Doc_IsIncrementalOpen** – označuje, či sa súbor otvoril alebo neotvoril cez prírastkové otvorenie.
+
+- **Data_Doc_IsOcsSupported** – označuje, či súbor podporuje alebo nepodporuje službu spolupráce v Office.
+
+- **Data_Doc_IsOpeningOfflineCopy** – označuje, či sa súbor otvoril z offline kópie z vyrovnávacej pamäte.
+
+- **Data_Doc_IsPrefetched** – označuje, či súbor bol alebo nebol vopred načítaný pred výskytom operácie otvorenia.
+
+- **Data_Doc_IsSyncBacked** – označuje, či sa cloudový súbor vyskytuje lokálne a synchronizuje so serverom alebo nie.
+
+- **Data_Doc_Location** – enumerácia označujúca umiestnenie súboru, napríklad lokálne alebo v cloude.
+
+- **Data_Doc_ReadOnlyReasons** – enumerácia označujúca dôvod, prečo je súbor iba na čítanie.
+
+- **Data_Doc_ResourceIdHash** – identifikátor GUID, ktorý jednoznačne označuje ID zdroja servera súboru.
+
+- **Data_Doc_RtcType** – enumerácia označujúca typ kanála v reálnom čase (RTC) použitého súborom.
+
+- **Data_Doc_ServerDocId** – identifikátor GUID, ktorý jednoznačne označuje ID dokumentu na serveri.
+
+- **Data_Doc_ServerProtocol** – enumerácia označujúca serverový protokol cloudového súboru.
+
+- **Data_Doc_ServerType** – enumerácia označujúca serverový typ cloudového súboru.
+
+- **Data_Doc_ServerVersion** – enumerácia označujúca serverovú verziu cloudového súboru.
+
+- **Data_Doc_SessionId** – celé číslo, ktoré sa zvýši o 1 pri každej operácii otvorenia súboru v relácii.
+
+- **Data_Doc_SharePointServiceContext** – reťazec, ktorý sa používa na koreláciu denníkov na strane klienta a na strane servera, zvyčajne ide o druh ID.
+
+- **Data_Doc_SizeInBytes** – veľkosť súboru v bajtoch.
+
+- **Data_Doc_SpecialChars** – enumerácia, ktorá označuje, aký typ špeciálneho znaku obsahuje URL adresa súboru.
+
+- **Data_Doc_UrlHash** – identifikátor GUID, ktorý jednoznačne označuje URL adresu súboru.
+
+- **Data_Doc_UsedWrsDataOnOpen** – či bol alebo nebol súbor otvorený prírastkovo pomocou údajov WRS vopred uložených vo vyrovnávacej pamäti.
+
+- **Data_Doc_WopiServiceId** – reťazec, ktorý označuje, z ktorej služby súbor WOPI (Web Application Open Platform Interface Protocol) pochádza.
+
+- **Data_DocumentInputCurrency** – typ vstupu dokumentu, ktorý používa operácia.
+
+- **Data_DocumentOperation_AppId** – hodnota enumerácie predstavujúca ID aplikácie.
+
+- **Data_DocumentOperation_EndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_DocumentOperation_EndReason** – hodnota enumerácie predstavujúca dôvod ukončenia.
+
+- **Data_DocumentOperation_IsReinitialized** – označuje, sa znova inicializuje dokument, ktorý je už otvorený.
+
+- **Data_DocumentOperation_ParamsFlags** – príznaky enumerácie používané na spustenie operácie.
+
+- **Data_DocumentOperation_TelemetryReason** – vyjadrenie enumerácie vstupného bodu pre udalosť otvorenia. Príklad: otvorenie zo zoznamu naposledy otváraných súborov alebo prehľadávania, aktivácia súborov atď.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – označuje, či je kontext cieľového spustenia rovnaký ako kontext otvorenia.
+
+- **Data_FileIOInclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií.
+
+- **Data_FileIO_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
+
+- **Data_IsNameMissingInUrl** – označuje, či sa názov neanalyzoval z URL adresy.
+
+- **Data_IsPathMissingForLocalFile** – označuje, či ide o lokálny súbor bez cesty.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – označuje, či je nezbalené prepojenie podporované pre otvorenie.
+
+- **Data_LinksOpenRightScenario** – hodnota enumerácie pre scenár otvárania prepojení doprava.
+
+- **Data_OpEndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_RelatedPrevOpTelemetryReason** – označuje, či sa operácia týka predchádzajúcej operácie.
+
+- **Data_StopwatchDuration** – celkový čas aktivity.
+
+- **Data_UnpackLinkHint** – enumerácia predstavujúca potenciálnu akciu používateľa na základe prepojenia rozbalenia.
+
+- **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
+
+
+#### <a name="office_docs_appdocs_operationopenfromurl"></a>Office_Docs_AppDocs_OperationOpenFromUrl
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru z URL adresy a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – ID aplikácie, ak nie je známa pred ukončením klásenia vyvolaného na operácii.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Stav CanContinue (môže pokračovať) pred vyvolaním popisovača začiatku.
+
+- **Data_DetachedDuration** – trvanie procesu odpojenia udalosti. 
+
+- **Data_Doc_AccessMode** – enumerácia označujúca režim prístupu k súboru, napríklad iba na čítanie, na čítanie a zapisovanie.
+
+- **Data_Doc_AsyncOpenKind** – enumerácia označujúca typ asynchrónneho procesu použitého na otvorenie súboru.
+
+- **Data_Doc_ChunkingType** – enumerácia označujúca typ algoritmu blokov údajov súboru.
+
+- **Data_Doc_EdpState** – enumerácia označujúca stav ochrany podnikových údajov súboru.
+
+- **Data_Doc_Ext** – prvé štyri znaky prípony súboru.
+
+- **Data_Doc_Fqdn** – názov hostiteľa servera súboru.
+
+- **Data_Doc_FqdnHash** – identifikátor GUID, ktorý jednoznačne označuje názov hostiteľa servera.
+
+- **Data_Doc_IdentityTelemetryId** – jednosmerná hodnota hash identity používateľa, ktorá sa používa na vykonanie otvorenia.
+
+- **Data_Doc_InitializationScenario** – enumerácia označujúca podrobný typ scenára otvorenia súboru.
+
+- **Data_Doc_IOFlags** – enumerácia označujúca príznaky IO operácie otvorenia súboru, napríklad či je súbor uložený vo vyrovnávacej pamäti alebo nie.
+
+- **Data_Doc_IsCloudCollabEnabled** – označuje, či je alebo nie je pre súbor zapnutá spolupráca v cloude.
+
+- **Data_Doc_IsIncrementalOpen** – označuje, či sa súbor otvoril alebo neotvoril cez prírastkové otvorenie.
+
+- **Data_Doc_IsOcsSupported** – označuje, či súbor podporuje alebo nepodporuje službu spolupráce v Office.
+
+- **Data_Doc_IsOpeningOfflineCopy** – označuje, či sa súbor otvoril z offline kópie z vyrovnávacej pamäte.
+
+- **Data_Doc_IsPrefetched** – označuje, či súbor bol alebo nebol vopred načítaný pred výskytom operácie otvorenia.
+
+- **Data_Doc_IsSyncBacked** – označuje, či sa cloudový súbor vyskytuje lokálne a synchronizuje so serverom alebo nie.
+
+- **Data_Doc_Location** – enumerácia označujúca umiestnenie súboru, napríklad lokálne alebo v cloude.
+
+- **Data_Doc_ReadOnlyReasons** – enumerácia označujúca dôvod, prečo je súbor iba na čítanie.
+
+- **Data_Doc_ResourceIdHash** – identifikátor GUID, ktorý jednoznačne označuje ID zdroja servera súboru.
+
+- **Data_Doc_RtcType** – enumerácia označujúca typ kanála v reálnom čase (RTC) použitého súborom.
+
+- **Data_Doc_ServerDocId** – identifikátor GUID, ktorý jednoznačne označuje ID dokumentu na serveri.
+
+- **Data_Doc_ServerProtocol** – enumerácia označujúca serverový protokol cloudového súboru.
+
+- **Data_Doc_ServerType** – enumerácia označujúca serverový typ cloudového súboru.
+
+- **Data_Doc_ServerVersion** – enumerácia označujúca serverovú verziu cloudového súboru.
+
+- **Data_Doc_SessionId** – celé číslo, ktoré sa zvýši o 1 pri každej operácii otvorenia súboru v relácii.
+
+- **Data_Doc_SharePointServiceContext** – reťazec, ktorý sa používa na koreláciu denníkov na strane klienta a na strane servera, zvyčajne ide o druh ID.
+
+- **Data_Doc_SizeInBytes** – veľkosť súboru v bajtoch.
+
+- **Data_Doc_SpecialChars** – enumerácia, ktorá označuje, aký typ špeciálneho znaku obsahuje URL adresa súboru.
+
+- **Data_Doc_UrlHash** – identifikátor GUID, ktorý jednoznačne označuje URL adresu súboru.
+
+- **Data_Doc_UsedWrsDataOnOpen** – či bol alebo nebol súbor otvorený prírastkovo pomocou údajov WRS vopred uložených vo vyrovnávacej pamäti.
+
+- **Data_Doc_WopiServiceId** – reťazec, ktorý označuje, z ktorej služby súbor WOPI (Web Application Open Platform Interface Protocol) pochádza.
+
+- **Data_DocumentInputCurrency** – typ vstupu dokumentu, ktorý používa operácia.
+
+- **Data_DocumentOperation_AppId** – hodnota enumerácie predstavujúca ID aplikácie.
+
+- **Data_DocumentOperation_EndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_DocumentOperation_EndReason** – hodnota enumerácie predstavujúca dôvod ukončenia.
+
+- **Data_DocumentOperation_IsReinitialized** – označuje, sa znova inicializuje dokument, ktorý je už otvorený.
+
+- **Data_DocumentOperation_ParamsFlags** – príznaky enumerácie používané na spustenie operácie.
+
+- **Data_DocumentOperation_TelemetryReason** – vyjadrenie enumerácie vstupného bodu pre udalosť otvorenia. Príklad: otvorenie zo zoznamu naposledy otváraných súborov alebo prehľadávania, aktivácia súborov atď.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – označuje, či je kontext cieľového spustenia rovnaký ako kontext otvorenia.
+
+- **Data_FileIOInclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií.
+
+- **Data_FileIO_Measurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré nezahŕňa trvanie volania podradených funkcií.
+
+- **Data_IsNameMissingInUrl** – označuje, či sa názov neanalyzoval z URL adresy.
+
+- **Data_IsPathMissingForLocalFile** – označuje, či ide o lokálny súbor bez cesty.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – označuje, či je nezbalené prepojenie podporované pre otvorenie.
+
+- **Data_LinksOpenRightScenario** – hodnota enumerácie pre scenár otvárania prepojení doprava.
+
+- **Data_OpEndEventId** – značka, ktorá predstavuje miesto, kde sa operácia ukončila.
+
+- **Data_RelatedPrevOpTelemetryReason** – označuje, či sa operácia týka predchádzajúcej operácie.
+
+- **Data_StopwatchDuration** – celkový čas aktivity.
+
+- **Data_UnpackLinkHint** – enumerácia predstavujúca potenciálnu akciu používateľa na základe prepojenia rozbalenia.
+
+- **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
+
 
 #### <a name="office_apple_activateperpetual"></a>Office_Apple_ActivatePerpetual
 
@@ -4225,6 +4943,99 @@ Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunPanelName** – Názov panela, z ktorého skäsenosť začala.
 
+#### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
+
+Prihlásime sa, keď sa bude používateľ nachádzať v aplikácii, ktorá načíta kartu osoby pri očakávaní, že používateľ otvorí živú kartu osoby.  Údaje sa používajú na určenie toho, či sa karta načíta správne. 
+
+Zhromažďujú sa tieto polia: 
+
+- **Data.accountType** – označuje, či používateľ patrí k organizácii alebo spotrebiteľovi.
+
+- **Data.appContextId** – náhodne vygenerovaný identifikátor používaný na identifikáciu rôznych kont v tej istej aplikácii.
+
+- **Data.AppInfo.Name** – názov používanej služby (karta profilu)
+
+- **Data.AppInfo_Id** – názov hostiteľskej aplikácie
+
+- **Data.AppInfo_Version** – verzia hostiteľskej aplikácie
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor karty osoby
+
+- **Data.cardPersonaCorrelationId** – globálne jedinečný identifikátor konkrétnej osoby zobrazenej na karte
+
+- **Data.cardCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
+
+- **Data.clientType** – typ zariadenia, v ktorom je aplikácia spustená.
+
+- **Data.contextType** – označuje, v akom kontexte (aplikácii) sa karta spustila
+
+- **Data.ecsConfigIds** – identifikátory verzií pre funkcie povolené na karte
+
+- **Data.ecsTagId** – ID značiek pre funkcie
+
+- **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
+
+- **Data.eventpriority** – hodnota enumerácie priority odoslania udalosti.
+
+- **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
+
+- **Data.flights** – funkcie povolené na karte
+
+- **Data.fromCache** – označuje, či boli údaje načítané z pamäte
+
+- **Data.hasFinePointer** – označuje, či je v zariadení funkcia ukazovateľa myši
+
+- **Data.hasHoverEvents** – označuje, či je v zariadení funkcia ukázania myšou
+
+- **Data.immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu
+
+- **Data.offlineResolved** – označuje, či sa údaje načítavali v režime offline
+
+- **Data.OTelJS.Version** – verzia zapisovača OTel
+
+- **Data.personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne: *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+  - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie
+  - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
+  - **ClientTimeStamp** – čas v aplikácii, keď sa udalosť zaznamenala.
+  - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie.
+
+  - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
+
+- **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
+
+- **Data.tenantAadObjectId** – nájomník, ku ktorému je priradené predplatné používateľa. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť.
+
+- **Data.userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft (duplikát poľa Data.UserInfo.Id).
+
+- **Data.UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft.
+
+- **Data.UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
+
+- **Data.UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
+
+- **Data.userPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft (duplikát poľa Data.UserInfo.MsaId).
+
+- **Data.version** – verzia služby (karta profilu).
+
+- **Data.workloadCulture** – kultúra nastavená v hostiteľskej aplikácii
+
+- **DeviceInfo_Id** – globálne jedinečný identifikátor zariadenia pre zariadenie
+
+- **DeviceInfo_Make** – značka operačného systému.
+
+- **DeviceInfo_Model** – model zariadenia.
+
+- **DeviceInfo_OsName** – názov operačného systému zariadenia.
+
+- **DeviceInfo_OsVersion** – verzia operačného systému.
+
+- **DeviceInfo_SDKUid** – jednoznačne identifikuje zariadenie z perspektívy SDK telemetrie
+
 #### <a name="officelivepersonacarduseractionsclosedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
 
 Táto udalosť sa zaznamená, keď používateľ zatvorí rozbalenú kartu osoby. Používa sa na pozorovanie kritických anomálií v mierach zlyhania zavretia funkcie Live Persona Card.
@@ -4253,19 +5064,22 @@ Zhromažďujú sa tieto polia:
 
 - **Data.exportType** – kategória udalosti pre požiadavku na export GDPR
 
+- **Data.externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii
+
 - **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
+
+- **Data.immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu
 
 - **Data.OTelJS.Version** – verzia zapisovača OTel
 
-- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne:
+- **Data.personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne: *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
    - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie 
    - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
    - **ClientTimeStamp** – čas výskytu udalosti v čase Unix Epoch
    - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie. 
-   - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
-   - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
-   - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
 
 - **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
 
@@ -4326,18 +5140,22 @@ Zhromažďujú sa tieto polia:
 
 - **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
 
+- **Data.externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii
+
 - **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
+
+- **Data.immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu
 
 - **Data.OTelJS.Version** – verzia zapisovača OTel
 
-- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne:
+- **Data.personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne: *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
   - **ClientTimeStamp** – čas v aplikácii, keď sa udalosť zaznamenala.
   - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie
   - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
   - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie.
-  - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
-  - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
-  - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
 
 - **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
 
@@ -4361,102 +5179,6 @@ Zhromažďujú sa tieto polia:
 
 - **Event_ReceivedTime** – čas zaznamenania udalosti v službe
 
-#### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
-
-Prihlásime sa, keď sa bude používateľ nachádzať v aplikácii, ktorá načíta kartu osoby pri očakávaní, že používateľ otvorí živú kartu osoby.  Údaje sa používajú na určenie toho, či sa karta načíta správne. 
-
-Zhromažďujú sa tieto polia: 
-
-- **Data.appContextId** – náhodne vygenerovaný identifikátor používaný na identifikáciu rôznych kont v tej istej aplikácii.
-
-- **Data.AppInfo.Name** – názov používanej služby (karta profilu)
-
-- **Data.AppInfo_Id** – názov hostiteľskej aplikácie
-
-- **Data.AppInfo_Version** – verzia hostiteľskej aplikácie
-
-- **Data.cardCorrelationId** – globálne jedinečný identifikátor karty osoby
-
-- **Data.cardPersonaCorrelationId** – globálne jedinečný identifikátor konkrétnej osoby zobrazenej na karte
-
-- **Data.cardCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
-
-- **Data.clientType** – typ zariadenia, v ktorom je aplikácia spustená.
-
-- **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
-
-- **Data.eventpriority** – hodnota enumerácie priority odoslania udalosti.
-
-- **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
-
-- **Data.OTelJS.Version** – verzia zapisovača OTel
-
-- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne:
-
-  - **accountType** – označuje, či používateľ patrí k organizácii alebo spotrebiteľovi.
-
-  - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie
-
-  - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
-
-  - **ClientTimeStamp** – čas v aplikácii, keď sa udalosť zaznamenala.
-
-  - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie.
-
-  - **contextType** – v akom kontexte (aplikácii) sa karta spustila.
-
-  - **ecsConfigIds** – identifikátory verzií pre funkcie povolené na karte.
-
-  - **ecsTagId** – ID značiek pre funkcie.
-
-  - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
-
-  - **flights** – funkcie zapnuté na karte.
-
-  - **fromCache** – označuje, či boli údaje načítané z pamäte.
-
-  - **hasFinePointer** – označuje, či je v zariadení funkcia ukazovateľa myši.
-
-  - **hasHoverEvents** – označuje, či je v zariadení funkcia ukázania myšou.
-
-  - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
-
-  - **offlineResolved** – označuje, či sa údaje načítavali v režime offline.
-
-  - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
-
-- **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
-
-- **Data.tenantAadObjectId** – nájomník, ku ktorému je priradené predplatné používateľa. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
-
-- **Data.type** – typ zaznamenanej udalosti, napr. sledovanie, chyba, udalosť.
-
-- **Data.userAadObjectId** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft (duplikát poľa Data.UserInfo.Id).
-
-- **Data.UserInfo.Id** – globálne jedinečný identifikátor používateľa pre podnikové konto Microsoft.
-
-- **Data.UserInfo.MsaId** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft.
-
-- **Data.UserInfo.OMSTenantId** – nájomník, s ktorým je predplatné používateľa spojené. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
-
-- **Data.userPuid** – globálne jedinečný identifikátor používateľa pre spotrebiteľské konto Microsoft (duplikát poľa Data.UserInfo.MsaId).
-
-- **Data.version** – verzia služby (karta profilu).
-
-- **Data.workloadCulture** – kultúra nastavená v hostiteľskej aplikácii
-
-- **DeviceInfo_Id** – globálne jedinečný identifikátor zariadenia pre zariadenie
-
-- **DeviceInfo_Make** – značka operačného systému.
-
-- **DeviceInfo_Model** – model zariadenia.
-
-- **DeviceInfo_OsName** – názov operačného systému zariadenia.
-
-- **DeviceInfo_OsVersion** – verzia operačného systému.
-
-- **DeviceInfo_SDKUid** – jednoznačne identifikuje zariadenie z perspektívy SDK telemetrie
-
 #### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
 Zaznamenáva sa, keď používateľ otvorí rozbalenú kartu osoby. Používa sa na pozorovanie kritických anomálií v mierach zlyhania spustenia funkcie Live Persona Card.
@@ -4477,9 +5199,13 @@ Zhromažďujú sa tieto polia:
 
 - **Data.cardCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
 
+- **Data.clientScenario** – na identifikovanie funkcie v aplikácii, v ktorej sa otvorila karta osoby.
+
 - **Data.clientType** – typ zariadenia, v ktorom je aplikácia spustená.
 
 - **Data.eventId** – identifikátor názvu udalosti, napr. „LivePersonaCardRenderedAction“
+
+- **Data.externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii
 
 - **Data.exportName** – človekom čitateľný názov akcie používateľa, napr. „OpenedPersonaCard“
 
@@ -4487,31 +5213,25 @@ Zhromažďujú sa tieto polia:
 
 - **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
 
-- **Data.hostAppRing** – kruh, v ktorom bola aplikácia distribuovaná
+- **Data.hasPersonalInsightRing** – prehľady v Office alebo LinkedIne môžu byť pre používateľa k dispozícii
+
+- **Data.hostAppRing** – okruh, v ktorom bola aplikácia distribuovaná
+
+- **Data.immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu
 
 - **Data.OTelJS.Version** – verzia zapisovača OTel
 
-- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne:
+- **Data.personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne: *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie 
-
   - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
-
-  - **clientScenario** – na identifikovanie funkcie v aplikácii, v ktorej sa otvorila karta osoby.
-
   - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie. 
 
-  - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
-
-  - **hasPersonalInsightRing** – prehľady v Office alebo LinkedIne môžu byť pre používateľa k dispozícii.
-
-  - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
-
-  - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
-
-  - **section** – aktívna časť rozbalenej karty.
-
 - **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
+
+- **Data.section** – aktívna časť rozbalenej karty.
 
 - **Data.tenantAadObjectId** – nájomník, ku ktorému je priradené predplatné používateľa. Umožňuje klasifikovať problémy a identifikovať, či je problém rozšírený všeobecne alebo izolovaný v určitej množine používateľov alebo konkrétnom nájomníkovi.
 
@@ -4556,6 +5276,8 @@ Zhromažďujú sa tieto polia:
 
 - **Data.AppInfo.Name** – názov používanej služby (karta profilu)
 
+- **Data.bandwidthEstimateMbps** – odhad efektívnej šírky pásma v Mbit/s.
+
 - **Data.cardCorrelationId** – globálne jedinečný identifikátor karty osoby
 
 - **Data.cardPersonaCorrelationId** – globálne jedinečný identifikátor konkrétnej osoby zobrazenej na karte
@@ -4570,11 +5292,26 @@ Zhromažďujú sa tieto polia:
 
 - **Data.exportType** – kategória udalosti pre požiadavku na export GDPR
 
+- **Data.externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii
+
 - **Data.feature** – používa sa na zoskupovanie rôznych udalostí tej istej funkcie (karta profilu)
 
 - **Data.hostAppRing** – kruh, v ktorom bola aplikácia distribuovaná
 
+- **Data.immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu
+
 - **Data.OTelJS.Version** – verzia zapisovača OTel
+
+- **Data.personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii
+
+- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+    - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie 
+    - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
+    - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie. 
+    - **networkEffectiveType** – efektívny typ sieťového pripojenia, napr. „slow-2g Online“ na identifikáciu, či je používateľ v čase zobrazenia karty osoby pripojený na internet.
+    - **networkType** – typ sieťového pripojenia používaného zariadenia.
+    - **roundTripEstimateMs** – odhadovaný efektívny čas výmeny údajov aktuálneho pripojenia v milisekundách.
 
 - **Data.region** – geografická oblasť backendovej služby karty profilu, ku ktorej je používateľ pripojený
 
@@ -4596,34 +5333,11 @@ Zhromažďujú sa tieto polia:
 
 - **Data.viewType** – definuje typ zobrazenej karty profilu.
 
+- **Data.wasOpenedAsCompactCard** – používa sa na identifikáciu, či karta bola pôvodne otvorená v kompaktnom zobrazení.
+
 - **NetworkCost** – označuje typ nákladov na sieť (účtované podľa objemu údajov, účtované podľa objemu údajov nad limit atď.).
 
 - **NetworkCountry** – kód krajiny odosielateľa, na základe neočistenej IP adresy klienta.
-
-- **Data.properties** – dodatočné metaúdaje zhromaždené pre každú udalosť nasledovne.
-
-    - **bandwidthEstimateMbps** – odhad efektívnej šírky pásma v Mbit/s.
-
-    - **cardCorrelationId** – duplikát poľa Data.appContextId vyššie 
-
-    - **cardPersonaCorrelationId** – duplikát poľa Data.cardCorrelationId vyššie.
-
-    - **consumerCorrelationId** – duplikát poľa Data.clientCorrelationId vyššie. 
-
-    - **externalAppSessionCorrelationId** – globálne jedinečný identifikátor pre aplikáciu na identifikáciu všetkých kariet osôb otvorených v tej istej čiastkovej relácii.
-
-    - **immersiveProfileCorrelationId** – globálne jedinečný identifikátor relácie zobrazenia rozbaleného profilu.
-
-    - **networkEffectiveType** – efektívny typ sieťového pripojenia, napr. „slow-2g Online“ na identifikáciu, či je používateľ v čase zobrazenia karty osoby pripojený na internet.
-
-    - **networkType** – typ sieťového pripojenia používaného zariadenia.
-
-    - **personaCorrelationId** – globálne jedinečný identifikátor jedinečných osôb v relácii.
-
-    - **roundTripEstimateMs** – odhadovaný efektívny čas výmeny údajov aktuálneho pripojenia v milisekundách.
-
-    - **wasOpenedAsCompactCard** – používa sa na identifikáciu, či karta bola pôvodne otvorená v kompaktnom zobrazení.
-
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -5699,6 +6413,10 @@ Zhromažďujú sa tieto polia:
 - **Data_StopwatchDuration:long** – celkový čas aktivity.
 
 - **Data_TypeOfSaveDialog:long** – preddefinovaná množina hodnôt dialógového okna (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG atď.)
+
+- **Data_WaitForSaveOrMergeSuccess:bool** – označuje, že operácia uloženia ako bola úspešná pri čakaní na uloženie alebo zlúčenie na pozadí.
+ 
+- **Data_WaitForSaveOrMergeTimeout:long** – označuje, že uplynul časový limit operácie uloženia ako pri čakaní na uloženie alebo zlúčenie na pozadí.
 
 - **DstDoc** – nové umiestnenie dokumentu. 
 
@@ -7057,7 +7775,9 @@ Zhromažďujú sa tieto polia:
 
 Tento signál sa používa na zabezpečenie toho, aby sa po prihlásení používateľa do aplikácie OneNote pre Android správne zriadili poznámkové bloky a aby používateš úspešne vytvoril novú poznámku.  Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby.
 
-Nezhromažďujú sa žiadne ďalšie polia.
+Zhromažďujú sa tieto polia:
+
+- Žiadne
 
 #### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(predchádzajúci názov)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
@@ -7134,6 +7854,8 @@ Zhromažďujú sa tieto polia:
 - **recent_message_id** – ID najnovšej správy v konverzácii
 
 - **suggested_reply_state** – stav navrhovaných odpovedí pre túto konverzáciu (nedostupné, dostupné, zobrazené, použité alebo zahodené)
+
+- **suggested_reply_types** – označuje typ a počet navrhovaných odpovedí zobrazených/použitých pre túto konverzáciu. Ide o slovník. Príklad {text: 2, send_avail: 1}.
   
 - **total_count** – celkový počet snímok zobrazených súčasťou
  
@@ -7198,6 +7920,8 @@ Zhromažďujú sa tieto polia:
 - **source_inbox** – označuje typ zdrojovej doručenej pošty pre referenčnú správu, 
 
 - **suggested_reply_state** – zachytáva stav navrhovanej odpovede pre odoslanú poštu, t. j. nedostupné, dostupné, zobrazené, použité alebo zahodené
+
+- **suggested_reply_types** – označuje typ a počet navrhovaných odpovedí zobrazených/použitých pre tento odoslaný e-mail. Ide o slovník. Príklad {text: 2,  send_avail: 1}.
 
 - **suggestions_requested** – udáva počet požadovaných návrhov inteligentného písania
 
@@ -7419,6 +8143,8 @@ Táto udalosť umožňuje zistiť výskyt kritických chýb aplikácie, ktoré b
 Zhromažďujú sa tieto polia:
 
 - **black_list_reason** – uvádza, či existuje dôvod na ignorovanie týchto údajov. Medzi príklady patrí spustenie v dôsledku vzdialeného oznámenia a spustenie v dôsledku načítania na pozadí.
+
+- **step_premain** – – uvádza čas, ktorý v Outlooku uplynul, odkedy používateľ ťukol na ikonu, po krok step0_main, „hlavný“ krok definovaný v tomto dokumente.
 
 - **step0_main** – uvádza čas, ktorý Outlook potreboval na presun do „hlavného“ kroku, ktorý definuje spoločnosť Apple.
 
@@ -7965,6 +8691,16 @@ Zhromažďujú sa tieto polia:
 - **TotalTime** – celkový strávený čas.
 
 - **UsesSharedRuntime** – označuje, či aplikácia používa sharedRuntime alebo nie.
+
+#### <a name="officeofficemobilefirstrunsetup"></a>Office.OfficeMobile.FirstRunSetup
+
+Táto udalosť prezenčného signálu sa spustí pri prvom spustení aplikácie po inštalácii. Pomáha identifikovať inštalácie a automatické inovácie zo starších verzií aplikácie a umožňuje nám identifikovať chyby v automatických inováciách vrátane zlyhaní pri načítavaní knižníc a sťahovaní rozšírení/jazykových balíkov.
+
+Zhromažďujú sa tieto polia:
+
+- **IsFlightAssigned** – Boolovská hodnota určujúca, či používateľ bol súčasťou nejakej vopred priradenej skupiny funkcií, ktorá môže spôsobiť vystavenie určitým funkciám.
+
+- **IsFRELoadSuccessful** – celé číslo uvádzajúce stav výsledku
 
 #### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(predchádzajúci názov)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
@@ -9484,6 +10220,8 @@ Zhromažďujú sa tieto polia:
 
 - **isAppKill** – pomáha pochopiť, či bola aplikácia v zariadení vypnutá alebo zatvorená
 
+- **is_crashloop** – pomáha nám pochopiť, či by zlyhanie mohlo byť slučkou zlyhania.
+
 - **reportKey** – jedinečné ID pre inštaláciu aplikácie na zariadení na preskúmanie problému
 
 - **signal** – signál, ktorý spôsobil zlyhanie, čím získame ďalšie podrobnosti na preskúmanie zlyhania
@@ -9646,6 +10384,8 @@ Zhromažďujú sa tieto polia:
 - **IsDebug** – signalizuje, či relácia je reláciou ladenia
 
 - **IsPreload** – označuje, či je doplnok predinštalovaný na pozadí na zlepšenie výkonu aktivácie.
+
+- **IsWdagContainer** – označuje, či sa uskutočňuje aktivácia doplnku v kontajneri aplikácie Windows Defender Application Guard.
 
 - **NumberOfAddinsActivated** – počítadlo aktivovaných doplnkov.
 
@@ -9934,6 +10674,15 @@ Zhromažďujú sa tieto polia:
 - **Exception** – zásobník volaní pre výnimku
 
 - **Event Name** – názov udalosti je kategória udalosti a označenie udalosti.
+
+#### <a name="onenotesafebootresetcrashcounteronappsuspend-officeonenoteandroidsafebootresetcrashcounteronappsuspend-officeandroidearlytelemetry-safebootresetcrashcounteronappsuspend"></a>OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry. SafeBootResetCrashCounterOnAppSuspend
+
+Kritický signál sa odošle, keď sa nuluje počítadlo zlyhania pri pozastavení aplikácie pred zobrazením dialógového okna bezpečného spustenia. Táto značka sa vyžaduje na sledovanie a diagnostiku stavu aplikácie. Dialógové okno bezpečného spustenia sa zobrazuje, keď aplikácia zlyhá viackrát za sebou. Používateľovi poskytne možnosť resetovať aplikáciu. Táto značka pomáha zistiť, či sa dialógové okno bezpečného spustenia nezobrazilo používateľovi napriek dosiahnutiu kritérií spustenia. 
+
+Zhromažďujú sa tieto polia:
+
+- Žiadne
+
 
 #### <a name="telemetry_error"></a>telemetry_error
 
@@ -10724,9 +11473,17 @@ Táto udalosť sa spustí v relácii Zastaviť skúškovej relácie. V kombinác
 
 Zhromažďujú sa tieto polia:
 
-- **ResumeRehearsingCount** – počet kliknutí používateľa na pokračovanie v skúške
+- **CritiqueSummary** – Súhrn toho, čo všetci kritici videli, spolu s ich počtami.
 
-- **ResumeRehearsingCount** – počet kliknutí používateľa na pozastavenie skúšky
+- **ResumeRehearsingCount** – počet kliknutí používateľa na pozastavenie skúšky.
+
+- **RehearsalInitTime** – čas potrebný na inicializáciu skúšky.
+
+- **ResumeRehearsingCount** – počet kliknutí používateľa na pokračovanie v skúške.
+
+- **Sessionid** – Identifikátor relácie reči. Môžeme ho použiť na ladenie denníkov služby.
+
+- **SlideshowViewLoadTime** – čas potrebný na načítanie prezentácie.
 
 
 #### <a name="officepowerpointpptandroidrehearseviewerrors"></a>Office.PowerPoint.PPT.Android.RehearseView.Errors
@@ -10746,6 +11503,10 @@ Udalosť, ktorá sa spustila pri načítavaní stránky súhrnu. Táto akcia ná
 
 Zhromažďujú sa tieto polia:
 
+- **PageURL:string** – URL adresa stránky, ktorú môžeme použiť na identifikáciu, či relácia bola úspešná alebo došlo k nejakej chybe.
+
+- **Sessionid:string** – Identifikátor relácie reči. Môžeme ho použiť na ladenie denníkov služby.
+
 - **SummaryPageLoadTime: int** – trvanie (v ms) načítania stránky súhrnu. Je tu zahrnutý čas vytvárania údajovej časti 
 
 
@@ -10756,6 +11517,44 @@ Udalosť sa spustila, keď používateľ klikol na spustenie relácie. Táto uda
 Zhromažďujú sa tieto polia:
 
  - Žiadne
+
+#### <a name="officepowerpointrehearsalsessionmetrics"></a>Office.PowerPoint.Rehearsal.SessionMetrics 
+
+Udalosť spustená, keď sa relácia reči zastaví pre nástroj Presenter Coach. Táto udalosť nám pomáha pri zachytávaní určitých metrík pre reláciu nácviku v nástroji Presenter Coach. Pomôže pri udržaní vysokej kvality služby v budúcnosti.
+
+Zhromažďujú sa tieto polia:
+
+- **AuthDurationInMs** – Čas v milisekundách potrebný na overenie (obnovenie overovacieho tokenu).
+
+- **AuthError** – Popis chyby overenia, ktorá sa vyskytla (ak vôbec).
+
+- **AvgFragmentLatencyInMs** – Priemerný čas sieťových hlasových správ.
+
+- **ConnectDurationInMs** – Čas v milisekundách potrebný na dokončenie pripojenia relácie. 
+
+- **FirstAudioDelayInMs** – Čas v milisekundách potrebný na prijatie prvých zvukových údajov.
+
+- **InitMediaCaptureLayerDurationInMs** – Čas v milisekundách potrebný na inicializáciu vrstvy zachytávania médií/zvuku.
+
+- **LocallyDroppedMessageCount** – Celkový počet lokálne zrušených správ.
+
+- **OpenFrontDoorConnectionDurationInMs** – Čas v milisekundách potrebný na otvorenie pripojenia k službe FrontDoor.
+
+- **SendAdaptationTextDurationInMs** – Čas v milisekundách potrebný na odoslanie textu prispôsobenia do služby.
+
+- **ServiceDroppedMessageCount** – Celkový počet správ zrušených službou.
+
+- **Sessionid** – Identifikátor relácie reči. Môžeme ho použiť na ladenie denníkov služby.
+
+- **SpeechClientResultEventsWithTimestamps** – Pole prijatých chybových kódov spoločne s časovými pečiatkmi, ktoré môže pomôcť pri ladení.
+
+- **SpeechHResultsWithTimestamps** – Pole prijatých chybových kódov spoločne s časovými pečiatkmi, ktoré môže pomôcť pri ladení.
+
+- **StartSpeechCaptureDurationInMs** – Čas v milisekundách potrebný na spustenie zachytávania reťi.
+
+- **TotalMessageCount** – Celkový počet zvukových správ odoslaných do služby.
+
+- **WebSocketConnectDurationInMs** – Čas v milisekundách potrebný na dokončenie pripojenia webového socketu.
 
 
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
@@ -11499,6 +12298,18 @@ Zhromažďujú sa tieto polia:
 - **Data_ExceptionType** – voliteľné textové pole, ktoré predstavuje názov vygenerovaný zo zdrojového kódu.
 
 - **Data_MethodName** – text zastupujúci názov metódy v zdrojovom kóde, v ktorom došlo k chybe.
+
+#### <a name="office_android_earlytelemetry_registryerrors"></a>Office_Android_EarlyTelemetry_RegistryErrors
+
+Táto udalosť zachytáva všetky chyby, ktoré sa vyskytli počas prístupu do databázy Registry pre Android. Údaje tejto udalosti nám pomáhajú pochopiť chyby používateľov a zlepšiť fungovanie funkcie databázy Registry.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – Proces aplikácie, ktorý odosiela udalosť.
+
+- **AppVersionLong** – Verzia aplikácie.
+
+- **Data_StackTrace** – Stopa zásobníka chyby.
 
 #### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
