@@ -1542,7 +1542,7 @@ Táto udalosť sa zhromažďuje na zabezpečenie správneho fungovania konfigur�
 
 Zhromažďujú sa tieto polia: 
 
-- **action** – type akcie vykonanej na konte, napríklad pridanie, odstránenie alebo resetovanie
+- **action** – typ akcie vykonanej na konte, napríklad pridanie, odstránenie alebo resetovanie
 
 #### <a name="add_new_account_step"></a>add_new_account_step
 
@@ -3304,7 +3304,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_DocumentOperation_TelemetryReason** – vyjadrenie enumerácie vstupného bodu pre udalosť otvorenia. Príklad: otvorenie zo zoznamu naposledy otváraných súborov alebo prehľadávania, aktivácia súborov atď.
 
-- **Data_DocumentOperation_isTargetECBeginEC** – označuje, či je kontext cieľového spustenia rovnaký ako kontext otvorenia.
+- **Data_DocumentOperation_isTargetECBeginEC** – označuje, či je cieľový kontext spustenia rovnaký ako kontext, z ktorého sa dokument otvára.
 
 - **Data_FileIOInclusiveMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie a trvaním, ktoré zahŕňa trvanie volania podradených funkcií.
 
