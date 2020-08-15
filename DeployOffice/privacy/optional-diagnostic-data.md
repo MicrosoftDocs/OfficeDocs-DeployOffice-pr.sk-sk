@@ -11,14 +11,14 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: V tomto článku správcovia služieb Office získajú informácie o voliteľných diagnostických údajoch v balíku Office vrátane niekoľkých príkladov udalostí.
+description: V tomto článku správcovia služieb Office získajú informácie o voliteľných diagnostických údajoch v balíku Office vrátane niekoľkých príkladov udalostí.
 hideEdit: true
-ms.openlocfilehash: 0190c29a017b35d945e6a1d540e1560dfab47a4c
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 6769c7a0bf254b5a33f92c5410ec517b7d568d8e
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993161"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683199"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Voliteľné diagnostické údaje pre Office
 
@@ -37,7 +37,7 @@ Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microso
 
 ***Voliteľné diagnostické údaje*** sú dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy.
 
-Ak sa rozhodnete odosielať nám voliteľné diagnostické údaje, budú obsahovať aj požadované diagnostické údaje.
+Ak sa rozhodnete odosielať nám voliteľné diagnostické údaje, budú obsahovať aj požadované diagnostické údaje. Môžu sa odosielať aj súbory diagnostického denníka balíka Office, ktoré obsahujú informácie veľmi podobné voliteľným diagnostickým údajom. Ďalšie informácie o týchto súboroch denníkov nájdete v téme [Prehľad súborov diagnostického denníka pre Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
 Príkladmi voliteľných diagnostických údajov sú údaje, ktoré zhromažďujeme o tvaroch, ktoré používatelia vkladajú do wordových dokumentov, aby sme mohli poskytovať lepšie možnosti, a údaje, ktoré zhromažďujeme o čase potrebnom na zobrazenie powerpointovej snímky na obrazovke, aby sme mohli zlepšiť funkčnosť, ak je zobrazenie pomalé.
 

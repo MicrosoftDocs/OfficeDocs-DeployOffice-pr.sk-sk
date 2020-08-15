@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom balíka Office informácie o online funkciách v Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: 8910b00d5201e70131eb1eb0e696d9ce048eabad
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: dec86a00fb6037976f29668534d59b4f99fb9093
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087156"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46682947"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -64,6 +64,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | *Inteligentné vyhľadávanie*\*   | [Získajte prehľad o tom, na čom pracujete, s inteligentným vyhľadávaním](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Navrhované odpovede | [Čo sú navrhované odpovede?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Ťuknutie pre Word (pridanie zo súborov)   | [Vyhľadanie a použitie požadovaného obsahu v požadovanom čase bez nutnosti opustiť Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
+|Prepis |[Prepis záznamov](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transformácia na webovú stránku   | [Skonvertovanie wordového dokumentu na webovú stránku Swaya](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Preklad textu do iného jazyka](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
