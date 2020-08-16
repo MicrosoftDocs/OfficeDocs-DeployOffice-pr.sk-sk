@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: f9010fcc04540073dde219dc765e1811aa8a42e5
-ms.sourcegitcommit: 7b24028ab20d4f43dbca85cea2617398b36a3180
+ms.openlocfilehash: 1485ef7bdcfdf945ba2c9dd0e751cbe6b84dde5c
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117215"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683245"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -10425,6 +10425,140 @@ Táto udalosť sa zaznamenáva v prípade zlyhania premiestnenia lokálneho pozn
 Zhromažďujú sa tieto polia:
  
 - **ErrorMsg** – chybové hlásenie zodpovedajúce zlyhaniu.
+
+### <a name="onenotestorageconnectivitychanged"></a>OneNote.Storage.ConnectivityChanged
+
+Udalosť zaznamená, či používateľ má alebo nemá internetové pripojenie. Používa sa to na koreláciu ostatných metrík výkonnosti stavu synchronizácie, a to tak, že nám umožňuje ignorovať udalosti, ktoré sa vyskytujú, keď používateľ nemá pripojenie na internet, keďže bez pripojenia na internet sa neočakáva prijateľné oneskorenie služby. Umožňuje nám to vypočítať presný počet relácií pre naše metriky v jednotlivých výsekoch zákazníkov (na jednotlivých nájomníkov, na jednotlivé odvetvia). Používa sa aj na filtrovanie hlásení chýb, keďže existujú početné chyby synchronizácie, pri ktorých očakávame, že sa vyskytnú bez pripojenia k sieti, ktoré si však inak vyžadujú skúmanie.
+
+Ak tieto údaje nedostaneme, nebudeme môcť presne monitorovať výkonnosť našich produktov ani určiť, či sa chyby, ktoré sa vyskytnú u používateľa, sú očakávané, alebo si vyžadujú ďalšie skúmanie.
+
+Zhromažďujú sa tieto polia:
+
+- **InternetConnectivityNowAvailable** – ak sa stav pripojenia zmenil a teraz má pripojenie na internet
+
+### <a name="onenotestoragelegacyinboundlatency"></a>OneNote.Storage.LegacyInboundLatency
+
+Kritický signál, ktorý sa používa na sledovanie výkonu prichádzajúcich synchronizačných operácií, ktoré komunikujú priamo so SharePointom, vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+
+Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému prichádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Ak tieto údaje mať nebudeme, bude nám to brániť v zabezpečení dostatočného výkonu sťahovania, keď používateľ synchronizuje zmeny zo SharePointu s počítačom.
+
+Zhromažďujú sa tieto polia: 
+
+- **IsEducationNotebook** – logická hodnota, ktorá označuje, či poznámkový blok je vzdelávací poznámkový
+
+- **NotebookId** – ID poznámkového bloku, ktorého súčasťou je toto nahrávanie
+
+- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách potrebný na vykonanie nahrávania
+
+### <a name="onenotestoragelegacyoutboundlatency"></a>OneNote.Storage.LegacyOutboundLatency
+
+Kritický signál, ktorý sa používa na sledovanie výkonu odchádzajúcich synchronizačných operácií, ktoré komunikujú priamo so SharePointom, vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+
+Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému odchádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Ak tieto údaje mať nebudeme, bude nám to brániť v zabezpečení dostatočného výkonu pri synchronizovaní zmien používateľov do SharePointu. 
+
+Zhromažďujú sa tieto polia: 
+
+- **IsEducationNotebook** – logická hodnota, ktorá označuje, či poznámkový blok je vzdelávací poznámkový
+
+- **NotebookId** – ID poznámkového bloku, ktorého súčasťou je toto nahrávanie
+
+- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách potrebný na vykonanie nahrávania
+
+### <a name="onenotestoragerealtimefiledataobjectdownload"></a>OneNote.Storage.RealTime.FileDataObjectDownload 
+
+Kritický signál, ktorý sa používa na sledovanie výkonu, keď u používateľa prebieha prichádzajúci prenos dátového objektu súboru (t. j. vložený súbor alebo obrázok), ktorý sa stiahne priamo z našej služby a nie je súčasťou operácie synchronizácie na stránke, v sekcii alebo v poznámkovom bloku. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+
+Používa sa to na zabezpečenie stavu a výkonu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému sťahovaniu údajov z našej služby a to, ako sú problémy s oneskorením rozšírené v rámci nájomníka, a hlásenie nášho správania v priebehu času, čo nám umožňuje merať trendy výkonu služby. Ak pri objekte súboru zistíme neprijateľné oneskorenie, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa objektu, aby ste mohli vylepšiť proces sťahovania. Údaje tiež rozdeľujeme na základe prípony sťahovaného objektu súboru, pretože máme rozdielne očakávania podľa toho, či je súbor zobrazený ako vnorený v našom plátne (napr. obrázok), alebo ide o nevnorený súbor (napr. textový dokument). Ak tieto údaje nedostaneme, bude nám to brániť v monitorovaní výkonu týchto stiahnutí
+
+Zhromažďujú sa tieto polia: 
+
+- **FileSizeInBytes** – veľkosť sťahovaného súboru v bajtoch 
+
+- **IsImage** – logická hodnota, ktorá určuje, či sťahovaný súbor má príponou, ktorá sa zhoduje s preddefinovaným zoznamom bežných formátov obrázka (.bmp, .emf, .gif, .jpe, .jpeg, .jpg, .png), ktoré zobrazujeme vnorené v plátne.
+
+- **TimeToDownload** – dĺžka času potrebného na úspešné stiahnutie dátového objektu súboru z ukladacieho priestoru objektu BLOB do zariadenia 
+
+### <a name="onenotestoragerealtimewebsocketdownload"></a>OneNote.Storage.RealTime.WebSocketDownload
+
+Kritický signál, ktorý sa používa na sledovanie výkonu prichádzajúcich synchronizačných operácií vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon sťahovania údajov zo služby (onenote.com). Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+
+Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov z našej služby, informácie o údajoch, ktoré sťahovali, keď došlo k pomalému prichádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. 
+
+Ak zistíme neprijateľné oneskorenie v prípade sekcie alebo poznámkového bloku, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa toho istého dokumentu, aby sme identifikovali regresie výkonu na strane klienta, čo nám umožní poskytovať výkonnejšiu službu.
+
+Ak tieto údaje nedostaneme, nebudeme môcť monitorovať výkon tohto aspektu služby a ani vplyv zmien na strane servera, čo môže byť potrebné z hľadiska používania alebo iných faktorov.
+
+Zhromažďujú sa tieto polia:
+
+- **DeviceSessionId** – ID relácie zariadenia
+
+- **IsEducationNotebook** – logická hodnota, ktorá označuje, či poznámkový blok je vzdelávací poznámkový
+
+- **IsHierarchyResource** – logická hodnota, ktorá označuje, či zdroj je hierarchickým zdrojom
+
+- **NotebookId** – ID poznámkového bloku, ktorého súčasťou je toto nahrávanie
+
+- **ResourceId** – ID zdroja, ktorý nahrávame
+
+- **SectionId** – ID sekcie, ktorej súčasťou je toto nahrávanie
+
+- **ServerSessionId** – ID relácie servera, ktorej súčasťou je toto nahrávanie
+
+- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách medzi tým, ako sa používateľ naviguje na stránku, a tým, ako replikačný zásobník potvrdí, že strýnka je synchronizovaná so serverom.
+
+- **TimeToFirstUpdateInMs** – čas v milisekundách medzi tým, ako synchronizačný modul spustí prichádzajúcu replikáciu stránky, a tým, ako táto operácia replikácie dosiahne stavom synchronizácie so serverom.
+
+### <a name="onenotestoragerealtimewebsocketupload"></a>OneNote.Storage.RealTime.WebSocketUpload
+
+Kritický signál, ktorý sa používa na sledovanie výkonu odchádzajúcich synchronizačných operácií vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby (onenote.com).
+
+Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému odchádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Tieto údaje použijeme aj na sledovanie vplyvu a efektivity našich vylepšení klientov a služieb. 
+
+Ak zistíme neprijateľné oneskorenie v prípade sekcie alebo poznámkového bloku, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa toho istého dokumentu, aby sme identifikovali regresie výkonu, čo nám umožní poskytovať výkonnejšie prostredie.
+
+Ak tieto údaje nedostaneme, nebudeme môcť monitorovať výkon tohto aspektu služby a ani vplyv zmien na strane servera, čo môže byť potrebné z hľadiska používania alebo iných faktorov.
+
+Zhromažďujú sa tieto polia: 
+
+- **DeviceSessionId** – ID relácie zariadenia
+
+- **IsEducationNotebook** – logická hodnota, ktorá označuje, či poznámkový blok je vzdelávací poznámkový
+
+- **IsHierarchyResource** – logická hodnota, ktorá označuje, či zdroj je hierarchickým zdrojom
+
+- **IsWorstTime** – logická hodnota, ktorá označuje, či ide bežný čas pri udalosti nahrávania, alebo najhorší čas, ktorý sme zistili v rámci tohto klienta za posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+
+- **NotebookId** – ID poznámkového bloku, ktorého súčasťou je toto nahrávanie
+
+- **RecommendedPutIntervalInMs** – čas, ktorý služba oznámila klientovi ako odporúčaný interval vkladania
+
+- **ResourceId** – ID zdroja, ktorý nahrávame
+
+- **SectionId** – ID sekcie, ktorej súčasťou je toto nahrávanie
+
+- **SenderRequestId** – ID odosielateľa, ktorý vykonáva nahrávanie
+
+- **ServerSessionId** – ID relácie servera, ktorej súčasťou je toto nahrávanie
+
+- **UploadNonSuspendedTimeInMs** – čas v milisekundách potrebný na vykonanie nahrávanie okrem času, keď bola aplikácia pozastavená
+
+- **UploadTimeInMs** – čas v milisekundách potrebný vykonanie nahrávania v skutočnosti
+
+- **WaitTimeInMs** – čas v milisekundách medzi požiadavkou na nahrávanie a začatím nahrávania
+
+- **WebUrl** – WebUrl adresa nahrávania (zaznamená sa ako PiiWz)
+
+### <a name="onenotestoragesynchealth"></a>OneNote.Storage.SyncHealth
+
+Kritický signál, ktorý sa používa na sledovanie chýb a výnimiek, ktoré sa vyskytli vo vnútri synchronizačného zásobníka v klientovi OneNotu, čo nám umožňuje monitorovať a zmierňovať tieto neočakávané stavy.
+
+Táto možnosť sa používa na zabezpečenie stavu služby tým, že nám umožňuje zobraziť správy o chybách klientov v reálnom čase, vďaka čomu môžeme reagovať na problémy so synchronizáciou pri ich vzniku. Používa sa aj na zisťovanie rozšírenia a závažnosti problému pomocou krížového odkazovania na značku chyby s kódom klienta na identifikáciu zdroja zlyhania. Tieto údaje zoskupujeme aj na to, aby sme získali informácie o našom výkone v priebehu času a o vplyve a efektivite našich vylepšení klientov a služieb. Ak tieto údaje mať nebudeme, nebudeme môcť aktívne reagovať na chybové stavy v našej synchronizačnej službe bez eskalácie zákazníkov.
+
+Zhromažďujú sa tieto polia: 
+
+- **Service** – synchronizačná služba, ktorú klient používal, keď sa vyskytla chyba (staršia alebo moderná synchronizácia)
+
+- **Tag** – značka (identifikačná hodnota) predstavujúca chybu, ktorá sa vyskytla u klienta počas operácie synchronizácie
 
 ### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
  
