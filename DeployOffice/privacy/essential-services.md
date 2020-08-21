@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 1485ef7bdcfdf945ba2c9dd0e751cbe6b84dde5c
-ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
+ms.openlocfilehash: 81694daded27994d5026d923acd36302a79acc9f
+ms.sourcegitcommit: 5fc8194df704f79d340d9e8872a03ab2b0ebc62b
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46683245"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815336"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -3303,6 +3303,44 @@ Zhromažďujú sa tieto polia:
 
 ## <a name="microsoft-autoupdate-mau-events"></a>Udalosti služby Microsoft AutoUpdate (MAU)
 
+### <a name="additionalappinfo_invalidpreference"></a>additionalappinfo_invalidpreference
+
+Táto udalosť nahlasuje neplatnú množinu preferencií, aby sa zobrazili ďalšie informácie týkajúce sa ukončenia poskytovania služby pre produkt. Tieto informácie používame na upozornenie zákazníkov na nastavenie správnych preferencií, aby sa zobrazili ďalšie informácie.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **Reason** – podrobnosti o neplatnej položke v preferenciách
+
+- **SessionId** – identifikátor relácie
+
 ### <a name="appdelegate_launch"></a>appdelegate_launch
 
 Táto udalosť označuje, že sa vyskytol pokus o spustenie aplikácie. Zaznamenáme jej výsledok (zlyhanie alebo úspech). Táto udalosť sa používa na identifikáciu prípadov, v ktorých sa služba MAU nedokáže spustiť.
@@ -3327,7 +3365,7 @@ Zhromažďujú sa tieto polia:
 
 - **DeviceInfo_OsBuild** – verzia operačného systému
 
- - **Event_ReceivedTime** – čas prijatia telemetrie
+- **Event_ReceivedTime** – čas prijatia telemetrie
 
 - **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
 
@@ -3425,6 +3463,85 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="appinstall_logscanned"></a>appinstall_logscanned
+
+Táto udalosť sa používa na určenie, či sa súbor denníka úspešne spracoval. Túto udalosť používame na zisťovanie a riešenie problémov vzniknutých počas inštalácie aplikácie. 
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – zostavy o chybách, ktoré sa našli počas inštalácie aplikácie alebo stav dokončenia kontroly 
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="appregistry_config"></a>appregistry_config
+
+Táto udalosť nahlasuje chyby pri načítavaní informácií v databáze Registry aplikácie. Túto zostavu používame na upozornenie IT správcov na správny formát nastavení registrácií klientskych aplikácií.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – obsahuje informácie o povahe chýb, ktoré sa vyskytli pri registrácii aplikácie.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
 
 ### <a name="appregistry_info"></a>appregistry_info
 
@@ -3548,6 +3665,48 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="cloningtask_begin"></a>cloningtask_begin
+
+Táto udalosť označuje začiatok úlohy klonovania pred aktualizáciou aplikácie. Túto udalosť používame v kombinácii s udalosťou cloningtask_status na určenie množstva neúspechov klonovania s cieľom zistiť, či by mala byť funkcia klonovania obmedzovaná pre rôzne cieľové skupiny.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie.
+
 
 ### <a name="cloningtask_helpertoolconnection"></a>cloningtask_helpertoolconnection
 
@@ -3588,6 +3747,92 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+### <a name="cloningtask_status"></a>cloningtask_status
+
+Táto udalosť označuje stav procesu klonovania pre aplikáciu, ktorá sa má aktualizovať. Túto udalosť používame na určenie miery úspešnosti, ako aj typov vyskytnutých chýb, ktoré spôsobujú zlyhania. Táto udalosť sa používa na určenie, či sa má funkcia klonovania obmedziť pre rôzne cieľové skupiny.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – reťazec obsahuje informácie o chybe, ak sa nejaká vyskytla počas úlohy klonovania.
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – reťazcové vyjadrenie booleovskej premennej.
+
+- **UpdateID** – identifikátor aktualizácie.
+
+### <a name="cloningtask_status_finish"></a>cloningtask_status_finish
+
+Táto udalosť nahlasuje dokončenie úlohy klonovania. Táto udalosť tvorí súčasť zostavy aktualizácie lievika a používa sa na určenie stavu aktualizácií aplikácií.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie.
 
 
 ### <a name="configuration_channel"></a>configuration_channel
@@ -3671,6 +3916,45 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie.
 
+### <a name="configuration_systemversion"></a>configuration_systemVersion
+
+Táto udalosť označuje, že pokus o načítanie systémovej verzie zlyhal. Táto funkcia obsahuje aj informácie o informáciách, ktoré služba Microsoft Auto Update (MAU) dokázala zhromaždiť zo systému. Túto udalosť používame na určenie toho, či by mala služba MAU vyriešiť zlyhania. Všimnite si, že systémová verzia sa používa na určenie, či sa dá aktualizovať klientske zariadenie.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – obsahuje informácie o chybe, ktorá sa vyskytla pri načítavaní reťazca verzie systému macOS.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
 
 ### <a name="controller_alertmanager_reinstallresponse"></a>controller_alertmanager_reinstallresponse
 
@@ -5600,6 +5884,45 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
+### <a name="downloadmanifest_configuration"></a>downloadmanifest_configuration
+
+Táto udalosť nahlasuje chybu pomocou konfigurácie služby Microsoft Auto Update (MAU), a to buď s vlastným nastavením servera v preferenciách, alebo v definíciách koncových bodov v sprievodcovi aktualizácie v nainštalovaných súčastí služby MAU. Túto zostavu používame na upozornenie IT správcov na nastavenie správnych koncových bodov servera manifestu.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **Payload** – označuje, či sa chyba nachádza vo vlastnom nastavení servera alebo v nainštalovaných súčastiach služby MAU
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
 ### <a name="downloadmanifest_downloadcatalogfail"></a>downloadmanifest_downloadcatalogfail
 
 Táto udalosť označuje, že došlo k zlyhaniu sťahovania. Súbor, ktorý sa nepodarilo stiahnuť, sa zaznamená. Chceme poznať načítavané kolaterály a balíky. Zlyhanie stiahnutia manifestu môže poukazovať na zlyhanie vygenerovania kolaterálu, chybu konfigurácie siete CDN, chybu konfigurácie klienta alebo chybu siete. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -6173,6 +6496,54 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="downloadtask_downloadbegin"></a>downloadtask_downloadbegin
+
+Táto udalosť označuje začatie aktivity sťahovania pre aktualizáciu aplikácie. Tvorí súčasť aktualizácie lievika a používa sa na určenie stavu aktualizácií aplikácií.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **BundleVersion** – verzia aktualizovanej aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **PreviousUpdateID** – identifikátor aktualizácie aplikácie
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdatePkg** – názov použitého aktualizačného balíka
+
+- **UpdateVersion** – verzia aplikácie po aktualizácii
+
 
 ### <a name="downloadtask_downloadfailure"></a>downloadtask_downloadfailure
 
@@ -6265,6 +6636,130 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor stiahnutej aktualizácie.
 
+### <a name="downloadtask_updatertypeerror"></a>downloadtask_updatertypeerror
+
+Táto udalosť nahlasuje chybu aktualizačného programu v stiahnutom súbore manifestu. Túto udalosť používame na oznámenie vlastníka súboru manifestu, aby sa mohla chyba opraviť.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdaterType** – typ aktualizačného programu zadaného v stiahnutom súbore manifestu
+
+- **UpdateURL** – URL adresa aktualizačného balíka, ktorý je potrebné použiť
+
+### <a name="downloadtask_urlerror"></a>downloadtask_urlerror
+
+Táto udalosť nahlasuje chybu v URL adrese určenej v stiahnutom súbore manifestu. Túto udalosť používame na oznámenie vlastníka súboru manifestu, aby sa mohla chyba opraviť.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **Error** – označuje povahu chyby, ktorá sa vyskytla
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdateURL** – URL adresa aktualizačného balíka, ktorý je potrebné použiť
+
+### <a name="fba_changelastupdate"></a>fba_changelastupdate
+
+Táto udalosť nahlasuje, keď služba Microsoft Auto Update (MAU) skontrolovala aktualizácie. Túto udalosť použijeme na ladenie, keď niektoré zariadenie dlhšiu dobu nemalo aktualizáciu.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **Payload** – obsahuje dátum a čas, kedy služba MAU kontrolovala aktualizácie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
 
 ### <a name="fba_checkforupdate"></a>fba_checkforupdate
 
@@ -6348,6 +6843,325 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
+### <a name="fba_forceinstallmsgsent"></a>fba_forceinstallmsgsent
+
+Táto udalosť označuje, že z používateľského rozhrania bola spustená nútená aktualizácia. Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_forceupdatecheck"></a>fba_forceupdatecheck
+
+Táto udalosť označuje, že kontrola aktualizácie je nútená. Túto udalosť používame na určenie množstva vynútených kontrol aktualizácií, ktoré sa uskutočnili mimo normálneho cyklu kontroly aktualizácie.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_guiappopen"></a>fba_guiappopen
+
+Táto udalosť označuje, že používateľské rozhranie sa spúšťa v režime automatickej kontroly, pretože je práve otvorená aplikácia s príslušnou aktualizáciou. Táto udalosť sa používa na určenie množstva spustení používateľského rozhrania z režimu automatickj kontroly pri tvorbe budúcich funkcií.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_installpending"></a>fba_installpending
+
+Táto udalosť označuje, že služba Microsoft Auto Update (MAU) odoslala oznámenie o čakajúcich aktualizáciách. Táto udalosť sa používa na určenie množstva aktualizácií, ktoré sa spustili z používateľských oznámení, a používa sa na vylepšenie používateľskej skúsenosti, a to minimalizovaním rušenia používateľov v budúcich vydaniach.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_launch"></a>fba_launch
+
+Táto udalosť označuje spustenie asistenta pre službu Microsoft Update s metódou spustenia. Táto udalosť sa používa na určenie, či sa spustenie asistenta pre službu Microsoft Update spúšťa v nesprávnom kontexte.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_launchbyagent"></a>fba_launchbyagent
+
+Táto udalosť označuje, že asistent pre službu Microsoft Update bol spustený prostredníctvom agenta spustenia. Táto udalosť sa používa na určenie množstva spustení asistenta pre službu Microsoft Update z používateľského rozhrania pre ďalší vývoj.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_launchfromprotocol"></a>fba_launchfromprotocol
+
+Táto udalosť označuje, že asistent pre službu Microsoft Update bol spustený prostredníctvom URL protokolu. Táto udalosť sa používa na určenie množstva spustení asistenta pre službu Microsoft Update cez URL adresu pre ďalší vývoj.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje informácie o schéme URL adries a hostiteľovi URL adries
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_launchgui"></a>fba_launchgui
+
+Táto udalosť označuje, že asistent pre službu Microsoft Update sa pokúša spustiť grafické používateľské rozhranie (GUI). Táto udalosť sa používa na určenie množstva spustení používateľského rozhrania inicializovaných asistentom pre službu Microsoft Update na pomoc pri ďalšom vývoji vrátane minimalizácie rušenia používateľov spôsobených častým spúšťaním používateľského rozhrania.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
 ### <a name="fba_launchstatus"></a>fba_launchstatus
 
 Táto udalosť zaznamenáva zlyhania démona služby MAU pri pokuse o spustenie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -6392,6 +7206,250 @@ Zhromažďujú sa tieto polia:
 
 - **Success** – Booleovský reťazec označujúci, či sa úspešne spustil proces deamon služby MAU.
 
+
+### <a name="fba_mausilentupdate"></a>fba_mausilentupdate
+
+Táto udalosť označuje, že asistent pre službu Microsoft Update spúšťa tiché aktualizácie. Táto udalosť sa používa na určenie množstva aktualizácií, ktoré sú použité bez zásahu používateľa s cieľom vytvoriť vylepšenia používateľskej skúsenosti.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+ 
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_moreinfofromappnotification"></a>fba_moreinfofromappnotification
+
+Táto udalosť uvádza informácie o tom, že registrovaná aplikácia smeruje cez službu Microsoft Auto Update (MAU). V rámci oznámenia služby MAU sa napríklad pošlú správy o skončení poskytovania služby. Túto udalosť používame na určenie množstva zariadení, ktoré zobrazujú toto konkrétne oznámenie, a to na určenie úspešnosti šírenia informácií.
+
+Zhromažďujú sa tieto polia:
+
+- **AdditionalInfoID** – jedinečne identifikuje „Ďalšie informácie“, ktoré sú pošlu cez službu MAU.
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **NotificationEvent** – statický text s informáciou o tom, aký typ oznámenia sa používa.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_multipledaemon"></a>fba_multipledaemon
+
+Táto udalosť označuje, že sa zistila iná inštancia asistenta pre službu Microsoft Update a aktuálna inštancia sa ukončí. Táto udalosť sa použije na určenie množstva zariadení, ktoré sa pokúšajú spustiť viacero inštancií asistenta pre aktualizáciu a v prípade potreby navrhnúť alternatívne riešenie.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_nofifyappclosed"></a>fba_nofifyappclosed
+
+Táto udalosť označuje, že asistent pre službu Microsoft Update odoslal oznámenie o čakajúcich aktualizáciách, pretože nie sú otvorené žiadne registrované aplikácie a aktualizácie môžu pokračovať bez rušenia používateľa. Túto udalosť používame na určenie množstva aktualizácií, ktoré je možné použiť, ale je na to potrebný zásah používateľa. Táto udalosť sa používa na pomoc pri zlepšovaní používateľskej skúsenosti.
+
+Zhromažďujú sa tieto polia: 
+    
+- **App** – proces aplikácie odosielajúci udalosť
+    
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+    
+- **AppVersionLong** – verzia aplikácie
+    
+- **Channel** – preferencia pre cieľovú skupinu
+    
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+    
+- **DeviceID** – identifikátor zariadenia
+    
+- **DeviceInfo_Model** – hardvérový model zariadenia
+    
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+    
+- **DeviceInfo_OsBuild** – verzia operačného systému
+    
+- **Event_ReceivedTime** – čas prijatia telemetrie
+    
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+    
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+    
+- **HowToCheck** – ako sa kontroluje nastavenie
+    
+- **Payload** – statický text
+    
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+    
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+    
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_nofifyappopen"></a>fba_nofifyappopen
+
+Táto udalosť označuje, že asistent pre službu Microsoft Update odoslal oznámenie o čakajúcich aktualizáciách, pretože sú otvorené žiadne registrované aplikácie a aktualizácie na pokračovanie vyžadujú zatvorenie aplikácií.  Túto udalosť používame na určenie množstva aktualizácií, ktoré vyžadujú zásah používateľa.  Táto udalosť sa používa na pomoc pri zlepšovaní používateľskej skúsenosti.
+
+Zhromažďujú sa tieto polia:  
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+    
+- **AppVersionLong** – verzia aplikácie
+    
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="fba_settimerfail"></a>fba_settimerfail  
+
+Táto udalosť označuje zlyhanie pokusu o nastavenie časovača na spustenie budúcej aktualizácie. Táto udalosť je veľmi dôležitá a používame ju na určenie množstva zlyhaní na vývoj prípadných alternatívnych riešení.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje informácie o čase poslednej aktualizácie a použitom kalendári
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
 ### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
 
 Táto udalosť označuje, že používateľ sa rozhodol pre tiché aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -6431,7 +7489,6 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
 - **SessionId** – identifikátor relácie
-
 
 ### <a name="fba_skipforcedupdate"></a>fba_skipforcedupdate
 
@@ -6853,6 +7910,47 @@ Zhromažďujú sa tieto polia:
 - **UpdateID** – identifikátor aktualizácie aplikácie.
 
 
+### <a name="fbasilentupdate_clientsession"></a>FBASilentUpdate_ClientSession
+
+Táto udalosť sa používa na výpočet metriky stavu kritickej aktualizácie pre službu Microsoft Auto Update (MAU). Táto udalosť nám umožňuje označiť, na ktorej relácii aktualizácie (sťahovanie alebo inštalácia) momentálne pracuje koncový server.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – označuje, na ktorej relácii aktualizácie (sťahovanie alebo inštalácia) momentálne pracuje koncový server.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
 ### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
 
 Táto udalosť zaznamenáva výsledok overenia podpisu kódu po použití aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -7270,6 +8368,101 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="fbasilentupdate_installstatus"></a>fbasilentupdate_installstatus
+
+Táto udalosť nahlasuje stav úlohy aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie aplikácie a používa sa na monitorovanie stavu aktualizácií aplikácií.
+
+Zhromažďujú sa tieto polia: 
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje informácie o tom, či sa zobrazuje zobrazenie priebehu
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – údaj o úspešnom aktualizovaní aplikácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
+
+- **UpdatePkg** – názov použitého aktualizačného balíka
+
+### <a name="fbasilentupdate_notificationerror"></a>fbasilentupdate_notificationerror
+
+Táto udalosť nahlasuje chyby pri pokuse o odoslanie používateľského oznámenia. Táto udalosť sa použije na ladenie príčiny chyby a vykonanie opravných opatrení.
+
+Zhromažďujú sa tieto polia:  
+
+- **App** – proces aplikácie odosielajúci udalosť
+ 
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **ErrType** – označuje povahu chyby, ktorá sa vyskytla
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Message** – obsah oznámenia
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Title** – názov oznámenia
+
+- **Type** – typ oznámenia
 
 ### <a name="fbasilentupdate_notificationremoved"></a>fbasilentupdate_notificationremoved
 
@@ -7393,6 +8586,45 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="fbasilentupdate_timerforapptermination"></a>FBASilentUpdate_TimerForAppTermination
+
+Táto udalosť sa používa na výpočet metriky stavu kritickej aktualizácie pre službu Microsoft Auto Update (MAU). Táto akcia nám umožňuje sledovať udalosť ukončenia otvorenej aplikácie a trvanie otvoreného stavu.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – označuje, či bol časovač pri spustení inštalácie aktualizácie nastavený pre otvorenú aplikáciu. 
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
 
 ### <a name="fbasilentupdate_updateavailablenotification"></a>fbasilentupdate_updateavailablenotification
 
@@ -7557,6 +8789,691 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="gui_dashboardview_appisopendialog_display"></a>gui_dashboardview_appisopendialog_display 
+
+Táto udalosť označuje, že používateľské rozhranie zobrazilo dialógové okno na zatvorenie otvorenej aplikácie s cieľom pokračovať v aktualizácii aplikácie. Táto udalosť sa používa na určenie počtu oneskorených aktualizácií s cieľom poskytnúť budúce vylepšenia na minimalizovanie rušenia používateľa.
+
+Zhromažďujú sa tieto polia: 
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
+
+### <a name="gui_dashboardview_appisopendialogbutton_clicked"></a>gui_dashboardview_appisopendialogbutton_clicked
+
+Táto udalosť označuje, či sa aktualizácia aplikácie vynechá alebo či sa vykoná ďalší pokus, keď sa zobrazí dialógové okno otvorenia aplikácie. Táto udalosť sa používa na určenie množstva aktualizácií, ktoré sa vynechali a použijú sa na budúce vylepšenia na minimalizovanie rušenia používateľa.
+
+Zhromažďujú sa tieto polia:   
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **ButtonType** – preskočenie alebo opakovanie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia 
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
+
+### <a name="gui_dashboardview_updateinprogressdialog_display"></a>gui_dashboardview_updateinprogressdialog_display
+
+Táto udalosť zaznamenáva, či sa používateľom zobrazilo dialógové okno s informáciou, že aktualizácia už prebieha.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="gui_dashboardview_updatemodebutton_clicked"></a>gui_dashboardview_updatemodebutton_clicked
+
+Táto udalosť označuje zmenu režimu aktualizácie z ovládacieho prvku používateľského rozhrania. Táto udalosť sa používa na určenie množstva zariadení, ktoré prechádzajú z jedného režimu do druhého a slúži na určenie príčiny zastavovania automatických aktualizácií zákazníkmi. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+ 
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – označuje, či je automatické sťahovanie vypnuté
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="gui_feedbackwindow_buttonclicked"></a>gui_feedbackwindow_buttonclicked
+
+Táto udalosť nahlasuje, či sa pripomienky odoslali alebo sa pred odoslaním zrušili. Táto udalosť sa používa na určenie množstva pripomienok odoslaných na konkrétnu verziu vydania. Pomáha to včas izolovať potenciálne problémy.
+
+Zhromažďujú sa tieto polia: 
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **ButtonType** – údaj o tom, či sa pripomienky odoslali alebo zrušili
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+ 
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="gui_preferenceview_consentsheet_display"></a>gui_preferenceview_consentsheet_display
+
+Táto udalosť označuje, že sa zobrazí hárok súhlasu pre daný kanál, ak je k dispozícii. Táto udalosť sa používa na určenie množstva zariadení, ktoré sa novo zaregistrujú do príslušného kanála pre divákov (Insider Fast/Insider Slow). Túto udalosť používame aj na skontrolovanie, či funguje zobrazenie dialógového okna so súhlasom, aby sme mohli používateľom zobraziť podmienky používania.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **ChannelName** – kanál, pre ktorý sa zobrazí dialógové okno so súhlasom
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="gui_preferenceview_consentsheet_licenseerror"></a>gui_preferenceview_consentsheet_licenseerror
+
+Táto udalosť nahlasuje chybu pri pokuse o zobrazenie dialógového okna so súhlasom. Táto udalosť je veľmi dôležitá a používame ju na opravu akýchkoľvek problémov spôsobených zmenou produktu, ak sa nejaké vyskytnú.
+
+Zhromažďujú sa tieto polia: 
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **ErrorCode** – zistil sa kód chyby
+
+- **ErrorDomain** – chybná doména
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="gui_preferenceview_switchchannel"></a>gui_preferenceview_switchchannel
+
+Táto udalosť nahlasuje prechod medzi kanálmi vybranými používateľom. Táto udalosť slúži na určenie dôvodu, pre ktorý sa zákazníci rozhodli odstúpiť z kanálov insiderov.  
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PickedFrom** – starý kanál
+
+- **PickedTo** – nový kanál
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="gui_updatemanager_applaunchduringupdate"></a>gui_updatemanager_applaunchduringupdate
+
+Táto udalosť nahlasuje, že aplikácia sa spustila počas aktualizácie, a služba Microsoft AutoUpdate ukončí spustenú aplikáciu. Všimnite si, že spustenie aplikácie počas aktualizácie môže mať za následok poškodenie aplikácie. Túto udalosť používame na zabezpečenie toho, aby proces aktualizácie nebol ovplyvnený spustenou aplikáciou ešte predtým, ako ju bude možné používať.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie, ktorá sa spustila počas aktualizácií.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – boolovská hodnota reťazca, ktorá určuje, či sa aplikácia úspešne ukončila.
+
+- **UpdateID** – identifikátor aktualizácie aplikácie.
+
+### <a name="gui_updatemanager_downloadupdateforapp"></a>gui_updatemanager_downloadupdateforapp
+
+Táto udalosť nahlasuje stav dokončenia sťahovania aktualizácie. Túto udalosť použijeme na zaistenie stavu aktualizácie a sledovanie a vyriešenie bodu zlyhania.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **IsRepair** – boolovský reťazec označuje, či je konkrétna aktualizácia opravou.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **isRepair** – údaj o tom, či bolo sťahovanie na opravu predchádzajúcej neúspešnej aktualizácie.
+
+- **UpdateID** – identifikátor aktualizácie.
+
+- **UpdateName** – názov aktualizácie.
+
+
+### <a name="gui_updatemanager_error"></a>gui_updatemanager_error
+
+Táto udalosť nahlasuje všetky chyby, ktoré sa vyskytli počas aktualizácií aplikácie. Môže to znamenať chybu v sekvencii vykonávania služby Microsoft Auto Update (MAU).  Túto zostavu používame na aktualizovanie služby MAU s cieľom vyriešiť bežné scenáre chýb.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – obsahuje informácie o chybách, ktoré sa vyskytli počas aktualizácie aplikácie.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – boolovská hodnota reťazca, ktorá určuje, či sa aplikácia úspešne ukončila.
+
+### <a name="gui_updatemanager_installcleanupforapp"></a>gui_updatemanager_installcleanupforapp
+
+Táto udalosť označuje úspešné vyčistenie dočasných súborov vytvorených počas inštalácie aplikácie. Tvorí súčasť aktualizácie lievika a používa sa na určenie stavu aktualizácií aplikácie.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppState** – celé číslo označuje stav aplikácie po pokuse o aktualizáciu.
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie.
+
+
+### <a name="gui_updatemanager_installsuccessforapp"></a>gui_updatemanager_installsuccessforapp
+
+Táto udalosť označuje úspešnú aktualizáciu aplikácie. Táto udalosť tvorí súčasť aktualizácie lievika, ktorú používame na určenie stavu aktualizácie.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – boolovský reťazec, ktorý určuje, či boli úspešne nainštalované aktualizácie.
+
+- **UpdateID** – identifikátor aktualizácie.
+
+### <a name="gui_updatemanager_installupdateforapp"></a>gui_updatemanager_installupdateforapp
+
+Táto udalosť označuje začatie samotného procesu inštalácie pre aktualizáciu aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie aplikácie, ktorú používame na určenie stavu aktualizácie.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie.
+
+### <a name="gui_updatemanager_queueinstallforapp"></a>gui_updatemanager_queueinstallforapp
+
+Táto udalosť označuje začatie samotného procesu inštalácie pre aktualizáciu aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie aplikácie, ktorú používame na určenie stavu aktualizácie.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie.
+
+### <a name="gui_updatemanager_relaunchapp"></a>gui_updatemanager_relaunchapp
+
+Táto udalosť zaznamenáva, či sa aplikácie úspešne spustili po aktualizáciách.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – boolovská hodnota reťazca, ktorá určuje, či sa aplikácia úspešne ukončila.
+
+- **UpdateID** – identifikátor aktualizácie.
+
+- **UpdateName** – názov aktualizácie.
 
 ### <a name="installdata_checkrunning"></a>installdata_checkrunning
 
@@ -7802,6 +9719,57 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+
+### <a name="installedapp_sendcoreappleevent"></a>installedapp_sendcoreappleevent
+
+Táto udalosť označuje, že služba Microsoft Auto Update (MAU) odoslala udalosť Apple do registrovanej aplikácie, aby aplikáciu ukončila s cieľom pokračovať s jej čakajúcou aktualizáciou. Táto udalosť sa momentálne používa na pomoc pri vývoji budúceho vylepšenia s cieľom minimalizovať rušenie používateľa počas aktualizácií aplikácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **Acknowledged** – označuje, či predmetná aplikácia uznala prijatie udalosti
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppleEventClass** – označuje typ odosielanej alebo potvrdenej udalosti
+
+- **AppleEventID** – jednoznačný identifikátor pre odosielanú alebo uznanú udalosť
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje počet opakovaní
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – označuje, či predmetná aplikácia ohlásila úspešnosť operácie
 
     
 ### <a name="installstatus_codesign"></a>installstatus_codesign
@@ -8502,6 +10470,104 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
+### <a name="installupdatestask_updatestatus"></a>installupdatestask_updatestatus
+
+Táto udalosť nahlasuje stav úlohy inštalácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.
+
+Zhromažďujú sa tieto polia: 
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – označuje chyby, ktoré sa vyskytli počas procesu aktualizácie (ak sú vyplnené)
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **IOC** – označuje, či sa použila funkcia Inštalovať na klon
+
+- **Payload** – statický text na označenie začiatku procesu inštalácie (ak je k dispozícii)
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – označuje, či sa proces inštalácie úspešne dokončil
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
+
+- **UpdatePkg** – názov použitého aktualizačného balíka
+
+
+### <a name="msupdate_cli_eventhandler"></a>msupdate_cli_eventhandler
+
+Táto udalosť sa používa na výpočet používania rôznych typov rozhraní API príkazového riadka služby Microsoft Auto Update (MAU).
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie, ktorá odosiela rozhranie API príkazového riadka do služby MAU.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **EventType** – typ udalosti, ktorú odošle aplikácia do rozhrania API príkazového riadka služby MAU.
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
 ### <a name="msupdate_cli_eventhandler_applyupdates_appids"></a>msupdate_cli_eventhandler_applyupdates_appids
 
 Táto udalosť označuje, že bol vydaný príkaz rozhrania príkazového riadka (CLI) na použitie aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -8830,6 +10896,609 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
+### <a name="sauforcedupdate_autodismiss"></a>sauforcedupdate_autodismiss
+
+Táto udalosť označuje, že zobrazené dialógové okno nútenej aktualizácie sa zruší z dôvodu nečinnosti používateľa. Táto udalosť sa používa na určenie množstva nútených aktualizácií, ktoré sa vykonajú bez reakcie používateľov na zobrazené oznámenie. Táto udalosť sa používa na vylepšenie používateľského rozhrania na minimalizovanie rušenia.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+  
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_close"></a>sauforcedupdate_close
+
+Táto udalosť označuje, že používateľ sa rozhodol zavrieť dialógové okno nútenej aktualizácie. Táto udalosť sa používa na určenie množstva nútených aktualizácií odložených akciou používateľa. Táto udalosť sa používa na vylepšenie používateľského rozhrania na minimalizovanie rušenia. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_completeautodismiss"></a>sauforcedupdate_completeautodismiss
+
+Táto udalosť označuje, že zobrazené dialógové okno nútenej aktualizácie z funkcie termínu sa zruší z dôvodu nečinnosti používateľa. Táto udalosť sa používa na určenie množstva nútených aktualizácií, ktoré sa vykonajú bez reakcie používateľov na zobrazené oznámenie. Táto udalosť sa používa na vylepšenie používateľského rozhrania na minimalizovanie rušenia pri funkcii termínu.
+
+Zhromažďujú sa tieto polia: 
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_completeclose"></a>sauforcedupdate_completeclose
+
+Táto udalosť označuje úspešné dokončenie nútenej aktualizácie. Udalosť sa používa na určenie stavu funkcie nútenej aktualizácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_display"></a>sauforcedupdate_display
+
+Táto udalosť označuje, že sa zobrazilo dialógové okno nútenej aktualizácie.  Táto udalosť tvorí súčasť lievika nútenej aktualizácie a používa sa na určenie stavu funkcie nútenej aktualizácie.
+
+Zhromažďujú sa tieto polia: 
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_displayfinalhour"></a>sauforcedupdate_displayfinalhour
+
+Táto udalosť označuje, že sa zobrazilo dialógové okno konca nútenej aktualizácie. Táto udalosť tvorí súčasť lievika nútenej aktualizácie a používa sa na určenie stavu funkcie nútenej aktualizácie.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_done"></a>sauforcedupdate_done
+
+Táto udalosť označuje, že sa úspešne dokončila nútená aktualizácia. Táto udalosť tvorí súčasť lievika nútenej aktualizácie a používa sa na určenie stavu funkcie nútenej aktualizácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_enabled"></a>sauforcedupdate_enabled
+
+Táto udalosť sa spustí, keď služba Microsoft Auto Update (MAU) určí, že sa má vykonať nútená aktualizácia.  Udalosť sa používa na určenie stavu funkcie nútenej aktualizácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Enabled** – označuje, či je zapnutá nútená aktualizácia
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **InvalidUpdates** – počet nútených aktualizácií nastavených s neplatnými verziami aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_forcedupdatedismiss"></a>sauforcedupdate_forcedupdatedismiss
+
+Táto udalosť označuje, že zobrazené dialógové okno konca nútenej aktualizácie sa zruší z dôvodu nečinnosti používateľa. Táto udalosť sa používa na určenie množstva nútených aktualizácií, ktoré sa vykonajú bez reakcie používateľov na zobrazené oznámenie. Táto udalosť sa používa na vylepšenie používateľského rozhrania na minimalizovanie rušenia. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_forcequitandupdatenow"></a>sauforcedupdate_forcequitandupdatenow
+
+Táto udalosť označuje začiatok nútenej aktualizácie inicializovanej používateľom. Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie 
+
+### <a name="sauforcedupdate_forceterminate"></a>sauforcedupdate_forceterminate
+
+Táto udalosť označuje začiatok nútenej aktualizácie s núteným ukončením aplikácie.  Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje počet aplikácií, ktoré sa majú ukončiť
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_quitandupdatenow"></a>sauforcedupdate_quitandupdatenow
+
+Táto udalosť označuje, že používateľ sa rozhodol zavrieť aplikáciu a použiť aktualizáciu. Táto udalosť tvorí súčasť lievika a používa sa na určenie stavu funkcie nútenej aktualizácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_snooze"></a>sauforcedupdate_snooze
+
+Táto udalosť označuje, že používateľ sa rozhodol odložiť nútenú aktualizáciu. Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_terminate"></a>sauforcedupdate_terminate
+
+Táto udalosť označuje začiatok nútenej aktualizácie s ukončením aplikácie. Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje počet aplikácií, ktoré sa majú ukončiť
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="sauforcedupdate_updatenow"></a>sauforcedupdate_updatenow
+
+Táto udalosť označuje, že používateľ sa rozhodol aktualizovať aplikáciu.  Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
 ### <a name="sauupdateinfoprovider"></a>sauupdateinfoprovider
 
 Táto udalosť sa zaznamenáva vždy, keď v kolateráli chýba kľúč manifestu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -8867,6 +11536,789 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
+### <a name="update_applaunchdetected"></a>update_applaunchdetected
+
+Táto udalosť označuje, že aplikácia sa spustila počas aktualizácie. Táto udalosť sa používa na určenie množstva aplikácií, ktoré sa spustili počas aktualizácie, a používa sa na vylepšenie používateľskej skúsenosti v budúcich vydaniach.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – označuje, či sa spustená aplikácia úspešne ukončila
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+### <a name="update_appterminationreceived"></a>update_appterminationreceived
+
+Táto udalosť označuje, že aplikácia s blokovanou aktualizáciou sa ukončila a to, či môže služba Microsoft Auto Update (MAU) pokračovať v aktualizácii. Táto udalosť tvorí súčasť lievika a používa sa na určenie stavu aktualizácií aplikácií.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – označuje, či sú stále spustené iné inštancie aplikácie, ktoré bránia pokračovaniu služby MAU
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text označujúci, že služba MAU pokračuje v aktualizácii
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+### <a name="update_blockedappclosed"></a>update_blockedappclosed
+
+Táto udalosť označuje, že služba Microsoft Auto Update (MAU) zistila, že aplikácia s blokovanou aktualizáciou sa ukončila a môže pokračovať v aktualizácii. Táto udalosť tvorí súčasť lievika a používa sa na určenie stavu aktualizácií aplikácií. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie.
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva.
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti. 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+### <a name="update_blockedinstallskip"></a>update_blockedinstallskip
+
+Táto udalosť zaznamenáva chybu, ktorá sa vyskytla pri pokuse o vynechanie aktualizácie aplikácie. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb.  
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje informácie o chybách, ktoré sa vyskytli
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="update_clientsession"></a>update_clientsession
+
+Táto udalosť sa zaznamená, keď sa zmení stav klientskeho zariadenia, čo spôsobí pozastavenie alebo obnovenie procesu aktualizácie asistenom pre službu Microsoft Update. Táto udalosť tvorí súčasť lievika a používa sa na určenie stavu aktualizácií aplikácií. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – označuje, či sa služba Microsoft Auto Update (MAU) obnovuje alebo pozastavuje
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="update_download_begin"></a>update_download_begin 
+
+Táto udalosť označuje začiatok procesu aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **IsRepair** – označuje, či má aktualizácia opraviť neúspešnú aktualizáciu
+
+- **Payload** – označuje, či už prebehol pokus o sťahovanie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
+
+### <a name="update_download_finish"></a>update_download_finish
+
+Táto udalosť označuje dokončenie fázy sťahovania aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.  
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **IsRepair** – označuje, či má aktualizácia opraviť neúspešnú aktualizáciu
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
+
+### <a name="update_downloadresume"></a>update_downloadresume
+
+Táto udalosť nahlasuje chybu pri pokuse o obnovenie pozastavenej úlohy sťahovania. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – označuje povahu chyby, ktorá sa vyskytla
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+### <a name="update_error"></a>update_error
+
+Táto udalosť nahlasuje chybu pri pokuse o aktualizáciu registrovanej aplikácie.  Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – obsahuje informácie o povahe chýb, ktoré sa vyskytli
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje informácie o povahe chýb, ktoré sa vyskytli
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="update_installcleanupforapp"></a>update_installcleanupforapp
+
+Táto udalosť označuje, že inštalácia aktualizácie je dokončená a čistí sa služba Microsoft Auto Update (MAU).  Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppState** – stav registrovanej aplikácie. Môže označovať chybu, čakajúcu opravu atď.
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+### <a name="update_installupdateforapp"></a>update_installupdateforapp
+
+Táto udalosť sa používa na vykazovanie spustenia procesu inštalácie aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – prípadné chyby, ktoré sa vyskytli
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
+
+### <a name="update_installupdateforapp_success"></a>update_installupdateforapp_success
+
+Táto udalosť nahlasuje stav úlohy inštalácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – označuje, či sa počas procesu inštalácie zobrazilo zobrazenie priebehu
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – úspech úlohy inštalácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+### <a name="update_installvariance"></a>Update_InstallVariance
+
+Táto udalosť sa používa na výpočet metriky stavu kritickej aktualizácie pre službu MAU. Táto akcia nám umožňuje určiť metriky úspešnosti funkcie priority inštalácie a overiť integritu tejto funkcie.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – obsahuje zoznam ID aplikácií a zodpovedajúcich priorít inštalácie vyjadrených v číslach.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="update_multipleappupdates"></a>update_multipleappupdates 
+
+Táto udalosť označuje, že v pozadí prebiehajú viaceré aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia 
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje informácie o počte aktualizovaných aplikácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="update_previousidnil"></a>update_previousidnil
+
+Táto udalosť označuje, že sa sťahuje balík s aktualizáciou opravy, ale neexistujú žiadne predchádzajúce informácie o stiahnutí. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – označuje povahu chyby, ktorá sa vyskytla
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="update_queueinstallforapp"></a>update_queueinstallforapp 
+
+Táto udalosť označuje, že stiahnutý balík s aktualizáciou bol umiestnený do frontu na inštaláciu.  Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text, ktorý označuje, že aplikácia sa musí uzavrieť (ak je k dispozícii)
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+- **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
+
+### <a name="update_relaunchafterupdate"></a>update_relaunchafterupdate 
+
+Táto udalosť označuje, že aktualizácia aplikácie sa dokončila a aplikácia sa znova spustí. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – obsahuje informácie o chybách, ktoré sa vyskytli pri pokuse o opätovné spustenie aplikácie
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie aplikácie
+
+### <a name="update_timerforapptermination"></a>update_timerforapptermination 
+
+Táto udalosť označuje začiatok alebo koniec časovača na kontrolu aplikácie stavu. Táto udalosť je dvojitá a určuje, či boli odstránené všetky objekty časovača pri postupe aktualizácie aplikácie.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – označuje, či bol časovač pridaný alebo odstránený
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
 
 - **SessionId** – identifikátor relácie
 
@@ -8952,6 +12404,45 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="updatecore_runnstaskcommand"></a>updatecore_runnstaskcommand
+
+Táto udalosť nahlasuje chybu pri pokuse o spustenie úlohy. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb.  
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje cestu k príkazu, ktorý sa spúšťa
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
 
 ### <a name="updatecore_server_connectionfail"></a>updatecore_server_connectionfail
 
@@ -8993,6 +12484,45 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="updatecore_server_nullurl"></a>updatecore_server_nullurl
+
+Táto udalosť nahlasuje chybu, ktorá indikuje, že daný server nie je možné dosiahnuť. Táto udalosť sa používa na určenie frekvencie zlyhania aktualizácie spôsobeného problémom so sieťou. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
 
 ### <a name="updatefilterhelper_cannotretrievebuilddate"></a>updatefilterhelper_cannotretrievebuilddate
 
@@ -9034,6 +12564,86 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+
+### <a name="updatefilterhelper_invalidappid"></a>updatefilterhelper_invalidappid
+
+Táto udalosť nahlasuje chybu, ktorá indikuje, že sa nenašli žiadne zhodné súbory manifestu s ID aplikácie načítaným z webovej odpovede. Táto udalosť sa používa na skúmanie hlásených chýb.
+
+Zhromažďujú sa tieto polia: 
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje ID aplikácie vo webovej odpovedi
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="updatefilterhelper_invalidappidfromwebservices"></a>updatefilterhelper_invalidappidfromwebservices
+
+Táto udalosť nahlasuje chybu, ktorá signalizuje, že ID aplikácie načítané z webovej odozvy nemá očakávaný formát. Táto udalosť sa používa na skúmanie hlásených chýb.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – statický text
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
 
 ### <a name="updatefilterhelper_invalidresponsefromupdatefiltering"></a>updatefilterhelper_invalidresponsefromupdatefiltering
 
@@ -9158,6 +12768,49 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
+### <a name="updatefinder_check_error"></a>updatefinder_check_error
+
+Táto udalosť nahlasuje chybu pri kontrole aktualizácií. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Code** – kód chyby 
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Domain** – doména chyby
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+ 
 ### <a name="updatefinder_check_start"></a>updatefinder_check_start
 
 Táto udalosť sa zaznamenáva vždy, keď sa spustí operácia kontroly aktualizácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -9363,6 +13016,48 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
+### <a name="updatefinder_offerupdates_invalidappid"></a>updatefinder_offerupdates_invalidappid
+
+Táto udalosť nahlasuje chybu pri pokuse zistiť, či je aktualizácia uplatniteľná. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.  
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **CatalogID** – identifikátor pre katalóg prístupu
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **IsNullID** – indikuje, či má ID hodnotu null.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
 ### <a name="updatefinder_offerupdates_minoscheckfail"></a>updatefinder_offerupdates_minoscheckfail
 
 Táto udalosť sa zaznamenáva pri každom zablokovaní aktualizácie z dôvodu nespĺňania požiadaviek operačného systému. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -9403,6 +13098,47 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="updatefinder_offerupdates_missingtrigger"></a>updatefinder_offerupdates_missingtrigger
+
+Táto udalosť nahlasuje chybu pri pokuse o vyhodnotenie spúšťačov zo stiahnutého manifestu aktualizácie aplikácie. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.  
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **TriggerKey** – spúšťací kľúč z manifestu
+
+- **Triggers** – adresár kľúčov spúšťačov z manifestu
 
 ### <a name="updatefinder_offerupdates_nullbundleforappid"></a>updatefinder_offerupdates_nullbundleforappid
 
@@ -9525,6 +13261,88 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+### <a name="updatefinder_suite_invalidsuiteversion"></a>updatefinder_suite_invalidsuiteversion
+
+Táto udalosť nahlasuje chybu verzie balíka pri zisťovaní, či je aktualizácia uplatniteľná. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Suite** – názov balíka v štádiu riešenia
+
+### <a name="updatefinder_suite_keyvaluemissing"></a>updatefinder_suite_keyvaluemissing
+
+Táto udalosť nahlasuje chybu pri pokuse o pridanie aplikácie do balíka. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie 
+
+- **Suite** – názov aplikácie balíka, ktorá sa má pridať
 
     
 ### <a name="updatefinder_suite_missingcollateral"></a>updatefinder_suite_missingcollateral
@@ -9895,7 +13713,96 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-    
+### <a name="updatestatus_codesign"></a>UpdateStatus_Codesign
+
+Táto udalosť nahlasuje stav overenia podpisu kódu, ktorý spustí asistent pre Microsoft Update po inštalácii aktualizácií klientskych aplikácií. Túto udalosť používame na to, aby sme zaistili, že balíky sú platné a aktualizujú nainštalovanú aplikáciu na najnovšiu verziu.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – všetky chyby, ktoré sa zobrazili počas procesu overovania podpisu kódu
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – označuje, či bolo overenie podpisu kódu úspešné
+
+- **UpdateID** – jedinečne identifikuje použitú aktualizáciu 
+
+- **UpdateName** – názov aktualizácie, ako je opísaný v manifeste aktualizácie
+
+- **UpdatePkg** – názov použitého aktualizačného balíka
+
+### <a name="urlutilities_getmauinfo"></a>urlutilities_getmauinfo
+
+Táto udalosť nahlasuje chybu pri prístupe k balíku aplikácií služby Microsoft Auto Update (MAU). Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje informácie o chybách, ktoré sa vyskytli
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+   
 ### <a name="webservices_checkforsilentupdates"></a>webservices_checkforsilentupdates
 
 Táto udalosť označuje, že sa našli kandidáti na tichú aktualizáciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -10141,7 +14048,45 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="webservices_updatefiltering"></a>webservices_updatefiltering
 
+Táto udalosť označuje filtrovanie vykonané v zozname uplatniteľných aktualizácií prostredníctvom webových služieb. Túto udalosť používame na zabezpečenie správneho fungovania blokovania aplikácie v prípade, že je potrebné zablokovať aktualizáciu.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje informácie o počte aktualizácií blokovaných prostredníctvom webových služieb
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
 
 ### <a name="webservices_webcontent"></a>webservices_webcontent
 
@@ -10180,6 +14125,46 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+### <a name="webservices_whatsnew"></a>webservices_whatsnew
+
+Táto udalosť sa spustí, keď sa služba Microsoft Auto Update (MAU) pýta webových služieb na funkciu „čo je nové“ pre registrované aplikácie. Udalosť sa používa na určenie stavu funkcie Čo je nové. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako kontrolovať nastavenie
+
+- **Payload** – obsahuje informácie o počte aplikácií s informáciami o novinkách
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
 
 - **SessionId** – identifikátor relácie
 
