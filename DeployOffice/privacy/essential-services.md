@@ -13,30 +13,23 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 81694daded27994d5026d923acd36302a79acc9f
-ms.sourcegitcommit: 5fc8194df704f79d340d9e8872a03ab2b0ebc62b
+ms.openlocfilehash: 8b4c473736bfe19edffde227be009dd2555852df
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815336"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440504"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
-> [!IMPORTANT]
-> Informácie v tomto článku sa týkajú verzie 1904 alebo novšej verzie nasledujúceho klientskeho softvéru balíka Office nainštalovaného v počítači s Windowsom:
-> - Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus)
-> - Aplikácie Microsoft 365 pre podniky (predchádzajúci názov Office 365 Business)
-> - Microsoft 365 Personal, Microsoft 365 Family alebo iné verzie balíka Office, ktoré sú súčasťou predplatného na Microsoft 365.
-> - Počítačové aplikácie Project a Visio dodávané s niektorými plánmi predplatného, ako je napríklad Project Plan 5 alebo Visio Plan 2.
->
-> Informácie platia aj pre verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
+> [!NOTE]
+> Ak si chcete pozrieť zoznam produktov balíka Office, na ktorý sa vzťahujú tieto informácie o ochrane osobných údajov, pozrite si tému [Ovládacie prvky na ochranu osobných údajov dostupné pre produkty balíka Office](products-versions-privacy-controls.md).
 
-Office pozostáva z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Hoci môžete ovládať mnohé pripojené funkcie, ktoré sú k dispozícii vám alebo vašim používateľom, ak ste správcom vo svojej organizácii, niekoľko služieb je nevyhnutných pre fungovanie balíka Office, a preto sa nedajú vypnúť. Príkladom je licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie služieb balíka Office. Požadované údaje týchto služieb sa zhromažďujú a odosielajú spoločnosti Microsoft bez ohľadu na ďalšie nastavenia týkajúce sa ochrany osobných údajov, ktoré ste nakonfigurovali. Tieto údaje môžete zobraziť pomocou zobrazovača diagnostických údajov.
+Office pozostáva z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Hoci môžete ovládať mnohé pripojené funkcie, ktoré sú k dispozícii vám alebo vašim používateľom, ak ste správcom vo svojej organizácii, niekoľko služieb je nevyhnutných pre fungovanie balíka Office, a preto sa nedajú vypnúť. Príkladom je licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie služieb balíka Office. Požadované údaje týchto služieb sa zhromažďujú a odosielajú spoločnosti Microsoft bez ohľadu na ďalšie nastavenia týkajúce sa ochrany osobných údajov, ktoré ste nakonfigurovali.
 
 Ďalšie informácie sa nachádzajú v nasledujúcich témach:
 
 - [Požadované údaje služieb pre Office](required-service-data.md)
-- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 - [Pripojené funkcie v Office](connected-experiences.md)
 
 Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné témy:
@@ -46,6 +39,7 @@ Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné té
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office na webe s nastaveniami politiky](office-web-privacy-controls.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Zoznam nevyhnutných služieb pre Office 
 
@@ -60,7 +54,7 @@ Nasledujúca tabuľka obsahuje zoznam nevyhnutných služieb pre Office a ich po
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) je technológia, ktorá sa používa na aktualizáciu aplikácií od spoločnosti Microsoft vytvorených pre MacOS, ako je napríklad Office. Služba MAU rozpoznáva potrebu, sťahuje a inštaluje aktualizácie aplikácií vrátane aktualizácií zabezpečenia.|
 |[OneNote sync](#onenote-sync-events)|OneNote pre Mac podporuje iba poznámkové bloky uložené na internete vo OneDrive alebo v SharePointe Online. OneNote pre Mac neustále synchronizuje všetky poznámky používateľa s OneDrivom alebo SharePointom Online. Vďaka tomu môžu používatelia svoje poznámkové bloky otvárať, zobrazovať a upravovať vo všetkých svojich zariadeniach a budú stále aktuálne.
  [Services Configuration](#services-configuration-events)  | Služba Services Configuration umožňuje vykonávať aktualizácie nastavení konfigurácie balíka Office na povolenie alebo zakázanie klientskych funkcií. Zavolá sa vždy, keď sa spustí aplikácia balíka Office a poskytuje podrobné informácie o iných konfiguráciách a službách balíka Office. Služba Services Configuration tiež riadi, ktoré služby sú určené ako nevyhnutné služby.  |
-| [Telemetria](#telemetry-events)  | Služba telemetrie slúži na zhromažďovanie diagnostických údajov z aplikácií balíka Office. Umožňuje zhromažďovať diagnostické údaje vytvorené balíkom Office, a to požadované aj voliteľné diagnostické údaje. Je zodpovedná aj za zhromažďovanie diagnostických údajov služieb v rámci požadovaných údajov služieb pre Office.  |
+| [Telemetria](#telemetry-events)  | Služba telemetrie slúži na zhromažďovanie diagnostických údajov z aplikácií balíka Office. Umožňuje zhromažďovať diagnostické údaje vytvorené balíkom Office, a to požadované aj voliteľné diagnostické údaje. Je zodpovedná aj za zhromažďovanie niektorých údajov služieb pre balík Office.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Udalosti a údajové polia pre nevyhnutné služby pre Office
 
@@ -70,9 +64,6 @@ V ďalších častiach sú uvedené tieto informácie:
 - Popis každej udalosti
 - Zoznam údajových polí v každej udalosti
 - Popis každého údajového poľa
-
-Tieto udalosti môžete zobraziť pomocou zobrazovača diagnostických údajov.
-
 
 
 ## <a name="authentication-events"></a>Udalosti služby overovania
@@ -3175,7 +3166,7 @@ Zhromažďujú sa tieto polia:
 
 - **Tag** – označuje, v ktorom kroku sa prestala hľadať väzba. Možné značky:
   - 0x03113809    žiaden internet/chyba služby pri overovaní PIN
-   - 0x0311380a    zlyhanie overenia PIN, odoslané s poľom PinValidationFailure
+  - 0x0311380a    zlyhanie overenia PIN, odoslané s poľom PinValidationFailure
   - 0x0310410f    úspech, odoslané s poľom Success
   - 0x0311380d    chyby s možnosťou opakovaného pokusu (problémy s internetom, neznáme chyby)
   - 0x0311380e    chyby bez možnosti opakovaného pokusu (platnosť ponuky väzby uplynula)
@@ -14567,7 +14558,7 @@ Zhromažďujú sa tieto polia:
 
 ## <a name="services-configuration-events"></a>Udalosti služby Services Configuration
 
-Služba Services Configuration nezhromažďuje žiadne požadované diagnostické údaje služieb.
+Služba Services Configuration nezhromažďuje žiadne požadované údaje služieb.
 
 ## <a name="telemetry-events"></a>Udalosti služby telemetrie
 

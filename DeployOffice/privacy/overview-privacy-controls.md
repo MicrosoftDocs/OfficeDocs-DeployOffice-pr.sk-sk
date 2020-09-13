@@ -15,14 +15,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus) vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: f5a957d57a7c8f95503091f456aef5a9c1e0fca7
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: f367550169e75d0f1dbb0726e947ce8797fb1003
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087716"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440584"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
+
+> [!NOTE]
+> Ak si chcete pozrieť zoznam produktov balíka Office, na ktorý sa vzťahujú tieto informácie o ochrane osobných údajov, pozrite si tému [Ovládacie prvky na ochranu osobných údajov dostupné pre produkty balíka Office](products-versions-privacy-controls.md).
 
 Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní služieb Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus).
 
@@ -31,17 +34,6 @@ Od verzie 1904 Aplikácií Microsoft 365 pre veľké organizácie poskytujeme no
 - ***Pripojené funkcie***, ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
 
 Súčasťou týchto zmien sú nové a aktualizované prvky používateľského rozhrania a nastavenia politiky.
-
-> [!IMPORTANT]
-> - Tieto zmeny sa vzťahujú na Access, Excel, OneNote, Outlook, PowerPoint, Publisher a Word.
-> - Tieto zmeny sa vzťahujú aj na:
->   - Verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
->   - Verziu 1904 alebo novšie verzie počítačových verzií Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako napríklad Project Plan 5 alebo Visio Plan 2.
-> - Tieto ovládacie prvky na ochranu osobných údajov sú zahrnuté vo verzii 1908 alebo novšej polročného kanála Enterprise (náhľad) a polročného kanála Enterprise.
-> - Tieto ovládacie prvky na ochranu osobných údajov sú k dispozícii pre verziu 2.30 a novšie verzie Excelu, OneNotu, PowerPointu a Wordu pre iOS, ako aj pre verziu 1.17 a novšie verzie Visio Viewera pre iOS.
-> - Tieto ovládacie prvky na ochranu osobných údajov sú k dispozícii pre verziu 16.0.12226.10000 a novšie verzie Excelu, PowerPointu a Wordu pre Android, ako aj pre verziu 16.0.12228.20004 a novšie verzie OneNotu pre Android.
-> - Väčšina aplikácií balíka Office pre web používa nový ovládací prvok ochrany osobných údajov pre [voliteľné online funkcie](optional-connected-experiences.md). Sú to tieto aplikácie: Excel pre web, OneNote pre web, PowerPoint pre web, Visio pre web a Word pre web. Môžete použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md) a nakonfigurovať príslušné [nastavenie politiky](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
-> - Tieto nové a vylepšené ovládacie prvky na ochranu osobných údajov rozšírime do ďalších klientov balíka Office vrátane aplikácie Teams a mobilných aplikácií. Podrobnejšie informácie o týchto zmenách poskytneme v nadchádzajúcich mesiacoch. Naďalej budeme starostlivo počúvať vaše pripomienky a vylepšovať všetky klientske aplikácie a služby služieb Office 365 (a Microsoft 365).
 
 ## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Diagnostické údaje odoslané z Aplikácií Microsoft 365 pre veľké organizácie do spoločnosti Microsoft
 
@@ -77,7 +69,7 @@ Na zobrazenie toho, aké diagnostické údaje sa odosielajú spoločnosti Micros
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
-- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Online funkcie pre Aplikácie Microsoft 365 pre veľké organizácie
 
@@ -113,7 +105,7 @@ Ide o voliteľné pripojené funkcie, na ktoré sa nevzťahuje komerčná zmluva
 
 Keďže tieto voliteľné pripojené funkcie sa riadia samostatnými podmienkami a ustanoveniami, spravujete ich nezávisle od pripojených funkcií uvedených vyššie. Ako správca organizácie budete môcť pomocou nastavenia politiky určiť, či chcete tieto voliteľné pripojené funkcie ako celok sprístupniť pre svojich používateľov. Ak nenakonfigurujete toto nastavenie politiky, tieto voliteľné online funkcie budú k dispozícii pre vašich používateľov.
 
-Aj keď sa rozhodnete tieto voliteľné online funkcie sprístupniť používateľom, vaši používatelia budú môcť tieto voliteľné online funkcie vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
+Aj keď sa rozhodnete tieto voliteľné online funkcie sprístupniť používateľom, vaši používatelia budú môcť tieto voliteľné online funkcie vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
 
 Ďalšie informácie sa nachádzajú v nasledujúcich témach:
 
@@ -122,24 +114,13 @@ Aj keď sa rozhodnete tieto voliteľné online funkcie sprístupniť používate
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office na webe s nastaveniami politiky](office-web-privacy-controls.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Požadované údaje služieb pre online funkcie
 
-Požadované údaje služieb sú údaje, ktoré nám umožňujú poskytovať tieto cloudové pripojené funkcie a tiež pomáhajú zaručiť, že tieto funkcie budú zabezpečené a budú fungovať podľa očakávania. Tieto typy informácií predstavujú požadované údaje služieb:
+Keď používate online funkciu, spoločnosť Microsoft dostáva a spracováva údaje, aby vám mohla online funkciu poskytnúť. Tieto údaje sú mimoriadne dôležité, pretože tieto informácie nám umožňujú poskytovať cloudové online funkcie. Tieto údaje nazývame údaje služieb.
 
-- **Zákaznícky obsah**, čo je obsah, ktorý vytvárate pomocou balíka Office, ako je napríklad text napísaný vo wordovom dokumente.
-- **Funkčné údaje**, ktoré zahŕňajú informácie vyžadované pripojenou funkciou na vykonávanie jej úlohy, ako sú napríklad informácie o konfigurácii aplikácie.
-- **Diagnostické údaje služby**, čo sú údaje potrebné na to, aby služba bola neustále zabezpečená, aktuálna a fungovala podľa očakávania. Keďže tieto údaje sa výhradne týkajú pripojenej funkcie, sú oddelené od úrovne požadovaných alebo voliteľných diagnostických údajov.
-
-Na lepšie pochopenie požadovaných údajov služieb uvádzame nasledovný vzorový scenár používania nástroja PowerPoint Designer, čo je pripojená služba, ktorú môžete využívať pri vytváraní snímok pre prezentáciu. PowerPoint Designer vám pomáha vylepšovať vaše snímky tak, že automaticky generuje návrhy vzhľadu, z ktorých si môžete vybrať. Keď na snímku pridávate obsah, Designer pracuje na pozadí a spája obsah s profesionálne navrhnutými rozloženiami.
-
-Požadované údaje služieb pre Office, ktoré sa odosielajú do spoločnosti Microsoft, aby táto pripojená funkcia mohla fungovať, zahŕňajú nasledovné:
-
-- *Zákaznícky obsah*, ako sú napríklad text alebo obrázky, ktoré ste pridali na snímku.
-- *Funkčné údaje*, ako sú napríklad údaje o tom, na ktorej snímke pracujete a aké má rozloženie.
-- *Diagnostické údaje služby*, ako sú napríklad udalostí, z ktorých sa dozvieme, či sa odporúčaný návrh správne použil na snímku a či sa volania služby vykonali správne.
-
-Ak sa rozhodnete neposkytovať používateľom kategóriu pripojených funkcií, ktorá zahŕňa PowerPoint Designer, funkcia sa vypne a neodosielajú sa nám žiadne z týchto požadovaných údajov služieb.
+Požadované údaje služby môžu zahŕňať informácie súvisiace s fungovaním online funkcie, ktoré sú potrebné na zabezpečenie súvisiacej služby, jej aktualizáciu a správne fungovanie. Ak sa rozhodnete využiť online funkciu, ktorá analyzuje váš obsah. napríklad Preložiť vo Worde, text, ktorý ste zadali a vybrali na preklad v dokumente, sa tiež odošle a spracuje, aby sme vám túto online funkciu mohli poskytnúť. Požadované údaje služby môžu zahŕňať informácie vyžadované pripojenou funkciou na vykonávanie jej úlohy, ako sú napríklad informácie o konfigurácii aplikácie Office.
 
 Ďalšie informácie nájdete v téme [Požadované údaje služieb pre Office](required-service-data.md).
 
