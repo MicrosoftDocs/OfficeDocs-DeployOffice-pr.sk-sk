@@ -15,16 +15,19 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia balíka Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v Aplikáciách Microsoft 365 pre veľké organizácie (predtým Office 365 ProPlus) pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: 5f9cafff0f7baf12ed8f0f57d7561bc356fbb98b
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: f02714428dd580d79a3fc8f160b00d6df95c4237
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087224"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440252"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Použitie nastavení politiky na správu ovládacích prvkov ochrany osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
-Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní Aplikácií Microsoft 365 pre veľké organizácie (predtým Office 365 ProPlus).
+> [!NOTE]
+> Ak si chcete pozrieť zoznam produktov balíka Office, na ktorý sa vzťahujú tieto informácie o ochrane osobných údajov, pozrite si tému [Ovládacie prvky na ochranu osobných údajov dostupné pre produkty balíka Office](products-versions-privacy-controls.md).
+
+Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní služieb Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus).
 
 Od verzie 1904 Aplikácií Microsoft 365 pre veľké organizácie sú k dispozícii nové nastavenia politiky, ktoré vám umožňujú ovládať nastavenia týkajúce sa:
 
@@ -46,6 +49,7 @@ Tieto nastavenia politiky je možné implementovať pomocou buď skupinovej poli
 > - Ďalšie informácie o spravovaní ovládacích prvkov na ochranu osobných údajov pre Office pre Mac nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md).
 > - Ďalšie informácie o podobných nastaveniach balíka Office v zariadeniach so systémom iOS nájdete v téme [Spravovanie ovládacích prvkov ochrany osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md).
 > - Ďalšie informácie o podobných nastaveniach balíka Office v zariadeniach s Androidom nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md).
+> - Ďalšie informácie o ovládacích prvkoch aplikácii Office na webe nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office na webe s nastaveniami politiky](office-web-privacy-controls.md).
 
 
 Ak používate nástroj Group Policy Management, všetky tieto nastavenia politiky sa nachádzajú v časti User Configuration (Konfigurácia používateľa)\\Policies (Politiky)\\Administrative Templates (Nástroje na správu)\\Microsoft Office 2016\\Privacy (Ochrana osobných údajov)\\Trust Center (Centrum dôveryhodnosti).
@@ -77,7 +81,7 @@ Ak vypnete alebo nenakonfigurujete toto nastavenie politiky, spoločnosti Micros
 - [Prehľad ovládacích prvkov ochrany osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
 - [Požadované diagnostické údaje pre Office](required-diagnostic-data.md)
 - [Voliteľné diagnostické údaje pre Office](optional-diagnostic-data.md)
-- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="policy-settings-for-connected-experiences"></a>Nastavenia politiky pre pripojené funkcie
 
@@ -116,25 +120,15 @@ Majte na pamäti, že ak vypnete nastavenie politiky *Povoliť používanie prip
 
 Okrem pripojených funkcií uvedených vyššie, ktoré sú súčasťou Aplikácií Microsoft 365 pre veľké organizácie, existujú aj voliteľné pripojené funkcie a používateľom k nim môžete umožniť prístup prostredníctvom konta organizácie. Napríklad funkcie LinkedInu v asistentovi životopisu vo Worde alebo funkcia 3D máp v Exceli, ktorá využíva službu Bing. Ďalšie príklady nájdete v téme [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md)
 
-Tieto pripojené funkcie sú iné, pretože sa na ne nevzťahuje komerčná zmluva vašej spoločnosti so spoločnosťou Microsoft. Voliteľné pripojené funkcie ponúka priamo spoločnosť Microsoft a riadia sa [zmluvou o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement), nie [podmienkami poskytovania online služieb](https://www.microsoft.com/licensing/product-licensing/products). V niektorých prípadoch sa prostredníctvom týchto voliteľných funkcií poskytujú obsah alebo funkcie tretích strán a môžu sa na ne vzťahovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných pripojených funkcií v balíku Office](optional-connected-experiences.md).
+Tieto pripojené funkcie sú iné, pretože sa na ne nevzťahuje komerčná zmluva vašej spoločnosti so spoločnosťou Microsoft. Voliteľné pripojené funkcie ponúka priamo spoločnosť Microsoft a riadia sa [zmluvou o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement), nie [podmienkami poskytovania online služieb](https://www.microsoft.com/licensing/product-licensing/products). V niektorých prípadoch sa prostredníctvom týchto voliteľných funkcií poskytujú obsah alebo funkcie tretích strán a môžu sa na ne vzťahovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md).
 
 Pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto voliteľné online funkcie budú k dispozícii pre vašich používateľov.
 
-> [!NOTE]
-> Nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* je tiež možné nakonfigurovať tak, aby sa vzťahovalo na aplikácie balíka Office pre web:
-> - Excel pre web
-> - OneNote pre web
-> - PowerPoint pre web
-> - Visio pre web
-> - Word na webe
->
-> Ak chcete nakonfigurovať toto nastavenie politiky pre tieto aplikácie balíka Office pre web, musíte použiť [cloudovú službu politiky pre Office](../overview-office-cloud-policy-service.md).
-
-Aj keď sa rozhodnete tieto voliteľné pripojené funkcie sprístupniť používateľom, vaši používatelia ich budú môcť vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
+Aj keď sa rozhodnete tieto voliteľné pripojené funkcie sprístupniť používateľom, vaši používatelia ich budú môcť vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
 
 Taktiež platí, že niektoré tieto voliteľné pripojené funkcie sa považujú aj za pripojené funkcie na analýzu obsahu alebo na sťahovanie online obsahu. Napríklad vkladanie online obrázkov je voliteľná pripojená funkcia, ktorá využíva službu Microsoft Bing, ale považuje sa aj za pripojenú funkciu na sťahovanie online obsahu. Preto ak vypnete nastavenie politiky *Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office*, funkcia vkladania online obrázkov nebude vašim používateľom k dispozícii. Nebude k dispozícii, ani ak ste zapli nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office*. Ďalšie informácie o tom, ktoré pripojené analyzujú obsah alebo sťahujú online obsah, sa nachádzajú v téme [Pripojené funkcie v Office](connected-experiences.md).
 
-Je tu však jedna výnimka. Nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* neriadi funkcie, ktoré vyžadujú pripojenie vášho konta LinkedIn k pracovnému alebo školskému kontu Microsoft. Informácie o riadení týchto typov funkcií, ako sú napríklad informácie z LinkedInu na [karte profilu](https://support.office.com/article/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) v Outlooku, nájdete v témach [Prepojenie kont LinkedIn a Microsoft](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381) a [Súhlas s kontaktmi konta LinkedInu pre organizáciu Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
+Je tu však jedna výnimka. Nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* neriadi funkcie, ktoré vyžadujú pripojenie vášho konta LinkedIn k pracovnému alebo školskému kontu Microsoft. Informácie o riadení týchto typov funkcií, napríklad informácie z LinkedInu na [karte profilu](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) v Outlooku, nájdete v téme [LinkedIn v aplikáciách a službách Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) a [Integrácia LinkedInu v službe Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
 
 ### <a name="policy-setting-for-most-connected-experiences"></a>Nastavenia politiky pre väčšinu pripojených funkcií
 
@@ -207,7 +201,7 @@ Tieto prvky boli pridané do používateľského rozhrania balíka Office:
 
 - V okne **Súbor** > **Konto** sa používateľom bude zobrazovať nová voľba **Ochrana osobných údajov konta** > **Spravovať nastavenia**. V časti **Spravovať nastavenia**môžu používatelia vypnúť voliteľné pripojené funkcie, ak ste im dali túto možnosť.
 
-- V okne **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti...** > **Možnosti ochrany osobných údajov** je možnosť povoliť používanie nástroja [Diagnostic Data Viewer](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855) v zariadení.
+- V okne **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti...** > **Možnosti ochrany osobných údajov** je možnosť povoliť používanie nástroja [Diagnostic Data Viewer](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) v zariadení.
 
  
 ## <a name="control-privacy-settings-by-editing-the-registry"></a>Ovládanie nastavení ochrany osobných údajov úpravou databázy Registry

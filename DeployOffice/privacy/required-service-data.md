@@ -13,76 +13,66 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o požadovaných údajoch služieb, ktoré sa zhromažďujú o pripojených funkciách v balíku Office.
 hideEdit: true
-ms.openlocfilehash: 4b5008d1750de655601dafaa381502e708f9f9d6
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: faa3507708b4768ee3b2b0f51257273c31ad2de7
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992774"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440206"
 ---
-# <a name="required-service-data-for-office"></a>Požadované údaje služieb pre Office 
+# <a name="required-service-data-for-office"></a>Požadované údaje služieb pre Office
 
-> [!IMPORTANT]
-> Informácie v tomto článku sa týkajú verzie 1904 alebo novšej verzie nasledujúceho klientskeho softvéru balíka Office nainštalovaného v počítači s Windowsom:
-> - Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus)
-> - Aplikácie Microsoft 365 pre podniky (predchádzajúci názov Office 365 Business)
-> - Microsoft 365 Personal, Microsoft 365 Family alebo iné verzie balíka Office, ktoré sú súčasťou predplatného na Microsoft 365.
-> - Počítačové aplikácie Project a Visio dodávané s niektorými plánmi predplatného, ako je napríklad Project Plan 5 alebo Visio Plan 2.
->
-> Informácie platia aj pre verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
+> [!NOTE]
+> Ak si chcete pozrieť zoznam produktov balíka Office, na ktorý sa vzťahujú tieto informácie o ochrane osobných údajov, pozrite si tému [Ovládacie prvky na ochranu osobných údajov dostupné pre produkty balíka Office](products-versions-privacy-controls.md).
 
-Office pozostáva z klientskych softvérových aplikácií a online funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom online funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive for Business alebo preklad obsahu wordového dokumentu do iného jazyka.
+Office pozostáva z klientskych softvérových aplikácií a [online funkcií](connected-experiences.md), ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom pripojených funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive for Business alebo preklad obsahu wordového dokumentu do iného jazyka.
 
-Požadované údaje služieb sú dôležité, pretože nám umožňujú poskytovať tieto cloudové pripojené funkcie a tiež pomáhajú zaručiť, že tieto funkcie budú zabezpečené a budú zákazníkom fungovať podľa očakávania. Tieto typy informácií predstavujú požadované údaje služieb:
+Keď používate online funkciu, spoločnosť Microsoft dostáva a spracováva údaje, aby vám mohla túto online funkciu poskytnúť. Tieto údaje sú mimoriadne dôležité, pretože tieto informácie nám umožňujú poskytovať cloudové online funkcie. Tieto údaje nazývame údaje služieb.
 
-- **Zákaznícky obsah**, čo je obsah, ktorý vytvárate pomocou balíka Office, ako je napríklad text napísaný vo wordovom dokumente, a ktorý sa používa v súvislosti s pripojenými službami.
-- **Funkčné údaje**, ktoré zahŕňajú informácie vyžadované pripojenou funkciou na vykonávanie jej úlohy, ako sú napríklad informácie o konfigurácii aplikácie.
-- **Diagnostické údaje služby**, čo sú údaje potrebné na to, aby služba bola neustále zabezpečená, aktuálna a fungovala podľa očakávania. Keďže tieto údaje sa výhradne týkajú pripojenej funkcie, sú oddelené od úrovne povinných alebo voliteľných diagnostických údajov.
+Požadované údaje služby môžu zahŕňať informácie súvisiace s fungovaním online funkcie, ktoré sú potrebné na zabezpečenie súvisiacej služby, jej aktualizáciu a správne fungovanie. Ak sa rozhodnete využiť online funkciu, ktorá analyzuje váš obsah, napríklad Preložiť vo Worde, text, ktorý ste zadali a vybrali na preklad v dokumente, sa tiež odošle a spracuje, aby sme vám túto online funkciu mohli poskytnúť. Požadované údaje služby môžu zahŕňať informácie vyžadované pripojenou funkciou na vykonávanie jej úlohy, ako sú napríklad informácie o konfigurácii aplikácie Office.
 
 ## <a name="example-of-required-service-data-for-a-connected-experience"></a>Príklad požadovaných údajov služieb pre pripojenú funkciu
 
-Na lepšie pochopenie požadovaných údajov služieb uvádzame nasledovný vzorový scenár používania nástroja PowerPoint Designer, čo je pripojená služba, ktorú môžete využívať pri vytváraní snímok pre prezentáciu. PowerPoint Designer vám pomáha vylepšovať vaše snímky tak, že automaticky generuje návrhy vzhľadu, z ktorých si môžete vybrať. Keď na snímku pridávate obsah, Designer pracuje na pozadí a spája obsah s profesionálne navrhnutými rozloženiami.
+Vezmime si PowerPoint Designer ako Ďalší príklad typov požadovaných údajov služieb, ktoré online funkcia posiela spoločnosti Microsoft. PowerPoint Designer vám pomáha vylepšovať vaše snímky tak, že automaticky generuje návrhy vzhľadu, z ktorých si môžete vybrať. Keď na snímku pridávate obsah, Designer pracuje na pozadí a spája obsah s profesionálne navrhnutými rozloženiami.
 
-Požadované údaje služieb pre Office, ktoré sa odosielajú do spoločnosti Microsoft, aby táto pripojená funkcia mohla fungovať, zahŕňajú nasledovné:
+Požadované údaje služby, ktoré PowerPoint Designer odosiela spoločnosti Microsoft, môžu obsahovať nasledujúce informácie:
+- text alebo obrázky, ktoré ste pridali na snímku,
+- snímka, na ktorej práve pracujete, a rozloženia snímky,
+- to, či sa nápad na snímku použil správne na vašej snímke,
+- to, či sa interakcia medzi PowerPointom a službou Designer vykonala podľa očakávania.
 
-- *Zákaznícky obsah*, ako sú napríklad text alebo obrázky, ktoré ste pridali na snímku.
-- *Funkčné údaje*, ako sú napríklad údaje o tom, na ktorej snímke pracujete a aké má rozloženie.
-- *Diagnostické údaje služby*, ako sú napríklad udalostí, z ktorých sa dozvieme, či sa odporúčaný návrh správne použil na snímku a či sa volania služby vykonali správne.
+Tieto požadované údaje služby pomáhajú zabezpečiť, aby PowerPoint Designer fungoval podľa očakávaní.
 
-## <a name="view-and-manage-required-service-data"></a>Zobrazenie a spravovanie požadovaných údajov služieb
+## <a name="manage-required-service-data"></a>Spravovanie požadovaných údajov služieb
 
-Diagnostické údaje služby môžete zobraziť pomocou zobrazovača diagnostických údajov. Ďalšie informácie sa nachádzajú v časti [Príklady udalostí pre diagnostické údaje služieb](#examples-of-events-for-service-diagnostic-data).
+Poskytujeme vám možnosť rozhodnúť sa, ktoré typy pripojených funkcií chcete používať v balíku Office, čo zároveň určuje, ktoré požadované údaje služieb sa odosielajú spoločnosti Microsoft. Diktovanie vo Worde je napríklad jednou z pripojených funkcií, ktorá analyzuje váš obsah. Ak sa rozhodnete vypnúť pripojené funkcie, ktoré analyzujú obsah, nebudú sa nám odosielať žiadne požadované údaje služieb o Diktovaní vo Worde, pretože Diktovanie vo Worde nebude k dispozícii. Viac informácií nájdete v téme [Výber dostupnosti týchto online funkcií na používanie](connected-experiences.md#choose-whether-these-connected-experiences-are-available-to-use).
 
-Poskytujeme vám možnosť rozhodnúť sa, ktoré typy pripojených funkcií chcete používať v balíku Office, čo zároveň určuje, ktoré požadované údaje služieb sa nám odosielajú. PowerPoint Designer je napríklad jednou z pripojených funkcií na analýzu obsahu. Ak sa rozhodnete vypnúť pripojené funkcie, ktoré analyzujú obsah, nebudú sa nám odosielať žiadne požadované údaje služieb o PowerPoint Designeri, pretože PowerPoint Designer nebude k dispozícii.
+Požadované údaje služby sú oddelené od vyžadovaných alebo voliteľných [diagnostických údajov](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft), ktoré súvisia s informáciami o používaní softvéru Office na vašom zariadení. Preto nastavenia ochrany osobných údajov, ktoré ste vybrali pre povinné alebo voliteľné diagnostické údaje, nemajú vplyv na to, či sa požadované údaje služby odosielajú spoločnosti Microsoft.
 
-Požadované údaje služieb sa taktiež zhromažďujú a odosielajú spoločnosti Microsoft pre služby, ktoré sú nevyhnutné na fungovanie balíka Office, ako je napríklad licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie balíka Office. Tieto údaje o nevyhnutných službách sa odosielajú bez ohľadu na ďalšie nastavenia, ktoré ste nakonfigurovali.
+Požadované údaje služieb sa taktiež zhromažďujú a odosielajú spoločnosti Microsoft pre služby, ktoré sú [nevyhnutné na fungovanie](essential-services.md) balíka Office, ako je napríklad licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie balíka Office. Hoci môžete ovládať mnohé pripojené funkcie, ktoré sú k dispozícii vám alebo vašim používateľom, ak ste správcom vo svojej organizácii, tieto služby sú nevyhnutné pre fungovanie balíka Office, a preto sa nedajú vypnúť. Údaje pre nevyhnutné služby spoločnosť Microsoft dostáva a spracováva vždy pri používaní balíka Office bez ohľadu na konfiguráciu ostatných súvisiacich nastavení.
 
-Ďalšie informácie sa nachádzajú v nasledujúcich témach:
+Požadované údaje služby sú k dispozícii prostredníctvom žiadostí o údaje služby (DSRs). Ďalšie informácie nájdete v [prehlásení spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/privacystatement) a v [žiadostiach dotknutých osôb v Office 365 pre GDPR a CCPA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
 
-- [Pripojené funkcie v Office](connected-experiences.md)
-- [Nevyhnutné služby pre Office](essential-services.md)
-- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
-
-Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné témy:
+Ak ste správcom vašej organizácie a chcete spravovať online funkcie, pozrite si tieto články:
 
 - [Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office na webe s nastaveniami politiky](office-web-privacy-controls.md)
 
-## <a name="examples-of-events-for-service-diagnostic-data"></a>Príklady udalostí pre diagnostické údaje služieb
+## <a name="categories-of-required-service-data"></a>Kategórie požadovaných údajov služieb
 
-Diagnostické údaje služieb sa zobrazujú v zobrazovači diagnostických údajov a sú usporiadané do rovnakých kategórií, aké používajú požadované a voliteľné diagnostické údaje. Napríklad *Používanie produktov a služieb* alebo *Výkon produktov a služieb*.
+Požadované údaje služieb sú usporiadané do nasledujúcich kategórií:
 
-Udalosti diagnostických údajov služieb nám poskytujú potrebné informácie o tom, či pripojená funkcia funguje podľa očakávania zákazníka. Napríklad, či sa služba používaná pripojenou funkciou úspešne spustila a bola k dispozícii podľa potreby, či sa pri práci so službou vyskytli chyby alebo iné nečakané problémy (zlyhania) a aká bola odozva alebo výkon služba.
+- Inštalácia softvéru a inventár
+- Používanie produktov a služieb
+- Výkon produktov a služieb
+- Pripojiteľnosť a konfigurácia zariadenia
 
-V nasledujúcej tabuľke je uvedených niekoľko príkladov udalostí pre diagnostické údaje služieb.
+Informácie v týchto kategóriách umožňujú spoločnosti Microsoft vyhodnotiť, či je online funkcia alebo základná služba zabezpečená, aktuálna a funguje podľa očakávania.
 
-| **Názov**      | **Popis**    |
-| ---------- | --------------------- |
-| Office.Excel.Coauth.SaveXrr     | Udalosť spustená v Exceli počas používania služby spolupráce, ktorá nahlasuje podrobnosti o jednotlivých revíziách zapísaných v denníku revízií. Poskytuje monitorovanie časového oneskorenia a označuje chyby v Exceli, ktoré súvisia so spoluprácou  |
-| Office.Excel.Coauth.CloseWorkbook  | Udalosť spustená v Exceli počas používania služby spolupráce, ktorá nahlasuje, kedy došlo k zavretiu zošita. Je to potrebné pri určovaní prípadných chýb s opätovným načítaním a automatickým obnovením. Poskytuje meranie úspechu pre aktivity služby spolupráce.   |
-| Office.Security.OCX.NonTrustedEncounter    | Udalosť spustená v aplikáciách balíka Office (vrátane Wordu, Excelu, Outlooku, PowerPointu a Visia), keď používateľ otvorí nedôveryhodný dokument s ovládacím prvkom ActiveX. Používa sa na všeobecné posúdenie používania ovládacích prvkov ActiveX vložených v dokumentoch balíka Office a na pomoc pri riešení problémov so zabezpečením v reakcii na incidenty zabezpečenia.  |
-| Office.Security.UrlReputation.GetUrlReputation | Udalosť spustená v aplikáciách balíka Office (vrátane Wordu, Excelu, PowerPointu, Visia a Publishera), ktorá sleduje úspech alebo zlyhanie volaní Safe Links. Používa sa na zabezpečenie správneho fungovania služby Safe Links a na diagnostikovanie problémov.  |
-| Office.Voice.VoiceManager.StreamingAudio   | Udalosť spustená v aplikáciách balíka Office (vrátane Wordu, Outlooku a PowerPointu), ktorá poskytuje informácie o stave služby prevodu streamovania zvuku na reč. Obsahuje informácie o veľkosti streamovaného zvuku a prípadných chybách, ktoré sa vyskytli. Tieto informácie sa používajú na monitorovanie stavu služby stavu a na diagnostikovanie problémov nahlásených zákazníkmi. |
+Napríklad informácie v kategórii výkonu produktov a služieb môžu zahŕňať neočakávané problémy (zlyhania), nedostatočné časy odozvy, nedostatočný výkon alebo chyby fungovania.
+
+Pre kategóriu výkonu produktov a služieb sa môžu zbierať údaje, ktoré indikujú, či sa služba používaná online funkciou správne spustila, a či bola v prípade potreby dostupná.
