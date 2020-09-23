@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 8b4c473736bfe19edffde227be009dd2555852df
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: ed550129f7d3aef9e340456b5ee2d09f85c18b07
+ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440504"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47941043"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -52,7 +52,7 @@ Nasledujúca tabuľka obsahuje zoznam nevyhnutných služieb pre Office a ich po
 | [Rozšírená konfiguračná služba (ECS)](#enhanced-configuration-service-ecs-events) | Služba ECS umožňuje spoločnosti Microsoft meniť konfiguráciu inštalácií balíka Office bez nutnosti opätovného nasadenia balíka Office. Používa sa na riadenie postupného nasadzovania funkcií alebo aktualizácií, pričom vplyv nasadenia sa monitoruje zo zhromaždených diagnostických údajov. Používa sa aj na zmiernenie problémov funkcie alebo aktualizácie so zabezpečením a výkonom. Okrem toho služba ECS podporuje zmeny konfigurácie týkajúce sa diagnostických údajov na pomoc pri zabezpečovaní zhromažďovania príslušných udalostí. |
 | [Licenčná služba](#licensing-events)     | Licenčná služba je cloudová služba, ktorá podporuje aktiváciu balíka Office pre nové inštalácie a uchováva licenciu v zariadeniach po aktivovaní balíka Office. Registruje každé zariadenie používateľa a aktivuje Office, kontroluje stav predplatného na Office a spravuje kódy Product key.    |
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) je technológia, ktorá sa používa na aktualizáciu aplikácií od spoločnosti Microsoft vytvorených pre MacOS, ako je napríklad Office. Služba MAU rozpoznáva potrebu, sťahuje a inštaluje aktualizácie aplikácií vrátane aktualizácií zabezpečenia.|
-|[OneNote sync](#onenote-sync-events)|OneNote pre Mac podporuje iba poznámkové bloky uložené na internete vo OneDrive alebo v SharePointe Online. OneNote pre Mac neustále synchronizuje všetky poznámky používateľa s OneDrivom alebo SharePointom Online. Vďaka tomu môžu používatelia svoje poznámkové bloky otvárať, zobrazovať a upravovať vo všetkých svojich zariadeniach a budú stále aktuálne.
+|[OneNote sync](#onenote-sync-events)|OneNote pre Mac podporuje iba poznámkové bloky uložené na internete vo OneDrive alebo v SharePointe Online. OneNote pre Mac neustále synchronizuje všetky poznámky používateľa s OneDrivom alebo SharePointom Online. Vďaka tomu môžu používatelia svoje poznámkové bloky otvárať, zobrazovať a upravovať vo všetkých svojich zariadeniach a budú stále aktuálne.
  [Services Configuration](#services-configuration-events)  | Služba Services Configuration umožňuje vykonávať aktualizácie nastavení konfigurácie balíka Office na povolenie alebo zakázanie klientskych funkcií. Zavolá sa vždy, keď sa spustí aplikácia balíka Office a poskytuje podrobné informácie o iných konfiguráciách a službách balíka Office. Služba Services Configuration tiež riadi, ktoré služby sú určené ako nevyhnutné služby.  |
 | [Telemetria](#telemetry-events)  | Služba telemetrie slúži na zhromažďovanie diagnostických údajov z aplikácií balíka Office. Umožňuje zhromažďovať diagnostické údaje vytvorené balíkom Office, a to požadované aj voliteľné diagnostické údaje. Je zodpovedná aj za zhromažďovanie niektorých údajov služieb pre balík Office.  |
 
@@ -85,7 +85,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďuje sa, keď sa v balíku Office používateľovi zobrazí výzva na prihlásenie typu Forms-Based-Auth.
 
-Spolu so získaním skrytého tokenu výzvy na overenie umožňujú určiť, či sa používateľ nachádza v stave nefunkčného overenia, čo pre používateľa znamená, že je buď stave offline klienta, alebo v horšom prípade môže nefunkčné overenie znemožniť získanie licencie a mať tak za následok, že klient bude úplne nepoužiteľný.
+Spolu so získaním skrytého tokenu výzvy na overenie umožňujú určiť, či sa používateľ nachádza v stave nefunkčného overenia, čo pre používateľa znamená, že je buď stave offline klienta, alebo v horšom prípade môže nefunkčné overenie znemožniť získanie licencie a mať tak za následok, že klient bude úplne nepoužiteľný.
 
 Výzvy na prihlásenie typu Forms-Based-Auth (FBA) sa používajú pre niektoré lokálne scenáre overovania a zvyčajne sa chceme uistiť, že sa to nedeje, pretože všetky by mali používať prihlásenie typu Modern-Auth z dôvodov chýb zabezpečenia súvisiacich s prihlásením typu FBA.
 
@@ -426,6 +426,461 @@ Zhromažďujú sa tieto polia:
   - **Wamapi** – identifikuje, ktoré rozhranie WAM API sa volá
 
   - **Wamtelemetrybatch** – v súčasnosti sa nepoužíva. V budúcnosti bude umožňovať súčasti WAM odosielať doplňujúce informácie o udalosti overovania.
+
+
+### <a name="officematsoneauthactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.ActionMicrosoftOfficeWin32
+
+Microsoft Auth Telemetry System (MATS) sa zhromažďuje, keď sa Office pokúša získať token overenia, či už bez zobrazenia výzvy alebo prostredníctvom zobrazenia výzvy. Keď pokusy o získanie zlyhajú, zahrnú sa aj informácie o chybe. Tieto udalosti pomáhajú našim používateľom vyhnúť sa prechodu do stavu nefunkčného overenia:
+
+1) Identifikáciou, či klienti dokážu úspešne získať overovací token zo služby, alebo či prešli do stavu nefunkčného overenia.
+
+2) Vyhodnotením, či zmeny, ku ktorým došlo v klientovi alebo v službách, mali za následok kritické regresie pri postupe alebo spoľahlivosti overovania používateľa
+
+3) Keď sa vyskytnú zlyhania, tieto signály vysielajú dôležité kódy zlyhania z príslušnej súčasti (kód klienta balíka Office, knižnice overovania alebo služby oprávnenia), ktoré je možné použiť na určenie priority, diagnostikovanie a zmierňovanie
+
+4) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb
+
+Zhromažďujú sa tieto polia:
+
+- **AccountType** – typ konta použitého pre túto udalosť overovania, napríklad spotrebiteľské alebo organizačné.
+
+- **Actionname** Popisný názov tejto udalosti, ak bol uvedený.
+
+- **Actiontype** – Určuje, aký typ knižnice overovania sa používa.
+
+- **Appaudience** – či je zostava aplikácie na interné alebo externé používanie
+
+- **Appforcedprompt** – či aplikácia prepísala vyrovnávaciu pamäť a vynútila zobrazenie výzvy
+
+- **Appname** – názov aplikácie, ktorá vykonáva overovanie
+
+- **Appver** – verzia aplikácie, ktorá vykonáva overovanie
+
+- **Askedforcreds** – či sa v aplikácii zobrazila výzva pre používateľa na zadanie poverení pre túto akciu
+
+- **Authoutcome** – či bol pokus o overenie úspešný, zlyhal alebo bol zrušený
+
+- **Blockingprompt** – či sa v aplikácii zobrazila výzva vyžadujúca interakciu používateľa
+
+- **CorrelationID** – identifikátor, ktorý sa používa na pripojenie k informáciám o tejto konkrétnej udalosti s údajmi služby
+
+- **Count** – Celkový počet agregovaných akcií hlásených v tejto jednej udalosti údajov.
+
+- **Devicenetworkstate** – Označuje, či je zariadenie pripojené na internet.
+
+- **Deviceprofiletelemetryid** – anonymný identifikátor zariadenia, ktorý sa používa na meranie používania a spoľahlivosti overovania zariadenia.
+
+- **Duration** – dĺžka trvania overovania
+
+- **duration_max** – maximálna dĺžka ktorejkoľvek z agregovaných udalostí
+
+- **duration_min** – minimálna dĺžka ktorejkoľvek z agregovaných udalostí
+
+- **duration_sum** – súčet trvania všetkých agregovaných udalostí
+
+- **endtime** – čas skončenia udalosti overovania
+
+- **error** – kód chyby, ak overovanie zlyhalo
+
+- **errordescription** – stručný popis chyby
+
+- **errorsource** – či chyba pochádzala zo služby, knižnice overovania alebo aplikácie
+
+- **eventtype** – Označuje, či táto udalosť hlási údajový bod overenia, alebo udalosť chyby kvality údajov. Používa sa na meranie kvality údajov.
+
+- **from_cache** – boolovská hodnota predstavujúca to, či záznam pochádza zo základnej vyrovnávacej pamäti WAM, alebo z doplnku
+
+- **hasadaltelemetry** – Označuje, či knižnica Azure Active Directory Authentication Library (ADAL) poskytla telemetriu pre túto udalosť.
+
+- **Identityservice** – či bola vyvolaná služba Microsoft Service Account (MSA) alebo Azure Active Directory (AAD)
+
+- **Interactiveauthcontainer** – aký typ výzvy sa zobrazil
+
+- **Issilent** – Označuje, či sa zobrazila výzva, alebo išlo o tichú udalosť overenia (na pozadí).
+
+- **Microsoft_ADAL_adal_version** – verzia knižnice Azure Active Directory Authentication Library (ADAL)
+
+- **Microsoft_ADAL_api_error_code** – kód chyby vyslaný knižnicou overovania pre tento pokus o overenie
+
+- **Microsoft_ADAL_api_id** – rozhranie API vyvolané pre tento pokus o overenie
+
+- **Microsoft_ADAL_application_name** – Názov aplikácie/procesu pomocou knižnice ADAL.
+
+- **Microsoft_ADAL_application_version** – Verzia aplikácie pomocou knižnice ADAL.
+
+- **Microsoft_ADAL_authority** – URL adresa autority služby Azure Active Directory zodpovednej za overovanie používateľa
+
+- **Microsoft_ADAL_authority_type** – spotrebiteľské/Microsoft Service Agreement (MSA) alebo organizačné/Azure Active Directory (AAD); v súčasnosti vždy AAD
+
+- **Microsoft_ADAL_authority_validation_status** – signalizuje, či sa overovanie dokončilo na strane služby
+
+- **Microsoft_ADAL_broker_app** – signalizuje, či knižnica ADAL použila sprostredkovateľa na overenie
+
+- **Microsoft_ADAL_broker_app_used** – uvádza názov sprostredkovateľa (napr. Windows Account Management)
+
+- **Microsoft_ADAL_broker_version** – uvádza verziu sprostredkovateľa, ak sa použil
+
+- **Microsoft_ADAL_cache_event_count** – počet udalostí vyrovnávacej pamäte, ktoré knižnica ADAL vykonala počas načítavania tokenu
+
+- **Microsoft_ADAL_cache_event_count_max** – ak je tento signál agregovaný, max. počet udalostí vyrovnávacej pamäte ktorejkoľvek z agregovaných udalostí.
+
+- **Microsoft_ADAL_cache_event_count_min** – ak je tento signál agregovaný, min. počet udalostí vyrovnávacej pamäte ktorejkoľvek z agregovaných udalostí.
+
+- **Microsoft_ADAL_cache_event_count_sum** – ak je tento signál agregovaný, súčet udalostí vyrovnávacej pamäte všetkých agregovaných udalostí.
+
+- **Microsoft_ADAL_cache_read_count** – koľkokrát rozhranie API čítalo z vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému čítaniu.
+
+- **Microsoft_ADAL_cache_read_error_count** – koľkokrát zlyhalo čítanie z vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zlyhaniu.
+
+- **Microsoft_ADAL_cache_read_last_error** – Kód chyby knižnice ADAL. Je prítomné, ak došlo k aspoň jednému zlyhaniu čítania.
+
+- **Microsoft_ADAL_cache_read_last_system_error** – Kód chyby systému.  Je prítomné, ak došlo k aspoň jednému zlyhaniu čítania.
+
+- **Microsoft_ADAL_cache_write_count** – koľkokrát rozhranie API zapisovalo do vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zapisovaniu.
+
+- **Microsoft_ADAL_cache_write_error_count** – koľkokrát zlyhalo zapisovanie do vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zlyhaniu.
+
+- **Microsoft_ADAL_cache_write_last_error** – Kód chyby knižnice ADAL. Je prítomné, ak došlo k aspoň jednému zlyhaniu zapisovania.
+
+- **Microsoft_ADAL_cache_write_last_system_error** – Kód chyby systému. Je prítomné, ak došlo k aspoň jednému zlyhaniu zapisovania.
+
+- **Microsoft_ADAL_client_id** – hašované ID aplikácie Azure Active Directory
+
+- **Microsoft_ADAL_device_id** – ID miestneho zariadenia vygenerované knižnicou ADAL.
+
+- **Microsoft_ADAL_error_domain** – Doména/komponent, kde sa vygeneroval kód chyby.
+
+- **Microsoft_ADAL_error_protocol_code** – kód chyby protokolu OAuth vrátený službou, ktorý zaznamenala knižnica ADAL.
+
+- **Microsoft_ADAL_extended_expires_on_setting** – pravda/nepravda, uvádza, či token má predĺženú životnosť
+
+- **Microsoft_ADAL_http_event_count** – počet požiadaviek protokolu HTTP vygenerovaných knižnicou ADAL.
+
+- **Microsoft_ADAL_idp** – Poskytovateľ identity (IDP) používaný knižnicou ADAL.
+
+- **Microsoft_ADAL_network_event_count** – počet sieťových volaní vykonaných knižnicou ADAL
+
+- **Microsoft_ADAL_http_event_count_max** – ak sa agreguje tento signál, maximálny počet volaní protokolu HTTP vykonaných knižnicou ADAL
+
+- **Microsoft_ADAL_http_event_count_min** – ak sa agreguje tento signál, minimálny počet volaní protokolu HTTP vykonaných knižnicou ADAL
+
+- **Microsoft_ADAL_http_event_count_sum** – ak sa agreguje tento signál, súčet volaní protokolu HTTP vykonaných knižnicou ADAL
+
+- **Microsoft_ADAL_network_event_count_max** – ak sa agreguje tento signál, maximálny počet sieťových volaní vykonaných knižnicou ADAL ktorejkoľvek agregovanej udalosti
+
+- **Microsoft_ADAL_network_event_count_min** – ak sa agreguje tento signál, minimálny počet sieťových volaní vykonaných knižnicou ADAL ktorejkoľvek agregovanej udalosti
+
+- **Microsoft_ADAL_network_event_count_sum** – ak sa agreguje tento signál, súčet sieťových volaní vykonaných knižnicou ADAL všetkých agregovaných udalostí
+
+- **Microsoft_ADAL_is_silent_ui** – pravda/nepravda, uvádza, či knižnica ADAL zobrazila používateľské rozhranie (výzvu)
+
+- **Microsoft_ADAL_is_successfull** – pravda/nepravda, uvádza, či rozhranie API knižnice ADAL bolo úspešné (MacOS)
+
+- **Microsoft_ADAL_is_successfull** – pravda/nepravda, uvádza, či rozhranie API knižnice ADAL bolo úspešné
+
+- **Microsoft_ADAL_logging_pii_enabled** – pravda/nepravda, uvádza, či je povolený režim úplného zapisovania do denníka knižnice ADAL. Tieto údaje sa zapisujú do denníka len lokálne, neodosielajú sa v telemetrii.
+
+- **Microsoft_ADAL_ntlm** – pravda/nepravda, uvádza, či knižnica ADAL použila základné overovanie (NTLM).
+
+- **Microsoft_ADAL_oauth_error_code** – kód chyby protokolu OAuth vrátený službou
+
+- **Microsoft_ADAL_prompt_behavior** – prihlasovací alebo žiaden sieťový parameter odovzdaný do služby na určenie, či je možné zobraziť používateľské rozhranie
+
+- **Microsoft_ADAL_request_id** – transakčný identifikátor GUID pre požiadavky vyslaný knižnicou ADAL do služby
+
+- **Microsoft_ADAL_response_code** – kód odpovede siete zo služby
+
+- **Microsoft_ADAL_response_time** – ako dlho trvalo, kým sa služba vrátila ku knižnici ADAL
+
+- **Microsoft_ADAL_response_time_max** – ak je signál agregovaný, max. čas, kým sa knižnica ADAL vrátila zo svojho rozhrania API, spomedzi ktorejkoľvek z agregovaných udalostí
+
+- **Microsoft_ADAL_response_time_min** – ak je signál agregovaný, min. čas, kým služba odpovedala knižnici ADAL, spomedzi ktorejkoľvek z agregovaných udalostí
+
+- **Microsoft_ADAL_response_time_sum** – ak je signál agregovaný, súčet časov, kým sa knižnica ADAL vrátila zo svojho rozhrania API, spomedzi všetkých agregovaných udalostí
+
+- **Microsoft_ADAL_rt_age** – vek tokenu obnovenia
+
+- **Microsoft_ADAL_server_error_code** – kód chyby vrátený serverom
+
+- **Microsoft_ADAL_server_sub_error_code** – čiastočný kód chyby vrátený serverom na pomoc pri jednoznačnom určení dôvodu zlyhania požiadavky
+
+- **Microsoft_ADAL_spe_info** – pravda/nepravda, uvádza, či používať používal vnútorný okruh Secure Production Enterprise (len zamestnanci spoločnosti Microsoft)
+
+- **Microsoft_ADAL_spe_ring** – pravda/nepravda, uvádza, či používať používal vnútorný okruh Secure Production Enterprise (len zamestnanci spoločnosti Microsoft)
+
+- **Microsoft_ADAL_start_time** – čas uskutočnenia volania rozhrania API knižnice ADAL
+
+- **Microsoft_ADAL_status** – stav úspechu/zlyhania v rámci celkového vyvolania knižnice ADAL
+
+- **Microsoft_ADAL_stop_time** – čas vrátenia volania rozhrania API knižnice ADAL
+
+- **Microsoft_ADAL_telemetry_pii_enabled** – pravda/nepravda, uvádza, či je povolený režim úplnej telemetrie knižnice ADAL. Názov je nevhodný, keďže sa nevysiela žiadne PII/EUII.
+
+- **Microsoft_ADAL_tenant_id** – identifikátor GUID identifikujúci nájomníka, ku ktorému patrí overený používateľ
+
+- **Microsoft_ADAL_token_acquisition_from_context** – opisuje správanie knižnice ADAL na základe tokenov v kontexte overovania
+
+- **Microsoft_ADAL_token_frt_status** – Stav tokenu obnovenia: označuje, či sa vyskúšalo, nebolo potrebné, nenašlo sa alebo sa odstránilo.
+
+- **Microsoft_ADAL_token_mrrt_status** – Stav tokenu MultiResourceRefreshToken: označuje, či sa vyskúšalo, nebolo potrebné, nenašlo sa alebo sa odstránilo.
+
+- **Microsoft_ADAL_token_rt_status** – Stav tokenu obnovenia: označuje, či sa vyskúšalo, nebolo potrebné, nenašlo sa alebo sa odstránilo.
+
+- **Microsoft_ADAL_token_type** – token obnovenia (RT) alebo token obnovenia s viacerými zdrojmi (MRRT)
+
+- **Microsoft_ADAL_ui_event_count** – počet výziev zobrazených používateľovi. Môžu byť skryté.
+
+- **Microsoft_ADAL_user_cancel** – pravda/nepravda, či bolo okno používateľského rozhrania zrušené
+
+- **Microsoft_ADAL_x_ms_request_id** – identifikátor dodatočnej požiadavky poskytnutý službe v sieťovej hlavičke knižnicou ADAL
+
+- **Microsoft_ADAL_x_client_cpu** – informácie o architektúre procesora zariadenia
+
+- **Microsoft_ADAL_x_client_os** – verzia operačného systému zariadenia.
+
+- **Microsoft_ADAL_x_client_sku** – názov jednotky SKU operačného systému zariadenia.
+
+- **Microsoft_ADAL_x_client_ver** – verzia knižnice ADAL.
+
+- **MSAL_all_error_tags** – všetky značky chýb, na ktoré knižnica overovania spoločnosti Microsoft (MSAL) narazila počas postupu overovania.
+
+- **MSAL_api_error_code** – Ak knižnica MSAL narazí na chybu z operačného systému, tu sa uložia kódy chýb platformy.
+
+- **MSAL_api_error_context** reťazec, ktorý obsahuje ďalšie čitateľné podrobnosti o poslednej chybe, na ktorú narazila knižnica MSAL. 
+
+- **MSAL_api_error_tag** – jedinečný reťazec pre miesto v kóde, kde sa vyskytla táto chyba.
+
+- **MSAL_api_name** – názov rozhrania API najvyššej úrovne knižnice MSAL, ktorý sa volá na spustenie tohto postupu overovania.
+
+- **MSAL_api_status_code** – kód stavu, ktorý knižnica MSAL vrátila pre výsledok tohto postupu overovania.
+
+- **MSAL_auth_flow** – kroky, o ktoré sa knižnica MSAL pokúsila počas tohto postupu overovania (AT, PRT, LRT, FRT, ART, IRT). Oddelené symbolom zvislej čiary „|“, čo uľahčuje analýzu.
+
+- **MSAL_auth_flow_last_error** – kód chyby, ktorý sme dostali zo servera na druhú až poslednú položku v rámci AuthFlow. (Príklad: Ak AuthFlow = "PRT|LRT", chyba PRT by sa nachádzala v rámci AuthFlowLastError).
+
+- **MSAL_authority_type** – či bola táto požiadavka pre používateľa v: AAD, Federated alebo MSA.
+
+- **MSAL_broker_app_used** – či bola v tomto postupe overovania použitá aplikácia sprostredkovateľa.
+
+- **MSAL_client_id** – ID klienta volajúcej aplikácie
+
+- **MSAL_correlation_id** jedinečný identifikátor GUID pre túto udalosť, ktorý sa používa na pripojenie k akciám v denníkoch klientov, serverov a aplikácií.
+
+- **MSAL_delete_token** – zoznam tokenov, ktoré boli odstránené z vyrovnávacej pamäte počas tohto postupu overovania.
+
+- **MSAL_http_call_count** – počet volaní protokolu HTTP, ktoré knižnica MSAL vykonala počas postupu overovania.
+
+- **MSAL_is_successful** – či bol postup overovania úspešný.
+
+- **MSAL_last_http_response_code** – Ak knižnica MSAL vykonala jedno alebo viacero volaní protokolu HTTP, toto je posledný kód odpovede protokolu HTTP, ktorý sme dostali.
+
+- **MSAL_msal_version** – reťazec verzie knižnice MSAL, formát X.X.X+(„OneAuth“, „local“ alebo hodnota hash pre commit).
+
+- **MSAL_read_token** – tokeny prečítané z vyrovnávacej pamäte (AT, ART, FRT, LRT, IRT, PRT, EAT  [EAT = Exspirované AT sa prečítalo, ale zahodilo]).
+
+- **MSAL_read_token_last_error** – Ak knižnica MSAL narazila na chybu pri čítaní z vyrovnávacej pamäte, informácie uložíme tu. Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme MacOS).
+
+- **MSAL_request_duration** – ako dlho trvala požiadavka, keď sa volalo rozhranie API najvyššej úrovne knižnice MSAL, kým sme nevrátili výsledok.
+
+- **MSAL_request_id** – ID požiadavky posledného volania, ktoré sme vykonali v službe tokenov zabezpečenia spoločnosti Microsoft.
+
+- **MSAL_server_error_code** – číselný kód chyby špecifickej služby tokenov zabezpečenia spoločnosti Microsoft v prípade, že sme ho dostali.
+
+- **MSAL_server_spe_ring** – informácie okruhu Secure Production Enterprise služby tokenov zabezpečenia spoločnosti Microsoft, ak sme ich dostali.
+
+- **MSAL_server_suberror_code** – reťazec kódu čiastkovej chyby špecifickej služby tokenov zabezpečenia spoločnosti Microsoft v prípade, že sme ho dostali.
+
+- **MSAL_start_time** – čas začiatku požiadavky knižnice MSAL vo verejnom rozhraní API najvyššej úrovne.
+
+- **MSAL_stop_time** – čas, v ktorom knižnica MSAL dokončila spracovanie požiadavky a vrátila výsledok volajúcemu.
+
+- **MSAL_tenant_id** – identifikátor GUID spoločnosti Microsoft na identifikáciu nájomníka, v ktorom používateľ existuje.
+
+- **MSAL_ui_event_count** – počet výziev používateľského rozhrania, ktoré knižnica MSAL zobrazila na obrazovke.
+
+- **MSAL_wam_telemetry** – obsahuje dávku údajov telemetrie WAM v reťazci JSON, ktorá sa bude analyzovať a skonvertuje sa na polia v tomto dokumente pochádzajúce z WAM.
+
+- **MSAL_was_request_throttled** – pravda, ak knižnica MSAL obmedzila túto požiadavku a zabránila jej v zasiahnutí siete. Ak je to pravda, pravdepodobne sa vo volajúcej aplikácii vyskytuje slučka.
+
+- **MSAL_write_token** – tokeny zapísané do vyrovnávacej pamäte (AT, ART, FRT, LRT, IRT, PRT, EAT  [EAT = Exspirované AT sa prečítalo, ale zahodilo]).
+
+- **MSAL_write_token_last_error** – Ak knižnica MSAL narazila na chybu pri zapisovaní do vyrovnávacej pamäte, informácie uložíme tu. Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme MacOS).
+
+- **oneauth_api** – rozhranie API OneAuth vyvolané pre tento pokus o overenie.
+
+- **oneauth_transactionuploadid** – identifikátor GUID špecifikujúci individuálne volanie do rozhrania API OneAuth.
+
+- **oneauth_version** – verzia súpravy SDK OneAuth.
+
+- **Platform** – platforma operačného systému (0: Počítač s Windowsom, 1: Android, 2: iOS, 3: MacOS; 4: UWP)
+
+- **Promptreasoncorrelationid** – identifikátor korelácie, ktorý sa dá použiť na vyhľadanie predchádzajúcej udalosti overovania. Používa sa na vysvetlenie, prečo sa používateľovi zobrazila výzva na overenie.
+
+- **Resource** – zdroj, pre ktorý sa vyžaduje token.
+
+- **Scenarioid** – Viacero udalostí môže patriť do jedného scenára, napríklad scenár môže pridať nové konto, no v rámci daného scenára sa vyskytuje viacero výziev. Tento identifikátor umožňuje koreláciu týchto súvisiacich udalostí.
+
+- **Scenarioname** – názov scenára aplikácie, v ktorom sa vyžadovalo overenie, ako napr. prvé spustenie, kontrola licencií atď.
+
+- **Scope** – rozsah, pre ktorý sa vyžaduje token.
+
+- **Sdkver** – verzia knižnice Microsoft Auth Telemetry System, ktorá sa používa na vytvorenie týchto údajov
+
+- **Sessionid** – identifikátor relácie spúšťania
+
+- **StartTime** – čas, v ktorom začala udalosť overovania.
+
+- **Tenantid** – identifikátor GUID identifikujúci nájomníka, ku ktorému patrí overený používateľ (v prípadoch bez knižnice ADAL)
+
+- **Uploadid** – jedinečný identifikátor GUID pre túto udalosť použitý na de-duping
+
+- **wamapi** – identifikuje, ktoré rozhranie API pre Windows Web Account Management (WAM) sa volá
+
+- **wamtelemetrybatch** – v súčasnosti sa nepoužíva. V budúcnosti bude umožňovať súčasti WAM odosielať doplňujúce informácie o udalosti overovania.
+
+- **WAM_account_join_on_end** – stav pripojenia konta na konci operácie WAM.  Možné hodnoty: „primary“, „secondary”, „not_joined”
+
+- **WAM_account_join_on_start** – stav pripojenia konta na začiatku operácie WAM.  Možné hodnoty: „primary“, „secondary”, „not_joined”
+
+- **WAM_api_error_code** – ak z doplnku AAD WAM príde chyba, toto pole bude existovať a obsahovať daný kód chyby
+
+- **WAM_authority** – reťazec obsahujúci URL adresu autority – mal by to byť použitý koncový bod login.windows.net
+
+- **WAM_broker_version** – je k dispozícii v prípade použitia WAM, ide o reťazec verzie sprostredkovateľa
+
+- **WAM_cache_event_count** – počet udalostí vo vyrovnávacej pamäti WAM v rámci operácie
+
+- **WAM_client_id** – identifikátor pre spojenie s údajmi o službách, identifikuje klientsku aplikáciu.
+
+- **WAM_correlation_id** – identifikátor na spájanie udalostí s údajmi o službách
+
+- **WAM_device_join** – stav pripojenia zariadenia; možné hodnoty sú „aadj“, „haadj“
+
+- **WAM_network_event_count** – je k dispozícii, ak došlo k aspoň jednému sieťovému volaniu; počet sieťových volaní do služby pre túto operáciu WAM
+
+- **WAM_network_status** – je k dispozícii, ak došlo k aspoň jednému sieťovému volaniu, obsahuje chybový kód protokolu HTTP, ak sieťová požiadavka zlyhala.
+
+- **WAM_idp** – určuje, či bol sa použil spotrebiteľský alebo organizačný doplnok overovania WAM.
+
+- **WAM_is_cached** – určuje, či odpoveď, ktorú poskytuje WAM, bola načítaná z vyrovnávacej pamäte.
+
+- **WAM_oauth_error_code** – Obsahuje kód chyby vrátený službou ako súčasť protokolu oauth.
+
+- **WAM_prompt_behavior** – určuje, či je táto výzva vynútená aplikáciou, alebo či sa pri tejto požiadavke môže vynechať výzva, ak je možné overovanie bez zobrazenia výzvy.
+
+- **WAM_provider_id** – určuje koncový bod spoločnosti Microsoft pre používanú autoritu pri scenári overovania.
+
+- **WAM_redirect_uri** – identifikátor URI presmerovania registrovaný pre aplikáciu v službe Azure Active Directory.
+
+- **WAM_resource** – zdroj, pre ktorý sa vyžaduje token.
+
+- **WAM_server_error_code** – kód chyby vrátený službou do WAM.
+
+- **WAM_server_sub_code** – ďalší kód chyby používaný na ďalšie rozdelenie príčin zlyhania, ktoré vráti služba.
+
+- **WAM_silent_code** – kód chyby, na ktorú WAM narazí pri internom pokuse bez zobrazenia výzvy ešte pred vyzvaním používateľa.
+
+- **WAM_silent_mats** – nepoužíva sa.
+
+- **WAM_silent_message** – chybové hlásenie priradené k internému pokusu bez zobrazenia výzvy, ktorý vykoná WAM ešte pred vyzvaním používateľa.
+
+- **WAM_silent_status** – stav úspechu/zlyhania interného pokusu bez zobrazenia výzvy, ktorý vykoná WAM ešte pred vyzvaním používateľa.
+
+- **WAM_tenant_id** – identifikátor nájomníka, ku ktorému patrí overený používateľ služby AAD, ak ho vráti služba
+
+- **WAM_ui_visible** – je k dispozícii, ak sa používateľovi zobrazilo aspoň jedno okno používateľského rozhrania, buď true, alebo false
+
+- **WAM_x_ms_clitelem** – je k dispozícii, ak služba vráti hlavičku „x-ms-clitelem“
+
+
+### <a name="officematsoneauthtransactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.TransactionMicrosoftOfficeWin32
+
+Microsoft Auth Telemetry System (MATS) sa zhromažďuje, keď sa Office pokúša získať token overenia, či už bez zobrazenia výzvy alebo prostredníctvom zobrazenia výzvy. Táto udalosť je nadradenou pre  jednu alebo viaceré udalosti ActionMicrosoftOffice a umožňuje zoskupiť súvisiace udalosti. Tieto udalosti pomáhajú našim používateľom vyhnúť sa prechodu do stavu nefunkčného overenia:
+
+1) Identifikáciou, či klienti dokážu úspešne získať overovací token zo služby, alebo či prešli do stavu nefunkčného overenia.
+
+2) Vyhodnotením, či zmeny, ku ktorým došlo v klientovi alebo v službách, mali za následok kritické regresie pri postupe alebo spoľahlivosti overovania používateľa
+
+3) Keď sa vyskytnú zlyhania, tieto signály vysielajú dôležité kódy zlyhania z príslušnej súčasti (kód klienta balíka Office, knižnice overovania alebo služby oprávnenia), ktoré je možné použiť na určenie priority, diagnostikovanie a zmierňovanie
+
+4) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb
+
+Zhromažďujú sa tieto polia:
+
+- **Actiontype** – jedinou hodnotou je „oneauthtransaction“.
+
+- **Appaudience** – cieľová skupina aplikácie (automatizácia, predprodukcia alebo produkcia)
+
+- **Appname** – názov aplikácie
+
+- **Appver** – verzia aplikácie
+
+- **Authoutcome** – či bol pokus o overenie úspešný, zlyhal alebo bol zrušený
+
+- **CorrelationID** – identifikátor, ktorý sa používa na pripojenie k informáciám o tejto konkrétnej udalosti s údajmi služby
+
+- **Count** – koľkokrát sa chyba vyskytla
+
+- **Devicenetworkstate** – stav siete zariadenia
+
+- **Deviceprofiletelemetryid** – ID telemetrie profilu zariadenia (reťazec, ktorý MATS používa na identifikáciu konkrétneho zariadenia)
+
+- **duration_max** – minimálna dĺžka trvania (v milisekundách) transakcií agregovaných v rámci tohto signálu.
+
+- **duration_min** – maximálna dĺžka trvania (v milisekundách) transakcií agregovaných v rámci tohto signálu.
+
+- **duration_sum** – súčet dĺžky trvaní (v milisekundách) transakcií agregovaných v rámci tohto signálu.
+
+- **Endtime** – čas, v ktorom sa transakcia OneAuth ukončila.
+
+- **Error** – kód stavu OneAuth.
+
+- **Eventtype** – typ udalosti
+
+- **Issilent** – false, ak sa zobrazilo používateľské rozhranie; true, ak išlo o udalosť na pozadí.
+
+- **oneauth_api** – určuje verejné rozhranie API pre OneAuth, ktoré sa vyvolalo.
+
+- **oneauth_Domain** – Ak volanie rozhrania API malo za následok chybu, je to systémová doména tejto chyby.
+
+- **oneauth_ErrorCode** – kód chyby predstavujúci interný stav chyby pre OneAuth. Nahrádza staré pole oneauth_errortag.
+
+- **oneauth_errortag** – číselný identifikátor pre riadok kódu, ktorý bol zodpovedný za generovanie chyby.
+
+- **oneauth_ExecutionFlow** – séria značiek, ktorá identifikuje cestu kódu, ktorou išlo toto vyvolanie rozhrania API.
+
+- **oneauth_internalerror** – kód chyby predstavujúci interný stav chyby pre OneAuth.
+
+- **oneauth_ServerErrorCode** – chyba servera vrátená do OneAuth na záver tohto volania rozhrania API, ak sa vyskytla.
+
+- **oneauth_SystemErrorCode** – systémová chyba vrátená do OneAuth na záver tohto volania rozhrania API, ak sa vyskytla.
+
+- **oneauth_Tag** – značka OneAuth, ktorá označuje konečné miesto v kóde dosiahnuté na záver volania rozhrania API.
+
+- **oneauth_transactionuploadid** – určuje náhodne vygenerovaný interný identifikátor GUID, ktorý sa priradí k danému vyvolaniu rozhrania API OneAuth.
+
+- **oneauth_version** – verzia súpravy SDK OneAuth.
+
+- **Platform** – platforma operačného systému (0: Win32; 1: Android, 2: iOS, 3: MacOS; 4: WinRT)
+
+- **Scenarioname** – názov scenára, pre ktorý je potrebné overovanie, určený volajúcou aplikáciou.
+
+- **Schemaver** – verzia schémy
+
+- **Sdkver** – verzia súpravy skd MATS
+
+- **Sessionid** – ID relácie
+
+- **severityError** – závažnosť
+
+- **starttime** – čas, v ktorom transakcia OneAuth začala.
+
+- **Timestamp** – časová pečiatka
+
+- **Type** – typ chyby
+
+- **Uploaded** – jedinečný identifikátor pre túto konkrétnu udalosť na účely de-dupingu.
+
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
@@ -2794,6 +3249,101 @@ Zhromažďujú sa tieto polia:
 
 ## <a name="licensing-events"></a>Udalosti licenčnej služby
 
+### <a name="officeandroiddocsuipaywallcontrolautoredeempendingpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.AutoRedeemPendingPurchaseResult
+
+Kritická technická telemetria na zaznamenanie výsledku automatického pokusu o uplatnenie čakajúcich nákupov používateľa. Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného.
+
+Zhromažďujú sa tieto polia:
+
+- **EventDate** – časová pečiatka výskytu udalosti 
+
+- **Result** – int, ktorý označuje výsledok enumerácie operácie. 
+
+- **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
+
+### <a name="officeandroiddocsuipaywallcontrolpaywalluishown"></a>Office.Android.DocsUI.PaywallControl.PaywallUIShown
+
+Kritická telemetria používania pre prípad, keď sa používateľovi zobrazí ovládací prvok Paywall. Používa sa na vysvetlenie skúsenosti používateľa pri nákupe v rámci aplikácie a optimalizovanie toho istého pre budúce verzie.
+
+Zhromažďujú sa tieto polia:
+
+- **EventDate** – časová pečiatka výskytu udalosti 
+
+- **IsModeFRE** – boolovská hodnota na označenie typu skúsenosti, dialógové okno predaja typu upsell alebo výber jednotky SKU
+
+- **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
+
+### <a name="officeandroiddocsuipaywallcontrolpurchasebuttonclicked"></a>Office.Android.DocsUI.PaywallControl.PurchaseButtonClicked
+
+Kritická telemetria používania na zistenie, keď používateľ klikne na tlačidlo Nákup. Používa sa na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
+
+Zhromažďujú sa tieto polia:
+
+- **EventDate** – časová pečiatka výskytu udalosti
+
+- **IsDefaultSku** – boolovská hodnota označujúca, či sa používateľ pokúša kúpiť jednotku SKU, ktorá sa zobrazila ako prvá/predvolená
+
+- **ProductID** – reťazec určujúci, ktorý používateľ predplatného sa pokúša o nákup podľa konfigurácie v obchode
+
+- **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
+
+### <a name="officeandroiddocsuipaywallcontrolpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.PurchaseResult
+
+Kritická technická telemetria na zaznamenanie výsledku pokusu o nákup manuálne spusteného používateľom. Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného.
+
+Zhromažďujú sa tieto polia:
+
+- **EventDate** – časová pečiatka výskytu udalosti 
+
+- **IsModeFre** – boolovská hodnota, ktorá označuje, či bol nákup vykonaný z obrazovky FRE predaja typu upsell alebo výberu jednotky SKU
+
+- **Result** – int, ktorý označuje výsledok enumerácie operácie.
+
+- **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
+
+
+### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
+
+Túto telemetriu používania zhromažďujeme na zistenie toho, koľko času používateľ strávi na obrazovke „Zobraziť ďalšie výhody“.  Údaje sa používajú na vysvetlenie používania funkcie „Zobraziť ďalšie výhody“ a ďalšiu optimalizáciu skúseností v budúcich verziách.
+
+Zhromažďujú sa tieto polia:
+
+- **Duration** – číslo typu Long Integer udávajúce čas strávený používateľom na obrazovke „Zobraziť všetky funkcie“ v milisekundách
+
+- **EventDate** – časová pečiatka výskytu udalosti 
+
+- **MostExplored** – celé číslo, ktoré označuje index najviac prepínanej položky v zozname aplikácií M365 a ich funkcií
+
+- **SessionID** – globálny jednoznačný identifikátor (GUID) na pripojenie udalostí podľa relácie
+
+### <a name="officeandroiddocsuipaywallcontrolskuchooseranalytics"></a>Office.Android.DocsUI.PaywallControl.SkuChooserAnalytics
+
+Telemetria používania na zistenie, koľko času používateľ strávi na obrazovke výberu jednotky SKU. Telemetria používania na zistenie, koľko času používateľ strávi na obrazovke výberu jednotky Sku.
+
+Zhromažďujú sa tieto polia:
+
+- **Duration** – číslo typu Long Integer udávajúce čas strávený používateľom na obrazovke výberu jednotky SKU v milisekundách
+
+- **EventDate** – časová pečiatka výskytu udalosti
+
+- **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
+
+
+### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Kritická telemetria používania sa zhromažďuje na označenie toho, keď používateľ ťukne na tlačidlo Nákup/Kúpiť.  Údaje sa používajú na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
+
+Zhromažďujú sa tieto polia:
+
+- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje Paywall. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+
+- **isDefaultSKU** -logická hodnota – Ak používateľ kupuje produkt odporučený predvoleným zobrazením.
+
+- **productId** – reťazec – identifikácia produktu z obchodu s aplikáciami, pri ktorých sa použilo tlačidlo Kúpiť
+
+- **toggleCount** – int – koľkokrát používateľ prepol medzi zobrazením rôznych produktov ešte pred ťuknutím na tlačidlo Kúpiť v aktuálnej relácii Paywall.
+
+
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
 
 Táto udalosť sa zhromažďuje, keď používateľ získa licenciu a prijme zmluvu EULA pre aktuálnu licenciu.
@@ -2810,7 +3360,7 @@ Zhromažďujú sa tieto polia:
 
 Po nastavení licencie v počítači sa vykoná pokus o jej aktivovanie zavolaním služby AVS. Táto udalosť nahlasuje výsledok aktivačného volania.
 
-Je to dôležité na zistenie, koľko používateľov má problémy s aktiváciou. Existuje zisťovanie anomálie na rozpoznávanie akejkoľvek regresie. Je to mimoriadne dôležité, pretože máme externú závislosť od služby AVS a tento signál signalizuje, či stav naši externých partnerov v poriadku. Používa sa aj na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Je to dôležité na zistenie, koľko používateľov má problémy s aktiváciou. Existuje zisťovanie anomálie na rozpoznávanie akejkoľvek regresie. Je to mimoriadne dôležité, pretože máme externú závislosť od služby AVS a tento signál signalizuje, či stav naši externých partnerov v poriadku. Používa sa aj na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -2834,7 +3384,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
-Táto udalosť sa zhromažďuje, keď sa používateľovi zobrazí dialógové okno o uplynutí platnosti licencie. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Zhromažďuje sa, keď sa používateľovi zobrazí dialógové okno uplynutia platnosti s oznámením, že platnosť licencie uplynula. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -2923,7 +3473,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
-V prípade problémov s postupom aktivácie sa spustí licenčný sprievodca a odošle sa signál signalizujúci túto skutočnosť. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+V prípade, že sa vyskytnú problémy s pracovným postupom aktivácie, spustíme sprievodcu licenciami a odošleme tento signál na označenie toho istého. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -2955,7 +3505,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingloadidentityticket"></a>Office.Licensing.LoadIdentityTicket
 
-Počas pokusu o licencovanie zariadenia sa aplikácia pokúsi načítať identitu používateľa s cieľom zistiť, či má používateľ nárok na Office alebo nie. Táto udalosť nahlasuje úspech alebo zlyhanie tohto pokusu spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Počas pokusu o licencovanie zariadenia sa aplikácia pokúsi načítať identitu používateľa s cieľom zistiť, či má používateľ nárok na Office alebo nie. Táto udalosť nahlasuje úspech alebo neúspech toho istého spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -2981,7 +3531,7 @@ Táto udalosť nezhromažďuje žiadne polia.
 
 ### <a name="officelicensingnulfetcherfetchmodelfromols"></a>Office.Licensing.Nul.Fetcher.FetchModelFromOls
 
-Keď sa v zariadení používa moderný postup licencovania, pokúšame sa získať súbor s licenciou priamo zo služby. Táto udalosť nahlasuje úspech alebo neúspech spoločne s kódom chyby volania služby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave v modernom postupe licencovania, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Keď sa v zariadení používa moderný postup licencovania, pokúšame sa získať súbor s licenciou priamo zo služby. Táto udalosť nahlasuje úspech alebo neúspech spoločne s kódom chyby volania služby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave v modernom postupe licencovania, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -2991,7 +3541,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingnulvalidationfullvalidation"></a>Office.Licensing.Nul.Validation.FullValidation 
 
-Táto udalosť sa zhromažďuje v každej relácii zariadenia, ktoré používa moderný postup licencovania. Nahlasuje stav licencovania zariadenia a chyby, ktoré sa používateľovi zobrazujú a pre ktoré nemôže používať aplikáciu. Táto udalosť signalizuje, či je zariadenie používateľa v dobrom stave v modernom postupe licencovania. Pre túto udalosť je vytvorené zisťovanie anomálie na rozpoznávanie, či regresia spôsobuje nevhodné správanie používateľa. Je to dôležité aj pri zisťovaní problémov používateľa a na monitorovanie stavu systému.
+Táto udalosť sa zhromažďuje v každej relácii zariadenia, ktoré používa moderný postup licencovania. Hlási licenčný stav zariadenia a hlási chyby, ktoré sa používateľovi zobrazujú a pre ktoré nemôže používať aplikáciu. Táto udalosť označuje, či je stav zariadenia používateľa v poriadku v modernom postupe licencovania. Pre túto udalosť je vytvorené zisťovanie anomálie na rozpoznávanie, či regresia spôsobuje nevhodné správanie používateľa. Je to dôležité aj pri zisťovaní problémov používateľa a na monitorovanie stavu systému.
 
 Zhromažďujú sa tieto polia:
 
@@ -3067,7 +3617,7 @@ Zhromažďujú sa tieto polia:
 
 *[Táto udalosť sa odstránila z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-Máme experiment, ktorý používateľovi umožňuje vyskúšať a nastaviť automatické platby za Office priamo z aplikácie bez opustenia kontextu aplikácie. Táto udalosť nahlasuje úspech alebo zlyhanie tohto experimentu spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Máme experiment, ktorý používateľovi umožňuje vyskúšať a nastaviť automatické platby za Office priamo z aplikácie bez opustenia kontextu aplikácie. Táto udalosť nahlasuje úspech alebo zlyhanie tohto experimentu spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -3075,7 +3625,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingsearchforsessiontoken"></a>Office.Licensing.SearchForSessionToken
 
-Ak je používateľ v režime aktivácie v zdieľanom počítači, snažíme sa vyhľadať v zariadení token relácie relácie, ktorý používateľovi umožňuje používať aplikáciu. Táto udalosť nahlasuje úspech alebo zlyhanie tohto scenára spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Ak je používateľ v režime aktivácie v zdieľanom počítači, snažíme sa vyhľadať v zariadení token relácie relácie, ktorý používateľovi umožňuje používať aplikáciu. Táto udalosť nahlasuje úspech alebo neúspech scenára spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -3139,7 +3689,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingtelemetryflowsearchforbindingresult"></a>Office.Licensing.TelemetryFlow.SearchForBindingResult
 
-Výrobcovia OEM predávajú počítače dodávané s balíkom Office (jednoročné predplatné alebo trvalá licencia).  Za tieto produkty balíka Office sa platí, keď si zákazník kúpi počítač. Počítače, ktoré sú nastavené s určitým registračným kľúčom (OOBEMode: OEMTA), môžu mať priradenú väzbu balíka Office.  Pri spustení balíka Office v týchto zariadeniach vykonávame servisné kontroly na zistenie, či sa našla väzba balíka Office zodpovedajúca počítaču.
+Výrobcovia OEM predávajú počítače dodávané s balíkom Office (jednoročné predplatné alebo trvalá licencia).  Za tieto produkty balíka Office sa platí, keď si zákazník kúpi počítač. Počítače, ktoré sú nastavené s určitým registračným kľúčom (OOBEMode: OEMTA), môžu mať priradenú väzbu balíka Office.  Pri spustení balíka Office v týchto zariadeniach vykonávame servisné kontroly na zistenie, či sa našla väzba balíka Office zodpovedajúca počítaču.
 
 Táto aktivita telemetrie sleduje miesta úspechu a zlyhania pri vyhľadávaní väzby, aby sme mohli zabezpečiť, že počítače, ktoré majú väzbu, ju môžu úspešne načítať, a že naše služby fungujú.  Táto aktivita nesleduje zariadenia, u ktorých po skontrolovaní s našimi službami zistíme, že nemajú priradenú žiadnu väzbu.
 
@@ -7402,7 +7952,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="fba_settimerfail"></a>fba_settimerfail  
 
-Táto udalosť označuje zlyhanie pokusu o nastavenie časovača na spustenie budúcej aktualizácie. Táto udalosť je veľmi dôležitá a používame ju na určenie množstva zlyhaní na vývoj prípadných alternatívnych riešení.
+Táto udalosť označuje zlyhanie pokusu o nastavenie časovača na spustenie budúcej aktualizácie. Táto udalosť je veľmi dôležitá a používame ju na určenie množstva zlyhaní na vývoj prípadných alternatívnych riešení.
 
 Zhromažďujú sa tieto polia:
 
@@ -8021,6 +8571,8 @@ Zhromažďujú sa tieto polia:
 
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
+- **ScreenLocked** – označuje, či sa sťahovanie spustilo za uzamknutou obrazovkou
+
 - **SessionId** – identifikátor relácie
 
 
@@ -8151,6 +8703,8 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **ScreenLocked** – označuje, či sa sťahovanie spustilo za uzamknutou obrazovkou
 
 - **SessionId** – identifikátor relácie
 
@@ -14562,13 +15116,60 @@ Služba Services Configuration nezhromažďuje žiadne požadované údaje služ
 
 ## <a name="telemetry-events"></a>Udalosti služby telemetrie
 
+### <a name="officeandroiddocsuiviewspaywalloperationmetrics"></a>Office.Android.DocsUI.Views.PaywallOperationMetrics
+
+Spoločnosť Microsoft toto používa na získanie stavu funkcií, úspešnosti alebo chybovosti používateľa pri nákupoch, aby sa zabezpečili príslušné investície do zlepšovania nákupnej skúsenosti zákazníkov zo všetkých mobilných platforiem.
+
+Zhromažďujú sa tieto polia:
+
+- **OperationTimeInMs** – čas potrebný na dokončenie operácie nákupu (long – v milisekundách)
+
+- **PaywallOperationResult** – úspešnosť/kód chyby/používateľ zrušil (Enum/int – konečná hodnota)
+
+- **PaywallOperationType** – druh operácie Paywall (enum/int – konečná hodnota)
+
+
 ### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na sledovanie stavu postupu výslovného súhlasu s telemetriou pri prvom spustení. Zhromažďujeme kód, ktorý označuje, aký typ možností zhromažďovania diagnostických údajov používateľ vybral.
 
 Zhromažďujú sa tieto polia:
 
- - **Data_EventId** – Kód označujúci preferenciu zhromažďovania diagnostických údajov vybratú používateľom.
+- **Data_EventId** – Kód označujúci preferenciu zhromažďovania diagnostických údajov vybratú používateľom.
+
+### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
+
+Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného. Používa sa na uľahčenie zapisovania transakcií do denníka a poskytovania predplatného na budúce použitie a interné zosúladenie.
+
+Zhromažďujú sa tieto polia:
+
+- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje Paywall. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+
+- **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou poskytovania RFS.
+
+- **productId** – reťazec – ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka
+
+- **status** – reťazec – úspech alebo zlyhanie, označuje, či požiadavka bola úspešná alebo zlyhala
+
+
+### <a name="officeiospaywallstorekitresponse"></a>Office.iOS.Paywall.StoreKit.Response
+
+Údaje sa zhromažďujú ako kritická technická telemetria na zaznamenanie výsledku pokusu o nákup manuálne spusteného používateľom. Telemetria produktu sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného.
+
+Zhromažďujú sa tieto polia:
+
+- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje Paywall. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+
+- **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou obchodu s aplikáciami
+
+- **productId** – reťazec – len pre „MakePurchase“, „PendingPurchase“, ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka.
+
+- **productsCount** – int – len pre „ProductsFetch“, počet produktov, ktoré vráti Store.
+
+- **requestType** – reťazec – typ požiadavky StoreKit. Napríklad „ProductsFetch“, „PendingPurchase“
+
+- **status** – reťazec – úspech alebo zlyhanie, označuje úspešnosť alebo zlyhanie požiadavky
+
 
 ### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
 
