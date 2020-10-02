@@ -13,23 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľných diagnostických údajoch v balíku Office vrátane niekoľkých príkladov udalostí.
 hideEdit: true
-ms.openlocfilehash: 6769c7a0bf254b5a33f92c5410ec517b7d568d8e
-ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
+ms.openlocfilehash: 2183863e1f7050d7d6ba838b639debf2b53ac9bd
+ms.sourcegitcommit: e1e4c309d62d0708404b7838c96416ce89f1b8b7
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46683199"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328334"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Voliteľné diagnostické údaje pre Office
 
-> [!IMPORTANT]
-> Informácie v tomto článku sa týkajú verzie 1904 alebo novšej verzie nasledujúceho klientskeho softvéru balíka Office nainštalovaného v počítači s Windowsom:
-> - Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus)
-> - Aplikácie Microsoft 365 pre podniky (predchádzajúci názov Office 365 Business)
-> - Microsoft 365 Personal, Microsoft 365 Family alebo iné verzie balíka Office, ktoré sú súčasťou predplatného na Microsoft 365.
-> - Počítačové aplikácie Project a Visio dodávané s niektorými plánmi predplatného, ako je napríklad Project Plan 5 alebo Visio Plan 2.
->
-> Informácie platia aj pre verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
+> [!NOTE]
+> Ak si chcete pozrieť zoznam produktov balíka Office, na ktorý sa vzťahujú tieto informácie o ochrane osobných údajov, pozrite si tému [Ovládacie prvky na ochranu osobných údajov dostupné pre produkty balíka Office](products-versions-privacy-controls.md).
 
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Tieto údaje neobsahujú meno ani e-mailovú adresu používateľa, obsah súborov používateľa ani informácie o aplikáciách, ktoré nesúvisia s balíkom Office.
 
@@ -41,12 +35,12 @@ Ak sa rozhodnete odosielať nám voliteľné diagnostické údaje, budú obsahov
 
 Príkladmi voliteľných diagnostických údajov sú údaje, ktoré zhromažďujeme o tvaroch, ktoré používatelia vkladajú do wordových dokumentov, aby sme mohli poskytovať lepšie možnosti, a údaje, ktoré zhromažďujeme o čase potrebnom na zobrazenie powerpointovej snímky na obrazovke, aby sme mohli zlepšiť funkčnosť, ak je zobrazenie pomalé.
 
-Ďalšie informácie o diagnostických údajoch sa nachádzajú v témach:
+Ďalšie informácie o diagnostických údajoch sa nachádzajú v článkoch:
 
 - [Povinné diagnostické údaje pre Office](required-diagnostic-data.md)
-- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Používanie nástroja Diagnostic Data Viewer s balíkom Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné témy:
+Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné články:
 
 - [Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)

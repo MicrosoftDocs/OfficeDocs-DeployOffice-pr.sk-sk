@@ -13,29 +13,26 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: e6caae439e71236eb16fc47c6130526ace4d3afb
-ms.sourcegitcommit: cdb47c4dc3297a8ad70112a084ebd1f5028e2c07
+ms.openlocfilehash: c7593aed7e4bc6037bca6b84181c0434b2e27e30
+ms.sourcegitcommit: 288d54b2e6b463f67358f701ef0dd5424237f811
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46896211"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322385"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
+
+> [!NOTE]
+> Ak si chcete pozrieť zoznam produktov balíka Office, na ktorý sa vzťahujú tieto informácie o ochrane osobných údajov, pozrite si tému [Ovládacie prvky na ochranu osobných údajov dostupné pre produkty balíka Office](products-versions-privacy-controls.md).
 
 Ak máte pracovné alebo školské konto, správca vo vašej organizácii vám možno poskytol možnosť používať jednu alebo viacero cloudových služieb (ďalej len „voliteľné pripojené funkcie“) pri používaní aplikácií balíka Office, ako napríklad Word alebo Excel, ktoré sú súčasťou Aplikácií Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus). Tieto cloudové služby sú voliteľné. Ich používanie je na vás. Poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). V niektorých prípadoch sa môžu uplatňovať aj ďalšie podmienky. Tento článok obsahuje zoznam cloudových služieb, vysvetlenie ich podmienok používania a informácie o tom, ako ich môžete kedykoľvek zapnúť alebo vypnúť.
 
 > [!NOTE]
-> Ak ste správcom, pozrite si nasledujúce témy, v ktorých sa dozviete, ako používateľom povoliť alebo zakázať používanie týchto voliteľných online funkcií:
-> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
-> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
-> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
-> - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
->
-> Väčšinu voliteľných online funkcií je možné spravovať aj pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie. Napríklad funkciu vkladania online obrázkov je možné spravovať aj pomocou nastavenia politiky *Povoliť používanie online funkcií na sťahovanie online obsahu v Office*.
+> Ak ste správca, pozrite si časť [Ovládacie prvky správcu pre voliteľné online funkcie](#admin-controls-for-optional-connected-experiences).
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Ak používate služby, s akými podmienkami používania musíte súhlasiť?
 
-Je dôležité vedieť, že na tieto voliteľné cloudové služby sa nevzťahuje licenčná zmluva vašej organizácie so spoločnosťou Microsoft. Namiesto toho sa licencia na ich používanie poskytuje priamo vám. Používaním týchto voliteľných cloudových služieb takisto súhlasíte s podmienkami [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). V závislosti od používanej služby sa môžu uplatňovať aj dodatočné podmienky. Vo väčšine prípadov je používanie týchto služieb bez poplatkov. Ak sa na nejakú službu vzťahuje poplatok (čo môže platiť v prípade niektorých [doplnkov pre Office](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) dostupných na stiahnutie cez Office Obchod), pred použitím sa vám zobrazí zreteľná informácia.
+Je dôležité vedieť, že na tieto voliteľné cloudové služby sa nevzťahuje licenčná zmluva vašej organizácie so spoločnosťou Microsoft. Namiesto toho sa licencia na ich používanie poskytuje priamo vám. Používaním týchto voliteľných cloudových služieb takisto súhlasíte s podmienkami [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). V závislosti od používanej služby sa môžu uplatňovať aj dodatočné podmienky. Vo väčšine prípadov je používanie týchto služieb bez poplatkov. Ak sa na nejakú službu vzťahuje poplatok (čo môže platiť v prípade niektorých [doplnkov](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) dostupných na stiahnutie cez Office Obchod), pred použitím sa vám zobrazí zreteľná informácia.
 
 ## <a name="experiences-that-rely-on-bing"></a>Funkcie, ktoré využívajú službu Bing
 
@@ -53,7 +50,7 @@ Bing využívajú nasledovné funkcie v Outlooku pre iOS a Android:
 
 [Sprievodca životopisom](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) využíva vo Worde službu LinkedIn. Poskytuje tipy pre váš životopis. LinkedIn je iná spoločnosť vlastnená spoločnosťou Microsoft. Ak používate Sprievodcu životopisom, okrem [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti o ochrane osobných údajov](https://privacy.microsoft.com/) sa na vás vzťahuje aj [zmluva s používateľom](https://www.linkedin.com/legal/user-agreement) a [vyhlásenie o ochrane osobných údajov](https://www.linkedin.com/legal/privacy-policy) v službe LinkedIn. Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v Aplikáciách Microsoft 365 pre veľké organizácie, sa odošlú do služby LinkedIn. Nie sú vám prepojené organizáciou LinkedIn. Na používanie tejto cloudovej služby nemusíte mať konto LinkedIn.
 
-Poznámka: Nastavenie ochrany osobných údajov, ktoré je opísané nižšie, neriadi funkcie, ktoré vyžadujú pripojenie vášho konta LinkedIn k pracovnému alebo školskému kontu Microsoft. Informácie o riadení týchto typov funkcií (napríklad informácie z LinkedInu na [karte profilu](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) v Outlooku) nájdete v téme [LinkedIn v aplikáciách a službách Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381).
+Poznámka: Vaše [nastavenia ochrany osobných údajov](#your-privacy-settings) neriadia funkcie, ktoré vyžadujú pripojenie vášho konta LinkedIn k pracovnému alebo školskému kontu Microsoft. Informácie o riadení týchto typov funkcií (napríklad informácie z LinkedInu na [karte profilu](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) v Outlooku) nájdete v téme [LinkedIn v aplikáciách a službách Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Funkcie, ktoré využívajú iné online služby vlastnené spoločnosťou Microsoft a/alebo tretími stranami
 
@@ -75,14 +72,18 @@ Pri zlyhaní klientskych aplikácií balíka Office, ktoré sa spúšťajú v z
 
 ### <a name="office-store"></a>Office Obchod 
 
-Keď používate Office Obchod, licencia na vaše používanie samotnej lokality obchodu sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). Na [doplnky pre Office](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) stiahnuté prostredníctvom Office Obchodu sa však vzťahujú podmienky používania poskytovateľa doplnku. Môžu to byť rôzne iné organizácie a podniky a niektoré môžu účtovať poplatok za používanie. Budete si musieť skontrolovať povolenia, zásady ochrany osobných údajov a licenčné podmienky pre každý doplnok, aby ste sa dozvedeli, aké podmienky sa na vás vzťahujú a mohli sa rozhodnúť, či s podmienkami danej organizácie súhlasíte.
+Keď používate Office Obchod, licencia na vaše používanie samotnej lokality obchodu sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). Na [doplnky](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) stiahnuté prostredníctvom Office Obchodu sa však vzťahujú podmienky používania poskytovateľa doplnku. Títo poskytovatelia môžu byť rôzne iné organizácie a podniky a niektoré môžu účtovať poplatok za používanie. Budete si musieť skontrolovať povolenia, zásady ochrany osobných údajov a licenčné podmienky pre každý doplnok, aby ste sa dozvedeli, aké podmienky sa na vás vzťahujú a mohli sa rozhodnúť, či s podmienkami danej organizácie súhlasíte.
+
+> [!NOTE]
+> - Správca vo vašej organizácii vám môže poskytnúť doplnky, a to aj v prípade, že sa nerozhodnete používať Office Obchod.
+> - Ak ste správca, ďalšie informácie o doplnkoch nájdete v časti Voliteľné online funkcie v článkoch [Ochrana osobných údajov a zabezpečenie pre doplnky balíka Office](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) a [Ochrana osobných údajov, povolenia a zabezpečenie pre doplnky Outlooku](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security).
 
 ### <a name="research"></a>Zdroje informácií
 
 Funkcia [Zdroje informácií](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397) sa pripája ku cloudovým službám na získavanie výsledkov vyhľadávania pre slovník, synonymický slovník, preklad a slová. Keď používate túto službu, predvolene sa pripája k službám vlastneným spoločnosťou Microsoft a uplatňujú sa podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). Funkcia Zdroje informácií umožňuje pridať ďalších poskytovateľov. Ak sa rozhodnete používať iného poskytovateľa, môžu sa uplatňovať dodatočné podmienky.
 
 > [!NOTE]
-> Funkcie Zdroje informácií (po anglicky Research) a Vyhľadávač (po anglicky Researcher) nie sú to isté. V novších verziách balíka Office je okrem funkcie Zdroje informácií k dispozícii aj funkcia Vyhľadávač. Vyhľadávač je novšia funkcia, ktorá využíva Bing, a je uvedená vyššie v časti [Funkcie, ktoré využívajú službu Bing](#experiences-that-rely-on-bing).
+> Funkcie Zdroje informácií (po anglicky Research) a Vyhľadávač (po anglicky Researcher) nie sú to isté. V novších verziách balíka Office je okrem funkcie Zdroje informácií k dispozícii aj funkcia Vyhľadávač. Vyhľadávač je novšia funkcia, ktorá využíva Bing, a je opísaná v časti [Funkcie, ktoré využívajú službu Bing](#experiences-that-rely-on-bing).
 
 ### <a name="travel-time-in-up-next-in-outlook-for-ios"></a>Čas cestovania na karte Nadchádzajúce pre iOS
 
@@ -92,12 +93,13 @@ Pre iOS platí, že vaša najbližšia nadchádzajúca udalosť bude zhrnutá na
 
 [Panel počasia](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) v Outlooku zobrazuje predpovede počasia pre geografické polohy podľa vášho výberu. Pri používaní sa Panel počasia v Outlooku predvolene pripája k službe MSN Počasie. Službu MSN vlastní spoločnosť Microsoft a vzťahujú sa na ňu podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/). Pri používaní Panela počasia v Outlooku so službou MSN spoločnosť Microsoft nezisťuje vašu polohu a mestá, ktoré sa rozhodnete zobraziť, nie sú s vami prepojené. Môžete [zmeniť toto predvolené nastavenie](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) a pripájať sa k iným poskytovateľom informácií o počasí. Ak sa rozhodnete používať iného poskytovateľa informácií o počasí, budete si musieť skontrolovať zásady ochrany osobných údajov a licenčné podmienky daného poskytovateľa, aby ste sa dozvedeli, aké podmienky sa na vás vzťahujú.
 
-
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Ako zistiť, či vám správca umožnil používať voliteľné pripojené funkcie
 
 Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office vrátane Aplikácií Microsoft 365 pre veľké organizácie v zariadení s Windowsom, prejdite na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberte položku **Spravovať nastavenia**. Ak vám správca neumožnil používať tieto funkcie, zobrazí sa hlásenie: „Nastavenia ochrany osobných údajov spravuje správca vo vašej organizácii a rozhodol sa zakázať voliteľné pripojené funkcie“.
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
+
+Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 ## <a name="your-privacy-settings"></a>Nastavenia ochrany osobných údajov
 
@@ -105,13 +107,22 @@ Ak vám správca umožnil používať voliteľné pripojené funkcie v aplikáci
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
 
-## <a name="diagnostic-data"></a>Diagnostické údaje
+Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
-Pri používaní voliteľných cloudových služieb opísaných v tomto článku môže spoločnosť Microsoft zhromažďovať diagnostické údaje (ako sú napríklad údaje o používaní, chybách a výkone) o výkone služieb pri ich používaní. Diagnostické údaje môžu obsahovať „osobné údaje“, ako sú definované v článku 4 európskeho nariadenia GDPR.Všetky diagnostické údaje, ktoré spoločnosť Microsoft zhromažďuje pri používaní akýchkoľvek aplikácií a služieb balíka Aplikácie Microsoft 365 pre veľké organizácie, sú pseudonymizované podľa normy ISO/IEC 19944:2017, sekcie 8.3.3.
+## <a name="required-service-data"></a>Povinné údaje služieb
 
+Pri používaní voliteľných cloudových služieb opísaných v tomto článku môže spoločnosť Microsoft zhromažďovať [povinné údaje služieb](required-service-data.md) (ako sú napríklad údaje o používaní, chybách a výkone) o výkone služieb pri ich používaní. Tieto povinné údaje služieb môžu obsahovať „osobné údaje“, ako sú definované v článku 4 európskeho nariadenia GDPR.Všetky povinné údaje služieb, ktoré spoločnosť Microsoft zhromažďuje pri používaní akýchkoľvek aplikácií a služieb Aplikácie Microsoft 365 pre veľké organizácie, sú pseudonymizované podľa normy ISO/IEC 19944:2017, sekcie 8.3.3.
 
-## <a name="related-articles"></a>Súvisiace články
+## <a name="admin-controls-for-optional-connected-experiences"></a>Ovládacie prvky správcu pre voliteľné online funkcie 
 
-- [Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
-- [Požadované údaje služieb pre Office](required-service-data.md)
-- [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
+Ak ste správcom, pozrite si nasledujúce témy, v ktorých sa dozviete, ako používateľom povoliť alebo zakázať používanie týchto voliteľných online funkcií:
+
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office v zariadeniach so systémom iOS pomocou predvolieb](ios-privacy-preferences.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre zariadenia s Androidom s nastaveniami politiky](android-privacy-controls.md)
+- [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office na webe s nastaveniami politiky](office-web-privacy-controls.md)
+
+Väčšinu voliteľných online funkcií je možné spravovať aj pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie. Napríklad funkciu vkladania online obrázkov je možné spravovať aj pomocou nastavenia politiky *Povoliť používanie online funkcií na sťahovanie online obsahu v Office*.
+
+Viac informácií nájdete v téme [Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
