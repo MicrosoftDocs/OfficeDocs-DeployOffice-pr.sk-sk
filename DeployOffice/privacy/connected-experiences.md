@@ -13,25 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom balíka Office informácie o online funkciách v Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: ed9198f19bcd3ed7dcf11014ed46016fb7121dd6
-ms.sourcegitcommit: cdb47c4dc3297a8ad70112a084ebd1f5028e2c07
+ms.openlocfilehash: 3e44c9c20bed531f46390c91a41ce559cabc9e72
+ms.sourcegitcommit: 25a0925e7caf8fbb53e6757e8a65126eb2c9da65
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46896301"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338197"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
-> [!IMPORTANT]
-> Informácie v tomto článku sa týkajú verzie 1904 alebo novšej verzie nasledujúceho klientskeho softvéru balíka Office nainštalovaného v počítači s Windowsom:
-> - Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus)
-> - Aplikácie Microsoft 365 pre podniky (predchádzajúci názov Office 365 Business)
-> - Microsoft 365 Personal, Microsoft 365 Family alebo iné verzie balíka Office, ktoré sú súčasťou predplatného na Microsoft 365.
-> - Počítačové aplikácie Project a Visio dodávané s niektorými plánmi predplatného, ako je napríklad Project Plan 5 alebo Visio Plan 2.
->
-> Informácie platia aj pre verziu 16.28 alebo novšie verzie týchto aplikácií balíka Office pre Mac: Excel, Outlook, OneNote, PowerPoint a Word.
->
-> Tieto informácie sa vzťahujú na verziu Outlooku pre iOS a Android, ktorá by mala byť vydaná koncom januára 2020.
+> [!NOTE]
+> Ak si chcete pozrieť zoznam produktov balíka Office, na ktorý sa vzťahujú tieto informácie o ochrane osobných údajov, pozrite si tému [Ovládacie prvky na ochranu osobných údajov dostupné pre produkty balíka Office](products-versions-privacy-controls.md).
 
 Office pozostáva z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Príkladom online funkcií je práca na dokumente spoločne s inými používateľmi vo OneDrive alebo preklad obsahu wordového dokumentu do iného jazyka.
 
@@ -46,21 +38,26 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | *3D mapy*\*    | [Začíname pracovať s 3D mapami](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automatický alternatívny text   | [Všetko, čo potrebujete na písanie efektívneho alternatívneho textu](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Odporúčania pre graf (Excel pre web)|[Vytvorenie grafu s odporúčanými grafmi](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
-| Typy údajov                  | [Typy údajov Exceli: Akcie a Geografia](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
+|Doplnky pre poznámkový blok pre učebné predmety (OneNote)|[Začíname s onenotovým poznámkovým blokom pre učebné predmety: návod pre učiteľov](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
+| Typy údajov| [Typy údajov Exceli: Akcie a Geografia](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktovanie  | [Diktovanie dokumentov vo Worde](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 |Editor<sup>1</sup> |[Microsoft Editor kontroluje gramatiku a ďalšie možné chyby v dokumentoch, e-mailoch a na webe](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Návrhy     | [Návrhy v Exceli](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Konvertovanie písania rukou na text, na tvar, na matematický výraz | [Konvertovanie textu písaného rukou na tvary, text alebo matematický výraz v PowerPointe pre Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
+|Výučbové nástroje|[Výučbové nástroje](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Vloženie údajov z obrázka| [Vloženie údajov z obrázka](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Živé popisy a titulky |  [Prezentujte s automatickými popismi alebo titulkami v reálnom čase v PowerPointe](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | *Kartogram*\*    | [Vytvorenie kartogramu v Exceli](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Mapy vo funkcii Power View   | [Mapy vo funkcii Power View](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Služba na zobrazovanie prezentácií balíka Office  | [Vysielanie powerpointovej prezentácie vzdialeným divákom](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
+|Odporúčania pre kontingenčnú tabuľku (Excel pre web)|[Vytvorenie kontingenčnej tabuľky na analýzu údajov z hárkov](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576#OfficeVersion=Web)|
 | PowerPoint Designer   | [Vytváranie profesionálnych rozložení snímok s nástrojom PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
+|Prezentačný kouč (PowerPoint)|[Skúšanie prezentácie s prezentačným koučom](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Publikovanie v službe Power BI   | [Publikovanie v službe Power BI prostredníctvom Excelu](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publikovanie do služby Microsoft Stream    | [Zmena prezentácie na video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | *Zdroje informácií*\*   | [Pridanie alebo zmena služieb zdrojov informácií](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Skenovanie vizitky|  [Pridanie kontaktov v Outlooku pre Android skenovaním alebo ťuknutím](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+|Oznámenie zdieľania|[Prijímajte upozornenia, keď člen tímu aktualizuje zdieľaný súbor](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |*Kontrola podobnosti*\* (funkcia editora)|[Skontrolujte podobnosť vášho dokumentu s online zdrojmi](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Inteligentné vyhľadávanie*\*   | [Získajte prehľad o tom, na čom pracujete, s inteligentným vyhľadávaním](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Navrhované odpovede | [Čo sú navrhované odpovede?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
@@ -129,12 +126,14 @@ V nasledujúcej tabuľke sa nachádza zoznam týchto ďalších online funkcií 
 | *Doplnky pre Office*\* | [Nasadenie doplnkov v centre spravovania](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
 | Pripomienky pre Office |[Ako môžem poskytnúť pripomienky k balíku Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Oddelenie podpory pre Office (kontakt) |Po výbere položky **Pomocník** > **Kontaktovať technickú podporu** na páse s nástrojmi |
-| Organizačná schéma (Visio) |[Vytvorenie organizačnej schémy vo Visiu](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)  |
+| Organizačná schéma (Visio) |[Vytvorenie organizačnej schémy vo Visiu](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
 | Outlook Social Connector | [Zapnutie aplikácie Outlook Social Connector](https://support.microsoft.com/office/255447E8-82CD-48E7-9B79-1DD8721A2907) |
 | *Outlook UserVoice*\* | [Ako môžem poskytnúť pripomienky k balíku Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+|Kontingenčný diagram (Visio)|[Vytvorenie kontingenčného diagramu vo Visiu](https://support.microsoft.com/office/0d061d05-60b5-4549-b301-4d0b37625a4c)|
 | Naposledy otvorené dokumenty |[Otvorenie súborov z ponuky Súbor](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | *Resume Assistant (alebo Asistent pre životopis)*\* |[Vytvorenie skvelých životopisov pomocou Sprievodcu životopisom a LinkedInu](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Vyhľadávač miestností (Outlook)|[Ako nastaviť vyhľadávač miestností v Outlooku](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
+|Bezpečné dokumenty|[Bezpečné dokumenty](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Bezpečné dokumenty v službe Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
 | Bezpečné prepojenia |[Bezpečné prepojenia ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
 | Označenia citlivosti |[Použitie označení citlivosti na súbory a e-maily v balíku Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Zdieľanie  |[Zdieľanie excelového zošita s inými používateľmi](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Zdieľanie prezentácie (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Zdieľanie dokumentu (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
@@ -156,7 +155,8 @@ Ak ste prihlásení pomocou konta Microsoft, otvorte aplikáciu balíka Office, 
 Ak ste prihlásení pomocou pracovného alebo školského konta, o dostupnosti týchto online funkcií rozhoduje správca vo vašej organizácii. Ak prejdete do okna **Súbor** > **Konto** > **Ochrana osobných údajov konta** > **Spravovať nastavenia**, nezobrazia sa žiadne možnosti online funkcií.
 
 > [!NOTE]
-> Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
+> - Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
+> - Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 Ak ste správcom organizácie, pomocou nastavení politiky môžete určiť, či tieto online funkcie budú dostupné pre vašich používateľov. Ak nepoužijete tieto nastavenia politiky, všetky online funkcie budú k dispozícii pre vašich používateľov. Ďalšie informácie o používaní týchto nastavení politiky nájdete v týchto článkoch: 
 
@@ -169,10 +169,9 @@ Ak sa rozhodnete vypnúť niektoré typy online funkcií, príkazy pre tieto fun
 
 Aj keď sa rozhodnete vypnúť tieto online funkcie, niektoré funkcie balíka Office zostanú dostupné, napríklad synchronizácia poštovej schránky v Outlooku, a aplikácie Teams a Skype for Business budú aj naďalej fungovať. Taktiež platí, že niekoľko služieb, ktoré sú nevyhnutné na fungovanie balíka Office, sa nedá vypnúť. Patrí medzi ne napríklad licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie balíka Office.
 
-## <a name="related-topics"></a>Súvisiace témy
+## <a name="related-articles"></a>Súvisiace články
 
 - [Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
 - [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md)
 - [Požadované údaje služieb pre Office](required-service-data.md)
 - [Nevyhnutné služby pre Office](essential-services.md)
-- [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
