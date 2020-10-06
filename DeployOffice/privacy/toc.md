@@ -21,3 +21,4 @@
 ### [Potrebné údaje služieb](required-service-data.md)
 
 ## [Nevyhnutné služby](essential-services.md)
+## [Odporúčania v produktoch](in-product-recommendations.md)
