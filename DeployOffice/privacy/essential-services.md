@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: ed550129f7d3aef9e340456b5ee2d09f85c18b07
-ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
+ms.openlocfilehash: 2449c56af99d40bcc1a4a3f85575984da6af3252
+ms.sourcegitcommit: a8c69c9c02320edec51c3bd7bb8dce28fa737e47
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47941043"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367473"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -3312,7 +3312,7 @@ Zhromažďujú sa tieto polia:
 
 - **EventDate** – časová pečiatka výskytu udalosti 
 
-- **MostExplored** – celé číslo, ktoré označuje index najviac prepínanej položky v zozname aplikácií M365 a ich funkcií
+- **MostExplored** – celé číslo, ktoré označuje index najviac prepínanej položky v zozname aplikácií Microsoft 365 a ich funkcií
 
 - **SessionID** – globálny jednoznačný identifikátor (GUID) na pripojenie udalostí podľa relácie
 
@@ -3335,7 +3335,7 @@ Kritická telemetria používania sa zhromažďuje na označenie toho, keď pou�
 
 Zhromažďujú sa tieto polia:
 
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje Paywall. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
 
 - **isDefaultSKU** -logická hodnota – Ak používateľ kupuje produkt odporučený predvoleným zobrazením.
 
@@ -3844,7 +3844,7 @@ Zhromažďujú sa tieto polia:
 
 ## <a name="microsoft-autoupdate-mau-events"></a>Udalosti služby Microsoft AutoUpdate (MAU)
 
-### <a name="additionalappinfo_invalidpreference"></a>additionalappinfo_invalidpreference
+### <a name="additionalappinfoinvalidpreference"></a>additionalappinfo.invalidpreference
 
 Táto udalosť nahlasuje neplatnú množinu preferencií, aby sa zobrazili ďalšie informácie týkajúce sa ukončenia poskytovania služby pre produkt. Tieto informácie používame na upozornenie zákazníkov na nastavenie správnych preferencií, aby sa zobrazili ďalšie informácie.
  
@@ -3882,7 +3882,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="appdelegate_launch"></a>appdelegate_launch
+### <a name="appdelegatelaunch"></a>appdelegate.launch
 
 Táto udalosť označuje, že sa vyskytol pokus o spustenie aplikácie. Zaznamenáme jej výsledok (zlyhanie alebo úspech). Táto udalosť sa používa na identifikáciu prípadov, v ktorých sa služba MAU nedokáže spustiť.
 
@@ -3923,7 +3923,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="appdelegate_terminate"></a>appdelegate_terminate
+### <a name="appdelegateterminate"></a>appdelegate.terminate
 
 Táto udalosť označuje, že došlo k riadnemu ukončeniu aplikácie. Táto udalosť sa používa na odlíšenie riadnych ukončení aplikácie od mimoriadnych.
 
@@ -3964,7 +3964,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="appinstall_connecttoxpc"></a>appinstall_connecttoxpc
+### <a name="appinstallconnecttoxpc"></a>appinstall.connecttoxpc
 
 Táto udalosť označuje, že sa vyskytli chyby pri pripájaní k pomocnému nástroju služby MAU (komponent, ktorý vykonáva inštaláciu aplikácie).  Táto udalosť označuje možné poškodenie aplikácie MAU. Zariadenie nebude môcť inštalovať aktualizácie.
 
@@ -4004,7 +4004,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="appinstall_logscanned"></a>appinstall_logscanned
+### <a name="appinstalllogscanned"></a>appinstall_logscanned
 
 Táto udalosť sa používa na určenie, či sa súbor denníka úspešne spracoval. Túto udalosť používame na zisťovanie a riešenie problémov vzniknutých počas inštalácie aplikácie. 
  
@@ -4044,7 +4044,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="appregistry_config"></a>appregistry_config
+### <a name="appregistryconfig"></a>appregistry.config
 
 Táto udalosť nahlasuje chyby pri načítavaní informácií v databáze Registry aplikácie. Túto zostavu používame na upozornenie IT správcov na správny formát nastavení registrácií klientskych aplikácií.
  
@@ -4084,7 +4084,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="appregistry_info"></a>appregistry_info
+### <a name="appregistryinfo"></a>appregistry.info
 
 Táto udalosť označuje, že aplikácia sa spustila. Táto udalosť sa používa na zobrazenie zoznamu aplikácií, pre ktoré môže služba MAU riadiť aktualizácie, počtu dostupných kópií a ich verzií a umiestnenia inštalácie (predvolené alebo iné).
 
@@ -4125,7 +4125,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="appregistry_remove"></a>appregistry_remove
+### <a name="appregistryremove"></a>appregistry.remove
 
 Táto udalosť označuje, že došlo k pokusu o odstránenie aplikácie zo zoznamu aplikácií spravovaných službou MAU. Táto udalosť sa používa na overenie, že služba MAU spravuje len aplikácie vydané pre službu MAU (nemali by sa tu zobraziť žiadne aplikácie z obchodu s aplikáciami).
 
@@ -4166,7 +4166,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="catalog_errorsignature"></a>catalog_errorsignature
+### <a name="catalogerrorsignature"></a>catalog.errorsignature
 
 Táto udalosť označuje, že došlo k zlyhaniu počas overovania podpisu kódu v súbore kolaterálu aktualizácie.  Akýkoľvek kolaterál so zlyhaním overenia podpisu kódu by sa mal považovať za neplatný.
 
@@ -4206,9 +4206,9 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="cloningtask_begin"></a>cloningtask_begin
+### <a name="cloningtaskbegin"></a>cloningtask.begin
 
-Táto udalosť označuje začiatok úlohy klonovania pred aktualizáciou aplikácie. Túto udalosť používame v kombinácii s udalosťou cloningtask_status na určenie množstva neúspechov klonovania s cieľom zistiť, či by mala byť funkcia klonovania obmedzovaná pre rôzne cieľové skupiny.
+Táto udalosť označuje začiatok úlohy klonovania pred aktualizáciou aplikácie. Túto udalosť používame v kombinácii s udalosťou cloningtask.status na určenie množstva neúspechov klonovania s cieľom zistiť, či by mala byť funkcia klonovania obmedzovaná pre rôzne cieľové skupiny.
  
 Zhromažďujú sa tieto polia:
 
@@ -4249,7 +4249,7 @@ Zhromažďujú sa tieto polia:
 - **UpdateID** – identifikátor aktualizácie.
 
 
-### <a name="cloningtask_helpertoolconnection"></a>cloningtask_helpertoolconnection
+### <a name="cloningtaskhelpertoolconnection"></a>cloningtask.helpertoolconnection
 
 Táto udalosť zaznamenáva problémy s inštaláciou na klon (t. j. buď sa nám nedarí pripojiť k pomocnému nástroju na použitie aktualizácie, alebo sa pripojíme, ale pomocný objekt nemôže použiť aktualizáciu). Ak sa nahlási záznam, znamená to, že inštalácia na klon zlyhala a teraz sa bude musieť vrátiť na aktualizáciu na mieste.
 
@@ -4289,7 +4289,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="cloningtask_status"></a>cloningtask_status
+### <a name="cloningtaskstatus"></a>cloningtask.status
 
 Táto udalosť označuje stav procesu klonovania pre aplikáciu, ktorá sa má aktualizovať. Túto udalosť používame na určenie miery úspešnosti, ako aj typov vyskytnutých chýb, ktoré spôsobujú zlyhania. Táto udalosť sa používa na určenie, či sa má funkcia klonovania obmedziť pre rôzne cieľové skupiny.
 
@@ -4335,7 +4335,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie.
 
-### <a name="cloningtask_status_finish"></a>cloningtask_status_finish
+### <a name="cloningtaskstatusfinish"></a>cloningtask.status.finish
 
 Táto udalosť nahlasuje dokončenie úlohy klonovania. Táto udalosť tvorí súčasť zostavy aktualizácie lievika a používa sa na určenie stavu aktualizácií aplikácií.
  
@@ -4376,7 +4376,7 @@ Zhromažďujú sa tieto polia:
 - **UpdateID** – identifikátor aktualizácie.
 
 
-### <a name="configuration_channel"></a>configuration_channel
+### <a name="configurationchannel"></a>configuration.channel
 
 Táto udalosť zaznamenáva pokusy o prepínanie kanálov (cieľovej skupiny) v službe MAU.  Používa sa na zaznamenávanie pokusov a ich výsledkov (úspech alebo neúspech).
 
@@ -4417,7 +4417,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="configuration_metadata"></a>configuration_metadata
+### <a name="configurationmetadata"></a>configuration.metadata
 
 Táto udalosť sa zaznamenáva vždy, keď sa inicializuje služba MAU. Ide o typ udalosti prezenčného signálu služby MAU
 
@@ -4457,7 +4457,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie.
 
-### <a name="configuration_systemversion"></a>configuration_systemVersion
+### <a name="configurationsystemversion"></a>configuration.systemVersion
 
 Táto udalosť označuje, že pokus o načítanie systémovej verzie zlyhal. Táto funkcia obsahuje aj informácie o informáciách, ktoré služba Microsoft Auto Update (MAU) dokázala zhromaždiť zo systému. Túto udalosť používame na určenie toho, či by mala služba MAU vyriešiť zlyhania. Všimnite si, že systémová verzia sa používa na určenie, či sa dá aktualizovať klientske zariadenie.
  
@@ -4497,7 +4497,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="controller_alertmanager_reinstallresponse"></a>controller_alertmanager_reinstallresponse
+### <a name="controlleralertmanagerreinstallresponse"></a>controller.alertmanager.reinstallresponse
 
 Táto udalosť označuje, že služba MAU sa dostala do nepoužiteľného alebo neopraviteľného stavu a musí sa preinštalovať. Táto udalosť označuje, že došlo k neopraviteľnej chybe a vyžaduje sa zásah používateľa.
 
@@ -4538,7 +4538,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_alertmanager_tmpdiskfull"></a>controller_alertmanager_tmpdiskfull
+### <a name="controlleralertmanagertmpdiskfull"></a>controller.alertmanager.tmpdiskfull
 
 Táto udalosť označuje, že sa zistil nedostatok miesta na disku. Nebude možné inštalovať aktualizácie z dôvodu nedostatku miesta na disku.
 
@@ -4579,7 +4579,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_alertmanager_tmpdiskfullretry"></a>controller_alertmanager_tmpdiskfullretry
+### <a name="controlleralertmanagertmpdiskfullretry"></a>controller.alertmanager.tmpdiskfullretry
 
 Táto udalosť označuje, že sa spustil opätovný pokus o inštaláciu aktualizácie po zistení nedostatku miesta na disku. Po nemožnosti nainštalovať aktualizácie z dôvodu nedostatku miesta na disku sa pokúsime inštaláciu vykonať znova.
 
@@ -4620,7 +4620,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
     
 
-### <a name="controller_alertmanager_tmpdiskfullretrycancel"></a>controller_alertmanager_tmpdiskfullretrycancel
+### <a name="controlleralertmanagertmpdiskfullretrycancel"></a>controller.alertmanager.tmpdiskfullretrycancel
 
 Táto udalosť označuje, že došlo k zrušeniu opätovného pokusu o inštaláciu po zistení nedostatku miesta na disku. Táto udalosť sa používa na zistenie, či náš záložný mechanizmus bol postačujúci na to, aby mohol používateľa sprevádzať procesom aktualizácie, keď sa zistil nedostatok miesta na disku.
 
@@ -4661,7 +4661,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
+### <a name="controllercheckwindownoupdatefoundok"></a>controller.checkwindow.noupdatefoundok
 
 Táto udalosť označuje, že pri vyhľadávaní aktualizácií sa nenašli žiadne aktualizácie. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
@@ -4703,7 +4703,7 @@ Zhromažďujú sa tieto polia:
 
     
 
-### <a name="controller_checkwindow_updatecheck"></a>controller_checkwindow_updatecheck
+### <a name="controllercheckwindowupdatecheck"></a>controller.checkwindow.updatecheck
 
 Táto udalosť označuje, že sa vykonala kontrola aktualizácií. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
@@ -4744,7 +4744,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_checkwindow_updatecheckcancel"></a>controller_checkwindow_updatecheckcancel
+### <a name="controllercheckwindowupdatecheckcancel"></a>controller.checkwindow.updatecheckcancel
 
 Táto udalosť označuje, že proces kontroly aktualizácií bol zrušený (buď používateľom, alebo systémom). Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
@@ -4785,7 +4785,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_checkwindow_updatecheckcanceluser"></a>controller_checkwindow_updatecheckcanceluser
+### <a name="controllercheckwindowupdatecheckcanceluser"></a>controller.checkwindow.updatecheckcanceluser
 
 Táto udalosť označuje, že proces vyhľadávania aktualizácií bol zrušený používateľom.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
@@ -4826,7 +4826,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_checkwindow_updatesfound"></a>controller_checkwindow_updatesfound
+### <a name="controllercheckwindowupdatesfound"></a>controller.checkwindow.updatesfound
 
 Táto udalosť označuje, že pri vyhľadávaní aktualizácií sa našli aktualizácie.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
 
@@ -4867,7 +4867,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_checkwindow_uptodate"></a>controller_checkwindow_uptodate
+### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
 
 Táto udalosť označuje, že pri vyhľadávaní aktualizácií sa nenašli žiadne aktualizácie, pretože aplikácie v zariadení sú aktuálne.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
 
@@ -4908,7 +4908,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_applaunchwithpendingupdate"></a>controller_downloadwindow_applaunchwithpendingupdate
+### <a name="controllerdownloadwindowapplaunchwithpendingupdate"></a>controller.downloadwindow.applaunchwithpendingupdate
 
 Táto udalosť označuje, že došlo k spusteniu aplikácie, pre ktorú práve prebieha proces získavania aktualizácie. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií. Otvorené aplikácie by nemali získavať aktualizácie. Aplikácie sa pred aktualizovaním musia zavrieť.
 
@@ -4949,7 +4949,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_downloadwindow_closeapplicationdialog"></a>controller_downloadwindow_closeapplicationdialog
+### <a name="controllerdownloadwindowcloseapplicationdialog"></a>controller.downloadwindow.closeapplicationdialog
 
 Táto udalosť označuje, že došlo k spusteniu aplikácie, pre ktorú práve prebieha proces získavania aktualizácie. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií. Otvorené aplikácie by nemali získavať aktualizácie. Aplikácie sa pred aktualizovaním musia zavrieť.
 
@@ -4990,7 +4990,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_downloadwindow_curtasknull"></a>controller_downloadwindow_curtasknull
+### <a name="controllerdownloadwindowcurtasknull"></a>controller.downloadwindow.curtasknull
 
 Táto udalosť označuje, že pri pokuse o použitie aktualizácie sa vyskytla chyba. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
 
@@ -5031,7 +5031,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_downloadwindow_downloadcancel"></a>controller_downloadwindow_downloadcancel
+### <a name="controllerdownloadwindowdownloadcancel"></a>controller.downloadwindow.downloadcancel
 
 Táto udalosť označuje, že proces sťahovania bol zrušený používateľom.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
 
@@ -5072,7 +5072,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_downloadwindow_downloadfailed"></a>controller_downloadwindow_downloadfailed
+### <a name="controllerdownloadwindowdownloadfailed"></a>controller.downloadwindow.downloadfailed
 
 Táto udalosť označuje, že pri sťahovaní aktualizácie došlo k zlyhaniu. Táto udalosť sa používa na zaručenie správnosti ponúkania a sťahovania aktualizácií.
 
@@ -5113,7 +5113,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_downloadwindow_downloadfailedok"></a>controller_downloadwindow_downloadfailedok
+### <a name="controllerdownloadwindowdownloadfailedok"></a>controller.downloadwindow.downloadfailedok
 
 Táto udalosť označuje, že pri sťahovaní aktualizácie došlo k zlyhaniu a používateľ bol informovaný. Táto udalosť sa používa na zaručenie správnosti ponúkania a sťahovania aktualizácií a toho, že v prípade zlyhania sa používateľovi zobrazí oznámenie.
 
@@ -5154,7 +5154,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_downloadpathmissing"></a>controller_downloadwindow_downloadpathmissing
+### <a name="controllerdownloadwindowdownloadpathmissing"></a>controller.downloadwindow.downloadpathmissing
 
 Táto udalosť označuje, že pri sťahovaní aktualizácie došlo k zlyhaniu. Táto udalosť sa používa na zaručenie správnosti ponúkania a sťahovania aktualizácií. Táto udalosť označuje, že URL adresa sťahovania chýba.
 
@@ -5195,7 +5195,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_downloadtasknull"></a>controller_downloadwindow_downloadtasknull
+### <a name="controllerdownloadwindowdownloadtasknull"></a>controller.downloadwindow.downloadtasknull
 
 Táto udalosť označuje, že pri sťahovaní aktualizácie došlo k zlyhaniu. Táto udalosť sa používa na zaručenie správnosti ponúkania a sťahovania aktualizácií. Táto udalosť označuje, že služba Microsoft AutoUpdate bola požiadaná o pozastavenie/obnovenie sťahovania, ale nepodarilo sa jej nájsť príslušného správcu sťahovania.
 
@@ -5236,7 +5236,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_filesignaturenotverified"></a>controller_downloadwindow_filesignaturenotverified
+### <a name="controllerdownloadwindowfilesignaturenotverified"></a>controller.downloadwindow.filesignaturenotverified
 
 Táto udalosť označuje, že pri sťahovaní aktualizácie došlo k zlyhaniu. Táto udalosť označuje, že služba Microsoft AutoUpdate nedokázala overiť, že túto aktualizáciu vydala spoločnosť Microsoft. Táto udalosť sa používa na zaručenie správnosti ponúkania a sťahovania aktualizácií. 
 
@@ -5277,7 +5277,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_installcomplete"></a>controller_downloadwindow_installcomplete
+### <a name="controllerdownloadwindowinstallcomplete"></a>controller.downloadwindow.installcomplete
 
 Táto udalosť označuje, že inštalácia všetkých aktualizácií ponúknutých službou Microsoft AutoUpdate sa dokončila. Táto udalosť sa používa na zaručenie správnosti ponúkania a sťahovania aktualizácií. 
 
@@ -5318,7 +5318,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_networkunavailablealert"></a>controller_downloadwindow_networkunavailablealert
+### <a name="controllerdownloadwindownetworkunavailablealert"></a>controller.downloadwindow.networkunavailablealert
 
 Táto udalosť označuje, že počas sťahovania aktualizácií sa prerušilo sieťové pripojenie.  Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5359,7 +5359,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_downloadwindow_networkunavailablealertok"></a>controller_downloadwindow_networkunavailablealertok
+### <a name="controllerdownloadwindownetworkunavailablealertok"></a>controller.downloadwindow.networkunavailablealertok
 
 Táto udalosť označuje, že počas sťahovania aktualizácií sa prerušilo sieťové pripojenie. Označuje tiež, že používateľ bol o tejto chybe informovaný. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5400,7 +5400,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_downloadwindow_noconnectionok"></a>controller_downloadwindow_noconnectionok
+### <a name="controllerdownloadwindownoconnectionok"></a>controller.downloadwindow.noconnectionok
 
 Táto udalosť označuje, že počas sťahovania aktualizácií sa prerušilo sieťové pripojenie. Označuje tiež, že používateľ bol o tejto chybe informovaný. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5441,7 +5441,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_repairrequired"></a>controller_downloadwindow_repairrequired
+### <a name="controllerdownloadwindowrepairrequired"></a>controller.downloadwindow.repairrequired
 
 Táto udalosť označuje, že proces aktualizácie zlyhal. Označuje tiež, že aktualizácia bola dokončená, ale služba Microsoft AutoUpdate zistila problém s aktualizovanou aplikáciou a vyžaduje sa oprava. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5481,7 +5481,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="controller_downloadwindow_updateaborted"></a>controller_downloadwindow_updateaborted
+### <a name="controllerdownloadwindowupdateaborted"></a>controller.downloadwindow.updateaborted
 
 Táto udalosť označuje, že proces aktualizácie bol zrušený. Označuje tiež, že aktualizácia už prebiehala pomocou démona a používateľ klikol na tlačidlo OK na zrušenie sťahovania. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5522,7 +5522,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_updatefailed"></a>controller_downloadwindow_updatefailed
+### <a name="controllerdownloadwindowupdatefailed"></a>controller.downloadwindow.updatefailed
 
 Táto udalosť označuje, že niektoré aktualizácie z aktuálnej dávky zlyhali. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5563,7 +5563,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_updatesuccessful"></a>controller_downloadwindow_updatesuccessful
+### <a name="controllerdownloadwindowupdatesuccessful"></a>controller.downloadwindow.updatesuccessful
 
 Táto udalosť označuje, že všetky aktualizácie z aktuálnej dávky boli úspešné. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5604,7 +5604,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_userpaused"></a>controller_downloadwindow_userpaused
+### <a name="controllerdownloadwindowuserpaused"></a>controller.downloadwindow.userpaused
 
 Táto udalosť označuje, že všetky aktualizácie z aktuálnej dávky boli úspešné. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5645,7 +5645,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_downloadwindow_userresumed"></a>controller_downloadwindow_userresumed
+### <a name="controllerdownloadwindowuserresumed"></a>controller.downloadwindow.userresumed
 
 Táto udalosť označuje, že proces sťahovania aktualizácií bol po predchádzajúcom pozastavení úspešne obnovený. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5686,7 +5686,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_mainwindow_setautomaticdownloadinstall"></a>controller_mainwindow_setautomaticdownloadinstall
+### <a name="controllermainwindowsetautomaticdownloadinstall"></a>controller.mainwindow.setautomaticdownloadinstall
 
 Táto udalosť označuje, že zariadenie bolo zaradené do režimu automatickej aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5727,7 +5727,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_mainwindow_setmanualchecking"></a>controller_mainwindow_setmanualchecking
+### <a name="controllermainwindowsetmanualchecking"></a>controller.mainwindow.setmanualchecking
 
 Táto udalosť označuje, že zariadenie bolo zaradené do režimu manuálnej aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5768,7 +5768,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_templateawindow_cancel"></a>controller_templateawindow_cancel
+### <a name="controllertemplateawindowcancel"></a>controller.templateawindow.cancel
 
 Táto udalosť označuje, že používateľ sa rozhodol zrušiť alebo ignorovať zobrazené výstražné hlásenie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5809,7 +5809,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_templateawindow_enroll"></a>controller_templateawindow_enroll
+### <a name="controllertemplateawindowenroll"></a>controller.templateawindow.enroll
 
 Táto udalosť označuje, že používateľ sa rozhodol riadiť zobrazeným výstražným odporúčaním. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5851,7 +5851,7 @@ Zhromažďujú sa tieto polia:
 
 
 
-### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
+### <a name="controllertemplateawindowinstall"></a>controller.templateawindow.install
 
 Táto udalosť označuje, že používateľ sa rozhodol riadiť zobrazeným výstražným odporúčaním týkajúcim sa spustenia akcie inštalácie softvéru. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5892,7 +5892,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_updatewindow_begindownloadingapps"></a>controller_updatewindow_begindownloadingapps
+### <a name="controllerupdatewindowbegindownloadingapps"></a>controller.updatewindow.begindownloadingapps
 
 Táto udalosť označuje, že sťahovanie aktualizácií sa začalo prostredníctvom okna aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5933,7 +5933,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_updatewindow_networkretry"></a>controller_updatewindow_networkretry
+### <a name="controllerupdatewindownetworkretry"></a>controller.updatewindow.networkretry
 
 Táto udalosť označuje, že na hárku aktualizácie sa spustil opakovaný pokus z dôvodov zlyhania siete. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
@@ -5974,7 +5974,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_updatewindow_networkretrycancel"></a>controller_updatewindow_networkretrycancel
+### <a name="controllerupdatewindownetworkretrycancel"></a>controller.updatewindow.networkretrycancel
 
 Táto udalosť označuje, že na hárku aktualizácie sa nepodarilo spustiť opakovaný pokus z dôvodov zlyhania siete. Táto udalosť označuje, že používateľ zvolil zrušenie aktualizácií po upozornení na nedostupnosť siete. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6015,7 +6015,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_updatewindow_networkunavailable"></a>controller_updatewindow_networkunavailable
+### <a name="controllerupdatewindownetworkunavailable"></a>controller.updatewindow.networkunavailable
 
 Táto udalosť označuje, že sa náhle prerušilo sieťové pripojenie. Táto udalosť označuje, že server nie je dosiahnuteľný pri pokuse o stiahnutie balíka s aktualizáciou. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6056,7 +6056,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_updatewindow_noupdateavailable"></a>controller_updatewindow_noupdateavailable
+### <a name="controllerupdatewindownoupdateavailable"></a>controller.updatewindow.noupdateavailable
 
 Táto udalosť označuje, že došlo k vyhľadávaniu aktualizácií a nie sú k dispozícii žiadne aktualizácie. Táto udalosť označuje, že služba Microsoft Autoupdate nenašla žiadne dostupné aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6097,7 +6097,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_updatewindow_noupdatestoselect"></a>controller_updatewindow_noupdatestoselect
+### <a name="controllerupdatewindownoupdatestoselect"></a>controller.updatewindow.noupdatestoselect
 
 Táto udalosť označuje, že sa vyskytla chyba, ktorej výsledkom je prázdny zoznam aktualizácií. Táto udalosť označuje, že služba Microsoft Autoupdate zobrazuje prázdny hárok aktualizácie. Nemalo by sa to stať. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6138,7 +6138,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="controller_updatewindow_updateavailable"></a>Controller_UpdateWindow_UpdateAvailable
+### <a name="controllerupdatewindowupdateavailable"></a>Controller.UpdateWindow.UpdateAvailable
 
 Táto udalosť označuje, že došlo k vyhľadávaniu aktualizácií a neponúkajú sa žiadne aktualizácie. Táto udalosť sa používa na určenie, či sa aktualizácie ponúknu používateľom na zobrazenie, či sa zobrazujú správne aktualizácie alebo či blokovanie aktualizácií funguje podľa očakávaní. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6179,7 +6179,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
+### <a name="controllerupdatewindowupdateavailablecancel"></a>controller.updatewindow.updateavailablecancel
 
 Táto udalosť označuje, že používateľ zrušil akciu po zobrazení hárka aktualizácie so zoznamom aktualizácií. Táto udalosť sa používa na vysvetlenie dôvodov neaktualizovania (t .j. že používateľ ju vedome zrušil). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6220,7 +6220,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadactor_pause"></a>downloadactor_pause
+### <a name="downloadactorpause"></a>downloadactor.pause
 
 Táto udalosť označuje, že používateľ zadal požiadavku na pozastavenie sťahovania. Táto udalosť sa používa na vysvetlenie dôvodov zjavného nedokončenia aktualizácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6261,7 +6261,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadactor_redirect"></a>downloadactor_redirect
+### <a name="downloadactorredirect"></a>downloadactor.redirect
 
 Táto udalosť označuje, že agent sťahovania je nasmerovaný na koncový bod, ktorý vydáva presmerovanie URL adresy pre požiadavku na sťahovanie. Táto udalosť sa používa na vysvetlenie dôvodov zlyhania sťahovania a diagnostiku problémov s proxy serverom. Takisto môže pomôcť diagnostikovať príčiny, keď sa u používateľov pozoruje inštalácia starších zostáv. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6302,7 +6302,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="downloadactor_resume"></a>downloadactor_resume
+### <a name="downloadactorresume"></a>downloadactor.resume
 
 Táto udalosť označuje, že používateľ zadal požiadavku na obnovenie pozastaveného sťahovania. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6343,7 +6343,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadactor_resumeerror"></a>downloadactor_resumeerror
+### <a name="downloadactorresumeerror"></a>downloadactor.resumeerror
 
 Táto udalosť označuje, že používateľ zadal požiadavku na obnovenie pozastaveného sťahovania. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6384,7 +6384,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="downloadactor_status"></a>downloadactor_status
+### <a name="downloadactorstatus"></a>downloadactor.status
 
 Táto udalosť zaznamenáva, že sa vyskytli pokusy o načítanie súborov kolaterálu, a ich výsledok (úspech alebo neúspech). Chceme poznať načítavané kolaterály a balíky. Načítanie nesprávneho súboru môže znamenať problém so zostavou alebo kolaterálom. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6425,7 +6425,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_configuration"></a>downloadmanifest_configuration
+### <a name="downloadmanifestconfiguration"></a>downloadmanifest.configuration
 
 Táto udalosť nahlasuje chybu pomocou konfigurácie služby Microsoft Auto Update (MAU), a to buď s vlastným nastavením servera v preferenciách, alebo v definíciách koncových bodov v sprievodcovi aktualizácie v nainštalovaných súčastí služby MAU. Túto zostavu používame na upozornenie IT správcov na nastavenie správnych koncových bodov servera manifestu.
  
@@ -6464,7 +6464,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_downloadcatalogfail"></a>downloadmanifest_downloadcatalogfail
+### <a name="downloadmanifestdownloadcatalogfail"></a>downloadmanifest.downloadcatalogfail
 
 Táto udalosť označuje, že došlo k zlyhaniu sťahovania. Súbor, ktorý sa nepodarilo stiahnuť, sa zaznamená. Chceme poznať načítavané kolaterály a balíky. Zlyhanie stiahnutia manifestu môže poukazovať na zlyhanie vygenerovania kolaterálu, chybu konfigurácie siete CDN, chybu konfigurácie klienta alebo chybu siete. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6505,7 +6505,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="downloadmanifest_downloadcatalogsuccess"></a>downloadmanifest_downloadcatalogsuccess
+### <a name="downloadmanifestdownloadcatalogsuccess"></a>downloadmanifest.downloadcatalogsuccess
 
 Táto udalosť označuje, že súbor sa úspešne stiahol. Zlyhanie stiahnutia manifestu môže poukazovať na zlyhanie vygenerovania kolaterálu, chybu konfigurácie siete CDN, chybu konfigurácie klienta alebo chybu siete. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6546,7 +6546,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_downloadfail"></a>downloadmanifest_downloadfail
+### <a name="downloadmanifestdownloadfail"></a>downloadmanifest.downloadfail
 
 Táto udalosť označuje, že pri sťahovaní sa vyskytla chyba. Súbor manifestu alebo balíka, ktorý sa nepodarilo stiahnuť, ako aj podrobnosti o chybe, sa zaznamenajú. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6587,7 +6587,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_downloadfromurl"></a>downloadmanifest_downloadfromurl
+### <a name="downloadmanifestdownloadfromurl"></a>downloadmanifest.downloadfromurl
 
 Táto udalosť označuje, že sťahovanie súboru katalógu sa začalo. URL adresa, z ktorej sa súbor katalógu sťahuje, sa zaznamená. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6628,7 +6628,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_downloading"></a>downloadmanifest_downloading
+### <a name="downloadmanifestdownloading"></a>downloadmanifest.downloading
 
 Táto udalosť označuje, že sťahovanie súboru katalógu sa začalo. URL adresa, z ktorej sa súbor katalógu sťahuje, sa zaznamená. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6669,7 +6669,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_downloadsuccess"></a>downloadmanifest_downloadsuccess
+### <a name="downloadmanifestdownloadsuccess"></a>downloadmanifest.downloadsuccess
 
 Táto udalosť označuje, že súbor xml a súbor balíka sa úspešne stiahol. URL adresa, z ktorej sa súbor stiahol, sa zaznamená. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6710,7 +6710,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="downloadmanifest_downloadurl"></a>downloadmanifest_downloadurl
+### <a name="downloadmanifestdownloadurl"></a>downloadmanifest.downloadurl
 
 Táto udalosť označuje, že sa zadala požiadavka na stiahnutie súboru. URL adresa, z ktorej sa súbor stiahol, sa zaznamená. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6751,7 +6751,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_filenameerror"></a>downloadmanifest_filenameerror
+### <a name="downloadmanifestfilenameerror"></a>downloadmanifest.filenameerror
 
 Táto udalosť označuje, že sa vyskytla neočakávaná chyba. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6792,7 +6792,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_invalidhash"></a>downloadmanifest_invalidhash
+### <a name="downloadmanifestinvalidhash"></a>downloadmanifest.invalidhash
 
 Táto udalosť označuje zlyhanie overenie zabezpečenia našich súborov. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6833,7 +6833,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_missingdaemon"></a>downloadmanifest_missingdaemon
+### <a name="downloadmanifestmissingdaemon"></a>downloadmanifest.missingdaemon
 
 Táto udalosť označuje, že používateľ sa pokúsil vyhľadať aktualizácie a zistili sme, že v službe MAU chýba základný komponent (démon). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6874,7 +6874,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_signatureerror"></a>downloadmanifest_signatureerror
+### <a name="downloadmanifestsignatureerror"></a>downloadmanifest.signatureerror
 
 Táto udalosť označuje, že zlyhalo overenie podpisu kódu pre balík. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6915,7 +6915,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmanifest_status"></a>downloadmanifest_status
+### <a name="downloadmanifeststatus"></a>downloadmanifest.status
 
 Táto udalosť zaznamenáva súhrnnú agregáciu pokusov/zlyhaní počas procesu sťahovania pre súbor manifestu a balíka. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6956,7 +6956,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmgr_downloadend"></a>downloadmgr_downloadend
+### <a name="downloadmgrdownloadend"></a>downloadmgr.downloadend
 
 Táto udalosť zaznamenáva značku, ktorá označuje, že proces sťahovania sa dokončil samostatne. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -6997,7 +6997,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="downloadmgr_downloadstart"></a>downloadmgr_downloadstart
+### <a name="downloadmgrdownloadstart"></a>downloadmgr.downloadstart
 
 Táto udalosť zaznamenáva aktualizáciu, ktorá sa chystá stiahnuť. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -7037,7 +7037,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="downloadtask_downloadbegin"></a>downloadtask_downloadbegin
+### <a name="downloadtaskdownloadbegin"></a>downloadtask.downloadbegin
 
 Táto udalosť označuje začatie aktivity sťahovania pre aktualizáciu aplikácie. Tvorí súčasť aktualizácie lievika a používa sa na určenie stavu aktualizácií aplikácií.
  
@@ -7086,7 +7086,7 @@ Zhromažďujú sa tieto polia:
 - **UpdateVersion** – verzia aplikácie po aktualizácii
 
 
-### <a name="downloadtask_downloadfailure"></a>downloadtask_downloadfailure
+### <a name="downloadtaskdownloadfailure"></a>downloadtask.downloadfailure
 
 Táto udalosť zaznamenáva, že pri sťahovaní súboru balíka sa vyskytla chyba. Cesta aktualizácie a chyba sa zaznamená. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -7133,7 +7133,7 @@ Zhromažďujú sa tieto polia:
 - **UpdateID** – identifikátor sťahovanej aktualizácie.
 
 
-### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
+### <a name="downloadtaskdownloadsuccess"></a>downloadtask.downloadsuccess
 
 Táto udalosť zaznamenáva úspešné stiahnutie súboru balíka. Použitá cesta aktualizácie sa zaznamená. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -7177,7 +7177,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor stiahnutej aktualizácie.
 
-### <a name="downloadtask_updatertypeerror"></a>downloadtask_updatertypeerror
+### <a name="downloadtaskupdatertypeerror"></a>downloadtask.updatertypeerror
 
 Táto udalosť nahlasuje chybu aktualizačného programu v stiahnutom súbore manifestu. Túto udalosť používame na oznámenie vlastníka súboru manifestu, aby sa mohla chyba opraviť.
  
@@ -7221,7 +7221,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateURL** – URL adresa aktualizačného balíka, ktorý je potrebné použiť
 
-### <a name="downloadtask_urlerror"></a>downloadtask_urlerror
+### <a name="downloadtaskurlerror"></a>downloadtask.urlerror
 
 Táto udalosť nahlasuje chybu v URL adrese určenej v stiahnutom súbore manifestu. Túto udalosť používame na oznámenie vlastníka súboru manifestu, aby sa mohla chyba opraviť.
  
@@ -7263,7 +7263,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateURL** – URL adresa aktualizačného balíka, ktorý je potrebné použiť
 
-### <a name="fba_changelastupdate"></a>fba_changelastupdate
+### <a name="fbachangelastupdate"></a>fba.changelastupdate
 
 Táto udalosť nahlasuje, keď služba Microsoft Auto Update (MAU) skontrolovala aktualizácie. Túto udalosť použijeme na ladenie, keď niektoré zariadenie dlhšiu dobu nemalo aktualizáciu.
 
@@ -7302,7 +7302,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fba_checkforupdate"></a>fba_checkforupdate
+### <a name="fbacheckforupdate"></a>fba.checkforupdate
 
 Táto udalosť označuje, že proces na pozadí vyhľadáva aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -7343,7 +7343,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fba_checkforupdateskip"></a>fba_checkforupdateskip
+### <a name="fbacheckforupdateskip"></a>fba.checkforupdateskip
 
 Táto udalosť označuje, že proces na pozadí vynechal aktualizáciu, pretože je otvorené používateľské rozhranie služby MAU. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -7384,7 +7384,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fba_forceinstallmsgsent"></a>fba_forceinstallmsgsent
+### <a name="fbaforceinstallmsgsent"></a>fba.forceinstallmsgsent
 
 Táto udalosť označuje, že z používateľského rozhrania bola spustená nútená aktualizácia. Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie.
 
@@ -7422,7 +7422,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_forceupdatecheck"></a>fba_forceupdatecheck
+### <a name="fbaforceupdatecheck"></a>fba.forceupdatecheck
 
 Táto udalosť označuje, že kontrola aktualizácie je nútená. Túto udalosť používame na určenie množstva vynútených kontrol aktualizácií, ktoré sa uskutočnili mimo normálneho cyklu kontroly aktualizácie.
 
@@ -7462,7 +7462,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_guiappopen"></a>fba_guiappopen
+### <a name="fbaguiappopen"></a>fba.guiappopen
 
 Táto udalosť označuje, že používateľské rozhranie sa spúšťa v režime automatickej kontroly, pretože je práve otvorená aplikácia s príslušnou aktualizáciou. Táto udalosť sa používa na určenie množstva spustení používateľského rozhrania z režimu automatickj kontroly pri tvorbe budúcich funkcií.
 
@@ -7502,7 +7502,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_installpending"></a>fba_installpending
+### <a name="fbainstallpending"></a>fba.installpending
 
 Táto udalosť označuje, že služba Microsoft Auto Update (MAU) odoslala oznámenie o čakajúcich aktualizáciách. Táto udalosť sa používa na určenie množstva aktualizácií, ktoré sa spustili z používateľských oznámení, a používa sa na vylepšenie používateľskej skúsenosti, a to minimalizovaním rušenia používateľov v budúcich vydaniach.
 
@@ -7542,7 +7542,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_launch"></a>fba_launch
+### <a name="fbalaunch"></a>fba.launch
 
 Táto udalosť označuje spustenie asistenta pre službu Microsoft Update s metódou spustenia. Táto udalosť sa používa na určenie, či sa spustenie asistenta pre službu Microsoft Update spúšťa v nesprávnom kontexte.
 
@@ -7582,7 +7582,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_launchbyagent"></a>fba_launchbyagent
+### <a name="fbalaunchbyagent"></a>fba.launchbyagent
 
 Táto udalosť označuje, že asistent pre službu Microsoft Update bol spustený prostredníctvom agenta spustenia. Táto udalosť sa používa na určenie množstva spustení asistenta pre službu Microsoft Update z používateľského rozhrania pre ďalší vývoj.
 
@@ -7622,7 +7622,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_launchfromprotocol"></a>fba_launchfromprotocol
+### <a name="fbalaunchfromprotocol"></a>fba.launchfromprotocol
 
 Táto udalosť označuje, že asistent pre službu Microsoft Update bol spustený prostredníctvom URL protokolu. Táto udalosť sa používa na určenie množstva spustení asistenta pre službu Microsoft Update cez URL adresu pre ďalší vývoj.
 
@@ -7662,7 +7662,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_launchgui"></a>fba_launchgui
+### <a name="fbalaunchgui"></a>fba.launchgui
 
 Táto udalosť označuje, že asistent pre službu Microsoft Update sa pokúša spustiť grafické používateľské rozhranie (GUI). Táto udalosť sa používa na určenie množstva spustení používateľského rozhrania inicializovaných asistentom pre službu Microsoft Update na pomoc pri ďalšom vývoji vrátane minimalizácie rušenia používateľov spôsobených častým spúšťaním používateľského rozhrania.
 
@@ -7703,7 +7703,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fba_launchstatus"></a>fba_launchstatus
+### <a name="fbalaunchstatus"></a>fba.launchstatus
 
 Táto udalosť zaznamenáva zlyhania démona služby MAU pri pokuse o spustenie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -7748,7 +7748,7 @@ Zhromažďujú sa tieto polia:
 - **Success** – Booleovský reťazec označujúci, či sa úspešne spustil proces deamon služby MAU.
 
 
-### <a name="fba_mausilentupdate"></a>fba_mausilentupdate
+### <a name="fbamausilentupdate"></a>fba.mausilentupdate
 
 Táto udalosť označuje, že asistent pre službu Microsoft Update spúšťa tiché aktualizácie. Táto udalosť sa používa na určenie množstva aktualizácií, ktoré sú použité bez zásahu používateľa s cieľom vytvoriť vylepšenia používateľskej skúsenosti.
 
@@ -7788,7 +7788,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_moreinfofromappnotification"></a>fba_moreinfofromappnotification
+### <a name="fbamoreinfofromappnotification"></a>fba.moreinfofromappnotification
 
 Táto udalosť uvádza informácie o tom, že registrovaná aplikácia smeruje cez službu Microsoft Auto Update (MAU). V rámci oznámenia služby MAU sa napríklad pošlú správy o skončení poskytovania služby. Túto udalosť používame na určenie množstva zariadení, ktoré zobrazujú toto konkrétne oznámenie, a to na určenie úspešnosti šírenia informácií.
 
@@ -7830,7 +7830,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_multipledaemon"></a>fba_multipledaemon
+### <a name="fbamultipledaemon"></a>fba.multipledaemon
 
 Táto udalosť označuje, že sa zistila iná inštancia asistenta pre službu Microsoft Update a aktuálna inštancia sa ukončí. Táto udalosť sa použije na určenie množstva zariadení, ktoré sa pokúšajú spustiť viacero inštancií asistenta pre aktualizáciu a v prípade potreby navrhnúť alternatívne riešenie.
 
@@ -7870,7 +7870,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_nofifyappclosed"></a>fba_nofifyappclosed
+### <a name="fbanofifyappclosed"></a>fba.nofifyappclosed
 
 Táto udalosť označuje, že asistent pre službu Microsoft Update odoslal oznámenie o čakajúcich aktualizáciách, pretože nie sú otvorené žiadne registrované aplikácie a aktualizácie môžu pokračovať bez rušenia používateľa. Túto udalosť používame na určenie množstva aktualizácií, ktoré je možné použiť, ale je na to potrebný zásah používateľa. Táto udalosť sa používa na pomoc pri zlepšovaní používateľskej skúsenosti.
 
@@ -7910,7 +7910,7 @@ Zhromažďujú sa tieto polia:
     
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_nofifyappopen"></a>fba_nofifyappopen
+### <a name="fbanofifyappopen"></a>fba.nofifyappopen
 
 Táto udalosť označuje, že asistent pre službu Microsoft Update odoslal oznámenie o čakajúcich aktualizáciách, pretože sú otvorené žiadne registrované aplikácie a aktualizácie na pokračovanie vyžadujú zatvorenie aplikácií.  Túto udalosť používame na určenie množstva aktualizácií, ktoré vyžadujú zásah používateľa.  Táto udalosť sa používa na pomoc pri zlepšovaní používateľskej skúsenosti.
 
@@ -7950,7 +7950,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_settimerfail"></a>fba_settimerfail  
+### <a name="fbasettimerfail"></a>fba.settimerfail  
 
 Táto udalosť označuje zlyhanie pokusu o nastavenie časovača na spustenie budúcej aktualizácie. Táto udalosť je veľmi dôležitá a používame ju na určenie množstva zlyhaní na vývoj prípadných alternatívnych riešení.
 
@@ -7991,7 +7991,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
+### <a name="fbasilentupdateoptin"></a>fba.silentupdateoptin
 
 Táto udalosť označuje, že používateľ sa rozhodol pre tiché aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8031,7 +8031,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fba_skipforcedupdate"></a>fba_skipforcedupdate
+### <a name="fbaskipforcedupdate"></a>fba.skipforcedupdate
 
 Táto udalosť označuje, že vynútená kontrola aktualizácií sa vynechala z dôvodu otvorených aplikácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8072,7 +8072,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fba_startforcedupdate"></a>fba_startforcedupdate
+### <a name="fbastartforcedupdate"></a>fba.startforcedupdate
 
 Táto udalosť označuje, že sa vyskytol pokus o použitie vynútenej aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8113,7 +8113,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fba_terminate"></a>fba_terminate
+### <a name="fbaterminate"></a>fba.terminate
 
 Táto udalosť označuje, že démon služby MAU sa ukončil normálne. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8154,7 +8154,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fba_updatefound"></a>fba_updatefound
+### <a name="fbaupdatefound"></a>fba.updatefound
 
 Táto udalosť označuje, že démon služby MAU našiel dostupné aktualizácie na ponúknutie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8195,7 +8195,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="fba_updatetimer"></a>fba_updatetimer
+### <a name="fbaupdatetimer"></a>fba.updatetimer
 
 Táto udalosť označuje, že proces démona služby Microsoft Autoupdate sa stal aktívny, aby skontroloval aktualizácie po nastavenom časovom úseku spánku. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8236,7 +8236,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_allappsclosed"></a>fbasilentupdate_allappsclosed
+### <a name="fbasilentupdateallappsclosed"></a>fbasilentupdate.allappsclosed
 
 Táto udalosť zaznamenáva, či boli všetky aplikácie pred inštaláciou zavreté. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8277,7 +8277,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_applaunchafterupdate"></a>fbasilentupdate_applaunchafterupdate
+### <a name="fbasilentupdateapplaunchafterupdate"></a>fbasilentupdate.applaunchafterupdate
 
 Táto udalosť zaznamenáva pokus o opätovné spustenie aplikácie po tichej aktualizácii a režim aktualizácie (klon alebo nie). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8322,7 +8322,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_applaunchwileinstalling"></a>fbasilentupdate_applaunchwileinstalling
+### <a name="fbasilentupdateapplaunchwileinstalling"></a>fbasilentupdate.applaunchwileinstalling
 
 Táto udalosť zaznamenáva, keď došlo k spusteniu aktualizácie počas inštalácie aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8363,7 +8363,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_appneedtoclose"></a>fbasilentupdate_appneedtoclose
+### <a name="fbasilentupdateappneedtoclose"></a>fbasilentupdate.appneedtoclose
 
 Táto udalosť zaznamenáva, keď sa po spustení procesu aktualizácie zistí, že zistí, že došlo k otvoreniu aplikácie, ktorá sa má aktualizovať. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8404,7 +8404,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
+### <a name="fbasilentupdateappterminationeventreceived"></a>fbasilentupdate.appterminationeventreceived
 
 Táto udalosť označuje, že služba Microsoft Autoupdate prijala udalosť Apple, ktorá informuje o tom, že aplikácia sa ukončila. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8451,7 +8451,7 @@ Zhromažďujú sa tieto polia:
 - **UpdateID** – identifikátor aktualizácie aplikácie.
 
 
-### <a name="fbasilentupdate_clientsession"></a>FBASilentUpdate_ClientSession
+### <a name="fbasilentupdateclientsession"></a>FBASilentUpdate.ClientSession
 
 Táto udalosť sa používa na výpočet metriky stavu kritickej aktualizácie pre službu Microsoft Auto Update (MAU). Táto udalosť nám umožňuje označiť, na ktorej relácii aktualizácie (sťahovanie alebo inštalácia) momentálne pracuje koncový server.
  
@@ -8492,7 +8492,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
+### <a name="fbasilentupdatecodesignfailure"></a>fbasilentupdate.codesignfailure
 
 Táto udalosť zaznamenáva výsledok overenia podpisu kódu po použití aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8533,7 +8533,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_download"></a>fbasilentupdate_download
+### <a name="fbasilentupdatedownload"></a>fbasilentupdate.download
 
 Táto udalosť označuje, že sa sťahuje aktualizácia. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8576,7 +8576,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_downloadfailed"></a>fbasilentupdate_downloadfailed
+### <a name="fbasilentupdatedownloadfailed"></a>fbasilentupdate.downloadfailed
 
 Táto udalosť označuje, že počas sťahovania aktualizácie došlo k zlyhaniu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8625,7 +8625,7 @@ Zhromažďujú sa tieto polia:
 - **UpdateName** – názov aktualizácie aplikácie.
 
 
-### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
+### <a name="fbasilentupdatedownloadinbackground"></a>fbasilentupdate.downloadinbackground
 
 Táto udalosť označuje, že sa spúšťa sťahovanie množiny aktualizácií na pozadí (zaznamenáva sa počet súčasne sťahovaných aktualizácií). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8666,7 +8666,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_downloadingrepairupdate"></a>fbasilentupdate_downloadingrepairupdate
+### <a name="fbasilentupdatedownloadingrepairupdate"></a>fbasilentupdate.downloadingrepairupdate
 
 Táto udalosť označuje, že sa spustil pokus o stiahnutie opravy pre neúspešnú aktualizáciu. Verzia a aktualizácia sa zaznamená. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8709,7 +8709,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_duplicatedownloadattempted"></a>fbasilentupdate_duplicatedownloadattempted
+### <a name="fbasilentupdateduplicatedownloadattempted"></a>fbasilentupdate.duplicatedownloadattempted
 
 Táto udalosť označuje, že sa vyskytla chyba. Naraz by sa mala sťahovať len jedna aktualizácia pre danú aplikáciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8750,7 +8750,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_installattemptfailed"></a>fbasilentupdate_installattemptfailed
+### <a name="fbasilentupdateinstallattemptfailed"></a>fbasilentupdate.installattemptfailed
 
 Táto udalosť označuje, že pokus o inštaláciu aktualizácie (verzie) zlyhal. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8791,7 +8791,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_installcomplete"></a>fbasilentupdate_installcomplete
+### <a name="fbasilentupdateinstallcomplete"></a>fbasilentupdate.installcomplete
 
 Táto udalosť označuje, že sa skončila inštalácia všetkých aktualizácií v dávke. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8832,7 +8832,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_installed"></a>fbasilentupdate_installed
+### <a name="fbasilentupdateinstalled"></a>fbasilentupdate.installed
 
 Táto udalosť označuje, že individuálna aktualizácia sa úspešne nainštalovala. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8873,7 +8873,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="fbasilentupdate_installing"></a>fbasilentupdate_installing
+### <a name="fbasilentupdateinstalling"></a>fbasilentupdate.installing
 
 Táto udalosť označuje, že sa spustila individuálna aktualizácia. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -8913,7 +8913,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fbasilentupdate_installstatus"></a>fbasilentupdate_installstatus
+### <a name="fbasilentupdateinstallstatus"></a>fbasilentupdate.installstatus
 
 Táto udalosť nahlasuje stav úlohy aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie aplikácie a používa sa na monitorovanie stavu aktualizácií aplikácií.
 
@@ -8963,7 +8963,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdatePkg** – názov použitého aktualizačného balíka
 
-### <a name="fbasilentupdate_notificationerror"></a>fbasilentupdate_notificationerror
+### <a name="fbasilentupdatenotificationerror"></a>fbasilentupdate.notificationerror
 
 Táto udalosť nahlasuje chyby pri pokuse o odoslanie používateľského oznámenia. Táto udalosť sa použije na ladenie príčiny chyby a vykonanie opravných opatrení.
 
@@ -9009,7 +9009,7 @@ Zhromažďujú sa tieto polia:
 
 - **Type** – typ oznámenia
 
-### <a name="fbasilentupdate_notificationremoved"></a>fbasilentupdate_notificationremoved
+### <a name="fbasilentupdatenotificationremoved"></a>fbasilentupdate.notificationremoved
 
 Táto udalosť označuje, že aktualizácia, ktorá bola blokovaná, už nie je blokovaná. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -9050,7 +9050,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_queueinstall"></a>fbasilentupdate_queueinstall
+### <a name="fbasilentupdatequeueinstall"></a>fbasilentupdate.queueinstall
 
 Táto udalosť označuje, že aktualizácia sa zaradí do frontu na tichú inštaláciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -9091,7 +9091,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_requiredappsclosed"></a>fbasilentupdate_requiredappsclosed
+### <a name="fbasilentupdaterequiredappsclosed"></a>fbasilentupdate.requiredappsclosed
 
 Táto udalosť zaznamenáva, keď sa zatvorí aplikácia s čakajúcou aktualizáciou. Označuje čas, kedy samotná inštalácia môže pokračovať. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -9131,7 +9131,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fbasilentupdate_timerforapptermination"></a>FBASilentUpdate_TimerForAppTermination
+### <a name="fbasilentupdatetimerforapptermination"></a>FBASilentUpdate.TimerForAppTermination
 
 Táto udalosť sa používa na výpočet metriky stavu kritickej aktualizácie pre službu Microsoft Auto Update (MAU). Táto akcia nám umožňuje sledovať udalosť ukončenia otvorenej aplikácie a trvanie otvoreného stavu.
  
@@ -9171,7 +9171,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="fbasilentupdate_updateavailablenotification"></a>fbasilentupdate_updateavailablenotification
+### <a name="fbasilentupdateupdateavailablenotification"></a>fbasilentupdate.updateavailablenotification
 
 Táto udalosť označuje spustenie oznámenia o dostupnej aktualizácii. Musí sa zabezpečiť, aby sa po zistení aktualizácie spustil postup s výzvou na aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -9212,7 +9212,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_userclicknotification"></a>fbasilentupdate_userclicknotification
+### <a name="fbasilentupdateuserclicknotification"></a>fbasilentupdate.userclicknotification
 
 Táto udalosť označuje, že používateľ klikol na sekciu obsahu v oznámení o dostupnej aktualizácii a spúšťa sa používateľské rozhranie služby Microsoft AutoUpdate. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -9253,7 +9253,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_userselectinstalllater"></a>fbasilentupdate_userselectinstalllater
+### <a name="fbasilentupdateuserselectinstalllater"></a>fbasilentupdate.userselectinstalllater
 
 Táto udalosť označuje, že po zobrazení oznámenia o dostupnej aktualizácii sa používateľ rozhodol inštalovať neskôr. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -9294,7 +9294,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="fbasilentupdate_userselectinstallnow"></a>fbasilentupdate_userselectinstallnow
+### <a name="fbasilentupdateuserselectinstallnow"></a>fbasilentupdate.userselectinstallnow
 
 Táto udalosť označuje, že po zobrazení oznámenia o dostupnej aktualizácii sa používateľ rozhodol inštalovať ihneď. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -9334,7 +9334,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="gui_dashboardview_appisopendialog_display"></a>gui_dashboardview_appisopendialog_display 
+### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
 
 Táto udalosť označuje, že používateľské rozhranie zobrazilo dialógové okno na zatvorenie otvorenej aplikácie s cieľom pokračovať v aktualizácii aplikácie. Táto udalosť sa používa na určenie počtu oneskorených aktualizácií s cieľom poskytnúť budúce vylepšenia na minimalizovanie rušenia používateľa.
 
@@ -9378,7 +9378,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
 
-### <a name="gui_dashboardview_appisopendialogbutton_clicked"></a>gui_dashboardview_appisopendialogbutton_clicked
+### <a name="guidashboardviewappisopendialogbuttonclicked"></a>gui.dashboardview.appisopendialogbutton.clicked
 
 Táto udalosť označuje, či sa aktualizácia aplikácie vynechá alebo či sa vykoná ďalší pokus, keď sa zobrazí dialógové okno otvorenia aplikácie. Táto udalosť sa používa na určenie množstva aktualizácií, ktoré sa vynechali a použijú sa na budúce vylepšenia na minimalizovanie rušenia používateľa.
 
@@ -9424,7 +9424,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
 
-### <a name="gui_dashboardview_updateinprogressdialog_display"></a>gui_dashboardview_updateinprogressdialog_display
+### <a name="guidashboardviewupdateinprogressdialogdisplay"></a>gui.dashboardview.updateinprogressdialog.display
 
 Táto udalosť zaznamenáva, či sa používateľom zobrazilo dialógové okno s informáciou, že aktualizácia už prebieha.
  
@@ -9462,7 +9462,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="gui_dashboardview_updatemodebutton_clicked"></a>gui_dashboardview_updatemodebutton_clicked
+### <a name="guidashboardviewupdatemodebuttonclicked"></a>gui.dashboardview.updatemodebutton.clicked
 
 Táto udalosť označuje zmenu režimu aktualizácie z ovládacieho prvku používateľského rozhrania. Táto udalosť sa používa na určenie množstva zariadení, ktoré prechádzajú z jedného režimu do druhého a slúži na určenie príčiny zastavovania automatických aktualizácií zákazníkmi. 
 
@@ -9502,7 +9502,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="gui_feedbackwindow_buttonclicked"></a>gui_feedbackwindow_buttonclicked
+### <a name="guifeedbackwindowbuttonclicked"></a>gui.feedbackwindow.buttonclicked
 
 Táto udalosť nahlasuje, či sa pripomienky odoslali alebo sa pred odoslaním zrušili. Táto udalosť sa používa na určenie množstva pripomienok odoslaných na konkrétnu verziu vydania. Pomáha to včas izolovať potenciálne problémy.
 
@@ -9542,7 +9542,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="gui_preferenceview_consentsheet_display"></a>gui_preferenceview_consentsheet_display
+### <a name="guipreferenceviewconsentsheetdisplay"></a>gui.preferenceview.consentsheet.display
 
 Táto udalosť označuje, že sa zobrazí hárok súhlasu pre daný kanál, ak je k dispozícii. Táto udalosť sa používa na určenie množstva zariadení, ktoré sa novo zaregistrujú do príslušného kanála pre divákov (Insider Fast/Insider Slow). Túto udalosť používame aj na skontrolovanie, či funguje zobrazenie dialógového okna so súhlasom, aby sme mohli používateľom zobraziť podmienky používania.
  
@@ -9582,7 +9582,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="gui_preferenceview_consentsheet_licenseerror"></a>gui_preferenceview_consentsheet_licenseerror
+### <a name="guipreferenceviewconsentsheetlicenseerror"></a>gui.preferenceview.consentsheet.licenseerror
 
 Táto udalosť nahlasuje chybu pri pokuse o zobrazenie dialógového okna so súhlasom. Táto udalosť je veľmi dôležitá a používame ju na opravu akýchkoľvek problémov spôsobených zmenou produktu, ak sa nejaké vyskytnú.
 
@@ -9624,7 +9624,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="gui_preferenceview_switchchannel"></a>gui_preferenceview_switchchannel
+### <a name="guipreferenceviewswitchchannel"></a>gui.preferenceview.switchchannel
 
 Táto udalosť nahlasuje prechod medzi kanálmi vybranými používateľom. Táto udalosť slúži na určenie dôvodu, pre ktorý sa zákazníci rozhodli odstúpiť z kanálov insiderov.  
 
@@ -9666,7 +9666,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="gui_updatemanager_applaunchduringupdate"></a>gui_updatemanager_applaunchduringupdate
+### <a name="guiupdatemanagerapplaunchduringupdate"></a>gui.updatemanager.applaunchduringupdate
 
 Táto udalosť nahlasuje, že aplikácia sa spustila počas aktualizácie, a služba Microsoft AutoUpdate ukončí spustenú aplikáciu. Všimnite si, že spustenie aplikácie počas aktualizácie môže mať za následok poškodenie aplikácie. Túto udalosť používame na zabezpečenie toho, aby proces aktualizácie nebol ovplyvnený spustenou aplikáciou ešte predtým, ako ju bude možné používať.
  
@@ -9710,7 +9710,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie aplikácie.
 
-### <a name="gui_updatemanager_downloadupdateforapp"></a>gui_updatemanager_downloadupdateforapp
+### <a name="guiupdatemanagerdownloadupdateforapp"></a>gui.updatemanager.downloadupdateforapp
 
 Táto udalosť nahlasuje stav dokončenia sťahovania aktualizácie. Túto udalosť použijeme na zaistenie stavu aktualizácie a sledovanie a vyriešenie bodu zlyhania.
 
@@ -9759,7 +9759,7 @@ Zhromažďujú sa tieto polia:
 - **UpdateName** – názov aktualizácie.
 
 
-### <a name="gui_updatemanager_error"></a>gui_updatemanager_error
+### <a name="guiupdatemanagererror"></a>gui.updatemanager.error
 
 Táto udalosť nahlasuje všetky chyby, ktoré sa vyskytli počas aktualizácií aplikácie. Môže to znamenať chybu v sekvencii vykonávania služby Microsoft Auto Update (MAU).  Túto zostavu používame na aktualizovanie služby MAU s cieľom vyriešiť bežné scenáre chýb.
 
@@ -9801,7 +9801,7 @@ Zhromažďujú sa tieto polia:
 
 - **Success** – boolovská hodnota reťazca, ktorá určuje, či sa aplikácia úspešne ukončila.
 
-### <a name="gui_updatemanager_installcleanupforapp"></a>gui_updatemanager_installcleanupforapp
+### <a name="guiupdatemanagerinstallcleanupforapp"></a>gui.updatemanager.installcleanupforapp
 
 Táto udalosť označuje úspešné vyčistenie dočasných súborov vytvorených počas inštalácie aplikácie. Tvorí súčasť aktualizácie lievika a používa sa na určenie stavu aktualizácií aplikácie.
  
@@ -9846,7 +9846,7 @@ Zhromažďujú sa tieto polia:
 - **UpdateID** – identifikátor aktualizácie.
 
 
-### <a name="gui_updatemanager_installsuccessforapp"></a>gui_updatemanager_installsuccessforapp
+### <a name="guiupdatemanagerinstallsuccessforapp"></a>gui.updatemanager.installsuccessforapp
 
 Táto udalosť označuje úspešnú aktualizáciu aplikácie. Táto udalosť tvorí súčasť aktualizácie lievika, ktorú používame na určenie stavu aktualizácie.
  
@@ -9890,7 +9890,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie.
 
-### <a name="gui_updatemanager_installupdateforapp"></a>gui_updatemanager_installupdateforapp
+### <a name="guiupdatemanagerinstallupdateforapp"></a>gui.updatemanager.installupdateforapp
 
 Táto udalosť označuje začatie samotného procesu inštalácie pre aktualizáciu aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie aplikácie, ktorú používame na určenie stavu aktualizácie.
  
@@ -9932,7 +9932,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie.
 
-### <a name="gui_updatemanager_queueinstallforapp"></a>gui_updatemanager_queueinstallforapp
+### <a name="guiupdatemanagerqueueinstallforapp"></a>gui.updatemanager.queueinstallforapp
 
 Táto udalosť označuje začatie samotného procesu inštalácie pre aktualizáciu aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie aplikácie, ktorú používame na určenie stavu aktualizácie.
  
@@ -9974,7 +9974,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie.
 
-### <a name="gui_updatemanager_relaunchapp"></a>gui_updatemanager_relaunchapp
+### <a name="guiupdatemanagerrelaunchapp"></a>gui.updatemanager.relaunchapp
 
 Táto udalosť zaznamenáva, či sa aplikácie úspešne spustili po aktualizáciách.
  
@@ -10020,7 +10020,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateName** – názov aktualizácie.
 
-### <a name="installdata_checkrunning"></a>installdata_checkrunning
+### <a name="installdatacheckrunning"></a>installdata.checkrunning
 
 Táto udalosť zaznamenáva výsledok kontroly medzi aplikáciami, ktoré sa majú nainštalovať, a tým, či bude pokus o inštaláciu pokračovať, na základe otvorenej aplikácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10061,7 +10061,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installdata_cleanup"></a>installdata_cleanup
+### <a name="installdatacleanup"></a>installdata.cleanup
 
 Súbory balíka sa po nainštalovaní majú odstrániť. Táto udalosť zaznamenáva inštancie, v ktorých sa ich nepodarilo odstrániť. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10102,7 +10102,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installedapp_invalidbundle"></a>installedapp_invalidbundle
+### <a name="installedappinvalidbundle"></a>installedapp.invalidbundle
 
 Táto udalosť označuje, že službe Microsoft Autoupdate sa nepodarilo načítať informácie o zväzku pre registrovanú aplikáciu v danej ceste. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10143,7 +10143,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installedapp_invalidpreference"></a>installedapp_invalidpreference
+### <a name="installedappinvalidpreference"></a>installedapp.invalidpreference
 
 Táto udalosť zaznamenáva prípady, v ktorých preferencie používateľa obsahujú neplatnú položku aplikácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10184,7 +10184,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installedapp_nilbundleid"></a>installedapp_nilbundleid
+### <a name="installedappnilbundleid"></a>installedapp.nilbundleid
 
 Táto udalosť zaznamenáva prípady, v ktorých identifikátor zväzku chýbal pre aplikáciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10225,7 +10225,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installedapp_nilbundlename"></a>installedapp_nilbundlename
+### <a name="installedappnilbundlename"></a>installedapp.nilbundlename
 
 Táto udalosť zaznamenáva prípady, v ktorých názov zväzku chýbal pre aplikáciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10266,7 +10266,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installedapp_sendcoreappleevent"></a>installedapp_sendcoreappleevent
+### <a name="installedappsendcoreappleevent"></a>installedapp.sendcoreappleevent
 
 Táto udalosť označuje, že služba Microsoft Auto Update (MAU) odoslala udalosť Apple do registrovanej aplikácie, aby aplikáciu ukončila s cieľom pokračovať s jej čakajúcou aktualizáciou. Táto udalosť sa momentálne používa na pomoc pri vývoji budúceho vylepšenia s cieľom minimalizovať rušenie používateľa počas aktualizácií aplikácie. 
 
@@ -10317,7 +10317,7 @@ Zhromažďujú sa tieto polia:
 - **Success** – označuje, či predmetná aplikácia ohlásila úspešnosť operácie
 
     
-### <a name="installstatus_codesign"></a>installstatus_codesign
+### <a name="installstatuscodesign"></a>installstatus.codesign
 
 Táto udalosť zaznamenáva stav binárneho súboru podpisu kódu operačného systému. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10358,7 +10358,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installstatus_daemon"></a>installstatus_daemon
+### <a name="installstatusdaemon"></a>installstatus.daemon
 
 Táto udalosť zaznamenáva stav démona služby Microsoft AutoUpdate. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10399,7 +10399,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installstatus_helper"></a>installstatus_helper
+### <a name="installstatushelper"></a>installstatus.helper
 
 Táto udalosť zaznamenáva stav pomocného nástroja služby Microsoft AutoUpdate. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10440,7 +10440,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installupdatestask_applaunched"></a>installupdatestask_applaunched
+### <a name="installupdatestaskapplaunched"></a>installupdatestask.applaunched
 
 Táto udalosť označuje, že služba Microsoft Autoupdate zistila spustenie aplikácie pre blokovanú aktualizáciu, ale nenašla zodpovedajúci inštalačný program. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10481,7 +10481,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installupdatestask_applaunchwithpendingupdate"></a>installupdatestask_applaunchwithpendingupdate
+### <a name="installupdatestaskapplaunchwithpendingupdate"></a>installupdatestask.applaunchwithpendingupdate
 
 Táto udalosť označuje, že služba Microsoft Autoupdate zistila spustenie aplikácie pre aplikáciu s čakajúcou aktualizáciou. Spustená aplikácia sa ukončí. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10522,7 +10522,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installupdatestask_codesignverificationfail"></a>installupdatestask_codesignverificationfail
+### <a name="installupdatestaskcodesignverificationfail"></a>installupdatestask.codesignverificationfail
 
 Táto udalosť označuje, že zlyhalo overenie podpisu kódu pre aktualizáciu aplikácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10563,7 +10563,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installupdatestask_codesignverificationstart"></a>installupdatestask_codesignverificationstart
+### <a name="installupdatestaskcodesignverificationstart"></a>installupdatestask.codesignverificationstart
 
 Táto udalosť označuje, že sa spustilo overenie podpisu kódu pre aktualizáciu aplikácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10604,7 +10604,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installupdatestask_codesignverificationsuccess"></a>installupdatestask_codesignverificationsuccess
+### <a name="installupdatestaskcodesignverificationsuccess"></a>installupdatestask.codesignverificationsuccess
 
 Táto udalosť označuje úspešné overenie podpisu kódu pre aktualizáciu aplikácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10645,7 +10645,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installupdatestask_failsilentinstall"></a>installupdatestask_failsilentinstall
+### <a name="installupdatestaskfailsilentinstall"></a>installupdatestask.failsilentinstall
 
 Táto udalosť zaznamenáva zlyhania pri použití tichých aktualizácií a to, či ide o klonovanú alebo bežnú inštaláciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10686,7 +10686,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installupdatestask_multiplerelocatablepackage"></a>installupdatestask_multiplerelocatablepackage
+### <a name="installupdatestaskmultiplerelocatablepackage"></a>installupdatestask.multiplerelocatablepackage
 
 Táto udalosť označuje, že služba Microsoft Autoupdate našla v stiahnutom manifeste viacero inštancií položky aplikácie pre daný balík aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10727,7 +10727,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installupdatestask_removeclone"></a>installupdatestask_removeclone
+### <a name="installupdatestaskremoveclone"></a>installupdatestask.removeclone
 
 Táto udalosť označuje, že klon bol odstránený. Klon sa odstráni buď po dokončení procesu inštalácie na klon, alebo keď sa spustí nový proces a v zariadení sa nájde staršia klonovaná verzia. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10768,7 +10768,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installupdatestask_retryfail"></a>installupdatestask_retryfail
+### <a name="installupdatestaskretryfail"></a>installupdatestask.retryfail
 
 Táto udalosť označuje, že počas procesu opakovania inštalácie sa vyskytli chyby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10809,7 +10809,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Táto udalosť zaznamenáva chyby komunikácie vnútri procesu (komunikácia s pomocným nástrojom služby MAU). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10850,7 +10850,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Táto udalosť zaznamenáva chyby komunikácie vnútri procesu (komunikácia s pomocným nástrojom služby MAU). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10892,7 +10892,7 @@ Zhromažďujú sa tieto polia:
 
     
 
-### <a name="installupdatestask_retryresponse"></a>installupdatestask_retryresponse
+### <a name="installupdatestaskretryresponse"></a>installupdatestask.retryresponse
 
 Táto udalosť zaznamenáva, že opakovaný pokus nebol úspešný. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10933,7 +10933,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installupdatestask_retrysuccess"></a>installupdatestask_retrysuccess
+### <a name="installupdatestaskretrysuccess"></a>installupdatestask.retrysuccess
 
 Táto udalosť zaznamenáva úspešnú inštaláciu aktualizácie po zopakovaní. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -10974,7 +10974,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installupdatestask_setreopengui"></a>installupdatestask_setreopengui
+### <a name="installupdatestasksetreopengui"></a>installupdatestask.setreopengui
 
 Táto udalosť označuje, či nastavenie predvoľby opätovného otvorenia používateľského rozhrania po inštalácii bolo úspešné. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -11015,7 +11015,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="installupdatestask_updatestatus"></a>installupdatestask_updatestatus
+### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
 Táto udalosť nahlasuje stav úlohy inštalácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.
 
@@ -11069,8 +11069,58 @@ Zhromažďujú sa tieto polia:
 
 - **UpdatePkg** – názov použitého aktualizačného balíka
 
+### <a name="lifecycleperiodiccheck"></a>Lifecycle.periodiccheck
 
-### <a name="msupdate_cli_eventhandler"></a>msupdate_cli_eventhandler
+Táto udalosť podáva pravidelné správy o stave procesu MicrosoftAutoUpdate. Konkrétne podáva správy o tom, na ktorých zostávajúcich úlohách proces čaká na dokončenie asistenta aktualizácie, a v prípade používateľského rozhrania podáva správy o tom, či proces končí kvôli nečinnosti používateľa.  Túto udalosť používame na to, aby sme zistili, čo bráni asistentovi aktualizácie dokončiť aktualizácie a ukončiť sa, a či sa používateľské rozhranie ukončí v dôsledku nečinnosti používateľa.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **dataCollectionDialog** – Booleovská hodnota určujúca, či proces čaká na odpoveď používateľa v dialógovom okne zhromažďovania údajov
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **dataCollectionDialog** – Booleovská hodnota určujúca, či proces čaká na odpoveď používateľa v dialógovom okne nútenej aktualizácie
+
+- **HowToCheck** – Nastavenie Ako kontrolovať
+
+- **isBusy** – Booleovská hodnota určujúca, či je proces zaneprázdnený aktívnou aktualizáciou
+
+- **isInactive** – Booleovská hodnota určujúca, či proces dlhšiu dobu čaká na akciu používateľa
+
+- **isWaiting** – Booleovská hodnota určujúca, či proces čaká na odpoveď používateľa na oznámenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **SessionLength** – Dĺžka relácie aktuálneho procesu v sekundách
+
+
+### <a name="msupdateclieventhandler"></a>msupdate.cli.eventhandler
 
 Táto udalosť sa používa na výpočet používania rôznych typov rozhraní API príkazového riadka služby Microsoft Auto Update (MAU).
 
@@ -11113,7 +11163,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="msupdate_cli_eventhandler_applyupdates_appids"></a>msupdate_cli_eventhandler_applyupdates_appids
+### <a name="msupdateclieventhandlerapplyupdatesappids"></a>msupdate.cli.eventhandler.applyupdates.appids
 
 Táto udalosť označuje, že bol vydaný príkaz rozhrania príkazového riadka (CLI) na použitie aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -11154,7 +11204,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="msupdate_cli_eventhandler_config"></a>msupdate_cli_eventhandler_config
+### <a name="msupdateclieventhandlerconfig"></a>msupdate.cli.eventhandler.config
 
 Táto udalosť označuje, že modul rozhrania príkazového riadka služby Microsoft Autoupdate prijal udalosť Apple na konfiguráciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -11195,7 +11245,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="msupdate_cli_eventhandler_updates"></a>msupdate_cli_eventhandler_updates
+### <a name="msupdateclieventhandlerupdates"></a>msupdate.cli.eventhandler.updates
 
 Táto udalosť označuje, že modul rozhrania príkazového riadka služby Microsoft Autoupdate prijal udalosť Apple na zobrazenie zoznamu aktualizácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -11236,7 +11286,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="msupdate_monitor_progress_downloaded"></a>msupdate_monitor_progress_downloaded
+### <a name="msupdatemonitorprogressdownloaded"></a>msupdate.monitor.progress.downloaded
 
 Táto udalosť označuje, že aktualizácie boli stiahnuté. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -11277,7 +11327,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="msupdate_monitor_progress_failure"></a>msupdate_monitor_progress_failure
+### <a name="msupdatemonitorprogressfailure"></a>msupdate.monitor.progress.failure
 
 Táto udalosť zaznamenáva zoznam aktualizácií vo fronte, ktoré sa nepodarilo použiť. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -11318,7 +11368,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="msupdate_monitor_progress_finished"></a>msupdate_monitor_progress_finished
+### <a name="msupdatemonitorprogressfinished"></a>msupdate.monitor.progress.finished
 
 Táto udalosť zaznamenáva zoznam aktualizácií vo fronte, ktoré sa úspešne nainštalovali. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -11359,7 +11409,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="msupdate_monitor_progress_queued"></a>msupdate_monitor_progress_queued
+### <a name="msupdatemonitorprogressqueued"></a>msupdate.monitor.progress.queued
 
 Táto udalosť zaznamenáva zoznam aktualizácií vo fronte. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -11441,7 +11491,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="sauforcedupdate_autodismiss"></a>sauforcedupdate_autodismiss
+### <a name="sauforcedupdateautodismiss"></a>sauforcedupdate.autodismiss
 
 Táto udalosť označuje, že zobrazené dialógové okno nútenej aktualizácie sa zruší z dôvodu nečinnosti používateľa. Táto udalosť sa používa na určenie množstva nútených aktualizácií, ktoré sa vykonajú bez reakcie používateľov na zobrazené oznámenie. Táto udalosť sa používa na vylepšenie používateľského rozhrania na minimalizovanie rušenia.
 
@@ -11481,7 +11531,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_close"></a>sauforcedupdate_close
+### <a name="sauforcedupdateclose"></a>sauforcedupdate.close
 
 Táto udalosť označuje, že používateľ sa rozhodol zavrieť dialógové okno nútenej aktualizácie. Táto udalosť sa používa na určenie množstva nútených aktualizácií odložených akciou používateľa. Táto udalosť sa používa na vylepšenie používateľského rozhrania na minimalizovanie rušenia. 
 
@@ -11521,7 +11571,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_completeautodismiss"></a>sauforcedupdate_completeautodismiss
+### <a name="sauforcedupdatecompleteautodismiss"></a>sauforcedupdate.completeautodismiss
 
 Táto udalosť označuje, že zobrazené dialógové okno nútenej aktualizácie z funkcie termínu sa zruší z dôvodu nečinnosti používateľa. Táto udalosť sa používa na určenie množstva nútených aktualizácií, ktoré sa vykonajú bez reakcie používateľov na zobrazené oznámenie. Táto udalosť sa používa na vylepšenie používateľského rozhrania na minimalizovanie rušenia pri funkcii termínu.
 
@@ -11561,7 +11611,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_completeclose"></a>sauforcedupdate_completeclose
+### <a name="sauforcedupdatecompleteclose"></a>sauforcedupdate.completeclose
 
 Táto udalosť označuje úspešné dokončenie nútenej aktualizácie. Udalosť sa používa na určenie stavu funkcie nútenej aktualizácie. 
 
@@ -11601,7 +11651,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_display"></a>sauforcedupdate_display
+### <a name="sauforcedupdatedisplay"></a>sauforcedupdate.display
 
 Táto udalosť označuje, že sa zobrazilo dialógové okno nútenej aktualizácie.  Táto udalosť tvorí súčasť lievika nútenej aktualizácie a používa sa na určenie stavu funkcie nútenej aktualizácie.
 
@@ -11641,7 +11691,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_displayfinalhour"></a>sauforcedupdate_displayfinalhour
+### <a name="sauforcedupdatedisplayfinalhour"></a>sauforcedupdate.displayfinalhour
 
 Táto udalosť označuje, že sa zobrazilo dialógové okno konca nútenej aktualizácie. Táto udalosť tvorí súčasť lievika nútenej aktualizácie a používa sa na určenie stavu funkcie nútenej aktualizácie.
 
@@ -11681,7 +11731,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_done"></a>sauforcedupdate_done
+### <a name="sauforcedupdatedone"></a>sauforcedupdate.done
 
 Táto udalosť označuje, že sa úspešne dokončila nútená aktualizácia. Táto udalosť tvorí súčasť lievika nútenej aktualizácie a používa sa na určenie stavu funkcie nútenej aktualizácie. 
 
@@ -11721,7 +11771,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_enabled"></a>sauforcedupdate_enabled
+### <a name="sauforcedupdateenabled"></a>sauforcedupdate.enabled
 
 Táto udalosť sa spustí, keď služba Microsoft Auto Update (MAU) určí, že sa má vykonať nútená aktualizácia.  Udalosť sa používa na určenie stavu funkcie nútenej aktualizácie. 
 
@@ -11763,7 +11813,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_forcedupdatedismiss"></a>sauforcedupdate_forcedupdatedismiss
+### <a name="sauforcedupdateforcedupdatedismiss"></a>sauforcedupdate.forcedupdatedismiss
 
 Táto udalosť označuje, že zobrazené dialógové okno konca nútenej aktualizácie sa zruší z dôvodu nečinnosti používateľa. Táto udalosť sa používa na určenie množstva nútených aktualizácií, ktoré sa vykonajú bez reakcie používateľov na zobrazené oznámenie. Táto udalosť sa používa na vylepšenie používateľského rozhrania na minimalizovanie rušenia. 
 
@@ -11803,7 +11853,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_forcequitandupdatenow"></a>sauforcedupdate_forcequitandupdatenow
+### <a name="sauforcedupdateforcequitandupdatenow"></a>sauforcedupdate.forcequitandupdatenow
 
 Táto udalosť označuje začiatok nútenej aktualizácie inicializovanej používateľom. Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie. 
 
@@ -11843,7 +11893,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie 
 
-### <a name="sauforcedupdate_forceterminate"></a>sauforcedupdate_forceterminate
+### <a name="sauforcedupdateforceterminate"></a>sauforcedupdate.forceterminate
 
 Táto udalosť označuje začiatok nútenej aktualizácie s núteným ukončením aplikácie.  Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie.
 
@@ -11883,7 +11933,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_quitandupdatenow"></a>sauforcedupdate_quitandupdatenow
+### <a name="sauforcedupdatequitandupdatenow"></a>sauforcedupdate.quitandupdatenow
 
 Táto udalosť označuje, že používateľ sa rozhodol zavrieť aplikáciu a použiť aktualizáciu. Táto udalosť tvorí súčasť lievika a používa sa na určenie stavu funkcie nútenej aktualizácie. 
 
@@ -11923,7 +11973,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_snooze"></a>sauforcedupdate_snooze
+### <a name="sauforcedupdatesnooze"></a>sauforcedupdate.snooze
 
 Táto udalosť označuje, že používateľ sa rozhodol odložiť nútenú aktualizáciu. Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie. 
 
@@ -11963,7 +12013,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_terminate"></a>sauforcedupdate_terminate
+### <a name="sauforcedupdateterminate"></a>sauforcedupdate.terminate
 
 Táto udalosť označuje začiatok nútenej aktualizácie s ukončením aplikácie. Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie.
 
@@ -12003,7 +12053,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="sauforcedupdate_updatenow"></a>sauforcedupdate_updatenow
+### <a name="sauforcedupdateupdatenow"></a>sauforcedupdate.updatenow
 
 Táto udalosť označuje, že používateľ sa rozhodol aktualizovať aplikáciu.  Táto udalosť je súčasťou lievika a používa sa na určenie stavu funkcie nútenej aktualizácie.
 
@@ -12085,7 +12135,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="update_applaunchdetected"></a>update_applaunchdetected
+### <a name="updateapplaunchdetected"></a>update.applaunchdetected
 
 Táto udalosť označuje, že aplikácia sa spustila počas aktualizácie. Táto udalosť sa používa na určenie množstva aplikácií, ktoré sa spustili počas aktualizácie, a používa sa na vylepšenie používateľskej skúsenosti v budúcich vydaniach.
 
@@ -12129,7 +12179,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie aplikácie
 
-### <a name="update_appterminationreceived"></a>update_appterminationreceived
+### <a name="updateappterminationreceived"></a>update.appterminationreceived
 
 Táto udalosť označuje, že aplikácia s blokovanou aktualizáciou sa ukončila a to, či môže služba Microsoft Auto Update (MAU) pokračovať v aktualizácii. Táto udalosť tvorí súčasť lievika a používa sa na určenie stavu aktualizácií aplikácií.
 
@@ -12175,7 +12225,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie aplikácie
 
-### <a name="update_blockedappclosed"></a>update_blockedappclosed
+### <a name="updateblockedappclosed"></a>update.blockedappclosed
 
 Táto udalosť označuje, že služba Microsoft Auto Update (MAU) zistila, že aplikácia s blokovanou aktualizáciou sa ukončila a môže pokračovať v aktualizácii. Táto udalosť tvorí súčasť lievika a používa sa na určenie stavu aktualizácií aplikácií. 
 
@@ -12219,7 +12269,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie aplikácie
 
-### <a name="update_blockedinstallskip"></a>update_blockedinstallskip
+### <a name="updateblockedinstallskip"></a>update.blockedinstallskip
 
 Táto udalosť zaznamenáva chybu, ktorá sa vyskytla pri pokuse o vynechanie aktualizácie aplikácie. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb.  
 
@@ -12261,7 +12311,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="update_clientsession"></a>update_clientsession
+### <a name="updateclientsession"></a>update.clientsession
 
 Táto udalosť sa zaznamená, keď sa zmení stav klientskeho zariadenia, čo spôsobí pozastavenie alebo obnovenie procesu aktualizácie asistenom pre službu Microsoft Update. Táto udalosť tvorí súčasť lievika a používa sa na určenie stavu aktualizácií aplikácií. 
 
@@ -12301,7 +12351,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="update_download_begin"></a>update_download_begin 
+### <a name="updatedownloadbegin"></a>update.download.begin 
 
 Táto udalosť označuje začiatok procesu aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
 
@@ -12347,7 +12397,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
 
-### <a name="update_download_finish"></a>update_download_finish
+### <a name="updatedownloadfinish"></a>update.download.finish
 
 Táto udalosť označuje dokončenie fázy sťahovania aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.  
 
@@ -12393,7 +12443,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
 
-### <a name="update_downloadresume"></a>update_downloadresume
+### <a name="updatedownloadresume"></a>update.downloadresume
 
 Táto udalosť nahlasuje chybu pri pokuse o obnovenie pozastavenej úlohy sťahovania. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb. 
 
@@ -12437,7 +12487,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie aplikácie
 
-### <a name="update_error"></a>update_error
+### <a name="updateerror"></a>update.error
 
 Táto udalosť nahlasuje chybu pri pokuse o aktualizáciu registrovanej aplikácie.  Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb. 
 
@@ -12479,7 +12529,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="update_installcleanupforapp"></a>update_installcleanupforapp
+### <a name="updateinstallcleanupforapp"></a>update.installcleanupforapp
 
 Táto udalosť označuje, že inštalácia aktualizácie je dokončená a čistí sa služba Microsoft Auto Update (MAU).  Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.
 
@@ -12523,7 +12573,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie aplikácie
 
-### <a name="update_installupdateforapp"></a>update_installupdateforapp
+### <a name="updateinstallupdateforapp"></a>update.installupdateforapp
 
 Táto udalosť sa používa na vykazovanie spustenia procesu inštalácie aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
 
@@ -12569,7 +12619,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
 
-### <a name="update_installupdateforapp_success"></a>update_installupdateforapp_success
+### <a name="updateinstallupdateforappsuccess"></a>update.installupdateforapp.success
 
 Táto udalosť nahlasuje stav úlohy inštalácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
 
@@ -12615,7 +12665,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie aplikácie
 
-### <a name="update_installvariance"></a>Update_InstallVariance
+### <a name="updateinstallvariance"></a>Update.InstallVariance
 
 Táto udalosť sa používa na výpočet metriky stavu kritickej aktualizácie pre službu MAU. Táto akcia nám umožňuje určiť metriky úspešnosti funkcie priority inštalácie a overiť integritu tejto funkcie.
  
@@ -12655,7 +12705,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="update_multipleappupdates"></a>update_multipleappupdates 
+### <a name="updatemultipleappupdates"></a>update.multipleappupdates 
 
 Táto udalosť označuje, že v pozadí prebiehajú viaceré aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.
 
@@ -12695,7 +12745,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="update_previousidnil"></a>update_previousidnil
+### <a name="updatepreviousidnil"></a>update.previousidnil
 
 Táto udalosť označuje, že sa sťahuje balík s aktualizáciou opravy, ale neexistujú žiadne predchádzajúce informácie o stiahnutí. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb. 
 
@@ -12737,7 +12787,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="update_queueinstallforapp"></a>update_queueinstallforapp 
+### <a name="updatequeueinstallforapp"></a>update.queueinstallforapp 
 
 Táto udalosť označuje, že stiahnutý balík s aktualizáciou bol umiestnený do frontu na inštaláciu.  Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií.
 
@@ -12783,7 +12833,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateName** – názov aktualizácie, ako sa zobrazuje v sithanutom súbore manifestu
 
-### <a name="update_relaunchafterupdate"></a>update_relaunchafterupdate 
+### <a name="updaterelaunchafterupdate"></a>update.relaunchafterupdate 
 
 Táto udalosť označuje, že aktualizácia aplikácie sa dokončila a aplikácia sa znova spustí. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
 
@@ -12827,7 +12877,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdateID** – identifikátor aktualizácie aplikácie
 
-### <a name="update_timerforapptermination"></a>update_timerforapptermination 
+### <a name="updatetimerforapptermination"></a>update.timerforapptermination 
 
 Táto udalosť označuje začiatok alebo koniec časovača na kontrolu aplikácie stavu. Táto udalosť je dvojitá a určuje, či boli odstránené všetky objekty časovača pri postupe aktualizácie aplikácie.
 
@@ -12868,7 +12918,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatecore_appregistration"></a>updatecore_appregistration
+### <a name="updatecoreappregistration"></a>updatecore.appregistration
 
 Táto udalosť zaznamenáva pokusy o zaregistrovanie aplikácie a výsledok alebo dôvod. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -12909,7 +12959,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatecore_loadinglaunchagent"></a>updatecore_loadinglaunchagent
+### <a name="updatecoreloadinglaunchagent"></a>updatecore.loadinglaunchagent
 
 Táto udalosť označuje, že sa načítava agent spustenia. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -12949,7 +12999,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatecore_runnstaskcommand"></a>updatecore_runnstaskcommand
+### <a name="updatecorerunnstaskcommand"></a>updatecore.runnstaskcommand
 
 Táto udalosť nahlasuje chybu pri pokuse o spustenie úlohy. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásených chýb.  
 
@@ -12989,7 +13039,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatecore_server_connectionfail"></a>updatecore_server_connectionfail
+### <a name="updatecoreserverconnectionfail"></a>updatecore.server.connectionfail
 
 Táto udalosť zapisuje chyby, ktoré sa vyskytli pri kontaktovaní siete CDN. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13029,7 +13079,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatecore_server_nullurl"></a>updatecore_server_nullurl
+### <a name="updatecoreservernullurl"></a>updatecore.server.nullurl
 
 Táto udalosť nahlasuje chybu, ktorá indikuje, že daný server nie je možné dosiahnuť. Táto udalosť sa používa na určenie frekvencie zlyhania aktualizácie spôsobeného problémom so sieťou. 
 
@@ -13069,7 +13119,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatefilterhelper_cannotretrievebuilddate"></a>updatefilterhelper_cannotretrievebuilddate
+### <a name="updatefilterhelpercannotretrievebuilddate"></a>updatefilterhelper.cannotretrievebuilddate
 
 Aktualizácie môžeme filtrovať prostredníctvom služby MAU len vtedy, keď ponúkaná aktualizácia nie je staršia ako určitý počet dní. Táto udalosť zaznamenáva, že sa nám nepodarilo načítať dátum z metaúdajov aplikácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13110,7 +13160,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefilterhelper_invalidappid"></a>updatefilterhelper_invalidappid
+### <a name="updatefilterhelperinvalidappid"></a>updatefilterhelper.invalidappid
 
 Táto udalosť nahlasuje chybu, ktorá indikuje, že sa nenašli žiadne zhodné súbory manifestu s ID aplikácie načítaným z webovej odpovede. Táto udalosť sa používa na skúmanie hlásených chýb.
 
@@ -13150,7 +13200,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatefilterhelper_invalidappidfromwebservices"></a>updatefilterhelper_invalidappidfromwebservices
+### <a name="updatefilterhelperinvalidappidfromwebservices"></a>updatefilterhelper.invalidappidfromwebservices
 
 Táto udalosť nahlasuje chybu, ktorá signalizuje, že ID aplikácie načítané z webovej odozvy nemá očakávaný formát. Táto udalosť sa používa na skúmanie hlásených chýb.
 
@@ -13190,7 +13240,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatefilterhelper_invalidresponsefromupdatefiltering"></a>updatefilterhelper_invalidresponsefromupdatefiltering
+### <a name="updatefilterhelperinvalidresponsefromupdatefiltering"></a>updatefilterhelper.invalidresponsefromupdatefiltering
 
 Aktualizácie môžeme filtrovať prostredníctvom služby MAU len vtedy, keď ponúkaná aktualizácia nie je staršia ako určitý počet dní. Táto udalosť zaznamenáva, že v metaúdajoch aplikácie chýba dátum. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13231,7 +13281,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefilterhelper_missingbuilddate"></a>updatefilterhelper_missingbuilddate
+### <a name="updatefilterhelpermissingbuilddate"></a>updatefilterhelper.missingbuilddate
 
 Aktualizácie môžeme filtrovať prostredníctvom služby MAU len vtedy, keď ponúkaná aktualizácia nie je staršia ako určitý počet dní. Táto udalosť zaznamenáva, že v metaúdajoch aplikácie chýba dátum. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13272,7 +13322,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefilterhelper_updatebypassedoldage"></a>updatefilterhelper_updatebypassedoldage
+### <a name="updatefilterhelperupdatebypassedoldage"></a>updatefilterhelper.updatebypassedoldage
 
 Aktualizácie môžeme filtrovať prostredníctvom služby MAU len vtedy, keď ponúkaná aktualizácia nie je staršia ako určitý počet dní. Táto udalosť zaznamenáva, že došlo k obídeniu služby z dôvodu starého dátumu aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13313,7 +13363,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_check_error"></a>updatefinder_check_error
+### <a name="updatefindercheckerror"></a>updatefinder.check.error
 
 Táto udalosť nahlasuje chybu pri kontrole aktualizácií. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby. 
 
@@ -13356,7 +13406,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
  
-### <a name="updatefinder_check_start"></a>updatefinder_check_start
+### <a name="updatefindercheckstart"></a>updatefinder.check.start
 
 Táto udalosť sa zaznamenáva vždy, keď sa spustí operácia kontroly aktualizácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13397,7 +13447,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_check_status"></a>updatefinder_check_status
+### <a name="updatefindercheckstatus"></a>updatefinder.check.status
 
 Táto udalosť agreguje stav operácie vyhľadávania aktualizácií (kanál od vyhľadávania až po sťahovanie). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13438,7 +13488,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_check_updatefound"></a>updatefinder_check_updatefound
+### <a name="updatefindercheckupdatefound"></a>updatefinder.check.updatefound
 
 Táto udalosť sa zaznamenáva vždy, keď sa pri vyhľadávaní aktualizácií nájdu aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13479,7 +13529,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_check_updatenotfound"></a>updatefinder_check_updatenotfound
+### <a name="updatefindercheckupdatenotfound"></a>updatefinder.check.updatenotfound
 
 Táto udalosť sa zaznamenáva vždy, keď sa pri vyhľadávaní aktualizácií neponúknu žiadne aktualizácie, pretože sa nenašli žiadne aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13520,7 +13570,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_check_uptodate"></a>updatefinder_check_uptodate
+### <a name="updatefindercheckuptodate"></a>updatefinder.check.uptodate
 
 Táto udalosť sa zaznamenáva vždy, keď sa pri vyhľadávaní aktualizácií neponúknu žiadne aktualizácie, pretože všetky aplikácie sú aktuálne. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13561,7 +13611,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_offerupdates_invalidappid"></a>updatefinder_offerupdates_invalidappid
+### <a name="updatefinderofferupdatesinvalidappid"></a>updatefinder.offerupdates.invalidappid
 
 Táto udalosť nahlasuje chybu pri pokuse zistiť, či je aktualizácia uplatniteľná. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.  
 
@@ -13603,7 +13653,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatefinder_offerupdates_minoscheckfail"></a>updatefinder_offerupdates_minoscheckfail
+### <a name="updatefinderofferupdatesminoscheckfail"></a>updatefinder.offerupdates.minoscheckfail
 
 Táto udalosť sa zaznamenáva pri každom zablokovaní aktualizácie z dôvodu nespĺňania požiadaviek operačného systému. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13643,7 +13693,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatefinder_offerupdates_missingtrigger"></a>updatefinder_offerupdates_missingtrigger
+### <a name="updatefinderofferupdatesmissingtrigger"></a>updatefinder.offerupdates.missingtrigger
 
 Táto udalosť nahlasuje chybu pri pokuse o vyhodnotenie spúšťačov zo stiahnutého manifestu aktualizácie aplikácie. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.  
 
@@ -13685,7 +13735,7 @@ Zhromažďujú sa tieto polia:
 
 - **Triggers** – adresár kľúčov spúšťačov z manifestu
 
-### <a name="updatefinder_offerupdates_nullbundleforappid"></a>updatefinder_offerupdates_nullbundleforappid
+### <a name="updatefinderofferupdatesnullbundleforappid"></a>updatefinder.offerupdates.nullbundleforappid
 
 Táto udalosť označuje, že službe Microsoft Autoupdate sa nepodarilo načítať informácie o zväzku pre identifikáciu aplikácie určenú v stiahnutom súbore manifestu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13726,7 +13776,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_offerupdates_updaterulematched"></a>updatefinder_offerupdates_updaterulematched
+### <a name="updatefinderofferupdatesupdaterulematched"></a>updatefinder.offerupdates.updaterulematched
 
 Táto udalosť označuje, že sa našla aktualizácia pre aplikáciu a základný stav. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13767,7 +13817,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="updatefinder_registeredapps"></a>updatefinder_registeredapps
+### <a name="updatefinderregisteredapps"></a>updatefinder.registeredapps
 
 Táto udalosť zaznamenáva aplikácie nainštalované, registrované alebo riadené službou MAU. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13807,7 +13857,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatefinder_suite_invalidsuiteversion"></a>updatefinder_suite_invalidsuiteversion
+### <a name="updatefindersuiteinvalidsuiteversion"></a>updatefinder.suite.invalidsuiteversion
 
 Táto udalosť nahlasuje chybu verzie balíka pri zisťovaní, či je aktualizácia uplatniteľná. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.
 
@@ -13847,7 +13897,7 @@ Zhromažďujú sa tieto polia:
 
 - **Suite** – názov balíka v štádiu riešenia
 
-### <a name="updatefinder_suite_keyvaluemissing"></a>updatefinder_suite_keyvaluemissing
+### <a name="updatefindersuitekeyvaluemissing"></a>updatefinder.suite.keyvaluemissing
 
 Táto udalosť nahlasuje chybu pri pokuse o pridanie aplikácie do balíka. Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.
 
@@ -13890,7 +13940,7 @@ Zhromažďujú sa tieto polia:
 - **Suite** – názov aplikácie balíka, ktorá sa má pridať
 
     
-### <a name="updatefinder_suite_missingcollateral"></a>updatefinder_suite_missingcollateral
+### <a name="updatefindersuitemissingcollateral"></a>updatefinder.suite.missingcollateral
 
 Aktualizácia balíka – táto udalosť sa zaznamenáva vždy, keď aktualizácia balíka nie je uplatniteľná z dôvodu chýbajúceho kolaterálu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13931,7 +13981,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_suite_staleversion"></a>updatefinder_suite_staleversion
+### <a name="updatefindersuitestaleversion"></a>updatefinder.suite.staleversion
 
 Aktualizácia balíka – táto udalosť sa zaznamenáva vždy, keď aktualizácia balíka nie je uplatniteľná z dôvodu príliš starej verzie základného stavu. Zaznamenáva sa verzia základného stavu a identifikátor AddId balíka. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -13972,7 +14022,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_suite_updateapplicable"></a>updatefinder_suite_updateapplicable
+### <a name="updatefindersuiteupdateapplicable"></a>updatefinder.suite.updateapplicable
 
 Aktualizácia balíka – táto udalosť sa zaznamenáva vždy, keď aktualizácia balíka je uplatniteľná. Zaznamenáva sa verzia základného stavu a identifikátor AddId balíka. Zaznamenáva sa verzia základného stavu a identifikátor AddId balíka. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14013,7 +14063,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_suite_updatenotapplicabledefaultpath"></a>updatefinder_suite_updatenotapplicabledefaultpath
+### <a name="updatefindersuiteupdatenotapplicabledefaultpath"></a>updatefinder.suite.updatenotapplicabledefaultpath
 
 Aktualizácia balíka – táto udalosť sa zaznamenáva vždy, keď sa aktualizácia balíka neponúka, pretože všetky aplikácie balíka nie sú nainštalované v predvolenom umiestnení. Zaznamenáva sa verzia základného stavu a identifikátor AddId balíka. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14054,7 +14104,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="updatefinder_suite_updatenotapplicableversion"></a>updatefinder_suite_updatenotapplicableversion
+### <a name="updatefindersuiteupdatenotapplicableversion"></a>updatefinder.suite.updatenotapplicableversion
 
 Aktualizácia balíka – táto udalosť sa zaznamenáva vždy, keď sa aktualizácia balíka neponúka, pretože všetky aplikácie balíka nemajú rovnakú verziu základného stavu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14095,7 +14145,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_suite_updatenotoffered"></a>updatefinder_suite_updatenotoffered
+### <a name="updatefindersuiteupdatenotoffered"></a>updatefinder.suite.updatenotoffered
 
 Aktualizácia balíka – táto udalosť sa zaznamenáva vždy, keď sa aktualizácia balíka neponúka, pretože veľkosť balíka je vyššia ako jednotlivé aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14136,7 +14186,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatefinder_suite_updateoffered"></a>updatefinder_suite_updateoffered
+### <a name="updatefindersuiteupdateoffered"></a>updatefinder.suite.updateoffered
 
 Aktualizácia balíka – táto udalosť sa zaznamenáva vždy, keď sa ponúka aktualizácia balíka. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14177,7 +14227,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="updatemanager_checkupdate"></a>updatemanager_checkupdate
+### <a name="updatemanagercheckupdate"></a>updatemanager.checkupdate
 
 Táto udalosť zaznamenáva počet aktualizácií nájdených službou Microsoft Autoupdate počas vyhľadávania dostupných aktualizácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14218,7 +14268,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="updatemanager_updatespending"></a>updatemanager_updatespending
+### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
 Táto udalosť označuje, že sa našli aktualizácie a čakajú na inštaláciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14258,7 +14308,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="updatestatus_codesign"></a>UpdateStatus_Codesign
+### <a name="updatestatuscodesign"></a>UpdateStatus.Codesign
 
 Táto udalosť nahlasuje stav overenia podpisu kódu, ktorý spustí asistent pre Microsoft Update po inštalácii aktualizácií klientskych aplikácií. Túto udalosť používame na to, aby sme zaistili, že balíky sú platné a aktualizujú nainštalovanú aplikáciu na najnovšiu verziu.
 
@@ -14308,7 +14358,7 @@ Zhromažďujú sa tieto polia:
 
 - **UpdatePkg** – názov použitého aktualizačného balíka
 
-### <a name="urlutilities_getmauinfo"></a>urlutilities_getmauinfo
+### <a name="urlutilitiesgetmauinfo"></a>urlutilities.getmauinfo
 
 Táto udalosť nahlasuje chybu pri prístupe k balíku aplikácií služby Microsoft Auto Update (MAU). Táto udalosť je veľmi dôležitá a používa sa na skúmanie hlásenej chyby.
 
@@ -14348,7 +14398,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
    
-### <a name="webservices_checkforsilentupdates"></a>webservices_checkforsilentupdates
+### <a name="webservicescheckforsilentupdates"></a>webservices.checkforsilentupdates
 
 Táto udalosť označuje, že sa našli kandidáti na tichú aktualizáciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14389,7 +14439,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="webservices_deltaupdater"></a>webservices_deltaupdater
+### <a name="webservicesdeltaupdater"></a>webservices.deltaupdater
 
 Táto udalosť zaznamenáva interakcie medzi kódom klienta a bránou funkcií, ktorá určuje, či má klient umožniť aktualizácie delta. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14430,7 +14480,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="webservices_serviceaction"></a>webservices_serviceaction
+### <a name="webservicesserviceaction"></a>webservices.serviceaction
 
 Táto udalosť zaznamenáva chyby vyplývajúce z neočakávanej odpovede webovej služby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14471,7 +14521,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="webservices_serviceaction"></a>webservices_serviceaction
+### <a name="webservicesserviceaction"></a>webservices.serviceaction
 
 Táto udalosť zaznamenáva chyby vyplývajúce z neočakávanej odpovede webovej služby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14512,7 +14562,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="webservices_serviceresponse"></a>webservices_serviceresponse
+### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
 Táto udalosť zaznamenáva požiadavky pre službu MAU, časy odozvy a chyby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14553,7 +14603,7 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
     
-### <a name="webservices_silentupdate"></a>webservices_silentupdate
+### <a name="webservicessilentupdate"></a>webservices.silentupdate
 
 Táto udalosť zaznamenáva požiadavky na kontrolu pravidiel použiteľnosti vynútenej aktualizácie, t. j. v dôsledku určitého závažného problému je potrebné, aby používateľ prešiel zo zostavy N na zostavu N+1. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14593,7 +14643,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="webservices_updatefiltering"></a>webservices_updatefiltering
+### <a name="webservicesupdatefiltering"></a>webservices.updatefiltering
 
 Táto udalosť označuje filtrovanie vykonané v zozname uplatniteľných aktualizácií prostredníctvom webových služieb. Túto udalosť používame na zabezpečenie správneho fungovania blokovania aplikácie v prípade, že je potrebné zablokovať aktualizáciu.
 
@@ -14633,7 +14683,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="webservices_webcontent"></a>webservices_webcontent
+### <a name="webserviceswebcontent"></a>webservices.webcontent
 
 Táto udalosť zaznamenáva požiadavky a odpovede prijaté do webových služieb. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
@@ -14673,7 +14723,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-### <a name="webservices_whatsnew"></a>webservices_whatsnew
+### <a name="webserviceswhatsnew"></a>webservices.whatsnew
 
 Táto udalosť sa spustí, keď sa služba Microsoft Auto Update (MAU) pýta webových služieb na funkciu „čo je nové“ pre registrované aplikácie. Udalosť sa používa na určenie stavu funkcie Čo je nové. 
 
@@ -15128,8 +15178,26 @@ Zhromažďujú sa tieto polia:
 
 - **PaywallOperationType** – druh operácie Paywall (enum/int – konečná hodnota)
 
+### <a name="officeandroiddocsuiviewspaywallsessiondata"></a>Office.Android.DocsUI.Views.PaywallSessionData
 
-### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
+Metaúdaje na základe relácie, keď sa používateľovi zobrazí používateľské rozhranie Paywall Spoločnosť Microsoft použije túto možnosť na získanie používateľskej cesty a informácií o používaní zariadení a verzií operačného systému, ktoré používateľ používa, aby mohla prijímať rozhodnutia o investíciách do zlepšovania používateľských skúseností v týchto oblastiach.
+
+Zhromažďujú sa tieto polia:
+
+- **App Version** – Kód verzie zaťažujúcej aplikácie
+
+- **ClientId** – Anonymný identifikátor jedinečného zariadenia bez osobných údajov (GUID/string)
+
+- **Entry Point** – Jedinečný identifikátor kontextových alebo konštantných vstupných bodov zo zaťažujúcej aplikácie
+
+- **isTablet** – To, či zariadenie zobrazuje používateľskú skúsenosť tabletu
+
+- **OSVersion** – Verzia zariadenia s operačným systémom Android
+
+- **SessionId** - Guid: jedinečný identifikátor relácie Paywall
+
+
+### <a name="officefirstrunappletelemetryoptin"></a>Office.FirstRun.Apple.TelemetryOptIn
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na sledovanie stavu postupu výslovného súhlasu s telemetriou pri prvom spustení. Zhromažďujeme kód, ktorý označuje, aký typ možností zhromažďovania diagnostických údajov používateľ vybral.
 
@@ -15143,7 +15211,7 @@ Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupn
 
 Zhromažďujú sa tieto polia:
 
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje Paywall. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
 
 - **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou poskytovania RFS.
 
@@ -15158,7 +15226,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje Paywall. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
 
 - **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou obchodu s aplikáciami
 
