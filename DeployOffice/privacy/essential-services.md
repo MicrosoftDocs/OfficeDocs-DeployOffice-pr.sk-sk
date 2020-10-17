@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 2449c56af99d40bcc1a4a3f85575984da6af3252
-ms.sourcegitcommit: a8c69c9c02320edec51c3bd7bb8dce28fa737e47
+ms.openlocfilehash: 94f248d64c74cd6575b4039178270f62b3715d15
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367473"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491557"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -293,6 +293,12 @@ Zhromažďujú sa tieto polia:
 
   - **Duration** – dĺžka trvania overovania
 
+  - **Duration_Max** – ak je tento signál agregovaný, maximálne trvanie akejkoľvek agregovanej udalosti.
+
+  - **Duration_Min** – ak je tento signál agregovaný, minimálne trvanie akejkoľvek agregovanej udalosti.
+
+  - **Duration_Sum** – ak je tento signál agregovaný, súčet trvaní všetkých agregovaných udalostí.
+
   - **Endtime** – čas skončenia udalosti overovania
 
   - **Error** – kód chyby, ak overovanie zlyhalo
@@ -407,11 +413,19 @@ Zhromažďujú sa tieto polia:
 
   - **Microsoft\_ADAL\_user\_cancel** – pravda/nepravda, či bolo okno používateľského rozhrania zrušené.
 
+  - **Microsoft_ADAL_was_request_throttled** – hodnota true/false označujúca, či táto udalosť bola obmedzená pomocou ADAL z dôvodu príliš veľkého počtu požiadaviek.
+ 
   - **Microsoft\_ADAL\_x\_ms\_request\_id** – identifikátor dodatočnej požiadavky poskytnutý službe v hlavičke HTTP knižnicou ADAL.
 
   - **Platform** – Win32/WinRT/Android/iOS/Mac
 
+  - **Promptreasoncorrelationid** – pre výzvy ide o ID korelácie inej udalosti, čo vysvetľuje, prečo sa používateľovi môže zobrazovať výzva na overenie.
+
+  - **Resource** – zdroj, pre ktorý používateľ požaduje token, napríklad Exchange alebo SharePoint.
+
   - **Scenarioid** – identifikátor GUID. Viacero udalostí môže patriť do jedného scenára, napríklad scenár môže pridať nové konto, no v rámci daného scenára sa vyskytuje viacero výziev. Tento identifikátor umožňuje výskyt korelácie.
+
+  - **Scenarioname** – názov scenára, ku ktorému patrí táto udalosť overenia.
 
   - **Sessionid** – identifikátor GUID identifikujúci reláciu spustenia
 

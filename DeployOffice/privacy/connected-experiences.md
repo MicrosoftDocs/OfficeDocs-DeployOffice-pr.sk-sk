@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom balíka Office informácie o online funkciách v Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: 3e44c9c20bed531f46390c91a41ce559cabc9e72
-ms.sourcegitcommit: 25a0925e7caf8fbb53e6757e8a65126eb2c9da65
+ms.openlocfilehash: ca3139f95f20392efce25bb00572c2973cec82db
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338197"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491593"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -40,6 +40,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 |Odporúčania pre graf (Excel pre web)|[Vytvorenie grafu s odporúčanými grafmi](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Doplnky pre poznámkový blok pre učebné predmety (OneNote)|[Začíname s onenotovým poznámkovým blokom pre učebné predmety: návod pre učiteľov](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Typy údajov| [Typy údajov Exceli: Akcie a Geografia](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
+|Návrhár (Word pre web)|[Vytváranie úhľadnejších dokumentov pomocou Návrhára](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
 | Diktovanie  | [Diktovanie dokumentov vo Worde](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 |Editor<sup>1</sup> |[Microsoft Editor kontroluje gramatiku a ďalšie možné chyby v dokumentoch, e-mailoch a na webe](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Návrhy     | [Návrhy v Exceli](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -62,6 +63,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | *Inteligentné vyhľadávanie*\*   | [Získajte prehľad o tom, na čom pracujete, s inteligentným vyhľadávaním](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Navrhované odpovede | [Čo sú navrhované odpovede?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Ťuknutie pre Word (pridanie zo súborov)   | [Vyhľadanie a použitie požadovaného obsahu v požadovanom čase bez nutnosti opustiť Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
+|Dokončovanie textu (funkcia Editora)|[Rýchlejšia písanie pomocou dokončovania textu vo Worde](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Prepis |[Prepis záznamov](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transformácia na webovú stránku   | [Skonvertovanie wordového dokumentu na webovú stránku Swaya](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Preklad textu do iného jazyka](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |

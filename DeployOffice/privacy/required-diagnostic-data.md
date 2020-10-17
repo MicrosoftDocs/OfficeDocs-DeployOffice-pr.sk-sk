@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: 5772f8b3c105f56833a34f12f7d0e212fc4d55c5
-ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
+ms.openlocfilehash: f200e22e639f2c89315c2f7fa2e9eab0367f86b1
+ms.sourcegitcommit: 1b12952b55f071b87026b49d372158209ed2e322
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47941007"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368652"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -115,37 +115,37 @@ Informácie o súhlase používateľov týkajúcom sa diagnostických údajov a
 
 Táto kategória obsahuje tieto polia:
 
-  - **UserCategory** – identifikuje typ používateľa, od ktorého pochádza súhlas. Môže to byť MSAUser, AADUser alebo LocalDeviceUser.
-
-  - **DiagnosticConsentLevel** – označuje úroveň súhlasu ohľadom diagnostických údajov, ktorý používateľ udelil.
-
-  - **DiagnosticConsentSourceLocation** – označuje, ako používateľ poskytol súhlas s diagnostickými údajmi.
-
-  - **DiagnosticConsentConsentTime** – označuje, kedy používateľ poskytol súhlas s diagnostickými údajmi. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
-
-  - **ServiceConnectionState** – označuje, či sa používateľ rozhodol použiť alebo nepoužiť všetky online funkcie.
-
-  - **ServiceConnectionStateSourceLocation** – označuje, ako sa používateľ rozhodol, či použiť všetky online funkcie.
-
-  - **ServiceConnectionStateConsentTime** – označuje, kedy sa používateľ rozhodol, či použiť všetky online funkcie. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
+  - **ControllerConnectedServicesSourceLocation** – označuje, ako používateľ uskutočnil výber voliteľných online funkcií.
 
   - **ControllerConnectedServicesState** – označuje, či má používateľ prístup k voliteľným online funkciám.
 
-  - **ControllerConnectedServicesStateSourceLocation** – označuje, ako používateľ uskutočnil výber voliteľných online funkcií.
-
   - **ControllerConnectedServicesStateConsentTime** – označuje, kedy používateľ zvolil stav voliteľných online funkcií. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
 
-  - **UserContentDependentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť online funkcie na analýzu obsahu.
+  - **DiagnosticConsentConsentTime** – označuje, kedy používateľ poskytol súhlas s diagnostickými údajmi. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
 
-  - **UserContentDependentStateSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah.
+  - **DiagnosticConsentLevel** – označuje úroveň súhlasu ohľadom diagnostických údajov, ktorý používateľ udelil.
 
-  - **UserContentDependentStateConsentTime** – označuje, kedy sa používateľ rozhodol zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
+  - **DiagnosticConsentLevelSourceLocation** – označuje, ako používateľ poskytol súhlas s diagnostickými údajmi.
+
+  - **DownloadContentSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
 
   - **DownloadContentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
 
-  - **DownloadContentStateSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah.
-
   - **DownloadContentStateConsentTime** – označuje, kedy používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré sťahujú online obsah. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
+
+  - **ServiceConnectionState** – označuje, či sa používateľ rozhodol použiť alebo nepoužiť všetky online funkcie.
+
+  - **ServiceConnectionStateConsentTime** – označuje, kedy sa používateľ rozhodol, či použiť všetky online funkcie. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
+
+  - **ServiceConnectionStateSourceLocation** – označuje, ako sa používateľ rozhodol, či použiť všetky online funkcie.
+
+  - **UserCategoryValue** – identifikuje typ používateľa, od ktorého pochádza súhlas. Môže to byť MSAUser, AADUser alebo LocalDeviceUser.
+
+  - **UserContentDependentSourceLocation** – označuje, ako používateľ uskutočnil rozhodnutie zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah.
+
+  - **UserContentDependentState** – označuje, či sa používateľ rozhodol zapnúť alebo vypnúť online funkcie na analýzu obsahu.
+
+  - **UserContentDependentStateConsentTime** – označuje, kedy sa používateľ rozhodol zapnúť alebo vypnúť online funkcie, ktoré analyzujú obsah. Dátum sa zobrazí buď ako dátum čitateľný človekom, alebo ako strojovo kódovaný dátum, ktorý vyzerá ako veľké číslo.
 
 #### <a name="device"></a>Zariadenie 
 
@@ -199,7 +199,15 @@ Táto kategória obsahuje tieto polia:
 
   - **MeasuresEnabled** – príznak, ktorý označuje, či sú údaje aktuálnych relácií vzorkované alebo nie. Umožňuje určiť, ako sa štatisticky vyhodnotia údaje, ktoré zhromažďujú z danej relácie.
 
-  - **SamplingClientId** – ID klienta na určenie, či je súčasťou vzorkovania. Umožňuje určiť, prečo jednotlivé relácie boli alebo neboli súčasťou vzorkovania.
+  - **SamplingClientIdValue** – ID klienta na určenie, či je súčasťou vzorkovania. Umožňuje určiť, prečo jednotlivé relácie boli alebo neboli súčasťou vzorkovania.
+  
+ - **SubAppName** – pre aplikáciu Office Mobile toto pole predstavuje základnú aplikáciu, ktorá sa používa na otvorenie dokumentu. Ak napríklad otvárate wordový dokument v aplikácii Office, v tomto poli sa bude nachádzať hodnota „Word“.
+
+ - **VirtualizationType** – typ virtualizácie, ak je Office spustený v niektorej z nich. Možné hodnoty sú: 
+    - 0 = Žiadne
+    - 1 = Windows Virtual Desktop
+    - 2 = Windows Defender Application Guard
+    - 3 = Windows Core OS
 
 #### <a name="user"></a>Používateľ
 
@@ -407,25 +415,25 @@ Táto kategória obsahuje tieto polia:
 
   - **DisableTelemetry** – príznak, ktorý označuje či je nastavený kľúč DisableTelemetry. Umožňuje zistiť, či relácia nehlásila diagnostické údaje iné ako EssentialServiceMetadata.
 
-  - **SamplingKey** – kľúč používaný na určenie, či relácia je alebo nie je vzorkovaná. Umožňuje pochopiť, ako pri jednotlivých reláciách prebieha voľba toho, či budú alebo nebudú vzorkované.
-
-  - **SamplingMethod** – metóda použitá na určenie politiky vzorkovania. Umožňuje pochopiť, aké údaje pochádzajú z relácie.
-
-  - **Sequence** – jedinečný číselný identifikátor relácie. Umožňuje vytvoriť poradie relácií na analýzu problémov, ktoré sa mohli vyskytnúť.
-
-  - **Start** – čas spustenia relácie procesu. Umožňuje stanoviť, kedy relácia začala.
-
-  - **TimeZoneBiasInMinutes** -rozdiel v minútach medzi časom UTC a miestnym časom. Umožňuje normalizáciu času UTC späť na miestny čas.
-
   - **SamplingClientIdValue** – hodnota kľúča použitého na určenie vzorkovania. Umožňuje určiť, prečo relácia bola alebo nebola vzorkovaná.
 
   - **SamplingDeviceIdValue** – hodnota kľúča použitého na určenie vzorkovania. Umožňuje určiť, prečo relácia bola alebo nebola vzorkovaná.
+
+  - **SamplingKey** – kľúč používaný na určenie, či relácia je alebo nie je vzorkovaná. Umožňuje pochopiť, ako pri jednotlivých reláciách prebieha voľba toho, či budú alebo nebudú vzorkované.
+
+  - **SamplingMethod** – metóda použitá na určenie politiky vzorkovania. Umožňuje pochopiť, aké údaje pochádzajú z relácie.
 
   - **SamplingSessionKValue** – rozšírené metaúdaje vzorkovania. Pomáhajú vyhodnotiť štatistický význam prijatých údajov.
 
   - **SamplingSessionNValue** – rozšírené metaúdaje vzorkovania. Pomáhajú vyhodnotiť štatistický význam prijatých údajov.
 
+  - **Sequence** – jedinečný číselný identifikátor relácie. Umožňuje vytvoriť poradie relácií na analýzu problémov, ktoré sa mohli vyskytnúť.
+
+  - **Start** – čas spustenia relácie procesu. Umožňuje stanoviť, kedy relácia začala.
+
   - **TelemetryPermissionLevel** – hodnota označujúca úroveň diagnostických údajov, s ktorými používateľ explicitne súhlasil. Umožňuje pochopiť, akú úroveň diagnostických údajov môžete od relácie očakávať.
+
+  - **TimeZoneBiasInMinutes** -rozdiel v minútach medzi časom UTC a miestnym časom. Umožňuje normalizáciu času UTC späť na miestny čas.
 
 ## <a name="data-fields-that-are-common-for-onenote-events"></a>Údajové polia, ktoré sú spoločné pre udalosti OneNotu
 
@@ -662,7 +670,7 @@ Toto sú podtypy údajov v tejto kategórii:
 
 Nainštalovaný produkt a verzia a stav inštalácie.
 
-#### <a name="add_sso_account"></a>add_sso_account
+#### <a name="addssoaccount"></a>add.sso.account
 
 Týmto sa spoločnosť Microsoft upozorní na úspech alebo zlyhanie pridania konta prostredníctvom jediného prihlásenia (SSO).
 
@@ -1267,7 +1275,7 @@ Zhromažďujú sa tieto polia:
 
 Chybové stavy dokumentu, funkcie a doplnku, ktoré môže ohroziť zabezpečenie, vrátane pripravenosti na aktualizáciu produktu.
 
-#### <a name="office_appguard_createcontainer"></a>Office_AppGuard_CreateContainer
+#### <a name="officeappguardcreatecontainer"></a>Office.AppGuard.CreateContainer
 
 Zhromažďujeme kódy chýb a informácie o tom, či kontajner už existoval alebo nie. Tiež zhromažďujeme kódy chýb pre udalosť resetovania pre prípad, že sa nám nepodarí vytvoriť kontajner na prvý pokus. Údaje sa použijú na určenie percentuálneho podielu relácií, v ktorých úspešne vytvoríme kontajner na spustenie aplikácií Office Application Guard. Údaje tiež umožnia spoločnosti Microsoft identifikovať a riešiť kódy chýb z vytvorenia kontajnera.
 
@@ -1293,7 +1301,7 @@ Zhromažďujú sa tieto polia:
 
 - **WarmBoot** – určuje, či kontajner už bol vytvorený alebo nie.
 
-#### <a name="office_appguard_launchfile"></a>Office_AppGuard_LaunchFile
+#### <a name="officeappguardlaunchfile"></a>Office.AppGuard.LaunchFile
 
 Táto udalosť označuje výsledok spustenia súboru spustenia služby Application Guard. Budeme môcť určiť percentuálny podiel relácií, v ktorých sme úspešne spustili wordový, excelový alebo powerpointový súbor a kódy chýb pre neúspešné pokusy.
 
@@ -1502,7 +1510,7 @@ Toto sú podtypy údajov v tejto kategórii:
 
 Úspešnosť fungovania aplikácie. Obmedzené na otvorenie a zatvorenie aplikácie a dokumentov, úpravu súborov a zdieľanie súborov (spoluprácu).
 
-#### <a name="account_action"></a>account_action
+#### <a name="accountaction"></a>account.action
 
 Potrebné na zabezpečenie správneho fungovania konfigurácie konta a používa sa na monitorovanie stavu vytvárania konta, možnosti pridávania nových e-mailových kont a monitorovania mäkkých resetov kont 
 
@@ -1538,7 +1546,7 @@ Zhromažďujú sa tieto polia:
  
 - **total_file_accounts** – počet kont súborov v aplikácii v čase akcie
 
-#### <a name="account_lifecycle"></a>account_lifecycle
+#### <a name="accountlifecycle"></a>account.lifecycle
 
 Táto udalosť sa zhromažďuje na zabezpečenie správneho fungovania konfigurácie konta a používa sa na monitorovanie stavu vytvárania konta, možnosti pridávania nových e-mailových kont a monitorovania mäkkých resetov kont.
 
@@ -1546,7 +1554,7 @@ Zhromažďujú sa tieto polia:
 
 - **action** – typ akcie vykonanej na konte, napríklad pridanie, odstránenie alebo resetovanie
 
-#### <a name="add_new_account_step"></a>add_new_account_step
+#### <a name="addnewaccountstep"></a>add.new.account.step
 
 Táto udalosť nám umožňuje zistiť, ako ďaleko sa používateľ dostal vo formulári vytvorenia nového konta.  Označuje, keď používateľ prešiel do ďalšieho kroku, alebo či zrušil.  Tieto informácie potrebujeme na určenie, či niektoré kroky zlyhávajú, a na zaručenie, že vytvorenie používateľského konta bolo úspešné. 
 
@@ -1554,7 +1562,7 @@ Zhromažďuje sa toto pole:
 
 - **OTAddAccountCurrentStep** – môže mať tieto hodnoty: profile_form, redirect_mobile_check, mobile_check_success
 
-#### <a name="app_error"></a>app_error
+#### <a name="apperror"></a>app.error
 
 Sleduje použité kritické chyby aplikácie, aby sme mohli zabrániť problémom, ktoré by mohli spôsobiť zlyhanie aplikácie alebo zabránenie čítaniu e-mailov.
 
@@ -1600,7 +1608,7 @@ Zhromažďujú sa tieto polia:
 
 Možné vlastnosti sú aj všetky znaky. Pomáha pochopiť znaky v texte hlásenia konceptu, keď sa vyskytla chyba. Možné vlastnosti sú napríklad „a“, „b“ alebo „c“.
 
-#### <a name="app_launch_report"></a>app_launch_report
+#### <a name="applaunchreport"></a>app.launch.report
 
 Táto udalosť nám umožňuje zistiť a vyriešiť problémy spôsobujúce pomalé alebo neúplné spúšťanie Outlooku, čo používateľom sťažuje používanie aplikácie. Patria sem informácie o konkrétnych povolených funkciách a o dĺžke trvania spustenia konkrétnych častí.
 
@@ -1636,7 +1644,7 @@ Zhromažďujú sa tieto polia:
 
 - **num_calendar_accounts** – uvádza počet poštových kont v aplikácii.
 
-#### <a name="calendar_action"></a>calendar_action
+#### <a name="calendaraction"></a>calendar.action
 
 Používa sa na sledovanie akéhokoľvek možného nepriaznivého vplyvu na schopnosť vykonávať základné akcie kalendára, ako je vytváranie alebo úprava udalostí.  Udalosť tiež môže obsahovať rad názvov vlastností a to, či sa zmenili, alebo nie. Napríklad „title_changed“, „online_meeting_changed“ a „description_changed“ sú názvy zahrnutých vlastností, vďaka ktorým dokážeme zistiť, či sa vyskytli nejaké problémy s úpravou určitých vlastností.
 
@@ -1714,7 +1722,7 @@ Zhromažďujú sa tieto polia:
 
 - **value** – podrobnosti špecifické pre konkrétnu akciu ako napríklad dĺžka oneskorenia upozornenia alebo kategória opakovať do. Pomáha pochopiť kontext, v ktorom bola akcia vykonaná. 
 
-#### <a name="combined_search_use"></a>combined_search_use
+#### <a name="combinedsearchuse"></a>combined.search.use
 
 Používa sa na sledovanie možného nepriaznivého vplyvu na schopnosť vykonávať kľúčové funkcie vyhľadávania ako napríklad vyhľadávanie pošty, kontaktov alebo udalostí.
 
@@ -1723,6 +1731,8 @@ Zhromažďujú sa tieto polia v systémoch iOS a Android:
 - **account_switcher_action_type** – tento typ akcia zaznamená, či používateľ použije prepínač kont v jednoduchom zisťovaní alebo či sa rozhodne prepnúť konto.
 
 - **action_type** – typ akcie, ktorá bola vykonaná na vyhľadávanie. Identifikuje, či sa vyhľadávanie začalo, prebieha alebo skončilo a aké akcie sa počas neho uskutočnili, napr. či bol použitý mikrofón. Pomáha s poskytovaním správnych a užitočných vyhľadávaní. 
+
+- **conversation_id** – Jedinečný identifikátor pre každú reláciu vyhľadávania (t. j. vždy, keď používateľ prejde do vyhľadávacieho poľa)
 
 - **entrance_type** – určuje, ako používateľ spustil vyhľadávací dotaz – na karte Hľadať, v dotazoch s nulovými výsledkami, v nadpise vyhľadávania alebo vo výsledkoch vyhľadávania. 
 
@@ -1764,6 +1774,8 @@ Zhromažďujú sa tieto polia v aplikáciách systému iOS Outlooku Mobile:
 
 - **conversation_result_selected_count** – sleduje, koľko bolo vybraných konverzácií počas kombinovanej relácie vyhľadávania
 
+- **mail_paging_gesture_count** – sleduje počet gest stránovania vyhľadávania v pošte sa vykonalo v rámci kombinovanej relácie vyhľadávania
+
 - **mail_requests_count** – sleduje počet žiadostí o vyhľadávanie v pošte odoslaných v rámci kombinovanej relácie vyhľadávania
 
 - **people_filter_selected_contacts_count** – sleduje počet vybratých kontaktov vo filtri ľudí
@@ -1786,7 +1798,7 @@ Zhromažďujú sa tieto polia v aplikáciách systému iOS Outlooku Mobile:
 
 - **ui_reload_status_time** – zaznamenáva celkový čas strávený opätovným načítaním používateľského rozhrania z dôvodu aktualizácie stavu (počas príslušného dotazu)
 
-#### <a name="compose_mail_accessory"></a>compose_mail_accessory
+#### <a name="composemailaccessory"></a>compose.mail.accessory
 
 Táto akcia umožňuje zistiť a vyriešiť problémy s kľúčovými akciami písania pošty, aby sa nevyskytol problém s priložením súboru, odfotením fotografie ako prílohy alebo odoslaním vašej dostupnosti.
 
@@ -1801,7 +1813,7 @@ Zhromažďujú sa tieto polia:
 - **toolbar_type** – označuje typ panela s nástrojmi, ktorý sa nachádza na stránke písania. Možné hodnoty sú compose_actions a formatting.
 
 
-#### <a name="conversation_view_action"></a>conversation_view_action
+#### <a name="conversationviewaction"></a>conversation.view.action
 
 Slúži na sledovanie možného nepriaznivého vplyvu na schopnosť zobraziť e-mailové správy a odpovedať na ne
 
@@ -1823,7 +1835,7 @@ Zhromažďujú sa tieto polia:
 
 - **use_default_quick_reply_mode** – uvádza, či bol použitý predvolený režim rýchlej odpovede, aby sme mohli zistiť problémy s rýchlou odpoveďou na e-mail
 
-#### <a name="draft_action"></a>draft_action
+#### <a name="draftaction"></a>draft.action
 
 Slúži na sledovanie možného nepriaznivého vplyvu na schopnosť vytvárať a ukladať e-mailové koncepty.
 
@@ -1849,7 +1861,7 @@ Zhromažďujú sa tieto polia:
  
 - **thread_id** – ID vlákna konverzácie, ku ktorému je koncept priradený
 
-#### <a name="drag_and_drop"></a>drag_and_drop
+#### <a name="draganddrop"></a>drag.and.drop
 
 Táto udalosť nám umožňuje zistiť, či akcia presunutia myšou bola úspešná alebo nie.  Používa sa na zabezpečenie správneho fungovania presúvania myšou medzi aplikáciami, a to ako pri pustení myši v Outlooku, ako aj pri ťahaní z Outlooku.  Vďaka týmto údajom dokážeme zabezpečiť, že komplexná spolupráca s inými aplikáciami funguje podľa očakávaní.
 
@@ -1861,7 +1873,7 @@ Zhromažďujú sa tieto polia:
 
 - **source** – v prípade akcie presunutia myšou budeme vedieť, odkiaľ používateľ začal presúvať. Pomôže nám to zistiť problémy s presunom z konkrétneho zdroja, ako je napríklad OneDrive alebo súbory, do určitého umiestnenia, napríklad do nového e-mailu.
 
-#### <a name="drawer_event"></a>drawer_event
+#### <a name="drawerevent"></a>drawer.event
 
 Slúži na sledovanie možného nepriaznivého vplyvu na možnosť prístupu do priečinkov v doručenej pošte
 
@@ -2378,7 +2390,7 @@ Zhromažďujú sa tieto polia:
 - **RMS.StatusCode** – ID scenára definované rozhraním API
 
 
-#### <a name="link_clicked_action"></a>link_clicked_action
+#### <a name="linkclickedaction"></a>link.clicked.action
 
 Udalosť sa používa na sledovanie úspešnosti používateľov pri zobrazovaní URL adresy vo webovom zobrazení Edge a dokončovaní štandardných webových scenárov v tomto webovom zobrazení bez chýb
 
@@ -2411,7 +2423,7 @@ Zhromažďujú sa tieto polia:
 - **txp_component** – ak bolo webové zobrazenie Edge spustené z karty TXP, uvádza typ komponentu používateľského rozhrania pre túto kartu
 
 
-#### <a name="mail_action"></a>mail_action
+#### <a name="mailaction"></a>mail.action
 
 Slúži na sledovanie možného nepriaznivého vplyvu na schopnosť vykonávať dôležité akcie pošty (napríklad spustenie režimu rozdelenia pošty do vlákien) na zaistenie správneho fungovania aplikácie pre poštu.
 
@@ -2501,7 +2513,7 @@ Zhromažďujú sa tieto polia:
 
 - **type** – typ dokumentu, ktorý sa otvára cez prepojenie
 
-#### <a name="mail_compose"></a>mail_compose
+#### <a name="mailcompose"></a>mail.compose
 
 Slúži na sledovanie možného nepriaznivého vplyvu na schopnosť vytvárať e-maily a odpovedať na ne, ako je napríklad problém s odpovedaním všetkým, formátovaním e-mailov alebo odosielaním e-mailov.
 
@@ -2525,7 +2537,7 @@ Zhromažďujú sa tieto polia:
 
 - **thread_id** – ID vlákna konverzácie, na ktorú sa vytvára odpoveď alebo ktorá sa preposiela, aby sme mohli zistiť problémy s konkrétnym vláknom
 
-#### <a name="meeting_call_to_action"></a>meeting_call_to_action
+#### <a name="meetingcalltoaction"></a>meeting.call.to.action
 
 Používa sa na sledovanie možného nepriaznivého vplyvu na schopnosť vykonávať dôležité akcie schôdze, ako je vytváranie, úprava a odpovedanie na schôdze.
 
@@ -2553,7 +2565,7 @@ Zhromažďujú sa tieto polia:
 
 - **with_message_enabled** – označuje, či používateľ môže odpovedať na správu, aby sme mohli zistiť problémy s odpovedaním na pozvánky na schôdzu
 
-#### <a name="office_android_docsui_fileoperations_opendocumentmeasurements"></a>Office_Android_DocsUI_FileOperations_OpenDocumentMeasurements
+#### <a name="officeandroiddocsuifileoperationsopendocumentmeasurements"></a>Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android, a zaznamená, keď sa vykoná operácia otvorenia súboru. Udalosť pomôže pri zachovaní bezpečnosti, aktuálnosti a správneho výkonu operácie otvorenia súboru. Účelom zhromažďovania týchto údajov je neustále zlepšovanie výkonu otvárania súboru. 
 
@@ -2663,7 +2675,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
 
-#### <a name="office_android_earlytelemetry_expansionfilesavailability"></a>Office_Android_EarlyTelemetry_ExpansionFilesAvailability
+#### <a name="officeandroidearlytelemetryexpansionfilesavailability"></a>Office.Android.EarlyTelemetry.ExpansionFilesAvailability
 
 Povoľujeme rozširujúce súbory súpravy Android Package Kit (APK) pre mobilnú aplikáciu Office. Rozširujúce súbory APK sú doplnkové zdrojové súbory, ktoré môžu vývojári aplikácií pre Android publikovať spolu so svojou aplikáciou. Na porozumenie spoľahlivosti rozširujúcich súborov zaznamenávame príznak označujúci, či sú rozširujúce súbory k dispozícii pri každom spustení alebo nie.
 
@@ -2671,7 +2683,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ExpansionFilesAvailable** – Boolovský príznak, ktorý označuje, či rozširujúce súbory APK sú k dispozícii v zariadení v čase spúšťania aplikácie.
 
-#### <a name="office_android_earlytelemetry_expansionfilesdownloader"></a>Office_Android_EarlyTelemetry_ExpansionFilesDownloader
+#### <a name="officeandroidearlytelemetryexpansionfilesdownloader"></a>Office.Android.EarlyTelemetry.ExpansionFilesDownloader
 
 Povoľujeme rozširujúce súbory súpravy Android Package Kit (APK) pre mobilnú aplikáciu Office. Rozširujúce súbory APK sú doplnkové zdrojové súbory, ktoré môžu vývojári aplikácií pre Android publikovať spolu so svojou aplikáciou.  Na porozumenie spoľahlivosti mechanizmu sťahovania rozširujúcich súborov zaznamenávame príznak označujúci, či rozširujúce súbory dokážeme úspešne stiahnuť.
 
@@ -2680,15 +2692,15 @@ Zhromažďujú sa tieto polia:
 - **Data_DownloadSuccess** – Boolovský príznak, ktorý označuje, či stiahnutie rozširujúcich súborov APK bolo úspešné, vždy, keď sa pokúsime o stiahnutie počas spúšťania aplikácie.
 
 
-#### <a name="office_android_intune_intunecompliancerequest"></a>Office_Android_Intune_IntuneComplianceRequest
+#### <a name="officeandroidintuneintunecompliancerequest"></a>Office.Android.Intune.IntuneComplianceRequest
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android vrátane mobilného balíka Office, Wordu, Excelu, PowerPointu a OneNotu. Udalosť označuje pokus o prihlásenie do konta organizácie s licenciou Intune, v ktorom správca organizácie nakonfiguroval politiku vynútenia podmieneného prístupu k aplikácii. Používa sa na zistenie počtu koncových používateľov, ktorí sa pokúšajú používať aplikácie s touto konfiguráciou politiky, a v kombinácii s inou udalosťou Office_Android_Intune_IntuneComplianceStatus na zaistenie vynútenia nakonfigurovanej politiky. 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android vrátane mobilného balíka Office, Wordu, Excelu, PowerPointu a OneNotu. Udalosť označuje pokus o prihlásenie do konta organizácie s licenciou Intune, v ktorom správca organizácie nakonfiguroval politiku vynútenia podmieneného prístupu k aplikácii. Používa sa na zistenie počtu koncových používateľov, ktorí sa pokúšajú používať aplikácie s touto konfiguráciou politiky, a v kombinácii s inou udalosťou Office.Android.Intune.IntuneComplianceStatus na zaistenie vynútenia nakonfigurovanej politiky. 
 
 Nezhromažďujú sa žiadne údajové polia.
 
-#### <a name="office_android_intune_intunecompliancestatus"></a>Office_Android_Intune_IntuneComplianceStatus
+#### <a name="officeandroidintuneintunecompliancestatus"></a>Office.Android.Intune.IntuneComplianceStatus
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android vrátane mobilného balíka Office, Wordu, Excelu, PowerPointu a OneNotu. Udalosť označuje pokus o prihlásenie do konta organizácie s licenciou Intune, v ktorom správca organizácie nakonfiguroval politiku vynútenia podmieneného prístupu k aplikácii. Táto udalosť označuje dodržiavanie súladu v aplikácii, v ktorej je používateľ prihlásený, a používa sa na skúmanie zlyhaní. Je skombinovaná s inou udalosťou Office_Android_Intune_IntuneComplianceRequest na zaistenie vynútenia nakonfigurovanej politiky.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android vrátane mobilného balíka Office, Wordu, Excelu, PowerPointu a OneNotu. Udalosť označuje pokus o prihlásenie do konta organizácie s licenciou Intune, v ktorom správca organizácie nakonfiguroval politiku vynútenia podmieneného prístupu k aplikácii. Táto udalosť označuje dodržiavanie súladu v aplikácii, v ktorej je používateľ prihlásený, a používa sa na skúmanie zlyhaní. Je skombinovaná s inou udalosťou Office.Android.Intune.IntuneComplianceRequest na zaistenie vynútenia nakonfigurovanej politiky.
   
 Zhromažďujú sa tieto polia:
 
@@ -2801,7 +2813,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data.CollectionTime** – časová pečiatka toho, kedy sa zaznamenala udalosť zlyhania.
 
-#### <a name="office_appdocs_appdocs_documentoperation"></a>Office_AppDocs_AppDocs_DocumentOperation
+#### <a name="officeappdocsappdocsdocumentoperation"></a>Office.AppDocs.AppDocs.DocumentOperation
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia súboru z URL adresy (vytvorenie/otvorenie/uloženie/export/atď.), a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách súborov.
 
@@ -2919,7 +2931,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
 
-#### <a name="office_docs_appdocs_operationopenfrommrubypath"></a>Office_Docs_AppDocs_OperationOpenFromMruByPath
+#### <a name="officedocsappdocsoperationopenfrommrubypath"></a>Office.Docs.AppDocs.OperationOpenFromMruByPath
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamenáva, keď sa vykoná operácia otvorenia súboru z cesty v zozname naposledy použitých súborov a používa sa na pochopenie a stanovenie priorít chýb používateľských skúseností na základe informácií o operáciách otvorenia súborov.
 
@@ -3031,7 +3043,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
 
-#### <a name="office_docs_appdocs_operationopenfrommrubyurl"></a>Office_Docs_AppDocs_OperationOpenFromMruByUrl
+#### <a name="officedocsappdocsoperationopenfrommrubyurl"></a>Office.Docs.AppDocs.OperationOpenFromMruByUrl
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamenáva, keď sa vykoná operácia otvorenia súboru z URL adresy v zozname naposledy použitých súborov a používa sa na pochopenie a stanovenie priorít používateľských skúseností na základe informácií o operáciách otvorenia súborov. 
 
@@ -3144,7 +3156,7 @@ Zhromažďujú sa tieto polia:
 - **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
 
 
-#### <a name="office_docs_appdocs_operationopenfrompath"></a>Office_Docs_AppDocs_OperationOpenFromPath
+#### <a name="officedocsappdocsoperationopenfrompath"></a>Office.Docs.AppDocs.OperationOpenFromPath
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru z cesty a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
 
@@ -3256,7 +3268,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
 
-#### <a name="office_docs_appdocs_operationopenfromprotocolhandler"></a>Office_Docs_AppDocs_OperationOpenFromProtocolHandler
+#### <a name="officedocsappdocsoperationopenfromprotocolhandler"></a>Office.Docs.AppDocs.OperationOpenFromProtocolHandler
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru z inej aplikácie pomocou rozhrania popisovača protokolu a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
 
@@ -3368,7 +3380,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
 
-#### <a name="office_docs_appdocs_operationopenfromshell"></a>Office_Docs_AppDocs_OperationOpenFromShell
+#### <a name="officedocsappdocsoperationopenfromshell"></a>Office.Docs.AppDocs.OperationOpenFromShell
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru z prostredia (shell) a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
 
@@ -3481,7 +3493,7 @@ Zhromažďujú sa tieto polia:
 - **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
 
 
-#### <a name="office_docs_appdocs_operationopenfromurl"></a>Office_Docs_AppDocs_OperationOpenFromUrl
+#### <a name="officedocsappdocsoperationopenfromurl"></a>Office.Docs.AppDocs.OperationOpenFromUrl
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v platformách Android, iOS, Universal alebo Windows. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru z URL adresy a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
 
@@ -3594,17 +3606,17 @@ Zhromažďujú sa tieto polia:
 - **Data_UnpackLinkPromptResult** – enumerácia predstavujúca odpoveď na výzvu na prepojenie rozbalenia.
 
 
-#### <a name="office_apple_activateperpetual"></a>Office_Apple_ActivatePerpetual
+#### <a name="officeappleactivateperpetual"></a>Office.Apple.ActivatePerpetual
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie trvalej licencie a skúmanie príčin zlyhaní prostredníctvom revízie hodnôt FailedAt.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie trvalej licencie a skúmanie príčin zlyhaní prostredníctvom revízie hodnôt FailedAt.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_FailedAt** – zhromažďujeme reťazec označujúci, kde v postupe aktivovania trvalej licencie došlo k chybe.
 
-#### <a name="office_apple_activatesubscription"></a>Office_Apple_ActivateSubscription
+#### <a name="officeappleactivatesubscription"></a>Office.Apple.ActivateSubscription
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie súvisiace s migráciou zo zásobníka starších kódov licencií s kódmi licencií vNext. Táto funkcia sa používa na monitorovanie stavu postupu aktivácie predplatného, ako aj na sledovanie, ak ide o migráciu na licencie vNext a ak sa použila primárna identita.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie súvisiace s migráciou zo zásobníka starších kódov licencií s kódmi licencií vNext. Táto funkcia sa používa na monitorovanie stavu postupu aktivácie predplatného, ako aj na sledovanie, ak ide o migráciu na licencie vNext a ak sa použila primárna identita.
 
 Zhromažďujú sa tieto polia:
 
@@ -3612,7 +3624,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_NULSubscriptionLicensed** – Hodnota true alebo false, ktorá označuje stav predplatného.
 
-#### <a name="office_apple_cisauthticketwithidentity"></a>Office_Apple_CISAuthTicketWithIdentity
+#### <a name="officeapplecisauthticketwithidentity"></a>Office.Apple.CISAuthTicketWithIdentity
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zachytávanie zlyhaní generovania tokenov overovania počas nákupu v aplikácii v Macu (udalosť zaznamenáva prijatý kód chyby).  Táto udalosť sa používa na zisťovanie a pomoc pri riešení problémov so zlyhaniami generovania tokenov overovania
 
@@ -3624,17 +3636,17 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ValidIdentity** – či má klient platnú identitu
 
-#### <a name="office_apple_inappassociationactivity"></a>Office_Apple_InAppAssociationActivity
+#### <a name="officeappleinappassociationactivity"></a>Office.Apple.InAppAssociationActivity
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie súvisiace s priradením produktu po zakúpení v rámci aplikácie. Zaznamenáme, ktorú jednotku SKU predplatného priraďujeme.  Používa sa to na monitorovanie stavu priradení produktov zakúpených v rámci aplikácie.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie súvisiace s priradením produktu po zakúpení v rámci aplikácie. Zaznamenáme, ktorú jednotku SKU predplatného priraďujeme.  Používa sa to na monitorovanie stavu priradení produktov zakúpených v rámci aplikácie.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_ProductID** – Jednotka SKU predplatného, ku ktorej sa snažíme priradiť produkt.
 
-#### <a name="office_apple_inapppurchaseactivity"></a>Office_Apple_InAppPurchaseActivity
+#### <a name="officeappleinapppurchaseactivity"></a>Office.Apple.InAppPurchaseActivity
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. 
 
 Zhromažďujeme informácie súvisiace s nákupmi produktov v AppStore. Sledujeme výsledok nákupu (neúspešný, úspešný, problému s platbou atď.), typ žiadosti o nákup (obnovenie, nákup) a nakupovanú jednotku SKU/produkt (Microsoft 365 Family atď.).  Tieto údaje sa používajú na monitorovanie stavu postupov nákupu v rámci aplikácie.
 
@@ -3646,17 +3658,17 @@ Zhromažďujú sa tieto polia:
 
 - **Data_PurchaseRequestType** – Typ žiadosti o nákup.
 
-#### <a name="office_apple_intune"></a>Office_Apple_InTune
+#### <a name="officeappleintune"></a>Office.Apple.InTune
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie o tom, či je aktuálna relácia spravovaná službou Intune. Táto možnosť sa používa na kontingenčné ovládanie/filtrovanie relácií spravovaných službou Intune a umožňuje nám skúmať potenciálne problémy súvisiace s balíkom Office pri spustení aplikácie spravovanej službou Intune.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie o tom, či je aktuálna relácia spravovaná službou Intune. Táto možnosť sa používa na kontingenčné ovládanie/filtrovanie relácií spravovaných službou Intune a umožňuje nám skúmať potenciálne problémy súvisiace s balíkom Office pri spustení aplikácie spravovanej službou Intune.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_EventID** – Zhromažďujeme reťazec predstavujúci kód, ktorý určuje, či je relácia spravovaná službou Intune.
 
-#### <a name="office_apple_licensing_mac_licensingstate"></a>Office_Apple_Licensing_Mac_LicensingState
+#### <a name="officeapplelicensingmaclicensingstate"></a>Office.Apple.Licensing.Mac.LicensingState
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zachytáva aktuálny stav licencie na reláciu v zariadení (ID licencie OLS, použité jednotky SKU, s dobou odkladu alebo bez nej, RFM atď.). Zhromaždené údaje sa používajú na zisťovanie chýb a skúmanie príčin zlyhaní. 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zachytáva aktuálny stav licencie na reláciu v zariadení (ID licencie OLS, použité jednotky SKU, s dobou odkladu alebo bez nej, RFM atď.). Zhromaždené údaje sa používajú na zisťovanie chýb a skúmanie príčin zlyhaní. 
 
 Zhromažďujú sa tieto polia:
 
@@ -3706,7 +3718,7 @@ Zhromažďujú sa tieto polia:
 
 - **Activity_DateTimeTicks** – dátum a čas aktivity
 
-#### <a name="office_docs_apple_docsuxiossaveasthroughfilemenu"></a>Office_Docs_Apple_DocsUXiOSSaveAsThroughFileMenu 
+#### <a name="officedocsappledocsuxiossaveasthroughfilemenu"></a>Office.Docs.Apple.DocsUXiOSSaveAsThroughFileMenu 
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vykoná operácia „Uložiť ako“, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách súborov, ako sú napríklad kategórie umiestnenia.  Operácia „Uložiť ako“ sa vyskytne vždy, keď používateľ vytvorí nový súbor a uloží ho prvýkrát alebo uloží kópiu existujúceho súboru do nového umiestnenia.
 
@@ -3716,7 +3728,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ServiceType** – Abstraktná kategorizácia nového umiestnenia súboru po dokončení uloženia, ako je napríklad „SharePoint“, „OneDrive“, „Lokálne“, „WOPI“ atď., a výslovne nie skutočného umiestnenia súboru.
 
-#### <a name="office_docs_apple_docsuxmacatmentioninsertedatmention"></a>Office_Docs_Apple_DocsUXMacAtMentionInsertedAtMention 
+#### <a name="officedocsappledocsuxmacatmentioninsertedatmention"></a>Office.Docs.Apple.DocsUXMacAtMentionInsertedAtMention 
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ „@“zmieni o inom používateľovi, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe toho, ako používatelia spolupracujú s ostatnými používateľmi.
 
@@ -3724,9 +3736,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_CharactersTyped** – Číselná hodnota, ktorá udáva celkový počet znakov zadaných v texte „@“zmienky.
 
-#### <a name="office_docs_apple_docsuxmacodspsharingwebviewsharingcompleted"></a>Office_Docs_Apple_DocsUXMacODSPSharingWebViewSharingCompleted 
+#### <a name="officedocsappledocsuxmacodspsharingwebviewsharingcompleted"></a>Office.Docs.Apple.DocsUXMacODSPSharingWebViewSharingCompleted 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument v cloude pomocou zdieľania vo OneDrive, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument v cloude pomocou zdieľania vo OneDrive, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -3734,17 +3746,17 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ShareWebViewMode** – Naprogramovaný reťazec, ktorý označuje, aký druh režimu zdieľania bol aktívny v čase dokončenia zdieľania, vrátane režimov „ManageAccess“, „AtMentions“, „Share“.
 
-#### <a name="office_docsui_collaboration_coauthorgalleryrowtapped"></a>Office_DocsUI_Collaboration_CoauthorGalleryRowTapped 
+#### <a name="officedocsuicollaborationcoauthorgalleryrowtapped"></a>Office.DocsUI.Collaboration.CoauthorGalleryRowTapped 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ vyberie možnosť pozrieť si zoznam aktuálnych spoluautorov.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich so spolutvorbou dokumentu v rovnakom čase.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ vyberie možnosť pozrieť si zoznam aktuálnych spoluautorov.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich so spolutvorbou dokumentu v rovnakom čase.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_CoauthorCount** – Číselná hodnota, ktorá predstavuje celkový počet ľudí, ktorí práve upravujú ten istý dokument ako používateľ.
 
-#### <a name="office_docsui_collaboration_collabcornerpeoplegallerycoauthorsupdated"></a>Office_DocsUI_Collaboration_CollabCornerPeopleGalleryCoauthorsUpdated 
+#### <a name="officedocsuicollaborationcollabcornerpeoplegallerycoauthorsupdated"></a>Office.DocsUI.Collaboration.CollabCornerPeopleGalleryCoauthorsUpdated 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa zmení počet aktívnych spoluautorov v dokumente v cloude.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich so spolutvorbou dokumentu v rovnakom čase.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa zmení počet aktívnych spoluautorov v dokumente v cloude.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich so spolutvorbou dokumentu v rovnakom čase.
 
 Zhromažďujú sa tieto polia:
 
@@ -3758,7 +3770,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ServiceType** – Abstraktná kategorizácia umiestnenia súboru, ako je napríklad „SharePoint“, „OneDrive“, „Lokálne“, „WOPI“ atď., a výslovne nie skutočného umiestnenia súboru.
 
-#### <a name="office_docsui_docstage_docstagecreatenewfromtemplate"></a>Office_DocsUI_DocStage_DocStageCreateNewFromTemplate 
+#### <a name="officedocsuidocstagedocstagecreatenewfromtemplate"></a>Office.DocsUI.DocStage.DocStageCreateNewFromTemplate 
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vytvorí nový súbor pomocou položky „Nové zo šablóny“, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe informácií o vytváraní dokumentu.
 
@@ -3776,15 +3788,15 @@ Zhromažďujú sa tieto polia:
 
 - **Data_TemplateType** – Klasifikácia na odlíšenie typu šablóny, ako sú, okrem iných, napríklad šablóny „Online“, „Online vyhľadávanie“, „Lokálne“.
 
-#### <a name="office_docsui_docstage_recommendedopen"></a>Office_DocsUI_DocStage_RecommendedOpen
+#### <a name="officedocsuidocstagerecommendedopen"></a>Office.DocsUI.DocStage.RecommendedOpen
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru v časti odporúčaných súborov v galérii dokumentov, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru v časti odporúčaných súborov v galérii dokumentov, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_Success** – Boolovská hodnota, ktorá označuje, či sa operácia vykonala úspešne.
 
-#### <a name="office_docsui_fileoperations_docsuifileopenmacrequired"></a>Office_DocsUI_FileOperations_DocsUIFileOpenMacRequired
+#### <a name="officedocsuifileoperationsdocsuifileopenmacrequired"></a>Office.DocsUI.FileOperations.DocsUIFileOpenMacRequired
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov, ako sú napríklad kategórie umiestnenia „ServiceType“ a prvé štyri znaky prípony.
 
@@ -3794,7 +3806,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ServiceType** – Abstraktná kategorizácia umiestnenia súboru, ako je napríklad „SharePoint“, „OneDrive“, „Lokálne“, „WOPI“ atď.
 
-#### <a name="office_docsui_fileoperations_opendocumentmeasurements"></a>Office_DocsUI_FileOperations_OpenDocumentMeasurements
+#### <a name="officedocsuifileoperationsopendocumentmeasurements"></a>Office.DocsUI.FileOperations.OpenDocumentMeasurements
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platformy iOS. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov, najmä informácií o výkone.
 
@@ -3898,7 +3910,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_TimeSplitMeasurements** – hodnota reťazca so zápisom trvania času potrebného na volanie niektorých funkcií vo formáte so značkou funkcie, časovou pečiatkou a trvaním.
 
-#### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
+#### <a name="officedocsuifileoperationsopenfilewithreason"></a>Office.DocsUI.FileOperations.OpenFileWithReason 
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov, ako sú napríklad kategórie umiestnenia „ServiceType“ a z ktorého miesta v aplikácii používateľ žiadal o otvorenie súboru.
 
@@ -3912,7 +3924,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ServiceType** – Abstraktná číselná kategorizácia umiestnenia súboru, ako je napríklad „SharePoint“, „OneDrive“, „Lokálne“, „WOPI“ atď., a výslovne nie skutočného umiestnenia súboru.
 
-#### <a name="office_docsui_fileoperations_savetourl"></a>Office_DocsUI_FileOperations_SaveToURL
+#### <a name="officedocsuifileoperationssavetourl"></a>Office.DocsUI.FileOperations.SaveToURL
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vykoná operácia „Uložiť ako“ a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov, ako sú napríklad kategórie umiestnenia a prvé štyri znaky prípony.  Operácia „Uložiť ako“ sa vyskytne vždy, keď používateľ vytvorí nový súbor a uloží ho prvýkrát alebo uloží kópiu existujúceho súboru do nového umiestnenia.
 
@@ -3932,9 +3944,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_SaveOperationType** – Číselná hodnota definovaná skupinou hodnôt NSSaveOperationType spoločnosti Apple.
 
-#### <a name="office_docsui_sharingui_cloudupsellshown"></a>Office_DocsUI_SharingUI_CloudUpsellShown 
+#### <a name="officedocsuisharinguicloudupsellshown"></a>Office.DocsUI.SharingUI.CloudUpsellShown 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ prejde prechodom dokumentu do postupu v cloude.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ prejde prechodom dokumentu do postupu v cloude.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
 
 Zhromažďujú sa tieto polia:
 
@@ -3950,9 +3962,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_IsSheetModal** – Boolovská hodnota, ktorá označuje, či bola možnosť prechodu uvedená modálne alebo nie.
 
-#### <a name="office_docsui_sharingui_cloudupsellupload"></a>Office_DocsUI_SharingUI_CloudUpsellUpload 
+#### <a name="officedocsuisharinguicloudupsellupload"></a>Office.DocsUI.SharingUI.CloudUpsellUpload 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne nahrať nový alebo lokálny súbor do cloudu, a výsledok tejto operácie.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne nahrať nový alebo lokálny súbor do cloudu, a výsledok tejto operácie.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
 
 Zhromažďujú sa tieto polia:
 
@@ -3976,9 +3988,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_UploadResult** – Naprogramovaný reťazec, ktorý označuje výsledok pokusu o nahratie vrátane hodnôt „Success“ „UserCancelledUpload“ a „PreAuthFailed“.
 
-#### <a name="office_docsui_sharingui_copylinkoperation"></a>Office_DocsUI_SharingUI_CopyLinkOperation
+#### <a name="officedocsuisharinguicopylinkoperation"></a>Office.DocsUI.SharingUI.CopyLinkOperation
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument generovaním prepojenia na dokument v cloude, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument generovaním prepojenia na dokument v cloude, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -3988,9 +4000,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ShareScenario** – Naprogramovaný reťazec, ktorý popisuje, kde v rámci používateľského rozhrania aplikácie sa súbor zdieľa vrátane umiestnení „FileMenu“, „OpenTabShareActionMenu“, „RecentTabShareActionMenu“.
 
-#### <a name="office_docsui_sharingui_docsuionedriveshare"></a>Office_DocsUI_SharingUI_DocsUIOneDriveShare 
+#### <a name="officedocsuisharinguidocsuionedriveshare"></a>Office.DocsUI.SharingUI.DocsUIOneDriveShare 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument v cloude pomocou zdieľania vo OneDrive, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument v cloude pomocou zdieľania vo OneDrive, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -4004,9 +4016,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_WebViewLoadTimeInMs** – Číselná hodnota, ktorá zaznamenáva množstvo času potrebného na načítanie webového používateľského rozhrania.
 
-#### <a name="office_docsui_sharingui_invitepeople"></a>Office_DocsUI_SharingUI_InvitePeople 
+#### <a name="officedocsuisharinguiinvitepeople"></a>Office.DocsUI.SharingUI.InvitePeople 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne pozvať ľudí do dokumentu v cloude, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne pozvať ľudí do dokumentu v cloude, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -4020,9 +4032,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ShareScenario** – Naprogramovaný reťazec, ktorý popisuje, kde v rámci používateľského rozhrania aplikácie sa súbor zdieľa vrátane umiestnení „FileMenu“, „OpenTabShareActionMenu“, „RecentTabShareActionMenu“.
 
-#### <a name="office_docsui_sharingui_sendacopyoperation"></a>Office_DocsUI_SharingUI_SendACopyOperation
+#### <a name="officedocsuisharinguisendacopyoperation"></a>Office.DocsUI.SharingUI.SendACopyOperation
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa používateľ rozhodne odoslať kópiu dokumentu, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa používateľ rozhodne odoslať kópiu dokumentu, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -4040,9 +4052,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_SharingService** – Boolovská hodnota, ktorá označuje, či bol súbor vytvorený, keď používateľ hľadal šablónu.
 
-#### <a name="office_docsui_sharingui_upsellshare"></a>Office_DocsUI_SharingUI_UpsellShare 
+#### <a name="officedocsuisharinguiupsellshare"></a>Office.DocsUI.SharingUI.UpsellShare 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ prejde prechodom dokumentu do postupu v cloude pri pokuse o zdieľanie dokumentu.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ prejde prechodom dokumentu do postupu v cloude pri pokuse o zdieľanie dokumentu.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
 
 Zhromažďujú sa tieto polia:
 
@@ -4902,9 +4914,9 @@ Zhromažďujú sa tieto polia:
 
 - **EventName** – názov udalosti, ktorá sa práve zaznamenáva
 
-#### <a name="office_firstrun_apple_activationresult"></a>Office_FirstRun_Apple_ActivationResult
+#### <a name="officefirstrunappleactivationresult"></a>Office.FirstRun.Apple.ActivationResult
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie predplatného služieb Office 365 spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie predplatného služieb Office 365 spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.).
 
 Zhromažďujú sa tieto polia:
 
@@ -4914,9 +4926,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ActivationStatusFlowType** – Číselná hodnota označujúca typ postupu aktivácie.
 
-#### <a name="office_firstrun_apple_activationstatus"></a>Office_FirstRun_Apple_ActivationStatus
+#### <a name="officefirstrunappleactivationstatus"></a>Office.FirstRun.Apple.ActivationStatus
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zistenie výsledku aktivácie predplatného služieb Office 365 spolu s postupom, ktorý sa používa na aktiváciu (FRE, InApp, Purchase atď.). Zhromažďujeme údaje obsahujúce typ aktivácie, typ postupu (FRE/DocStage/Purchase) a ID licenčnej služby balíka Office.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zistenie výsledku aktivácie predplatného služieb Office 365 spolu s postupom, ktorý sa používa na aktiváciu (FRE, InApp, Purchase atď.). Zhromažďujeme údaje obsahujúce typ aktivácie, typ postupu (FRE/DocStage/Purchase) a ID licenčnej služby balíka Office.
 
 Zhromažďujú sa tieto polia:
 
@@ -4928,9 +4940,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ActivationTypeStatus** – Kód stavu aktivácie.
 
-#### <a name="office_firstrun_apple_firstruncomplete"></a>Office_FirstRun_Apple_FirstRunComplete
+#### <a name="officefirstrunapplefirstruncomplete"></a>Office.FirstRun.Apple.FirstRunComplete
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje zistiť, ak je používateľ spustený v rámci modelu freemium, typ spusteného postupu (FRE/DocStage/Purchase) a typ identity (MSA/OrgID). Túto udalosť používame na to, aby sme zistili, či bolo dokončené prvé spustenie (FRE) a aký typ identity sa použil na prihlásenie (MSA/OrgID).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje zistiť, ak je používateľ spustený v rámci modelu freemium, typ spusteného postupu (FRE/DocStage/Purchase) a typ identity (MSA/OrgID). Túto udalosť používame na to, aby sme zistili, či bolo dokončené prvé spustenie (FRE) a aký typ identity sa použil na prihlásenie (MSA/OrgID).
 
 Zhromažďujú sa tieto polia:
 
@@ -4942,9 +4954,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunCompletedIdentityType** – Typ identity používateľa, ktorý postup dokončil.
 
-#### <a name="office_firstrun_apple_firstrunstart"></a>Office_FirstRun_Apple_FirstRunStart
+#### <a name="officefirstrunapplefirstrunstart"></a>Office.FirstRun.Apple.FirstRunStart
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie a typ spusteného postupu (FRE/DocStage/Purchase). Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie a typ spusteného postupu (FRE/DocStage/Purchase). Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
 
 Zhromažďujú sa tieto polia:
 
@@ -4952,9 +4964,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunStartedFlowType** – Kód označujúci typ dokončeného postupu používateľa. 
 
-#### <a name="office_firstrun_apple_firstrunstartedandcompleted"></a>Office_FirstRun_Apple_FirstRunStartedAndCompleted
+#### <a name="officefirstrunapplefirstrunstartedandcompleted"></a>Office.FirstRun.Apple.FirstRunStartedAndCompleted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje zistiť, ak je používateľ spustený v rámci modelu freemium, typ spusteného postupu (FRE/DocStage/Purchase) a typ identity (MSA/OrgID). Túto udalosť používame na to, aby sme zistili stav a účinnosť postupu skúsenosti s prvým spustením (FRE).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje zistiť, ak je používateľ spustený v rámci modelu freemium, typ spusteného postupu (FRE/DocStage/Purchase) a typ identity (MSA/OrgID). Túto udalosť používame na to, aby sme zistili stav a účinnosť postupu skúsenosti s prvým spustením (FRE).
 
 Zhromažďujú sa tieto polia:
 
@@ -4970,9 +4982,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunStartedFlowType** – Kód označujúci typ začatého postupu používateľa.
 
-#### <a name="office_firstrun_apple_inapppurchaseactivationfail"></a>Office_FirstRun_Apple_InAppPurchaseActivationFail
+#### <a name="officefirstrunappleinapppurchaseactivationfail"></a>Office.FirstRun.Apple.InAppPurchaseActivationFail
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
 
 Zhromažďujú sa tieto polia:
 
@@ -4984,9 +4996,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_AssoicatedSuccessfullyFlowType** – Kód označujúci typ uplatneného postupu používateľa.
 
-#### <a name="office_firstrun_apple_inapppurchaseactivationsuccess"></a>Office_FirstRun_Apple_InAppPurchaseActivationSuccess
+#### <a name="officefirstrunappleinapppurchaseactivationsuccess"></a>Office.FirstRun.Apple.InAppPurchaseActivationSuccess
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
 
 Zhromažďujú sa tieto polia:
 
@@ -4998,9 +5010,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_AssoicatedSuccessfullyFlowType** – Kód označujúci typ uplatneného postupu používateľa.
 
-#### <a name="office_firstrun_apple_inapppurchaseassociationfailed"></a>Office_FirstRun_Apple_InAppPurchaseAssociationFailed
+#### <a name="officefirstrunappleinapppurchaseassociationfailed"></a>Office.FirstRun.Apple.InAppPurchaseAssociationFailed
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
 
 Zhromažďujú sa tieto polia:
 
@@ -5014,9 +5026,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_AssoicationFailedResult** – Kód označujúci typ zisteného zlyhania.
 
-#### <a name="office_firstrun_apple_inapppurchaseassociationsuccess"></a>Office_FirstRun_Apple_InAppPurchaseAssociationSuccess
+#### <a name="officefirstrunappleinapppurchaseassociationsuccess"></a>Office.FirstRun.Apple.InAppPurchaseAssociationSuccess
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
 
 Zhromažďujú sa tieto polia:
 
@@ -5028,9 +5040,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_AssoicatedSuccessfullyFlowType** – Kód označujúci typ uplatneného postupu používateľa.
 
-#### <a name="office_firstrun_apple_inapppurchasefailures"></a>Office_FirstRun_Apple_InAppPurchaseFailures
+#### <a name="officefirstrunappleinapppurchasefailures"></a>Office.FirstRun.Apple.InAppPurchaseFailures
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje o výsledku postupu nákupu v rámci aplikácie.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje o výsledku postupu nákupu v rámci aplikácie.
 
 Zhromažďujú sa tieto polia:
 
@@ -5042,7 +5054,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_EventId** – Kód označujúci typ zisteného zlyhania.
 
-#### <a name="office_firstrun_apple_inapppurchasesattempted"></a>Office_FirstRun_Apple_InAppPurchasesAttempted
+#### <a name="officefirstrunappleinapppurchasesattempted"></a>Office.FirstRun.Apple.InAppPurchasesAttempted
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu nákupu aplikácie v rámci aplikácie. Zhromažďujeme údaje na sledovanie pokusov o nákupy v aplikácii a typu jednotky SKU, ktorá sa zakupuje (mesačné/ročné/domáce/osobné).
 
@@ -5054,9 +5066,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_PurchaseSuccessfulFlowType** – Kód označujúci typ uplatneného postupu používateľa.
 
-#### <a name="office_firstrun_apple_inapprestoreattempted"></a>Office_FirstRun_Apple_InAppRestoreAttempted
+#### <a name="officefirstrunappleinapprestoreattempted"></a>Office.FirstRun.Apple.InAppRestoreAttempted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu nákupu aplikácie v rámci aplikácie. Zhromažďujeme údaje na sledovanie pokusov o obnovenie v rámci aplikácie.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu nákupu aplikácie v rámci aplikácie. Zhromažďujeme údaje na sledovanie pokusov o obnovenie v rámci aplikácie.
 
 Zhromažďujú sa tieto polia:
 
@@ -5064,9 +5076,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_RestoreAttemptFlowType** – Kód označujúci typ uplatneného postupu používateľa.
 
-#### <a name="office_firstrun_apple_inapprestoreattemptfailed"></a>Office_FirstRun_Apple_InAppRestoreAttemptFailed
+#### <a name="officefirstrunappleinapprestoreattemptfailed"></a>Office.FirstRun.Apple.InAppRestoreAttemptFailed
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu nákupu aplikácie v rámci aplikácie. Zhromažďujeme údaje na sledovanie pokusov o obnovenie v rámci aplikácie a ich priradených postupov a chýb.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu nákupu aplikácie v rámci aplikácie. Zhromažďujeme údaje na sledovanie pokusov o obnovenie v rámci aplikácie a ich priradených postupov a chýb.
 
 Zhromažďujú sa tieto polia:
 
@@ -5078,17 +5090,17 @@ Zhromažďujú sa tieto polia:
 
 - **Data_RestoredFailedUnKnownResult** – Či pokus zlyhal z neznámych dôvodov.
 
-#### <a name="office_firstrun_apple_macfirstruncompleted"></a>Office_FirstRun_Apple_MacFirstRunCompleted
+#### <a name="officefirstrunapplemacfirstruncompleted"></a>Office.FirstRun.Apple.MacFirstRunCompleted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ prešiel skúsenosťou s prvým spustením. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) dokončilo úspešne.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ prešiel skúsenosťou s prvým spustením. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) dokončilo úspešne.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunCollectionTime** – Časová pečiatka registrujúca čas, v ktorom sa postup dokončil.
 
-#### <a name="office_firstrun_apple_macwxpfirstrunstarted"></a>Office_FirstRun_Apple_MacWXPFirstRunStarted
+#### <a name="officefirstrunapplemacwxpfirstrunstarted"></a>Office.FirstRun.Apple.MacWXPFirstRunStarted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
 
 Zhromažďujú sa tieto polia:
 
@@ -5563,7 +5575,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data.Log** – hlásenie vlastného denníka s informáciou o úspešnosti alebo neúspešnosti predbežnej kontroly
 
-#### <a name="office_officemobile_pdfviewer_pdffileopenmeasurements"></a>Office_OfficeMobile_PdfViewer_PdfFileOpenMeasurements
+#### <a name="officeofficemobilepdfviewerpdffileopenmeasurements"></a>Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements
 
 Táto udalosť sa zhromažďuje pre aplikáciu Office pre iOS a zaznamenáva, či prebieha operácia otvorenia súboru. Zhromažďujeme tieto údaje, aby ste zabezpečili spoľahlivé otváranie všetkých súborov v aplikácii. 
 
@@ -5594,7 +5606,7 @@ Zhromažďujú sa tieto polia:
 - **Doc_RenderDurationms** – trvanie vykreslenia PDF súboru
 
 
-#### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
+#### <a name="officeofficemobilepdfviewerpdffileoperations"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations
 
 Táto udalosť sa zhromažďuje pre aplikáciu balíka Office pre Android. Zaznamená, keď sa vykoná operácia otvorenia, zatvorenia alebo uloženia .pdf súboru, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách .pdf súborov. Táto akcia nám umožňuje zachovávať fungovanie operácií otvorenia, zatvorenia a uloženia .pdf súborov podľa očakávaní a zlepšiť výkon operácií s .pdf súbormi.
 
@@ -5634,7 +5646,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Type** – typ operácie súboru (otvorenie, zatvorenie alebo uloženie) 
 
-#### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
+#### <a name="officeofficemobilepdfviewerpdffileoperations"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations
 
 Táto udalosť sa zhromažďuje pre aplikáciu Office pre iOS. Zaznamená, keď sa vykoná operácia otvorenia, zatvorenia alebo uloženia .pdf súboru, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách .pdf súborov. Táto akcia nám umožňuje zachovávať fungovanie operácií otvorenia, zatvorenia a uloženia .pdf súborov podľa očakávaní a zlepšiť výkon operácií s .pdf súbormi. 
 
@@ -5694,6 +5706,35 @@ Zhromažďujú sa tieto polia:
 - **IMAGE_COUNT** – označuje počet zhotovených obrázkov
 
 - **LAUNCH_REASON** – označuje tok, pod ktorým sa OfficeLens spustil. Môže to byť cez obrazovku uzamknutia alebo prostredníctvom možností fotoaparátu alebo galérie v StickyNotes alebo cez OneNote Canvas atď.
+
+
+#### <a name="officeonenoteandroidstickynotesnotecreated"></a>Office.OneNote.Android.StickyNotes.NoteCreated
+ 
+Kritický signál, ktorý sa používa na monitorovanie schopnosti používateľov Rýchlych poznámok vytvárať poznámky v aplikácii.   Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu vytvoriť poznámku, môže to vyvolať incident s vysokou závažnosťou.
+
+Zhromažďujú sa tieto polia:
+
+- **IsExportable** – príznak označujúci, či táto udalosť bola výsledkom akcie používateľa alebo nie. Mala by byť nastavená na hodnotu True, pretože NoteCreated je akcia spustená používateľom.
+
+- **NoteLocalId** – rozlíšiteľný jedinečný identifikátor priradený poznámke, keď používateľ vytvorí poznámku v rámci aplikácii.
+
+- **StickyNotes-SDKVersion** – číslo verzie označujúce verziu aplikácie Rýchle poznámky, ktorú používateľ používa. Umožňuje identifikovať, ktoré verzie produktu zobrazujú problém, aby sa správne určila jeho priorita.
+
+
+#### <a name="officeonenoteandroidstickynotesnoteviewed"></a>Office.OneNote.Android.StickyNotes.NoteViewed
+
+Kritický signál, ktorý sa používa na monitorovanie schopnosti používateľov Rýchlych poznámok zobrazovať poznámky v aplikácii.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. Ak používatelia nemôžu zobraziť svoje poznámky, môže to vyvolať incident s vysokou závažnosťou.
+
+Zhromažďujú sa tieto polia:
+
+- **HasImages** – príznak označujúci, či zobrazená poznámka obsahuje poznámku.
+
+- **IsExportable** – príznak označujúci, či táto udalosť bola výsledkom akcie používateľa alebo nie. Mala by byť nastavená na hodnotu True, pretože NoteViewed je akcia spustená používateľom.
+
+- **NoteLocalId** – rozlíšiteľný jedinečný identifikátor priradený poznámke, keď používateľ vytvorí poznámku v rámci aplikácii.
+
+- **StickyNotes-SDKVersion** – číslo verzie označujúce verziu aplikácie Rýchle poznámky, ktorú používateľ používa. Umožňuje identifikovať, ktoré verzie produktu zobrazujú problém, aby sa správne určila jeho priorita.
+
 
 #### <a name="officeonenotecanvasinkinkstrokelogger"></a>Office.OneNote.Canvas.Ink.InkStrokeLogger 
 
@@ -5837,6 +5878,16 @@ Zhromažďujú sa tieto polia:
 -  **TimeToLastResultInMs** – označuje čas OneNotu potrebný na vyhľadanie poslednej zhody.
 
 -  **TimeToMedianResultInMs** – označuje medián času OneNotu potrebného na vyhľadanie všetkých zhôd.
+
+### <a name="officeonenotesigscriticalerrorencountered"></a>Office.OneNote.SIGS.CriticalErrorEncountered
+
+Táto udalosť zachytáva kritický signál, ktorý sa používa na sledovanie stavu služby Signal Ingestion Service (SIGS) zapisovaním každého výskytu kritickej chyby do denníka. Kritické chyby môžu blokovať celú službu SIGS a pomáha nám to zachytiť akékoľvek takéto problémy hneď, ako sa vyskytnú používateľom. 
+
+Bez toho budeme závisieť od toho, aby nám samotní používatelia hlásili problémy, s ktorými sa stretávajú. Pri absencii takejto telemetrie by bol čas odozvy pre takéto problémy oveľa vyšší.
+
+Zhromažďujú sa tieto polia: 
+
+- **ErrorCode** – kód problému, ktorý sa vyskytol používateľovi.
 
 
 #### <a name="officeonenotestickynotesnotecreated-on-ios-onenotestickynotesnotecreated-on-android"></a>Office.OneNote.StickyNotes.NoteCreated (v iOS), OneNote.StickyNotes.NoteCreated (v Androide)
@@ -8076,7 +8127,7 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.VerifySignatureDuration** – čas trvania na overenie podpisu.
 
-#### <a name="read_conversation"></a>read_conversation
+#### <a name="readconversation"></a>read.conversation
 
 Slúži na sledovanie možného nepriaznivého vplyvu na stav a výkon vykresľovania e-mailovej správy
 
@@ -8108,7 +8159,7 @@ Zhromažďujú sa tieto polia:
  
 - **view_duration** – ako dlho mal používateľ zobrazenú súčasť
 
-#### <a name="save_attempt"></a>save_attempt
+#### <a name="saveattempt"></a>save.attempt
 
 Umožňuje identifikovať vplyv problémov spôsobených používateľmi pokúšajúcimi sa uložiť súbor vyhodnotením počtu ovplyvnených relácií a toho, či existujú spoločné prvky týchto relácií.
 
@@ -8120,19 +8171,19 @@ Zhromažďujú sa tieto polia:
 
 - **token_type** – typ tokenu slúžiaci na overenie konta s cieľom uloženia súboru, aby sme mohli zistiť problémy s overovaním týkajúce sa ukladania súboru
 
-#### <a name="search_subtab_selected"></a>search_subtab_selected
+#### <a name="searchsubtabselected"></a>search.subtab.selected
 
-Táto akcia nám umožňuje sledovať typ entity (všetko, pošta, kontakty a kalendár), ktorý používatelia používajú pri vyhľadávaní, aby sme mohli zabezpečiť, že mechanizmy filtrovania vyhľadávania fungujú správne.
+Udalosť zhromažďuje miesta pôvodu z dôvodu, že ste vybrali podkartu vyhľadávania. Podkarty sa nachádzajú pod primárnym panelom vyhľadávania aplikácií na filtrovanie údajov. Táto akcia nám umožňuje sledovať typ entity (všetko, pošta, kontakty a kalendár), ktorý používatelia používajú pri vyhľadávaní, aby sme mohli zabezpečiť, že mechanizmy filtrovania vyhľadávania fungujú správne.
 
 Zhromažďujú sa tieto polia:
 
 - **properties_general** – všeobecné vlastnosti, ktoré zhromažďujú všetky udalosti Aria
 
-- **selected_reason** – príčina vybratia typu, ktorý môže byť niektorá z týchto troch hodnôt: tap_on_header, tap_on_see_all, enter_search_mode
+- **selected_reason** – príčina vybratia typu, čo môže byť niektorá z týchto hodnôt (glyph je ikona): tap_on_header, tap_on_see_all, enter_search_mode, mail_glyph, calendar_glyph.
 
-- **subtab_type** – typ, ktorý sa vybral, ktorý môže byť niektorá z týchto štyroch hodnôt: všetko, pošta, kontakt, udalosť.
+- **subtab_type** – typ, ktorý sa vybral, čo môže byť niektorá z týchto štyroch hodnôt: všetko, pošta, kontakt, udalosť.
 
-#### <a name="send_message"></a>send_message
+#### <a name="sendmessage"></a>send.message
 
 Slúži na sledovanie možného nepriaznivého vplyvu na výkon a stav odosielania e-mailových správ.
 
@@ -8190,7 +8241,7 @@ Zhromažďujú sa tieto polia:
 
 - **has_hx** – uvádza, že konto používa našu novú službu synchronizácie, aby sme mohli zistiť problémy spôsobené touto službou
 
-#### <a name="settings_action"></a>settings_action
+#### <a name="settingsaction"></a>settings.action
 
 Táto udalosť zhromažďuje informácie o konfigurácii v nastaveniach. Tieto údaje umožňujú zistiť situácie, ktoré môžu mať nepriaznivý vplyv na schopnosť používateľov konfigurovať nastavenia aplikácie, ako sú napríklad nastavenia oznámení, primárneho e-mailového konta a konfigurácia podpisu v e-mailoch.
 
@@ -8241,7 +8292,7 @@ Zhromažďujú sa tieto polia:
 - **swipe_direction** – slúži na kontrolu, či boli pokyny na potiahnutie prstom (vľavo alebo vpravo) nakonfigurované správne
 
 
-#### <a name="sidebar_action"></a>sidebar_action
+#### <a name="sidebaraction"></a>sidebar.action
 
 Umožňuje zistiť situácie, ktoré môžu mať nepriaznivý vplyv na vašu schopnosť konfigurovať nastavenia aplikácie, ako sú napríklad nastavenia oznámení, primárneho e-mailového konta a konfigurácia podpisu v e-mailoch.
 
@@ -8350,7 +8401,7 @@ Zhromažďujú sa tieto polia:
 
 Určenie, či sa vyskytli konkrétne udalosti funkcie, napríklad spustenie alebo ukončenie, a či je funkcia spustená.
 
-#### <a name="app_startup"></a>app_startup
+#### <a name="appstartup"></a>app.startup
 
 Táto udalosť nám umožňuje zistiť a vyriešiť problémy spôsobujúce pomalé alebo neúplné spúšťanie Outlooku, čo používateľom sťažuje používanie aplikácie.  Patria sem informácie o konkrétnych povolených funkciách a o dĺžke trvania spustenia konkrétnych častí.
 
@@ -8378,7 +8429,7 @@ Zhromažďujú sa tieto polia:
 
 - **total_millis** – celkový čas od začiatku načítania triedy po dokončenie obnovenia aktivity operačného systému Android
 
-#### <a name="boot_time"></a>boot_time 
+#### <a name="boottime"></a>boot.time 
 
 Táto udalosť umožňuje zistiť výskyt kritických chýb aplikácie, ktoré by mohli spôsobiť jej zlyhanie alebo závažné problémy, ako je napríklad zobrazenie prázdnych riadkov v doručenej pošte. Táto udalosť zhromažďuje informácie, ktoré umožňujú kategorizovať a klasifikovať problémy, vďaka čomu dokážeme uprednostniť vplyv problémov na zákazníkov.
 
@@ -8440,7 +8491,7 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.StatusCode** – kód stavu výsledku operácie.
 
-#### <a name="first_visible"></a>first_visible
+#### <a name="firstvisible"></a>first.visible
 
 Táto udalosť nám umožňuje zistiť, kedy bola aplikácia prvýkrát zámerne spustená používateľom. Táto udalosť sa vyžaduje, aby sa zaistilo, že aplikácia úspešne funguje v zostavách OEM (Original Equipment Manufacturer).
 
@@ -8933,6 +8984,21 @@ Zhromažďujú sa tieto polia:
 - **TotalTime** – celkový strávený čas.
 
 - **UsesSharedRuntime** – označuje, či aplikácia používa sharedRuntime alebo nie.
+
+#### <a name="officeofficemobileappactivationlaunch"></a>Office.OfficeMobile.AppActivation.Launch
+
+Táto udalosť identifikuje prvú a ďalšie aktivácie prostredníctvom externých spúšťačov, ktoré aktivujú aplikáciu. Aktivácia aplikácie načíta určité závislosti, ktoré sú zodpovedné za fungovanie aplikácie bez problémov a táto udalosť sa zaznamená, keď sa načíta úspešne. Tiež zaznamená zdroj aktivácie a zámer aplikácie, ktorý bol zodpovedný za aktiváciu aplikácie.
+
+Zhromažďujú sa tieto polia:
+
+- **ActionName** – celé číslo priradenia k názvu akcie/funkcie, ktorá je vyvolaná z bodu aktivácie.
+ 
+- **ActivationType** – celé číslo priradenia k zdroju aktivácie
+  
+- **IsActionTriggered** – Boolovská hodnota určujúca, či sa akcia spustila po úspešnej aktivácii aplikácie.
+
+- **IsFirstRun** – Boolovská hodnota určujúca, či išlo o prvé spustenie aplikácie alebo jej následné spustenie.
+ 
 
 #### <a name="officeofficemobilefrefirstrunsetup"></a>Office.OfficeMobile.FRE.FirstRunSetup
 
@@ -10231,9 +10297,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Data\_ZoomText** – označuje, či bol nástroj ZoomText spustený počas relácie
 
-#### <a name="office_apple_darkmode"></a>Office_Apple_DarkMode
+#### <a name="officeappledarkmode"></a>Office.Apple.DarkMode
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám hovorí, či používateľ používa systém v režime DarkMode a či používateľ prepísal nastavenie systému v režime DarkMode v Office.  Túto udalosť používame na to, aby sme pomohli zabezpečiť zjednodušenie ovládania a určovať prioritu optimalizácie používateľskej skúsenosti.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám hovorí, či používateľ používa systém v režime DarkMode a či používateľ prepísal nastavenie systému v režime DarkMode v Office.  Túto udalosť používame na to, aby sme pomohli zabezpečiť zjednodušenie ovládania a určovať prioritu optimalizácie používateľskej skúsenosti.
 
 Zhromažďujú sa tieto polia:
 
@@ -10241,17 +10307,17 @@ Zhromažďujú sa tieto polia:
 
 - **Data_RequiresAquaSystemAppearanceEnabled** – Či je režim DarkMode prepísaný v Office.
 
-#### <a name="office_apple_hardwarekeyboardinuse_apple"></a>Office_Apple_HardwareKeyboardInUse_Apple
+#### <a name="officeapplehardwarekeyboardinuseapple"></a>Office.Apple.HardwareKeyboardInUse.Apple
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám oznamuje, že používateľ pripája k mobilnému zariadeniu klávesnicu. Udalosť nám pomáha zlepšovať zjednodušenie ovládania a optimalizovať používateľskú skúsenosť.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám oznamuje, že používateľ pripája k mobilnému zariadeniu klávesnicu. Udalosť nám pomáha zlepšovať zjednodušenie ovládania a optimalizovať používateľskú skúsenosť.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_CollectionTime** – Časová pečiatka označujúca čas zberu udalosti.
 
-#### <a name="office_apple_mbuinstrument_deviceaccessibilitysettings"></a>Office_Apple_MbuInstrument_DeviceAccessibilitySettings
+#### <a name="officeapplembuinstrumentdeviceaccessibilitysettings"></a>Office.Apple.MbuInstrument.DeviceAccessibilitySettings
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zhromažďuje stav rôznych možností zjednodušenia ovládania, ktoré sú k dispozícii počas relácie. Túto udalosť používame na to, aby sme pomohli zabezpečiť zjednodušenie ovládania a určovať prioritu optimalizácie používateľskej skúsenosti.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zhromažďuje stav rôznych možností zjednodušenia ovládania, ktoré sú k dispozícii počas relácie. Túto udalosť používame na to, aby sme pomohli zabezpečiť zjednodušenie ovládania a určovať prioritu optimalizácie používateľskej skúsenosti.
 
 Zhromažďujú sa tieto polia:
 
@@ -10372,7 +10438,7 @@ Toto sú podtypy údajov v tejto kategórii:
 
 Neočakávané ukončenia aplikácie a stav aplikácie, keď sa to stane.
 
-#### <a name="app_startup_reason"></a>app_startup_reason
+#### <a name="appstartupreason"></a>app.startup.reason
 
 Táto akcia umožňuje zistiť a vyriešiť problémy, ktoré spôsobili zlyhanie Outlooku pri spustení aplikácie.  Táto udalosť zahŕňa informácie o príčinách zlyhania, aby sme mohli problém rýchlo odstrániť.
 
@@ -10399,7 +10465,7 @@ Nasledujúce polia sa zhromažďujú iba pre službu Outlook Mobile pre iOS:
 - **is_watch_supported_and_active** – označuje, či sú hodinky počas relácie podporované a aktívne
 
 
-#### <a name="application_crash"></a>application_crash
+#### <a name="applicationcrash"></a>application.crash
 
 Používa sa na monitorovanie kritických zlyhaní aplikácie a pomáha zhromažďovať informácie o tom, prečo aplikácia zlyhávala a ako tomu predchádzať.
 
@@ -10446,7 +10512,7 @@ Zhromažďujú sa tieto polia:
 - **glEsVersion** – kľúč verzie systému OpenGL Embedded Systems
 
 
-#### <a name="crash_event"></a>crash_event
+#### <a name="crashevent"></a>crash.event
 
 Umožňuje zistiť a vyriešiť situácie kritických zlyhaní aplikácie a pomáha zhromažďovať informácie o tom, prečo aplikácia zlyhávala a ako tomu predchádzať.
 
@@ -10454,7 +10520,11 @@ Zhromažďujú sa tieto polia:
 
 - **crashTime** – dátum a čas zlyhania na pomoc so skúmaním
 
-- **exceptionName** – názov výnimky, ktorá spustila zlyhanie na pomoc so skúmaním
+- **crash_time_from_start** – uplynutý čas od spustenia aplikácie po zlyhanie na pomoc so skúmaním
+
+- **exceptionName** – názov výnimky, ktorá spustila zlyhanie, na pomoc so skúmaním
+
+- **exception_reason** – dôvod výnimky, ktorá spustila zlyhanie, na pomoc so skúmaním
 
 - **hasHx** – uvádza, že konto používa našu novú službu synchronizácie, aby sme mohli zistiť problémy spôsobené touto službou
 
@@ -10497,9 +10567,9 @@ Zhromažďujú sa tieto polia:
 
 - **Event Name** – názov udalosti je kategória udalosti a označenie udalosti.
 
-#### <a name="office_apple_identitydomainname"></a>Office_Apple_IdentityDomainName
+#### <a name="officeappleidentitydomainname"></a>Office.Apple.IdentityDomainName
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu nášho systému, ako aj skúmanie príčin zlyhaní niektorých používateľov domén. Zhromažďujeme informácie o doméne, ktorú naši používatelia použijú, keď sa overujú.  Tieto údaje používame na to, aby sme pomohli určiť a vyriešiť problémy, ktoré zdanlivo nemusia mať príliš veľký vplyv na širšej úrovni, ale ktoré môžu mať veľký vplyv na určitú doménu používateľov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu nášho systému, ako aj skúmanie príčin zlyhaní niektorých používateľov domén. Zhromažďujeme informácie o doméne, ktorú naši používatelia použijú, keď sa overujú.  Tieto údaje používame na to, aby sme pomohli určiť a vyriešiť problémy, ktoré zdanlivo nemusia mať príliš veľký vplyv na širšej úrovni, ale ktoré môžu mať veľký vplyv na určitú doménu používateľov.
 
 Zhromažďujú sa tieto polia:
 
@@ -10509,9 +10579,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_IdentityProviderEnum** – Kód poskytovateľa overenia identity. (Číslo)
 
-#### <a name="office_apple_systemhealthappexitmacandios"></a>Office_Apple_SystemHealthAppExitMacAndiOS
+#### <a name="officeapplesystemhealthappexitmacandios"></a>Office.Apple.SystemHealthAppExitMacAndiOS
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu našich aplikácií balíka Office, ako aj skúmanie príčin zlyhaní. Zhromažďujeme údaje pri každom ukončení aplikácie, aby sme zistili, či sa aplikácia ukončila bez zlyhania.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu našich aplikácií balíka Office, ako aj skúmanie príčin zlyhaní. Zhromažďujeme údaje pri každom ukončení aplikácie, aby sme zistili, či sa aplikácia ukončila bez zlyhania.
 
 Zhromažďujú sa tieto polia:
 
@@ -10926,7 +10996,7 @@ Zhromažďujú sa tieto polia:
 - Žiadne
 
 
-#### <a name="telemetry_error"></a>telemetry_error
+#### <a name="telemetryerror"></a>telemetry.error
 
 Táto akcia umožňuje diagnostikovať a vyriešiť problémy, ktoré bránia generovaniu a odosielaniu potrebných diagnostických údajov. Tieto udalosti umožňujú zistiť, či chýbajú dôležité údaje, ktoré sú potrebné na identifikovanie problémov so zabezpečením alebo závažných problémov s fungovaním aplikácie.
 
@@ -10937,7 +11007,7 @@ Zhromažďujú sa tieto polia:
 - **type** – uvádza typ chyby časovača, ktorý nám pomôže zistiť, či sa v aplikácii vyskytnú nejaké problémy s odosielaním údajov diagnostickej telemetrie
 
 
-#### <a name="watchdog_anr"></a>watchdog_anr
+#### <a name="watchdoganr"></a>watchdog.anr
 
 Potrebné na monitorovanie chýb výkonu aplikácie, aby sa predišlo tomu, že aplikácia prestane reagovať a obrazovka v aplikácii zamrzne (označované ako aplikácia nereaguje).
 
@@ -10962,7 +11032,7 @@ Zhromažďujú sa tieto polia:
 
 Dlhý čas odozvy alebo nízky výkon v prípadoch ako spustenie aplikácie alebo otvorenie súboru.
 
-#### <a name="android_frame_metrics"></a>android_frame_metrics
+#### <a name="androidframemetrics"></a>android.frame.metrics
 
 Umožňuje zistiť a vyriešiť situácie, keď naše súčasti aplikácie pre Android spôsobujú problémy s výkonom, napríklad v prípade, že nemôžete plynulo posúvať priečinok doručenej pošty.
 
@@ -10988,7 +11058,7 @@ Zhromažďujú sa tieto polia:
 
 - **unknown_delay** – oneskorenie spôsobené neznámymi zdrojmi inými ako explicitne sledované trvania
 
-#### <a name="cal_component"></a>cal_component
+#### <a name="calcomponent"></a>cal.component
 
 Táto udalosť umožňuje zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon súčastí používateľského rozhrania kalendára, čo by malo za následok problém s posúvaním kalendára.
 
@@ -11008,7 +11078,7 @@ Zhromažďujú sa tieto polia:
 
 - **view_duration** – uvádza, ako dlho trvalo vykresliť rôzne súčasti používateľského rozhrania kalendára, aby sme mohli zistiť problémy s výkonom, ktoré sa prejavia pri používaní kalendára
 
-#### <a name="contact_action"></a>contact_action
+#### <a name="contactaction"></a>contact.action
 
 Táto udalosť sa spustí na rôznych akciách s kontaktmi – prezeranie, aktualizovanie a odstraňovanie kontaktov, ako aj prezeranie zoznamu kontaktov. Používa sa na určenie, či sa vyskytnú nejaké regresie výkonu súvisiace s kontaktmi.
 
@@ -11026,7 +11096,7 @@ Zhromažďujú sa tieto polia:
  
 - **total_filtered_contacts** – počet kontaktov s použitými filtrami
 
-#### <a name="conversation_load_time"></a>conversation_load_time
+#### <a name="conversationloadtime"></a>conversation.load.time
 
 Táto udalosť umožňuje zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon načítavania e-mailových konverzácií, aby sa vaše e-maily načítavali podľa očakávaní.
 
@@ -11034,7 +11104,7 @@ Zhromažďujú sa tieto polia:
 
 - **time** – uvádza, ako dlho trvalo dokončenie načítania e-mailovej konverzácie.
 
-#### <a name="core_data_migration"></a>core_data_migration
+#### <a name="coredatamigration"></a>core.data.migration
 
 Umožňuje zistiť a vyriešiť situácie, pri ktorých sa vyskytla chyba pri aktualizácii e-mailových údajov vo vašom zariadení na novšiu verziu.
 
@@ -11048,7 +11118,7 @@ Zhromažďujú sa tieto polia:
 
 - **migration_duration_seconds** – sleduje trvania migrácie zaokrúhlené na niektorý z týchto časových intervalov – 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180 (180 a viac by malo byť len 180)
 
-#### <a name="core_data_performance"></a>core_data_performance
+#### <a name="coredataperformance"></a>core.data.performance
 
 Umožňuje zistiť a vyriešiť situácie, keď e-mailové údaje uložené vo vašom zariadení spôsobujú problémy s výkonom.
 
@@ -11064,9 +11134,9 @@ Zhromažďujú sa tieto polia:
 
 - **operation** – nespracovaná hodnota operácie uloženia, načítania alebo „rad čítania/zápisu blokovaný“
 
-#### <a name="inbox_component"></a>inbox_component
+#### <a name="inboxcomponent"></a>inbox.component
 
-Táto udalosť umožňuje zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon súčastí používateľského rozhrania doručenej pošty, čo by malo za následok nesprávne načítanie alebo zobrazenie e-mailových správ, avatara a stavu prečítané/neprečítané.
+Táto udalosť zhromažďuje dva typy používateľských údajov: stav predplatného na Microsoft 365 a to, či sa používateľovi zobrazujú reklamy. Táto udalosť nám pomáha zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon súčastí používateľského rozhrania doručenej pošty používateľa, čo by malo za následok nesprávne načítanie alebo zobrazenie e-mailových správ, avatara a stavu prečítané/neprečítané.
 
 Zhromažďujú sa tieto polia: 
 
@@ -11082,7 +11152,9 @@ Zhromažďujú sa tieto polia:
 
 - **ad_shown** – označuje, či sa zobrazila reklama (ak sú povolené reklamy)
 
-- **age** vek osoby (používa sa na potvrdenie dodržiavania vekových obmedzení reklám)
+- **ad_shown_for_premium** – neočakávané zobrazenie reklamy používateľom s prémiovou verziou
+
+- **age** – vek osoby (používa sa na potvrdenie súladu s vekovým obmedzením reklám) *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **app_instance** – Outlook má 2 vstupné body pre Duo, jeden je pre kalendár a jeden je pre poštu a oba možno spustiť súbežne v prostredí s viacerými inštanciami. Umožní nám to zistiť, ktorá inštancia vyvolala tento hovor s hlásením (pošta alebo kalendár)
 
@@ -11102,6 +11174,8 @@ Zhromažďujú sa tieto polia:
 
 - **orientation** – orientácia obrazovky v čase udalosti (na výšku alebo na šírku)
 
+- **poskytovateľ** – poskytovateľ (Xandr alebo Facebook) aktuálne zobrazenej reklamy
+
 - **sub_error_type** – podrobný typ chyby
 
 - **taskId** – TaskId nám poskytne taskId aktuálnej inštancie. Táto možnosť sa bude vyžadovať v prostredí s viacerými inštanciami, ak chce používateľ spúšťať rovnaké inštancie (kalendár, kalendár alebo pošta, pošta) vedľa seba
@@ -11110,7 +11184,7 @@ Zhromažďujú sa tieto polia:
 
 - **view_duration** – ako dlho mal používateľ zobrazenú súčasť
 
-#### <a name="initial_page_landing"></a>Initial_page_landing 
+#### <a name="initialpagelanding"></a>Initial.page.landing 
  
 Táto udalosť pomáha sledovať typ skúsenosti, ktorý sa zobrazí používateľom, keď sa ocitnú na stránke aplikácie.  Tieto údaje sa používajú na určenie prenosov používateľov presmerovaných do jednotlivých skúseností v aplikácii. Okrem toho uľahčujú zlúčenie výsledkov experimentovania.
  
@@ -11274,7 +11348,7 @@ Zhromažďujú sa tieto polia:
 
 - **UserInfo.UserObjectId** – ID objektu používateľa.
 
-#### <a name="json_parse_error"></a>json_parse_error 
+#### <a name="jsonparseerror"></a>json.parse.error 
  
 Táto udalosť označuje, že analyzátor JSON vyhodil chybu.  Budeme môcť vyriešiť problém s reťazcom načítania databázy Registry, ktorý bol odoslaný do analyzátora JSON, aby sa pre používateľov zabezpečila plynulá skúsenosť.
  
@@ -11282,7 +11356,7 @@ Zhromažďujú sa tieto polia:
 
 - **Error** – Obsahuje chybové hlásenie, že sa vracia objekt chyby.
 
-#### <a name="mail_filter_component"></a>mail_filter_component
+#### <a name="mailfiltercomponent"></a>mail.filter.component
 
 Táto udalosť umožňuje zistiť a vyriešiť problémy, ktoré citeľne vplývajú na výkon filtrovania pošty, čo by malo za následok nesprávne načítanie alebo zobrazenie filtrov.
 
@@ -11391,9 +11465,9 @@ Zhromažďujú sa tieto polia:
 - **UserDialogInterruptionDuringBoot** – Boolovská hodnota pre každé blokujúce dialógové okno, ktoré sa zobrazí počas štartu
 
 
-#### <a name="office_apple_apple_appboot_mac"></a>Office_Apple_Apple_AppBoot_Mac
+#### <a name="officeappleappleappbootmac"></a>Office.Apple.Apple.AppBoot.Mac
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase potrebnom na spustenie aplikácie, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase potrebnom na spustenie aplikácie, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11421,9 +11495,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_SentToBackground** – Či bola aplikácia odoslaná na pozadie počas spúšťania.
 
-#### <a name="office_apple_diskruleresultserializererroronstreamop"></a>Office_Apple_DiskRuleResultSerializerErrorOnStreamOp
+#### <a name="officeapplediskruleresultserializererroronstreamop"></a>Office.Apple.DiskRuleResultSerializerErrorOnStreamOp
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu infraštruktúry telemetrie. Táto udalosť označuje, že sa vyskytla chyba.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu infraštruktúry telemetrie. Táto udalosť označuje, že sa vyskytla chyba.
 
 Zhromažďujú sa tieto polia:
 
@@ -11433,9 +11507,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_IsWriteOp** – Či sa chystáme vykonať operáciu zapisovania.
 
-#### <a name="office_apple_macbootresourceusage"></a>Office_Apple_MacBootResourceUsage
+#### <a name="officeapplemacbootresourceusage"></a>Office.Apple.MacBootResourceUsage
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie viacerých indikátorov pre zdroje, ktoré spotrebúvajú aplikácie balíka Office počas spúšťania. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie viacerých indikátorov pre zdroje, ktoré spotrebúvajú aplikácie balíka Office počas spúšťania. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11477,9 +11551,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_VoluntaryContextSwitchesNvcsw** – Počet dobrovoľných kontextových prepínaní.
 
-#### <a name="office_apple_mau_validation"></a>Office_Apple_MAU_Validation
+#### <a name="officeapplemauvalidation"></a>Office.Apple.MAU.Validation
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu súčasti Automatická aktualizácia spoločnosti Microsoft, ktorá sa používa na distribúciu a inštaláciu aktualizácií aplikácií. Zhromaždené údaje sa používajú na zisťovanie chýb a skúmanie príčin zlyhaní.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu súčasti Automatická aktualizácia spoločnosti Microsoft, ktorá sa používa na distribúciu a inštaláciu aktualizácií aplikácií. Zhromaždené údaje sa používajú na zisťovanie chýb a skúmanie príčin zlyhaní.
 
 Zhromažďujú sa tieto polia:
 
@@ -11487,29 +11561,17 @@ Zhromažďujú sa tieto polia:
 
 - **Data_Message** – Zhromažďujeme informácie o reťazci s popisom chyby.
 
-#### <a name="office_apple_mbuinstrument_hang_detection_spin_control"></a>Office_Apple_MbuInstrument_Hang_Detection_Spin_Control
+#### <a name="officeapplembuinstrumenthangdetectionspincontrol"></a>Office.Apple.MbuInstrument.Hang.Detection.Spin.Control
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa zapíše do denníka vždy, keď aplikácia prestane reagovať. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa zapíše do denníka vždy, keď aplikácia prestane reagovať. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
 - **Data_CountSpinControlStart** – Značka, ktorá označuje, že sa aplikácia prestala reagovať (alebo reaguje pomaly).
 
-#### <a name="office_apple_mbuinstrument_vmondocumentclose"></a>Office_Apple_MbuInstrument_VMOnDocumentClose
+#### <a name="officeapplembuinstrumentvmondocumentclose"></a>Office.Apple.MbuInstrument.VMOnDocumentClose
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas zatvorenia dokumentu. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
-
-Zhromažďujú sa tieto polia:
-
-- **Data_CollectionTime** – Časová pečiatka od momentu zhromaždenia údajov.
-
-- **Data_ResidentMemory** – Zistená hodnota rezidentnej pamäte.
-
-- **Data_VirtualMemory** – Zistená hodnota virtuálnej pamäte.
-
-#### <a name="office_apple_mbuinstrument_vmonshutdown"></a>Office_Apple_MbuInstrument_VMOnShutdown
-
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas vypnutia aplikácie. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas zatvorenia dokumentu. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11519,9 +11581,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_VirtualMemory** – Zistená hodnota virtuálnej pamäte.
 
-#### <a name="office_apple_mbuinstrument_vmonstart"></a>Office_Apple_MbuInstrument_VMOnStart
+#### <a name="officeapplembuinstrumentvmonshutdown"></a>Office.Apple.MbuInstrument.VMOnShutdown
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas zapnutia aplikácie. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas vypnutia aplikácie. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11531,9 +11593,21 @@ Zhromažďujú sa tieto polia:
 
 - **Data_VirtualMemory** – Zistená hodnota virtuálnej pamäte.
 
-#### <a name="office_apple_msoappdelegate_bootperf"></a>Office_Apple_MsoAppDelegate_BootPerf
+#### <a name="officeapplembuinstrumentvmonstart"></a>Office.Apple.MbuInstrument.VMOnStart
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase a pamäti, ktoré počas spúšťania spotrebujú aplikácie balíka Office, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas zapnutia aplikácie. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_CollectionTime** – Časová pečiatka od momentu zhromaždenia údajov.
+
+- **Data_ResidentMemory** – Zistená hodnota rezidentnej pamäte.
+
+- **Data_VirtualMemory** – Zistená hodnota virtuálnej pamäte.
+
+#### <a name="officeapplemsoappdelegatebootperf"></a>Office.Apple.MsoAppDelegate.BootPerf
+
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase a pamäti, ktoré počas spúšťania spotrebujú aplikácie balíka Office, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11547,9 +11621,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_VirtualMemory** – Snímka dostupnej virtuálnej pamäte počas spúšťania.
 
-#### <a name="office_apple_ungracefulappexithangsinprevioussession"></a>Office_Apple_UngracefulAppExitHangsInPreviousSession
+#### <a name="officeappleungracefulappexithangsinprevioussession"></a>Office.Apple.UngracefulAppExitHangsInPreviousSession
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu našich aplikácií balíka Office, ako aj skúmanie príčin zlyhaní. Zhromažďujeme informácie o tom, koľkokrát aplikácia prestala reagovať ešte pred ukončením aplikácie so zlyhaním.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu našich aplikácií balíka Office, ako aj skúmanie príčin zlyhaní. Zhromažďujeme informácie o tom, koľkokrát aplikácia prestala reagovať ešte pred ukončením aplikácie so zlyhaním.
 
 Zhromažďujú sa tieto polia:
 
@@ -11561,7 +11635,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_SessionVersion** – Hlavná verzia aplikácie, v ktorej bolo pozorované ukončenie aplikácie so zlyhaním.
 
-#### <a name="office_apple_whatsnewerrorandwarning"></a>Office_Apple_WhatsNewErrorAndWarning
+#### <a name="officeapplewhatsnewerrorandwarning"></a>Office.Apple.WhatsNewErrorAndWarning
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu funkcie Čo je nové. Táto udalosť označuje, že sa vyskytla chyba alebo upozornenie počas analýzy obsahu funkcie Čo je nové a ukazuje na potenciálne problémy s tvorbou obsahu.
 
@@ -11712,29 +11786,35 @@ Táto udalosť sa zhromažďuje pri spustení aplikácie balíka Office. Obsahuj
 
 Zhromažďujú sa tieto polia:
 
-  - **ActivationKind** – zobrazuje, či sa aplikácia spustila spustením z ponuky Štart, otvorením súboru alebo prostredníctvom automatizácie OLE.
+- **ActivationKind** – zobrazuje, či sa aplikácia spustila spustením z ponuky Štart, otvorením súboru alebo prostredníctvom automatizácie OLE.
   
-  - **BootToStart** – či používateľ zvolil zobrazenie domovskej obrazovky po spustení aplikácie.
+- **BootToStart** – či používateľ zvolil zobrazenie domovskej obrazovky po spustení aplikácie.
 
-  - **ColdBoot** – uvádza, či je aplikácia balíka Office prvýkrát spustená po reštartovaní systému alebo bolo potrebné načítať z disku binárne rozhranie aplikácie.
+- **ColdBoot** – uvádza, či je aplikácia balíka Office prvýkrát spustená po reštartovaní systému alebo bolo potrebné načítať z disku binárne rozhranie aplikácie.
 
-  - **DeviceModel** – model zariadenia.
+- **DeviceModel** – model zariadenia.
 
-  - **DocLocation** – pri otváraní dokumentu označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
+- **DocLocation** – pri otváraní dokumentu označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
 
-  - **DurationUntilMso20Initialization** – trvanie v mikrosekundách od inicializácie procesu balíka Office po načítanie súboru mso20win32client.dll.
+- **DurationUntilMso20Initialization** – trvanie v mikrosekundách od inicializácie procesu balíka Office po načítanie súboru mso20win32client.dll.
 
-  - **FirstBoot** – zobrazuje, či išlo o prvé spustenie aplikácie.
+- **Embedding** – označuje, či aplikácia bola otvorená na vkladanie OLE.
 
-  - **InitializationDuration** – trvanie prvej inicializácie procesu balíka Office v mikrosekundách.
+- **FirstBoot** – zobrazuje, či išlo o prvé spustenie aplikácie.
 
-  - **InterruptionMessageId** – ID dialógového okna, ak bolo spustenie prerušené dialógovým oknom s výzvou pre používateľa na zadanie údajov.
+- **InitializationDuration** – trvanie prvej inicializácie procesu balíka Office v mikrosekundách.
 
-  - **TotalWorkingSetMB** – množstvo pamäte v megabajtoch v pracovnej sade procesu.
+- **InterruptionMessageId** – ID dialógového okna, ak bolo spustenie prerušené dialógovým oknom s výzvou pre používateľa na zadanie údajov.
 
-  - **VirtualSetMB** – množstvo pamäte v megabajtoch vo virtuálnej sade procesu. (Len MacOS/iOS)
+- **LegacyDuration** – časový úsek trvania spustenia aplikácie meraný pomocou iných počiatočných a koncových bodov než udalosť Activity.Duration.
 
-  - **WorkingSetPeakMB** – najväčšie množstvo pamäte v megabajtoch, ktoré bolo doteraz v pracovnej súprave procesu.
+- **OpenAsNew** – označuje, či sa aplikácia spustila otvorením existujúceho dokumentu ako šablóny pre nový.
+
+- **TotalWorkingSetMB** – množstvo pamäte v megabajtoch v pracovnej sade procesu.
+
+- **VirtualSetMB** – množstvo pamäte v megabajtoch vo virtuálnej sade procesu. (Len MacOS/iOS)
+
+- **WorkingSetPeakMB** – najväčšie množstvo pamäte v megabajtoch, ktoré bolo doteraz v pracovnej súprave procesu.
 
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
@@ -11785,12 +11865,25 @@ Udalosť, ktorá sa spustila pri načítavaní stránky súhrnu. Táto akcia ná
 
 Zhromažďujú sa tieto polia:
 
-- **PageURL:string** – URL adresa stránky, ktorú môžeme použiť na identifikáciu, či relácia bola úspešná alebo došlo k nejakej chybe.
+- **PayloadCreationTime** – čas v milisekundách, ktorý bol potrebný na vytvorenie údajovej časti. 
 
-- **Sessionid:string** – Identifikátor relácie reči. Môžeme ho použiť na ladenie denníkov služby.
+- **PostUrlCallTime** – čas v milisekundách, ktorý bol potrebný na odoslanie volania po URL adrese. 
 
-- **SummaryPageLoadTime: int** – trvanie (v ms) načítania stránky súhrnu. Je tu zahrnutý čas vytvárania údajovej časti 
+- **RehearseSessionid** – identifikátor relácie reči. Môžeme ho použiť na ladenie denníkov služby.
 
+- **RequestPayloadSize** – veľkosť údajovej časti požiadavky. 
+
+- **ResourcesLoadTime** – čas v milisekundách, ktorý bol potrebný na načítanie zdrojov (js, css). 
+
+- **SummaryPageErrorReceived** – Boolovská hodnota, ktorá označuje, či bola prijatá stránka súhrnu alebo sa vyskytla chyba.
+
+- **SummaryPageHtmlLoadTime** – čas v milisekundách, ktorý bol potrebný na načítanie html stránky súhrnu. 
+
+- **SummaryPageHtmlLoadTime** – čas v milisekundách, ktorý bol potrebný na prijatie prvej odpovede zo servera. 
+
+- **SummaryPageLoadTime** – trvanie (v ms) načítania stránky súhrnu. Zahŕňa čas vytvárania údajovej časti 
+
+- **ThumbnailsCount** – celkový počet miniatúr, ktoré budú súčasťou stránky súhrnu. 
 
 #### <a name="officepowerpointpptandroidrehearseviewstartsession"></a>Office.PowerPoint.PPT.Android.RehearseView.StartSession
 
@@ -11806,6 +11899,10 @@ Udalosť spustená, keď sa relácia reči zastaví pre nástroj Presenter Coach
 
 Zhromažďujú sa tieto polia:
 
+- **ActualRehearseBootTimeInMs** – skutočný čas, ktorý bol potrebný na vytvorenie pripojení.
+
+- **AdaptationTextSize** – veľkosť textu, ktorý sa odosiela do služby.
+
 - **AuthDurationInMs** – Čas v milisekundách potrebný na overenie (obnovenie overovacieho tokenu).
 
 - **AuthError** – Popis chyby overenia, ktorá sa vyskytla (ak vôbec).
@@ -11816,15 +11913,23 @@ Zhromažďujú sa tieto polia:
 
 - **FirstAudioDelayInMs** – Čas v milisekundách potrebný na prijatie prvých zvukových údajov.
 
+- **FRetriedOnOpenConnection** – Boolovská hodnota, ktorá označuje, či pre otvorenie pripojenia došlo k opakovaniu pokusu alebo nie.
+
 - **InitMediaCaptureLayerDurationInMs** – Čas v milisekundách potrebný na inicializáciu vrstvy zachytávania médií/zvuku.
 
 - **LocallyDroppedMessageCount** – Celkový počet lokálne zrušených správ.
+
+- **NumReconnectAttemptsDuringSession** – označuje počet pokusov o opätovné pripojenie k službe reči.
+
+- **NumTriesDuringEachReconnectAttempt** – toto pole označuje počet pokusov vykonaných počas každého pokusu o opätovné pripojenie.
 
 - **OpenFrontDoorConnectionDurationInMs** – Čas v milisekundách potrebný na otvorenie pripojenia k službe FrontDoor.
 
 - **SendAdaptationTextDurationInMs** – Čas v milisekundách potrebný na odoslanie textu prispôsobenia do služby.
 
 - **ServiceDroppedMessageCount** – Celkový počet správ zrušených službou.
+
+- **SessionDurationInMs** – čas trvania celej relácie, odkedy používateľ klikol na spustenie, kým klikol na zastavenie.
 
 - **Sessionid** – Identifikátor relácie reči. Môžeme ho použiť na ladenie denníkov služby.
 
@@ -11833,6 +11938,8 @@ Zhromažďujú sa tieto polia:
 - **SpeechHResultsWithTimestamps** – Pole prijatých chybových kódov spoločne s časovými pečiatkmi, ktoré môže pomôcť pri ladení.
 
 - **StartSpeechCaptureDurationInMs** – Čas v milisekundách potrebný na spustenie zachytávania reťi.
+
+- **StartSpeechServiceDurationInMs** – pole s časom, ktorý bol potrebný na spustenie relácie reči pri každom výskyte opätovného pripojenia vrátane trvania prvého spustenia relácie reči. 
 
 - **TotalMessageCount** – Celkový počet zvukových správ odoslaných do služby.
 
@@ -12017,7 +12124,7 @@ Zhromažďujú sa tieto polia:
 
 - **ServerType** – vráti typ servera, ktorý ponúka službu
 
-#### <a name="perf_event"></a>perf_event
+#### <a name="perfevent"></a>perf.event
 
 Slúži na sledovanie možného nepriaznivého vplyvu na výkon načítavania rôznych častí aplikácie, ak chcete napríklad zabezpečiť, aby sa pri prvom otvorení aplikácie čo najskôr načítal priečinok doručenej pošty.
 
@@ -12033,15 +12140,23 @@ Zhromažďujú sa tieto polia:
 
 - **total_time_elapsed** – uvádza čas potrebný na vykonanie udalosti výkonu, aby sme dokázali pochopiť závažnosť problému s výkonom
 
-#### <a name="performance_record"></a>performance_record
+#### <a name="performancerecord"></a>performance.record
 
-Umožňuje zistiť a vyriešiť situácie, pri ktorých bolo využívanie pamäte a procesora aplikáciou kriticky vysoké, čo môže spôsobiť spomalenie zariadenia
+Táto udalosť slúži na zhromažďovanie metriky výkonu aplikácie. Umožňuje zistiť a vyriešiť situácie, pri ktorých bolo využívanie pamäte a procesora aplikáciou kriticky vysoké alebo došlo k iným problémom s výkonom, čo môže spôsobiť spomalenie zariadenia.
 
 Zhromažďujú sa tieto polia: 
+
+- **app_exit_metric** – metrika o počtoch rôznych typov výkonu ukončení aplikácie v popredí a na pozadí, ktorá nám pomôže porozumieť neočakávaným ukončeniam aplikácie s negatívnymi dôvodmi výkonu.
+
+- **average_suspended_memory** – priemerné množstvo pamäte používanej aplikáciou, keď je pozastavená, slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon.
 
 - **category** – uvádza, či je aplikácia v popredí alebo na pozadí. Medzi možné hodnoty patria v popredí a na pozadí.
 
 - **cpu_usage** – uvádza vyťaženie procesora aplikáciou slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon
+
+- **cumulative_CPU_time** – celkové využitie procesora aplikáciou s mierou času, slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon.
+
+- **cumulative_GPU_time** – celkové využitie času GPU aplikáciou, slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výdrž batérie.
 
 - **is_watch_app_installed** – uvádza, či používateľ momentálne používa hodinky Apple Watch a či sú nainštalované, aby sme dokázali pochopiť nepriaznivý vplyv hodiniek na výkon
 
@@ -12052,6 +12167,10 @@ Zhromažďujú sa tieto polia:
 - **memoAry_used_percentage** – uvádza percento pamäte vyťaženej aplikáciou slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon
 
 - **memory_used** – uvádza vyťaženie pamäte aplikáciou slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon
+
+- **peak_memory_usage** – najväčšie množstvo pamäte využité aplikáciou slúžiace na porovnanie, aby sme dokázali pochopiť nepriaznivý vplyv na výkon.
+
+- **scroll_hitch_time_ratio** – pomer času stráveného trhaným pohybom počas posúvania v používateľskom rozhraní, aby sme dokázali pochopiť nepriaznivý vplyv používateľského rozhrania na výkon.
 
 
 ### <a name="application-activity-error-subtype"></a>*Podtyp Chyba aktivity aplikácie*
@@ -12080,7 +12199,7 @@ Zhromažďujú sa tieto polia:
 
 - **type** – typ chyby tvrdenia, ktorá sa vyskytla, napríklad null_folder_name a compose_selected_null_account, aby sme mohli zistiť problémy s určitou časťou kódu
 
-#### <a name="edit_contact_error"></a>edit_contact_error
+#### <a name="editcontacterror"></a>edit.contact.error
 
 Umožňuje zistiť a vyriešiť situácie, pri ktorých sa pri pokuse o zobrazenie alebo úpravu kontaktov v aplikácii objavili chyby.
 
@@ -12092,7 +12211,7 @@ Zhromažďujú sa tieto polia:
 
 - **version** – verzia služby karty kontaktu, ktorú používame na diagnostiku problému
 
-#### <a name="error_report"></a>error_report
+#### <a name="errorreport"></a>error.report
 
 Táto udalosť rozpoznať zistiť, či sa vyskytli kritické chyby aplikácie, aby sme mohli zabrániť problémom, ktoré by mohli spôsobiť zlyhanie aplikácie alebo zabránenie čítaniu e-mailov. 
 
@@ -12584,7 +12703,7 @@ Zhromažďujú sa tieto polia:
 
 - **ExceptionErrorMessage** – podrobné chybové hlásenie
 
-#### <a name="office_android_earlytelemetry_expansionfileserrors"></a>Office_Android_EarlyTelemetry_ExpansionFilesErrors
+#### <a name="officeandroidearlytelemetryexpansionfileserrors"></a>Office.Android.EarlyTelemetry.ExpansionFilesErrors
 
 Rozširujúce súbory súpravy Android Package Kit (APK) pre mobilnú aplikáciu Office sú doplnkové zdrojové súbory, ktoré môžu vývojári aplikácií pre Android publikovať spolu so svojou aplikáciou. Aby bol náš mechanizmus sťahovania rozširujúcich súborov spoľahlivejší, zaznamenávame príčiny chýb, ktoré sa vyskytujú pri sťahovaní rozširujúcich súborov alebo pri čítaní stiahnutých rozširujúcich súborov.
 
@@ -12600,7 +12719,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_MethodName** – text zastupujúci názov metódy v zdrojovom kóde, v ktorom došlo k chybe.
 
-#### <a name="office_android_earlytelemetry_extractionerror"></a>Office_Android_EarlyTelemetry_ExtractionError
+#### <a name="officeandroidearlytelemetryextractionerror"></a>Office.Android.EarlyTelemetry.ExtractionError
 
 Na zmenšenie veľkosti aplikácií balíka Office pre Android používame komprimáciu zdrojov v konečnom balíku. V čase spustenia najskôr extrahujeme tieto zdroje pred ich použitím. Niekedy sa vyskytnú neočakávané chyby pri vykonávaní extrakcie, čo vedie k zlyhaniam aplikácie. 
 
@@ -12631,7 +12750,7 @@ Zhromažďujú sa tieto polia:
 - **Data_MethodName** – názov metódy v zdrojovom kóde, kde došlo k chybe.
 
 
-#### <a name="office_android_earlytelemetry_registryerrors"></a>Office_Android_EarlyTelemetry_RegistryErrors
+#### <a name="officeandroidearlytelemetryregistryerrors"></a>Office.Android.EarlyTelemetry.RegistryErrors
 
 Táto udalosť zachytáva všetky chyby, ktoré sa vyskytli počas prístupu do databázy Registry pre Android. Údaje tejto udalosti nám pomáhajú pochopiť chyby používateľov a zlepšiť fungovanie funkcie databázy Registry.
 
@@ -12852,9 +12971,9 @@ Zhromažďujú sa tieto polia:
 - **WasIdentitySignedOut** – označuje, či sa konto nachádzalo v stave odhlásenia.
 
 
-#### <a name="office_apple_licensing_mac_dractivationfailures"></a>Office_Apple_Licensing_Mac_DRActivationFailures
+#### <a name="officeapplelicensingmacdractivationfailures"></a>Office.Apple.Licensing.Mac.DRActivationFailures
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zaznamenanie zlyhaní aktivácie Digital River (udalosť zaznamená kľúč a produkt, ktorý bol použitý na aktiváciu, ako aj prijatý kód chyby).  Táto udalosť sa používa na zisťovanie a pomoc pri riešení problémov s aktiváciou (problémy s Digital River).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zaznamenanie zlyhaní aktivácie Digital River (udalosť zaznamená kľúč a produkt, ktorý bol použitý na aktiváciu, ako aj prijatý kód chyby).  Táto udalosť sa používa na zisťovanie a pomoc pri riešení problémov s aktiváciou (problémy s Digital River).
 
 Zhromažďujú sa tieto polia:
 
@@ -12866,9 +12985,9 @@ Zhromažďujú sa tieto polia:
 
 - **Data_ProductKeyHash** – Zakódovaný aktivovaný kód Product Key.
 
-#### <a name="office_apple_licensing_mac_getmachinestatuserrors"></a>Office_Apple_Licensing_Mac_GetMachineStatusErrors
+#### <a name="officeapplelicensingmacgetmachinestatuserrors"></a>Office.Apple.Licensing.Mac.GetMachineStatusErrors
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zhromažďuje vrátený kód chyby, pričom sa pravidelne kontroluje platnosť licencie na predplatné. Kód chyby môže znamenať nedostupnosť servera, ale aj uplynutie platnosti licencie, obmedzenie počtu prístrojov, neplatné ID hardvéru atď.  Táto udalosť sa používa na monitorovanie stavu licenčnej služby balíka Office, ale aj na skúmanie problémov týkajúcich sa správy prístzrojov a predplatného.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zhromažďuje vrátený kód chyby, pričom sa pravidelne kontroluje platnosť licencie na predplatné. Kód chyby môže znamenať nedostupnosť servera, ale aj uplynutie platnosti licencie, obmedzenie počtu prístrojov, neplatné ID hardvéru atď.  Táto udalosť sa používa na monitorovanie stavu licenčnej služby balíka Office, ale aj na skúmanie problémov týkajúcich sa správy prístzrojov a predplatného.
 
 Zhromažďujú sa tieto polia:
 
@@ -12886,9 +13005,9 @@ Zhromažďujú sa tieto polia:
 
 - **Result** -výsledný kód chyby.
 
-#### <a name="office_firstrun_apple_maconiolkfirstrunstarted"></a>Office_FirstRun_Apple_MacONIOLKFirstRunStarted
+#### <a name="officefirstrunapplemaconiolkfirstrunstarted"></a>Office.FirstRun.Apple.MacONIOLKFirstRunStarted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
 
 Zhromažďujú sa tieto polia:
 
@@ -12906,7 +13025,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_TagID** – identifikátor zlyhania, ktoré sa vyskytlo
 
-#### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfolder_error"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder\_Error
+#### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfoldererror"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder.Error
 
 Táto udalosť zhromažďuje informácie, keď dôjde k zlyhaniu pri navigácii do zdieľaného kalendára. Tieto údaje sa používajú na monitorovanie stavu rozhrania API zdieľania kalendára, ako aj interakcie Outlooku so zdieľanými kalendármi.
 
@@ -13190,7 +13309,7 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.SDKVersion** – verzia klienta služby správy prístupových práv.
 
-#### <a name="save_error"></a>save_error
+#### <a name="saveerror"></a>save.error
 
 Umožňuje zistiť a vyriešiť situácie, pri ktorých sa vyskytla chyba pri pokuse o uloženie súboru.  Sleduje chyby spôsobené zlyhaniami uloženia súboru vrátane popisného chybového hlásenia, ktoré nám pomôžu pri riešení problému.
 
@@ -13216,7 +13335,7 @@ Toto sú podtypy údajov v tejto kategórii:
 
 Stav sieťového pripojenia a nastavenia zariadenia, napríklad pamäte.
 
-#### <a name="application_did_receive_memory_warning"></a>application_did_receive_memory_warning
+#### <a name="applicationdidreceivememorywarning"></a>application.did.receive.memory.warning
 
 Táto udalosť sa odošle, keď zariadenie Apple oznámi, že aplikácia nemá dostatok pamäte. Uvádza, že sme ako súčasť správy pamäte zaviedli do zariadenia problém.
 
@@ -13240,7 +13359,7 @@ Zhromažďujú sa tieto polia:
 
 - **running_time** – uvádza čas behu aplikácie v čase, kde sa vyskytol nedostatok pamäte.
 
-#### <a name="conversation_memory_leak"></a>conversation_memory_leak
+#### <a name="conversationmemoryleak"></a>conversation.memory.leak
 
 Umožňuje zistiť situácie, pri ktorých naše zobrazenie e-mailových konverzácií spotrebováva v zariadení väčšie množstvo pamäte, ako sa očakávalo.
 
@@ -13248,7 +13367,7 @@ Zhromažďujú sa tieto polia:
 
 - Nezhromažďujú sa žiadne polia ani pridané údaje. Zhromažďujú sa len denníky v prípade pretekania pamäte súvisiaceho s vláknom konverzácie.
 
-#### <a name="core_data_corruption"></a>core_data_corruption
+#### <a name="coredatacorruption"></a>core.data.corruption
 
 Umožňuje zistiť situácie, pri ktorých sa nedarí zobraziť e-maily alebo kalendár, pretože miesto uloženia e-mailov v zariadení bolo poškodené.
 
@@ -13258,7 +13377,7 @@ Zhromažďujú sa tieto polia:
 
 - **sqlError** – číselný kód chyby, ktorý je uvedený na https://www.sqlite.org/c3ref/c_abort.html
 
-#### <a name="core_data_corruption_user_reset"></a>core_data_corruption_user_reset
+#### <a name="coredatacorruptionuserreset"></a>core.data.corruption.user.reset
 
 Umožňuje zistiť situácie, pri ktorých ste v aplikácii odstránili alebo vynulovali svoje konto a bolo to spôsobené poškodením e-mailových údajov uložených v zariadení.
 
@@ -13266,7 +13385,7 @@ Zhromažďujú sa tieto polia:
 
 - **errorSource** – určuje, kde sa vyskytlo poškodenie bez ohľadu na to, či to bolo pri ukladaní alebo vytváraní
 
-#### <a name="core_data_diagnostics"></a>core_data_diagnostics 
+#### <a name="coredatadiagnostics"></a>core.data.diagnostics 
 
 Umožňuje zistiť a vyriešiť situácie, pri ktorých náš e-mailový ukladací priestor spotrebováva príliš veľa ukladacieho priestoru v zariadení.
 
@@ -13274,7 +13393,7 @@ Zhromažďujú sa tieto polia:
 
 - **db_size_megabytes** – sleduje veľkosť hlavnej databázy údajov zaokrúhlenú na najbližších 25 MB s maximálnou veľkosťou 500 MB
 
-#### <a name="general_properties_log"></a>general_properties_log
+#### <a name="generalpropertieslog"></a>general.properties.log
 
 Táto udalosť zhromažďuje informácie, ktoré umožňujú kategorizovať a klasifikovať problémy v aplikácii Outlook súvisiace s nastavením zjednodušenia ovládania a zariadenia.  Táto kategorizácia je potrebná na stanovenie priority vplyvu problémov na zákazníkov.
 
@@ -13332,7 +13451,7 @@ Zhromažďujú sa tieto polia len pre Android:
 
 - **webview_package_version**: vewrzia balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
 
-#### <a name="low_storage_warning"></a>low_storage_warning
+#### <a name="lowstoragewarning"></a>low.storage.warning
 
 Indikuje, kedy je v zariadení málo pamäte a slúži na monitorovanie toho, či naša aplikácia náhle nezaberá väčšinu ukladacieho priestoru zariadenia z dôvodu vysokého využitia pamäte
 
