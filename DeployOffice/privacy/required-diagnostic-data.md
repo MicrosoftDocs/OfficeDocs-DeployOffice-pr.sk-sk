@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: f200e22e639f2c89315c2f7fa2e9eab0367f86b1
-ms.sourcegitcommit: 1b12952b55f071b87026b49d372158209ed2e322
+ms.openlocfilehash: 7d9b2918983933ba4601ebce2b3930409001688d
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368652"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491521"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -356,6 +356,8 @@ Táto kategória obsahuje tieto polia:
   - **Flags** – informácia používaná na zmenu spôsobu, akým daná udalosť odpovedá. Slúži na spravovanie toho, ako sa s danou udalosťou zaobchádza na účely nahratia údajov pre spoločnosť Microsoft.
 
   - **Id** – jedinečný identifikátor udalosti. Umožňuje jedinečnú identifikáciu prijatých udalostí.
+
+  - **Level** – označuje typ udalosti.
 
   - **Name** – názov udalosti. Umožňuje identifikovať udalosť, ktorá bola odoslaná z klienta.
 
