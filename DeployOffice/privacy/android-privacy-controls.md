@@ -13,29 +13,25 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia služieb Office informácie o postupoch spravovania nastavení ochrany osobných údajov pre Office v zariadeniach s Androidom.
 hideEdit: true
-ms.openlocfilehash: 6086ecd1b2cd55bbf6cb4577879714f1d20a2f93
-ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
+ms.openlocfilehash: 2c1ecab42f31c85616faca42a5cb01b183a36087
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092133"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794456"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>Spravovanie nastavení ochrany osobných údajov pre Office v zariadeniach s Androidom pomocou nastavení politiky
 
+> [!NOTE]
+> Ak si chcete pozrieť zoznam produktov balíka Office, na ktorý sa vzťahujú tieto informácie o ochrane osobných údajov, pozrite si tému [Ovládacie prvky na ochranu osobných údajov dostupné pre produkty balíka Office](products-versions-privacy-controls.md).
+
 K dispozícii sú nastavenia politiky pre Office v zariadeniach s Androidom, ktoré umožňujú ovládať nastavenia pre:
 
-- ***Diagnostické údaje***, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o používanom klientskom softvéri balíka Office.
+- ***Diagnostické údaje** _, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o používanom klientskom softvéri balíka Office.
 
-- ***Online funkcie***, ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
+- _*_Online funkcie_*_ , ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
 
 Ďalšie informácie o diagnostických údajoch a online funkciách nájdete v téme [Prehľad ovládacích prvkov na ochranu osobných údajov](overview-privacy-controls.md).
-
-Tieto nastavenia politiky sa týkajú nasledujúcich aplikácií:
-- Word pre Android, Excel pre Android a PowerPoint pre Android verzie 16.0.12228.20260 a novšej.
-- Outlook pre Android verzie 4.1.71 a novšej.
-- OneNote pre Android verzie 16.0.12228.20004 a novšej.
-- OneDrive pre Android verzie 5.47 a novšej.
-- Aplikácia Office pre Android verzie 16.0.12430.20254 a novšej.
 
 ## <a name="policy-settings-available-for-office-on-android-devices"></a>Nastavenia politiky dostupné pre Office v zariadeniach s Androidom
 
@@ -43,7 +39,7 @@ V nasledujúcej tabuľke sú uvedené nastavenia politiky dostupné pre Office 
 
 > [!NOTE]
 >- Ďalšie uvedené informácie zahŕňajú nastavenia politiky pre Office v zariadeniach s Windowsom. Rovnaké informácie platia aj pre Office v zariadeniach s Androidom, pretože ide o rovnaké nastavenia politiky.
->- Nastavenie politiky *Povoliť používanie pripojených funkcií v Office*, ktoré je dostupné pre Office v zariadeniach s Windowsom, sa nevzťahuje na Office v zariadeniach s Androidom. 
+>- Nastavenie politiky _Povoliť používanie pripojených funkcií v Office*, ktoré je dostupné pre Office v zariadeniach s Windowsom, sa nevzťahuje na Office v zariadeniach s Androidom. 
 
 
 |Názov nastavenia politiky  |Ďalšie informácie |

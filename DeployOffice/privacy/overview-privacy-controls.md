@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus) vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: f367550169e75d0f1dbb0726e947ce8797fb1003
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: f894db695caf8a6dfa56dd6db541d8b8fd4bd564
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440584"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794774"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
@@ -30,8 +30,8 @@ ms.locfileid: "47440584"
 Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní služieb Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus).
 
 Od verzie 1904 Aplikácií Microsoft 365 pre veľké organizácie poskytujeme nové, aktualizované a vylepšené ovládacie prvky na ochranu osobných údajov pre tieto oblasti:
-- ***Diagnostické údaje***, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom vo vašej organizácii.
-- ***Pripojené funkcie***, ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
+- ***Diagnostické údaje** _, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa vo vašej organizácii.
+- _*_Online funkcie_*_ , ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
 
 Súčasťou týchto zmien sú nové a aktualizované prvky používateľského rozhrania a nastavenia politiky.
 
@@ -39,11 +39,11 @@ Súčasťou týchto zmien sú nové a aktualizované prvky používateľského 
 
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Tieto údaje neobsahujú meno ani e-mailovú adresu používateľa, obsah súborov používateľa ani informácie o aplikáciách, ktoré nesúvisia s balíkom Office.
 
-Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom vo vašej organizácii.
+Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa vo vašej organizácii.
 
 Existujú tri úrovne diagnostických údajov pre klientsky softvér Aplikácie Microsoft 365 pre veľké organizácie, z ktorých si môžete vybrať:
 
-- **Požadované** Minimálne údaje potrebné na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
+- _ *Požadované* * Minimálne údaje potrebné na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
 
 - **Voliteľné** Dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy.
 
@@ -61,9 +61,9 @@ Tieto diagnostické údaje nezahŕňajú mená používateľov, e-mailové adres
 
 Na zobrazenie toho, aké diagnostické údaje sa odosielajú spoločnosti Microsoft, môžete použiť zobrazovač diagnostických údajov, ktorý si môžete bezplatne stiahnuť a nainštalovať z Microsoft Storu.
 
-Ďalšie informácie sa nachádzajú v nasledujúcich témach:
+Ďalšie informácie nájdete v nasledujúcich článkoch:
 
-- [Požadované diagnostické údaje pre Office](required-diagnostic-data.md)
+- [Povinné diagnostické údaje pre Office](required-diagnostic-data.md)
 - [Voliteľné diagnostické údaje pre Office](optional-diagnostic-data.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
@@ -89,7 +89,7 @@ Ak sa rozhodnete neposkytovať používateľom niektoré typy pripojených funkc
 
 Vaši používatelia sa nebudú môcť rozhodnúť zapnúť alebo vypnúť tieto pripojené funkcie, ak sú prihlásení do služieb Office pomocou poverení organizácie, ktoré sa niekedy označujú ako pracovné alebo školské konto.
 
-Ďalšie informácie sa nachádzajú v nasledujúcich témach:
+Ďalšie informácie nájdete v nasledujúcich článkoch:
 
 - [Pripojené funkcie v Office](connected-experiences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
@@ -107,7 +107,7 @@ Keďže tieto voliteľné pripojené funkcie sa riadia samostatnými podmienkami
 
 Aj keď sa rozhodnete tieto voliteľné online funkcie sprístupniť používateľom, vaši používatelia budú môcť tieto voliteľné online funkcie vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
 
-Ďalšie informácie sa nachádzajú v nasledujúcich témach:
+Ďalšie informácie nájdete v nasledujúcich článkoch:
 
 - [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
@@ -120,7 +120,7 @@ Aj keď sa rozhodnete tieto voliteľné online funkcie sprístupniť používate
 
 Keď používate online funkciu, spoločnosť Microsoft dostáva a spracováva údaje, aby vám mohla online funkciu poskytnúť. Tieto údaje sú mimoriadne dôležité, pretože tieto informácie nám umožňujú poskytovať cloudové online funkcie. Tieto údaje nazývame údaje služieb.
 
-Požadované údaje služby môžu zahŕňať informácie súvisiace s fungovaním online funkcie, ktoré sú potrebné na zabezpečenie súvisiacej služby, jej aktualizáciu a správne fungovanie. Ak sa rozhodnete využiť online funkciu, ktorá analyzuje váš obsah. napríklad Preložiť vo Worde, text, ktorý ste zadali a vybrali na preklad v dokumente, sa tiež odošle a spracuje, aby sme vám túto online funkciu mohli poskytnúť. Požadované údaje služby môžu zahŕňať informácie vyžadované pripojenou funkciou na vykonávanie jej úlohy, ako sú napríklad informácie o konfigurácii aplikácie Office.
+Požadované údaje služby môžu zahŕňať informácie súvisiace s fungovaním online funkcie, ktoré sú potrebné na zabezpečenie súvisiacej služby, jej aktualizáciu a správne fungovanie. Ak sa rozhodnete využiť online funkciu, ktorá analyzuje váš obsah, napríklad Preložiť vo Worde, text, ktorý ste zadali a vybrali na preklad v dokumente, sa tiež odošle a spracuje, aby sme vám túto online funkciu mohli poskytnúť. Požadované údaje služby môžu zahŕňať informácie vyžadované pripojenou funkciou na vykonávanie jej úlohy, ako sú napríklad informácie o konfigurácii aplikácie Office.
 
 Ďalšie informácie nájdete v téme [Požadované údaje služieb pre Office](required-service-data.md).
 
@@ -130,6 +130,6 @@ Existuje tiež množina služieb, ktoré sú nevyhnutné pre fungovanie funkcií
 
 Ďalšie informácie nájdete v téme [Nevyhnutné služby pre Office](essential-services.md).
 
-## <a name="related-topics"></a>Súvisiace témy
+## <a name="related-articles"></a>Súvisiace články
 - [Ochrana osobných údajov v spoločnosti Microsoft](https://privacy.microsoft.com/)
 - [Ochrana osobných údajov vo Windowse](https://docs.microsoft.com/windows/privacy/)

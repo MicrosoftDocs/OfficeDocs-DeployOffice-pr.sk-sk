@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľných diagnostických údajoch v balíku Office vrátane niekoľkých príkladov udalostí.
 hideEdit: true
-ms.openlocfilehash: 2183863e1f7050d7d6ba838b639debf2b53ac9bd
-ms.sourcegitcommit: e1e4c309d62d0708404b7838c96416ce89f1b8b7
+ms.openlocfilehash: bcb9a8d4a886fefde3fbb42280183bf163b315c3
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328334"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794816"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Voliteľné diagnostické údaje pre Office
 
@@ -27,9 +27,9 @@ ms.locfileid: "48328334"
 
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Tieto údaje neobsahujú meno ani e-mailovú adresu používateľa, obsah súborov používateľa ani informácie o aplikáciách, ktoré nesúvisia s balíkom Office.
 
-Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou zobrazovača diagnostických údajov.
+Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou Zobrazovača diagnostických údajov.
 
-***Voliteľné diagnostické údaje*** sú dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy.
+***Voliteľné diagnostické údaje** _ sú dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy.
 
 Ak sa rozhodnete odosielať nám voliteľné diagnostické údaje, budú obsahovať aj požadované diagnostické údaje. Môžu sa odosielať aj súbory diagnostického denníka balíka Office, ktoré obsahujú informácie veľmi podobné voliteľným diagnostickým údajom. Ďalšie informácie o týchto súboroch denníkov nájdete v téme [Prehľad súborov diagnostického denníka pre Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
@@ -71,7 +71,7 @@ Do tejto kategórie patria udalostí, ktoré sa môžu vzťahovať na tieto obla
 
 Nasledujúca tabuľka obsahuje príklady udalostí v tejto kategórii a ich popis.
 
-| **Názov udalosti**   | **Popis udalosti**  |
+| _ *Názov udalosti**   | **Popis udalosti**  |
 | ---- | ---- |
 | Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | Táto udalosť označuje, či Word úspešne aktualizuje pás s nástrojmi používateľského rozhrania Wordu, keď používateľ zmení svoju identitu. Pomocou tejto udalosti rozpoznávame nesprávne nastavenie a iné problémy, ktoré by mohli ovplyvniť používateľské rozhranie balíka Office. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | Táto udalosť poskytuje informácie o doplnku balíka Office, ktorý používateľ nainštaloval, vrátane ID aplikácie, zostavy a verzie operačného systému, úspešnosti inštalácie a trvaní inštalácie.  |

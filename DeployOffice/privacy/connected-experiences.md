@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom balíka Office informácie o online funkciách v Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: ca3139f95f20392efce25bb00572c2973cec82db
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 2ffbac14694578fc1f5964cef2c92eea6d6a2172
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491593"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794761"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -71,7 +71,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 <sup>1</sup> Základné funkcie Editora zostávajú dostupné, aj keď nie ste pripojení na internet. Tieto isté základné funkcie zostávajú k dispozícii aj v prípade, že sa rozhodnete zakázať používanie online funkcií na analýzu obsahu. V oboch prípadoch sa spoločnosti Microsoft neodosielajú žiadne údaje o používaní Editora.
 
 > [!NOTE]
-> \*Keď sú používatelia prihlásení pomocou pracovného alebo školského konta, online funkcie uvedené vyššie kurzívou sú voliteľné a poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [prehlásenia o ochrane osobných údajov](https://privacy.microsoft.com/), pričom sa môžu uplatňovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md). Ak ste správca, tieto online funkcie je možné spravovať pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie alebo pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných online funkcií v Office*.
+> \*Keď sú používatelia prihlásení pomocou pracovného alebo školského konta, online funkcie uvedené vyššie kurzívou sú voliteľné a poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [prehlásenia o ochrane osobných údajov](https://privacy.microsoft.com/), pričom sa môžu uplatňovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md). Ak ste správca, tieto online funkcie je možné spravovať pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie alebo pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných online funkcií v Office* .
 
 ## <a name="connected-experiences-that-download-online-content"></a>Online funkcie na sťahovanie online obsahu
 
@@ -103,7 +103,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na sťahovanie onli
 | *Panel počasia*\* (Outlook)| [Zmena mesta, v ktorom sa bude v kalendári na paneli počasia sledovať počasie](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
->\*Keď sú používatelia prihlásení pomocou pracovného alebo školského konta, online funkcie uvedené vyššie kurzívou sú voliteľné a poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [prehlásenia o ochrane osobných údajov](https://privacy.microsoft.com/), pričom sa môžu uplatňovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md). Ak ste správca, tieto online funkcie je možné spravovať pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie alebo pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných online funkcií v Office*.
+>\*Keď sú používatelia prihlásení pomocou pracovného alebo školského konta, online funkcie uvedené vyššie kurzívou sú voliteľné a poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [prehlásenia o ochrane osobných údajov](https://privacy.microsoft.com/), pričom sa môžu uplatňovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md). Ak ste správca, tieto online funkcie je možné spravovať pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie alebo pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných online funkcií v Office* .
 
 ## <a name="other-connected-experiences"></a>Ďalšie online funkcie
 
@@ -125,7 +125,7 @@ V nasledujúcej tabuľke sa nachádza zoznam týchto ďalších online funkcií 
 | Prioritná doručená pošta (Outlook) |[Prioritná doručená pošta pre Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Správa prístupových práv k informáciám |[Otvorenie súboru, ktorý má obmedzené povolenia](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | Karta kontaktu v LinkedIne |[LinkedIn v aplikáciách a službách od spoločnosti Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Doplnky pre Office*\* | [Nasadenie doplnkov v centre spravovania](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
+| *Doplnky pre Office*\* | [Zobrazenie, spravovanie a inštalácia doplnkov v programoch balíka Office](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(pre používateľov)* <br/> [Nasadenie doplnkov v centre spravovania](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(pre správcov)* |
 | Pripomienky pre Office |[Ako môžem poskytnúť pripomienky k balíku Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Oddelenie podpory pre Office (kontakt) |Po výbere položky **Pomocník** > **Kontaktovať technickú podporu** na páse s nástrojmi |
 | Organizačná schéma (Visio) |[Vytvorenie organizačnej schémy vo Visiu](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
@@ -146,18 +146,18 @@ V nasledujúcej tabuľke sa nachádza zoznam týchto ďalších online funkcií 
 | Kým ste boli preč |[Prijatie upozornenia, keď člen tímu aktualizuje zdieľaný súbor](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
->\*Keď sú používatelia prihlásení pomocou pracovného alebo školského konta, online funkcie uvedené vyššie kurzívou sú voliteľné a poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [prehlásenia o ochrane osobných údajov](https://privacy.microsoft.com/), pričom sa môžu uplatňovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md). Ak ste správca, tieto online funkcie je možné spravovať pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie alebo pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných online funkcií v Office*.
+>\*Keď sú používatelia prihlásení pomocou pracovného alebo školského konta, online funkcie uvedené vyššie kurzívou sú voliteľné a poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [prehlásenia o ochrane osobných údajov](https://privacy.microsoft.com/), pričom sa môžu uplatňovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md). Ak ste správca, tieto online funkcie je možné spravovať pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie alebo pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných online funkcií v Office* .
 
 ## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Výber dostupnosti týchto online funkcií na používanie
 
 Môžete sa rozhodnúť, či určité typy online funkcií, napríklad online funkcie na sťahovanie online obsahu, sú k dispozícii na používanie. Spôsob voľby závisí od toho, či ste prihlásení do balíka Office pomocou konta Microsoft, ako je napríklad osobná e-mailová adresa outlook.com, alebo pomocou pracovného alebo školského konta.
 
-Ak ste prihlásení pomocou konta Microsoft, otvorte aplikáciu balíka Office, napríklad Word, a prejdite na položky **Súbor** > **Konto** > **Ochrana osobných údajov konta**  >  **Spravovať nastavenia**. V časti **Online funkcie** sa môžete rozhodnúť, či určité typy online funkcií, napríklad online funkcie na analýzu obsahu, sú k dispozícii na používanie. Ak neupravíte nastavenia v okne **Spravovať nastavenia**, všetky online funkcie budú k dispozícii.
+Ak ste prihlásení pomocou konta Microsoft, otvorte aplikáciu balíka Office, napríklad Word, a prejdite na položky **Súbor** > **Konto** > **Ochrana osobných údajov konta**  >  **Spravovať nastavenia** . V časti **Online funkcie** sa môžete rozhodnúť, či určité typy online funkcií, napríklad online funkcie na analýzu obsahu, sú k dispozícii na používanie. Ak neupravíte nastavenia v okne **Spravovať nastavenia** , všetky online funkcie budú k dispozícii.
 
-Ak ste prihlásení pomocou pracovného alebo školského konta, o dostupnosti týchto online funkcií rozhoduje správca vo vašej organizácii. Ak prejdete do okna **Súbor** > **Konto** > **Ochrana osobných údajov konta** > **Spravovať nastavenia**, nezobrazia sa žiadne možnosti online funkcií.
+Ak ste prihlásení pomocou pracovného alebo školského konta, o dostupnosti týchto online funkcií rozhoduje správca vo vašej organizácii. Ak prejdete do okna **Súbor** > **Konto** > **Ochrana osobných údajov konta** > **Spravovať nastavenia** , nezobrazia sa žiadne možnosti online funkcií.
 
 > [!NOTE]
-> - Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
+> - Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov** . Otvorí sa dialógové okno Nastavenia ochrany osobných údajov konta, kde môžete vidieť možnosti ochrany osobných údajov.
 > - Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 Ak ste správcom organizácie, pomocou nastavení politiky môžete určiť, či tieto online funkcie budú dostupné pre vašich používateľov. Ak nepoužijete tieto nastavenia politiky, všetky online funkcie budú k dispozícii pre vašich používateľov. Ďalšie informácie o používaní týchto nastavení politiky nájdete v týchto článkoch: 

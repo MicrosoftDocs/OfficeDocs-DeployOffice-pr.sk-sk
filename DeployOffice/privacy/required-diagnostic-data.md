@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: 7d9b2918983933ba4601ebce2b3930409001688d
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 8fd62619d8aff4b5dcb10d7a4c73710282e2cdd8
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491521"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794708"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -27,9 +27,9 @@ ms.locfileid: "48491521"
 
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Tieto údaje neobsahujú meno ani e-mailovú adresu používateľa, obsah súborov používateľa ani informácie o aplikáciách, ktoré nesúvisia s balíkom Office.
 
-Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v počítačoch s Windowsom. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou Zobrazovača diagnostických údajov.
+Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou Zobrazovača diagnostických údajov.
 
-***Povinné diagnostické údaje*** sú minimom potrebným na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
+***Povinné diagnostické údaje** _ sú minimom potrebným na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
 
 Povinné diagnostické údaje pomáhajú identifikovať problémy s balíkom Office, ktoré môžu súvisieť s konfiguráciou zariadenia alebo softvéru. Pomáhajú napríklad určiť, či funkcia balíka Office zlyháva častejšie pri konkrétnej verzii operačného systému, či ide o novo zavedené funkcie alebo či sa to stáva, ak sú niektoré funkcie balíka Office vypnuté. Povinné diagnostické údaje pomáhajú zistiť, diagnostikovať a riešiť tieto problémy rýchlejšie, čím sa znižuje ich vplyv na používateľov alebo organizácie.
 
@@ -57,7 +57,7 @@ Nasledujúca tabuľka obsahuje zoznam kategórií povinných diagnostických úd
 - Zoznam údajových polí v každej udalosti
 - Popis každého údajového poľa
 
-| **Kategória**       | **Podtyp údajov**| **Popis**    |
+| _ *Kategória**       | **Podtyp údajov**| **Popis**    |
 | ---------- | ------------- | ---- |
 | **Inštalácia softvéru a inventár** | [Inštalácia balíka Office a inventár](#office-setup-and-inventory-subtype)   | Nainštalovaný produkt a verzia a stav inštalácie.  |
 | | [Konfigurácia doplnkov balíka Office](#office-add-in-configuration-subtype)  | Softvérové doplnky a ich nastavenia     |
@@ -78,7 +78,7 @@ Nasledujúca tabuľka obsahuje zoznam kategórií povinných diagnostických úd
 
 ## <a name="categories-and-data-fields-that-are-common-for-all-events"></a>Kategórie a údajové polia, ktoré sú spoločné pre všetky udalosti
 
-Existuje niekoľko informácií o udalostiach, ktoré sú spoločné pre všetky udalosti bez ohľadu na kategóriu alebo podtyp údajov. Tieto spoločné informácie, ktoré sa niekedy označujú ako *údajové zmluvy*, sú usporiadané do kategórií. Každá kategória obsahuje polia. Tieto polia sú metaúdaje a vlastnosti jednotlivých udalostí. Tieto informácie môžete zobraziť pomocou Zobrazovača diagnostických údajov.
+Existuje niekoľko informácií o udalostiach, ktoré sú spoločné pre všetky udalosti bez ohľadu na kategóriu alebo podtyp údajov. Tieto spoločné informácie, ktoré sa niekedy označujú ako *údajové zmluvy* , sú usporiadané do kategórií. Každá kategória obsahuje polia. Tieto polia sú metaúdaje a vlastnosti jednotlivých udalostí. Tieto informácie môžete zobraziť pomocou Zobrazovača diagnostických údajov.
 
 Kategórie informácií, ktoré sa o udalostiach zhromažďujú, možno rozdeliť do dvoch skupín:
 
@@ -241,11 +241,11 @@ Táto kategória obsahuje tieto polia:
 
   - **Duration** – časový úsek, ktorý bol potrebný na vykonanie aktivity. Umožňuje nám identifikovať problémy s výkonom, ktoré majú negatívny vplyv na používateľa.
 
-  - **Result**.**Code** – aplikáciou definovaný kód na identifikáciu daného výsledku. Umožňuje určiť konkrétnejšie podrobností o danom zlyhaní, ako je napríklad kód zlyhania, pomocou ktorého je možné klasifikovať a riešiť problémy.
+  - **Result** . **Code** – aplikáciou definovaný kód na identifikáciu daného výsledku. Umožňuje určiť konkrétnejšie podrobností o danom zlyhaní, ako je napríklad kód zlyhania, pomocou ktorého je možné klasifikovať a riešiť problémy.
 
   - **Result.Tag** – značka celého čísla, ktorá identifikuje miesto v kóde, kde bol výsledok vytvorený. Umožňuje jednoznačne určiť miesto v kóde, kde bol výsledok vytvorený, vďaka čomu je možné klasifikovať zlyhania.
 
-  - **Result**.**Type** – typ kódu výsledku. Identifikuje, aký typ kódu výsledku bol odoslaný, aby bolo možné hodnotu správne interpretovať.
+  - **Result** . **Type** – typ kódu výsledku. Identifikuje, aký typ kódu výsledku bol odoslaný, aby bolo možné hodnotu správne interpretovať.
 
   - **Success** – príznak označujúci úspešnosť alebo zlyhanie aktivity. Umožňuje určiť, či akcie, ktoré používateľ v produktoch vykoná, sú úspešné alebo neúspešné. Umožňuje to identifikovať problémy, ktoré majú vplyv na používateľa.
 
@@ -377,7 +377,7 @@ Táto kategória obsahuje tieto polia:
 
   - **Source** – zdrojový kanál, ktorý sa použil na nahratie údajov. Vyžaduje sa na monitorovanie všetkých našich kanálov nahrávania a ich celkového stavu a pomáha identifikovať problémy s kanálom nahrávania. Umožňuje monitorovať jednotlivé kanály nahrávania, aby sa zaistila ich kompatibilita.
 
-  - **Time** – čas vygenerovania udalosti na strane klienta. Umožňuje synchronizovať a overiť poradie udalostí vygenerovaných na strane klienta, ako aj vytvoriť metriky výkonu pre používateľské pokyny. 
+  - **Time** – čas vygenerovania udalosti na strane klienta. Umožňuje synchronizovať a overiť poradie udalostí vygenerovaných na strane klienta, ako aj vytvoriť metriky výkonu pre používateľské pokyny. 
 
 #### <a name="host"></a>Hostiteľ
 
@@ -654,11 +654,11 @@ Okrem toho nasledujúce polia sú spoločné pre všetky udalosti Outlooku pre A
 
 - **process_bitness** – označuje bitovosť procesov (32 alebo 64 bitov) aplikácie a pomáha pri zisťovaní konkrétnych problémov s bitovosťou zariadenia
 
-- **webview_kernel_version**: verzia jadra platformy Chromium webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
+- **webview_kernel_version** : verzia jadra platformy Chromium webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
 
-- **webview_package_name**: názov balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
+- **webview_package_name** : názov balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
 
-- **webview_package_version**: vewrzia balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
+- **webview_package_version** : vewrzia balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
 
 
 ## <a name="software-setup-and-inventory-data-events"></a>Údajové udalosti v kategórii Inštalácia softvéru a inventár
@@ -897,9 +897,9 @@ Zaznamenáva jednotky SKU Visia, či ide o Standard alebo Professional. Potrebn
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_VisioSKU**:**integer** – 0 pre jednotky SKU Standard a 1 pre jednotky SKU Professional
+  - **Data\_VisioSKU** : **integer** – 0 pre jednotky SKU Standard a 1 pre jednotky SKU Professional
 
-#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(predchádzajúci názov)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
+#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(predchádzajúci názov)* , Office.OneNote.Android.App.OneNoteLaunchedNonActivated
 
 Zaznamenávajú sa informácie o stave aktivácie aplikácie.  Údaje sa monitorujú s cieľom zabezpečiť, aby sme identifikovali výkyvy pri problémoch s aktiváciou. Údaje tiež analyzujeme preto, aby sme zistili oblasti na vylepšenie.
 
@@ -907,7 +907,7 @@ Zhromažďujú sa tieto polia:
 
 - **INSTALL_LOCATION** – označuje, či je aplikácia predinštalovaná alebo stiahnutá z obchodu
 
-#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(predchádzajúci názov)*, Office.OneNote.Android.ResetStatus
+#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(predchádzajúci názov)* , Office.OneNote.Android.ResetStatus
 
 Signál, ktorý sa používa na zaznamenanie všetkých problémov, ktoré sa vyskytli pri pokuse používateľa o resetovanie aplikácie.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených počas resetovania. 
 
@@ -921,7 +921,7 @@ Zhromažďujú sa tieto polia:
 
 - **Pass** – označuje, či bolo resetovanie úspešné
 
-#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(predchádzajúci názov)*, Office.OneNote.Android.SignIn.SignInCompleted
+#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(predchádzajúci názov)* , Office.OneNote.Android.SignIn.SignInCompleted
 
 Kritický signál, ktorý označuje, či ide o úspešné prihlásenie alebo nie. Telemetria sa zhromažďuje na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby.
 
@@ -941,7 +941,7 @@ Zhromažďujú sa tieto polia:
 
 - **SignInMode** – prihlásenie alebo registrácia, alebo automatické prihlásenie alebo zrýchlená registrácia
 
-#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(predchádzajúci názov)*, Office.OneNote.Android.SignIn.SignInStarted
+#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(predchádzajúci názov)* , Office.OneNote.Android.SignIn.SignInStarted
 
 Signál, ktorý sa používa na označenie všetkých problémov, ktoré sa vyskytli počas používania panela hlásení.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených počas používania panela hlásení.
 
@@ -1029,7 +1029,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeextensibilitycatalogexchangegetlastupdate"></a>Office.Extensibility.Catalog.ExchangeGetLastUpdate
 
-Údaje o úspešnom a neúspešnom načítaní potrebných aktualizovaných údajov o doplnkoch priradených správcom nájomníka služieb Office 365. Slúžia na metriku stavu, grafy a analýzu problémov zákazníkov. ExchangeGetLastUpdate sa spustí vždy pri štarte v rámci kódu hostiteľa a určí, či sa zmenili priradenia doplnku pre používateľa.  Ak áno, potom sa načíta osf.DLL, aby sme mohli volať ExchangeGetEntitlements a získať konkrétne priradenia (a ExchangeGetManifests sa zavolá, aby sa načítal každý nový manifest, ktorý bude potrebný).  ExchangeGetEntitlements (a ExchangeGetManifests) je možné tiež volať na požiadanie po spustení hostiteľskej aplikácie.  Cieľom je nenačítať veľkú knižnicu DLL, ak to nie je potrebné.  Bez toho, aby táto udalosť bola medzi povinnými údajmi, by nebolo možné zistiť, či sa používateľom nedarí získať im priradené doplnky, ak prvé volanie služby nie je úspešné.  Ide tiež o hlavný signál pre všetky problémy s overovaním, s ktorými sa stretávame, keď hovoríme so službou.
+Údaje o úspešnom a neúspešnom načítaní potrebných aktualizovaných údajov o doplnkoch priradených správcom nájomníka služieb Office 365. Slúžia na metriku stavu, grafy a analýzu problémov zákazníkov. ExchangeGetLastUpdate sa spustí vždy pri štarte v rámci kódu hostiteľa a určí, či sa zmenili priradenia doplnku pre používateľa.   Ak áno, potom sa načíta osf.DLL, aby sme mohli volať ExchangeGetEntitlements a získať konkrétne priradenia (a ExchangeGetManifests sa zavolá, aby sa načítal každý nový manifest, ktorý bude potrebný).   ExchangeGetEntitlements (a ExchangeGetManifests) je možné tiež volať na požiadanie po spustení hostiteľskej aplikácie.   Cieľom je nenačítať veľkú knižnicu DLL, ak to nie je potrebné.   Bez toho, aby táto udalosť bola medzi povinnými údajmi, by nebolo možné zistiť, či sa používateľom nedarí získať im priradené doplnky, ak prvé volanie služby nie je úspešné.   Ide tiež o hlavný signál pre všetky problémy s overovaním, s ktorými sa stretávame, keď hovoríme so službou.
 
 Zhromažďujú sa tieto polia:
 
@@ -1265,13 +1265,13 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_DocumentSessionLogID:string** – identifikátor relácie dokumentu
 
-  - **Data\_IsEnabled**:**bool** – hodnota true, ak je riešenie povolené
+  - **Data\_IsEnabled** : **bool** – hodnota true, ak je riešenie povolené
 
   - **Data\_TemplateID:string** – identifikátor GUID šablóny, v ktorej sa načítalo riešenie. Záznam 0 pre vlastné riešenie
 
-  - **Data\_AddOnID**:**string** – identifikátor GUID na identifikáciu načítaného doplnku
+  - **Data\_AddOnID** : **string** – identifikátor GUID na identifikáciu načítaného doplnku
 
-  - **Data\_Error**:**integer** – ID chyby
+  - **Data\_Error** : **integer** – ID chyby
 
 ### <a name="security-subtype"></a>*Podtyp zabezpečenia*
 
@@ -1871,7 +1871,7 @@ Zhromažďujú sa tieto polia:
 
 - **action** – akcia bude buď ťahanie, alebo pustenie.
 
-- **location**– v prípade akcie ťahania budeme vedieť, odkiaľ používateľ začal presúvať.  V prípade akcie pustenia budeme vedieť, kde používateľ pustil presúvaný súbor. 
+- **location** – v prípade akcie ťahania budeme vedieť, odkiaľ používateľ začal presúvať.  V prípade akcie pustenia budeme vedieť, kde používateľ pustil presúvaný súbor. 
 
 - **source** – v prípade akcie presunutia myšou budeme vedieť, odkiaľ používateľ začal presúvať. Pomôže nám to zistiť problémy s presunom z konkrétneho zdroja, ako je napríklad OneDrive alebo súbory, do určitého umiestnenia, napríklad do nového e-mailu.
 
@@ -2797,7 +2797,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappcompatappcompatagentscanandupload"></a>Office.AppCompat.AppCompat.AgentScanAndUpload
 
-Zhromažďuje sa len vtedy, ak koncový používateľ povolil tabuľu telemetrie balíka Office. Zhromažďuje informácie o tom, kedy sa spustil agent telemetrie balíka Office.  Tieto údaje sa zhromažďujú len vtedy, ak je tabuľa telemetrie balíka Office povolená a používa sa na určenie stavu agenta telemetrie balíka Office.
+Zhromažďuje sa len vtedy, ak koncový používateľ povolil tabuľu telemetrie balíka Office. Zhromažďuje informácie o tom, kedy sa spustil agent telemetrie balíka Office.    Tieto údaje sa zhromažďujú len vtedy, ak je tabuľa telemetrie balíka Office povolená a používa sa na určenie stavu agenta telemetrie balíka Office.
 
 Zhromažďujú sa tieto polia:
 
@@ -2809,7 +2809,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappcompatappcompattelemetrydashboardresiliencycrashlog"></a>Office.AppCompat.AppCompat.TelemetryDashboardResiliencyCrashLog
 
-Zhromažďuje sa len vtedy, ak koncový používateľ (s najväčšou pravdepodobnosťou správca) povolil tabuľu telemetrie balíka Office. Zhromažďuje informácie o výskyte zlyhaní doplnkov a dokumentov balíka Office. Tieto údaje sa zhromažďujú len vtedy, ak používateľ povolil tabuľu telemetrie balíka Office a používa sa na určenie toho, či dochádza k zvýšenému výskytu zlyhaní doplnkov alebo dokumentov.
+Zhromažďuje sa len vtedy, ak koncový používateľ (s najväčšou pravdepodobnosťou správca) povolil tabuľu telemetrie balíka Office. Zhromažďuje informácie o výskyte zlyhaní doplnkov a dokumentov balíka Office.  Tieto údaje sa zhromažďujú len vtedy, ak používateľ povolil tabuľu telemetrie balíka Office a používa sa na určenie toho, či dochádza k zvýšenému výskytu zlyhaní doplnkov alebo dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -2911,7 +2911,7 @@ Zhromažďujú sa tieto polia:
 
 - **Data_InitializationReason** – vyjadrenie enumerácie konkrétneho dôvodu operácie. Napr. otvorenie z URL adresy alebo lokálnej cesty k súboru, vytvorenie pomocou výberu súboru, kopírovanie do cesty k súboru, exportovanie na URL adresu atď.
 
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled**.
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** .
 
 - **Data_IsNameMissingInUrl** – označuje, či sa názov neanalyzoval z URL adresy.
 
@@ -6254,9 +6254,9 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officepowerpointdocoperationnewdocument"></a>Office.PowerPoint.DocOperation.NewDocument
 
-Zhromažďuje sa, keď PowerPoint vytvorí novú prezentáciu. Obsahuje metriky úspešnosti, zlyhania a výkonu.
+Zhromažďuje sa, keď PowerPoint vytvorí novú prezentáciu.  Obsahuje metriky úspešnosti, zlyhania a výkonu.
 
-Tieto informácie sa používajú na zabezpečenie úspešného vytvorenia súboru bez zníženie výkonu.
+Tieto informácie sa používajú na zabezpečenie úspešného vytvorenia súboru bez zníženia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -6380,7 +6380,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officepowerpointdocoperationsave"></a>Office.PowerPoint.DocOperation.Save
 
-Zhromažďuje sa vždy, keď PowerPoint vykoná uloženie pomocou cesty moderného kódu. Zahŕňa typ výsledku úspešnosti alebo zlyhania pre metriku výkonu pri ukladaní a metaúdaje relevantného dokumentu.  Zlyhania uloženia môžu mať za následok stratu údajov. Spoločnosť Microsoft používa tieto údaje, aby sa zabezpečilo fungovanie funkcie podľa očakávaní a obsah používateľa sa úspešne zachoval.
+Zhromažďuje sa vždy, keď PowerPoint vykoná uloženie pomocou cesty moderného kódu. Zahŕňa typ výsledku úspešnosti alebo zlyhania pre metriku výkonu pri ukladaní a metaúdaje relevantného dokumentu.  Zlyhania uloženia môžu mať za následok stratu údajov. Spoločnosť Microsoft používa tieto údaje, aby sa zabezpečilo fungovanie funkcie podľa očakávaní a obsah používateľa sa úspešne zachoval.
 
 Zhromažďujú sa tieto polia:
 
@@ -7400,13 +7400,13 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ConnectorsBasedOnSequence:bool** – má hodnotu true, ak obnovený diagram bol pôvodne vytvorený pomocou konektora na základe možnosti postupnosti
 
-  - **Data\_DialogError**:**string** – chyba počas obnovovania inteligentného diagramu
+  - **Data\_DialogError** : **string** – chyba počas obnovovania inteligentného diagramu
 
   - **Data\_FileError:string** – reťazec chyby, keď pripojený excelový súbor je neplatný
 
-  - **Data\_OverwriteSelected**:**bool** – má hodnotu true, ak používateľ počas obnovenia vybral možnosť prepísania diagramu
+  - **Data\_OverwriteSelected** : **bool** – má hodnotu true, ak používateľ počas obnovenia vybral možnosť prepísania diagramu
 
-  - **Data\_WarningShown**:**bool** – má hodnotu true, ak sa počas obnovenia údajov používateľovi zobrazila nejaká výstraha
+  - **Data\_WarningShown** : **bool** – má hodnotu true, ak sa počas obnovenia údajov používateľovi zobrazila nejaká výstraha
 
 #### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
 
@@ -8061,7 +8061,7 @@ Zhromažďujú sa tieto polia:
 
 - Žiadne
 
-#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(predchádzajúci názov)*, Office.OneNote.Android.Canvas.PageOpened
+#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(predchádzajúci názov)* , Office.OneNote.Android.Canvas.PageOpened
 
 Signál, ktorý sa používa na zaznamenanie, keď sa otvorí strana.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených pri otvorení strany vo OneNote.
 
@@ -8071,7 +8071,7 @@ Zhromažďujú sa tieto polia:
 
 - **TIME_TAKEN_IN_MS** – čas potrebný na otvorenie strany
 
-#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(predchádzajúci názov)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(predchádzajúci názov)* , Office.OneNote.Android.Capture.NewNote.NewNoteTaken
 
 Tento signál sa používa na zabezpečenie toho, aby sa po prihlásení používateľa do aplikácie OneNote pre Android správne zriadili poznámkové bloky a aby používateš úspešne vytvoril novú poznámku.  Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby.
 
@@ -8079,7 +8079,7 @@ Zhromažďujú sa tieto polia:
 
 - Žiadne
 
-#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(predchádzajúci názov)*, Office.OneNote.Android.MessageBar.MessageBarClicked
+#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(predchádzajúci názov)* , Office.OneNote.Android.MessageBar.MessageBarClicked
 
 Signál, ktorý sa používa na označenie všetkých problémov, ktoré sa vyskytli počas používania panela hlásení.  Telemetria sa používa na sledovanie, zisťovanie a opravu všetkých problémov spôsobených počas používania panela hlásení.
 
@@ -8743,7 +8743,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Doc\_SpecialChars:long** – dlhá bitová maska označujúca špeciálne znaky v URL adrese alebo ceste k dokumentu
 
-  - **Data\_Doc\_SyncBackedType** – indikátor typu dokumentu (lokálny alebo v službe) 
+  - **Data\_Doc\_SyncBackedType** – indikátor typu dokumentu (lokálny alebo v službe) 
 
   - **Data\_Doc\_UrlHash:string** – hodnota hash celej URL adresy dokumentov uložených v cloude
 
@@ -9012,7 +9012,7 @@ Zhromažďujú sa tieto polia:
 
 - **IsFRELoadSuccessful** – celé číslo uvádzajúce stav výsledku
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(predchádzajúci názov)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(predchádzajúci názov)* , Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
 Kritický signál, ktorý sa používa na zaistenie, že noví individuálni používatelia (konto Microsoft) môžu úspešne spustiť a používať OneNote po prvýkrát.  Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby.  Ak používatelia nemôžu spustiť aplikáciu po prvýkrát, môže to vyvolať incident s vysokou závažnosťou.
 
@@ -9114,13 +9114,13 @@ Zhromažďujú sa tieto polia:
  
 - **USER_INTERACTED_DURING_EVENT** – označuje, či došlo k interakcii používateľa počas štartovania
 
-#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(previous name)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
+#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(previous name)* , Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
 
 Signál, ktorý sa používa na označenie toho, že aplikácia OneNote sa nachádza v popredí.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. 
 
 Zhromažďujú sa tieto polia: Žiadne
 
-#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(previous name)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
+#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(previous name)* , Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
 
 Kritický signál sa používa na zaistenie, aby používatelia OneNotu mohli úspešne spustiť aplikáciu.  Telemetria sa používa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby. 
 
@@ -9339,9 +9339,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ForceReopenOnIncOpenMergeFailure** – príznak vyjadrujúci, či sme boli nútení znova otvoriť z dôvodu zlyhania zlúčenia v prírastkovom otváraní
 
-  - **Data\_ForegroundThreadPass0TimeMS ** (len Mac) – celkový čas strávený vo vlákne v popredí pri prvom prechode
+  - **Data\_ForegroundThreadPass0TimeMS** (len Mac) – celkový čas strávený vo vlákne v popredí pri prvom prechode
 
-  - **Data\_ForegroundThreadPass1TimeMS ** (len Mac) – celkový čas strávený vo vlákne v popredí pri druhom prechode
+  - **Data\_ForegroundThreadPass1TimeMS** (len Mac) – celkový čas strávený vo vlákne v popredí pri druhom prechode
 
   - **Data\_FWebCreatorDoc** – či je dokument vytvorený zo šablóny alebo rýchleho štartu
 
@@ -9415,7 +9415,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_OpenCompleteFailureTag** – značka (ukazovateľ na miesto v kóde) miesta zlyhania protokolu OpenComplete
 
-  - **Data\_OpenLifeguardOption**– preddefinovaná množina hodnôt volieb pre operáciu ochrany životnosti (None, TryAgain, OpenInWebApp atď.)
+  - **Data\_OpenLifeguardOption** – preddefinovaná množina hodnôt volieb pre operáciu ochrany životnosti (None, TryAgain, OpenInWebApp atď.)
 
   - **Data\_OpenReason** – preddefinovaná množina hodnôt spôsobu otvorenia tohto dokumentu (FilePicker, OpenFromMru, FileDrop atď.)
 
@@ -10281,7 +10281,7 @@ Umožňuje zistiť, či má používateľ nástroj pomocných technológií pre 
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_Data\_Jaws** – označuje, či bol nástroj Jaws spustený počas relácie**Data\_Data\_Magic** – označuje, či bol nástroj Magic spustený počas relácie
+  - **Data\_Data\_Jaws** – označuje, či bol nástroj Jaws spustený počas relácie **Data\_Data\_Magic** – označuje, či bol nástroj Magic spustený počas relácie
 
   - **Data\_Data\_Magnify** – označuje, či bol nástroj Zväčšovacie sklo spustený počas relácie
 
@@ -10707,7 +10707,7 @@ Zhromažďujú sa tieto polia:
 
 - **StoreType** – pôvod aplikácie.
 
-- **Tag**– Špecifikuje presné miesto zlyhania kódu pomocou jedinečnej priradenej značky.
+- **Tag** – Špecifikuje presné miesto zlyhania kódu pomocou jedinečnej priradenej značky.
 
 - **UsesSharedRuntime** – Označuje, či aplikácia používa sharedRuntime alebo nie.
 
@@ -10777,7 +10777,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officepowerpointsession"></a>Office.PowerPoint.Session
 
-Zhromažďuje použitia funkcie v jednotlivých reláciách PowerPointu.Tieto údaje sa používajú na výpočet pomeru neželaného ukončenia PowerPointu pri používaní funkcie. Pomer neželaného ukončenia PowerPointu je kľúčový signál na zaručenie, že PowerPoint funguje podľa očakávania.
+Zhromažďuje použitia funkcie v jednotlivých reláciách PowerPointu. Tieto údaje sa používajú na výpočet pomeru neželaného ukončenia PowerPointu pri používaní funkcie. Pomer neželaného ukončenia PowerPointu je kľúčový signál na zaručenie, že PowerPoint funguje podľa očakávania.
 
 Zhromažďujú sa tieto polia:
 
@@ -10857,7 +10857,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officepowerpointuaesession"></a>Office.PowerPoint.UAE.Session
 
-Táto udalosť zhromažďuje informácie o tom, ktorá funkcia sa používala, keď sa relácia PowerPointu neželane ukončila.Tieto informácie sú dôležité na zachytenie neželaných ukončení PowerPointu. Spoločnosť Microsoft používa tieto údaje na diagnostiku problému, aby sa zaručilo, že PowerPoint funguje podľa očakávaní.
+Táto udalosť zhromažďuje informácie o tom, ktorá funkcia sa používala, keď sa relácia PowerPointu neželane ukončila.  Tieto informácie sú dôležité na zachytenie neželaných ukončení PowerPointu. Spoločnosť Microsoft používa tieto údaje na diagnostiku problému, aby sa zaručilo, že PowerPoint funguje podľa očakávaní.
 
 Zhromažďujú sa tieto polia:
 
@@ -11716,13 +11716,13 @@ Zhromažďujú sa tieto polia:
 
 - **ErrorCode** – vráti kód chyby zodpovedný za zlyhanie poskytovania 
 
-- **NetworkConnection**: typ sieťového pripojenia používaného zariadenia
+- **NetworkConnection** : typ sieťového pripojenia používaného zariadenia
 
 - **NetworkDataExchange** – zaznamená počet bajtov vymenených počas poskytovania.
 
-- **ServerType**: vráti typ servera, ktorý ponúka službu
+- **ServerType** : vráti typ servera, ktorý ponúka službu
 
-- **TimeTakenInMilliSeconds**: vráti čas potrebný na dokončenie poskytovania v milisekundách
+- **TimeTakenInMilliSeconds** : vráti čas potrebný na dokončenie poskytovania v milisekundách
 
 
 #### <a name="officeonenotesystembootdialogssafebootdialogpending"></a>Office.OneNote.System.BootDialogs.SafeBootDialogPending 
@@ -12100,7 +12100,7 @@ Zhromažďujú sa tieto polia:
 - **DIALOG_ACTION** – na ktoré dialógové tlačilo klikol používateľ – kladné alebo záporné.
 
 
-#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(predchádzajúci názov)*, Office.OneNote.Android.Sync.ProvisioningCompleted
+#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(predchádzajúci názov)* , Office.OneNote.Android.Sync.ProvisioningCompleted
 
 Kritický signál sa používa na zabezpečenie toho, aby sa po prihlásení používateľa do aplikácie OneNote pre Android správne zriadili poznámkové bloky na zaistenie bezproblémového prístupu k nim. Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby
 
@@ -12116,7 +12116,7 @@ Zhromažďujú sa tieto polia:
 
 - **TimeTakenInMilliSeconds** – vráti čas potrebný na dokončenie poskytovania v milisekundách
 
-#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(predchádzajúci názov)*, Office.OneNote.Android.Sync.ProvisioningStarted
+#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(predchádzajúci názov)* , Office.OneNote.Android.Sync.ProvisioningStarted
 
 Kritický signál sa používa na zabezpečenie toho, aby sa po prihlásení používateľa do aplikácie OneNote pre Android správne zriadili poznámkové bloky na zaistenie bezproblémového prístupu k nim.  Používa sa na zabezpečenie kritického regresného zisťovania stavu aplikácie OneNote a služby
 
@@ -12302,7 +12302,7 @@ Zhromažďujú sa tieto polia:
 
 - **FirstBCSClientError_Info** – informácie o kóde chyby v súvislosti s konverziami súborov
 
-- **HttpStatusCode**-http – kód odozvy HTTP pre žiadosť o webovú službu
+- **HttpStatusCode** -http – kód odozvy HTTP pre žiadosť o webovú službu
 
 - **InitalizationReason** – vstupný bod pre otvorenie súboru
 
@@ -12578,7 +12578,7 @@ Zhromažďujú sa tieto polia:
 
 - **FirstBCSClientError_Info** – informácie o kóde chyby v súvislosti s konverziami súborov
 
-- **HttpStatusCode**-http – kód odozvy HTTP pre žiadosť o webovú službu
+- **HttpStatusCode** -http – kód odozvy HTTP pre žiadosť o webovú službu
 
 - **InitalizationReason** – vstupný bod pre otvorenie súboru
 
@@ -13447,11 +13447,11 @@ Zhromažďujú sa tieto polia len pre Android:
 
 - **talkback** – uvádza, či používateľ v zariadení zapol nastavenie pre službu TalkBack, aby sme mohli zistiť problémy s týmto nastavením
 
-- **webview_kernel_version**: verzia jadra platformy Chromium webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
+- **webview_kernel_version** : verzia jadra platformy Chromium webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
 
-- **webview_package_name**: názov balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
+- **webview_package_name** : názov balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
 
-- **webview_package_version**: vewrzia balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
+- **webview_package_version** : vewrzia balíka webového zobrazenia v zariadení, aby sme mohli zistiť problémy s kompatibilitou týkajúce sa verzie webového zobrazenia.
 
 #### <a name="lowstoragewarning"></a>low.storage.warning
 
