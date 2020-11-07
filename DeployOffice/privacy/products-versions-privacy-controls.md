@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Poskytuje informácie o tom, ktoré produkty a verzie Office majú najnovšie ovládacie prvky na ochranu osobných údajov.
 hideEdit: true
-ms.openlocfilehash: d6fc46501b2137f2f22cd30dad4a2168bc490360
-ms.sourcegitcommit: da41d41b443c8392c96e64a4d2fc674957abddf5
+ms.openlocfilehash: 8434891947997908bb4de61ad56606f8b4b59614
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47431984"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931197"
 ---
 # <a name="privacy-controls-available-for-office-products"></a>Ovládacie prvky na ochranu osobných údajov pre produkty Office
 
@@ -42,7 +42,6 @@ Naše najnovšie ovládacie prvky na ochranu osobných údajov sú k dispozícii
 - Maloobchodné verzie Office 2019 a Office 2016, ktoré sú k dispozícii vo forme jednorazového nákupu. Napríklad Office Professional 2019 alebo Office 2016 pre študentov a domácnosti.
 - Počítačové verzie Projectu a Visia, ktoré sú súčasťou niektorých plánov predplatného, ako napríklad Project Plan 5 alebo Visio Plan 2.
 - Maloobchodné verzie softvéru Project 2019, Project 2016, Visio 2019 a Visio 2016, ktoré sú dostupné vo forme jednorazového nákupu.
-- Multilicenčné verzie Projectu 2016 a Visia 2016, ktoré sú nainštalované pomocou technológie Klikni a spusti a nie sú nainštalované pomocou Inštalátora systému Windows (MSI). Napríklad Project Professional 2016 alebo Visio Standard 2016.
 
 V nasledovnej tabuľke nájdete zoznam aplikácií a najnižšej možnej verzie aplikácií, ktoré majú naše najnovšie ovládacie prvky ochrany osobných údajov, platný pre zariadenia s Windowsom:
 
@@ -74,6 +73,12 @@ V prípade týchto verzií aplikácií Office v zariadeniach s Windowsom sú k d
 Niektoré produkty Office nemusia mať určité typy online funkcií, takže niektoré ovládacie prvky na ochranu osobných údajov nie sú relevantné.
 
 Ak chcete konfigurovať tieto ovládacie prvky na ochranu osobných údajov pre používateľov, ktorí používajú Office v zariadeniach s Windowsom vo vašej organizácii, môžete použiť skupinovú politiku alebo službu politiky Office v cloude. Viac informácií nájdete v téme [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
+
+> [!NOTE]
+> Ovládací prvok ochrany osobných údajov „Povoliť používanie dodatočných voliteľných pripojených funkcií v Office“ je podporovaný nasledujúcimi verziami *s multilicenciami* balíka Office, Project a Visio.
+> - Office 2019, Project 2019 a Visio 2019, keď sú nakonfigurované tak, aby používali kanál aktualizácií PerpetualVL2019. V takom prípade musíte používať aspoň verziu 1808 (zostava 10367.20048), ktorá bola vydaná 13. októbra 2020.
+> - Project 2019 a Visio 2019, keď sú nakonfigurované na používanie kanála aktualizácií iného ako PerpetualVL2019. Ak sú napríklad nakonfigurované na používanie aktuálneho kanála, mesačného kanála Enterprise alebo polročného kanála Enterprise. V takom prípade musíte používať aspoň verziu 1904.
+> - Project 2016 a Visio 2016, ktoré sú nainštalované pomocou technológie Klikni a spusti a nie sú nainštalované pomocou Inštalátora systému Windows (MSI). V takom prípade musíte používať aspoň verziu 1904.
 
 ## <a name="office-on-mac-devices"></a>Office v zariadeniach Mac
 

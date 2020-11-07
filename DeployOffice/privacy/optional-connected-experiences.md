@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: c7593aed7e4bc6037bca6b84181c0434b2e27e30
-ms.sourcegitcommit: 288d54b2e6b463f67358f701ef0dd5424237f811
+ms.openlocfilehash: d0eea79f28d2c2f79991ac0d59ebb6a567fecb21
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322385"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931451"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -99,7 +99,10 @@ Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
 
-Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+
+> [!NOTE]
+> Ak vám správca vo vašej organizácii poskytol multilicenčnú verziu balíka Office 2019, Project 2019 alebo Visio 2019, prejdite na **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti** > **Možnosti ochrany osobných údajov**. Tam by ste mali vidieš začiarkavacie políčko pre možnosť **Zapnúť voliteľné online funkcie**. Ak sa toto začiarkavacie políčko v Projecte 2019 alebo Visiu 2019 nezobrazuje, vyberte položku **Nastavenia ochrany osobných údajov...** v dialógovom okne **Centrum dôveryhodnosti**. Malo by sa zobraziť dialógové okno **Nastavenia ochrany osobných údajov** so začiarkavacím políčkom pre možnosť **Povoliť voliteľné online funkcie**.
 
 ## <a name="your-privacy-settings"></a>Nastavenia ochrany osobných údajov
 
@@ -107,11 +110,14 @@ Ak vám správca umožnil používať voliteľné pripojené funkcie v aplikáci
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
 
-Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+
+> [!NOTE]
+> Ak vám správca vo vašej organizácii poskytol multilicenčnú verziu balíka Office 2019, Project 2019 alebo Visio 2019, prejdite na **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti** > **Možnosti ochrany osobných údajov**. Tam by ste mali vidieš začiarkavacie políčko pre možnosť **Zapnúť voliteľné online funkcie**. Ak sa toto začiarkavacie políčko v Projecte 2019 alebo Visiu 2019 nezobrazuje, vyberte položku **Nastavenia ochrany osobných údajov...** v dialógovom okne **Centrum dôveryhodnosti**. Malo by sa zobraziť dialógové okno **Nastavenia ochrany osobných údajov** so začiarkavacím políčkom pre možnosť **Povoliť voliteľné online funkcie**.
 
 ## <a name="required-service-data"></a>Povinné údaje služieb
 
-Pri používaní voliteľných cloudových služieb opísaných v tomto článku môže spoločnosť Microsoft zhromažďovať [povinné údaje služieb](required-service-data.md) (ako sú napríklad údaje o používaní, chybách a výkone) o výkone služieb pri ich používaní. Tieto povinné údaje služieb môžu obsahovať „osobné údaje“, ako sú definované v článku 4 európskeho nariadenia GDPR.Všetky povinné údaje služieb, ktoré spoločnosť Microsoft zhromažďuje pri používaní akýchkoľvek aplikácií a služieb Aplikácie Microsoft 365 pre veľké organizácie, sú pseudonymizované podľa normy ISO/IEC 19944:2017, sekcie 8.3.3.
+Pri používaní voliteľných cloudových služieb opísaných v tomto článku môže spoločnosť Microsoft zhromažďovať [povinné údaje služieb](required-service-data.md) (ako sú napríklad údaje o používaní, chybách a výkone) o výkone služieb pri ich používaní. Tieto povinné údaje služieb môžu obsahovať „osobné údaje“, ako sú definované v článku 4 európskeho nariadenia GDPR. Všetky povinné údaje služieb, ktoré spoločnosť Microsoft zhromažďuje pri používaní akýchkoľvek aplikácií a služieb Aplikácie Microsoft 365 pre veľké organizácie, sú pseudonymizované podľa normy ISO/IEC 19944:2017, sekcie 8.3.3.
 
 ## <a name="admin-controls-for-optional-connected-experiences"></a>Ovládacie prvky správcu pre voliteľné online funkcie 
 

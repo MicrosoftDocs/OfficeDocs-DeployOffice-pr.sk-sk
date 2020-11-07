@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľných diagnostických údajoch v balíku Office vrátane niekoľkých príkladov udalostí.
 hideEdit: true
-ms.openlocfilehash: bcb9a8d4a886fefde3fbb42280183bf163b315c3
-ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
+ms.openlocfilehash: 7dc10c50baed0306e3e7fc6dd70e0d798a72d0bc
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794816"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931269"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Voliteľné diagnostické údaje pre Office
 
@@ -28,6 +28,9 @@ ms.locfileid: "48794816"
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov. Tieto údaje neobsahujú meno ani e-mailovú adresu používateľa, obsah súborov používateľa ani informácie o aplikáciách, ktoré nesúvisia s balíkom Office.
 
 Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou Zobrazovača diagnostických údajov.
+
+> [!NOTE]
+> Ak používate verziu balíka Office 2019 alebo Office 2016, ktorá vám alebo správcovi umožní vybrať, či nám chcete odoslať požadované alebo voliteľné diagnostické údaje, budú sa odosielať iba požadované diagnostické údaje. Ak napríklad používate Office 2019 Professional Plus alebo Office 2016 Standard, ktorý túto možnosť neposkytuje, potom sa odošlú iba požadované diagnostické údaje. Office 2013 neodosiela požadované ani voliteľné diagnostické údaje. Ďalšie informácie o tom, ktoré verzie balíka Office sú určené pre túto možnosť, nájdete v téme [Ovládacie prvky na ochranu osobných údajov pre produkty Office](products-versions-privacy-controls.md).
 
 ***Voliteľné diagnostické údaje** _ sú dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy.
 

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia balíka Office získajú informácie o postupoch spravovania ovládacích prvkov ochrany osobných údajov v Aplikáciách Microsoft 365 pre veľké organizácie (predtým Office 365 ProPlus) pomocou nastavení politiky.
 hideEdit: true
-ms.openlocfilehash: f02714428dd580d79a3fc8f160b00d6df95c4237
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: 401cc5ca875dac28a5cda321a812e9b6c25289e5
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440252"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931233"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Použitie nastavení politiky na správu ovládacích prvkov ochrany osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
@@ -31,9 +31,9 @@ Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky p
 
 Od verzie 1904 Aplikácií Microsoft 365 pre veľké organizácie sú k dispozícii nové nastavenia politiky, ktoré vám umožňujú ovládať nastavenia týkajúce sa:
 
-- ***diagnostických údajov***, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o používanom klientskom softvéri balíka Office,
+- ***Diagnostické údaje** _, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o používanom klientskom softvéri balíka Office
 
-- ***Pripojené funkcie***, ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
+- _*_Online funkcie_*_ , ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
 
 Päť nových nastavení politiky:
 
@@ -64,15 +64,15 @@ Rovnako ako v prípade akýchkoľvek nových nastavení politiky by ste ich naj
 
 Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka Office, zisťovanie, diagnostiku a riešenie problémov, ako aj na vylepšenia produktov.
 
-Pomocou nastavenia politiky *Konfigurácia úrovne diagnostických údajov o klientskom softvéri, ktoré služby Office odosielajú spoločnosti Microsoft* môžete  nastaviť úroveň diagnostických údajov odosielaných spoločnosti Microsoft.
+Pomocou nastavenia politiky Konfigurácia úrovne diagnostických údajov o klientskom softvéri, ktoré služby Office odosielajú spoločnosti Microsoft* môžete nastaviť úroveň diagnostických údajov odosielaných spoločnosti Microsoft.
 
 Ak zapnete toto nastavenie politiky, musíte určiť, aká úroveň diagnostických údajov sa odosiela do spoločnosti Microsoft. Dostupné voľby sú Povinné, Voliteľné a Žiadne.
 
-- Ak vyberiete možnosť ***Požadované***, spoločnosti Microsoft sa odosielajú minimálne údaje potrebné na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
+- Ak vyberiete možnosť * **Požadované** , spoločnosti Microsoft sa odosielajú minimálne údaje potrebné na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
 
-- Ak vyberiete možnosť ***Voliteľné***, spoločnosti Microsoft sa odosielajú dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy. Ak sa rozhodnete odosielať nám voliteľné diagnostické údaje, budú obsahovať aj požadované diagnostické údaje.
+- Ak vyberiete možnosť _*_Voliteľné_*_ , spoločnosti Microsoft sa odosielajú dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy. Ak sa rozhodnete odosielať nám voliteľné diagnostické údaje, budú obsahovať aj požadované diagnostické údaje.
 
-- Ak vyberiete možnosť ***Žiadne***, spoločnosti Microsoft sa neodosielajú žiadne diagnostické údaje o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa. Táto možnosť však výrazne obmedzuje schopnosť spoločnosti Microsoft zisťovať, diagnostikovať a riešiť problémy, ktoré sa používateľom môžu vyskytnúť pri používaní balíka Office.
+- Ak vyberiete možnosť _*_Žiadne_*_ , spoločnosti Microsoft sa neodosielajú žiadne diagnostické údaje o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa. Táto možnosť však výrazne obmedzuje schopnosť spoločnosti Microsoft zisťovať, diagnostikovať a riešiť problémy, ktoré sa používateľom môžu vyskytnúť pri používaní balíka Office.
 
 Ak vypnete alebo nenakonfigurujete toto nastavenie politiky, spoločnosti Microsoft sa odosielajú voliteľné aj požadované diagnostické údaje.
 
@@ -104,9 +104,9 @@ Vaši používatelia sa nebudú môcť rozhodnúť zapnúť alebo vypnúť tieto
 
 Toto sú funkcie, ktoré používajú obsah balíka Office na poskytovanie odporúčaní pre návrh, úprav návrhov, prehľadov údajov a podobných funkcií. Napríklad PowerPoint Designer alebo Translator. Zoznam týchto online funkcií nájdete v téme [Online funkcie v Office](connected-experiences.md).
 
-Pomocou nastavenia politiky *Povoliť používanie pripojených funkcií na analýzu obsahu v Office* môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto pripojené funkcie budú k dispozícii pre vašich používateľov.
+Pomocou nastavenia politiky Povoliť používanie pripojených funkcií na analýzu obsahu* v Office môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto pripojené funkcie budú k dispozícii pre vašich používateľov.
 
-Majte na pamäti, že ak vypnete nastavenie politiky *Povoliť používanie pripojených funkcií v Office*, pripojené funkcie na analýzu obsahu nebudú vašim používateľom k dispozícii.
+Majte na pamäti, že ak vypnete nastavenie politiky *Povoliť používanie pripojených funkcií v Office* , pripojené funkcie na analýzu obsahu nebudú vašim používateľom k dispozícii.
 
 ### <a name="policy-setting-for-connected-experiences-that-download-online-content"></a>Nastavenie politiky pre pripojené funkcie na sťahovanie online obsahu
 
@@ -114,7 +114,7 @@ Toto sú funkcie, ktoré umožňujú vyhľadať a sťahovať online obsah vráta
 
 Pomocou nastavenia politiky *Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office* môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto pripojené funkcie budú k dispozícii pre vašich používateľov.
 
-Majte na pamäti, že ak vypnete nastavenie politiky *Povoliť používanie pripojených funkcií v Office*, pripojené funkcie na sťahovanie online obsahu nebudú vašim používateľom k dispozícii.
+Majte na pamäti, že ak vypnete nastavenie politiky *Povoliť používanie pripojených funkcií v Office* , pripojené funkcie na sťahovanie online obsahu nebudú vašim používateľom k dispozícii.
 
 ### <a name="policy-setting-for-optional-connected-experiences"></a>Nastavenia politiky pre voliteľné pripojené funkcie
 
@@ -124,9 +124,12 @@ Tieto pripojené funkcie sú iné, pretože sa na ne nevzťahuje komerčná zmlu
 
 Pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* môžete určiť, či budú tieto typy pripojených funkcií k dispozícii vašim používateľom. Ak nenakonfigurujete toto nastavenie politiky, tieto voliteľné online funkcie budú k dispozícii pre vašich používateľov.
 
+> [!NOTE]
+> Ak chcete použiť nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* na multilicenčné verzie balíka Office 2019, Project 2019 alebo Visio 2019, musíte použiť skupinovú politiku. Nemôžete použiť službu politiky Office v cloude. Platí to, keď je Office 2019, Project 2019 alebo Visio 2019 nakonfigurované tak, aby používali kanál aktualizácií PerpetualVL2019.
+
 Aj keď sa rozhodnete tieto voliteľné pripojené funkcie sprístupniť používateľom, vaši používatelia ich budú môcť vypnúť ako skupinu v [dialógovom okne nastavenia ochrany osobných údajov](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vaši používatelia budú mať túto možnosť, len ak sú prihlásení do služieb Office pomocou poverení organizácie (ktoré sa niekedy označujú ako pracovné alebo školské konto) a nie pomocou osobnej e-mailovej adresy.
 
-Taktiež platí, že niektoré tieto voliteľné pripojené funkcie sa považujú aj za pripojené funkcie na analýzu obsahu alebo na sťahovanie online obsahu. Napríklad vkladanie online obrázkov je voliteľná pripojená funkcia, ktorá využíva službu Microsoft Bing, ale považuje sa aj za pripojenú funkciu na sťahovanie online obsahu. Preto ak vypnete nastavenie politiky *Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office*, funkcia vkladania online obrázkov nebude vašim používateľom k dispozícii. Nebude k dispozícii, ani ak ste zapli nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office*. Ďalšie informácie o tom, ktoré pripojené analyzujú obsah alebo sťahujú online obsah, sa nachádzajú v téme [Pripojené funkcie v Office](connected-experiences.md).
+Taktiež platí, že niektoré tieto voliteľné pripojené funkcie sa považujú aj za pripojené funkcie na analýzu obsahu alebo na sťahovanie online obsahu. Napríklad vkladanie online obrázkov je voliteľná pripojená funkcia, ktorá využíva službu Microsoft Bing, ale považuje sa aj za pripojenú funkciu na sťahovanie online obsahu. Preto ak vypnete nastavenie politiky *Povoliť používanie pripojených funkcií na sťahovanie online obsahu v Office* , funkcia vkladania online obrázkov nebude vašim používateľom k dispozícii. Nebude k dispozícii, ani ak ste zapli nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office*. Ďalšie informácie o tom, ktoré pripojené analyzujú obsah alebo sťahujú online obsah, sa nachádzajú v téme [Pripojené funkcie v Office](connected-experiences.md).
 
 Je tu však jedna výnimka. Nastavenie politiky *Povoliť používanie dodatočných voliteľných pripojených funkcií v Office* neriadi funkcie, ktoré vyžadujú pripojenie vášho konta LinkedIn k pracovnému alebo školskému kontu Microsoft. Informácie o riadení týchto typov funkcií, napríklad informácie z LinkedInu na [karte profilu](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) v Outlooku, nájdete v téme [LinkedIn v aplikáciách a službách Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) a [Integrácia LinkedInu v službe Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
 
@@ -157,7 +160,7 @@ Od verzie 1904 nebude mať nakonfigurovanie týchto dvoch existujúcich nastaven
 - Povoliť používanie dodatočných voliteľných pripojených funkcií v Office
 - Povoliť používanie pripojených funkcií v Office
 
-Tieto nové nastavenia politiky poskytujú presnejšiu úroveň kontroly než uvedené dve existujúce nastavenia politiky. Napríklad ak ste predtým použili nastavenie politiky *Odosielať osobné informácie*, funkcia Rýchly štart pre PowerPoint aj Inteligentné vyhľadávanie by bola vypnutá. Ak však teraz s novými nastaveniami politiky vypnete pomocou nastavenia politiky *Povoliť používanie pripojených funkcií na analýzu obsahu v Office* tento typ pripojených funkcií, vypne sa len funkcia Inteligentné vyhľadávanie. Funkcia Rýchly štart pre PowerPoint bude naďalej dostupná vašim používateľom.
+Tieto nové nastavenia politiky poskytujú presnejšiu úroveň kontroly než uvedené dve existujúce nastavenia politiky. Napríklad ak ste predtým použili nastavenie politiky *Odosielať osobné informácie* , funkcia Rýchly štart pre PowerPoint aj Inteligentné vyhľadávanie by bola vypnutá. Ak však teraz s novými nastaveniami politiky vypnete pomocou nastavenia politiky *Povoliť používanie pripojených funkcií na analýzu obsahu v Office* tento typ pripojených funkcií, vypne sa len funkcia Inteligentné vyhľadávanie. Funkcia Rýchly štart pre PowerPoint bude naďalej dostupná vašim používateľom.
 
 Tieto nastavenia politiky sa aj naďalej zobrazujú v nástroji Group Policy Management, pretože sa stále vzťahujú na multilicenčné verzie balíka Office 2016 a Office 2019, ako je napríklad Office Professional Plus 2019.
 
@@ -171,7 +174,7 @@ Ako už asi viete, k dispozícii je niekoľko existujúcich nastavené politiky,
 
 - *Allow LinkedIn Resume Assistant feature* (Povoliť funkciu Sprievodca životopisom LinkedIn), ktoré sa nachádza v časti User Configuration (Konfigurácia používateľa)\\Policies (Politiky)\\Administrative Templates (Nástroje na správu)\\Microsoft Word 2016\\Word Options (Možnosti Wordu)\\General (Všeobecné)
 
- Tieto existujúce nastavenia politiky môžete naďalej používať na vypnutie jednotlivých pripojených funkcií. Majte však na pamäti, že ak použijete niektoré z nových nastavení politiky, toto nastavenie politiky môže vypnúť pripojenú funkciu, ktorú ste zapli pomocou iného nastavenia politiky. Ak ste napríklad zapli nastavenie politiky *Povoliť funkciu Sprievodca životopisom LinkedIn*, ale vypli nastavenie politiky *Povoliť používanie pripojených funkcií v Office*, Sprievodca životopisom LinkedIn nebude vašim používateľom k dispozícii.
+ Tieto existujúce nastavenia politiky môžete naďalej používať na vypnutie jednotlivých pripojených funkcií. Majte však na pamäti, že ak použijete niektoré z nových nastavení politiky, toto nastavenie politiky môže vypnúť pripojenú funkciu, ktorú ste zapli pomocou iného nastavenia politiky. Ak ste napríklad zapli nastavenie politiky *Povoliť funkciu Sprievodca životopisom LinkedIn* , ale vypli nastavenie politiky *Povoliť používanie pripojených funkcií v Office* , Sprievodca životopisom LinkedIn nebude vašim používateľom k dispozícii.
 
 Vo všeobecnosti platí, že ak je jedno nastavenie politiky nakonfigurované na zapnutie konkrétnej pripojenej funkcie a zároveň je iné nastavenie politiky nakonfigurované na vypnutie daného typu pripojenej funkcie, potom je daná konkrétna pripojená funkcia pre používateľov vypnutá.
 
@@ -185,7 +188,7 @@ Ak ste sa rozhodli poskytnúť používateľom [voliteľné online funkcie](opti
 
 ### <a name="privacy-settings-removed-from-the-office-ui"></a>Nastavenia ochrany osobných údajov odstránené z používateľského rozhrania balíka Office
 
-Nasledujúce nastavenia sú odstránené z okna **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti...** > **Možnosti ochrany osobných údajov**:
+Nasledujúce nastavenia sú odstránené z okna **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti...** > **Možnosti ochrany osobných údajov** :
 
 - Získajte návrhy, informácie, odporúčania a služby tým, že povolíte balíku Office, aby mal prístup k vylepšeniam produktov a aby ich mohol aj vykonávať na základe obsahu Office na svojom zariadení.
 
@@ -199,7 +202,7 @@ Ako správca pre vašu organizáciu teraz môžete ovládate príslušné nastav
 
 Tieto prvky boli pridané do používateľského rozhrania balíka Office:
 
-- V okne **Súbor** > **Konto** sa používateľom bude zobrazovať nová voľba **Ochrana osobných údajov konta** > **Spravovať nastavenia**. V časti **Spravovať nastavenia**môžu používatelia vypnúť voliteľné pripojené funkcie, ak ste im dali túto možnosť.
+- V okne **Súbor** > **Konto** sa používateľom bude zobrazovať nová voľba **Ochrana osobných údajov konta** > **Spravovať nastavenia**. V časti **Spravovať nastavenia** môžu používatelia vypnúť voliteľné pripojené funkcie, ak ste im dali túto možnosť.
 
 - V okne **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti...** > **Možnosti ochrany osobných údajov** je možnosť povoliť používanie nástroja [Diagnostic Data Viewer](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) v zariadení.
 
