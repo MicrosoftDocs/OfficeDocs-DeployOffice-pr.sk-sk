@@ -3614,7 +3614,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappleactivateperpetual"></a>Office.Apple.ActivatePerpetual
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie trvalej licencie a skúmanie príčin zlyhaní prostredníctvom revízie hodnôt FailedAt.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie trvalej licencie a skúmanie príčin zlyhaní prostredníctvom revízie hodnôt FailedAt.
 
 Zhromažďujú sa tieto polia:
 
@@ -3622,7 +3622,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappleactivatesubscription"></a>Office.Apple.ActivateSubscription
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie súvisiace s migráciou zo zásobníka starších kódov licencií s kódmi licencií vNext. Táto funkcia sa používa na monitorovanie stavu postupu aktivácie predplatného, ako aj na sledovanie, ak ide o migráciu na licencie vNext a ak sa použila primárna identita.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie súvisiace s migráciou zo zásobníka starších kódov licencií s kódmi licencií vNext. Táto funkcia sa používa na monitorovanie stavu postupu aktivácie predplatného, ako aj na sledovanie, ak ide o migráciu na licencie vNext a ak sa použila primárna identita.
 
 Zhromažďujú sa tieto polia:
 
@@ -3644,7 +3644,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappleinappassociationactivity"></a>Office.Apple.InAppAssociationActivity
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie súvisiace s priradením produktu po zakúpení v rámci aplikácie. Zaznamenáme, ktorú jednotku SKU predplatného priraďujeme.  Používa sa to na monitorovanie stavu priradení produktov zakúpených v rámci aplikácie.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie súvisiace s priradením produktu po zakúpení v rámci aplikácie. Zaznamenáme, ktorú jednotku SKU predplatného priraďujeme.  Používa sa to na monitorovanie stavu priradení produktov zakúpených v rámci aplikácie.
 
 Zhromažďujú sa tieto polia:
 
@@ -3652,7 +3652,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappleinapppurchaseactivity"></a>Office.Apple.InAppPurchaseActivity
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. 
 
 Zhromažďujeme informácie súvisiace s nákupmi produktov v AppStore. Sledujeme výsledok nákupu (neúspešný, úspešný, problému s platbou atď.), typ žiadosti o nákup (obnovenie, nákup) a nakupovanú jednotku SKU/produkt (Microsoft 365 Family atď.).  Tieto údaje sa používajú na monitorovanie stavu postupov nákupu v rámci aplikácie.
 
@@ -3666,7 +3666,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappleintune"></a>Office.Apple.InTune
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie o tom, či je aktuálna relácia spravovaná službou Intune. Táto možnosť sa používa na kontingenčné ovládanie/filtrovanie relácií spravovaných službou Intune a umožňuje nám skúmať potenciálne problémy súvisiace s balíkom Office pri spustení aplikácie spravovanej službou Intune.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Zhromažďujeme informácie o tom, či je aktuálna relácia spravovaná službou Intune. Táto možnosť sa používa na kontingenčné ovládanie/filtrovanie relácií spravovaných službou Intune a umožňuje nám skúmať potenciálne problémy súvisiace s balíkom Office pri spustení aplikácie spravovanej službou Intune.
 
 Zhromažďujú sa tieto polia:
 
@@ -3674,7 +3674,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplelicensingmaclicensingstate"></a>Office.Apple.Licensing.Mac.LicensingState
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zachytáva aktuálny stav licencie na reláciu v zariadení (ID licencie OLS, použité jednotky SKU, s dobou odkladu alebo bez nej, RFM atď.). Zhromaždené údaje sa používajú na zisťovanie chýb a skúmanie príčin zlyhaní. 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zachytáva aktuálny stav licencie na reláciu v zariadení (ID licencie OLS, použité jednotky SKU, s dobou odkladu alebo bez nej, RFM atď.). Zhromaždené údaje sa používajú na zisťovanie chýb a skúmanie príčin zlyhaní. 
 
 Zhromažďujú sa tieto polia:
 
@@ -3744,7 +3744,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsappledocsuxmacodspsharingwebviewsharingcompleted"></a>Office.Docs.Apple.DocsUXMacODSPSharingWebViewSharingCompleted 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument v cloude pomocou zdieľania vo OneDrive, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument v cloude pomocou zdieľania vo OneDrive, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -3754,7 +3754,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuicollaborationcoauthorgalleryrowtapped"></a>Office.DocsUI.Collaboration.CoauthorGalleryRowTapped 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ vyberie možnosť pozrieť si zoznam aktuálnych spoluautorov.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich so spolutvorbou dokumentu v rovnakom čase.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ vyberie možnosť pozrieť si zoznam aktuálnych spoluautorov.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich so spolutvorbou dokumentu v rovnakom čase.
 
 Zhromažďujú sa tieto polia:
 
@@ -3762,7 +3762,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuicollaborationcollabcornerpeoplegallerycoauthorsupdated"></a>Office.DocsUI.Collaboration.CollabCornerPeopleGalleryCoauthorsUpdated 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa zmení počet aktívnych spoluautorov v dokumente v cloude.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich so spolutvorbou dokumentu v rovnakom čase.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa zmení počet aktívnych spoluautorov v dokumente v cloude.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich so spolutvorbou dokumentu v rovnakom čase.
 
 Zhromažďujú sa tieto polia:
 
@@ -3796,7 +3796,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuidocstagerecommendedopen"></a>Office.DocsUI.DocStage.RecommendedOpen
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru v časti odporúčaných súborov v galérii dokumentov, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa vykoná operácia otvorenia súboru v časti odporúčaných súborov v galérii dokumentov, a používa sa na pochopenie a uprednostňovanie používateľských skúseností na základe informácií o operáciách otvorenia súborov.
 
 Zhromažďujú sa tieto polia:
 
@@ -3952,7 +3952,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuisharinguicloudupsellshown"></a>Office.DocsUI.SharingUI.CloudUpsellShown 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ prejde prechodom dokumentu do postupu v cloude.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ prejde prechodom dokumentu do postupu v cloude.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
 
 Zhromažďujú sa tieto polia:
 
@@ -3970,7 +3970,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuisharinguicloudupsellupload"></a>Office.DocsUI.SharingUI.CloudUpsellUpload 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne nahrať nový alebo lokálny súbor do cloudu, a výsledok tejto operácie.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne nahrať nový alebo lokálny súbor do cloudu, a výsledok tejto operácie.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
 
 Zhromažďujú sa tieto polia:
 
@@ -3996,7 +3996,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuisharinguicopylinkoperation"></a>Office.DocsUI.SharingUI.CopyLinkOperation
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument generovaním prepojenia na dokument v cloude, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument generovaním prepojenia na dokument v cloude, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -4008,7 +4008,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuisharinguidocsuionedriveshare"></a>Office.DocsUI.SharingUI.DocsUIOneDriveShare 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument v cloude pomocou zdieľania vo OneDrive, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne zdieľať dokument v cloude pomocou zdieľania vo OneDrive, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -4024,7 +4024,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuisharinguiinvitepeople"></a>Office.DocsUI.SharingUI.InvitePeople 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne pozvať ľudí do dokumentu v cloude, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď sa používateľ rozhodne pozvať ľudí do dokumentu v cloude, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -4040,7 +4040,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuisharinguisendacopyoperation"></a>Office.DocsUI.SharingUI.SendACopyOperation
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa používateľ rozhodne odoslať kópiu dokumentu, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zaznamená, keď sa používateľ rozhodne odoslať kópiu dokumentu, a používa sa na lepšie pochopenie a uprednostňovanie používateľských skúseností na základe zdieľania dokumentov.
 
 Zhromažďujú sa tieto polia:
 
@@ -4060,7 +4060,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officedocsuisharinguiupsellshare"></a>Office.DocsUI.SharingUI.UpsellShare 
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ prejde prechodom dokumentu do postupu v cloude pri pokuse o zdieľanie dokumentu.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť zaznamená, keď používateľ prejde prechodom dokumentu do postupu v cloude pri pokuse o zdieľanie dokumentu.  Tieto údaje sa používajú na lepšie pochopenie a uprednostňovanie používateľských skúseností súvisiacich s presúvaním dokumentov do cloudových umiestnení.
 
 Zhromažďujú sa tieto polia:
 
@@ -4134,7 +4134,7 @@ Zhromažďujú sa tieto polia:
 
 - **AppInfo.Version** – verzia aplikácie.
 
-- **clientCorrelationId** – globálne jedinečný identifikátor relácie aplikácie.
+- **clientCorrelationId** – globálne jedinečný identifikátor relácie aplikácie
 
 - **clientType** – aplikácia, v ktorej súčasť spustená.
 
@@ -4922,7 +4922,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunappleactivationresult"></a>Office.FirstRun.Apple.ActivationResult
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie predplatného služieb Office 365 spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie predplatného služieb Office 365 spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.).
 
 Zhromažďujú sa tieto polia:
 
@@ -4934,7 +4934,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunappleactivationstatus"></a>Office.FirstRun.Apple.ActivationStatus
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zistenie výsledku aktivácie predplatného služieb Office 365 spolu s postupom, ktorý sa používa na aktiváciu (FRE, InApp, Purchase atď.). Zhromažďujeme údaje obsahujúce typ aktivácie, typ postupu (FRE/DocStage/Purchase) a ID licenčnej služby balíka Office.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zistenie výsledku aktivácie predplatného služieb Office 365 spolu s postupom, ktorý sa používa na aktiváciu (FRE, InApp, Purchase atď.). Zhromažďujeme údaje obsahujúce typ aktivácie, typ postupu (FRE/DocStage/Purchase) a ID licenčnej služby balíka Office.
 
 Zhromažďujú sa tieto polia:
 
@@ -4948,7 +4948,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunapplefirstruncomplete"></a>Office.FirstRun.Apple.FirstRunComplete
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje zistiť, ak je používateľ spustený v rámci modelu freemium, typ spusteného postupu (FRE/DocStage/Purchase) a typ identity (MSA/OrgID). Túto udalosť používame na to, aby sme zistili, či bolo dokončené prvé spustenie (FRE) a aký typ identity sa použil na prihlásenie (MSA/OrgID).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje zistiť, ak je používateľ spustený v rámci modelu freemium, typ spusteného postupu (FRE/DocStage/Purchase) a typ identity (MSA/OrgID). Túto udalosť používame na to, aby sme zistili, či bolo dokončené prvé spustenie (FRE) a aký typ identity sa použil na prihlásenie (MSA/OrgID).
 
 Zhromažďujú sa tieto polia:
 
@@ -4962,7 +4962,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunapplefirstrunstart"></a>Office.FirstRun.Apple.FirstRunStart
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie a typ spusteného postupu (FRE/DocStage/Purchase). Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie a typ spusteného postupu (FRE/DocStage/Purchase). Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
 
 Zhromažďujú sa tieto polia:
 
@@ -4972,7 +4972,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunapplefirstrunstartedandcompleted"></a>Office.FirstRun.Apple.FirstRunStartedAndCompleted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje zistiť, ak je používateľ spustený v rámci modelu freemium, typ spusteného postupu (FRE/DocStage/Purchase) a typ identity (MSA/OrgID). Túto udalosť používame na to, aby sme zistili stav a účinnosť postupu skúsenosti s prvým spustením (FRE).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje zistiť, ak je používateľ spustený v rámci modelu freemium, typ spusteného postupu (FRE/DocStage/Purchase) a typ identity (MSA/OrgID). Túto udalosť používame na to, aby sme zistili stav a účinnosť postupu skúsenosti s prvým spustením (FRE).
 
 Zhromažďujú sa tieto polia:
 
@@ -4990,7 +4990,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunappleinapppurchaseactivationfail"></a>Office.FirstRun.Apple.InAppPurchaseActivationFail
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
 
 Zhromažďujú sa tieto polia:
 
@@ -5004,7 +5004,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunappleinapppurchaseactivationsuccess"></a>Office.FirstRun.Apple.InAppPurchaseActivationSuccess
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
 
 Zhromažďujú sa tieto polia:
 
@@ -5018,7 +5018,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunappleinapppurchaseassociationfailed"></a>Office.FirstRun.Apple.InAppPurchaseAssociationFailed
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
 
 Zhromažďujú sa tieto polia:
 
@@ -5034,7 +5034,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunappleinapppurchaseassociationsuccess"></a>Office.FirstRun.Apple.InAppPurchaseAssociationSuccess
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje na zistenie výsledku aktivácie nákupu v aplikácii spolu s postupom, ktorý sa používa na aktiváciu (prvé spustenie, postup v aplikácii, nákup atď.). 
 
 Zhromažďujú sa tieto polia:
 
@@ -5048,7 +5048,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunappleinapppurchasefailures"></a>Office.FirstRun.Apple.InAppPurchaseFailures
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje o výsledku postupu nákupu v rámci aplikácie.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu postupu aktivácie aplikácie. Zhromažďujeme údaje o výsledku postupu nákupu v rámci aplikácie.
 
 Zhromažďujú sa tieto polia:
 
@@ -5098,7 +5098,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunapplemacfirstruncompleted"></a>Office.FirstRun.Apple.MacFirstRunCompleted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ prešiel skúsenosťou s prvým spustením. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) dokončilo úspešne.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ prešiel skúsenosťou s prvým spustením. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) dokončilo úspešne.
 
 Zhromažďujú sa tieto polia:
 
@@ -5106,7 +5106,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunapplemacwxpfirstrunstarted"></a>Office.FirstRun.Apple.MacWXPFirstRunStarted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
 
 Zhromažďujú sa tieto polia:
 
@@ -8478,7 +8478,7 @@ Zhromažďujú sa tieto polia:
      - **swipe_direction** – označuje smer, ktorým používateľ nastavil potiahnutie prstom, t. j. zľava doprava alebo sprava doľava. Umožňuje nám to zistiť, či sa vyskytol problém s určitým smerom potiahnutia prstom.
    - **temperature_unit_setting** – vybratá jednotka teploty, ktorá sa použije na počasie 
    - **theme_color_setting** – vlastná farba motívu aplikácie vybratá používateľom 
-   - **ui_mode_setting** – vybratý režim používateľského rozhrania (tmavé, svetlé, predvolené systémom, vybitá batéria atď.)
+   - **ui_mode_setting** – vybraný režim používateľského rozhrania (tmavé, svetlé, predvolené systémom, vybitá batéria atď.)
    - **signature_setting** – označuje, či sa nastavenie použilo na všetky kontá alebo na jedno konto
 
 - **state_changed_to** – slúži na kontrolu, či máte správne nakonfigurované nastavenie zapnúť/vypnúť prioritnej doručenej pošty 
@@ -9129,7 +9129,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_WasSuccessful:bool** – má hodnotu true, ak uloženie ako bolo úspešné
 
-  - **Data\_WinLaunchTime:integer** – čas potrebný na spustenie úvodnej tably Visia atď.
+  - **Data\_WinLaunchTime:integer** – čas potrebný na spustenie úvodnej tably Visia atď.)
 
   
 #### <a name="officeextensibilitysandboxodpactivationhanging"></a>Office.Extensibility.Sandbox.ODPActivationHanging
@@ -9606,7 +9606,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_PreviousDiscardFailed** – označuje, že predchádzajúci pokus o otvorenie/zavretie dokumentu neuvoľnil správne všetku pamäť
 
-  - **Data\_PreviousFailureHr** – v prípade opätovného otvárania toho istého dokumentu, aký bol výsledok posledného zlyhania
+  - **Data\_PreviousFailureHr** – v prípade opätovného otvárania toho istého dokumentu, aký bol výsledok posledného zlyhania
 
   - **Data\_PreviousFailureTag** – v prípade opätovného otvárania toho istého dokumentu, aká bola značka posledného zlyhania (ukazovateľ na miesto v kóde)
 
@@ -10478,7 +10478,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappledarkmode"></a>Office.Apple.DarkMode
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám hovorí, či používateľ používa systém v režime DarkMode a či používateľ prepísal nastavenie systému v režime DarkMode v Office.  Túto udalosť používame na to, aby sme pomohli zabezpečiť zjednodušenie ovládania a určovať prioritu optimalizácie používateľskej skúsenosti.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám hovorí, či používateľ používa systém v režime DarkMode a či používateľ prepísal nastavenie systému v režime DarkMode v Office.  Túto udalosť používame na to, aby sme pomohli zabezpečiť zjednodušenie ovládania a určovať prioritu optimalizácie používateľskej skúsenosti.
 
 Zhromažďujú sa tieto polia:
 
@@ -10488,7 +10488,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplehardwarekeyboardinuseapple"></a>Office.Apple.HardwareKeyboardInUse.Apple
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám oznamuje, že používateľ pripája k mobilnému zariadeniu klávesnicu. Udalosť nám pomáha zlepšovať zjednodušenie ovládania a optimalizovať používateľskú skúsenosť.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám oznamuje, že používateľ pripája k mobilnému zariadeniu klávesnicu. Udalosť nám pomáha zlepšovať zjednodušenie ovládania a optimalizovať používateľskú skúsenosť.
 
 Zhromažďujú sa tieto polia:
 
@@ -10496,7 +10496,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplembuinstrumentdeviceaccessibilitysettings"></a>Office.Apple.MbuInstrument.DeviceAccessibilitySettings
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zhromažďuje stav rôznych možností zjednodušenia ovládania, ktoré sú k dispozícii počas relácie. Túto udalosť používame na to, aby sme pomohli zabezpečiť zjednodušenie ovládania a určovať prioritu optimalizácie používateľskej skúsenosti.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zhromažďuje stav rôznych možností zjednodušenia ovládania, ktoré sú k dispozícii počas relácie. Túto udalosť používame na to, aby sme pomohli zabezpečiť zjednodušenie ovládania a určovať prioritu optimalizácie používateľskej skúsenosti.
 
 Zhromažďujú sa tieto polia:
 
@@ -10748,7 +10748,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappleidentitydomainname"></a>Office.Apple.IdentityDomainName
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu nášho systému, ako aj skúmanie príčin zlyhaní niektorých používateľov domén. Zhromažďujeme informácie o doméne, ktorú naši používatelia použijú, keď sa overujú.  Tieto údaje používame na to, aby sme pomohli určiť a vyriešiť problémy, ktoré zdanlivo nemusia mať príliš veľký vplyv na širšej úrovni, ale ktoré môžu mať veľký vplyv na určitú doménu používateľov.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu nášho systému, ako aj skúmanie príčin zlyhaní niektorých používateľov domén. Zhromažďujeme informácie o doméne, ktorú naši používatelia použijú, keď sa overujú.  Tieto údaje používame na to, aby sme pomohli určiť a vyriešiť problémy, ktoré zdanlivo nemusia mať príliš veľký vplyv na širšej úrovni, ale ktoré môžu mať veľký vplyv na určitú doménu používateľov.
 
 Zhromažďujú sa tieto polia:
 
@@ -10760,7 +10760,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplesystemhealthappexitmacandios"></a>Office.Apple.SystemHealthAppExitMacAndiOS
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu našich aplikácií balíka Office, ako aj skúmanie príčin zlyhaní. Zhromažďujeme údaje pri každom ukončení aplikácie, aby sme zistili, či sa aplikácia ukončila bez zlyhania.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu našich aplikácií balíka Office, ako aj skúmanie príčin zlyhaní. Zhromažďujeme údaje pri každom ukončení aplikácie, aby sme zistili, či sa aplikácia ukončila bez zlyhania.
 
 Zhromažďujú sa tieto polia:
 
@@ -11670,7 +11670,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappleappleappbootmac"></a>Office.Apple.Apple.AppBoot.Mac
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase potrebnom na spustenie aplikácie, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase potrebnom na spustenie aplikácie, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11700,7 +11700,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplediskruleresultserializererroronstreamop"></a>Office.Apple.DiskRuleResultSerializerErrorOnStreamOp
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu infraštruktúry telemetrie. Táto udalosť označuje, že sa vyskytla chyba.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu infraštruktúry telemetrie. Táto udalosť označuje, že sa vyskytla chyba.
 
 Zhromažďujú sa tieto polia:
 
@@ -11712,7 +11712,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplemacbootresourceusage"></a>Office.Apple.MacBootResourceUsage
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie viacerých indikátorov pre zdroje, ktoré spotrebúvajú aplikácie balíka Office počas spúšťania. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie viacerých indikátorov pre zdroje, ktoré spotrebúvajú aplikácie balíka Office počas spúšťania. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11756,7 +11756,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplemauvalidation"></a>Office.Apple.MAU.Validation
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu súčasti Automatická aktualizácia spoločnosti Microsoft, ktorá sa používa na distribúciu a inštaláciu aktualizácií aplikácií. Zhromaždené údaje sa používajú na zisťovanie chýb a skúmanie príčin zlyhaní.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu súčasti Automatická aktualizácia spoločnosti Microsoft, ktorá sa používa na distribúciu a inštaláciu aktualizácií aplikácií. Zhromaždené údaje sa používajú na zisťovanie chýb a skúmanie príčin zlyhaní.
 
 Zhromažďujú sa tieto polia:
 
@@ -11766,7 +11766,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplembuinstrumenthangdetectionspincontrol"></a>Office.Apple.MbuInstrument.Hang.Detection.Spin.Control
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa zapíše do denníka vždy, keď aplikácia prestane reagovať. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa zapíše do denníka vždy, keď aplikácia prestane reagovať. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11774,7 +11774,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplembuinstrumentvmondocumentclose"></a>Office.Apple.MbuInstrument.VMOnDocumentClose
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas zatvorenia dokumentu. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas zatvorenia dokumentu. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11786,7 +11786,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplembuinstrumentvmonshutdown"></a>Office.Apple.MbuInstrument.VMOnShutdown
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas vypnutia aplikácie. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas vypnutia aplikácie. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11798,7 +11798,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplembuinstrumentvmonstart"></a>Office.Apple.MbuInstrument.VMOnStart
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas zapnutia aplikácie. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie snímok stavu pamäte počas zapnutia aplikácie. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11810,7 +11810,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplemsoappdelegatebootperf"></a>Office.Apple.MsoAppDelegate.BootPerf
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase a pamäti, ktoré počas spúšťania spotrebujú aplikácie balíka Office, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zhromažďovanie informácií o čase a pamäti, ktoré počas spúšťania spotrebujú aplikácie balíka Office, ako aj niektorých podrobností o type vykonaného spustenia. Táto udalosť nám pomáha monitorovať náš výkon a prinášať vylepšenia výkonu.
 
 Zhromažďujú sa tieto polia:
 
@@ -11826,7 +11826,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeappleungracefulappexithangsinprevioussession"></a>Office.Apple.UngracefulAppExitHangsInPreviousSession
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu našich aplikácií balíka Office, ako aj skúmanie príčin zlyhaní. Zhromažďujeme informácie o tom, koľkokrát aplikácia prestala reagovať ešte pred ukončením aplikácie so zlyhaním.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na monitorovanie stavu našich aplikácií balíka Office, ako aj skúmanie príčin zlyhaní. Zhromažďujeme informácie o tom, koľkokrát aplikácia prestala reagovať ešte pred ukončením aplikácie so zlyhaním.
 
 Zhromažďujú sa tieto polia:
 
@@ -13176,7 +13176,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplelicensingmacdractivationfailures"></a>Office.Apple.Licensing.Mac.DRActivationFailures
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zaznamenanie zlyhaní aktivácie Digital River (udalosť zaznamená kľúč a produkt, ktorý bol použitý na aktiváciu, ako aj prijatý kód chyby).  Táto udalosť sa používa na zisťovanie a pomoc pri riešení problémov s aktiváciou (problémy s Digital River).
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť sa používa na zaznamenanie zlyhaní aktivácie Digital River (udalosť zaznamená kľúč a produkt, ktorý bol použitý na aktiváciu, ako aj prijatý kód chyby).  Táto udalosť sa používa na zisťovanie a pomoc pri riešení problémov s aktiváciou (problémy s Digital River).
 
 Zhromažďujú sa tieto polia:
 
@@ -13190,7 +13190,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeapplelicensingmacgetmachinestatuserrors"></a>Office.Apple.Licensing.Mac.GetMachineStatusErrors
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zhromažďuje vrátený kód chyby, pričom sa pravidelne kontroluje platnosť licencie na predplatné. Kód chyby môže znamenať nedostupnosť servera, ale aj uplynutie platnosti licencie, obmedzenie počtu prístrojov, neplatné ID hardvéru atď.  Táto udalosť sa používa na monitorovanie stavu licenčnej služby balíka Office, ale aj na skúmanie problémov týkajúcich sa správy prístzrojov a predplatného.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť zhromažďuje vrátený kód chyby, pričom sa pravidelne kontroluje platnosť licencie na predplatné. Kód chyby môže znamenať nedostupnosť servera, ale aj uplynutie platnosti licencie, obmedzenie počtu prístrojov, neplatné ID hardvéru atď.  Táto udalosť sa používa na monitorovanie stavu licenčnej služby balíka Office, ale aj na skúmanie problémov týkajúcich sa správy prístzrojov a predplatného.
 
 Zhromažďujú sa tieto polia:
 
@@ -13210,7 +13210,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officefirstrunapplemaconiolkfirstrunstarted"></a>Office.FirstRun.Apple.MacONIOLKFirstRunStarted
 
-Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
+Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci platforiem Apple. Udalosť nám umožňuje vedieť, že používateľ zadal prvé spustenie. Túto udalosť používame na to, aby sme zistili, či sa prvé spustenie (FRE) začalo úspešne.
 
 Zhromažďujú sa tieto polia:
 
