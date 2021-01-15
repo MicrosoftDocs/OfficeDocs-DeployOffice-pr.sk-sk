@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 94f248d64c74cd6575b4039178270f62b3715d15
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 8934226591ed83c630a1c98e5be70e521c93295e
+ms.sourcegitcommit: 862ffbcfc2d7c3722dddb5b008d7b68c9316c675
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491557"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799150"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -27,12 +27,12 @@ ms.locfileid: "48491557"
 
 Office pozostáva z klientskych softvérových aplikácií a pripojených funkcií, ktoré sú navrhnuté tak, aby umožňovali efektívnejšiu tvorbu, komunikáciu a spoluprácu. Hoci môžete ovládať mnohé pripojené funkcie, ktoré sú k dispozícii vám alebo vašim používateľom, ak ste správcom vo svojej organizácii, niekoľko služieb je nevyhnutných pre fungovanie balíka Office, a preto sa nedajú vypnúť. Príkladom je licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie služieb balíka Office. Požadované údaje týchto služieb sa zhromažďujú a odosielajú spoločnosti Microsoft bez ohľadu na ďalšie nastavenia týkajúce sa ochrany osobných údajov, ktoré ste nakonfigurovali.
 
-Ďalšie informácie sa nachádzajú v nasledujúcich témach:
+Ďalšie informácie nájdete v nasledujúcich článkoch:
 
 - [Požadované údaje služieb pre Office](required-service-data.md)
 - [Pripojené funkcie v Office](connected-experiences.md)
 
-Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné témy:
+Ak ste správcom v organizácii, možno vás budú zaujímať aj nasledovné články:
 
 - [Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](overview-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
@@ -47,8 +47,8 @@ Nasledujúca tabuľka obsahuje zoznam nevyhnutných služieb pre Office a ich po
 
 | **Služba**  | **Popis**  |
 | ------ | ---- |
-| [Overovanie](#authentication-events) | Overovanie je služba v rámci viacerých platforiem, ktorá potvrdzuje identitu používateľa pre Office. Vyžaduje sa na to, aby ste sa mohli prihlásiť do balíka Office, aktivovať licenciu na Office a pristupovať k súborom uloženým v cloude a zároveň poskytuje konzistentné používanie v rámci rôznych relácií balíka Office a zariadení.    |
-| [Klikni a spusti](#click-to-run-events) | Klikni a spusti je technológia inštalácie, ktorá sa používa na inštaláciu a aktualizáciu balíka Office vo Windowse. Kontroluje dostupnosť nových verzií balíka Office a ak je k dispozícii nová verzia, stiahne a nainštaluje ju.Služba Klikni a spusti rozpoznáva potrebu, sťahuje a inštaluje aktualizácie balíka Office vrátane aktualizácií zabezpečenia.     |
+| [Overovanie](#authentication-events) | Overovanie je služba v rámci viacerých platforiem, ktorá potvrdzuje identitu používateľa pre Office.  Vyžaduje sa na to, aby ste sa mohli prihlásiť do balíka Office, aktivovať licenciu na Office a pristupovať k súborom uloženým v cloude a zároveň poskytuje konzistentné používanie v rámci rôznych relácií balíka Office a zariadení.    |
+| [Klikni a spusti](#click-to-run-events) | Klikni a spusti je technológia inštalácie, ktorá sa používa na inštaláciu a aktualizáciu balíka Office vo Windowse. Kontroluje dostupnosť nových verzií balíka Office a ak je k dispozícii nová verzia, stiahne a nainštaluje ju. Služba Klikni a spusti rozpoznáva potrebu, sťahuje a inštaluje aktualizácie balíka Office vrátane aktualizácií zabezpečenia.     |
 | [Rozšírená konfiguračná služba (ECS)](#enhanced-configuration-service-ecs-events) | Služba ECS umožňuje spoločnosti Microsoft meniť konfiguráciu inštalácií balíka Office bez nutnosti opätovného nasadenia balíka Office. Používa sa na riadenie postupného nasadzovania funkcií alebo aktualizácií, pričom vplyv nasadenia sa monitoruje zo zhromaždených diagnostických údajov. Používa sa aj na zmiernenie problémov funkcie alebo aktualizácie so zabezpečením a výkonom. Okrem toho služba ECS podporuje zmeny konfigurácie týkajúce sa diagnostických údajov na pomoc pri zabezpečovaní zhromažďovania príslušných udalostí. |
 | [Licenčná služba](#licensing-events)     | Licenčná služba je cloudová služba, ktorá podporuje aktiváciu balíka Office pre nové inštalácie a uchováva licenciu v zariadeniach po aktivovaní balíka Office. Registruje každé zariadenie používateľa a aktivuje Office, kontroluje stav predplatného na Office a spravuje kódy Product key.    |
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) je technológia, ktorá sa používa na aktualizáciu aplikácií od spoločnosti Microsoft vytvorených pre MacOS, ako je napríklad Office. Služba MAU rozpoznáva potrebu, sťahuje a inštaluje aktualizácie aplikácií vrátane aktualizácií zabezpečenia.|
@@ -207,7 +207,7 @@ Tieto udalosti, ako aj udalosti priestoru názvov Office.MATS, sa používajú n
 
 3\) Keď sa vyskytnú zlyhania, tieto signály vysielajú dôležité kódy zlyhania z príslušnej súčasti (kód klienta balíka Office, knižnice overovania alebo služby oprávnenia), ktoré je možné použiť na určenie priority, diagnostikovanie a zmierňovanie
 
-4\) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb blokujúcich používateľa
+4\) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb blokujúcich používateľa.
 
 Zhromažďujú sa tieto polia:
 
@@ -261,7 +261,7 @@ Microsoft Auth Telemetry System (MATS) sa zhromažďuje, keď sa Office pokúša
 
 3\) Keď sa vyskytnú zlyhania, tieto signály vysielajú dôležité kódy zlyhania z príslušnej súčasti (kód klienta balíka Office, knižnice overovania alebo služby oprávnenia), ktoré je možné použiť na určenie priority, diagnostikovanie a zmierňovanie
 
-4\) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb
+4\) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb.
 
 Zhromažďujú sa tieto polia:
 
@@ -588,7 +588,7 @@ Zhromažďujú sa tieto polia:
 
 - **Microsoft_ADAL_is_silent_ui** – pravda/nepravda, uvádza, či knižnica ADAL zobrazila používateľské rozhranie (výzvu)
 
-- **Microsoft_ADAL_is_successfull** – pravda/nepravda, uvádza, či rozhranie API knižnice ADAL bolo úspešné (MacOS)
+- **Microsoft_ADAL_is_successfull** – pravda/nepravda, uvádza, či rozhranie API knižnice ADAL bolo úspešné (macOS)
 
 - **Microsoft_ADAL_is_successfull** – pravda/nepravda, uvádza, či rozhranie API knižnice ADAL bolo úspešné
 
@@ -692,7 +692,7 @@ Zhromažďujú sa tieto polia:
 
 - **MSAL_read_token** – tokeny prečítané z vyrovnávacej pamäte (AT, ART, FRT, LRT, IRT, PRT, EAT  [EAT = Exspirované AT sa prečítalo, ale zahodilo]).
 
-- **MSAL_read_token_last_error** – Ak knižnica MSAL narazila na chybu pri čítaní z vyrovnávacej pamäte, informácie uložíme tu. Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme MacOS).
+- **MSAL_read_token_last_error** – Ak knižnica MSAL narazila na chybu pri čítaní z vyrovnávacej pamäte, informácie uložíme tu. (Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme macOS).
 
 - **MSAL_request_duration** – ako dlho trvala požiadavka, keď sa volalo rozhranie API najvyššej úrovne knižnice MSAL, kým sme nevrátili výsledok.
 
@@ -718,7 +718,7 @@ Zhromažďujú sa tieto polia:
 
 - **MSAL_write_token** – tokeny zapísané do vyrovnávacej pamäte (AT, ART, FRT, LRT, IRT, PRT, EAT  [EAT = Exspirované AT sa prečítalo, ale zahodilo]).
 
-- **MSAL_write_token_last_error** – Ak knižnica MSAL narazila na chybu pri zapisovaní do vyrovnávacej pamäte, informácie uložíme tu. Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme MacOS).
+- **MSAL_write_token_last_error** – Ak knižnica MSAL narazila na chybu pri zapisovaní do vyrovnávacej pamäte, informácie uložíme tu. (Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme macOS).
 
 - **oneauth_api** – rozhranie API OneAuth vyvolané pre tento pokus o overenie.
 
@@ -726,7 +726,7 @@ Zhromažďujú sa tieto polia:
 
 - **oneauth_version** – verzia súpravy SDK OneAuth.
 
-- **Platform** – platforma operačného systému (0: Počítač s Windowsom, 1: Android, 2: iOS, 3: MacOS; 4: UWP)
+- **Platform** – platforma operačného systému (0: Počítač s Windowsom, 1: Android, 2: iOS, 3: macOS; 4: UWP)
 
 - **Promptreasoncorrelationid** – identifikátor korelácie, ktorý sa dá použiť na vyhľadanie predchádzajúcej udalosti overovania. Používa sa na vysvetlenie, prečo sa používateľovi zobrazila výzva na overenie.
 
@@ -875,7 +875,7 @@ Zhromažďujú sa tieto polia:
 
 - **oneauth_version** – verzia súpravy SDK OneAuth.
 
-- **Platform** – platforma operačného systému (0: Win32; 1: Android, 2: iOS, 3: MacOS; 4: WinRT)
+- **Platform** – platforma operačného systému (0: Win32; 1: Android, 2: iOS, 3: macOS; 4: WinRT)
 
 - **Scenarioname** – názov scenára, pre ktorý je potrebné overovanie, určený volajúcou aplikáciou.
 
@@ -1118,75 +1118,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigurelight"></a>Office.ClickToRun.Scenario.InstallTaskConfigurelight
 
@@ -1194,75 +1194,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskfinalintegrate"></a>Office.ClickToRun.Scenario.InstallTaskFinalintegrate
 
@@ -1270,75 +1270,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
   - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
   - **Data\_ErrorSource** – miesto výskytu chyby
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskfonts"></a>Office.ClickToRun.Scenario.InstallTaskFonts
 
@@ -1346,75 +1346,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskinitupdates"></a>Office.ClickToRun.Scenario.InstallTaskInitupdates
 
@@ -1422,75 +1422,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskintegrateinstall"></a>Office.ClickToRun.Scenario.InstallTaskIntegrateinstall
 
@@ -1498,75 +1498,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
   - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltasklastrun"></a>Office.ClickToRun.Scenario.InstallTaskLastrun
 
@@ -1574,75 +1574,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
   - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
-  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskmigrate"></a>Office.ClickToRun.Scenario.InstallTaskMigrate
 
@@ -1650,75 +1650,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
   - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
   - **Data\_ErrorSource** – miesto výskytu chyby
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskpublishrsod"></a>Office.ClickToRun.Scenario.InstallTaskPublishrsod
 
@@ -1726,75 +1726,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
   - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
   - **Data\_ErrorSource** – miesto výskytu chyby
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskremoveinstallation"></a>Office.ClickToRun.Scenario.InstallTaskRemoveinstallation
 
@@ -1802,75 +1802,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskstream"></a>Office.ClickToRun.Scenario.InstallTaskStream
 
@@ -1878,75 +1878,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskuninstallcentennial"></a>Office.ClickToRun.Scenario.InstallTaskUninstallcentennial
 
@@ -1954,75 +1954,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenariorepairtaskfinalintegrate"></a>Office.ClickToRun.Scenario.RepairTaskFinalintegrate
 
@@ -2030,75 +2030,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenariorepairtaskfullrepair"></a>Office.ClickToRun.Scenario.RepairTaskFullrepair
 
@@ -2106,75 +2106,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenariorepairtaskintegraterepair"></a>Office.ClickToRun.Scenario.RepairTaskIntegraterepair
 
@@ -2182,75 +2182,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenariorepairtaskremoveinstallation"></a>Office.ClickToRun.Scenario.RepairTaskRemoveinstallation
 
@@ -2258,75 +2258,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskintegrateupdate"></a>Office.ClickToRun.Scenario.UpdateTaskIntegrateupdate 
 
@@ -2334,75 +2334,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskpublishrsod"></a>Office.ClickToRun.Scenario.UpdateTaskPublishrsod
 
@@ -2410,75 +2410,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdateapply"></a>Office.ClickToRun.Scenario.UpdateTaskUpdateapply
 
@@ -2486,25 +2486,25 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_AvailableVersion** – aká verzia balíka Office je dostupná na aktualizáciu
 
@@ -2514,57 +2514,57 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_CorruptionChecksOnly** – či sa len kontroluje poškodenie a nevykonáva aktualizácia
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
   - **Data\_ErrorSource** – miesto výskytu chyby
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_HardlinkingException** výnimka, ktorá sa vyskytla pri pokuse o vytvorenie pevných pripojení
+  - **Data\_HardlinkingException** – výnimka, ktorá sa vyskytla pri pokuse o vytvorenie pevných pripojení
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
   - **Data\_PackageOperationSuccessful** – pravda, ak sa úspešne dokončila úloha v balíku pre Office
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
   - **Data\_WorkstationLockState** – pravda, ak je počítač pravdepodobne zamknutý
 
@@ -2574,75 +2574,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedetection"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedetection
 
@@ -2650,25 +2650,25 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_AvailableVersion** – aká verzia balíka Office je dostupná na aktualizáciu
 
@@ -2678,55 +2678,55 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
   - **Data\_ErrorSource** – miesto výskytu chyby
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
   - **Data\_PackageUpdateAvailable** – pravda, ak je k dispozícii nové verzia Office
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedownload"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedownload
 
@@ -2734,25 +2734,25 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_AvailableVersion** – aká verzia balíka Office je dostupná na aktualizáciu
 
@@ -2762,59 +2762,59 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_CorruptionChecksOnly** – či sa len kontroluje poškodenie a nevykonáva aktualizácia
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
   - **Data\_ErrorSource** – miesto výskytu chyby
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
   - **Data\_FoundCorruptFiles** – pravda, ak sa našli poškodené súbory
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
   - **Data\_PackageOperationSuccessful** – pravda, ak sa úspešne dokončila úloha v balíku pre Office
 
   - **Data\_PipelineExitCode** – výstupný kód vráteného kanála súboru
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatefinalize"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize
 
@@ -2822,75 +2822,75 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
-  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
+  - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
-  - **Data\_15\_UpdateVersion**  – na akú verziu balíka Office 15 sa aktualizuje 
+  - **Data\_15\_UpdateVersion** – na akú verziu balíka Office 15 sa aktualizuje 
 
-  - **Data\_15\_Version** – verzia balíka Office 15 
+  - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
-  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
+  - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
-  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
+  - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
-  - **Data\_AddingFixedProducts** – pridávané produkty 
+  - **Data\_AddingFixedProducts** – pridávané produkty 
 
-  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
+  - **Data\_AddingProducts** – produkty s požiadavkou na pridanie 
 
   - **Data\_CompletionState** – či sa úloha dokončila
 
-  - **Data\_ErrorCode** – kód chyby zlyhania 
+  - **Data\_ErrorCode** – kód chyby zlyhania 
 
-  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
+  - **Data\_ErrorDetails** – dodatočné podrobnosti o chybe 
 
-  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
+  - **Data\_ErrorMessage** – chybové hlásenie o problémoch 
 
-  - **Data\_ErrorSource** – miesto výskytu chyby 
+  - **Data\_ErrorSource** – miesto výskytu chyby 
 
-  - **Data\_ExceptionType** – výnimka zlyhania 
+  - **Data\_ExceptionType** – výnimka zlyhania 
 
-  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
+  - **Data\_IsErrorCodeIgnorable** – či kód chyby zlyhania možno ignorovať 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth** – či kód chyby možno ignorovať 
 
-  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
+  - **Data\_NewestPackageVersion** – najnovšia verzia balíka Office v zariadení 
 
-  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
+  - **Data\_OldestPackageVersion** – najstaršia verzia balíka Office v zariadení 
 
-  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
+  - **Data\_ProductsToAdd** – pridávané produkty balíka Office 
 
-  - **Data\_ProductsToRemove**  – odstraňované produkty balíka Office 
+  - **Data\_ProductsToRemove** – odstraňované produkty balíka Office 
 
-  - **Data\_RemovingFixedProducts** – odstraňované produkty 
+  - **Data\_RemovingFixedProducts** – odstraňované produkty 
 
-  - **Data\_RemovingProducts** – produkty na odstránenie 
+  - **Data\_RemovingProducts** – produkty na odstránenie 
 
-  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
+  - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
-  - **Data\_SqmMachineID**  – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
+  - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
-  - **Data\_SusClientID**  – identifikátor aktualizácie balíka Office v zariadení 
+  - **Data\_SusClientID** – identifikátor aktualizácie balíka Office v zariadení 
 
-  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
+  - **Data\_TaskState** – stav úlohy, napr. spustená alebo zrušená 
 
-  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
+  - **Data\_TotalClientCabSize** – veľkosť kabinetu klienta 
 
-  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
+  - **Data\_TriggeringUI** – čo spustilo používateľské rozhranie 
 
-  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
+  - **Data\_UpdatesEnabled** – či sú aktualizácie balíka Office povolené 
 
-  - **Data\_Version** – verzia balíka Office 
+  - **Data\_Version** – verzia balíka Office 
 
 ### <a name="officeclicktoruntransport"></a>Office.ClickToRun.Transport
 
@@ -2943,13 +2943,13 @@ Táto udalosť nahlasuje akcie sťahovania súborov s cieľom určiť úspešnos
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_IsForeGroundStreaming** – či sa streamuje v popredí alebo na pozadí
+  - **Data\_IsForeGroundStreaming**– či sa streamuje v popredí alebo na pozadí
 
-  - **Data\_IsInstallMode** – 1, ak inštalujú a sťahujú súbory, 0, ak nie
+  - **Data\_IsInstallMode** – 1, ak sa inštalujú a sťahujú súbory, 0, ak nie
 
   - **Data\_SourceProtocol –** či sa sťahuje zo siete údajov obsahu (CDN), zariadeni, v ktorom sa inštaluje (local) alebo zo zdroja v lokálnej sieti
 
-  - **Data\_Status** – Úspech alebo zlyhanie 
+  - **Data\_Status** – Úspech alebo zlyhanie 
 
 ### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
@@ -2992,7 +2992,7 @@ Táto udalosť nahlasuje akciu, ktorá vyvodzuje záver zo vstupu získaného po
 
 - **ChannelID** – celé číslo predstavujúce hodnotu enumerácie vybratého kanála aktualizácie/inštalácie. Napríklad kanál beta, aktuálny kanál (náhľad), aktuálny kanál, mesačný kanál Enterprise, polročný kanál Enterprise (náhľad), polročný kanál Enterprise alebo neplatný.
 
-- **CMDMode** – priateľský reťazec zodpovedajúci tomu, ktorý prepínač celkového režimu sa zistil v argumentoch cmd odovzdaných do súboru exe.
+- **CMDMode** – priateľský reťazec zodpovedajúci tomu, ktorý prepínač celkového režimu sa zistil v argumentoch cmd odovzdaných do súboru exe.
 
 - **C2RClientUICulture** – kultúra klienta C2R na inštaláciu
 
@@ -3046,7 +3046,7 @@ Táto udalosť nahlasuje akciu, ktorá vyvodzuje záver zo vstupu získaného po
 
 - **ShouldActivate** – boolovská hodnota signalizujúca, či správca IT vo svojom súbore configuration.xml vyžiadal pokus a automatickú aktiváciu licencie
 
-- **ShouldUninstallCentennial ** – Boolovský príznak označujúci, či sa produkty balíka Office z Obchodu majú odinštalovať.
+- **ShouldUninstallCentennial** – Boolovský príznak označujúci, či sa produkty balíka Office z Obchodu majú odinštalovať.
 
 - **VersionToInstall** – reťazcová hodnota verzie balíka Office „16.0.xxxxx.yyyy“, ktorá sa inštaluje
  
@@ -3125,7 +3125,7 @@ Táto udalosť nahlasuje parametre použité na inštaláciu balíka Office
 
 - **ShouldActivate** – boolovská hodnota signalizujúca, či správca IT vo svojom súbore configuration.xml vyžiadal pokus a automatickú aktiváciu licencie
 
-- **ShouldUninstallCentennial ** – Boolovský príznak označujúci, či sa produkty balíka Office z Obchodu majú odinštalovať.
+- **ShouldUninstallCentennial** – Boolovský príznak označujúci, či sa produkty balíka Office z Obchodu majú odinštalovať.
 
 - **VersionToInstall** – reťazcová hodnota verzie balíka Office „16.0.xxxxx.yyyy“, ktorá sa inštaluje
 
@@ -3315,6 +3315,20 @@ Zhromažďujú sa tieto polia:
 
 - **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
 
+### <a name="officeandroiddocsuipaywallcontrolpurchasetokenredemptionresponse"></a>Office.Android.DocsUI.PaywallControl.PurchaseTokenRedemptionResponse
+
+*[Táto udalosť sa predtým nazývala Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse.]*
+
+Táto telemetria produktu sa zhromažďuje na sledovanie a zaznamenávanie stavu interných transakcií a informácií o zosúlaďovaní na zlepšenie spoľahlivosti a výkonu. Spoločnosť Microsoft používa tieto údaje na analýzu a zlepšenie spoľahlivosti a výkonu spracovania interných transakcií a mechanizmov zosúlaďovania.
+
+Zhromažďujú sa tieto polia:
+
+- **MicrosoftPurchaseOrderId** – ID objednávky spoločnosti Microsoft odosielané službou Retail Federation Service (RFS) na účely sledovania.
+
+- **ResponseCode** – kód odpovede HTTP (int)
+
+- **StatusCode** – kód stavu odpovede RFS (RFS definovaná enumerácia int – konečná)
+
 
 ### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
 
@@ -3343,6 +3357,101 @@ Zhromažďujú sa tieto polia:
 - **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
 
 
+### <a name="officeandroiddocsuiviewsdimeerror"></a>Office.Android.DocsUI.Views.DimeError
+
+Táto udalosť sa zhromažďuje pre aplikáciu balíka Office pre Android (vydanú pre Huawei a v obchodoch v Číne). Táto udalosť označuje, že pokus o zakúpenie predplatného na Microsoft 365 prostredníctvom Dime (webová URL adresa načítaná vo webovom zobrazení klienta) zlyhal. Zaznamenajú sa len chybové scenáre. Tieto údaje udalosti sú len údaje chyby a používajú sa na zabezpečenie stavu toku nákupu Dime v klientovi.
+
+Zhromažďujú sa tieto polia:
+
+- **ID korelácie** – Identifikátor, ktorý jednoznačne identifikuje reláciu nákupu Dime.
+
+- **ErrorReason** – Označuje príčinu chyby, ktorá sa vyskytla.
+  - 0 – Neznáma chyba
+  - 1 – Internet nie je k dispozícii
+  - 2 – Overenie jednoznačného identifikátora (UUID) zlyhalo
+  - 3 – Jednoznačný identifikátor (UUID) má hodnotu null alebo je prázdny
+  - 4 – Chyba vloženia jazyka JavaScript, pri ktorej aplikácia balíka Office pre Android nedokáže odovzdať token overenia do Dime
+  - 5 – Základná webová URL adresa v klientovi je neplatná
+
+
+### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
+
+Táto udalosť zachytáva údaje, ktoré pomáhajú monitorovať stav súčastí Dime. Napríklad v prípade toku nákupu v aplikácii, keď sa používateľ rozhodne zakúpiť si predplatné na Microsoft 365 v aplikácii balíka Office pre Android alebo v zariadeniach s Windowsom.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_ActivityErrorDescription** – popis chyby aktivity
+
+- **Data_ActivityErrorMessage** – chybové hlásenie aktivity 
+
+- **Data_CampaignId** – ID kampane pre atribúciu
+
+- **Data_ContentId** – založené na Experience ID; je namapované na Flow ID a Content ID
+
+- **Data_CorrelationVector** – vektor korelácie na koreláciu Dime s partnermi, ktorí používajú vektor korelácie
+
+- **Data_CustomerImpacted** – používa sa na riešenie problémov, ak je zákazník ovplyvnený pri načítavaní toku
+
+- **Data_DimeActivityDuration** – čas trvania 
+
+- **Data_DimeActivityMetadata** – metaúdaje aktivity
+
+- **Data_DimeActivityName** – názov aktivity na monitorovanie stavu
+
+- **Data_DimeActivityResult** – výsledok aktivity, úspech/ chyba/ očakávaná chyba
+
+- **Data_DimeVersion** – verzia zostavy
+
+- **Data_DurationLevel** – závažnosť – 0/1/2
+
+- **Data_EcsConfigIds** – identifikátory pre experimenty
+
+- **Data_EcsCountry** – zistená krajina
+
+- **Data_EcsETag** – Informácie o skupinách funkcií
+
+- **Data_Environment** – prostredie služby Dime, produkčné alebo predprodukčné
+
+- **Data_ExperienceId** – prostredie na načítanie 
+
+- **Data_FlowId** – založené na Experience ID; je namapované na Flow ID a Content ID
+
+- **Data_Language** – kultúra
+
+- **Data_Market** – zistený trh
+
+- **Data_OTelJS_Version** – verzia telemetrie balíka Office
+
+- **Data_PageSessionId** – ID relácie stránky
+
+- **Data_PartnerId** – aplikácia volajúceho
+
+- **Data_QosLevel** – závažnosť, 0/1/2
+
+- **Data_SDX_AssetId** – ID prostriedku obsahu hosťovania Service Delivered Experience (SDX) pre Win32
+
+- **Data_SDX_BrowserToken** – token prehliadača pre Win32
+
+- **Data_SDX_HostJsVersion** – verzia knižnice jazyka JavaScript pre Win32
+
+- **Data_SDX_AssetId** – ID pre Service Delivered Experience pre Win32
+
+- **AppInstanceId** – ID inštancie SDX pre Win32
+
+- **Data_SDX_MarketplaceType** – typ trhoviska SDX pre Win32
+
+- **Data_SDX_OfficeJsVersion** – verzia Office JS pre Win32
+
+- **Data_SDX_SessionId** – ID relácie SDX pre Win32
+
+- **Data_SDX_Version** – verzia SDX pre Win32
+
+- **Data_TimestampUTC** – časová pečiatka udalosti
+
+- **Data_TsgId** – ID príručky na riešenie problémov pre každú aktivitu
+
+- **Data_UserAgent** – značky hlavičiek
+
 ### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Kritická telemetria používania sa zhromažďuje na označenie toho, keď používateľ ťukne na tlačidlo Nákup/Kúpiť.  Údaje sa používajú na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
@@ -3368,7 +3477,7 @@ Zhromažďujú sa tieto polia:
 
   - **ACID** – identifikátor GUID predstavujúci produkt balíka Office, na ktorý má používateľ licenciu
 
-  - **DwEulaId** – číselný identifikátor typu licenčnej zmluvy koncového používateľa, ktorú používateľ práve prijal
+  - **DwEulaId** – číselný identifikátor typu licenčnej zmluvy koncového používateľa, ktorú používateľ prijal
 
 ### <a name="officelicensingactivation"></a>Office.Licensing.Activation 
 
@@ -3387,6 +3496,47 @@ Zhromažďujú sa tieto polia:
 Ak sa licenciu z nejakého dôvodu nepodarilo aktivovať automaticky, používateľovi sa zobrazí sprievodca aktiváciou. Táto udalosť hlási, že používateľovi sa zobrazuje sprievodca. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Táto udalosť nezhromažďuje žiadne polia.
+
+### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
+ 
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že prostredie nákupu v rámci aplikácie zatvára používateľ alebo aplikácia. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
+ 
+Zhromažďujú sa tieto polia:
+ 
+- **Data_ClosedDialog** – príznak označujúci, že používateľ zavrel dialógové okno
+
+### <a name="officelicensingdialogswebviewdialoghandleerrornotification"></a>Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
+ 
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že došlo k pokusu o načítanie prostredia nákupu v rámci aplikácie, ale vyskytla sa chyba, v dôsledku ktorej sa dialógové okno nezobrazilo. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
+ 
+Zhromažďujú sa tieto polia:
+  
+- **Data_MoeErrorCode** – kód chyby zobrazený v rámci webového dialógového okna
+
+### <a name="officelicensingdialogswebviewdialogpreload"></a>Office.Licensing.Dialogs.WebViewDialog.Preload
+ 
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že prostredie nákupu v rámci aplikácie sa načítava na pozadí. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
+ 
+Zhromažďujú sa tieto polia:
+
+ - Žiadne
+
+### <a name="officelicensingdialogswebviewdialogshow"></a>Office.Licensing.Dialogs.WebViewDialog.Show
+ 
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že prostredie nákupu v rámci aplikácie sa zobrazuje používateľovi. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie.  
+
+Zhromažďujú sa tieto polia:
+
+ - Žiadne
+
+### <a name="officelicensingdialogswebviewdialogtimeout"></a>Office.Licensing.Dialogs.WebViewDialog.Timeout
+
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že došlo k pokusu o načítanie prostredia nákupu v rámci aplikácie, ale časový limit uplynul. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní. 
+
+Zhromažďujú sa tieto polia:
+
+ - Žiadne
+
 
 ### <a name="officelicensingenforcesigninqualified"></a>Office.Licensing.EnforceSignInQualified 
 
@@ -4386,6 +4536,8 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+- **Success** – údaj o úspešnosti úlohy klonovania
 
 - **UpdateID** – identifikátor aktualizácie.
 
@@ -5667,6 +5819,47 @@ Zhromažďujú sa tieto polia:
 
 - **App** – proces aplikácie odosielajúci udalosť
     
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – text, ktorý označuje povahu udalosti.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
+### <a name="controllermainwindowsetautomaticchecking"></a>controller.mainwindow.setautomaticchecking
+
+Táto udalosť označuje, že zariadenie bolo zaradené do režimu automatickej aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+
+Zhromažďujú sa tieto polia:
+
+ - **App** – proces aplikácie odosielajúci udalosť
+
 - **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
 
 - **AppVersionLong** – verzia aplikácie
@@ -10822,48 +11015,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
-
-### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
-
-Táto udalosť zaznamenáva chyby komunikácie vnútri procesu (komunikácia s pomocným nástrojom služby MAU). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
- 
-Zhromažďujú sa tieto polia:
-
-- **App** – proces aplikácie odosielajúci udalosť
-
-- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
-
-- **AppVersionLong** – verzia aplikácie
-
-- **Channel** – preferencia pre cieľovú skupinu
-
-- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
-
-- **DeviceID** – identifikátor zariadenia
-
-- **DeviceInfo_Model** – hardvérový model zariadenia
-
-- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
-
-- **DeviceInfo_OsBuild** – verzia operačného systému
-
-- **Event_ReceivedTime** – čas prijatia telemetrie
-
-- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
-
-- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
-
-- **HowTocheck** – preferencia pre kontrolu aktualizácií
-
-- **Payload** – obsahuje identifikátor použitý na sledovanie aktivity aktualizácie, názov aplikácie a podrobnosti o nahlásenej chybe proxy servera.
-
-- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
-
-- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
-
-- **SessionId** – identifikátor relácie
-
-    
+   
 ### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Táto udalosť zaznamenáva chyby komunikácie vnútri procesu (komunikácia s pomocným nástrojom služby MAU). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -11083,6 +11235,94 @@ Zhromažďujú sa tieto polia:
 
 - **UpdatePkg** – názov použitého aktualizačného balíka
 
+### <a name="lifecyclecomplimentproclaunch"></a>Lifecycle.complimentproclaunch
+
+Táto udalosť označuje pokus o spustenie asistenta pre službu Microsoft Update zo služby Microsoft AutoUpdate alebo služby Microsoft AutoUpdate z asistenta pre službu Microsoft Update. Táto udalosť sa používa na určenie a zaručenie stavu služby Microsoft AutoUpdate a asistenta pre službu Microsoft Update.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – akákoľvek chyba nahlásená počas pokusu o spustenie
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **Dôvod** – dôvod na pokus o spustenie doplnkového procesu
+
+- **SessionId** – identifikátor relácie
+
+- **Success** – údaj o úspešnosti pokusu o spustenie
+
+### <a name="lifecyclelaunch"></a>Lifecycle.launch
+
+Táto udalosť označuje spustenie služby Microsoft Update alebo asistenta pre službu Microsoft Update. Táto udalosť sa používa aj na nahlásenie akýchkoľvek problémov zistených počas procesu spúšťania, ako aj metódy nahlásenia, ktorá sa použila na spustenie v prípade asistenta pre službu Microsoft Update.
+
+*[Táto udalosť nahrádza udalosti fba.launch a appdelegate.launch.]*
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Error** – akákoľvek chyba zistená pri spúšťaní
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **LaunchedBy** – metóda, ktorá sa použila na spustenie asistenta pre službu Microsoft Update, podľa vhodnosti
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
 ### <a name="lifecycleperiodiccheck"></a>Lifecycle.periodiccheck
 
 Táto udalosť podáva pravidelné správy o stave procesu MicrosoftAutoUpdate. Konkrétne podáva správy o tom, na ktorých zostávajúcich úlohách proces čaká na dokončenie asistenta aktualizácie, a v prípade používateľského rozhrania podáva správy o tom, či proces končí kvôli nečinnosti používateľa.  Túto udalosť používame na to, aby sme zistili, čo bráni asistentovi aktualizácie dokončiť aktualizácie a ukončiť sa, a či sa používateľské rozhranie ukončí v dôsledku nečinnosti používateľa.
@@ -11132,6 +11372,50 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 - **SessionLength** – Dĺžka relácie aktuálneho procesu v sekundách
+
+
+### <a name="lifecycleterminate"></a>Lifecycle.terminate
+
+Táto udalosť označuje ukončenie služby Microsoft Update alebo asistenta pre službu Microsoft Update. Táto udalosť sa používa na určenie stavu služby Microsoft AutoUpdate a Asistenta služby Microsoft Update.
+
+*[Táto udalosť nahrádza udalosti fba.terminate a appdelegate.terminate.]*
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **SessionLength** – Dĺžka relácie aktuálneho procesu v sekundách
+
 
 
 ### <a name="msupdateclieventhandler"></a>msupdate.cli.eventhandler
@@ -14535,47 +14819,6 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
-### <a name="webservicesserviceaction"></a>webservices.serviceaction
-
-Táto udalosť zaznamenáva chyby vyplývajúce z neočakávanej odpovede webovej služby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
- 
-Zhromažďujú sa tieto polia:
-
-- **App** – proces aplikácie odosielajúci udalosť
-
-- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
-
-- **AppVersionLong** – verzia aplikácie
-
-- **Channel** – preferencia pre cieľovú skupinu
-
-- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
-
-- **DeviceID** – identifikátor zariadenia
-
-- **DeviceInfo_Model** – hardvérový model zariadenia
-
-- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
-
-- **DeviceInfo_OsBuild** – verzia operačného systému
-
-- **Event_ReceivedTime** – čas prijatia telemetrie
-
-- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
-
-- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
-
-- **HowTocheck** – preferencia pre kontrolu aktualizácií
-
-- **Payload** – obsahuje podrobnosti o akcii prichádzajúcej z webových služieb.
-
-- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
-
-- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
-
-- **SessionId** – identifikátor relácie
-
-
 ### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
 Táto udalosť zaznamenáva požiadavky pre službu MAU, časy odozvy a chyby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
@@ -15180,7 +15423,9 @@ Služba Services Configuration nezhromažďuje žiadne požadované údaje služ
 
 ## <a name="telemetry-events"></a>Udalosti služby telemetrie
 
-### <a name="officeandroiddocsuiviewspaywalloperationmetrics"></a>Office.Android.DocsUI.Views.PaywallOperationMetrics
+### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
+
+*[Táto udalosť sa predtým nazývala Office.Android.DocsUI.Views.PaywallOperationMetrics.]*
 
 Spoločnosť Microsoft toto používa na získanie stavu funkcií, úspešnosti alebo chybovosti používateľa pri nákupoch, aby sa zabezpečili príslušné investície do zlepšovania nákupnej skúsenosti zákazníkov zo všetkých mobilných platforiem.
 
@@ -15192,7 +15437,9 @@ Zhromažďujú sa tieto polia:
 
 - **PaywallOperationType** – druh operácie Paywall (enum/int – konečná hodnota)
 
-### <a name="officeandroiddocsuiviewspaywallsessiondata"></a>Office.Android.DocsUI.Views.PaywallSessionData
+### <a name="officeandroiddocsuipaywallcontrolpaywallsessiondata"></a>Office.Android.DocsUI.PaywallControl.PaywallSessionData
+
+*[Táto udalosť sa predtým nazývala Office.Android.DocsUI.Views.PaywallSessionData.]*
 
 Metaúdaje na základe relácie, keď sa používateľovi zobrazí používateľské rozhranie Paywall Spoločnosť Microsoft použije túto možnosť na získanie používateľskej cesty a informácií o používaní zariadení a verzií operačného systému, ktoré používateľ používa, aby mohla prijímať rozhodnutia o investíciách do zlepšovania používateľských skúseností v týchto oblastiach.
 
@@ -15200,7 +15447,7 @@ Zhromažďujú sa tieto polia:
 
 - **App Version** – Kód verzie zaťažujúcej aplikácie
 
-- **ClientId** – Anonymný identifikátor jedinečného zariadenia bez osobných údajov (GUID/string)
+- **ClientId** – Anonymný identifikátor jedinečného zariadenia bez osobných údajov (GUID/reťazec)
 
 - **Entry Point** – Jedinečný identifikátor kontextových alebo konštantných vstupných bodov zo zaťažujúcej aplikácie
 
@@ -15251,6 +15498,46 @@ Zhromažďujú sa tieto polia:
 - **requestType** – reťazec – typ požiadavky StoreKit. Napríklad „ProductsFetch“, „PendingPurchase“
 
 - **status** – reťazec – úspech alebo zlyhanie, označuje úspešnosť alebo zlyhanie požiadavky
+
+### <a name="officeonenotegetsharepointidsfordocument"></a>Office.OneNote.GetSharePointIdsForDocument
+
+Zhromažďované údaje zaznamenávajú zlyhanie a úspech načítavania identifikátorov SharePointu (SPO) pre URL adresu dokumentu. Úspech a zlyhanie (vrátane dôvodu zlyhania) volania sa zaznamená pre všetky platformy. Táto značka sa vyžaduje na sledovanie a diagnostiku stavu volania vytvoreného na získanie identifikátorov. Identifikátory musia mať údaje strany OneNotu (patriacej do poznámkových blokov uložených v SharePointe) zobrazené v informačnom kanáli. 
+
+Zhromažďujú sa tieto polia:
+
+- **ErrorCode** – interná hodnota chyby
+
+- **ErrorMessage** – reťazec popisujúci chybu
+
+- **FailureType** – reťazec na určenie typu chyby
+
+- **HttpStatusCode** – kód odozvy HTTP pre volanie siete
+
+- **InnerErrorCode** – interný kód
+
+- **InnerErrorMesage** – hlásenie o chybe
+
+- **IsSuccess** – Boolovská hodnota, či je signál úspešný
+
+### <a name="officeonenotegetsharepointidsfordocumentw32old"></a>Office.OneNote.GetSharePointIdsForDocumentW32Old
+
+Táto telemetria zaznamenáva scenáre zlyhania a úspech načítavania identifikátorov SharePointu (SPO) pre URL adresu dokumentu. Úspech a zlyhanie (vrátane dôvodu zlyhania) volania sa zaznamená. Zaznamenáva sa len v starej platforme Win32. Táto značka sa vyžaduje na sledovanie a diagnostiku stavu volania vytvoreného na získanie identifikátorov. Identifikátory musia mať údaje strany OneNotu (patriacej do poznámkových blokov uložených v SharePointe) zobrazené v informačnom kanáli. 
+
+Zhromažďujú sa tieto polia:
+
+- **ErrorCode** – interná hodnota chyby
+
+- **ErrorMessage** – reťazec popisujúci chybu
+
+- **FailureType** – reťazec na určenie typu chyby
+
+- **HttpStatusCode** – kód odozvy HTTP pre volanie siete
+
+- **InnerErrorCode** – interný kód
+
+- **InnerErrorMesage** – hlásenie o chybe
+
+- **IsSuccess** – Boolovská hodnota, či je signál úspešný
 
 
 ### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
@@ -16021,7 +16308,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officesystemsystemhealthungracefulappexitdesktop"></a>Office.System.SystemHealthUngracefulAppExitDesktop
 
-Používa sa na zaznamenanie metriky zlyhania.
+Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončení pomocou Správcu úloh, zablokovaní aplikácie a podobne) klientskych aplikácií Office, ako je napríklad Word, Excel, PowerPoint alebo Outlook. Metriky neočakávaného ukončenia aplikácií používame na meranie stavu klientskych produktov Office. Ide o signál so zásadnou dôležitosťou pre firemnú prevádzku, ktorý sa používa na posúdenie stability produktov.
 
 Zhromažďujú sa tieto polia:
 
@@ -16029,83 +16316,103 @@ Zhromažďujú sa tieto polia:
 
   - **AffectedProcessAppBuildRevision** – identifikátor revízie zostavy ovplyvneného procesu.
 
+  - **AffectedProcessAppMajorVer** – identifikátor vedľajšej verzie ovplyvneného procesu.
+
   - **AffectedProcessAppMinorVer** – identifikátor vedľajšej verzie ovplyvneného procesu.
 
-  - **AffectedProcessAppName** – názov ovplyvneného procesu.
+  - **AffectedProcessAppName** – názov ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessExeBuildVersion** – číslo verzie zostavy ovplyvneného procesu.
+  - **AffectedProcessExeBuildVersion** – číslo verzie zostavy ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessExeMajorVersion** – číslo hlavnej verzie ovplyvneného procesu.
+  - **AffectedProcessExeMajorVersion** – číslo hlavnej verzie ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessExeMinorVersion** – číslo vedľajšej verzie ovplyvneného procesu.
+  - **AffectedProcessExeMinorVersion** – číslo vedľajšej verzie ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessExeRevisionVersion** – číslo verzie revízie zostavy ovplyvneného procesu.
+  - **AffectedProcessExeRevisionVersion** – číslo verzie revízie zostavy ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessIsDebug** – či ovplyvnený proces je zostavou ladenia.
+  - **AffectedProcessIsDebug** – či ovplyvnený proces je zostavou ladenia. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessIsLabMachine** – či ovplyvnený proces je v laboratóriu spoločnosti Microsoft.
+  - **AffectedProcessIsLabMachine** – či ovplyvnený proces je v laboratóriu spoločnosti Microsoft. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessOsEnvironment** – identifikátor operačného systému pre ovplyvnený proces.
+  - **AffectedProcessOsEnvironment** – identifikátor operačného systému pre ovplyvnený proces. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AppName** – názov ovplyvnenej aplikácie.
+  - **AppName** – názov ovplyvnenej aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashedAssignedFlights** – skupiny funkcií priradené zlyhanému procesu.
+  - **CrashedAssignedFlights** – skupiny funkcií priradené zlyhanému procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashedConfigIds** – konfigurácia priradená zlyhanému procesu.
+  - **CrashedConfigIds** – konfigurácia priradená zlyhanému procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **CrashedEcsETag** – identifikátor experimentu pre zlyhaný proces.
 
-  - **CrashedImpressionId** – identifikátor impresie zlyhaného procesu.
+  - **CrashedImpressionId** – identifikátor impresie zlyhaného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashedProcessSessionID** – jedinečný identifikátor zlyhaného procesu.
+  - **CrashedModuleName** – názov zlyhávajúceho modulu.
 
-  - **CrashedProcessSessionInitTime** – čas začatia ovplyvneného procesu.
+  - **CrashedProcessSessionID** – jedinečný identifikátor zlyhaného procesu. 
+
+  - **CrashedProcessSessionInitTime** – čas začatia ovplyvneného procesu. 
+
+  - **CrashedProcessSessionUninitTime** – čas skončenia ovplyvneného procesu.
+
+  - **CrashTag** – jedinečný identifikátor kódu zlyhania.
 
   - **CrashType** – identifikátor typu zlyhania.
 
-  - **DetectionTime** – čas zistenia neočakávaného ukončenia.
+  - **DetectionTime** – čas zistenia neočakávaného ukončenia. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ErrorString** – popis chyby.
+  - **ErrorString** – popis chyby. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ExceptionAddress** – adresa v programe, kde došlo k zlyhaniu.
+  - **ExceptionAddress** – adresa v programe, kde došlo k zlyhaniu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **ExceptionCode** – identifikátor výnimky.
 
-  - **FaultAppName** – názov zlyhanej aplikácie.
+  - **FaultAppName** – názov zlyhanej aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **InstallMethod** – či bola aktuálna zostava balíka Office inovovaná zo staršej zostavy, vrátená na staršiu zostavu alebo nanovo nainštalovaná.
 
-  - **InstallType** – identifikátor spôsobu inštalácie balíka Office.
+  - **InstallType** – identifikátor spôsobu inštalácie balíka Office. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **InstallTypeName** – identifikátor spôsobu inštalácie balíka Office.
+  - **InstallTypeName** – identifikátor spôsobu inštalácie balíka Office. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **IsLabMachine** – či je balík Office spustený v laboratóriu spoločnosti Microsoft.
+  - **IsLabMachine** – či je balík Office spustený v laboratóriu spoločnosti Microsoft. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **IsMsftInternal** – či používateľ systému Windows, ktorý má spustený Office, je zamestnancom spoločnosti Microsoft.
+  - **IsMsftInternal** – či používateľ systému Windows, ktorý má spustený Office, je zamestnancom spoločnosti Microsoft. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleBaseAddress** – základná adresa zlyhávajúceho modulu.
+  - **ModuleBaseAddress** – základná adresa zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleBuildVersion** – číslo verzie zostavy zlyhávajúceho modulu.
+  - **ModuleBuildVersion** – číslo verzie zostavy zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleMajorVersion** – číslo hlavnej verzie zlyhávajúceho modulu.
+  - **ModuleMajorVersion** – číslo hlavnej verzie zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleMinorVersion** – číslo vedľajšej verzie zlyhávajúceho modulu.
+  - **ModuleMinorVersion** – číslo vedľajšej verzie zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleName** – názov zlyhávajúceho modulu.
+  - **ModuleName** – názov zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleOffset** – odsadenie v bajtoch od základnej adresy, kde došlo k zlyhaniu.
+  - **HexModuleOffset** – odsadenie v bajtoch v hexadecimálnom formáte od základnej adresy, kde došlo k zlyhaniu.
 
-  - **ModuleRevisionVersion** – číslo verzie revízie zostavy zlyhávajúceho modulu.
+  - **ModuleRevisionVersion** – číslo verzie revízie zostavy zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch.
+  - **ModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+  - **ModuleVersion** – verzia chybného modulu zodpovedného za zlyhanie.
+
+  - **OfficeArchitectureText** – architektúra inštalácie: x64, x86 atď.
+
+  - **OfficeUILang** – jazyk používateľského rozhrania zostavy balíka Office.
 
   - **OSEnvironment** – identifikátor prostredia, v ktorom je Office spustený.
 
   - **PreviousBuild** – predchádzajúca nainštalovaná verzia zostavy.
 
-  - **UAETypeName** – identifikátor spôsobu neočakávaného zlyhania aplikácie.
+  - **ProcessorArchitecture** – architektúra procesora pre prostredie: x64, x86 atď.
 
-  - **VerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie.
+  - **SessionFlags** – definuje podmienky relácie, ako napríklad: bol súbor otvorený alebo upravovaný, bol otvorený v cloude, dokončil sa postup spúšťania atď. 
+
+  - **UAETypeName** – identifikátor spôsobu neočakávaného zlyhania aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+  - **UninitLibletId** – jedinečný identifikátor zlyhávajúcej súčasti zlyhania.
+
+  - **VerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 ### <a name="officesystemsystemhealthungracefulappexitimmersive"></a>Office.System.SystemHealthUngracefulAppExitImmersive
 
@@ -16171,79 +16478,110 @@ Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončen
 
 Zhromažďujú sa tieto polia:
 
-  - **AddinExecution** – príznak, ktorý informuje o tom, či bol doplnok spustený a nedokončil sa počas neočakávaného ukončenia aplikácie.
+  - **AddinExecution** – príznak, ktorý informuje o tom, či bol doplnok spustený a nedokončil sa počas neočakávaného ukončenia aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **BootCompleted** – či bolo spustenie balíka Office dokončené v čase zlyhania.
+  - **AppUsedVirtualMemory** – virtuálna pamäť využívaná aplikáciou balíka Office
 
-  - **CrashedAppBuild** – identifikátor verzie zostavy ovplyvneného procesu.
+  - **BootCompleted** – či bolo spustenie balíka Office dokončené v čase zlyhania. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashedAppMajor** – identifikátor hlavnej verzie ovplyvneného procesu.
+  - **BucketId** – identifikátor sektora Watson pre zlyhanie
+ 
+  - **CabGuid** – globálne jedinečný identifikátor (GUID) pre kabinet Watson.
 
-  - **CrashedAppMinor** – identifikátor vedľajšej verzie ovplyvneného procesu.
+  - **CrashedAppBuild** – identifikátor verzie zostavy ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashedAppRevision** – identifikátor verzie revízie ovplyvneného procesu.
+  - **CrashedAppMajor** – identifikátor hlavnej verzie ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+ 
+  - **CrashedAppMinor** – identifikátor vedľajšej verzie ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+  - **CrashedAppVersion** – identifikátor verzie aplikácie zlyhaného procesu.
 
   - **CrashedEcsETag** – identifikátor experimentu pre zlyhaný proces.
 
   - **CrashedModuleName** – názov zlyhávajúceho modulu.
 
-  - **CrashedSessionId** – jedinečný identifikátor zlyhaného procesu.
+  - **CrashedProcessSessionId** – jedinečný identifikátor zlyhaného procesu.
 
-  - **CrashedSessionInitTime** – čas začatia ovplyvneného procesu.
+  - **CrashedProcessSessionInitTime** – čas začatia ovplyvneného procesu.
 
-  - **CrashTime ** – čas, ktorý signalizuje, že klient bol ukončený neželane.
+  - **CrashedProcessSessionUninitTime** – čas skončenia ovplyvneného procesu.
+
+  - **CrashTag** – jedinečný identifikátor kódu zlyhania.
+
+  - **CrashTime** – čas, ktorý signalizuje, že klient bol ukončený neželane. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **CrashType** – identifikátor typu zlyhania.
 
-  - **DetectionTime** – čas zistenia neočakávaného ukončenia.
+  - **DetectionTime** – čas zistenia neočakávaného ukončenia. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ExceptionAddress** – adresa v programe, kde došlo k zlyhaniu.
+  - **ExceptionAddress** – adresa v programe, kde došlo k zlyhaniu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **ExceptionCode** – identifikátor výnimky.
 
-  - **HandOff** – či používateľ vytvoril a odovzdal proces balíka Office do novej relácie.
+  - **ExceptionInfo** – systémové informácie pre výnimku.
 
-  - **HasEdit** – či v klientovi, ktorý zlyhal, používateľ upravovaný dokument
+  - **HandOff** – či používateľ vytvoril a odovzdal proces balíka Office do novej relácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HasOpen** či bol v klientovi, ktorý zlyhal, otvorený dokument.
+  - **HangTypeCode** – predstavuje triedu zablokovania, ak sa proces zablokoval počas vykonávania.
 
-  - **HexCrashTag** – jedinečný identifikátor kódu zlyhania.
+  - **HasEdit** – či v klientovi, ktorý zlyhal, používateľ upravoval dokument *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HexExceptionAddress** – adresa v programe, kde došlo k zlyhaniu, v hexadecimálnom formáte.
+  - **HasOpen** – či bol v klientovi, ktorý zlyhal, otvorený dokument. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HexExceptionCode** – identifikátor výnimky v hexadecimálnom formáte.
+  - **HexCrashTag** – jedinečný identifikátor kódu zlyhania. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HexModuleBaseAddress** – základná adresa zlyhávajúceho modulu v hexadecimálnom formáte.
+  - **HexExceptionAddress** – adresa v programe, kde došlo k zlyhaniu, v hexadecimálnom formáte. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HexModuleOffset** – odsadenie v bajtoch v hexadecimálnom formáte od základnej adresy, kde došlo k zlyhaniu.
+  - **HexExceptionCode** – identifikátor výnimky v hexadecimálnom formáte. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HexModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch v hexadecimálnom formáte.
+  - **HexModuleBaseAddress** – základná adresa zlyhávajúceho modulu v hexadecimálnom formáte. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HexVerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie v hexadecimálnom formáte.
+  - **HexModuleOffset** – odsadenie v bajtoch v hexadecimálnom formáte od základnej adresy, kde došlo k zlyhaniu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+  - **HexModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch v hexadecimálnom formáte. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+  - **HexVerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie v hexadecimálnom formáte. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **InstallMethod** – či bola aktuálna zostava balíka Office inovovaná zo staršej zostavy, vrátená na staršiu zostavu alebo nanovo nainštalovaná.
 
-  - **IsLabMachine** – či je balík Office spustený v laboratóriu spoločnosti Microsoft.
+  - **IsLabMachine** – či je balík Office spustený v laboratóriu spoločnosti Microsoft. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleBaseAddress** – základná adresa zlyhávajúceho modulu.
+  - **ModuleBaseAddress** – základná adresa zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleOffset** – odsadenie v bajtoch od základnej adresy, kde došlo k zlyhaniu.
+  - **HexModuleOffset** – odsadenie v bajtoch v hexadecimálnom formáte od základnej adresy, kde došlo k zlyhaniu.
 
-  - **ModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch.
+  - **ModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **OfficeArchitectureText** – architektúra produktu balíka Office ako reťazca (napr. x86; arm).
+  - **ModuleStamp** – pečiatka zlyhávajúceho modulu.
+
+  - **ModuleVersion** – verzia chybného modulu zodpovedného za zlyhanie.
+
+  - **OfficeArchitectureText** – architektúra produktu balíka Office ako reťazec (napr. x86; arm).
 
   - **OfficeUILang** – jazyk používateľského rozhrania zostavy balíka Office.
 
   - **PreviousBuild** – predchádzajúca nainštalovaná verzia zostavy.
 
-  - **SafeMode** či bola relácia spustená v núdzovom režime.
+  - **ProcessorArchitecture** – architektúra procesora pre prostredie: x64, x86 atď.
 
-  - **UAEOSEnvironment** – identifikátor prostredia operačného systému.
+  - **SafeMode** – či bola relácia spustená v núdzovom režime. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+  - **SessionFlags** – definuje podmienky relácie, ako napríklad: bol súbor otvorený alebo upravovaný, bol otvorený v cloude, dokončil sa postup spúšťania atď. 
+
+  - **StackHash** – poskytuje hashový identifikátor pre zásobník zlyhania v balíku Office.
+
+  - **SystemAvailableMemory** – dostupná pamäť v operačnom systéme
+
+  - **UAEOSEnvironment** – identifikátor prostredia operačného systému. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **UninitLibletId** – jedinečný identifikátor zlyhávajúcej súčasti zlyhania.
 
   - **VerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+  - **WatsonReportId** – identifikátor hlásenia odoslaného do služby Windows Watson.
+
+  - **WerEventCreatedTime** – časová pečiatka pre udalosť hlásenia chýb systému Windows.
+
 
 ### <a name="officesystemungracefulapplicationexitdesktopappexit"></a>Office.System.UngracefulApplicationExit.DesktopAppExit
 
@@ -16491,7 +16829,7 @@ Zhromažďujú sa tieto polia:
 
   - **IsRuleEvent** – pravda/nepravda, či bola táto udalosť implementovaná pravidlom telemetrie.
 
-### <a name="officetelemetryinvalideventcontractname"></a>Office.Telemetry.InvalidEventContractName 
+### <a name="officetelemetryinvalideventcontractname"></a>Office.Telemetry.InvalidEventContractName 
 
 Nahlasuje neplatné implementácie alebo nasadenia telemetrie
 
@@ -16582,8 +16920,6 @@ Zhromažďujú sa tieto polia:
   - **ErrorRuleVersion** – verzia pravidla telemetrie, ktoré spôsobilo chybu
 
   - **WarningInfo** – počet diagnostických informácií o výstrahe
-
-<!-- end list -->
 
   - **QueueFlushCount** – počet vyprázdnení frontu
 
