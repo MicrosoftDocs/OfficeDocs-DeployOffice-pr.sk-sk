@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 8934226591ed83c630a1c98e5be70e521c93295e
-ms.sourcegitcommit: 862ffbcfc2d7c3722dddb5b008d7b68c9316c675
+ms.openlocfilehash: 7660e79628e31b17fb2b1c606378391419f15e8e
+ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799150"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242169"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -3466,6 +3466,14 @@ Zhromažďujú sa tieto polia:
 
 - **toggleCount** – int – koľkokrát používateľ prepol medzi zobrazením rôznych produktov ešte pred ťuknutím na tlačidlo Kúpiť v aktuálnej relácii Paywall.
 
+### <a name="officeiospaywallsuccessscreenseeallbenefitsbuttontap"></a>Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
+
+Pomocou telemetrie zistíte, kedy používateľ klepne na položku „Zobraziť všetky výhody“ a po úspešnom nákupe si zobrazí aplikácie a funkcie zahrnuté v nákupe, ktorý práve vykonal. Tieto údaje sa používajú na pomoc pri vývoji budúcich vylepšení, aby sa minimalizovalo vyrušovanie používateľov počas aktualizácií aplikácie.
+
+Zhromažďujú sa tieto polia:
+
+- **productId** – reťazec – AppStore ID produktu, pre ktorý si používateľ prezerá všetky ponúkané výhody
+
 
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
 
@@ -4332,7 +4340,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="catalogerrorsignature"></a>catalog.errorsignature
 
-Táto udalosť označuje, že došlo k zlyhaniu počas overovania podpisu kódu v súbore kolaterálu aktualizácie.  Akýkoľvek kolaterál so zlyhaním overenia podpisu kódu by sa mal považovať za neplatný.
+Táto udalosť informuje o rôznych problémoch so stiahnutými súbormi vrátane podpisu dodávateľa a nesúladu hodnoty hash so stiahnutým súborom. Túto udalosť používame na zisťovanie problémov pri zverejňovaní množiny manifestov pre aplikácie.
 
 Zhromažďujú sa tieto polia:
 
@@ -4360,9 +4368,15 @@ Zhromažďujú sa tieto polia:
 
 - **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
 
+- **FileHash** – Hodnota hash stiahnutého súboru
+
+- **FileName** – Názov súboru, ktorý zobrazuje nezhodu hodnoty hash
+
+- **HashInCatalog** – Záznam hodnoty hash do zodpovedajúceho katalógového súboru
+
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov súboru katalógu s neplatným podpisom. Rôzny statický text popisuje rôzne chybové podmienky.
+- **Payload** - obsahuje informácie o probléme s hlásením aplikácie
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -7987,11 +8001,13 @@ Zhromažďujú sa tieto polia:
 
 - **HowToCheck** – ako sa kontroluje nastavenie
 
-- **Payload** – statický text
+- **Údajová časť** - Statický text *[Toto pole bolo odstránené z aktuálnych zostavení balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **Reason** - Statický text označujúci tichú aktualizáciu nemôže pokračovať, pretože je otvorené používateľské rozhranie
 
 - **SessionId** – identifikátor relácie
 
@@ -9392,6 +9408,8 @@ Zhromažďujú sa tieto polia:
 
 - **Channel** – preferencia pre cieľovú skupinu
 
+- **CustomNotification** – Logická hodnota označujúca, či bolo použité vlastné upozornenie.
+
 - **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
 
 - **DeviceID** – identifikátor zariadenia
@@ -9410,7 +9428,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – text, ktorý označuje povahu udalosti.
+- **Payload** – text, ktorý označuje povahu udalosti. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -10523,6 +10541,7 @@ Zhromažďujú sa tieto polia:
 
 - **Success** – označuje, či predmetná aplikácia ohlásila úspešnosť operácie
 
+- **UpdateID** – identifikátor aktualizácie.
     
 ### <a name="installstatuscodesign"></a>installstatus.codesign
 
@@ -10577,7 +10596,11 @@ Zhromažďujú sa tieto polia:
 
 - **AppVersionLong** – verzia aplikácie
 
-- **Channel** – preferencia pre cieľovú skupinu
+- **BundleReachable** – Logická hodnota označujúca, či sa vyskytol problém s prístupom k balíku aplikácií Microsoft AutoUpdate.
+
+- **Channel** – Preferencia pre cieľovú skupinu
+
+- **Codesigned** – logická hodnota označujúca, či bol Pomocník pri aktualizácii správne podpísaný
 
 - **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -10595,9 +10618,11 @@ Zhromažďujú sa tieto polia:
 
 - **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
 
+- **Exists** – Logická hodnota označujúca, či Asistent aktualizácie existuje na disku.
+
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje informáciu o tom, či komponent Daemon existuje v očakávanom umiestnení a či má podpísaný kód.
+- **Payload** – obsahuje informáciu o tom, či komponent Daemon existuje v očakávanom umiestnení a či má podpísaný kód. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
