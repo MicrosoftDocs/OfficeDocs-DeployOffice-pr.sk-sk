@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: 6b099a73550f3a2c31147b9c7a5adb34dce6ff5f
-ms.sourcegitcommit: 9f4afc7525d1d4cb6fbc0feef721a8eaffc09048
+ms.openlocfilehash: 7bf7ce172600d1b944f521da6bb5e0420d6d59f2
+ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867467"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242205"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -29,7 +29,7 @@ Diagnostické údaje sa používajú na zabezpečenie a aktualizovanie balíka 
 
 Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa. Niektoré diagnostické údaje sú povinné, a iné diagnostické údaje sú voliteľné. Máte možnosť si vybrať, či nám budete odosielať povinné alebo voliteľné diagnostické údaje, pomocou ovládacích prvkov ochrany osobných údajov, ako sú nastavenia politiky pre organizácie. Nám odoslané diagnostické údaje môžete zobraziť pomocou Zobrazovača diagnostických údajov.
 
-***Povinné diagnostické údaje** _ sú minimom potrebným na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
+***Povinné diagnostické údaje*** sú minimom potrebným na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
 
 Povinné diagnostické údaje pomáhajú identifikovať problémy s balíkom Office, ktoré môžu súvisieť s konfiguráciou zariadenia alebo softvéru. Pomáhajú napríklad určiť, či funkcia balíka Office zlyháva častejšie pri konkrétnej verzii operačného systému, či ide o novo zavedené funkcie alebo či sa to stáva, ak sú niektoré funkcie balíka Office vypnuté. Povinné diagnostické údaje pomáhajú zistiť, diagnostikovať a riešiť tieto problémy rýchlejšie, čím sa znižuje ich vplyv na používateľov alebo organizácie.
 
@@ -57,7 +57,7 @@ Nasledujúca tabuľka obsahuje zoznam kategórií povinných diagnostických úd
 - Zoznam údajových polí v každej udalosti
 - Popis každého údajového poľa
 
-| _ *Kategória**       | **Podtyp údajov**| **Popis**    |
+| **Kategória**       | **Podtyp údajov**| **Popis**    |
 | ---------- | ------------- | ---- |
 | **Inštalácia softvéru a inventár** | [Inštalácia balíka Office a inventár](#office-setup-and-inventory-subtype)   | Nainštalovaný produkt a verzia a stav inštalácie.  |
 | | [Konfigurácia doplnkov balíka Office](#office-add-in-configuration-subtype)  | Softvérové doplnky a ich nastavenia     |
@@ -1291,6 +1291,7 @@ Zhromažďujú sa tieto polia:
   
   - **LoadResult** – stav úspechu načítania
 
+  - **OfficeArchitecture** - Architektúra klienta Office
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -5367,6 +5368,37 @@ Zhromažďujú sa tieto polia:
 
 - **userDuration** – double – čas v milisekundách, ktorý používateľ strávil v platobnej stene
 
+
+#### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
+
+Telemetria kritického inžinierstva so službou Microsoft Retail Federation Service (RFS) na zhromažďovanie informácií poskytnutých v tejto udalosti. RFS je interná služba používaná v rámci spoločnosti Microsoft na krížovú kontrolu nákupu. Údaje sa používajú na získanie stavu volania API do RFS, čo pomáha porozumieť miere úspešnosti a ladeniu prípadných zlyhaní.
+
+Zhromažďujú sa tieto polia:
+
+- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+
+- **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci chybovú odpoveď danú reakciou RFS Poskytovania.
+
+- **productId** – reťazec – ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka
+
+- **status** – reťazec – úspech alebo zlyhanie, označuje, či požiadavka bola úspešná alebo zlyhala
+
+
+#### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Telemetria kritického použitia, ktorá označuje, keď používateľ klepne na tlačidlo Nákup / Kúpiť. Používa sa na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
+
+Zhromažďujú sa tieto polia:
+
+- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+
+- **isDefaultSKU** - logická hodnota – Ak používateľ kupuje produkt odporučený predvoleným zobrazením.
+
+- **productId** – reťazec – identifikácia produktu z obchodu s aplikáciami, pri ktorých sa použilo tlačidlo Kúpiť
+
+- **toggleCount** – int – Koľkokrát používateľ prepol medzi zobrazením rôznych produktov ešte pred ťuknutím na tlačidlo Kúpiť v aktuálnej relácii Paywall.
+
+
 #### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
 
 Táto udalosť zhromažďuje funkcie a aplikácie, ktoré používateľ rozbaľuje z ponuky Zobraziť ďalšie výhody a trvanie stráveného času.  Údaje sa používajú na vysvetlenie používania funkcie „Zobraziť všetky výhody“ a ďalšiu optimalizáciu skúseností v budúcich verziách.
@@ -5378,6 +5410,16 @@ Zhromažďujú sa tieto polia:
 - **productId** – reťazec – AppStore ID produktu, pre ktorý si používateľ prezerá ďalšie ponúkané výhody
 
 - **userDuration** – double – čas v milisekundách, ktorý používateľ strávil na obrazovke Výhody.
+
+
+### <a name="officeiospaywallskuchooserproductswitched"></a>Office.iOS.Paywall.SKUChooser.ProductSwitched
+
+Telemetria používania na zobrazenie, koľkokrát používateľ prepne medzi rôznymi jednotkami SKU ešte pred pokusom o uskutočnenie nákupu.
+
+Zhromažďujú sa tieto polia:
+
+- **productId**- Reťazec - ID produktu z App Store, ktorý si používateľ práve prepol na prezeranie z dostupných produktov vo výbere SKU.
+
 
 #### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
 
@@ -11469,6 +11511,7 @@ Zhromažďujú sa tieto polia:
 
 - **Method** – metóda COM doplnku, ktorá viedla k zlyhaniu 
 
+- **OfficeArchitecture** - Architektúra klienta Office
 
 #### <a name="officeprogrammabilitytelemetryaddincrash"></a>Office.Programmability.Telemetry.AddInCrash
 
