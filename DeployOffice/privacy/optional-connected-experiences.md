@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: d0eea79f28d2c2f79991ac0d59ebb6a567fecb21
-ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
+ms.openlocfilehash: ed197ed1cc8dd3c19d10a227510fe687da54d9c7
+ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931451"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597381"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -42,7 +42,7 @@ Bing využívajú nasledovné funkcie v Outlooku pre iOS a Android:
 
 - **Návrhy polohy:**   Keď do položky kalendára pridáte verejné miesto s adresou, do poľa Miesto sa zahrnie celá adresa.
 - **Zaujímavé kalendáre:**   Môžete sa [prihlásiť na odber](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) kalendárov o svojich obľúbených športových tímoch alebo televíznych seriáloch.
-- **Odhady časov cestovania na karte Nadchádzajúce:** Vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). V Outlooku pre Android táto možnosť vyžaduje, aby Mapy Bing poskytli odhadované časy cestovania.
+- **Odhady časov cestovania na karte Nadchádzajúce:** Vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). V Outlooku pre Android táto možnosť vyžaduje, aby Mapy Bing poskytli odhadované časy cestovania.
 
  Licencia na tieto funkcie využívajúce Bing sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a vzťahuje sa na ne [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v Aplikáciách Microsoft 365 pre veľké organizácie, sa odošlú do služby Microsoft Bing. Nie sú vám prepojené organizáciou Bing.
 
@@ -99,7 +99,7 @@ Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
 
-Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
 > Ak vám správca vo vašej organizácii poskytol multilicenčnú verziu balíka Office 2019, Project 2019 alebo Visio 2019, prejdite na **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti** > **Možnosti ochrany osobných údajov**. Tam by ste mali vidieš začiarkavacie políčko pre možnosť **Zapnúť voliteľné online funkcie**. Ak sa toto začiarkavacie políčko v Projecte 2019 alebo Visiu 2019 nezobrazuje, vyberte položku **Nastavenia ochrany osobných údajov...** v dialógovom okne **Centrum dôveryhodnosti**. Malo by sa zobraziť dialógové okno **Nastavenia ochrany osobných údajov** so začiarkavacím políčkom pre možnosť **Povoliť voliteľné online funkcie**.
@@ -110,7 +110,7 @@ Ak vám správca umožnil používať voliteľné pripojené funkcie v aplikáci
 
 Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
 
-Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
 > Ak vám správca vo vašej organizácii poskytol multilicenčnú verziu balíka Office 2019, Project 2019 alebo Visio 2019, prejdite na **Súbor** > **Možnosti** > **Centrum dôveryhodnosti** > **Nastavenie centra dôveryhodnosti** > **Možnosti ochrany osobných údajov**. Tam by ste mali vidieš začiarkavacie políčko pre možnosť **Zapnúť voliteľné online funkcie**. Ak sa toto začiarkavacie políčko v Projecte 2019 alebo Visiu 2019 nezobrazuje, vyberte položku **Nastavenia ochrany osobných údajov...** v dialógovom okne **Centrum dôveryhodnosti**. Malo by sa zobraziť dialógové okno **Nastavenia ochrany osobných údajov** so začiarkavacím políčkom pre možnosť **Povoliť voliteľné online funkcie**.
