@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: ed197ed1cc8dd3c19d10a227510fe687da54d9c7
-ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
+ms.openlocfilehash: 942f32d7a8d177e6d74530a8382c145e94bec41a
+ms.sourcegitcommit: dee7b8706ba5a0e763052d2f2f79fb2d3d3a6907
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597381"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826421"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -87,7 +87,7 @@ Funkcia [Zdroje informácií](https://support.microsoft.com/office/b862efc5-9a7b
 
 ### <a name="travel-time-in-up-next-in-outlook-for-ios"></a>Čas cestovania na karte Nadchádzajúce pre iOS
 
-Pre iOS platí, že vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Táto funkcia vyžaduje, aby služba Apple Maps od spoločnosti Apple poskytla odhadovaný čas cestovania. Platia [podmienky používania](https://www.apple.com/legal/internet-services/maps/) pre službu Apple Maps a [zásady ochrany osobných údajov](https://www.apple.com/legal/privacy) pre spoločnosť Apple.
+Pre iOS platí, že vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). Táto funkcia vyžaduje, aby služba Apple Maps od spoločnosti Apple poskytla odhadovaný čas cestovania. Platia [podmienky používania](https://www.apple.com/legal/internet-services/maps/) pre službu Apple Maps a [zásady ochrany osobných údajov](https://www.apple.com/legal/privacy) pre spoločnosť Apple.
 
 ### <a name="weather-bar-in-outlook"></a>Panel počasia v Outlooku
 
