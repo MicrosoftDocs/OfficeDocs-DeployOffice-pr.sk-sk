@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 7660e79628e31b17fb2b1c606378391419f15e8e
-ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
+ms.openlocfilehash: 8408a2e8a6e9c8594e428762034ba5b8e8a54548
+ms.sourcegitcommit: a31e96cefd11ffece917dce618414989bf3a98da
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242169"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031998"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -3374,6 +3374,42 @@ Zhromažďujú sa tieto polia:
   - 5 – Základná webová URL adresa v klientovi je neplatná
 
 
+### <a name="officeandroiddocsuiviewspremiumfeatureupsell"></a>Office.Android.DocsUI.Views.PremiumFeatureUpsell
+
+Táto udalosť zachytáva kliknutia kliknutí bezplatného používateľa na zobrazenie funkcie v platenej časti. Údaje sa používajú na meranie interakcie používateľov s kontextovými zážitkami predaja a pochopenie toho, ktoré funkcie používateľ uprednostňuje a nabádajú ho k nákupu predplatného. Toto nám pomáha zlepšovať súbor preferovaných vstupných bodov. 
+
+Zhromažďujú sa tieto polia:
+
+- **featureId** – TCID pre prémiovú funkciu
+
+- **featureName** – názov prémiovej funkcie
+
+- **seePlanButtonClick** – koľkokrát sa kliklo na „Zobraziť tlačidlá plánu“ v predajnom UI
+
+### <a name="officeappleiapreviewyoursubscriptionios"></a>Office.Apple.IAPReviewYourSubscriptioniOS
+
+Táto udalosť zaznamenáva metaúdaje na základe relácie, keď sa používateľovi zobrazí prostredie nákupu v aplikácii (IAP), a tlačidlá, ktoré používateľ potom použije. Tieto údaje nám pomáhajú pochopiť, čo bráni jednoduchosti nákupu, a porovnať to s kanálom iného nákupu, aby sme zistili, čo je pre používateľa lepšie. 
+
+Zhromažďujú sa tieto polia:
+
+- **FlowType** – Integer – tok spracovania z miesta spustenia IAP
+
+- **Restore** – String – značka pravidla sa zaznamená po kliknutí na tlačidlo obnovenia
+
+- **PremiumFeatures** – String – značka pravidla sa zaznamená po kliknutí na tlačidlo PremiumFeatures
+
+- **Product** – String – SKU vybrané používateľmi
+
+
+### <a name="officeappleinapppurchasecontext"></a>Office.Apple.InAppPurchaseContext
+
+Táto udalosť meria kritické využívanie telemetrie pre bod vstupu obrazovky nákupu v aplikácii. Údaje pomáhajú pochopiť a zlepšiť používateľskú skúsenosť pomocou identifikácie preferovaného bodu vstupu pre nákup v aplikácii.
+
+Zhromažďujú sa tieto polia:
+
+- **context** – String – tok, cez ktorý sa používateľ dostal na stránku nákupu v aplikácii.
+
+
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
 Táto udalosť zachytáva údaje, ktoré pomáhajú monitorovať stav súčastí Dime. Napríklad v prípade toku nákupu v aplikácii, keď sa používateľ rozhodne zakúpiť si predplatné na Microsoft 365 v aplikácii balíka Office pre Android alebo v zariadeniach s Windowsom.
@@ -3452,6 +3488,16 @@ Zhromažďujú sa tieto polia:
 
 - **Data_UserAgent** – značky hlavičiek
 
+
+### <a name="officedocssharedpremiumfeaturemessagebar"></a>Office.Docs.Shared.PremiumFeatureMessageBar
+
+Táto udalosť zbiera ťuknutia bezplatných používateľov na prémiovú funkciu, ktorá sa nachádza na platenom mieste. Údaje sa používajú na pochopenie množiny údajov, s ktorými spotrebitelia pracujú pri prechode na platené verziu. Vďaka nim poznáme preferované vstupné body používateľov a môžeme zlepšovať používateľskú skúsenosť.
+
+Zhromažďujú sa tieto polia:
+
+- **featureId** – TCID pre prémiovú funkciu, na ktorú používateľ ťukol
+
+
 ### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Kritická telemetria používania sa zhromažďuje na označenie toho, keď používateľ ťukne na tlačidlo Nákup/Kúpiť.  Údaje sa používajú na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
@@ -3504,6 +3550,26 @@ Zhromažďujú sa tieto polia:
 Ak sa licenciu z nejakého dôvodu nepodarilo aktivovať automaticky, používateľovi sa zobrazí sprievodca aktiváciou. Táto udalosť hlási, že používateľovi sa zobrazuje sprievodca. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Táto udalosť nezhromažďuje žiadne polia.
+
+### <a name="officelicensingbusbarcheckfordynamicbusbarexperiment"></a>Office.Licensing.BusBar.CheckForDynamicBusbarExperiment
+
+Táto udalosť sa vyvolá jedenkrát pre každý typ informačného pásu obchodu, ktorý sa zobrazí a má zapnutú dynamickú skupinu funkcií obchodu (aktívna skupina). Táto udalosť údajov hlási, či je na disku pripravená kampaň dynamického informačného pásu Lifecycle Programming Platform. Údaje sa použijú na meranie stavu novej technológie informačného pásu dynamickej licencie Lifecycle Programming Platform.
+
+Zhromažďujú sa tieto polia:
+
+- **DoesCampaignExist (bool)** – znázorňuje, či je kampaň na disku
+
+- **Type (int32)** – vyjadruje typ informačného pásu licencie
+
+
+### <a name="officelicensingbusbarshowstashedbusbar"></a>Office.Licensing.BusBar.ShowStashedBusbar
+
+Táto udalosť sa spustím keď sa dynamický informačný pás Lifecycle Programming Platform nepodarí zobraziť a musí sa namiesto neho zobraziť uložený statický informačný pás. Táto udalosť údajov sa použije na zaistenie úspešného fungovania statického informačného pásu.
+
+Zhromažďujú sa tieto polia:
+
+- **Type (int32)** – vyjadruje typ informačného pásu licencie
+
 
 ### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
  
@@ -4014,6 +4080,17 @@ Zhromažďujú sa tieto polia:
  
 - **EnrollmentResult** – stav registrácie v službe Intune
 
+### <a name="skuproductpricenullevent"></a>SKU.PRODUCT.PRICE.NULL.EVENT
+
+Táto udalosť sa používa na zaznamenanie udalostí na kvantifikáciu vplyvu chyby, kvôli ktorej v súčasnosti používatelia vidia „Null“ namiesto ceny na obrazovke výberu SKU. Chyba sa bude ďalej diagnostikovať, aby mohla vzniknúť oprava. 
+
+Zhromažďujú sa tieto polia:
+
+- **PriceNotFound** – ceny sa v obchode nenašli.
+
+- **StoreNotInitilized** – keď obchod nebol úspešne inicializovaný.
+
+
 ## <a name="microsoft-autoupdate-mau-events"></a>Udalosti služby Microsoft AutoUpdate (MAU)
 
 ### <a name="additionalappinfoinvalidpreference"></a>additionalappinfo.invalidpreference
@@ -4215,6 +4292,49 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+### <a name="appinstallxpcremoteobjecterror"></a>appinstall.xpcremoteobjecterror
+
+Táto udalosť hlási nájdenú chybu pri pokuse o pripojenie k nástroju Privileged Helper Tool cez pripojenie XPC. Túto udalosť používame na sledovanie a riešenie možných problémov s inštaláciou MAU.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – obsahuje informácie o povahe chýb servera proxy, ktoré sa vyskytli pri registrácii aplikácie.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
 
 ### <a name="appregistryconfig"></a>appregistry.config
 
@@ -9559,6 +9679,50 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+
+### <a name="guidashboardrowviewupdatestate"></a>gui.dashboardrowview.updatestate
+
+Táto udalosť hlási nájdenú chybu pri pokuse o zobrazenie informácií o aplikácií v MAU UI. Túto udalosť použijeme na zaistenie dobrého stavu MAU a sledovanie a vyriešenie zlyhaní.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor aplikácie.
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **Payload** – obsahuje informácie o povahe chýb, ktoré sa vyskytli pri registrácii aplikácie.
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+
 ### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
 
 Táto udalosť označuje, že používateľské rozhranie zobrazilo dialógové okno na zatvorenie otvorenej aplikácie s cieľom pokračovať v aktualizácii aplikácie. Táto udalosť sa používa na určenie počtu oneskorených aktualizácií s cieľom poskytnúť budúce vylepšenia na minimalizovanie rušenia používateľa.
@@ -10325,6 +10489,55 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+
+### <a name="installedappacknowledgedcoreappleevent"></a>installedapp.acknowledgedcoreappleevent
+
+Táto udalosť označuje, že služba Microsoft Auto Update (MAU) prijala potvrdenie o udalosti Apple do registrovanej aplikácie, aby aplikáciu ukončila s cieľom pokračovať s jej čakajúcou aktualizáciou. Táto udalosť sa momentálne používa na pomoc pri vývoji budúceho vylepšenia s cieľom minimalizovať rušenie používateľa počas aktualizácií aplikácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppleEventClass** – označuje typ odosielanej alebo potvrdenej udalosti
+
+- **AppleEventID** – jednoznačný identifikátor pre odosielanú alebo uznanú udalosť
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje počet opakovaní
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie.
 
 
 ### <a name="installedappinvalidbundle"></a>installedapp.invalidbundle
@@ -11197,7 +11410,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – text označujúci úspešnosť operácie.
+- **Payload** – text označujúci úspešnosť operácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -11205,6 +11418,7 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+- **Success** – Booleovská hodnota označujúca úspešnosť operácie.
 
 ### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
@@ -11846,11 +12060,13 @@ Zhromažďujú sa tieto polia:
 
 - **HowToCheck** – ako sa kontroluje nastavenie
 
-- **Payload** – statický text
+- **Údajová časť** - Statický text *[Toto pole bolo odstránené z aktuálnych zostavení balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **Reason** – statický text
 
 - **SessionId** – identifikátor relácie
 
@@ -12168,11 +12384,13 @@ Zhromažďujú sa tieto polia:
 
 - **HowToCheck** – ako sa kontroluje nastavenie
 
-- **Payload** – statický text
+- **Údajová časť** - Statický text *[Toto pole bolo odstránené z aktuálnych zostavení balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
 - **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
+
+- **Reason** – statický text
 
 - **SessionId** – identifikátor relácie
 
@@ -12320,6 +12538,8 @@ Zhromažďujú sa tieto polia:
 
 - **DeviceInfo_OsBuild** – verzia operačného systému
 
+- **Duration** – text označujúci trvanie odloženia
+
 - **Event_ReceivedTime** – čas prijatia telemetrie
 
 - **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
@@ -12328,7 +12548,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowToCheck** – ako sa kontroluje nastavenie
 
-- **Payload** – statický text
+- **Údajová časť** - Statický text *[Toto pole bolo odstránené z aktuálnych zostavení balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -14590,6 +14810,47 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+
+### <a name="updatemanagernetwork"></a>updatemanager.network
+
+Táto udalosť zaznamenáva dostupnosť siete. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+ 
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **ServerReacheable** – booleovská hodnota vyjadrujúca to, či je sieť dostupná.
+
     
 ### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
@@ -15447,6 +15708,19 @@ Zhromažďujú sa tieto polia:
 Služba Services Configuration nezhromažďuje žiadne požadované údaje služieb.
 
 ## <a name="telemetry-events"></a>Udalosti služby telemetrie
+
+### <a name="appdeeplink"></a>app.deep.link
+
+Táto udalosť pomáha sledovať používanie spustenia schôdze v kalendári na rôznych koncových bodoch. Táto udalosť nám umožňuje zistiť dve veci, keď je schôdza spustená cez Skype for Business a keď je schôdza spustená cez Teams a keď je nainštalovaná aplikácia Teams.
+
+Zhromažďujú sa tieto polia: 
+
+- **account** – konto, v ktorom sa akcia vykonala
+
+- **action_type** – vykonaná akcia, napríklad spustenie schôdze alebo inštalácia aplikácie
+
+- **application** – aplikácia spustená cez priame prepojenie, napríklad Teams alebo Skype for Business
+
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
 
@@ -16363,81 +16637,100 @@ Zhromažďujú sa tieto polia:
 
   - **AppName** – názov ovplyvnenej aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashedAssignedFlights** – skupiny funkcií priradené zlyhanému procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **AppUsedVirtualMemory** – virtuálna pamäť využívaná aplikáciou balíka Office
 
-  - **CrashedConfigIds** – konfigurácia priradená zlyhanému procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **BucketId** – identifikátor sektora Watson pre zlyhanie
 
-  - **CrashedEcsETag** – identifikátor experimentu pre zlyhaný proces.
+- **CabGuid** – globálne jedinečný identifikátor (GUID) pre kabinet Watson.
 
-  - **CrashedImpressionId** – identifikátor impresie zlyhaného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **CallStack** – interný zásobník volaní Microsoftu spôsobujúci zlyhanie.
 
-  - **CrashedModuleName** – názov zlyhávajúceho modulu.
+- **CrashedAssignedFlights** – skupiny funkcií priradené zlyhanému procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashedProcessSessionID** – jedinečný identifikátor zlyhaného procesu. 
+- **CrashedConfigIds** – konfigurácia priradená zlyhanému procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashedProcessSessionInitTime** – čas začatia ovplyvneného procesu. 
+- **CrashedEcsETag** – identifikátor experimentu pre zlyhaný proces.
 
-  - **CrashedProcessSessionUninitTime** – čas skončenia ovplyvneného procesu.
+- **CrashedImpressionId** – identifikátor impresie zlyhaného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **CrashTag** – jedinečný identifikátor kódu zlyhania.
+- **CrashedModuleName** – názov zlyhávajúceho modulu.
 
-  - **CrashType** – identifikátor typu zlyhania.
+- **CrashedProcessSessionID** – jedinečný identifikátor zlyhaného procesu. 
 
-  - **DetectionTime** – čas zistenia neočakávaného ukončenia. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **CrashedProcessSessionInitTime** – čas začatia ovplyvneného procesu. 
 
-  - **ErrorString** – popis chyby. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **CrashedProcessSessionUninitTime** – čas skončenia ovplyvneného procesu.
 
-  - **ExceptionAddress** – adresa v programe, kde došlo k zlyhaniu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **CrashTag** – jedinečný identifikátor kódu zlyhania.
 
-  - **ExceptionCode** – identifikátor výnimky.
+- **CrashType** – identifikátor typu zlyhania.
 
-  - **FaultAppName** – názov zlyhanej aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **DetectionTime** – čas zistenia neočakávaného ukončenia. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **InstallMethod** – či bola aktuálna zostava balíka Office inovovaná zo staršej zostavy, vrátená na staršiu zostavu alebo nanovo nainštalovaná.
+- **ErrorString** – popis chyby. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **InstallType** – identifikátor spôsobu inštalácie balíka Office. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **ExceptionAddress** – adresa v programe, kde došlo k zlyhaniu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **InstallTypeName** – identifikátor spôsobu inštalácie balíka Office. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **ExceptionCode** – identifikátor výnimky.
 
-  - **IsLabMachine** – či je balík Office spustený v laboratóriu spoločnosti Microsoft. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **ExceptionInfo** – systémové informácie pre výnimku.
 
-  - **IsMsftInternal** – či používateľ systému Windows, ktorý má spustený Office, je zamestnancom spoločnosti Microsoft. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **FaultAppName** – názov zlyhanej aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **HangTypeCode** – predstavuje triedu zablokovania, ak sa proces zablokoval počas vykonávania.
 
-  - **ModuleBaseAddress** – základná adresa zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **InstallMethod** – či bola aktuálna zostava balíka Office inovovaná zo staršej zostavy, vrátená na staršiu zostavu alebo nanovo nainštalovaná.
 
-  - **ModuleBuildVersion** – číslo verzie zostavy zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **InstallType** – identifikátor spôsobu inštalácie balíka Office. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleMajorVersion** – číslo hlavnej verzie zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **InstallTypeName** – identifikátor spôsobu inštalácie balíka Office. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleMinorVersion** – číslo vedľajšej verzie zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **IsLabMachine** – či je balík Office spustený v laboratóriu spoločnosti Microsoft. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleName** – názov zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **IsMsftInternal** – či používateľ systému Windows, ktorý má spustený Office, je zamestnancom spoločnosti Microsoft. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HexModuleOffset** – odsadenie v bajtoch v hexadecimálnom formáte od základnej adresy, kde došlo k zlyhaniu.
+- **ModuleBaseAddress** – základná adresa zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleRevisionVersion** – číslo verzie revízie zostavy zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **ModuleBuildVersion** – číslo verzie zostavy zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **ModuleMajorVersion** – číslo hlavnej verzie zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ModuleVersion** – verzia chybného modulu zodpovedného za zlyhanie.
+- **ModuleMinorVersion** – číslo vedľajšej verzie zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **OfficeArchitectureText** – architektúra inštalácie: x64, x86 atď.
+- **ModuleName** – názov zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **OfficeUILang** – jazyk používateľského rozhrania zostavy balíka Office.
+- **HexModuleOffset** – odsadenie v bajtoch v hexadecimálnom formáte od základnej adresy, kde došlo k zlyhaniu.
 
-  - **OSEnvironment** – identifikátor prostredia, v ktorom je Office spustený.
+- **ModuleRevisionVersion** – číslo verzie revízie zostavy zlyhávajúceho modulu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **PreviousBuild** – predchádzajúca nainštalovaná verzia zostavy.
+- **ModuleSize** – veľkosť zlyhávajúceho modulu v bajtoch. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **ProcessorArchitecture** – architektúra procesora pre prostredie: x64, x86 atď.
+- **ModuleVersion** – verzia chybného modulu zodpovedného za zlyhanie.
 
-  - **SessionFlags** – definuje podmienky relácie, ako napríklad: bol súbor otvorený alebo upravovaný, bol otvorený v cloude, dokončil sa postup spúšťania atď. 
+- **OfficeArchitectureText** – architektúra inštalácie: x64, x86 atď.
 
-  - **UAETypeName** – identifikátor spôsobu neočakávaného zlyhania aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **OfficeUILang** – jazyk používateľského rozhrania zostavy balíka Office.
 
-  - **UninitLibletId** – jedinečný identifikátor zlyhávajúcej súčasti zlyhania.
+- **OSEnvironment** – identifikátor prostredia, v ktorom je Office spustený.
 
-  - **VerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+- **PreviousBuild** – predchádzajúca nainštalovaná verzia zostavy.
+
+- **ProcessorArchitecture** – architektúra procesora pre prostredie: x64, x86 atď.
+
+- **SessionFlags** – definuje podmienky relácie, ako napríklad: bol súbor otvorený alebo upravovaný, bol otvorený v cloude, dokončil sa postup spúšťania atď. 
+
+- **StackHash** – poskytuje hashový identifikátor pre zásobník zlyhania v balíku Office.
+
+- **SystemAvailableMemory** – dostupná pamäť v operačnom systéme
+
+- **UAETypeName** – identifikátor spôsobu neočakávaného zlyhania aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+- **UninitLibletId** – jedinečný identifikátor zlyhávajúcej súčasti zlyhania.
+
+- **VerifyElseCrashTag** – jedinečný identifikátor miesta zlyhania aplikácie. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+
+- **WatsonReportId** – identifikátor hlásenia odoslaného do služby Windows Watson.
+
+- **WerEventCreatedTime** – časová pečiatka pre udalosť hlásenia chýb systému Windows.
 
 ### <a name="officesystemsystemhealthungracefulappexitimmersive"></a>Office.System.SystemHealthUngracefulAppExitImmersive
 
