@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o požadovaných údajoch služieb, ktoré sa zhromažďujú o pripojených funkciách v balíku Office.
 hideEdit: true
-ms.openlocfilehash: faa3507708b4768ee3b2b0f51257273c31ad2de7
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: 7480869114096dc8f858ce2b1551575c6224ae64
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440206"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181934"
 ---
 # <a name="required-service-data-for-office"></a>Požadované údaje služieb pre Office
 
@@ -51,7 +51,7 @@ Požadované údaje služby sú oddelené od vyžadovaných alebo voliteľných 
 
 Požadované údaje služieb sa taktiež zhromažďujú a odosielajú spoločnosti Microsoft pre služby, ktoré sú [nevyhnutné na fungovanie](essential-services.md) balíka Office, ako je napríklad licenčná služba, ktorá potvrdzuje, že máte správnu licenciu na používanie balíka Office. Hoci môžete ovládať mnohé pripojené funkcie, ktoré sú k dispozícii vám alebo vašim používateľom, ak ste správcom vo svojej organizácii, tieto služby sú nevyhnutné pre fungovanie balíka Office, a preto sa nedajú vypnúť. Údaje pre nevyhnutné služby spoločnosť Microsoft dostáva a spracováva vždy pri používaní balíka Office bez ohľadu na konfiguráciu ostatných súvisiacich nastavení.
 
-Požadované údaje služby sú k dispozícii prostredníctvom žiadostí o údaje služby (DSRs). Ďalšie informácie nájdete v [prehlásení spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/privacystatement) a v [žiadostiach dotknutých osôb v Office 365 pre GDPR a CCPA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
+Požadované údaje služby sú k dispozícii prostredníctvom žiadostí o údaje služby (DSRs). Ďalšie informácie nájdete v [prehlásení spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/privacystatement) a v [žiadostiach dotknutých osôb v Office 365 pre GDPR a CCPA](/microsoft-365/compliance/gdpr-dsr-office365).
 
 Ak ste správcom vašej organizácie a chcete spravovať online funkcie, pozrite si tieto články:
 

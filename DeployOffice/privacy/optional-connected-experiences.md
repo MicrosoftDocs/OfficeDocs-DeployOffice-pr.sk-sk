@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: 942f32d7a8d177e6d74530a8382c145e94bec41a
-ms.sourcegitcommit: dee7b8706ba5a0e763052d2f2f79fb2d3d3a6907
+ms.openlocfilehash: d651fb94cb031a0fc1a154201e2875c28f979f2a
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826421"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181746"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -76,7 +76,7 @@ Keď používate Office Obchod, licencia na vaše používanie samotnej lokality
 
 > [!NOTE]
 > - Správca vo vašej organizácii vám môže poskytnúť doplnky, a to aj v prípade, že sa nerozhodnete používať Office Obchod.
-> - Ak ste správca, ďalšie informácie o doplnkoch nájdete v časti Voliteľné online funkcie v článkoch [Ochrana osobných údajov a zabezpečenie pre doplnky balíka Office](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) a [Ochrana osobných údajov, povolenia a zabezpečenie pre doplnky Outlooku](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security).
+> - Ak ste správca, ďalšie informácie o doplnkoch nájdete v časti Voliteľné online funkcie v článkoch [Ochrana osobných údajov a zabezpečenie pre doplnky balíka Office](/office/dev/add-ins/concepts/privacy-and-security) a [Ochrana osobných údajov, povolenia a zabezpečenie pre doplnky Outlooku](/office/dev/add-ins/outlook/privacy-and-security).
 
 ### <a name="research"></a>Zdroje informácií
 
@@ -91,7 +91,7 @@ Pre iOS platí, že vaša najbližšia nadchádzajúca udalosť bude zhrnutá na
 
 ### <a name="weather-bar-in-outlook"></a>Panel počasia v Outlooku
 
-[Panel počasia](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) v Outlooku zobrazuje predpovede počasia pre geografické polohy podľa vášho výberu. Pri používaní sa Panel počasia v Outlooku predvolene pripája k službe MSN Počasie. Službu MSN vlastní spoločnosť Microsoft a vzťahujú sa na ňu podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/). Pri používaní Panela počasia v Outlooku so službou MSN spoločnosť Microsoft nezisťuje vašu polohu a mestá, ktoré sa rozhodnete zobraziť, nie sú s vami prepojené. Môžete [zmeniť toto predvolené nastavenie](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) a pripájať sa k iným poskytovateľom informácií o počasí. Ak sa rozhodnete používať iného poskytovateľa informácií o počasí, budete si musieť skontrolovať zásady ochrany osobných údajov a licenčné podmienky daného poskytovateľa, aby ste sa dozvedeli, aké podmienky sa na vás vzťahujú.
+[Panel počasia](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) v Outlooku zobrazuje predpovede počasia pre geografické polohy podľa vášho výberu. Pri používaní sa Panel počasia v Outlooku predvolene pripája k službe MSN Počasie. Službu MSN vlastní spoločnosť Microsoft a vzťahujú sa na ňu podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/). Pri používaní Panela počasia v Outlooku so službou MSN spoločnosť Microsoft nezisťuje vašu polohu a mestá, ktoré sa rozhodnete zobraziť, nie sú s vami prepojené. Môžete [zmeniť toto predvolené nastavenie](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) a pripájať sa k iným poskytovateľom informácií o počasí. Ak sa rozhodnete používať iného poskytovateľa informácií o počasí, budete si musieť skontrolovať zásady ochrany osobných údajov a licenčné podmienky daného poskytovateľa, aby ste sa dozvedeli, aké podmienky sa na vás vzťahujú.
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Ako zistiť, či vám správca umožnil používať voliteľné pripojené funkcie
 
