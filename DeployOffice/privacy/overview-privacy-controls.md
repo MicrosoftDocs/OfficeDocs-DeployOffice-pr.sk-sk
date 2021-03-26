@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus) vrátane ovládacích prvkov pre diagnostické údaje a pripojené funkcie.
 hideEdit: true
-ms.openlocfilehash: f894db695caf8a6dfa56dd6db541d8b8fd4bd564
-ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
+ms.openlocfilehash: d984be8ef09c8a46c4588ae643c4d6ebad1b2533
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794774"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181710"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Prehľad ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie
 
@@ -30,8 +30,8 @@ ms.locfileid: "48794774"
 Spoločnosť Microsoft sa zaviazala poskytovať informácie a ovládacie prvky potrebné na rozhodovanie o tom, ako sa vaše údaje zhromažďujú a používajú pri používaní služieb Aplikácie Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus).
 
 Od verzie 1904 Aplikácií Microsoft 365 pre veľké organizácie poskytujeme nové, aktualizované a vylepšené ovládacie prvky na ochranu osobných údajov pre tieto oblasti:
-- ***Diagnostické údaje** _, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa vo vašej organizácii.
-- _*_Online funkcie_*_ , ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
+- ***Diagnostické údaje***, ktoré sa zhromažďujú a odosielajú spoločnosti Microsoft o klientskom softvéri balíka Office, ktorý sa používa v zariadení používateľa vo vašej organizácii.
+- ***Pripojené funkcie***, ktoré využívajú cloudové funkcie na poskytovanie rozšírených funkcií balíka Office vám a vašim používateľom.
 
 Súčasťou týchto zmien sú nové a aktualizované prvky používateľského rozhrania a nastavenia politiky.
 
@@ -43,7 +43,7 @@ Tieto diagnostické údaje sa zhromažďujú a odosielajú spoločnosti Microsof
 
 Existujú tri úrovne diagnostických údajov pre klientsky softvér Aplikácie Microsoft 365 pre veľké organizácie, z ktorých si môžete vybrať:
 
-- _ *Požadované* * Minimálne údaje potrebné na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
+- **Požadované** Minimálne údaje potrebné na očakávané zabezpečenie balíka Office, jeho aktualizáciu a výkonnosť v zariadení, v ktorom je nainštalovaný.
 
 - **Voliteľné** Dodatočné údaje, ktoré nám pomáhajú zlepšovať produkty, a obsahujú rozšírené informácie, ktoré nám pomáhajú rozpoznávať, diagnostikovať a riešiť problémy.
 
@@ -132,4 +132,4 @@ Existuje tiež množina služieb, ktoré sú nevyhnutné pre fungovanie funkcií
 
 ## <a name="related-articles"></a>Súvisiace články
 - [Ochrana osobných údajov v spoločnosti Microsoft](https://privacy.microsoft.com/)
-- [Ochrana osobných údajov vo Windowse](https://docs.microsoft.com/windows/privacy/)
+- [Ochrana osobných údajov vo Windowse](/windows/privacy/)
