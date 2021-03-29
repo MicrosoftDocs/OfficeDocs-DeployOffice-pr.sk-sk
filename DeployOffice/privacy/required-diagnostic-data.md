@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: 7bf7ce172600d1b944f521da6bb5e0420d6d59f2
-ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
+ms.openlocfilehash: 52922aee6117744074d382f6c86e7ec50c6f874b
+ms.sourcegitcommit: f006f5890d12988e03a3878937eb02aa7e265f8d
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242205"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51167384"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -1788,6 +1788,8 @@ Zhromažďujú sa tieto polia v systémoch iOS a Android:
 
 - **include_deleted** – označuje, či sa vo výsledkoch vyhľadávania zobrazujú odstránené možnosti 
 
+- **is_best_match_suggestion** – označuje, či vybratý návrh vyhľadávania je najlepšou zhodou.
+
 - **is_ics_external_data** – zachytáva, či je pridaná udalosť interná (t. j. pridaná v Outlooku do Outlook Kalendára), alebo externá (t. j. pridaná z inej e-mailovej aplikácie, ako je napríklad Gmail, do Outlook Kalendára).
 
 - **is_network_fully_connected** – slúži na získanie indikátora dôvodu vyhľadávania v režime offline. Ak je sieť pripojená a vyhľadávanie je v režime offline, dôvodom pravdepodobne bude časový limit servera.
@@ -2621,6 +2623,18 @@ Zhromažďujú sa tieto polia:
 
 - **with_message_enabled** – označuje, či používateľ môže odpovedať na správu, aby sme mohli zistiť problémy s odpovedaním na pozvánky na schôdzu
 
+
+#### <a name="multiwindowlaunch"></a>multi.window.launch
+
+Táto udalosť zaznamenáva, keď používateľ vykoná akciu, ktorá zahŕňa spustenie viacerých okien v skladacích zariadeniach, napríklad písanie e-mailu, vytváranie udalosti a otvorenie okna kalendára.  Akcia sa používa na zapamätanie si takejto akcie, napríklad na to, aby sa výzva naďalej zobrazovala alebo aby sa akcia spustila v novom okne.  Údaje zhromaždené touto udalosťou sa používajú na posúdenie zistiteľnosti, efektívnosti, ako aj všeobecných používateľských preferencií na podporu aktuálneho a budúceho vývoja funkcií súvisiacich s viacerými oknami.
+
+Zhromažďujú sa tieto polia: 
+
+- **is_remembered** – určuje, či predvoľba spustenia v novom okne z nahláseného umiestnenia bola uložená používateľom.
+
+- **multi_window_origin** – umiestnenie v aplikácii, kde dochádza k interakcii na spustenie inej obrazovky aplikácie v novom okne.
+
+
 #### <a name="officeandroiddocsuifileoperationsopendocumentmeasurements"></a>Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
 Táto udalosť sa zhromažďuje pre aplikácie balíka Office, ktoré sú spustené na platforme Android, a zaznamená, keď sa vykoná operácia otvorenia súboru. Udalosť pomôže pri zachovaní bezpečnosti, aktuálnosti a správneho výkonu operácie otvorenia súboru. Účelom zhromažďovania týchto údajov je neustále zlepšovanie výkonu otvárania súboru. 
@@ -2830,7 +2844,7 @@ Zhromažďujú sa tieto polia:
 
 #### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
 
-Táto udalosť pomáha porozumieť, s akou inou aplikáciou Microsoft v zariadení naša aplikácia získala bezobslužné jediné prihlásenie, z ktorého vstupného bodu a tak ďalej. Pomáha tiež pochopiť príčinu zlyhania s nezískaním bezobslužného jediného prihlásenia.  Získame lepší prehľad napríklad o tom, s ktorou aplikáciou Microsoft v zariadení získavame jediné prihlásenie. Ide o neúspešné prípady, keď jednoduché prihlásenie nefunguje podľa očakávaní.
+Táto udalosť pomáha porozumieť, s akou inou aplikáciou Microsoft v zariadení naša aplikácia získala bezobslužné jediné prihlásenie, z ktorého vstupného bodu a tak ďalej. Pomáha tiež pochopiť príčinu zlyhania s nezískaním bezobslužného jediného prihlásenia.  Získame lepší prehľad napríklad o tom, s ktorou aplikáciou Microsoft v zariadení získavame jediné prihlásenie. Vykonajú sa opatrenia, kde jediné prihlásenie nefunguje podľa očakávaní.
 
 Zhromažďujú sa tieto polia:
 
@@ -6592,6 +6606,28 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_CloseAndReopen:bool** – bol tento dokument zatvorený a znova otvorený?
 
+  - **Data_ClpDocHasDrmDoc:bool** – označuje, či dokument obsahuje dokument DRM
+
+  - **Data_ClpDocHasIdentity:bool** – označuje, či dokument má informácie o identite (používajú sa na získanie a nastavenie označení citlivosti)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti z relácie
+
+  - **Data_ClpDocHasSpoMetadata:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IPackage
+
+  - **Data_ClpDocIsProtected:bool** – označuje, či je dokument chránený technológiou IRM
+
+  - **Data_ClpDocMetadataSource:int** – Enumerácia určujúca, odkiaľ pochádzajú metaúdaje označenia citlivosti (IRM, časť OPC, SharePoint atď.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** – určuje či dokument vyžaduje konverziu údajov označení citlivosti z časti custom.xml
+
+  - **Data_ClpDocNumFailedSetLabels:int** – počet označení citlivosti, ktoré sa v dokumente nepodarilo nastaviť
+
+  - **Data_ClpDocSessionMetadataDirty:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti, ktoré boli zmenené
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – označuje, či bol dokument v hranici dôveryhodnosti (čo umožňuje spolutvorbu v dokumentoch chránených označeniami citlivosti)
+
   - **Data\_DetachedDuration:long** – časový úsek, počas ktorého bola aktivita odpojená/nespustená
 
   - **Data\_Doc\_AccessMode:long** – ako bol otvorený tento dokument (iba na čítanie | čítanie a zapisovanie)
@@ -6711,6 +6747,28 @@ Zhromažďujú sa tieto polia:
   - **Data\_ClearDirtyFlagTimeMS:long** – čas potrebný na vymazanie príznaku zmeneného dokumentu
 
   - **Data\_CloneDocumentTimeMS:long** – čas potrebný na klonovanie dokumentu pred spustením ukladania
+
+  - **Data_ClpDocHasDrmDoc:bool** – označuje, či dokument obsahuje dokument DRM
+
+  - **Data_ClpDocHasIdentity:bool** – označuje, či dokument má informácie o identite (používajú sa na získanie a nastavenie označení citlivosti)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti z relácie
+
+  - **Data_ClpDocHasSpoMetadata:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IPackage
+
+  - **Data_ClpDocIsProtected:bool** – označuje, či je dokument chránený technológiou IRM
+
+  - **Data_ClpDocMetadataSource:int** – Enumerácia určujúca, odkiaľ pochádzajú metaúdaje označenia citlivosti (IRM, časť OPC, SharePoint atď.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** – určuje či dokument vyžaduje konverziu údajov označení citlivosti z časti custom.xml
+
+  - **Data_ClpDocNumFailedSetLabels:int** – počet označení citlivosti, ktoré sa v dokumente nepodarilo nastaviť
+
+  - **Data_ClpDocSessionMetadataDirty:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti, ktoré boli zmenené
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – označuje, či bol dokument v hranici dôveryhodnosti (čo umožňuje spolutvorbu v dokumentoch chránených označeniami citlivosti)
 
   - **Data\_CommitTransactionTimeMS:long** – čas potrebný na potvrdenie transakcie uloženia
 
@@ -6857,6 +6915,28 @@ Zhromažďuje sa vždy, keď PowerPoint vykoná akciu Uložiť ako. Zahŕňa typ
 Zhromažďujú sa tieto polia:
 
 - **Data_AddDocTelemetryResult:long** – obsahuje tento záznam denníka celú potrebnú telemetriu dokumentu (polia Data_Doc_*)? Ak nie, prečo?
+
+- **Data_ClpDocHasDrmDoc:bool** – označuje, či dokument obsahuje dokument DRM
+
+- **Data_ClpDocHasIdentity:bool** – označuje, či dokument má informácie o identite (používajú sa na získanie a nastavenie označení citlivosti)
+
+- **Data_ClpDocHasSessionMetadata:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti z relácie
+
+- **Data_ClpDocHasSpoMetadata:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IPackage
+
+- **Data_ClpDocIsProtected:bool** – označuje, či je dokument chránený technológiou IRM
+
+- **Data_ClpDocMetadataSource:int** – Enumerácia určujúca, odkiaľ pochádzajú metaúdaje označenia citlivosti (IRM, časť OPC, SharePoint atď.)
+
+- **Data_ClpDocNeedsUpconversion:bool** – určuje či dokument vyžaduje konverziu údajov označení citlivosti z časti custom.xml
+
+- **Data_ClpDocNumFailedSetLabels:int** – počet označení citlivosti, ktoré sa v dokumente nepodarilo nastaviť
+
+- **Data_ClpDocSessionMetadataDirty:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti, ktoré boli zmenené
+
+- **Data_ClpDocWasInTrustBoundary:bool** – označuje, či bol dokument v hranici dôveryhodnosti (čo umožňuje spolutvorbu v dokumentoch chránených označeniami citlivosti)
 
 - **Data_CppUncaughtExceptionCount:long** – nezachytené natívne výnimky počas spustenej aktivity.
 
@@ -7044,6 +7124,28 @@ Zhromažďuje sa vždy, keď PowerPoint vykoná uloženie pomocou cesty staršie
 Zhromažďujú sa tieto polia:
 
 - **Data_AddDocTelemetryResult:long** – obsahuje tento záznam denníka celú potrebnú telemetriu dokumentu (polia Data_Doc_*)? Ak nie, prečo?
+
+- **Data_ClpDocHasDrmDoc:bool** – označuje, či dokument obsahuje dokument DRM
+
+- **Data_ClpDocHasIdentity:bool** – označuje, či dokument má informácie o identite (používajú sa na získanie a nastavenie označení citlivosti)
+
+- **Data_ClpDocHasSessionMetadata:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti z relácie
+
+- **Data_ClpDocHasSpoMetadata:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IPackage
+
+- **Data_ClpDocIsProtected:bool** – označuje, či je dokument chránený technológiou IRM
+
+- **Data_ClpDocMetadataSource:int** – Enumerácia určujúca, odkiaľ pochádzajú metaúdaje označenia citlivosti (IRM, časť OPC, SharePoint atď.)
+
+- **Data_ClpDocNeedsUpconversion:bool** – určuje či dokument vyžaduje konverziu údajov označení citlivosti z časti custom.xml
+
+- **Data_ClpDocNumFailedSetLabels:int** – počet označení citlivosti, ktoré sa v dokumente nepodarilo nastaviť
+
+- **Data_ClpDocSessionMetadataDirty:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti, ktoré boli zmenené
+
+- **Data_ClpDocWasInTrustBoundary:bool** – označuje, či bol dokument v hranici dôveryhodnosti (čo umožňuje spolutvorbu v dokumentoch chránených označeniami citlivosti)
 
 - **Data_CppUncaughtExceptionCount:long** – nezachytené natívne výnimky počas spustenej aktivity.
 
@@ -8750,6 +8852,12 @@ Zhromažďujú sa tieto polia:
 
 - **has_mip_label** – označuje, či bola na správe označená značka MIP
 
+- **image_attachment_count** – označuje, koľko obrázkov sa odosiela ako prílohy správy
+
+- **image_body_count** – označuje, koľko obrázkov sa odosiela vnorených ako súčasť tela správy
+
+- **image_movement_count** – označuje, koľko obrázkov správy bolo presunutých do vnorených alebo vrátených späť.
+
 - **is_group_escalation** – označuje, či ide o skupinovú eskalovanú správu, „eskalovaná správa“ je správa, ktorá bola odoslaná do poštovej schránky používateľa z dôvodu eskalácie (odber skupiny).
 
 - **is_groups** – sleduje, či je odoslaná správa skupinová správa alebo nie
@@ -9779,6 +9887,28 @@ Zhromažďujú sa tieto polia:
   - **Data\_CheckWebSharingViolationForIncOpen** – trvanie spustenia metódy CheckWebSharingViolationForIncOpen v milisekundách
    
   - **Data_CloseAndReopenWithoutDiscard** – označuje, či bol dokument zavretý a opäť otvorený počas otvoreného procesu bez vyhodenia.
+
+  - **Data_ClpDocHasDrmDoc:bool** – označuje, či dokument obsahuje dokument DRM
+
+  - **Data_ClpDocHasIdentity:bool** – označuje, či dokument má informácie o identite (používajú sa na získanie a nastavenie označení citlivosti)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti z relácie
+
+  - **Data_ClpDocHasSpoMetadata:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – označuje, či dokument má metaúdaje označenia citlivosti zo SPO prostredníctvom IPackage
+
+  - **Data_ClpDocIsProtected:bool** – označuje, či je dokument chránený technológiou IRM
+
+  - **Data_ClpDocMetadataSource:int** – Enumerácia určujúca, odkiaľ pochádzajú metaúdaje označenia citlivosti (IRM, časť OPC, SharePoint atď.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** – určuje či dokument vyžaduje konverziu údajov označení citlivosti z časti custom.xml
+
+  - **Data_ClpDocNumFailedSetLabels:int** – počet označení citlivosti, ktoré sa v dokumente nepodarilo nastaviť
+
+  - **Data_ClpDocSessionMetadataDirty:bool** – označuje, či dokument má funkčné metaúdaje označenia citlivosti, ktoré boli zmenené
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – označuje, či bol dokument v hranici dôveryhodnosti (čo umožňuje spolutvorbu v dokumentoch chránených označeniami citlivosti)
 
   - **Data\_ContentTransaction** – preddefinovaná množina hodnôt určujúcich, kedy je možné vytvoriť transakciu (AllowedOnLoadDocument, AllowedOnOpenComplete atď.)
 
@@ -12520,9 +12650,9 @@ Zhromažďujú sa tieto polia:
   
 - **BootToStart** – či používateľ zvolil zobrazenie domovskej obrazovky po spustení aplikácie.
 
-- **ColdBoot** – uvádza, či je aplikácia balíka Office prvýkrát spustená po reštartovaní systému alebo bolo potrebné načítať z disku binárne rozhranie aplikácie.
+- **ColdBoot** – označuje, či ide o prvé spustenie aplikácie balíka Office po reštartovaní systému alebo či bolo potrebné načítať binárny súbor aplikácie z disku. (len macOS/iOS)
 
-- **DeviceModel** – model zariadenia.
+- **DeviceModel** – model zariadenia. (len macOS/iOS)
 
 - **DocLocation** – pri otváraní dokumentu označuje, ktorá služba poskytla dokument (OneDrive, súborový server, SharePoint atď.).
 
@@ -12532,6 +12662,8 @@ Zhromažďujú sa tieto polia:
 
 - **FirstBoot** – zobrazuje, či išlo o prvé spustenie aplikácie.
 
+- **FreeMemoryPercentage** – aké percento pamäte v zariadení je voľné. (iba Windows)
+
 - **InitializationDuration** – trvanie prvej inicializácie procesu balíka Office v mikrosekundách.
 
 - **InterruptionMessageId** – ID dialógového okna, ak bolo spustenie prerušené dialógovým oknom s výzvou pre používateľa na zadanie údajov.
@@ -12540,9 +12672,19 @@ Zhromažďujú sa tieto polia:
 
 - **OpenAsNew** – označuje, či sa aplikácia spustila otvorením existujúceho dokumentu ako šablóny pre nový.
 
+- **PageFaultCount** – počet zlyhaní strán pre proces. (iba Windows)
+
+- **PrimaryDiskType** – určuje, či primárnym ukladacím zariadením je jednotka SSD alebo otáčajúci sa disk a podľa vhodnosti rýchlosť otáčania. (len macOS/iOS)
+
+- **PrivateCommitUsageMB** – vyhradenie potvrdenia (t. j. množstvo pamäte, ktoré správca pamäte potvrdil pre tento proces) v megabajtoch pre tento proces. (iba Windows)
+
+- **ProcessorCount** – počet procesorov v zariadení. (len macOS/iOS)
+
+- **TotalPhysicalMemory** – celkové množstvo fyzickej pamäte v zariadení. (len macOS/iOS)
+
 - **TotalWorkingSetMB** – množstvo pamäte v megabajtoch v pracovnej sade procesu.
 
-- **VirtualSetMB** – množstvo pamäte v megabajtoch vo virtuálnej sade procesu. (Len macOS/iOS)
+- **VirtualSetMB** – množstvo pamäte v megabajtoch vo virtuálnej sade procesu. (len macOS/iOS)
 
 - **WorkingSetPeakMB** – najväčšie množstvo pamäte v megabajtoch, ktoré bolo doteraz v pracovnej súprave procesu.
 
