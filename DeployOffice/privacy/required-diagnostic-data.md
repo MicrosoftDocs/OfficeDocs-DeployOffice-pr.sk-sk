@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Správcom balíka Office sú poskytované informácie o požadovaných diagnostických údajoch v Office a zoznam udalostí a údajových polí.
 hideEdit: true
-ms.openlocfilehash: 52922aee6117744074d382f6c86e7ec50c6f874b
-ms.sourcegitcommit: f006f5890d12988e03a3878937eb02aa7e265f8d
+ms.openlocfilehash: 69abd5fc0355db7758debc0193b4439754eda2f2
+ms.sourcegitcommit: b6f55a032079a9525cedd93b9e431c188ca24775
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167384"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51889799"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Povinné diagnostické údaje pre Office
 
@@ -633,6 +633,8 @@ Okrem toho nasledujúce polia sú spoločné pre všetky udalosti Outlooku pre i
 
 - **gcc_restrictions_enabled** – informuje o tom, či boli v aplikácii použité obmedzenia GCC, aby sme mohli zabezpečiť zákazníkom GCC bezpečné využívanie našej aplikácie
  
+- **multi_pane_mode** – informuje nás, či používateľ v iPade používa priečinok doručenej pošty s viacerými zapnutými tablami, kde si môže pri triedení e-mailov zobraziť zoznam priečinkov. Je to potrebné na to, aby sme zistili problémy špecifické pre tých, ktorí používajú priečinok doručenej pošty s viacerými otvorenými tablami.
+
 - **multi_window_mode** – uvádza, či používateľ s iPadom používa viacero okien, aby sme mohli zistiť problémy týkajúce sa používania viacerých okien.
 
 - **office_session_id** – jedinečný identifikátor na sledovanie relácie pripojených služieb balíka Office, ktorý pomáha pri zisťovaní konkrétnych problémov s integráciou služieb balíka Office v Outlooku, ako je napríklad Word
@@ -5237,6 +5239,16 @@ Zhromažďujú sa tieto polia:
 
 - **Data_FirstRunPanelName** – Názov panela, z ktorého skäsenosť začala.
 
+
+#### <a name="officefloodgateuserfactappusage"></a>Office.Floodgate.UserFact.AppUsage
+
+Táto hodnota označuje, že používateľ v rámci produktu použil funkcie s vysokou hodnotou. Môže to naznačovať, či používateľ objavil alebo použil funkciu. Signál bude slúžiť produktovým prehľadom o používaní funkcie, ktoré pomáhajú zlepšiť produkt.
+
+Zhromažďujú sa tieto polia: 
+
+- **FeatureAction** – označenie funkcie s vysokou hodnotou a akcie vykonanej používateľom, napríklad ContentPickerTried, TemplatesSeen.
+
+
 #### <a name="officelenslenssdkcloudconnectorlaunch"></a>Office.Lens.LensSdk.CloudConnectorLaunch
 
 Keď používateľ oreže obrázok a ťukne na potvrdenie konečného výberu obrázka na použitie OCR, táto udalosť sa zhromaždí.     
@@ -5289,19 +5301,6 @@ Zhromažďujú sa tieto polia:
 - **TaskType** – reťazec, ktorý identifikuje zámer volania služby.
 
 
-#### <a name="officelenslenssdkpermission"></a>Office.Lens.LensSdk.Permission
-
-Povolenia sú citlivou funkciou, pretože bez nich používateľ nemôže používať žiadne funkcie Lensu. Povolenia sa sledujú na pochopenie používateľských zvykov na poskytovanie alebo zrušenie povolení. Keď používateľ pracuje s akýmkoľvek dialógovým oknom povolení v našej aplikácii, zhromažďujeme tieto udalosti. Na základe používateľských trendov na prijímanie a odmietanie povolení identifikujeme vylepšenia funkcií, ktoré používateľom pomáhajú porozumieť tomu, prečo sú povolenia dôležité.
-
-Zhromažďujú sa tieto polia:
-
-- **Data_action** – obsahuje hodnoty ako CameraPermissionAllowed (alebo Denied), StoragePermissionGranted (alebo Denied), ktoré nám pomáhajú pochopiť, či používateľ prijal alebo odmietol povolenia na úložisko a kameru.
-
-- **Data_Action** – Toto pole nám pomáha pochopiť, aký typ povolenia sa žiadal od používateľa, napríklad Fotoaparát alebo Úložisko
-
-- **Data_status** – obsahuje hodnoty ako Allowed, Denied a DeniedForever, ktoré nám pomáhajú pochopiť, či používateľ prijal alebo odmietol povolenia na úložisko a kameru.
-
-
 #### <a name="officelenslenssdksavemedia"></a>Office.Lens.LensSdk.SaveMedia
 
 Táto udalosť sa vyvolá, keď používateľ klikne na tlačidlo Hotovo a uloží obrázky v Androide a iOS. Pomáha merať úroveň interakcie používateľov kvantifikovaním používateľov, ktorí nakoniec uložia obrázky prostredníctvom našej aplikácie.
@@ -5349,105 +5348,22 @@ V iOS sa zhromažďujú tieto polia:
 
 #### <a name="officelenslenssdkserviceidmapping"></a>Office.Lens.LensSdk.ServiceIDMapping
 
-Keď sa obrázok úspešne nahrá do služby, táto udalosť sa zhromaždí. Znamená to, že služba teraz spustí jednu alebo viac úloh na spracovanie obrázka, a obsahuje príslušné identifikátory na pomoc pri riešení problémov s týmto procesom. Pomáha tiež analyzovať využívanie jednotlivých funkcií služby.
+Táto udalosť sa zhromažďuje, keď softvér Lens SDK spolupracuje so službou Image-to-Document (alebo I2D) spoločnosti Microsoft. Znamená to, že udalosť sa nazýva:
+
+- Po nahratí obrázka do služby I2D na konverziu a extrahovanie súborov (optické rozpoznávanie znakov OCR).
+- Keď používateľ potrebuje opraviť výstup služby, odošleme pripomienky na zlepšenie kvality.
+
+Údaje sa používajú na analýzu používania a riešenie problémov so službou.  
 
 Zhromažďujú sa tieto polia:
 
-- **CloudConnectorRequestId** – reťazec, ktorý identifikuje žiadosť o službu, ktorá bola vykonaná na konverziu obrázkov prostredníctvom služby.
+- **CloudConnectorRequestId** – reťazec, ktorý identifikuje žiadosti o službu v klientskej aplikácii pre scenáre konverzie aj pripomienok.
 
-- **I2DserviceProcessID** – reťazec, ktorý identifikuje úlohu služby, ktorá spúšťa konkrétnu podpožiadavku 
+- **CustomerId** – tento reťazec pomáha mapovať používateľov k žiadostiam o služby a pomáha nám sledovať používanie. UserId sa vyžaduje na splnenie požiadaviek nariadenia o ochrane údajov (GDPR), pretože služba nie je vystavená používateľom priamo, ale prostredníctvom klientov, a na identifikáciu celkového počtu ľudí, ktorí túto službu používajú, čo pomáha službe sledovať objem používateľov, ktorí používajú produkt. 
 
+- **I2DFeedback APICorrelationId** – reťazec, ktorý identifikuje žiadosť o pripomienky v službe I2D, keď používateľ opraví výstup služby.
 
-#### <a name="officeiospaywallpaywallpresented"></a>Office.iOS.Paywall.Paywall.Presented
-
-Táto telemetria kritického používania sa zhromažďuje, keď sa používateľovi zobrazí ovládací prvok platobnej brány a používa sa na vysvetlenie skúsenosti používateľa pri nákupe v rámci aplikácie a optimalizovanie toho istého pre budúce verzie.
-
-Zhromažďujú sa tieto polia:
-
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-
-- **isFRE** – boolovská hodnota – zobrazuje sa prostredie prvého spustenia alebo bežné používateľské rozhranie?
-
-#### <a name="officeiospaywallpaywallstats"></a>Office.iOS.Paywall.Paywall.Stats
-
-Tieto metaúdaje založené na relácii sa zhromažďujú pri zobrazovaní používateľského rozhrania platobnej steny, trvanie interakcie, či sa uskutočnil pokus o nákup a či a bol úspešný alebo zlyhal.  Tieto údaje sa používajú na porozumenie používaniu a stavu celej platobnej funkcie a na ladenie, optimalizáciu a riešenie problémov s funkciou nakupovania v aplikácii v budúcich verziách.
-
-Zhromažďujú sa tieto polia:
-
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-
-- **isFRE** – boolovská hodnota – zobrazuje sa prostredie prvého spustenia alebo bežné používateľské rozhranie?
-
-- **status** – reťazec – stav ukončenia platobnej steny. Napríklad „initiated“, „paymentDone“, „provisionFailed“
-
-- **userDuration** – double – čas v milisekundách, ktorý používateľ strávil v platobnej stene
-
-
-#### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
-
-Telemetria kritického inžinierstva so službou Microsoft Retail Federation Service (RFS) na zhromažďovanie informácií poskytnutých v tejto udalosti. RFS je interná služba používaná v rámci spoločnosti Microsoft na krížovú kontrolu nákupu. Údaje sa používajú na získanie stavu volania API do RFS, čo pomáha porozumieť miere úspešnosti a ladeniu prípadných zlyhaní.
-
-Zhromažďujú sa tieto polia:
-
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-
-- **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci chybovú odpoveď danú reakciou RFS Poskytovania.
-
-- **productId** – reťazec – ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka
-
-- **status** – reťazec – úspech alebo zlyhanie, označuje, či požiadavka bola úspešná alebo zlyhala
-
-
-#### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Telemetria kritického použitia, ktorá označuje, keď používateľ klepne na tlačidlo Nákup / Kúpiť. Používa sa na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
-
-Zhromažďujú sa tieto polia:
-
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-
-- **isDefaultSKU** - logická hodnota – Ak používateľ kupuje produkt odporučený predvoleným zobrazením.
-
-- **productId** – reťazec – identifikácia produktu z obchodu s aplikáciami, pri ktorých sa použilo tlačidlo Kúpiť
-
-- **toggleCount** – int – Koľkokrát používateľ prepol medzi zobrazením rôznych produktov ešte pred ťuknutím na tlačidlo Kúpiť v aktuálnej relácii Paywall.
-
-
-#### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
-
-Táto udalosť zhromažďuje funkcie a aplikácie, ktoré používateľ rozbaľuje z ponuky Zobraziť ďalšie výhody a trvanie stráveného času.  Údaje sa používajú na vysvetlenie používania funkcie „Zobraziť všetky výhody“ a ďalšiu optimalizáciu skúseností v budúcich verziách.
-
-Zhromažďujú sa tieto polia:
-
-- **appsExpanded** – reťazec – zoznam služieb alebo aplikácií oddelených čiarkami, pre ktoré sa rozbalili výhody.
-
-- **productId** – reťazec – AppStore ID produktu, pre ktorý si používateľ prezerá ďalšie ponúkané výhody
-
-- **userDuration** – double – čas v milisekundách, ktorý používateľ strávil na obrazovke Výhody.
-
-
-### <a name="officeiospaywallskuchooserproductswitched"></a>Office.iOS.Paywall.SKUChooser.ProductSwitched
-
-Telemetria používania na zobrazenie, koľkokrát používateľ prepne medzi rôznymi jednotkami SKU ešte pred pokusom o uskutočnenie nákupu.
-
-Zhromažďujú sa tieto polia:
-
-- **productId**- Reťazec - ID produktu z App Store, ktorý si používateľ práve prepol na prezeranie z dostupných produktov vo výbere SKU.
-
-
-#### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
-
-Táto telemetria používania sa zhromažďuje, aby sa zistilo, ako používateľ prešiel na výber jednotiek SKU, koľko času používateľ strávil na obrazovke výberu jednotiek SKU a prečo ukončil výber jednotiek SKU.  Tieto údaje sa používajú na porozumenie používaniu výberu SKU a optimalizáciu funkcie nakupovania v aplikácii v budúcich verziách.
-
-Zhromažďujú sa tieto polia:
-
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-
-- **exitReason** – reťazec – dôvod ukončenia výberu jednotky SKU. Napríklad „BuyButton“, „CloseButton“
-
-- **isFRE** – boolovská hodnota – zobrazuje sa prostredie prvého spustenia alebo bežné používateľské rozhranie?
-
-- **userDuration** – double – čas v milisekundách, ktorý používateľ strávil vo výbere SKU
+- **I2DServiceProcessID** – reťazec, ktorý identifikuje žiadosť o službu v službe I2D, keď používateľ nahráva obrázky na konverziu.
 
 
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
@@ -9049,6 +8965,33 @@ Zhromažďujú sa tieto polia:
 
 - **RMS.Url** – URL adresa servera služby správy prístupových práv.
 
+
+#### <a name="surveyfloodgatetriggermet"></a>Survey.Floodgate.TriggerMet
+
+Táto udalosť sleduje, keď zariadenie splnilo kritériá na zobrazenie prieskumu. Používa sa na posúdenie stavu procesu spustenia prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia: 
+
+- **CampaignId** – identifikátor kampane dodanej službou
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **SurveyType** – identifikuje typ prieskumu
+
+
+#### <a name="surveyuiformsubmit"></a>Survey.UI.Form.Submit
+
+Sleduje čas odoslania prieskumu. Používa sa na posúdenie stavu procesu odoslania prieskumu, ako aj na to, aby sa zaistilo, že signál použitý na analýzu problémov zákazníkov a stavu funguje správne.
+
+Zhromažďujú sa tieto polia: 
+
+- **CampaignId** – identifikátor kampane dodanej službou
+
+- **SurveyId** – jedinečná inštancia kampane
+
+- **SurveyType** – identifikuje typ prieskumu
+
+
 #### <a name="watchappv2"></a>watchAppV2
 
 Táto udalosť umožňuje zistiť a vyriešiť možné problémy s možnosťami hodiniek Apple Watch, ako je napríklad prijímanie oznámení a odpovedanie na e-maily.
@@ -12511,16 +12454,6 @@ Zhromažďujú sa tieto polia:
 
 - **TypeId** – identifikátor GUID rozhrania, v ktorom je táto metóda volaná.
 
-#### <a name="officeiospaywallfailedscreenretrybuttontap"></a>Office.iOS.Paywall.FailedScreen.RetryButtonTap
-
-Táto telemetria používania sa zhromažďuje na zistenie, keď nákup/zriadenie/aktivácia zlyhali a používateľ ťukol na tlačidlo Skúsiť znova.  Používa sa na riešenie scenárov chýb pri nákupe, ktoré vedú k zopakovaniu pokusu, a na zlepšenie spoľahlivosti procesu.
-
-Zhromažďujú sa tieto polia:
-
-- **failureReason** reťazec – označuje, pre aké zlyhanie používateľ opakuje pokus. Napríklad „provisioningFailed“, „purchaseFailed“, „activationFailed“.
-
-- **productid** – reťazec – AppStore ID produktu, pre ktorý používateľ opakuje zlyhanú požiadavku
-
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -12650,6 +12583,8 @@ Zhromažďujú sa tieto polia:
   
 - **BootToStart** – či používateľ zvolil zobrazenie domovskej obrazovky po spustení aplikácie.
 
+- **ChildProcessCount** – počet podradených procesov, ktoré aplikácia spustila. (iba Windows)
+
 - **ColdBoot** – označuje, či ide o prvé spustenie aplikácie balíka Office po reštartovaní systému alebo či bolo potrebné načítať binárny súbor aplikácie z disku. (len macOS/iOS)
 
 - **DeviceModel** – model zariadenia. (len macOS/iOS)
@@ -12664,6 +12599,10 @@ Zhromažďujú sa tieto polia:
 
 - **FreeMemoryPercentage** – aké percento pamäte v zariadení je voľné. (iba Windows)
 
+- **HandleCount** – počet popisovačov operačného systému, ktoré proces otvoril. (iba Windows)
+
+- **HardFaultCount** – počet tvrdých zlyhaní strán pre proces. (iba Windows)
+
 - **InitializationDuration** – trvanie prvej inicializácie procesu balíka Office v mikrosekundách.
 
 - **InterruptionMessageId** – ID dialógového okna, ak bolo spustenie prerušené dialógovým oknom s výzvou pre používateľa na zadanie údajov.
@@ -12672,13 +12611,23 @@ Zhromažďujú sa tieto polia:
 
 - **OpenAsNew** – označuje, či sa aplikácia spustila otvorením existujúceho dokumentu ako šablóny pre nový.
 
+- **OtherOperationCount** – počet vykonaných vstupno-výstupných operácií okrem operácií čítania a zápisu. (iba Windows)
+
+- **OtherTransferCount** – počet bajtov prenesených počas operácií okrem operácií čítania a zápisu. (iba Windows)
+
 - **PageFaultCount** – počet zlyhaní strán pre proces. (iba Windows)
 
 - **PrimaryDiskType** – určuje, či primárnym ukladacím zariadením je jednotka SSD alebo otáčajúci sa disk a podľa vhodnosti rýchlosť otáčania. (len macOS/iOS)
 
 - **PrivateCommitUsageMB** – vyhradenie potvrdenia (t. j. množstvo pamäte, ktoré správca pamäte potvrdil pre tento proces) v megabajtoch pre tento proces. (iba Windows)
 
+- **PrivateWorkingSetMB** – množstvo pamäte v megabajtoch v pracovnej množine procesu, ktorá nie je zdieľaná s inými procesmi. (iba Windows)
+
 - **ProcessorCount** – počet procesorov v zariadení. (len macOS/iOS)
+
+- **ReadOperationCount** – počet vykonaných operácií čítania. (iba Windows)
+
+- **ReadTransferCount** – počet prečítaných bajtov.
 
 - **TotalPhysicalMemory** – celkové množstvo fyzickej pamäte v zariadení. (len macOS/iOS)
 
@@ -12687,6 +12636,10 @@ Zhromažďujú sa tieto polia:
 - **VirtualSetMB** – množstvo pamäte v megabajtoch vo virtuálnej sade procesu. (len macOS/iOS)
 
 - **WorkingSetPeakMB** – najväčšie množstvo pamäte v megabajtoch, ktoré bolo doteraz v pracovnej súprave procesu.
+
+- **WriteOperationCount** – počet vykonaných operácií zápisu. (iba Windows)
+
+- **WriteTransferCount** – počet zapísaných bajtov. (iba Windows)
 
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
@@ -13886,6 +13839,30 @@ Zhromažďujú sa tieto polia:
   - **Data\_TagCount** – počet všetkých zlyhaní, ktoré sa vyskytli
 
   - **Data\_TagID** – identifikátor zlyhania, ktoré sa vyskytlo
+
+
+#### <a name="officeofficemobilepersonalizedcampaigningerrors"></a>Office.OfficeMobile.PersonalizedCampaigning.Errors
+
+Na zvýšenie informovanosti o funkciách balíka Office Mobile, ktoré používatelia ešte nepreskúmali, sa Office Mobile integruje so serverom IRIS na podporu oznámení v aplikácii a puch oznámení. V prípade oznámení v aplikácii sa zaznamenajú chyby, ktoré sa vyskytujú pri sťahovaní alebo zobrazení oznámenia a pri interakcii používateľa s oznámením. Tiež sa poskytujú pripomienky serveru IRIS. V prípade push oznámení sa zaznamenajú chyby, ktoré sa vyskytujú pri zobrazení oznámenia, a v prípade interakcie používateľa s oznámením.
+
+Zhromažďujú sa tieto polia:
+
+- **Class** – názov triedy, v ktorej sa vyskytla chyba
+
+- **CreativeId** – ID oznámenia, ktoré jednoznačne identifikuje oznámenie a jeho obsah.
+
+- **ErrorDetails** – podrobnosti o chybe
+
+- **ErrorMessage** – chybové hlásenie.
+
+- **ErrorReason** – základný dôvod chyby
+
+- **Method** – názov funkcie, v ktorej sa vyskytla chyba.
+
+- **RequestParams** – vyžiadajte parametre, ktoré sa používajú pri kontaktovaní servera IRIS na stiahnutie oznámenia.
+
+- **SurfaceId** – ID plochy, kde sa zobrazí oznámenie.
+
 
 #### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfoldererror"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder.Error
 

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: 8408a2e8a6e9c8594e428762034ba5b8e8a54548
-ms.sourcegitcommit: a31e96cefd11ffece917dce618414989bf3a98da
+ms.openlocfilehash: d71859f75046ad13901aae1b381bf97227f05383
+ms.sourcegitcommit: 8982800d8026ec2f82e8389b7dfa762381258874
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031998"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51891219"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -3410,6 +3410,92 @@ Zhromažďujú sa tieto polia:
 - **context** – String – tok, cez ktorý sa používateľ dostal na stránku nákupu v aplikácii.
 
 
+### <a name="officeapplelicensingcommonpaywallcontrol"></a>Office.Apple.Licensing.CommonPaywallControl
+
+Táto udalosť sa používa na pochopenie nákupov v aplikácii (IAP) používateľa. Umožňuje nám zabezpečiť, aby prostredie IAP fungovalo podľa očakávaní, a pomáha nám porozumieť problémom používateľov, aby sme mohli optimalizovať prostredie IAP.  Kolekcia sa vyskytuje prostredníctvom jednej z nasledujúcich subpodujatí.
+
+- **Office.iOS.Paywall.Paywall.Presented** – údaje sa zhromažďujú, keď sa používateľovi zobrazí ovládací prvok platobnej brány. Údaje sa používajú na vytvorenie zobrazenia na meranie konverzného koeficientu v každom kroku a na zabezpečenie toho, aby sa v používateľskom rozhraní počas nakupovania vyskytlo minimum problémov.
+
+   Zhromažďujú sa tieto polia:
+
+  - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+  - **isFRE** – boolovská hodnota – zobrazuje sa prostredie prvého spustenia alebo bežné používateľské rozhranie?
+
+- **Office.iOS.Paywall.Paywall.Stats** – údaje sa zhromažďujú pri zobrazovaní používateľského rozhrania platobnej steny, trvanie interakcie, či sa uskutočnil pokus o nákup a či a bol úspešný alebo zlyhal. Údaje sa používajú na meranie výkonu používateľského rozhrania a na zabezpečenie jeho očakávaného výkonu. 
+
+   Zhromažďujú sa tieto polia:
+
+   - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+   - **isFRE** – Booleovský – skontroluje, či sa zobrazuje rozhranie prvého spustenia alebo bežné používateľské rozhranie.
+   - **status** – reťazec – stav ukončenia platobnej steny. Napríklad „initiated“, „paymentDone“, „provisionFailed“.
+   - **userDuration** – double – čas v milisekundách, ktorý používateľ strávil v platobnej stene
+  
+- **Office.iOS.Paywall.SKUChooser.BuyButtonTap** – údaje sa zhromažďujú, keď používateľ ťukne na tlačidlo Nákup/Kúpiť. Údaje sa používajú na meranie výkonu tlačidla a na zabezpečenie jeho očakávaného výkonu.
+
+   Zhromažďujú sa tieto polia:
+
+   - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+   - **isDefaultSKU** -logická hodnota – Ak používateľ kupuje produkt odporučený predvoleným zobrazením.
+   - **productId** – reťazec – identifikácia produktu z obchodu s aplikáciami, pri ktorých sa použilo tlačidlo Kúpiť.
+   - **toggleCount** – int – koľkokrát používateľ prepol medzi zobrazením rôznych produktov ešte pred ťuknutím na tlačidlo Kúpiť v aktuálnej relácii Paywall.
+
+- **Office.iOS.Paywall.SKUChooser.Stats** – zhromažďované údaje, aby sa zistilo, ako používateľ prešiel na výber jednotiek SKU, koľko času používateľ strávil na obrazovke výberu jednotiek SKU a prečo ukončil výber jednotiek SKU. Pomocou týchto informácií môžeme zabezpečiť, aby výber jednotky SKU fungoval podľa očakávaní a budeme môcť optimalizovať a vylepšiť skúsenosti koncových používateľov.
+
+   Zhromažďujú sa tieto polia:
+
+   - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+   - **exitReason** – reťazec – dôvod ukončenia výberu jednotky SKU. Napríklad „BuyButton“, „CloseButton“
+   - **isFRE** – boolovská hodnota – zobrazuje sa prostredie prvého spustenia alebo bežné používateľské rozhranie?
+   - **userDuration** – double – čas v milisekundách, ktorý používateľ strávil vo výbere SKU.
+
+- **Office.iOS.Paywall.FailedScreen.RetryButtonTap** – údaje zhromaždené, keď nákup/zriadenie/aktivácia zlyhali a používateľ ťukol na tlačidlo Skúsiť znova. Údaje sa používajú na riešenie problémov s chybovými scenármi nákupu a ich opravu, aby sa zabezpečil očakávaný výkon.
+
+   Zhromažďujú sa tieto polia:
+
+   - **failureReason** – reťazec – označuje, pre aké zlyhanie používateľ opakuje pokus, napríklad „provisioningFailed“, „purchaseFailed“, „activationFailed“.
+   - **productId** – reťazec – AppStore ID produktu, pre ktorý používateľ opakuje zlyhanú požiadavku
+
+- **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** – údaje zhromaždené, keď používatelia ťuknp na položku Zobraziť ďalšie výhody a zobrazia všetky služby, aplikácie a funkcie zahrnuté v nákupe. Musia rozbaliť sekcie s podrobnosťami o funkciách jednotlivých aplikácií. Táto udalosť zhromažďuje funkcie a aplikácie, ktoré rozšírili, spolu so stráveným časom. Údaje sa používajú na zabezpečenie toho, aby používateľské rozhranie ponúkané koncovým používateľom na oboznámenie sa s výhodami fungovalo podľa očakávaní. 
+
+   Zhromažďujú sa tieto polia:
+
+   - **appsExpanded** – reťazec – zoznam služieb alebo aplikácií oddelených čiarkami, pre ktoré sa rozbalili výhody.
+   - **productId** – reťazec – AppStore ID produktu, pre ktorý si používateľ prezerá ďalšie ponúkané výhody
+   - **userDuration** – double – čas v milisekundách, ktorý používateľ strávil na obrazovke Výhody.
+
+- **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** – táto udalosť sa zhromažďuje, keď používateľ ťukne na položku Zobraziť všetky výhody po úspešnom zakúpení a zobrazí aplikácie a funkcie zahrnuté v nákupe. Údaje sa používajú na meranie toho, či používateľské rozhranie funguje podľa očakávaní.
+
+   Zhromažďujú sa tieto polia:
+
+   - **productId** – reťazec – AppStore ID produktu, pre ktorý si používateľ prezerá všetky ponúkané výhody.
+
+- **Office.iOS.Paywall.SKUChooser.ProductSwitched** – telemetria používania na zobrazenie interakcie koncového používateľa s používateľským rozhraním, ktoré je k dispozícii na prepínanie medzi rôznymi jednotkami SKU a zabezpečenie očakávaného výkonu. 
+
+   Zhromažďujú sa tieto polia:
+
+  - **productId** – reťazec – ID produktu z App Store, ktorý si používateľ práve prepol na prezeranie z dostupných produktov vo výbere SKU.
+
+- **Office.iOS.Paywall.StoreKit.Response** – kritická technická telemetria, ktorá zaznamenáva výsledok pokusu o nákup, ktorý používateľ spustil manuálne, a odpoveď obchodu App Store na udalosť. Údaje sa používajú na meranie stavu pokusu o nákup a dôvodov zlyhania (ak nejaké sú) a na zabezpečenie toho, aby IAP a všetky vstupné body fungovali podľa očakávaní.
+
+   Zhromažďujú sa tieto polia:
+
+   - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+   - **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou obchodu s aplikáciami.
+   - **productId** – reťazec – len pre „MakePurchase“, „PendingPurchase“, ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka.
+   - **productsCount** – int – len pre „ProductsFetch“, počet produktov, ktoré vráti Store.
+   - **requestType** – reťazec – typ požiadavky StoreKit. Napríklad „ProductsFetch“, „PendingPurchase“
+   - **status** – reťazec – úspech alebo zlyhanie, označuje úspešnosť alebo zlyhanie požiadavky.
+
+- **Office.iOS.Paywall.Provisioning.Response** – kritická technická telemetria a zmluva so službou Microsoft Retail Federation Service (RFS) na zhromažďovanie poskytnutých informácií. RFS je interná služba používaná v rámci spoločnosti Microsoft na krížovú kontrolu nákupu. Používa sa na získanie stavu volania rozhrania API do služby RFS, čo by pomohlo pochopiť, že výkon integrácie je podľa očakávaní.  
+
+   Zhromažďujú sa tieto polia:
+
+   - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
+   - **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou poskytovania RFS.
+   - **productId** – reťazec – ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka
+   - **status** – reťazec – úspech alebo zlyhanie, označuje, či požiadavka bola úspešná alebo zlyhala
+
+
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
 Táto udalosť zachytáva údaje, ktoré pomáhajú monitorovať stav súčastí Dime. Napríklad v prípade toku nákupu v aplikácii, keď sa používateľ rozhodne zakúpiť si predplatné na Microsoft 365 v aplikácii balíka Office pre Android alebo v zariadeniach s Windowsom.
@@ -3496,29 +3582,6 @@ Táto udalosť zbiera ťuknutia bezplatných používateľov na prémiovú funkc
 Zhromažďujú sa tieto polia:
 
 - **featureId** – TCID pre prémiovú funkciu, na ktorú používateľ ťukol
-
-
-### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Kritická telemetria používania sa zhromažďuje na označenie toho, keď používateľ ťukne na tlačidlo Nákup/Kúpiť.  Údaje sa používajú na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
-
-Zhromažďujú sa tieto polia:
-
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-
-- **isDefaultSKU** -logická hodnota – Ak používateľ kupuje produkt odporučený predvoleným zobrazením.
-
-- **productId** – reťazec – identifikácia produktu z obchodu s aplikáciami, pri ktorých sa použilo tlačidlo Kúpiť
-
-- **toggleCount** – int – koľkokrát používateľ prepol medzi zobrazením rôznych produktov ešte pred ťuknutím na tlačidlo Kúpiť v aktuálnej relácii Paywall.
-
-### <a name="officeiospaywallsuccessscreenseeallbenefitsbuttontap"></a>Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
-
-Pomocou telemetrie zistíte, kedy používateľ klepne na položku „Zobraziť všetky výhody“ a po úspešnom nákupe si zobrazí aplikácie a funkcie zahrnuté v nákupe, ktorý práve vykonal. Tieto údaje sa používajú na pomoc pri vývoji budúcich vylepšení, aby sa minimalizovalo vyrušovanie používateľov počas aktualizácií aplikácie.
-
-Zhromažďujú sa tieto polia:
-
-- **productId** – reťazec – AppStore ID produktu, pre ktorý si používateľ prezerá všetky ponúkané výhody
 
 
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
@@ -3675,7 +3738,7 @@ Zhromažďujú sa tieto polia:
 
 - **ErrorType** – dôvod zlyhania, napríklad „AlreadyRedeemedByOther“
 
-- **InAFOFlow** – Boolovská hodnota signalizujúca, či ide o postup uplatňovania AFO.
+- **InAFOFlow** – Boolovská hodnota signalizujúca, či ide o postup uplatňovania aktivácie balíka Office.
 
 - **StatusCode** – jednoslovný výsledok volania služby, napríklad „Created“.
 
@@ -3831,6 +3894,107 @@ Táto udalosť sa spustí, ak z nejakého dôvodu nie je možné aktivovať pou�
 
 Táto udalosť nezhromažďuje žiadne polia.
 
+### <a name="officelicensingoobehandledigitalattachfailure"></a>Office.Licensing.OOBE.HandleDigitalAttachFailure
+
+Táto udalosť sa spustí, keď sa pri kontrole služby (pozri Office.Licensing.OOBE.SearchForDigitalAttach) v tomto zariadení nenašla nárokovateľná ponuka digitálneho priloženia. Na základe rôznych podmienok zariadenia sa používateľom zobrazia rôzne dialógové okná. Táto udalosť zapisuje rôzne scenáre, ako riešiť zlyhanie digitálneho priloženia.
+
+Zhromažďujú sa tieto polia:
+
+- **Activity_Result_Tag** nám hovorí, ako premiestnime používateľa do rôznych chybových štátov.
+   - 0x222e318f – Mali by sme stále vyhľadávať aktiváciu ponuky balíka Office.
+   - 0x222e318e – V tejto relácii sa vrátime do režimu OEM, ak toto zariadenie neobsahuje žiadnu ponuku digitálneho priloženia.
+   - 0x222e318d – Bez internetového pripojenia, čo povedie k zobrazeniu dialógového okna NoInternetConnectivity používateľovi 
+   - 0 – Používateľovi sa zobrazí rôzne používateľské rozhranie chyby na základe konkrétneho chybového kódu.
+
+- **Data_DigitalAttachErrorType** – informuje nás o tom, aký je konkrétny chybový kód z volania služby.
+
+- **Data_FallbackFlight** – informuje nás, či je skupina funkcií UseAFOAsFallBack zapnutá alebo nie.
+
+
+### <a name="officelicensingoobehandledigitalattachsuccess"></a>Office.Licensing.OOBE.HandleDigitalAttachSuccess
+
+Táto udalosť sa spustí, keď kontrola služby nájde v tomto zariadení nárokovateľnú ponuku digitálneho priloženia. Na základe rôznych podmienok zariadenia sa používateľom zobrazia rôzne dialógové okná. Táto udalosť zapisuje rôzne scenáre, ako riešiť úspešné digitálne priloženie.
+
+Zhromažďujú sa tieto polia:
+
+- **Activity_Result_Tag** – informuje nás o tom, ako zvládame scenáre úspešného digitálneho priloženia.
+   - 0 – Sme schopní automaticky načítať identitu a používateľovi sme ukázali používateľské rozhranie Máte Office (s kontom).
+   - 0x222e3191 - Nie je možné automaticky načítať identitu, preto používateľovi ukážeme používateľské rozhranie Máte Office (bez konta).
+   - 0x222e3193 – Používateľovi sa zobrazilo používateľské rozhranie Máte Office (bez konta) alebo nie je potrebné používateľovi zobrazovať používateľské rozhranie Máte Office, pretože ide o ponuku založenú na zariadení.
+
+- **Data_IsClaimTypeDevice** – informuje nás, či je typ nárokovania ponuky digitálneho priloženia založený na zariadení.
+
+### <a name="officelicensingoobepopulatedigitalattachoffersignindex"></a>Office.Licensing.OOBE.PopulateDigitalAttachOfferSignInDEX
+
+Výrobcovia pôvodného vybavenia (OEM) predávajú počítače, ktoré sú k dispozícii s balíkom Office (ročné alebo trvalé predplatné), za ktoré sa platí, keď si zákazník kúpi počítač. Táto udalosť sleduje, keď sa pre zariadenie nájde nárok na balík Office vopred a používateľ je už prihlásený pomocou konta Microsoft, aby sme mohli monitorovať stav systému a služieb.
+
+Zhromažďujú sa tieto polia:
+
+- **Data_ExpirationDate** – oznámi nám dátum uplynutia platnosti ponuky predplatného
+
+- **Data_IsSubscription** – informuje nás o tom, či je ešte nenárokovaný produkt predplatná jednotka SKU alebo trvalá jednotka SKU
+
+- **Data_ProductName** – oznámi nám názov produktu ponuky digitálneho priloženia
+
+
+### <a name="officelicensingoobesearchfordigitalattach"></a>Office.Licensing.OOBE.SearchForDigitalAttach
+
+Výrobcovia pôvodného vybavenia (OEM) predávajú počítače, ktoré sú k dispozícii s balíkom Office (ročné alebo trvalé predplatné), za ktoré sa platí, keď si zákazník kúpi počítač. Počítače, ktoré sú nastavené s určitým registračným kľúčom (OOBEMode: OEMTA), môžu mať digitálne priradenú ponuku Office. Po spustení balíka Office vykonávame kontroly služieb, aby sme zistili, či sa nájde digitálne priložená ponuka balíka Office. Táto aktivita je vybavená na sledovanie tejto činnosti. 
+
+Zhromažďujú sa tieto polia:
+
+- **Activity_Result_Tag** – informuje nás o celkovom výsledku kontroly tejto služby. 
+   - 0x222e318c – skupina funkcií digitálneho priloženia je vypnutá, takže sa nespustí žiadna kontrola služieb.
+   - 0x222e318b – klient nemá internet, takže sa nespustí žiadna kontrola služieb.
+   - 0x222e318a – našla sa uplatniteľná ponuka digitálnej prílohy
+   - 0x222e3189 – našla sa neuplatniteľná ponuka digitálnej prílohy
+
+- **Data_EnableDAFlight** – informuje nás, či je skupina funkcií digitálneho priloženia, ktorá umožňuje túto službu skontrolovať, zapnutá alebo nie.
+
+
+### <a name="officelicensingoobeshowtouchlessattachfailuredialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
+
+Výrobcovia pôvodného vybavenia (OEM) predávajú počítače, ktoré sú k dispozícii s balíkom Office (ročné alebo trvalé predplatné), za ktoré sa platí, keď si zákazník kúpi počítač. Táto udalosť sa spustí, keď sa v rámci uplatnenia digitálnej prílohy a toku aktivácie vyskytne chyba pre počítače OEM, ktoré majú nárok na balík Office z výroby.  Tieto údaje používame na monitorovanie stavu systémov a služieb a riešenie problémov súvisiacich s tokom aktivácie balíka Office (OEM).
+
+Zhromažďujú sa tieto polia:
+
+- **Data_Continue** – informuje nás, či používateľ klikne na tlačidlo Pokračovať v dialógovom okne.
+
+- **Activity_Result_Tag** – informuje nás o tlačidle, na ktoré používateľ klikol v dialógovom okne.
+   - 0x222e319d – používateľ klikne na tlačidlo Opakovať v dialógovom okne
+   - 0x222e319c – používateľ klikne na tlačidlo Pokračovať v dialógovom okne
+   - 0 – používateľ ukončí dialógové okno
+
+- **Data_IsForDigitalAttach** – informuje nás, s ktorou platformou a pracovným postupom používateľ pracuje – staršia verzia (aktivácia balíka Office (AFO)) alebo moderná verzia (digitálne priloženie).
+
+- **Data_Retry** – informuje nás, či používateľ klikne na tlačidlo Opakovať v dialógovom okne.
+
+
+### <a name="officelicensingoobeshowtouchlessattachofferdialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
+
+Výrobcovia pôvodného vybavenia (OEM) predávajú počítače, ktoré sú k dispozícii s balíkom Office (ročné alebo trvalé predplatné), za ktoré sa platí, keď si zákazník kúpi počítač. Táto udalosť sleduje, keď sa pre zariadenie nájde nárok na balík Office vopred a používateľ nie je prihlásený pomocou konta Microsoft, aby sme mohli monitorovať stav systému a služieb.
+
+Zhromažďujú sa tieto polia:
+
+- **Activity_Result_Tag** – informuje nás, či bola pre používateľa nájdená identita
+   - 0x222e3194 – Nie je možné získať identitu používateľa (zrušené prihlásenie alebo overenie zlyhalo).
+   - 0 – Máme identitu od používateľa.
+
+- **Data_ExpirationDate** – oznámi nám dátum uplynutia platnosti ponuky predplatného
+
+- **Data_IsCentennial** – informuje nás, či je aplikácia balíka Office spustená na platforme Centennial
+
+- **Data_IsForDigitalAttach** – informuje nás, či sa toto dialógové okno spúšťa z toku digitálnej prílohy alebo toku aktivácie balíka Office.
+
+- **Data_IsSubscription** – informuje nás o tom, či je ešte nenárokovaný produkt predplatná jednotka SKU alebo trvalá jednotka SKU
+
+- **Data_OExType** – informuje nás, či používateľ zatvorí dialógové okno po kliknutí na prepojenie ChangeAccount
+
+- **Data_ProductName** – oznámi nám názov produktu ponuky digitálneho priloženia
+
+- **Data_UseInAppRedemption** – informuje nás, či používame uplatnenie webového uplatnenia v aplikácii – je to relevantné len pre tok aktivácie balíka Office.
+
+
 ### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
 
 Používateľom s predinštalovaným balíkom Office v nových počítačoch, ktorí nemajú nárok na Office, sa zobrazí dialógové okno, v ktorom môžu vyskúšať, kúpiť si alebo zadať kód Product Key na získanie licencie. Táto udalosť zachytáva akciu používateľa v dialógovom okne. Táto udalosť sa používa na sledovanie akcie používateľa vykonanej v dialógovom okne, ktoré sa zobrazilo používateľom bez nároku na Office, ak bol Office predinštalovaný v zariadení, a pomáha určiť, či používateľ má alebo nemá platnú licenciu.
@@ -3965,7 +4129,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingtelemetryflowshowafodialogs"></a>Office.Licensing.TelemetryFlow.ShowAFODialogs
 
-Po úspešnom získaní platného PIN pre Office naviazaného na počítač s predinštalovaným balíkom Office sa používateľovi zobrazí dialógové okno prihlásenia alebo dialógové okno uplatnenia.  Po uplatnení PIN sa zobrazí dialógové okno zmluvy EULA.  V rámci modernizácie AFO sme tieto dve dialógové okná aktualizovali tak, aby obsahovali viac informácií o produkte balíka Office, ktorý sa dodáva s počítačom.  Táto telemetria slúži na sledovanie, či naša funkcia úspešne znižuje problémy používateľov pri uplatňovaní ich produktu sledovaním priebehu a výstupných bodov procesu uplatnenia (ktoré dialógové okno bolo zrušené).
+Po úspešnom získaní platného PIN pre Office naviazaného na počítač s predinštalovaným balíkom Office sa používateľovi zobrazí dialógové okno prihlásenia alebo dialógové okno uplatnenia.  Po uplatnení PIN sa zobrazí dialógové okno zmluvy EULA.  V rámci modernizácie aktivácie balíka Office sme tieto dve dialógové okná aktualizovali tak, aby obsahovali viac informácií o produkte balíka Office, ktorý sa dodáva s počítačom.  Táto telemetria slúži na sledovanie, či naša funkcia úspešne znižuje problémy používateľov pri uplatňovaní ich produktu sledovaním priebehu a výstupných bodov procesu uplatnenia (ktoré dialógové okno bolo zrušené).
 
 Zhromažďujú sa tieto polia:
 
@@ -3981,9 +4145,9 @@ Zhromažďujú sa tieto polia:
 
 - **DialogEULA** – signalizuje, že sme zobrazili dialógové okno Prijať zmluvu EULA. 
 
-- **DialogRedemption** – signalizuje, že sme zobrazili dialógové okno uplatňovania AFO.
+- **DialogRedemption** – signalizuje, že sme zobrazili dialógové okno uplatňovania aktivácie balíka Office.
 
-- **DialogSignIn** – signalizuje, že sme zobrazili dialógové okno prihlásenia do AFO.
+- **DialogSignIn** – signalizuje, že sme zobrazili dialógové okno prihlásenia pre aktiváciu balíka Office.
 
 - **EmptyRedemptionDefaults** – signalizuje, že sme nedokázali načítať predvolené informácie o uplatnení.
  
@@ -3995,7 +4159,7 @@ Zhromažďujú sa tieto polia:
 
 - **OExType** – typ chyby, ktorú získame, keď sa zrušilo dialógové okno prihlásenia identity.
 
-- **Tag** – označuje, v ktorom kroku používateľ ukončil proces uplatnenia AFO. Možné značky:
+- **Tag** – označuje, v ktorom kroku používateľ ukončil proces uplatnenia aktivácie balíka Office. Možné značky:
     - 0x0311380b    Používateľ zrušil dialógové okno prihlásenia identity z dialógového okna uplatnenia
     - 0x0311380c    Nepodarilo sa automaticky načítať identitu po prihlásení používateľa z dialógového okna uplatnenia
     - 0x03113810    Nepodarilo sa načítať demografické informácie konta (kód krajiny, jazyk, menu, ponuku skúšobnej verzie a marketingové preferencie)
@@ -4010,13 +4174,13 @@ Zhromažďujú sa tieto polia:
     - 0x2370e3c1      Prejsť na web pre uplatnenie PIN
     - 0x2370e3a1      Prejsť na web pre uplatnenie PIN
     - 0x2370e3c0      Sekvencia dialógových okien je v slučke kvôli tomu, že používateľ prechádzal dopredu a dozadu v postupnosti dialógových okien
-    - 0x2370e3a3      Používateľ klikol na možnosť „Teraz nie“, ktorou sa preskočí ponuka AFO pre túto reláciu.
-    - 0x2370e3a2      Používateľ klikol na hypertextové prepojenie „Nikdy mi to nezobrazovať“, ktorým sa zakáže ponuka AFO.
+    - 0x2370e3a3      Používateľ klikol na možnosť „Teraz nie“, ktorou sa preskočí ponuka aktivácie balíka Office pre túto reláciu.
+    - 0x2370e3a2      Používateľ klikol na hypertextové prepojenie „Nikdy mi to nezobrazovať“, ktorým sa zakáže ponuka aktivácie balíka Office.
 
 
 - **UseInAppRedemption** – označuje, či k uplatneniu dochádza v aplikácii alebo či k uplatneniu získaného PIN dochádza na webe (vopred vyplnené).
 
-- **UseModernAFO** – označuje, či používame nové alebo staré prostredie AFO.
+- **UseModernAFO** – označuje, či používame nové alebo staré prostredie aktivácie balíka Office.
 
 ### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
 
@@ -4026,7 +4190,7 @@ Zhromažďujú sa tieto polia:
 
 - **ActiveView** – označuje ID dialógového okna zobrazeného používateľovi
 
-- **CurrentOOBEMode** – označuje režim predinštalovania (režim OOBE ako AFO, OEM atď.)
+- **CurrentOOBEMode** – označuje režim predinštalovania (režim OOBE ako aktivácia balíka Office, OEM atď.)
 
 - **NotInitializedBeforeWhileAdding** – toto pole je len informačné a označuje, či sa udalosť pridala do mapy manažéra telemetrie bez výslovnej registrácie
 
@@ -10704,6 +10868,55 @@ Zhromažďujú sa tieto polia:
 - **SessionId** – identifikátor relácie
 
 
+### <a name="installedapprespondedcoreappleevent"></a>installedapp.respondedcoreappleevent
+
+Táto udalosť označuje, že služba Microsoft Auto Update (MAU) prijala kód odpovede udalosti Apple do registrovanej aplikácie, aby aplikáciu ukončila s cieľom pokračovať s jej čakajúcou aktualizáciou. Táto udalosť sa momentálne používa na pomoc pri vývoji budúceho vylepšenia s cieľom minimalizovať rušenie používateľa počas aktualizácií aplikácie. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppID** – identifikátor pre aplikáciu, ktorá sa aktualizuje
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppleEventClass** – označuje typ odosielanej alebo potvrdenej udalosti
+
+- **AppleEventID** – jednoznačný identifikátor pre odosielanú alebo uznanú udalosť
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowToCheck** – ako sa kontroluje nastavenie
+
+- **Payload** – obsahuje počet opakovaní
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
+- **UpdateID** – identifikátor aktualizácie.
+
+
 ### <a name="installedappsendcoreappleevent"></a>installedapp.sendcoreappleevent
 
 Táto udalosť označuje, že služba Microsoft Auto Update (MAU) odoslala udalosť Apple do registrovanej aplikácie, aby aplikáciu ukončila s cieľom pokračovať s jej čakajúcou aktualizáciou. Táto udalosť sa momentálne používa na pomoc pri vývoji budúceho vylepšenia s cieľom minimalizovať rušenie používateľa počas aktualizácií aplikácie. 
@@ -15764,39 +15977,6 @@ Táto udalosť sa zhromažďuje pre aplikácie balíka Office spustené v rámci
 Zhromažďujú sa tieto polia:
 
 - **Data_EventId** – Kód označujúci preferenciu zhromažďovania diagnostických údajov vybratú používateľom.
-
-### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
-
-Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného. Používa sa na uľahčenie zapisovania transakcií do denníka a poskytovania predplatného na budúce použitie a interné zosúladenie.
-
-Zhromažďujú sa tieto polia:
-
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-
-- **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou poskytovania RFS.
-
-- **productId** – reťazec – ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka
-
-- **status** – reťazec – úspech alebo zlyhanie, označuje, či požiadavka bola úspešná alebo zlyhala
-
-
-### <a name="officeiospaywallstorekitresponse"></a>Office.iOS.Paywall.StoreKit.Response
-
-Údaje sa zhromažďujú ako kritická technická telemetria na zaznamenanie výsledku pokusu o nákup manuálne spusteného používateľom. Telemetria produktu sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného.
-
-Zhromažďujú sa tieto polia:
-
-- **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-
-- **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou obchodu s aplikáciami
-
-- **productId** – reťazec – len pre „MakePurchase“, „PendingPurchase“, ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka.
-
-- **productsCount** – int – len pre „ProductsFetch“, počet produktov, ktoré vráti Store.
-
-- **requestType** – reťazec – typ požiadavky StoreKit. Napríklad „ProductsFetch“, „PendingPurchase“
-
-- **status** – reťazec – úspech alebo zlyhanie, označuje úspešnosť alebo zlyhanie požiadavky
 
 ### <a name="officeonenotegetsharepointidsfordocument"></a>Office.OneNote.GetSharePointIdsForDocument
 
