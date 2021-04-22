@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: d651fb94cb031a0fc1a154201e2875c28f979f2a
-ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
+ms.openlocfilehash: 8a5f236c3dbb2cb3bb61a9a987f764880987a189
+ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51181746"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51914960"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -43,6 +43,7 @@ Bing využívajú nasledovné funkcie v Outlooku pre iOS a Android:
 - **Návrhy polohy:**   Keď do položky kalendára pridáte verejné miesto s adresou, do poľa Miesto sa zahrnie celá adresa.
 - **Zaujímavé kalendáre:**   Môžete sa [prihlásiť na odber](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) kalendárov o svojich obľúbených športových tímoch alebo televíznych seriáloch.
 - **Odhady časov cestovania na karte Nadchádzajúce:** Vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). V Outlooku pre Android táto možnosť vyžaduje, aby Mapy Bing poskytli odhadované časy cestovania.
+- **Počasie v kalendári:** [Predpoveď počasia](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) pre vašu aktuálne lokalitu sa zobrazí v hornej časti obrazovky kalendára.
 
  Licencia na tieto funkcie využívajúce Bing sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a vzťahuje sa na ne [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v Aplikáciách Microsoft 365 pre veľké organizácie, sa odošlú do služby Microsoft Bing. Nie sú vám prepojené organizáciou Bing.
 

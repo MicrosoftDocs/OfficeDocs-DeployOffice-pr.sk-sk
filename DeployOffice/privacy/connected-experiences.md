@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Tento článok poskytuje správcom balíka Office informácie o online funkciách v Office, ako sú napríklad funkcie na analýzu obsahu alebo na sťahovanie online obsahu.
 hideEdit: true
-ms.openlocfilehash: d7c4af6af94025136ab09f0709d8c65382f456dd
-ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
+ms.openlocfilehash: c1fb64bc45ed9e97cde37541dad85162a5a3699c
+ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51181277"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51916102"
 ---
 # <a name="connected-experiences-in-office"></a>Online funkcie v Office
 
@@ -36,16 +36,16 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na analýzu obsahu 
 | **Názov**   | **Ďalšie informácie**   |
 | ----------- | ------------------ |
 | *3D mapy*\*    | [Začíname pracovať s 3D mapami](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| Analýza údajov (predtým s názvom Návrhy) | [Analýza údajov v Exceli](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 |Automatické opravy|[Zarovnajte svoj obsah rýchlo a ľahko pomocou funkcie Automatické opravy](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Automatický alternatívny text   | [Všetko, čo potrebujete na písanie efektívneho alternatívneho textu](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Odporúčania pre graf (Excel pre web)|[Vytvorenie grafu s odporúčanými grafmi](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Doplnky pre poznámkový blok pre učebné predmety (OneNote)|[Začíname s onenotovým poznámkovým blokom pre učebné predmety: návod pre učiteľov](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Typy údajov| [Typy údajov Exceli: Akcie a Geografia](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 |Návrhár (Word pre web)|[Vytváranie úhľadnejších dokumentov pomocou Návrhára](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
-| Diktovanie  | [Diktovanie dokumentov vo Worde](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
+| Diktovanie  | [Diktovanie Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Editor<sup>1</sup> |[Microsoft Editor kontroluje gramatiku a ďalšie možné chyby v dokumentoch, e-mailoch a na webe](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 |Priateľské odkazy v Outlooku |[Priateľskejšie názvy odkazov v e-maile](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
-| Návrhy     | [Návrhy v Exceli](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Konvertovanie písania rukou na text, na tvar, na matematický výraz | [Konvertovanie textu písaného rukou na tvary, text alebo matematický výraz v PowerPointe pre Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Vloženie údajov z obrázka| [Vloženie údajov z obrázka](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 |Výučbové nástroje|[Výučbové nástroje](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
@@ -103,6 +103,7 @@ V nasledujúcej tabuľke sa nachádza zoznam online funkcií na sťahovanie onli
 | Šablóny  | [Stiahnutie bezplatných, vopred vytvorených šablón](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 |*Odhady časov cestovania na karte Nadchádzajúce*\*|Ak sa rozhodnete povoliť Outlooku pre iOS a Android prístup k vašej polohe, na karte [Nadchádzajúce](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) v hornej časti priečinka doručenej pošty sa zobrazí odhad času cestovania na ďalšiu udalosť.<br/><br/> [Čo sú oznámenia Čas na odchod?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Panel počasia*\* (Outlook)| [Zmena mesta, v ktorom sa bude v kalendári na paneli počasia sledovať počasie](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+|*Počasie v kalendári*\* (Outlook Mobile)|[Ako zapnem počasie v kalendári v službe Outlook Mobile?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
 
 > [!NOTE]
 >\*Keď sú používatelia prihlásení pomocou pracovného alebo školského konta, online funkcie uvedené vyššie kurzívou sú voliteľné a poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [prehlásenia o ochrane osobných údajov](https://privacy.microsoft.com/), pričom sa môžu uplatňovať aj ďalšie podmienky. Ďalšie informácie sa nachádzajú v téme [Prehľad voliteľných online funkcií v balíku Office](optional-connected-experiences.md). Ak ste správca, tieto online funkcie je možné spravovať pomocou ovládacích prvkov ochrany osobných údajov pre online funkcie alebo pomocou nastavenia politiky *Povoliť používanie dodatočných voliteľných online funkcií v Office*.
