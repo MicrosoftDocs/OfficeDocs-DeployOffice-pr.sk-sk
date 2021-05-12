@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: d71859f75046ad13901aae1b381bf97227f05383
-ms.sourcegitcommit: 8982800d8026ec2f82e8389b7dfa762381258874
+ms.openlocfilehash: d3e5ca5381c9fb68a1e05fca703729e282593ded
+ms.sourcegitcommit: cb1f6e3ba1336fc1a8cdca927f545dc43fd8e829
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51891219"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52308160"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -47,7 +47,7 @@ Nasledujúca tabuľka obsahuje zoznam nevyhnutných služieb pre Office a ich po
 
 | **Služba**  | **Popis**  |
 | ------ | ---- |
-| [Overovanie](#authentication-events) | Overovanie je služba v rámci viacerých platforiem, ktorá potvrdzuje identitu používateľa pre Office.  Vyžaduje sa na to, aby ste sa mohli prihlásiť do balíka Office, aktivovať licenciu na Office a pristupovať k súborom uloženým v cloude a zároveň poskytuje konzistentné používanie v rámci rôznych relácií balíka Office a zariadení.    |
+| [Overovanie](#authentication-events) | Overovanie je služba v rámci viacerých platforiem, ktorá potvrdzuje identitu používateľa pre Office. Vyžaduje sa na to, aby ste sa mohli prihlásiť do balíka Office, aktivovať licenciu na Office a pristupovať k súborom uloženým v cloude a zároveň poskytuje konzistentné používanie v rámci rôznych relácií balíka Office a zariadení.    |
 | [Klikni a spusti](#click-to-run-events) | Klikni a spusti je technológia inštalácie, ktorá sa používa na inštaláciu a aktualizáciu balíka Office vo Windowse. Kontroluje dostupnosť nových verzií balíka Office a ak je k dispozícii nová verzia, stiahne a nainštaluje ju. Služba Klikni a spusti rozpoznáva potrebu, sťahuje a inštaluje aktualizácie balíka Office vrátane aktualizácií zabezpečenia.     |
 | [Rozšírená konfiguračná služba (ECS)](#enhanced-configuration-service-ecs-events) | Služba ECS umožňuje spoločnosti Microsoft meniť konfiguráciu inštalácií balíka Office bez nutnosti opätovného nasadenia balíka Office. Používa sa na riadenie postupného nasadzovania funkcií alebo aktualizácií, pričom vplyv nasadenia sa monitoruje zo zhromaždených diagnostických údajov. Používa sa aj na zmiernenie problémov funkcie alebo aktualizácie so zabezpečením a výkonom. Okrem toho služba ECS podporuje zmeny konfigurácie týkajúce sa diagnostických údajov na pomoc pri zabezpečovaní zhromažďovania príslušných udalostí. |
 | [Licenčná služba](#licensing-events)     | Licenčná služba je cloudová služba, ktorá podporuje aktiváciu balíka Office pre nové inštalácie a uchováva licenciu v zariadeniach po aktivovaní balíka Office. Registruje každé zariadenie používateľa a aktivuje Office, kontroluje stav predplatného na Office a spravuje kódy Product key.    |
@@ -898,7 +898,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
-Táto udalosť sa zaznamená, keď sa v zozname kont poskytovaných súčasťou TokenSharingManager nájde konto s platným tokenom obnovenia.  Tento scenár sa týka jediného prihlásenia (SSO).
+Táto udalosť sa zaznamená, keď sa v zozname kont poskytovaných súčasťou TokenSharingManager nájde konto s platným tokenom obnovenia. Tento scenár sa týka jediného prihlásenia (SSO).
  
 Zhromažďujú sa tieto polia:
  
@@ -1168,7 +1168,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -1266,7 +1266,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunscenarioinstalltaskfinalintegrate"></a>Office.ClickToRun.Scenario.InstallTaskFinalintegrate
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor balíka Office inštaluje licencie a nastavenia databázy Registry. Používa sa na meranie úspechu alebo neúspechu inštalácie balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor inštaluje licencie a nastavenia databázy Registry. Používané na meranie úspechu/neúspechu inštalácie balíka Office.
 
 Zhromažďujú sa tieto polia:
 
@@ -1320,7 +1320,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -1342,7 +1342,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunscenarioinstalltaskfonts"></a>Office.ClickToRun.Scenario.InstallTaskFonts
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor balíka Office inštaluje písma. Používa sa na meranie úspechu alebo neúspechu inštalácie balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor inštaluje písma. Používané na meranie úspechu/neúspechu inštalácie balíka Office.
 
 Zhromažďujú sa tieto polia:
 
@@ -1418,7 +1418,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunscenarioinstalltaskinitupdates"></a>Office.ClickToRun.Scenario.InstallTaskInitupdates
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor balíka Office vytvára nastavenia na správne fungovanie aktualizácií. Používa sa na meranie úspechu alebo neúspechu inštalácie balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátorvytvára nastavenia pre správne fungovanie aktualizácií. Používané na meranie úspechu/neúspechu inštalácie balíka Office.
 
 Zhromažďujú sa tieto polia:
 
@@ -1472,7 +1472,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -1548,7 +1548,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -1624,7 +1624,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -1700,7 +1700,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -1852,7 +1852,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -1874,7 +1874,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunscenarioinstalltaskstream"></a>Office.ClickToRun.Scenario.InstallTaskStream
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor balíka Office sťahuje nové súbory pre balík Office. Používa sa na meranie úspechu alebo neúspechu inštalácie balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor sťahuje nové súbory pre balík Office. Používané na meranie úspechu/neúspechu inštalácie balíka Office.
 
 Zhromažďujú sa tieto polia:
 
@@ -1928,7 +1928,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2004,7 +2004,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2080,7 +2080,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2156,7 +2156,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2232,7 +2232,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2254,7 +2254,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunscenariorepairtaskremoveinstallation"></a>Office.ClickToRun.Scenario.RepairTaskRemoveinstallation
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď klient opravy balíka Office odstraňuje balík Office zo zariadenia na na prípravu počítača na preinštalovanie alebo opravu. Používa sa na meranie úspechu alebo neúspechu opravy balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď klient opravy balíka Office odstraňuje balík Office zo zariadenia na prípravu počítača na preinštalovanie alebo opravu. Používa sa na meranie úspechu alebo neúspechu opravy balíka Office.
 
 Zhromažďujú sa tieto polia:
 
@@ -2308,7 +2308,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2384,7 +2384,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2460,7 +2460,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2546,7 +2546,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2708,7 +2708,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2796,7 +2796,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -2872,7 +2872,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
   - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
@@ -3053,7 +3053,7 @@ Táto udalosť nahlasuje akciu, ktorá vyvodzuje záver zo vstupu získaného po
 
 ### <a name="officeclicktorununiversalbootstrappercollectembeddedsignature"></a>Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
 
-Táto udalosť nahlasuje akciu, ktorá číta označený vstup z vloženého podpisu súboru exe.  Ide o neoverený koncept, ktorý predchádzajúca iterácia súboru setup.exe neimplementovala a na ktorý sa spoliehame pri prenose voľby používateľa týkajúcej sa produktu/jazyka/bitovej verzie z webovej stránky do procesu v rámci súboru setup.exe.
+Táto udalosť nahlasuje akciu, ktorá číta označený vstup z vloženého podpisu súboru exe. Ide o neoverený koncept, ktorý predchádzajúca iterácia súboru setup.exe neimplementovala a na ktorý sa spoliehame pri prenose voľby používateľa týkajúcej sa produktu/jazyka/bitovej verzie z webovej stránky do procesu v rámci súboru setup.exe.
  
 - **ErrorCode** – celé číslo súvisiace s nespracovanou výnimkou
 
@@ -3277,7 +3277,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalluishown"></a>Office.Android.DocsUI.PaywallControl.PaywallUIShown
 
-Kritická telemetria používania pre prípad, keď sa používateľovi zobrazí ovládací prvok Paywall. Používa sa na vysvetlenie skúsenosti používateľa pri nákupe v rámci aplikácie a optimalizovanie toho istého pre budúce verzie.
+Telemetria kritického používania sa pre prípady, keď sa používateľovi zobrazí ovládací prvok platobnej brány. Používa sa na vysvetlenie skúsenosti používateľa pri nákupe v rámci aplikácie a optimalizovanie toho istého pre budúce verzie.
 
 Zhromažďujú sa tieto polia:
 
@@ -3644,7 +3644,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingdialogswebviewdialoghandleerrornotification"></a>Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
  
-Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že došlo k pokusu o načítanie prostredia nákupu v rámci aplikácie, ale vyskytla sa chyba, v dôsledku ktorej sa dialógové okno nezobrazilo. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že došlo k pokusu o načítanie prostredia nákupu v rámci aplikácie, ale vyskytla sa chyba, ktorá spôsobila, že dialógové okno sa nezobrazilo. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
  
 Zhromažďujú sa tieto polia:
   
@@ -3652,7 +3652,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingdialogswebviewdialogpreload"></a>Office.Licensing.Dialogs.WebViewDialog.Preload
  
-Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že prostredie nákupu v rámci aplikácie sa načítava na pozadí. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že prebieha načítanie prostredia nákupu v rámci aplikácie na pozadí. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
  
 Zhromažďujú sa tieto polia:
 
@@ -3660,7 +3660,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingdialogswebviewdialogshow"></a>Office.Licensing.Dialogs.WebViewDialog.Show
  
-Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že prostredie nákupu v rámci aplikácie sa zobrazuje používateľovi. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie.  
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že načítanie prostredia nákupu v rámci aplikácie sa zobrazuje používateľovi. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie.  
 
 Zhromažďujú sa tieto polia:
 
@@ -3685,7 +3685,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
-Zhromažďuje sa, keď sa používateľovi zobrazí dialógové okno uplynutia platnosti s oznámením, že platnosť licencie uplynula. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Táto udalosť sa zhromažďuje, keď sa používateľovi zobrazí dialógové okno o uplynutí platnosti licencie. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -3716,6 +3716,29 @@ Túto udalosť zhromažďujeme, keď používateľ nastavuje zariadenie a volá 
 Zhromažďujú sa tieto polia:
 
 - **EntitlementCount** – Počet nárokov používateľa
+
+
+### <a name="officelicensinggetnextuserlicense"></a>Office.Licensing.GetNextUserLicense
+
+Táto udalosť sa spustí pri získavaní licencie pre vybrané oprávnenie balíka Office na základe používateľa počas prvého spustenia aktivácie. Tieto údaje používame na monitorovanie stavu systémov a služieb a riešenie problémov.
+
+Zhromažďujú sa tieto polia:
+
+- **Activity_Success** – boolovská hodnota: informuje nás, či sme úspešne získali licenciu na aktiváciu zariadenia v aplikácii balíka Office.
+
+- **Data_AllowNULPerpetual** – boolovská hodnota: informuje nás, či je zapnutá skupina funkcií na povolenie vNext Perpetual.
+
+- **Data_AttemptNulReactivation** – boolovská hodnota: informuje nás, či ide o scenár opätovnej aktivácie.
+
+- **Data_CurrentMode** – 0 znamená SPP (staršia verzia postupu licencovania), 2 znamená vNext (moderný postup licencovania)
+
+- **Data_HasError** – boolovská hodnota: informuje nás, či sme narazili na chybu pri získavaní licencie na vybrané oprávnenie na základe používateľa.
+
+- **Data_IsSubscription** – boolovská hodnota: informuje nás, či je opätovná aktivácia určená pre predplatné balíka Office.
+
+- **Data_NewMode** – 0 znamená SPP (staršia verzia postupu licencovania), 2 znamená vNext (moderný postup licencovania) Najčastešie by sme mali očakávať hodnotu 2.
+
+- **Data_SkuToSkuNeeded** – boolovská hodnota: informuje nás, či by sme mali uskutočniť konverziu SKU na SKU kvôli tomu, že SKU balíka Office sa nezhoduje s nainštalovanou jednotkou Office SKU.
 
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
@@ -3774,7 +3797,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
-V prípade, že sa vyskytnú problémy s pracovným postupom aktivácie, spustíme sprievodcu licenciami a odošleme tento signál na označenie toho istého. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+V prípade problémov s postupom aktivácie sa spustí licenčný sprievodca a odošle sa signál signalizujúci túto skutočnosť. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -5333,7 +5356,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
 
-Táto udalosť označuje, že pri vyhľadávaní aktualizácií sa nenašli žiadne aktualizácie, pretože aplikácie v zariadení sú aktuálne.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
+Táto udalosť označuje, že pri vyhľadávaní aktualizácií sa nenašli žiadne aktualizácie, pretože aplikácie v zariadení sú aktuálne. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
 
 Zhromažďujú sa tieto polia:
 
@@ -15908,7 +15931,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="onenotesyncfirstrunerror"></a>OneNote.Sync.FirstRunError
  
-Táto udalosť sa zaznamenáva v prípade zlyhania synchronizácie rýchlych poznámok pre používateľa počas prvého spustenia v zariadení.  Týka sa scenára prvého spustenia.
+Táto udalosť sa zaznamenáva v prípade zlyhania synchronizácie rýchlych poznámok pre používateľa počas prvého spustenia v zariadení. Týka sa scenára prvého spustenia.
  
 Zhromažďujú sa tieto polia:
  
@@ -15934,6 +15957,10 @@ Zhromažďujú sa tieto polia:
 
 - **application** – aplikácia spustená cez priame prepojenie, napríklad Teams alebo Skype for Business
 
+- **context** – prostredie v aplikácii, na ktoré sa prejde, napr. office_union – word, office_union – excel a podobne.
+
+- **source** – pôvod akcie, napríklad iniciované používateľom, automaticky klientom a podobne.
+
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
 
@@ -15953,7 +15980,7 @@ Zhromažďujú sa tieto polia:
 
 *[Táto udalosť sa predtým nazývala Office.Android.DocsUI.Views.PaywallSessionData.]*
 
-Metaúdaje na základe relácie, keď sa používateľovi zobrazí používateľské rozhranie Paywall Spoločnosť Microsoft použije túto možnosť na získanie používateľskej cesty a informácií o používaní zariadení a verzií operačného systému, ktoré používateľ používa, aby mohla prijímať rozhodnutia o investíciách do zlepšovania používateľských skúseností v týchto oblastiach.
+Metaúdaje na základe relácie, keď sa používateľovi zobrazí používateľské rozhranie Paywall. Spoločnosť Microsoft použije túto možnosť na získanie používateľskej cesty a informácií o používaní zariadení a verzií operačného systému, ktoré používateľ používa, aby mohla prijímať rozhodnutia o investíciách do zlepšovania používateľských skúseností v týchto oblastiach.
 
 Zhromažďujú sa tieto polia:
 
@@ -16791,15 +16818,17 @@ Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončen
 
 Zhromažďujú sa tieto polia:
 
-  - **AffectedProcessAppBuild** – identifikátor verzie zostavy ovplyvneného procesu.
+  - **AffectedProcessAppBuild** – identifikátor verzie zostavy ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessAppBuildRevision** – identifikátor revízie zostavy ovplyvneného procesu.
+  - **AffectedProcessAppBuildRevision** – identifikátor revízie zostavy ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessAppMajorVer** – identifikátor vedľajšej verzie ovplyvneného procesu.
+  - **AffectedProcessAppMajorVer** – identifikátor vedľajšej verzie ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **AffectedProcessAppMinorVer** – identifikátor vedľajšej verzie ovplyvneného procesu.
+  - **AffectedProcessAppMinorVer** – identifikátor vedľajšej verzie ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **AffectedProcessAppName** – názov ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+  
+  - **AffectedProcessAppVersion** – identifikátor verzie ovplyvneného procesu.
 
   - **AffectedProcessExeBuildVersion** – číslo verzie zostavy ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
@@ -16985,6 +17014,8 @@ Zhromažďujú sa tieto polia:
   - **BucketId** – identifikátor sektora Watson pre zlyhanie
  
   - **CabGuid** – globálne jedinečný identifikátor (GUID) pre kabinet Watson.
+
+  - **CallStack** – interný zásobník volaní Microsoftu spôsobujúci zlyhanie.
 
   - **CrashedAppBuild** – identifikátor verzie zostavy ovplyvneného procesu. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
