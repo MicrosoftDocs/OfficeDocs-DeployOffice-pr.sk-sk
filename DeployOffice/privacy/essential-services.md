@@ -11,14 +11,14 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
+description: V tomto článku získajú správcovia balíka Office informácie o nevyhnutných službách v balíku Office, ako sú napríklad Klikni a spusti a licenčná služba, a nájdu tu zoznam udalostí a údajových polí pre tieto nevyhnutné služby.
 hideEdit: true
-ms.openlocfilehash: d3e5ca5381c9fb68a1e05fca703729e282593ded
-ms.sourcegitcommit: cb1f6e3ba1336fc1a8cdca927f545dc43fd8e829
+ms.openlocfilehash: 6dede4fdc57074aa5a9daaf28a20a736c813d626
+ms.sourcegitcommit: 0e2ec395ca334719883a7a48b5313a72217f2eab
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52308160"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52907369"
 ---
 # <a name="essential-services-for-office"></a>Nevyhnutné služby pre Office
 
@@ -48,21 +48,21 @@ Nasledujúca tabuľka obsahuje zoznam nevyhnutných služieb pre Office a ich po
 | **Služba**  | **Popis**  |
 | ------ | ---- |
 | [Overovanie](#authentication-events) | Overovanie je služba v rámci viacerých platforiem, ktorá potvrdzuje identitu používateľa pre Office. Vyžaduje sa na to, aby ste sa mohli prihlásiť do balíka Office, aktivovať licenciu na Office a pristupovať k súborom uloženým v cloude a zároveň poskytuje konzistentné používanie v rámci rôznych relácií balíka Office a zariadení.    |
-| [Klikni a spusti](#click-to-run-events) | Klikni a spusti je technológia inštalácie, ktorá sa používa na inštaláciu a aktualizáciu balíka Office vo Windowse. Kontroluje dostupnosť nových verzií balíka Office a ak je k dispozícii nová verzia, stiahne a nainštaluje ju. Služba Klikni a spusti rozpoznáva potrebu, sťahuje a inštaluje aktualizácie balíka Office vrátane aktualizácií zabezpečenia.     |
+| [Klikni a spusti](#click-to-run-events) | Klikni a spusti je technológia inštalácie, ktorá sa používa na inštaláciu a aktualizáciu balíka Office vo Windowse. Kontroluje dostupnosť nových verzií balíka Office a ak je k dispozícii nová verzia, stiahne a nainštaluje ju. Služba Klikni a spusti rozpoznáva potrebu, sťahuje a inštaluje aktualizácie balíka Office vrátane aktualizácií zabezpečenia.     |
 | [Rozšírená konfiguračná služba (ECS)](#enhanced-configuration-service-ecs-events) | Služba ECS umožňuje spoločnosti Microsoft meniť konfiguráciu inštalácií balíka Office bez nutnosti opätovného nasadenia balíka Office. Používa sa na riadenie postupného nasadzovania funkcií alebo aktualizácií, pričom vplyv nasadenia sa monitoruje zo zhromaždených diagnostických údajov. Používa sa aj na zmiernenie problémov funkcie alebo aktualizácie so zabezpečením a výkonom. Okrem toho služba ECS podporuje zmeny konfigurácie týkajúce sa diagnostických údajov na pomoc pri zabezpečovaní zhromažďovania príslušných udalostí. |
 | [Licenčná služba](#licensing-events)     | Licenčná služba je cloudová služba, ktorá podporuje aktiváciu balíka Office pre nové inštalácie a uchováva licenciu v zariadeniach po aktivovaní balíka Office. Registruje každé zariadenie používateľa a aktivuje Office, kontroluje stav predplatného na Office a spravuje kódy Product key.    |
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) je technológia, ktorá sa používa na aktualizáciu aplikácií od spoločnosti Microsoft vytvorených pre MacOS, ako je napríklad Office. Služba MAU rozpoznáva potrebu, sťahuje a inštaluje aktualizácie aplikácií vrátane aktualizácií zabezpečenia.|
-|[OneNote sync](#onenote-sync-events)|OneNote pre Mac podporuje iba poznámkové bloky uložené na internete vo OneDrive alebo v SharePointe Online. OneNote pre Mac neustále synchronizuje všetky poznámky používateľa s OneDrivom alebo SharePointom Online. Vďaka tomu môžu používatelia svoje poznámkové bloky otvárať, zobrazovať a upravovať vo všetkých svojich zariadeniach a budú stále aktuálne.
+|[OneNote sync](#onenote-sync-events)|OneNote pre Mac podporuje iba poznámkové bloky uložené na internete vo OneDrive alebo v SharePointe Online. OneNote pre Mac neustále synchronizuje všetky poznámky používateľa s OneDrivom alebo SharePointom Online. Vďaka tomu môžu používatelia svoje poznámkové bloky otvárať, zobrazovať a upravovať vo všetkých svojich zariadeniach a budú stále aktuálne.
  [Services Configuration](#services-configuration-events)  | Služba Services Configuration umožňuje vykonávať aktualizácie nastavení konfigurácie balíka Office na povolenie alebo zakázanie klientskych funkcií. Zavolá sa vždy, keď sa spustí aplikácia balíka Office a poskytuje podrobné informácie o iných konfiguráciách a službách balíka Office. Služba Services Configuration tiež riadi, ktoré služby sú určené ako nevyhnutné služby.  |
 | [Telemetria](#telemetry-events)  | Služba telemetrie slúži na zhromažďovanie diagnostických údajov z aplikácií balíka Office. Umožňuje zhromažďovať diagnostické údaje vytvorené balíkom Office, a to požadované aj voliteľné diagnostické údaje. Je zodpovedná aj za zhromažďovanie niektorých údajov služieb pre balík Office.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Udalosti a údajové polia pre nevyhnutné služby pre Office
 
-V ďalších častiach sú uvedené tieto informácie:
+V ďalších častiach sú uvedené tieto informácie:
 
 - Zoznam udalostí pre každú nevyhnutnú službu
 - Popis každej udalosti
-- Zoznam údajových polí v každej udalosti
+- Zoznam údajových polí v každej udalosti
 - Popis každého údajového poľa
 
 
@@ -85,7 +85,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďuje sa, keď sa v balíku Office používateľovi zobrazí výzva na prihlásenie typu Forms-Based-Auth.
 
-Spolu so získaním skrytého tokenu výzvy na overenie umožňujú určiť, či sa používateľ nachádza v stave nefunkčného overenia, čo pre používateľa znamená, že je buď stave offline klienta, alebo v horšom prípade môže nefunkčné overenie znemožniť získanie licencie a mať tak za následok, že klient bude úplne nepoužiteľný.
+Spolu so získaním skrytého tokenu výzvy na overenie umožňujú určiť, či sa používateľ nachádza v stave nefunkčného overenia, čo pre používateľa znamená, že je buď stave offline klienta, alebo v horšom prípade môže nefunkčné overenie znemožniť získanie licencie a mať tak za následok, že klient bude úplne nepoužiteľný.
 
 Výzvy na prihlásenie typu Forms-Based-Auth (FBA) sa používajú pre niektoré lokálne scenáre overovania a zvyčajne sa chceme uistiť, že sa to nedeje, pretože všetky by mali používať prihlásenie typu Modern-Auth z dôvodov chýb zabezpečenia súvisiacich s prihlásením typu FBA.
 
@@ -448,11 +448,11 @@ Microsoft Auth Telemetry System (MATS) sa zhromažďuje, keď sa Office pokúša
 
 1) Identifikáciou, či klienti dokážu úspešne získať overovací token zo služby, alebo či prešli do stavu nefunkčného overenia.
 
-2) Vyhodnotením, či zmeny, ku ktorým došlo v klientovi alebo v službách, mali za následok kritické regresie pri postupe alebo spoľahlivosti overovania používateľa
+2) Vyhodnotením, či zmeny, ku ktorým došlo v klientovi alebo v službách, mali za následok kritické regresie pri postupe alebo spoľahlivosti overovania používateľa
 
-3) Keď sa vyskytnú zlyhania, tieto signály vysielajú dôležité kódy zlyhania z príslušnej súčasti (kód klienta balíka Office, knižnice overovania alebo služby oprávnenia), ktoré je možné použiť na určenie priority, diagnostikovanie a zmierňovanie
+3) Keď sa vyskytnú zlyhania, tieto signály vysielajú dôležité kódy zlyhania z príslušnej súčasti (kód klienta balíka Office, knižnice overovania alebo služby oprávnenia), ktoré je možné použiť na určenie priority, diagnostikovanie a zmierňovanie
 
-4) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb
+4) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb
 
 Zhromažďujú sa tieto polia:
 
@@ -474,21 +474,21 @@ Zhromažďujú sa tieto polia:
 
 - **Authoutcome** – či bol pokus o overenie úspešný, zlyhal alebo bol zrušený
 
-- **Blockingprompt** – či sa v aplikácii zobrazila výzva vyžadujúca interakciu používateľa
+- **Blockingprompt** – či sa v aplikácii zobrazila výzva vyžadujúca interakciu používateľa
 
-- **CorrelationID** – identifikátor, ktorý sa používa na pripojenie k informáciám o tejto konkrétnej udalosti s údajmi služby
+- **CorrelationID** – identifikátor, ktorý sa používa na pripojenie k informáciám o tejto konkrétnej udalosti s údajmi služby
 
-- **Count** – Celkový počet agregovaných akcií hlásených v tejto jednej udalosti údajov.
+- **Count** – Celkový počet agregovaných akcií hlásených v tejto jednej udalosti údajov.
 
 - **Devicenetworkstate** – Označuje, či je zariadenie pripojené na internet.
 
-- **Deviceprofiletelemetryid** – anonymný identifikátor zariadenia, ktorý sa používa na meranie používania a spoľahlivosti overovania zariadenia.
+- **Deviceprofiletelemetryid** – anonymný identifikátor zariadenia, ktorý sa používa na meranie používania a spoľahlivosti overovania zariadenia.
 
 - **Duration** – dĺžka trvania overovania
 
-- **duration_max** – maximálna dĺžka ktorejkoľvek z agregovaných udalostí
+- **duration_max** – maximálna dĺžka ktorejkoľvek z agregovaných udalostí
 
-- **duration_min** – minimálna dĺžka ktorejkoľvek z agregovaných udalostí
+- **duration_min** – minimálna dĺžka ktorejkoľvek z agregovaných udalostí
 
 - **duration_sum** – súčet trvania všetkých agregovaných udalostí
 
@@ -502,7 +502,7 @@ Zhromažďujú sa tieto polia:
 
 - **eventtype** – Označuje, či táto udalosť hlási údajový bod overenia, alebo udalosť chyby kvality údajov. Používa sa na meranie kvality údajov.
 
-- **from_cache** – boolovská hodnota predstavujúca to, či záznam pochádza zo základnej vyrovnávacej pamäti WAM, alebo z doplnku
+- **from_cache** – boolovská hodnota predstavujúca to, či záznam pochádza zo základnej vyrovnávacej pamäti WAM, alebo z doplnku
 
 - **hasadaltelemetry** – Označuje, či knižnica Azure Active Directory Authentication Library (ADAL) poskytla telemetriu pre túto udalosť.
 
@@ -510,13 +510,13 @@ Zhromažďujú sa tieto polia:
 
 - **Interactiveauthcontainer** – aký typ výzvy sa zobrazil
 
-- **Issilent** – Označuje, či sa zobrazila výzva, alebo išlo o tichú udalosť overenia (na pozadí).
+- **Issilent** – Označuje, či sa zobrazila výzva, alebo išlo o tichú udalosť overenia (na pozadí).
 
 - **Microsoft_ADAL_adal_version** – verzia knižnice Azure Active Directory Authentication Library (ADAL)
 
-- **Microsoft_ADAL_api_error_code** – kód chyby vyslaný knižnicou overovania pre tento pokus o overenie
+- **Microsoft_ADAL_api_error_code** – kód chyby vyslaný knižnicou overovania pre tento pokus o overenie
 
-- **Microsoft_ADAL_api_id** – rozhranie API vyvolané pre tento pokus o overenie
+- **Microsoft_ADAL_api_id** – rozhranie API vyvolané pre tento pokus o overenie
 
 - **Microsoft_ADAL_application_name** – Názov aplikácie/procesu pomocou knižnice ADAL.
 
@@ -524,7 +524,7 @@ Zhromažďujú sa tieto polia:
 
 - **Microsoft_ADAL_authority** – URL adresa autority služby Azure Active Directory zodpovednej za overovanie používateľa
 
-- **Microsoft_ADAL_authority_type** – spotrebiteľské/Microsoft Service Agreement (MSA) alebo organizačné/Azure Active Directory (AAD); v súčasnosti vždy AAD
+- **Microsoft_ADAL_authority_type** – spotrebiteľské/Microsoft Service Agreement (MSA) alebo organizačné/Azure Active Directory (AAD); v súčasnosti vždy AAD
 
 - **Microsoft_ADAL_authority_validation_status** – signalizuje, či sa overovanie dokončilo na strane služby
 
@@ -536,27 +536,27 @@ Zhromažďujú sa tieto polia:
 
 - **Microsoft_ADAL_cache_event_count** – počet udalostí vyrovnávacej pamäte, ktoré knižnica ADAL vykonala počas načítavania tokenu
 
-- **Microsoft_ADAL_cache_event_count_max** – ak je tento signál agregovaný, max. počet udalostí vyrovnávacej pamäte ktorejkoľvek z agregovaných udalostí.
+- **Microsoft_ADAL_cache_event_count_max** – ak je tento signál agregovaný, max. počet udalostí vyrovnávacej pamäte ktorejkoľvek z agregovaných udalostí.
 
-- **Microsoft_ADAL_cache_event_count_min** – ak je tento signál agregovaný, min. počet udalostí vyrovnávacej pamäte ktorejkoľvek z agregovaných udalostí.
+- **Microsoft_ADAL_cache_event_count_min** – ak je tento signál agregovaný, min. počet udalostí vyrovnávacej pamäte ktorejkoľvek z agregovaných udalostí.
 
 - **Microsoft_ADAL_cache_event_count_sum** – ak je tento signál agregovaný, súčet udalostí vyrovnávacej pamäte všetkých agregovaných udalostí.
 
-- **Microsoft_ADAL_cache_read_count** – koľkokrát rozhranie API čítalo z vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému čítaniu.
+- **Microsoft_ADAL_cache_read_count** – koľkokrát rozhranie API čítalo z vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému čítaniu.
 
-- **Microsoft_ADAL_cache_read_error_count** – koľkokrát zlyhalo čítanie z vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zlyhaniu.
+- **Microsoft_ADAL_cache_read_error_count** – koľkokrát zlyhalo čítanie z vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zlyhaniu.
 
-- **Microsoft_ADAL_cache_read_last_error** – Kód chyby knižnice ADAL. Je prítomné, ak došlo k aspoň jednému zlyhaniu čítania.
+- **Microsoft_ADAL_cache_read_last_error** – Kód chyby knižnice ADAL. Je prítomné, ak došlo k aspoň jednému zlyhaniu čítania.
 
-- **Microsoft_ADAL_cache_read_last_system_error** – Kód chyby systému.  Je prítomné, ak došlo k aspoň jednému zlyhaniu čítania.
+- **Microsoft_ADAL_cache_read_last_system_error** – Kód chyby systému.  Je prítomné, ak došlo k aspoň jednému zlyhaniu čítania.
 
-- **Microsoft_ADAL_cache_write_count** – koľkokrát rozhranie API zapisovalo do vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zapisovaniu.
+- **Microsoft_ADAL_cache_write_count** – koľkokrát rozhranie API zapisovalo do vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zapisovaniu.
 
-- **Microsoft_ADAL_cache_write_error_count** – koľkokrát zlyhalo zapisovanie do vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zlyhaniu.
+- **Microsoft_ADAL_cache_write_error_count** – koľkokrát zlyhalo zapisovanie do vyrovnávacej pamäte disku. Je prítomné, ak došlo k aspoň jednému zlyhaniu.
 
-- **Microsoft_ADAL_cache_write_last_error** – Kód chyby knižnice ADAL. Je prítomné, ak došlo k aspoň jednému zlyhaniu zapisovania.
+- **Microsoft_ADAL_cache_write_last_error** – Kód chyby knižnice ADAL. Je prítomné, ak došlo k aspoň jednému zlyhaniu zapisovania.
 
-- **Microsoft_ADAL_cache_write_last_system_error** – Kód chyby systému. Je prítomné, ak došlo k aspoň jednému zlyhaniu zapisovania.
+- **Microsoft_ADAL_cache_write_last_system_error** – Kód chyby systému. Je prítomné, ak došlo k aspoň jednému zlyhaniu zapisovania.
 
 - **Microsoft_ADAL_client_id** – hašované ID aplikácie Azure Active Directory
 
@@ -592,7 +592,7 @@ Zhromažďujú sa tieto polia:
 
 - **Microsoft_ADAL_is_successfull** – pravda/nepravda, uvádza, či rozhranie API knižnice ADAL bolo úspešné
 
-- **Microsoft_ADAL_logging_pii_enabled** – pravda/nepravda, uvádza, či je povolený režim úplného zapisovania do denníka knižnice ADAL. Tieto údaje sa zapisujú do denníka len lokálne, neodosielajú sa v telemetrii.
+- **Microsoft_ADAL_logging_pii_enabled** – pravda/nepravda, uvádza, či je povolený režim úplného zapisovania do denníka knižnice ADAL. Tieto údaje sa zapisujú do denníka len lokálne, neodosielajú sa v telemetrii.
 
 - **Microsoft_ADAL_ntlm** – pravda/nepravda, uvádza, či knižnica ADAL použila základné overovanie (NTLM).
 
@@ -608,7 +608,7 @@ Zhromažďujú sa tieto polia:
 
 - **Microsoft_ADAL_response_time_max** – ak je signál agregovaný, max. čas, kým sa knižnica ADAL vrátila zo svojho rozhrania API, spomedzi ktorejkoľvek z agregovaných udalostí
 
-- **Microsoft_ADAL_response_time_min** – ak je signál agregovaný, min. čas, kým služba odpovedala knižnici ADAL, spomedzi ktorejkoľvek z agregovaných udalostí
+- **Microsoft_ADAL_response_time_min** – ak je signál agregovaný, min. čas, kým služba odpovedala knižnici ADAL, spomedzi ktorejkoľvek z agregovaných udalostí
 
 - **Microsoft_ADAL_response_time_sum** – ak je signál agregovaný, súčet časov, kým sa knižnica ADAL vrátila zo svojho rozhrania API, spomedzi všetkých agregovaných udalostí
 
@@ -624,7 +624,7 @@ Zhromažďujú sa tieto polia:
 
 - **Microsoft_ADAL_start_time** – čas uskutočnenia volania rozhrania API knižnice ADAL
 
-- **Microsoft_ADAL_status** – stav úspechu/zlyhania v rámci celkového vyvolania knižnice ADAL
+- **Microsoft_ADAL_status** – stav úspechu/zlyhania v rámci celkového vyvolania knižnice ADAL
 
 - **Microsoft_ADAL_stop_time** – čas vrátenia volania rozhrania API knižnice ADAL
 
@@ -646,9 +646,9 @@ Zhromažďujú sa tieto polia:
 
 - **Microsoft_ADAL_user_cancel** – pravda/nepravda, či bolo okno používateľského rozhrania zrušené
 
-- **Microsoft_ADAL_x_ms_request_id** – identifikátor dodatočnej požiadavky poskytnutý službe v sieťovej hlavičke knižnicou ADAL
+- **Microsoft_ADAL_x_ms_request_id** – identifikátor dodatočnej požiadavky poskytnutý službe v sieťovej hlavičke knižnicou ADAL
 
-- **Microsoft_ADAL_x_client_cpu** – informácie o architektúre procesora zariadenia
+- **Microsoft_ADAL_x_client_cpu** – informácie o architektúre procesora zariadenia
 
 - **Microsoft_ADAL_x_client_os** – verzia operačného systému zariadenia.
 
@@ -658,29 +658,29 @@ Zhromažďujú sa tieto polia:
 
 - **MSAL_all_error_tags** – všetky značky chýb, na ktoré knižnica overovania spoločnosti Microsoft (MSAL) narazila počas postupu overovania.
 
-- **MSAL_api_error_code** – Ak knižnica MSAL narazí na chybu z operačného systému, tu sa uložia kódy chýb platformy.
+- **MSAL_api_error_code** – Ak knižnica MSAL narazí na chybu z operačného systému, tu sa uložia kódy chýb platformy.
 
-- **MSAL_api_error_context** reťazec, ktorý obsahuje ďalšie čitateľné podrobnosti o poslednej chybe, na ktorú narazila knižnica MSAL. 
+- **MSAL_api_error_context** reťazec, ktorý obsahuje ďalšie čitateľné podrobnosti o poslednej chybe, na ktorú narazila knižnica MSAL. 
 
-- **MSAL_api_error_tag** – jedinečný reťazec pre miesto v kóde, kde sa vyskytla táto chyba.
+- **MSAL_api_error_tag** – jedinečný reťazec pre miesto v kóde, kde sa vyskytla táto chyba.
 
 - **MSAL_api_name** – názov rozhrania API najvyššej úrovne knižnice MSAL, ktorý sa volá na spustenie tohto postupu overovania.
 
 - **MSAL_api_status_code** – kód stavu, ktorý knižnica MSAL vrátila pre výsledok tohto postupu overovania.
 
-- **MSAL_auth_flow** – kroky, o ktoré sa knižnica MSAL pokúsila počas tohto postupu overovania (AT, PRT, LRT, FRT, ART, IRT). Oddelené symbolom zvislej čiary „|“, čo uľahčuje analýzu.
+- **MSAL_auth_flow** – kroky, o ktoré sa knižnica MSAL pokúsila počas tohto postupu overovania (AT, PRT, LRT, FRT, ART, IRT). Oddelené symbolom zvislej čiary „|“, čo uľahčuje analýzu.
 
-- **MSAL_auth_flow_last_error** – kód chyby, ktorý sme dostali zo servera na druhú až poslednú položku v rámci AuthFlow. (Príklad: Ak AuthFlow = "PRT|LRT", chyba PRT by sa nachádzala v rámci AuthFlowLastError).
+- **MSAL_auth_flow_last_error** – kód chyby, ktorý sme dostali zo servera na druhú až poslednú položku v rámci AuthFlow. (Príklad: Ak AuthFlow = "PRT|LRT", chyba PRT by sa nachádzala v rámci AuthFlowLastError).
 
 - **MSAL_authority_type** – či bola táto požiadavka pre používateľa v: AAD, Federated alebo MSA.
 
-- **MSAL_broker_app_used** – či bola v tomto postupe overovania použitá aplikácia sprostredkovateľa.
+- **MSAL_broker_app_used** – či bola v tomto postupe overovania použitá aplikácia sprostredkovateľa.
 
 - **MSAL_client_id** – ID klienta volajúcej aplikácie
 
-- **MSAL_correlation_id** jedinečný identifikátor GUID pre túto udalosť, ktorý sa používa na pripojenie k akciám v denníkoch klientov, serverov a aplikácií.
+- **MSAL_correlation_id** jedinečný identifikátor GUID pre túto udalosť, ktorý sa používa na pripojenie k akciám v denníkoch klientov, serverov a aplikácií.
 
-- **MSAL_delete_token** – zoznam tokenov, ktoré boli odstránené z vyrovnávacej pamäte počas tohto postupu overovania.
+- **MSAL_delete_token** – zoznam tokenov, ktoré boli odstránené z vyrovnávacej pamäte počas tohto postupu overovania.
 
 - **MSAL_http_call_count** – počet volaní protokolu HTTP, ktoré knižnica MSAL vykonala počas postupu overovania.
 
@@ -690,51 +690,51 @@ Zhromažďujú sa tieto polia:
 
 - **MSAL_msal_version** – reťazec verzie knižnice MSAL, formát X.X.X+(„OneAuth“, „local“ alebo hodnota hash pre commit).
 
-- **MSAL_read_token** – tokeny prečítané z vyrovnávacej pamäte (AT, ART, FRT, LRT, IRT, PRT, EAT  [EAT = Exspirované AT sa prečítalo, ale zahodilo]).
+- **MSAL_read_token** – tokeny prečítané z vyrovnávacej pamäte (AT, ART, FRT, LRT, IRT, PRT, EAT  [EAT = Exspirované AT sa prečítalo, ale zahodilo]).
 
-- **MSAL_read_token_last_error** – Ak knižnica MSAL narazila na chybu pri čítaní z vyrovnávacej pamäte, informácie uložíme tu. (Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme macOS).
+- **MSAL_read_token_last_error** – Ak knižnica MSAL narazila na chybu pri čítaní z vyrovnávacej pamäte, informácie uložíme tu. (Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme macOS).
 
 - **MSAL_request_duration** – ako dlho trvala požiadavka, keď sa volalo rozhranie API najvyššej úrovne knižnice MSAL, kým sme nevrátili výsledok.
 
-- **MSAL_request_id** – ID požiadavky posledného volania, ktoré sme vykonali v službe tokenov zabezpečenia spoločnosti Microsoft.
+- **MSAL_request_id** – ID požiadavky posledného volania, ktoré sme vykonali v službe tokenov zabezpečenia spoločnosti Microsoft.
 
-- **MSAL_server_error_code** – číselný kód chyby špecifickej služby tokenov zabezpečenia spoločnosti Microsoft v prípade, že sme ho dostali.
+- **MSAL_server_error_code** – číselný kód chyby špecifickej služby tokenov zabezpečenia spoločnosti Microsoft v prípade, že sme ho dostali.
 
 - **MSAL_server_spe_ring** – informácie okruhu Secure Production Enterprise služby tokenov zabezpečenia spoločnosti Microsoft, ak sme ich dostali.
 
-- **MSAL_server_suberror_code** – reťazec kódu čiastkovej chyby špecifickej služby tokenov zabezpečenia spoločnosti Microsoft v prípade, že sme ho dostali.
+- **MSAL_server_suberror_code** – reťazec kódu čiastkovej chyby špecifickej služby tokenov zabezpečenia spoločnosti Microsoft v prípade, že sme ho dostali.
 
 - **MSAL_start_time** – čas začiatku požiadavky knižnice MSAL vo verejnom rozhraní API najvyššej úrovne.
 
-- **MSAL_stop_time** – čas, v ktorom knižnica MSAL dokončila spracovanie požiadavky a vrátila výsledok volajúcemu.
+- **MSAL_stop_time** – čas, v ktorom knižnica MSAL dokončila spracovanie požiadavky a vrátila výsledok volajúcemu.
 
-- **MSAL_tenant_id** – identifikátor GUID spoločnosti Microsoft na identifikáciu nájomníka, v ktorom používateľ existuje.
+- **MSAL_tenant_id** – identifikátor GUID spoločnosti Microsoft na identifikáciu nájomníka, v ktorom používateľ existuje.
 
 - **MSAL_ui_event_count** – počet výziev používateľského rozhrania, ktoré knižnica MSAL zobrazila na obrazovke.
 
-- **MSAL_wam_telemetry** – obsahuje dávku údajov telemetrie WAM v reťazci JSON, ktorá sa bude analyzovať a skonvertuje sa na polia v tomto dokumente pochádzajúce z WAM.
+- **MSAL_wam_telemetry** – obsahuje dávku údajov telemetrie WAM v reťazci JSON, ktorá sa bude analyzovať a skonvertuje sa na polia v tomto dokumente pochádzajúce z WAM.
 
-- **MSAL_was_request_throttled** – pravda, ak knižnica MSAL obmedzila túto požiadavku a zabránila jej v zasiahnutí siete. Ak je to pravda, pravdepodobne sa vo volajúcej aplikácii vyskytuje slučka.
+- **MSAL_was_request_throttled** – pravda, ak knižnica MSAL obmedzila túto požiadavku a zabránila jej v zasiahnutí siete. Ak je to pravda, pravdepodobne sa vo volajúcej aplikácii vyskytuje slučka.
 
 - **MSAL_write_token** – tokeny zapísané do vyrovnávacej pamäte (AT, ART, FRT, LRT, IRT, PRT, EAT  [EAT = Exspirované AT sa prečítalo, ale zahodilo]).
 
-- **MSAL_write_token_last_error** – Ak knižnica MSAL narazila na chybu pri zapisovaní do vyrovnávacej pamäte, informácie uložíme tu. (Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme macOS).
+- **MSAL_write_token_last_error** – Ak knižnica MSAL narazila na chybu pri zapisovaní do vyrovnávacej pamäte, informácie uložíme tu. (Príklad: Chyba čítania disku z operačného systému, chyba kľúčenky v systéme macOS).
 
-- **oneauth_api** – rozhranie API OneAuth vyvolané pre tento pokus o overenie.
+- **oneauth_api** – rozhranie API OneAuth vyvolané pre tento pokus o overenie.
 
 - **oneauth_transactionuploadid** – identifikátor GUID špecifikujúci individuálne volanie do rozhrania API OneAuth.
 
 - **oneauth_version** – verzia súpravy SDK OneAuth.
 
-- **Platform** – platforma operačného systému (0: Počítač s Windowsom, 1: Android, 2: iOS, 3: macOS; 4: UWP)
+- **Platform** – platforma operačného systému (0: Počítač s Windowsom, 1: Android, 2: iOS, 3: macOS; 4: UWP)
 
 - **Promptreasoncorrelationid** – identifikátor korelácie, ktorý sa dá použiť na vyhľadanie predchádzajúcej udalosti overovania. Používa sa na vysvetlenie, prečo sa používateľovi zobrazila výzva na overenie.
 
 - **Resource** – zdroj, pre ktorý sa vyžaduje token.
 
-- **Scenarioid** – Viacero udalostí môže patriť do jedného scenára, napríklad scenár môže pridať nové konto, no v rámci daného scenára sa vyskytuje viacero výziev. Tento identifikátor umožňuje koreláciu týchto súvisiacich udalostí.
+- **Scenarioid** – Viacero udalostí môže patriť do jedného scenára, napríklad scenár môže pridať nové konto, no v rámci daného scenára sa vyskytuje viacero výziev. Tento identifikátor umožňuje koreláciu týchto súvisiacich udalostí.
 
-- **Scenarioname** – názov scenára aplikácie, v ktorom sa vyžadovalo overenie, ako napr. prvé spustenie, kontrola licencií atď.
+- **Scenarioname** – názov scenára aplikácie, v ktorom sa vyžadovalo overenie, ako napr. prvé spustenie, kontrola licencií atď.
 
 - **Scope** – rozsah, pre ktorý sa vyžaduje token.
 
@@ -742,41 +742,41 @@ Zhromažďujú sa tieto polia:
 
 - **Sessionid** – identifikátor relácie spúšťania
 
-- **StartTime** – čas, v ktorom začala udalosť overovania.
+- **StartTime** – čas, v ktorom začala udalosť overovania.
 
-- **Tenantid** – identifikátor GUID identifikujúci nájomníka, ku ktorému patrí overený používateľ (v prípadoch bez knižnice ADAL)
+- **Tenantid** – identifikátor GUID identifikujúci nájomníka, ku ktorému patrí overený používateľ (v prípadoch bez knižnice ADAL)
 
 - **Uploadid** – jedinečný identifikátor GUID pre túto udalosť použitý na de-duping
 
 - **wamapi** – identifikuje, ktoré rozhranie API pre Windows Web Account Management (WAM) sa volá
 
-- **wamtelemetrybatch** – v súčasnosti sa nepoužíva. V budúcnosti bude umožňovať súčasti WAM odosielať doplňujúce informácie o udalosti overovania.
+- **wamtelemetrybatch** – v súčasnosti sa nepoužíva. V budúcnosti bude umožňovať súčasti WAM odosielať doplňujúce informácie o udalosti overovania.
 
 - **WAM_account_join_on_end** – stav pripojenia konta na konci operácie WAM.  Možné hodnoty: „primary“, „secondary”, „not_joined”
 
 - **WAM_account_join_on_start** – stav pripojenia konta na začiatku operácie WAM.  Možné hodnoty: „primary“, „secondary”, „not_joined”
 
-- **WAM_api_error_code** – ak z doplnku AAD WAM príde chyba, toto pole bude existovať a obsahovať daný kód chyby
+- **WAM_api_error_code** – ak z doplnku AAD WAM príde chyba, toto pole bude existovať a obsahovať daný kód chyby
 
 - **WAM_authority** – reťazec obsahujúci URL adresu autority – mal by to byť použitý koncový bod login.windows.net
 
-- **WAM_broker_version** – je k dispozícii v prípade použitia WAM, ide o reťazec verzie sprostredkovateľa
+- **WAM_broker_version** – je k dispozícii v prípade použitia WAM, ide o reťazec verzie sprostredkovateľa
 
-- **WAM_cache_event_count** – počet udalostí vo vyrovnávacej pamäti WAM v rámci operácie
+- **WAM_cache_event_count** – počet udalostí vo vyrovnávacej pamäti WAM v rámci operácie
 
-- **WAM_client_id** – identifikátor pre spojenie s údajmi o službách, identifikuje klientsku aplikáciu.
+- **WAM_client_id** – identifikátor pre spojenie s údajmi o službách, identifikuje klientsku aplikáciu.
 
-- **WAM_correlation_id** – identifikátor na spájanie udalostí s údajmi o službách
+- **WAM_correlation_id** – identifikátor na spájanie udalostí s údajmi o službách
 
 - **WAM_device_join** – stav pripojenia zariadenia; možné hodnoty sú „aadj“, „haadj“
 
-- **WAM_network_event_count** – je k dispozícii, ak došlo k aspoň jednému sieťovému volaniu; počet sieťových volaní do služby pre túto operáciu WAM
+- **WAM_network_event_count** – je k dispozícii, ak došlo k aspoň jednému sieťovému volaniu; počet sieťových volaní do služby pre túto operáciu WAM
 
-- **WAM_network_status** – je k dispozícii, ak došlo k aspoň jednému sieťovému volaniu, obsahuje chybový kód protokolu HTTP, ak sieťová požiadavka zlyhala.
+- **WAM_network_status** – je k dispozícii, ak došlo k aspoň jednému sieťovému volaniu, obsahuje chybový kód protokolu HTTP, ak sieťová požiadavka zlyhala.
 
 - **WAM_idp** – určuje, či bol sa použil spotrebiteľský alebo organizačný doplnok overovania WAM.
 
-- **WAM_is_cached** – určuje, či odpoveď, ktorú poskytuje WAM, bola načítaná z vyrovnávacej pamäte.
+- **WAM_is_cached** – určuje, či odpoveď, ktorú poskytuje WAM, bola načítaná z vyrovnávacej pamäte.
 
 - **WAM_oauth_error_code** – Obsahuje kód chyby vrátený službou ako súčasť protokolu oauth.
 
@@ -784,7 +784,7 @@ Zhromažďujú sa tieto polia:
 
 - **WAM_provider_id** – určuje koncový bod spoločnosti Microsoft pre používanú autoritu pri scenári overovania.
 
-- **WAM_redirect_uri** – identifikátor URI presmerovania registrovaný pre aplikáciu v službe Azure Active Directory.
+- **WAM_redirect_uri** – identifikátor URI presmerovania registrovaný pre aplikáciu v službe Azure Active Directory.
 
 - **WAM_resource** – zdroj, pre ktorý sa vyžaduje token.
 
@@ -796,28 +796,28 @@ Zhromažďujú sa tieto polia:
 
 - **WAM_silent_mats** – nepoužíva sa.
 
-- **WAM_silent_message** – chybové hlásenie priradené k internému pokusu bez zobrazenia výzvy, ktorý vykoná WAM ešte pred vyzvaním používateľa.
+- **WAM_silent_message** – chybové hlásenie priradené k internému pokusu bez zobrazenia výzvy, ktorý vykoná WAM ešte pred vyzvaním používateľa.
 
 - **WAM_silent_status** – stav úspechu/zlyhania interného pokusu bez zobrazenia výzvy, ktorý vykoná WAM ešte pred vyzvaním používateľa.
 
 - **WAM_tenant_id** – identifikátor nájomníka, ku ktorému patrí overený používateľ služby AAD, ak ho vráti služba
 
-- **WAM_ui_visible** – je k dispozícii, ak sa používateľovi zobrazilo aspoň jedno okno používateľského rozhrania, buď true, alebo false
+- **WAM_ui_visible** – je k dispozícii, ak sa používateľovi zobrazilo aspoň jedno okno používateľského rozhrania, buď true, alebo false
 
-- **WAM_x_ms_clitelem** – je k dispozícii, ak služba vráti hlavičku „x-ms-clitelem“
+- **WAM_x_ms_clitelem** – je k dispozícii, ak služba vráti hlavičku „x-ms-clitelem“
 
 
 ### <a name="officematsoneauthtransactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.TransactionMicrosoftOfficeWin32
 
-Microsoft Auth Telemetry System (MATS) sa zhromažďuje, keď sa Office pokúša získať token overenia, či už bez zobrazenia výzvy alebo prostredníctvom zobrazenia výzvy. Táto udalosť je nadradenou pre  jednu alebo viaceré udalosti ActionMicrosoftOffice a umožňuje zoskupiť súvisiace udalosti. Tieto udalosti pomáhajú našim používateľom vyhnúť sa prechodu do stavu nefunkčného overenia:
+Microsoft Auth Telemetry System (MATS) sa zhromažďuje, keď sa Office pokúša získať token overenia, či už bez zobrazenia výzvy alebo prostredníctvom zobrazenia výzvy. Táto udalosť je nadradenou pre  jednu alebo viaceré udalosti ActionMicrosoftOffice a umožňuje zoskupiť súvisiace udalosti. Tieto udalosti pomáhajú našim používateľom vyhnúť sa prechodu do stavu nefunkčného overenia:
 
 1) Identifikáciou, či klienti dokážu úspešne získať overovací token zo služby, alebo či prešli do stavu nefunkčného overenia.
 
-2) Vyhodnotením, či zmeny, ku ktorým došlo v klientovi alebo v službách, mali za následok kritické regresie pri postupe alebo spoľahlivosti overovania používateľa
+2) Vyhodnotením, či zmeny, ku ktorým došlo v klientovi alebo v službách, mali za následok kritické regresie pri postupe alebo spoľahlivosti overovania používateľa
 
-3) Keď sa vyskytnú zlyhania, tieto signály vysielajú dôležité kódy zlyhania z príslušnej súčasti (kód klienta balíka Office, knižnice overovania alebo služby oprávnenia), ktoré je možné použiť na určenie priority, diagnostikovanie a zmierňovanie
+3) Keď sa vyskytnú zlyhania, tieto signály vysielajú dôležité kódy zlyhania z príslušnej súčasti (kód klienta balíka Office, knižnice overovania alebo služby oprávnenia), ktoré je možné použiť na určenie priority, diagnostikovanie a zmierňovanie
 
-4) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb
+4) Tieto signály slúžia ako vstupy pre rôzne monitory pripravenosti na odoslanie a monitory stavu, ktoré odosielajú upozornenia, vďaka ktorým naši inžinieri môžu rýchlo reagovať a skrátiť čas na zmiernenie kritických chýb
 
 Zhromažďujú sa tieto polia:
 
@@ -829,9 +829,9 @@ Zhromažďujú sa tieto polia:
 
 - **Appver** – verzia aplikácie
 
-- **Authoutcome** – či bol pokus o overenie úspešný, zlyhal alebo bol zrušený
+- **Authoutcome** – či bol pokus o overenie úspešný, zlyhal alebo bol zrušený
 
-- **CorrelationID** – identifikátor, ktorý sa používa na pripojenie k informáciám o tejto konkrétnej udalosti s údajmi služby
+- **CorrelationID** – identifikátor, ktorý sa používa na pripojenie k informáciám o tejto konkrétnej udalosti s údajmi služby
 
 - **Count** – koľkokrát sa chyba vyskytla
 
@@ -839,19 +839,19 @@ Zhromažďujú sa tieto polia:
 
 - **Deviceprofiletelemetryid** – ID telemetrie profilu zariadenia (reťazec, ktorý MATS používa na identifikáciu konkrétneho zariadenia)
 
-- **duration_max** – minimálna dĺžka trvania (v milisekundách) transakcií agregovaných v rámci tohto signálu.
+- **duration_max** – minimálna dĺžka trvania (v milisekundách) transakcií agregovaných v rámci tohto signálu.
 
-- **duration_min** – maximálna dĺžka trvania (v milisekundách) transakcií agregovaných v rámci tohto signálu.
+- **duration_min** – maximálna dĺžka trvania (v milisekundách) transakcií agregovaných v rámci tohto signálu.
 
-- **duration_sum** – súčet dĺžky trvaní (v milisekundách) transakcií agregovaných v rámci tohto signálu.
+- **duration_sum** – súčet dĺžky trvaní (v milisekundách) transakcií agregovaných v rámci tohto signálu.
 
-- **Endtime** – čas, v ktorom sa transakcia OneAuth ukončila.
+- **Endtime** – čas, v ktorom sa transakcia OneAuth ukončila.
 
 - **Error** – kód stavu OneAuth.
 
 - **Eventtype** – typ udalosti
 
-- **Issilent** – false, ak sa zobrazilo používateľské rozhranie; true, ak išlo o udalosť na pozadí.
+- **Issilent** – false, ak sa zobrazilo používateľské rozhranie; true, ak išlo o udalosť na pozadí.
 
 - **oneauth_api** – určuje verejné rozhranie API pre OneAuth, ktoré sa vyvolalo.
 
@@ -869,9 +869,9 @@ Zhromažďujú sa tieto polia:
 
 - **oneauth_SystemErrorCode** – systémová chyba vrátená do OneAuth na záver tohto volania rozhrania API, ak sa vyskytla.
 
-- **oneauth_Tag** – značka OneAuth, ktorá označuje konečné miesto v kóde dosiahnuté na záver volania rozhrania API.
+- **oneauth_Tag** – značka OneAuth, ktorá označuje konečné miesto v kóde dosiahnuté na záver volania rozhrania API.
 
-- **oneauth_transactionuploadid** – určuje náhodne vygenerovaný interný identifikátor GUID, ktorý sa priradí k danému vyvolaniu rozhrania API OneAuth.
+- **oneauth_transactionuploadid** – určuje náhodne vygenerovaný interný identifikátor GUID, ktorý sa priradí k danému vyvolaniu rozhrania API OneAuth.
 
 - **oneauth_version** – verzia súpravy SDK OneAuth.
 
@@ -887,7 +887,7 @@ Zhromažďujú sa tieto polia:
 
 - **severityError** – závažnosť
 
-- **starttime** – čas, v ktorom transakcia OneAuth začala.
+- **starttime** – čas, v ktorom transakcia OneAuth začala.
 
 - **Timestamp** – časová pečiatka
 
@@ -927,7 +927,7 @@ Zhromažďujú sa tieto polia:
 - **StickyNoteAccountType** – zaznamená typ konta, pre ktoré sa aplikácia pokúšala načítať token obnovenia
 
 
-## <a name="click-to-run-events"></a>Udalosti služby Klikni a spusti
+## <a name="click-to-run-events"></a>Udalosti služby Klikni a spusti
 
 ### <a name="officeclicktorunbootstrapper"></a>Office.ClickToRun.Bootstrapper 
 
@@ -1083,9 +1083,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_Platform** – inštalácia typu x64 alebo x86
 
-  - **Data\_PlatformMigratedFrom** – počiatočná platforma, t. j. x86
+  - **Data\_PlatformMigratedFrom** – počiatočná platforma, t. j. x86
 
-  - **Data\_PlatformMigratedTo** – výsledná platforma, t j. x64
+  - **Data\_PlatformMigratedTo** – výsledná platforma, t j. x64
 
   - **Data\_PrereqFailure\_Type** – predbežné zlyhanie, ktoré sa vyskytlo
 
@@ -1093,32 +1093,32 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
 
-Hlási stav nového kanála aktualizácií Klikni a spusti („Repoman“) a či boli aktualizácie balíka Office úspešne stiahnuté a použité.
+Hlási stav nového kanála aktualizácií Klikni a spusti („Repoman“) a či boli aktualizácie balíka Office úspešne stiahnuté a použité.
 
 Zhromažďujú sa tieto polia:
 
-  - **ApplySucceeded** – hodnota true označuje, že kanál úspešne použil aktualizáciu balíka Office. V opačnom prípade má hodnotu false.
+  - **ApplySucceeded** – hodnota true označuje, že kanál úspešne použil aktualizáciu balíka Office. V opačnom prípade má hodnotu false.
   
-  - **DownloadSucceeded** – hodnota true označuje, že kanál úspešne stiahol aktualizáciu balíka Office. V opačnom prípade má hodnotu false.
+  - **DownloadSucceeded** – hodnota true označuje, že kanál úspešne stiahol aktualizáciu balíka Office. V opačnom prípade má hodnotu false.
 
-  - **ErrorCode** – kód poslednej chyby, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
+  - **ErrorCode** – kód poslednej chyby, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
 
-  - **ErrorDetails** – ďalšie informácie o chybe, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
+  - **ErrorDetails** – ďalšie informácie o chybe, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
  
-  - **ErrorMessage** – hlásenie poslednej chyby, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
+  - **ErrorMessage** – hlásenie poslednej chyby, ku ktorej došlo v kanáli Klikni a spusti (Repoman).
 
-  - **OpenStreamSessionSucceeded** – hodnota true označuje, že kanál úspešne vytvoril reláciu na streamovanie aktualizácie balíka Office. V opačnom prípade má hodnotu false.
+  - **OpenStreamSessionSucceeded** – hodnota true označuje, že kanál úspešne vytvoril reláciu na streamovanie aktualizácie balíka Office. V opačnom prípade má hodnotu false.
 
-  - **RepomanErrorMessage** – chybové hlásenie prijaté z knižnice repoman.dll.
+  - **RepomanErrorMessage** – chybové hlásenie prijaté z knižnice repoman.dll.
  
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigure"></a>Office.ClickToRun.Scenario.InstallTaskConfigure
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor balíka Office umiestňuje novostiahnuté súbory. Používa sa na meranie úspechu alebo neúspechu inštalácie balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor balíka Office ukladá novostiahnuté súbory. Používa sa na meranie úspechu/neúspechu inštalácie balíka Office.
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1126,7 +1126,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1170,9 +1170,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -1194,7 +1194,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1202,7 +1202,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1244,11 +1244,11 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -1270,7 +1270,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1278,7 +1278,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1322,9 +1322,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -1346,7 +1346,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1354,7 +1354,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1396,11 +1396,11 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -1422,7 +1422,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1430,7 +1430,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1474,9 +1474,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -1498,7 +1498,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1506,7 +1506,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1550,9 +1550,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
@@ -1574,7 +1574,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1582,7 +1582,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1626,9 +1626,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
@@ -1646,11 +1646,11 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunscenarioinstalltaskmigrate"></a>Office.ClickToRun.Scenario.InstallTaskMigrate
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor balíka Office migruje nastavenia zo starších verzií balíka Office. Používa sa na meranie úspechu alebo neúspechu inštalácie balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď inštalátor balíka Office migruje nastavenia zo starších verzií balíka Office. Používa sa na meranie úspechu/neúspechu inštalácie balíka Office.
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1658,7 +1658,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1702,9 +1702,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
@@ -1726,7 +1726,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1734,7 +1734,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1778,9 +1778,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
@@ -1802,7 +1802,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1810,7 +1810,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -1854,9 +1854,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
@@ -1878,7 +1878,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1886,13 +1886,13 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
   - **Data\_16\_UpdateVersion** – na akú verziu balíka Office 16 sa aktualizuje 
 
-  - **Data\_16\_Version** – verzia balíka Office 16 
+  - **Data\_16\_Version** – verzia balíka Office 16 
 
   - **Data\_AddingFixedProducts** – pridávané produkty 
 
@@ -1930,9 +1930,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -1954,7 +1954,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -1962,7 +1962,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2006,9 +2006,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
@@ -2030,7 +2030,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2038,7 +2038,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2082,9 +2082,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2106,7 +2106,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2114,7 +2114,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2158,9 +2158,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2182,7 +2182,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2190,7 +2190,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2234,9 +2234,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2258,7 +2258,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2266,7 +2266,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2310,9 +2310,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2330,11 +2330,11 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunscenarioupdatetaskintegrateupdate"></a>Office.ClickToRun.Scenario.UpdateTaskIntegrateupdate 
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď klient služby Klikni a spusti aktualizuje licencie v prípade potreby. Používa sa na meranie úspechu alebo neúspechu aktualizácie balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď klient služby Klikni a spusti aktualizuje licencie v prípade potreby.
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2342,7 +2342,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2386,9 +2386,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2410,7 +2410,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2418,7 +2418,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2462,9 +2462,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2486,7 +2486,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2494,7 +2494,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2548,9 +2548,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
@@ -2574,7 +2574,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2582,7 +2582,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2624,11 +2624,11 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioInstanceID** – jedinečný identifikátor GUID pre spustený scenár 
 
-  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
+  - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM
 
@@ -2650,7 +2650,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2658,7 +2658,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2710,9 +2710,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2730,11 +2730,11 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedownload"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedownload
 
-Údaje o inštalácii a inventári balíka Office zhromažďované, keď klient služby Klikni a spusti sťahuje novú aktualizáciu. Používa sa na meranie úspechu alebo neúspechu aktualizácie balíka Office.
+Údaje o inštalácii a inventári balíka Office zhromažďované, keď klient služby Klikni a spusti sťahuje novú aktualizáciu.
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2742,7 +2742,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2798,9 +2798,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2822,7 +2822,7 @@ Zhromažďujú sa tieto polia:
 
 Zhromažďujú sa tieto polia:
 
-  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
+  - **Data\_15\_SourceType** – kde sa nachádza zdroj balíka Office 15, t. j. CDN alebo Local 
 
   - **Data\_15\_UpdatesEnabled** – či sú aktualizácie balíka Office 15 povolené 
 
@@ -2830,7 +2830,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_15\_Version** – verzia balíka Office 15 
 
-  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
+  - **Data\_16\_SourceType** – kde sa nachádza zdroj balíka Office 16, t. j. CDN alebo Local 
 
   - **Data\_16\_UpdatesEnabled** – či sú aktualizácie balíka Office 16 povolené 
 
@@ -2874,9 +2874,9 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_ScenarioName** – ktorý scenár je spustený, t. j. inštalácia 
 
-  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
+  - **Data\_ScenarioSubType** – typ spusteného scenára, t. j. odinštalovanie, preinštalovanie 
 
-  - **Data\_SourceType** – zdroj, t. j CDN 
+  - **Data\_SourceType** – zdroj, t. j CDN 
 
   - **Data\_SqmMachineID** – jedinečný identifikátor zariadenia, ktorý používa Windows SQM 
 
@@ -2947,7 +2947,7 @@ Zhromažďujú sa tieto polia:
 
   - **Data\_IsInstallMode** – 1, ak sa inštalujú a sťahujú súbory, 0, ak nie
 
-  - **Data\_SourceProtocol –** či sa sťahuje zo siete údajov obsahu (CDN), zariadeni, v ktorom sa inštaluje (local) alebo zo zdroja v lokálnej sieti
+  - **Data\_SourceProtocol –** či sa sťahuje zo siete údajov obsahu (CDN), zariadeni, v ktorom sa inštaluje (local) alebo zo zdroja v lokálnej sieti
 
   - **Data\_Status** – Úspech alebo zlyhanie 
 
@@ -3247,7 +3247,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeexperimentationtriggeranalysis"></a>Office.Experimentation.TriggerAnalysis
 
-Táto udalosť umožňuje obmedziť analýzu používania produktov a metrík výkonu (napríklad zlyhaní, zablokovaní a podobne) na podmnožinu používateľov alebo zariadení oprávnených na používanie danej funkcie, čím prispieva k zabezpečeniu správneho fungovania produktu.
+Táto udalosť umožňuje obmedziť analýzu používania produktov a metrík výkonu (napríklad zlyhaní, zablokovaní a podobne) na podmnožinu používateľov alebo zariadení oprávnených na používanie danej funkcie, čím prispieva k zabezpečeniu správneho fungovania produktu.
 
 Zhromažďujú sa tieto polia:
 
@@ -3265,7 +3265,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeandroiddocsuipaywallcontrolautoredeempendingpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.AutoRedeemPendingPurchaseResult
 
-Kritická technická telemetria na zaznamenanie výsledku automatického pokusu o uplatnenie čakajúcich nákupov používateľa. Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného.
+Kritická technická telemetria na zaznamenanie výsledku automatického pokusu o uplatnenie čakajúcich nákupov používateľa. Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného.
 
 Zhromažďujú sa tieto polia:
 
@@ -3277,7 +3277,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalluishown"></a>Office.Android.DocsUI.PaywallControl.PaywallUIShown
 
-Telemetria kritického používania sa pre prípady, keď sa používateľovi zobrazí ovládací prvok platobnej brány. Používa sa na vysvetlenie skúsenosti používateľa pri nákupe v rámci aplikácie a optimalizovanie toho istého pre budúce verzie.
+Telemetria kritického používania sa pre prípady, keď sa používateľovi zobrazí ovládací prvok platobnej brány. Používa sa na vysvetlenie skúsenosti používateľa pri nákupe v rámci aplikácie a optimalizovanie toho istého pre budúce verzie.
 
 Zhromažďujú sa tieto polia:
 
@@ -3289,7 +3289,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeandroiddocsuipaywallcontrolpurchasebuttonclicked"></a>Office.Android.DocsUI.PaywallControl.PurchaseButtonClicked
 
-Kritická telemetria používania na zistenie, keď používateľ klikne na tlačidlo Nákup. Používa sa na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
+Kritická telemetria používania na zistenie, keď používateľ klikne na tlačidlo Nákup. Používa sa na odvodenie vzoru používania a metriky konverzií pre používateľov, ktorí sa pokúšajú zakúpiť predplatné v rámci aplikácie.
 
 Zhromažďujú sa tieto polia:
 
@@ -3297,19 +3297,19 @@ Zhromažďujú sa tieto polia:
 
 - **IsDefaultSku** – boolovská hodnota označujúca, či sa používateľ pokúša kúpiť jednotku SKU, ktorá sa zobrazila ako prvá/predvolená
 
-- **ProductID** – reťazec určujúci, ktorý používateľ predplatného sa pokúša o nákup podľa konfigurácie v obchode
+- **ProductID** – reťazec určujúci, ktorý používateľ predplatného sa pokúša o nákup podľa konfigurácie v obchode
 
 - **SessionID** – identifikátor GUID na pripojenie udalostí podľa relácie
 
 ### <a name="officeandroiddocsuipaywallcontrolpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.PurchaseResult
 
-Kritická technická telemetria na zaznamenanie výsledku pokusu o nákup manuálne spusteného používateľom. Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného.
+Kritická technická telemetria na zaznamenanie výsledku pokusu o nákup manuálne spusteného používateľom. Telemetria produktu, ktorá sa používa na zosúladenie informácií o nákupnej transakcii s obchodným systémom spoločnosti Microsoft, aby sa povolili súvisiace výhody predplatného.
 
 Zhromažďujú sa tieto polia:
 
 - **EventDate** – časová pečiatka výskytu udalosti 
 
-- **IsModeFre** – boolovská hodnota, ktorá označuje, či bol nákup vykonaný z obrazovky FRE predaja typu upsell alebo výberu jednotky SKU
+- **IsModeFre** – boolovská hodnota, ktorá označuje, či bol nákup vykonaný z obrazovky FRE predaja typu upsell alebo výberu jednotky SKU
 
 - **Result** – int, ktorý označuje výsledok enumerácie operácie.
 
@@ -3332,15 +3332,15 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
 
-Túto telemetriu používania zhromažďujeme na zistenie toho, koľko času používateľ strávi na obrazovke „Zobraziť ďalšie výhody“.  Údaje sa používajú na vysvetlenie používania funkcie „Zobraziť ďalšie výhody“ a ďalšiu optimalizáciu skúseností v budúcich verziách.
+Túto telemetriu používania zhromažďujeme na zistenie toho, koľko času používateľ strávi na obrazovke „Zobraziť ďalšie výhody“.  Údaje sa používajú na vysvetlenie používania funkcie „Zobraziť ďalšie výhody“ a ďalšiu optimalizáciu skúseností v budúcich verziách.
 
 Zhromažďujú sa tieto polia:
 
-- **Duration** – číslo typu Long Integer udávajúce čas strávený používateľom na obrazovke „Zobraziť všetky funkcie“ v milisekundách
+- **Duration** – číslo typu Long Integer udávajúce čas strávený používateľom na obrazovke „Zobraziť všetky funkcie“ v milisekundách
 
 - **EventDate** – časová pečiatka výskytu udalosti 
 
-- **MostExplored** – celé číslo, ktoré označuje index najviac prepínanej položky v zozname aplikácií Microsoft 365 a ich funkcií
+- **MostExplored** – celé číslo, ktoré označuje index najviac prepínanej položky v zozname aplikácií Microsoft 365 a ich funkcií
 
 - **SessionID** – globálny jednoznačný identifikátor (GUID) na pripojenie udalostí podľa relácie
 
@@ -3350,7 +3350,7 @@ Telemetria používania na zistenie, koľko času používateľ strávi na obraz
 
 Zhromažďujú sa tieto polia:
 
-- **Duration** – číslo typu Long Integer udávajúce čas strávený používateľom na obrazovke výberu jednotky SKU v milisekundách
+- **Duration** – číslo typu Long Integer udávajúce čas strávený používateľom na obrazovke výberu jednotky SKU v milisekundách
 
 - **EventDate** – časová pečiatka výskytu udalosti
 
@@ -3376,7 +3376,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officeandroiddocsuiviewspremiumfeatureupsell"></a>Office.Android.DocsUI.Views.PremiumFeatureUpsell
 
-Táto udalosť zachytáva kliknutia kliknutí bezplatného používateľa na zobrazenie funkcie v platenej časti. Údaje sa používajú na meranie interakcie používateľov s kontextovými zážitkami predaja a pochopenie toho, ktoré funkcie používateľ uprednostňuje a nabádajú ho k nákupu predplatného. Toto nám pomáha zlepšovať súbor preferovaných vstupných bodov. 
+Táto udalosť zachytáva kliknutia kliknutí bezplatného používateľa na zobrazenie funkcie v platenej časti. Údaje sa používajú na meranie interakcie používateľov s kontextovými zážitkami predaja a pochopenie toho, ktoré funkcie používateľ uprednostňuje a nabádajú ho k nákupu predplatného. Toto nám pomáha zlepšovať súbor preferovaných vstupných bodov. 
 
 Zhromažďujú sa tieto polia:
 
@@ -3436,8 +3436,8 @@ Táto udalosť sa používa na pochopenie nákupov v aplikácii (IAP) používat
 
    - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
    - **isDefaultSKU** -logická hodnota – Ak používateľ kupuje produkt odporučený predvoleným zobrazením.
-   - **productId** – reťazec – identifikácia produktu z obchodu s aplikáciami, pri ktorých sa použilo tlačidlo Kúpiť.
-   - **toggleCount** – int – koľkokrát používateľ prepol medzi zobrazením rôznych produktov ešte pred ťuknutím na tlačidlo Kúpiť v aktuálnej relácii Paywall.
+   - **productId** – reťazec – identifikácia produktu z obchodu s aplikáciami, pri ktorých sa použilo tlačidlo Kúpiť.
+   - **toggleCount** – int – koľkokrát používateľ prepol medzi zobrazením rôznych produktov ešte pred ťuknutím na tlačidlo Kúpiť v aktuálnej relácii Paywall.
 
 - **Office.iOS.Paywall.SKUChooser.Stats** – zhromažďované údaje, aby sa zistilo, ako používateľ prešiel na výber jednotiek SKU, koľko času používateľ strávil na obrazovke výberu jednotiek SKU a prečo ukončil výber jednotiek SKU. Pomocou týchto informácií môžeme zabezpečiť, aby výber jednotky SKU fungoval podľa očakávaní a budeme môcť optimalizovať a vylepšiť skúsenosti koncových používateľov.
 
@@ -3480,8 +3480,8 @@ Táto udalosť sa používa na pochopenie nákupov v aplikácii (IAP) používat
    Zhromažďujú sa tieto polia:
 
    - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
-   - **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou obchodu s aplikáciami.
-   - **productId** – reťazec – len pre „MakePurchase“, „PendingPurchase“, ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka.
+   - **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou obchodu s aplikáciami.
+   - **productId** – reťazec – len pre „MakePurchase“, „PendingPurchase“, ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka.
    - **productsCount** – int – len pre „ProductsFetch“, počet produktov, ktoré vráti Store.
    - **requestType** – reťazec – typ požiadavky StoreKit. Napríklad „ProductsFetch“, „PendingPurchase“
    - **status** – reťazec – úspech alebo zlyhanie, označuje úspešnosť alebo zlyhanie požiadavky.
@@ -3492,7 +3492,7 @@ Táto udalosť sa používa na pochopenie nákupov v aplikácii (IAP) používat
 
    - **entryPoint** – reťazec – tlačidlo/tok spracovania, ktorým sa zobrazuje platobná stena. Napríklad „Premium Upgrade Button” alebo „First Run Flow”.
    - **failureReason** – reťazec – pridá sa len vtedy, keď je stav označený ako „zlyhanie“. Označujúci odpoveď na chybu danú odpoveďou poskytovania RFS.
-   - **productId** – reťazec – ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka
+   - **productId** – reťazec – ID produktu v obchode s aplikáciami, ktorého sa požiadavka týka
    - **status** – reťazec – úspech alebo zlyhanie, označuje, či požiadavka bola úspešná alebo zlyhala
 
 
@@ -3596,11 +3596,29 @@ Zhromažďujú sa tieto polia:
 
   - **DwEulaId** – číselný identifikátor typu licenčnej zmluvy koncového používateľa, ktorú používateľ prijal
 
+
+### <a name="officelicensingactivatedeviceentitlement"></a>Office.Licensing.ActivateDeviceEntitlement
+
+Táto udalosť sa spustí, keď sa pokúšame aktivovať ponuku trvalého balíka Office na základe zariadenia pre používateľa. Tieto údaje používame na monitorovanie stavu systémov a služieb a riešenie problémov.
+
+Zhromažďujú sa tieto polia: 
+
+- **Activity_Success** – uvádza, či je zariadenie licencované ponukou trvalého balíka Office na základe zariadenia.
+
+- **Data_Count** – uvádza počet nárokov trvalého balíka Office na základe zariadenia priradených k zariadeniu. Technicky by nemal existovať viac ako jeden.
+
+- **Data_EligibleEntitlementsCount** – uvádza počet oprávnených nárokov. Keďže služba vráti všetky nároky zariadenia priradené k zariadeniu, musíme skontrolovať ponuky, ktoré sú relevantné pre spustenú aplikáciu balíka Office.
+
+- **Data_Errors** – reťazec so zoznamom chýb počas načítavania licencií pre nároky oddelených čiarkou.
+
+- **Data_LicensedEntitlementsCount** – uvádza počet nárokov, pre ktoré sme úspešne načítali licenciu. Môžu sa vyskytnúť chyby oprávnenia, ktoré nás vedú k tomu, že nebudeme môcť získať licenciu. 
+
+
 ### <a name="officelicensingactivation"></a>Office.Licensing.Activation 
 
 Po nastavení licencie v počítači sa vykoná pokus o jej aktivovanie zavolaním služby AVS. Táto udalosť nahlasuje výsledok aktivačného volania.
 
-Je to dôležité na zistenie, koľko používateľov má problémy s aktiváciou. Existuje zisťovanie anomálie na rozpoznávanie akejkoľvek regresie. Je to mimoriadne dôležité, pretože máme externú závislosť od služby AVS a tento signál signalizuje, či stav naši externých partnerov v poriadku. Používa sa aj na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Je to dôležité na zistenie, koľko používateľov má problémy s aktiváciou. Existuje zisťovanie anomálie na rozpoznávanie akejkoľvek regresie. Je to mimoriadne dôležité, pretože máme externú závislosť od služby AVS a tento signál signalizuje, či stav naši externých partnerov v poriadku. Používa sa aj na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -3636,7 +3654,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
  
-Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že prostredie nákupu v rámci aplikácie zatvára používateľ alebo aplikácia. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
+Táto udalosť sa používa ako signál, ktorý nás informuje o tom, že prostredie nákupu zatvára používateľ alebo aplikácia. Tieto údaje sa používajú na monitorovanie a upozorňovanie na stav toku nákupu v rámci aplikácie na zaručenie, že funguje podľa očakávaní.  
  
 Zhromažďujú sa tieto polia:
  
@@ -3807,6 +3825,19 @@ Zhromažďujú sa tieto polia:
 
   - **MachineKey** – alfanumerický identifikátor licenčného kľúča, ktorý bol vydaný používateľovi
 
+### <a name="officelicensinglaunchsetupoffice"></a>Office.Licensing.LaunchSetupOffice
+
+Táto udalosť sa spustí, keď uplatníme ponuku balíka Office pre používateľa, ktorý si buď zakúpil zariadenie s predbežným nárokom na Office OEM, alebo zadal kód Product Key. Tieto údaje používame na monitorovanie stavu systémov a služieb a riešenie problémov.
+
+Zhromažďujú sa tieto polia:
+
+- **Activity_Result_Tag** – uvádza, ako sme dokončili túto udalosť.
+
+- **Data_DialogResult** – uvádza celkový výsledok procesu uplatnenia.
+
+- **Data_Scenario** – uvádza scenár, v ktorom došlo k uplatneniu.
+
+
 ### <a name="officelicensinglicensingbar"></a>Office.Licensing.LicensingBar
 
 Ak sa v zariadení vyskytujú problémy s licencovaním a používateľovi sa zobrazí oznámenie, odošle sa tento signál, ktorý uvádza aj typ oznámenia. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
@@ -3829,7 +3860,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingloadidentityticket"></a>Office.Licensing.LoadIdentityTicket
 
-Počas pokusu o licencovanie zariadenia sa aplikácia pokúsi načítať identitu používateľa s cieľom zistiť, či má používateľ nárok na Office alebo nie. Táto udalosť nahlasuje úspech alebo neúspech toho istého spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Počas pokusu o licencovanie zariadenia sa aplikácia pokúsi načítať identitu používateľa s cieľom zistiť, či má používateľ nárok na Office alebo nie. Táto udalosť nahlasuje úspech alebo neúspech toho istého spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -3855,7 +3886,7 @@ Táto udalosť nezhromažďuje žiadne polia.
 
 ### <a name="officelicensingnulfetcherfetchmodelfromols"></a>Office.Licensing.Nul.Fetcher.FetchModelFromOls
 
-Keď sa v zariadení používa moderný postup licencovania, pokúšame sa získať súbor s licenciou priamo zo služby. Táto udalosť nahlasuje úspech alebo neúspech spoločne s kódom chyby volania služby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave v modernom postupe licencovania, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Keď sa v zariadení používa moderný postup licencovania, pokúšame sa získať súbor s licenciou priamo zo služby. Táto udalosť nahlasuje úspech alebo neúspech spoločne s kódom chyby volania služby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave v modernom postupe licencovania, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -3865,7 +3896,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingnulvalidationfullvalidation"></a>Office.Licensing.Nul.Validation.FullValidation 
 
-Táto udalosť sa zhromažďuje v každej relácii zariadenia, ktoré používa moderný postup licencovania. Hlási licenčný stav zariadenia a hlási chyby, ktoré sa používateľovi zobrazujú a pre ktoré nemôže používať aplikáciu. Táto udalosť označuje, či je stav zariadenia používateľa v poriadku v modernom postupe licencovania. Pre túto udalosť je vytvorené zisťovanie anomálie na rozpoznávanie, či regresia spôsobuje nevhodné správanie používateľa. Je to dôležité aj pri zisťovaní problémov používateľa a na monitorovanie stavu systému.
+Táto udalosť sa zhromažďuje v každej relácii zariadenia, ktoré používa moderný postup licencovania. Hlási licenčný stav zariadenia a hlási chyby, ktoré sa používateľovi zobrazujú a pre ktoré nemôže používať aplikáciu. Táto udalosť označuje, či je stav zariadenia používateľa v poriadku v modernom postupe licencovania. Pre túto udalosť je vytvorené zisťovanie anomálie na rozpoznávanie, či regresia spôsobuje nevhodné správanie používateľa. Je to dôležité aj pri zisťovaní problémov používateľa a na monitorovanie stavu systému.
 
 Zhromažďujú sa tieto polia:
 
@@ -4042,7 +4073,7 @@ Zhromažďujú sa tieto polia:
 
 *[Táto udalosť sa odstránila z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-Máme experiment, ktorý používateľovi umožňuje vyskúšať a nastaviť automatické platby za Office priamo z aplikácie bez opustenia kontextu aplikácie. Táto udalosť nahlasuje úspech alebo zlyhanie tohto experimentu spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Máme experiment, ktorý používateľovi umožňuje vyskúšať a nastaviť automatické platby za Office priamo z aplikácie bez opustenia kontextu aplikácie. Táto udalosť nahlasuje úspech alebo zlyhanie tohto experimentu spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -4050,7 +4081,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingsearchforsessiontoken"></a>Office.Licensing.SearchForSessionToken
 
-Ak je používateľ v režime aktivácie v zdieľanom počítači, snažíme sa vyhľadať v zariadení token relácie relácie, ktorý používateľovi umožňuje používať aplikáciu. Táto udalosť nahlasuje úspech alebo neúspech scenára spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
+Ak je používateľ v režime aktivácie v zdieľanom počítači, snažíme sa vyhľadať v zariadení token relácie relácie, ktorý používateľovi umožňuje používať aplikáciu. Táto udalosť nahlasuje úspech alebo neúspech scenára spoločne s kódom chyby. Je to dôležité na určenie, či sa používateľ nachádza v dobrom stave a nechýba mu nejaká funkcia, na určenie stavu systému a na diagnostické účely, ak používateľ nahlási problém so zariadením.
 
 Zhromažďujú sa tieto polia:
 
@@ -4114,13 +4145,13 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officelicensingtelemetryflowsearchforbindingresult"></a>Office.Licensing.TelemetryFlow.SearchForBindingResult
 
-Výrobcovia OEM predávajú počítače dodávané s balíkom Office (jednoročné predplatné alebo trvalá licencia).  Za tieto produkty balíka Office sa platí, keď si zákazník kúpi počítač. Počítače, ktoré sú nastavené s určitým registračným kľúčom (OOBEMode: OEMTA), môžu mať priradenú väzbu balíka Office.  Pri spustení balíka Office v týchto zariadeniach vykonávame servisné kontroly na zistenie, či sa našla väzba balíka Office zodpovedajúca počítaču.
+Výrobcovia OEM predávajú počítače dodávané s balíkom Office (jednoročné predplatné alebo trvalá licencia).  Za tieto produkty balíka Office sa platí, keď si zákazník kúpi počítač. Počítače, ktoré sú nastavené s určitým registračným kľúčom (OOBEMode: OEMTA), môžu mať priradenú väzbu balíka Office.  Pri spustení balíka Office v týchto zariadeniach vykonávame servisné kontroly na zistenie, či sa našla väzba balíka Office zodpovedajúca počítaču.
 
 Táto aktivita telemetrie sleduje miesta úspechu a zlyhania pri vyhľadávaní väzby, aby sme mohli zabezpečiť, že počítače, ktoré majú väzbu, ju môžu úspešne načítať, a že naše služby fungujú.  Táto aktivita nesleduje zariadenia, u ktorých po skontrolovaní s našimi službami zistíme, že nemajú priradenú žiadnu väzbu.
 
 Zhromažďujú sa tieto polia:
 
-- **DexShouldRetry** – signalizuje, že sme narazili na problém s možnosťou opakovaného pokusu (internet a servery fungujú správne).
+- **DexShouldRetry** – signalizuje, že sme narazili na problém s možnosťou opakovaného pokusu (internet a servery fungujú správne).
 
 - **GenuineTicketFailure** – označuje zlyhanie HRESULT pri pokuse o získanie originálneho tiketu/kódu Product Key Windowsu (WPK) zariadenia.
 
@@ -4196,7 +4227,7 @@ Zhromažďujú sa tieto polia:
     - 0x2370e3a0      Používateľ zavrel dialógové okno
     - 0x2370e3c1      Prejsť na web pre uplatnenie PIN
     - 0x2370e3a1      Prejsť na web pre uplatnenie PIN
-    - 0x2370e3c0      Sekvencia dialógových okien je v slučke kvôli tomu, že používateľ prechádzal dopredu a dozadu v postupnosti dialógových okien
+    - 0x2370e3c0      Sekvencia dialógových okien je v slučke kvôli tomu, že používateľ prechádzal dopredu a dozadu v postupnosti dialógových okien
     - 0x2370e3a3      Používateľ klikol na možnosť „Teraz nie“, ktorou sa preskočí ponuka aktivácie balíka Office pre túto reláciu.
     - 0x2370e3a2      Používateľ klikol na hypertextové prepojenie „Nikdy mi to nezobrazovať“, ktorým sa zakáže ponuka aktivácie balíka Office.
 
@@ -4690,6 +4721,48 @@ Zhromažďujú sa tieto polia:
 - **PipelineInfo_ClientIp** – prvé tri oktety IP adresy
 
 - **SessionId** – identifikátor relácie
+
+
+### <a name="cataloginvalid"></a>catalog.invalid
+
+Táto udalosť zaznamenáva chybový stav smerujúci na neplatný stiahnutý katalóg manifestu. Túto udalosť používame na to, aby sme sa uistili, že v publikovaných súboroch manifestu sa nenachádzajú žiadne chyby. 
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **CatalogFile** – názov súboru katalógu, ktorý spôsobil chybový stav.
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **SessionId** – identifikátor relácie
+
 
 ### <a name="cloningtaskbegin"></a>cloningtask.begin
 
@@ -5192,7 +5265,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="controllercheckwindowupdatecheck"></a>controller.checkwindow.updatecheck
 
-Táto udalosť označuje, že sa vykonala kontrola aktualizácií. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
+Táto udalosť označuje, že sa vykonalo vyhľadávanie aktualizácií. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
 Zhromažďujú sa tieto polia:
 
@@ -5233,7 +5306,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="controllercheckwindowupdatecheckcancel"></a>controller.checkwindow.updatecheckcancel
 
-Táto udalosť označuje, že proces kontroly aktualizácií bol zrušený (buď používateľom, alebo systémom). Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
+Táto udalosť označuje, že proces vyhľadávania aktualizácií bol zrušený (používateľom alebo systémom). Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
 Zhromažďujú sa tieto polia:
 
@@ -5274,7 +5347,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="controllercheckwindowupdatecheckcanceluser"></a>controller.checkwindow.updatecheckcanceluser
 
-Táto udalosť označuje, že proces vyhľadávania aktualizácií bol zrušený používateľom.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
+Táto udalosť označuje, že proces vyhľadávania aktualizácií bol zrušený používateľom. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií, optimalizáciu zaťažení služby a definovanie frekvencie vyhľadávania aktualizácií. Tiež chceme optimalizovať frekvenciu vydávania na základe očakávania používateľov týkajúceho sa aktualizácií.
 
 Zhromažďujú sa tieto polia:
 
@@ -5315,7 +5388,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="controllercheckwindowupdatesfound"></a>controller.checkwindow.updatesfound
 
-Táto udalosť označuje, že pri vyhľadávaní aktualizácií sa našli aktualizácie.  Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
+Táto udalosť označuje, že pri vyhľadávaní aktualizácií sa našli aktualizácie. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
 
 Zhromažďujú sa tieto polia:
 
@@ -5479,7 +5552,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="controllerdownloadwindowcurtasknull"></a>controller.downloadwindow.curtasknull
 
-Táto udalosť označuje, že pri pokuse o použitie aktualizácie sa vyskytla chyba. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
+Táto udalosť označuje, že pri pokuse o použitie aktualizácie sa vyskytla chyba. Táto udalosť sa používa na zaručenie správnosti ponúkania aktualizácií.
 
 Zhromažďujú sa tieto polia:
 
@@ -5807,7 +5880,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="controllerdownloadwindownetworkunavailablealert"></a>controller.downloadwindow.networkunavailablealert
 
-Táto udalosť označuje, že počas sťahovania aktualizácií sa prerušilo sieťové pripojenie.  Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že pri sťahovaní aktualizácií sa prerušilo pripojenie k sieti. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
 Zhromažďujú sa tieto polia:
 
@@ -6052,7 +6125,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="controllerdownloadwindowupdatesuccessful"></a>controller.downloadwindow.updatesuccessful
 
-Táto udalosť označuje, že všetky aktualizácie z aktuálnej dávky boli úspešné. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že všetky aktualizácie z aktuálne dávky boli úspešné. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
 Zhromažďujú sa tieto polia:
 
@@ -6093,7 +6166,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="controllerdownloadwindowuserpaused"></a>controller.downloadwindow.userpaused
 
-Táto udalosť označuje, že všetky aktualizácie z aktuálnej dávky boli úspešné. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že všetky aktualizácie z aktuálne dávky boli úspešné. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
 
 Zhromažďujú sa tieto polia:
 
@@ -6709,7 +6782,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="controllerupdatewindowupdateavailablecancel"></a>controller.updatewindow.updateavailablecancel
 
-Táto udalosť označuje, že používateľ zrušil akciu po zobrazení hárka aktualizácie so zoznamom aktualizácií. Táto udalosť sa používa na vysvetlenie dôvodov neaktualizovania (t .j. že používateľ ju vedome zrušil). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že používateľ zrušil akciu po zobrazení hárka aktualizácie so zoznamom aktualizácií. Táto udalosť sa používa na vysvetlenie dôvodov neaktualizovania (t .j. že používateľ ju vedome zrušil). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -7527,7 +7600,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="downloadmgrdownloadstart"></a>downloadmgr.downloadstart
 
-Táto udalosť zaznamenáva aktualizáciu, ktorá sa chystá stiahnuť. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva aktualizáciu, ktorá sa stiahne. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -7832,7 +7905,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="fbacheckforupdate"></a>fba.checkforupdate
 
-Táto udalosť označuje, že proces na pozadí vyhľadáva aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že proces na pozadí vykonáva vyhľadávanie aktualizácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -8233,7 +8306,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="fbalaunchstatus"></a>fba.launchstatus
 
-Táto udalosť zaznamenáva zlyhania démona služby MAU pri pokuse o spustenie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva zlyhania démona služby MAU počas pokusu o spustenie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -8482,7 +8555,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="fbasettimerfail"></a>fba.settimerfail  
 
-Táto udalosť označuje zlyhanie pokusu o nastavenie časovača na spustenie budúcej aktualizácie. Táto udalosť je veľmi dôležitá a používame ju na určenie množstva zlyhaní na vývoj prípadných alternatívnych riešení.
+Táto udalosť označuje zlyhanie pokusu o nastavenie časovača na spustenie budúcej aktualizácie. Táto udalosť je veľmi dôležitá a používame ju na určenie množstva zlyhaní na vývoj prípadných alternatívnych riešení.
 
 Zhromažďujú sa tieto polia:
 
@@ -8686,7 +8759,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="fbaupdatefound"></a>fba.updatefound
 
-Táto udalosť označuje, že démon služby MAU našiel dostupné aktualizácie na ponúknutie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že démon služby MAU našiel dostupné aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -9323,7 +9396,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="fbasilentupdateinstallcomplete"></a>fbasilentupdate.installcomplete
 
-Táto udalosť označuje, že sa skončila inštalácia všetkých aktualizácií v dávke. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že sa dokončila inštalácia všetkých aktualizácií v dávke. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -11082,7 +11155,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="installstatushelper"></a>installstatus.helper
 
-Táto udalosť zaznamenáva stav pomocného nástroja služby Microsoft AutoUpdate. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva stav nástroja pomocníka služby Microsoft AutoUpdate. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -11451,7 +11524,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="installupdatestaskretryfail"></a>installupdatestask.retryfail
 
-Táto udalosť označuje, že počas procesu opakovania inštalácie sa vyskytli chyby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že počas procesu zopakovania pokusu o inštaláciu sa vyskytli chyby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -11492,7 +11565,7 @@ Zhromažďujú sa tieto polia:
    
 ### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
-Táto udalosť zaznamenáva chyby komunikácie vnútri procesu (komunikácia s pomocným nástrojom služby MAU). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva chyby komunikácie v rámci procesu (komunikácia s nástrojom pomocníka služby MAU). Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -11534,7 +11607,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="installupdatestaskretryresponse"></a>installupdatestask.retryresponse
 
-Táto udalosť zaznamenáva, že opakovaný pokus nebol úspešný. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva, že zopakovanie pokusu nebolo úspešné. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -11575,7 +11648,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="installupdatestaskretrysuccess"></a>installupdatestask.retrysuccess
 
-Táto udalosť zaznamenáva úspešnú inštaláciu aktualizácie po zopakovaní. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva úspešnú inštaláciu aktualizácie po zopakovaní pokusu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -12143,7 +12216,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="msupdatemonitorprogressfinished"></a>msupdate.monitor.progress.finished
 
-Táto udalosť zaznamenáva zoznam aktualizácií vo fronte, ktoré sa úspešne nainštalovali. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva zoznam aktualizácií vo fronte, ktorých inštalácia sa dokončila. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -13130,6 +13203,47 @@ Zhromažďujú sa tieto polia:
 
 - **SessionId** – identifikátor relácie
 
+### <a name="updateclonedisablereason"></a>update.clonedisablereason
+
+Táto udalosť zaznamenáva stav, že funkcia Install-On-Clone je zakázaná pre konkrétnu aktualizáciu. Táto udalosť sa používame na monitorovanie stavu funkcie Install-On-Clone a na poskytovanie vylepšenej služby.
+
+Zhromažďujú sa tieto polia:
+
+- **App** – proces aplikácie odosielajúci udalosť
+
+- **AppInfo_Language** – jazyk, v ktorom je aplikácia spustená
+
+- **AppVersionLong** – verzia aplikácie
+
+- **Channel** – preferencia pre cieľovú skupinu
+
+- **Device_NetworkCountry** – krajina zariadenia (na základe IP adresy)
+
+- **DeviceID** – identifikátor zariadenia
+
+- **DeviceInfo_Model** – hardvérový model zariadenia
+
+- **DeviceInfo_NetworkType** – typ siete (Wi-Fi, káblová, neznáma)
+
+- **DeviceInfo_OsBuild** – verzia operačného systému
+
+- **Event_ReceivedTime** – čas prijatia telemetrie
+
+- **EventInfo_Name** – názov udalosti telemetrie, ktorá sa práve zaznamenáva
+
+- **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
+
+- **HowTocheck** – preferencia pre kontrolu aktualizácií
+
+- **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
+
+- **PipelineInfo_ClientIp** – prvé 3 oktety IP adresy
+
+- **Reason** – dôvod, prečo je funkcia Install On Clone zakázaná pre túto aktualizáciu.
+
+- **SessionId** – identifikátor relácie
+
+
 ### <a name="updatedownloadbegin"></a>update.download.begin 
 
 Táto udalosť označuje začiatok procesu aktualizácie aplikácie. Táto udalosť tvorí súčasť lievika aktualizácie a používa sa na určenie stavu aktualizácií aplikácií. 
@@ -13430,6 +13544,8 @@ Zhromažďujú sa tieto polia:
 
 - **EventInfo_Time** – čas výskytu zaznamenanej udalosti 
 
+- **ForcedUpdate** – reťazec označujúci, či aktualizáciu vynútil správca IT
+
 - **HowToCheck** – ako sa kontroluje nastavenie
 
 - **Payload** – označuje, či sa počas procesu inštalácie zobrazilo zobrazenie priebehu
@@ -13699,7 +13815,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="updatecoreappregistration"></a>updatecore.appregistration
 
-Táto udalosť zaznamenáva pokusy o zaregistrovanie aplikácie a výsledok alebo dôvod. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva pokusy o registráciu aplikácie a výsledok/dôvod. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -13740,7 +13856,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="updatecoreloadinglaunchagent"></a>updatecore.loadinglaunchagent
 
-Táto udalosť označuje, že sa načítava agent spustenia. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že agent spustenia sa načítava. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -13820,7 +13936,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="updatecoreserverconnectionfail"></a>updatecore.server.connectionfail
 
-Táto udalosť zapisuje chyby, ktoré sa vyskytli pri kontaktovaní siete CDN. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva chyby, ku ktorým došlo pri prístupe k sieti. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -14187,7 +14303,7 @@ Zhromažďujú sa tieto polia:
  
 ### <a name="updatefindercheckstart"></a>updatefinder.check.start
 
-Táto udalosť sa zaznamenáva vždy, keď sa spustí operácia kontroly aktualizácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva, či sa inicializuje kontrola fungovania aktualizácií. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -14833,7 +14949,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
+- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -14874,7 +14990,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
+- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -14915,7 +15031,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
+- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -14997,7 +15113,7 @@ Zhromažďujú sa tieto polia:
 
 - **HowTocheck** – preferencia pre kontrolu aktualizácií
 
-- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
+- **Payload** – obsahuje názov, základný stav a verziu aktualizácie pre balík.
 
 - **PipelineInfo_ClientCountry** – krajina zariadenia (na základe IP adresy)
 
@@ -15090,7 +15206,7 @@ Zhromažďujú sa tieto polia:
     
 ### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
-Táto udalosť označuje, že sa našli aktualizácie a čakajú na inštaláciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že aktualizácie sa našli a čakajú na inštaláciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -15220,7 +15336,7 @@ Zhromažďujú sa tieto polia:
    
 ### <a name="webservicescheckforsilentupdates"></a>webservices.checkforsilentupdates
 
-Táto udalosť označuje, že sa našli kandidáti na tichú aktualizáciu. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť označuje, že sa našli kandidáti na tichú aktualizácie. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -15343,7 +15459,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
-Táto udalosť zaznamenáva požiadavky pre službu MAU, časy odozvy a chyby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
+Táto udalosť zaznamenáva požiadavky na službu MAU, časy reakcie a chyby. Táto udalosť sa používa na zaistenie, že proces aktualizácie funguje podľa očakávaní, a na pomoc pri riešení chýb.
  
 Zhromažďujú sa tieto polia:
 
@@ -15554,11 +15670,11 @@ Zhromažďujú sa tieto polia:
 
 - **CachedError_Description** – popis chyby vo vyrovnávacej pamäti
 
-- **CachedError_Tag** – označuje, kde v kóde došlo k chybe vo vyrovnávacej pamäti
+- **CachedError_Tag** – označuje, kde v kóde došlo k chybe vo vyrovnávacej pamäti
 
 - **CachedError_Type** – typ chyby vo vyrovnávacej pamäti, napríklad Win32Error atď.
 
-- **ExecutionTime** – čas v milisekundách, ktorý bol potrebný na replikovanie poznámkového bloku.
+- **ExecutionTime** – čas v milisekundách, ktorý bol potrebný na replikovanie poznámkového bloku.
 
 - **Gosid** – ID miesta globálneho objektu.
 
@@ -15566,7 +15682,7 @@ Zhromažďujú sa tieto polia:
 
 - **InitialReplicationInSession** – označuje, či je táto replikácia prvou replikáciou poznámkového bloku po otvorení alebo nie.
 
-- **IsBackgroundSync** – označuje, či ide o synchronizáciu na pozadí alebo nie.
+- **IsBackgroundSync** – označuje, či ide o synchronizáciu na pozadí alebo nie.
 
 - **IsCachedErrorSuppressed** – označuje, či je chyba vo vyrovnávacej pamäti potlačená alebo nie.
 
@@ -15582,29 +15698,29 @@ Zhromažďujú sa tieto polia:
 
 - **IsUsingRealtimeSync** – označuje, či synchronizácia poznámkového bloku používa modernú synchronizáciu obsahu strany alebo nie.
 
-- **LastAttemptedSync** – časová pečiatka pri poslednom pokuse o synchronizáciu poznámkového bloku.
+- **LastAttemptedSync** – časová pečiatka pri poslednom pokuse o synchronizáciu poznámkového bloku.
 
-- **LastBackgroundSync** – časová pečiatka pri pokuse o najnovšiu synchronizáciu na pozadí.
+- **LastBackgroundSync** – časová pečiatka pri pokuse o najnovšiu synchronizáciu na pozadí.
 
 - **LastNotebookViewedDate** – dátum posledného zobrazenia poznámkového bloku.
 
 - **LastSuccessfulSync** – časová pečiatka poslednej úspešnej synchronizácie poznámkového bloku.
 
-- **NeedToRestartBecauseOfInconsistencies** – označuje, či je potrebné reštartovať synchronizáciu z dôvodu nezrovnalostí alebo nie.
+- **NeedToRestartBecauseOfInconsistencies** – označuje, či je potrebné reštartovať synchronizáciu z dôvodu nezrovnalostí alebo nie.
 
-- **NotebookErrorCode** – kód chyby synchronizácie úrovne poznámkového bloku uložený v mieste grafu v poznámkovom bloku.
+- **NotebookErrorCode** – kód chyby synchronizácie úrovne poznámkového bloku uložený v mieste grafu v poznámkovom bloku.
 
 - **NotebookId** – ID poznámkového bloku.
 
 - **NotebookType** – typ poznámkového bloku.
 
-- **ReplicatingAgainBecauseOfInconsistencies** – označuje, či sa synchronizácia reštartuje z dôvodu nezrovnalostí alebo nie.
+- **ReplicatingAgainBecauseOfInconsistencies** – označuje, či sa synchronizácia reštartuje z dôvodu nezrovnalostí alebo nie.
 
 - **SectionError_Code** – číselný alebo alfanumerický kód, ktorý sa používa na určenie povahy chyby synchronizácie sekcie a/alebo dôvodu, prečo sa vyskytla
 
 - **SectionError_Description** – popis chyby synchronizácie sekcie
 
-- **SectionError_Tag** – označuje, kde v kóde došlo k chybe synchronizácie sekcie
+- **SectionError_Tag** – označuje, kde v kóde došlo k chybe synchronizácie sekcie
 
 - **SectionError_Type** – typ chyby synchronizácie sekcie, napríklad Win32Error atď
 
@@ -15614,13 +15730,13 @@ Zhromažďujú sa tieto polia:
 
 - **SyncId** – číslo jedinečné pre každú synchronizáciu poznámkového bloku.
 
-- **SyncWasFirstInSession** – označuje, či je táto synchronizácia prvou synchronizáciou v aktuálnej relácii.
+- **SyncWasFirstInSession** – označuje, či je táto synchronizácia prvou synchronizáciou v aktuálnej relácii.
 
 - **SyncWasUserInitiated** – označuje, či je táto synchronizácia iniciovaná používateľom alebo nie.
 
 - **TenantId** – ID nájomníka SharePointu.
 
-- **TimeSinceLastAttemptedSync** – čas od posledného pokusu o synchronizáciu poznámkového bloku.
+- **TimeSinceLastAttemptedSync** – čas od posledného pokusu o synchronizáciu poznámkového bloku.
 
 - **TimeSinceLastSuccessfulSync** – čas od poslednej úspešnej synchronizácie poznámkového bloku.
 
@@ -15644,7 +15760,7 @@ Zhromažďujú sa tieto polia:
 
 - **Exception_Description** – popis chyby
 
-- **Exception_Tag** – označuje, kde v kóde došlo k chybe
+- **Exception_Tag** – označuje, kde v kóde došlo k chybe
 
 - **Exception_Type** – typ chyby, napríklad Win32Error atď.
 
@@ -15674,7 +15790,7 @@ Zhromažďujú sa tieto polia:
 
 - **UploadAckCount** – počet potvrdení pre nahrávanie v relácii protokolu WebSocket
 
-- **WebUrl** – webová URL adresa s odstránenými osobnými údjmi 
+- **WebUrl** – webová URL adresa s odstránenými osobnými údajmi 
 
 ### <a name="officeonenotestoragesectionsyncresult"></a>Office.OneNote.Storage.SectionSyncResult
  
@@ -15686,19 +15802,19 @@ Zhromažďujú sa tieto polia:
 
 - **Error_Description** – popis chyby
 
-- **Error_Tag** – označuje, kde v kóde došlo k chybe
+- **Error_Tag** – označuje, kde v kóde došlo k chybe
 
 - **Error_Type** – typ chyby, napríklad Win32Error atď.
 
 - **ErrorLast** – kód naposledy zobrazenej chyby 
 
-- **ExecutionTime** – čas v milisekundách, ktorý bol potrebný na replikovanie sekcie
+- **ExecutionTime** – čas v milisekundách, ktorý bol potrebný na replikovanie sekcie
 
 - **InitialReplicationInSession** – označuje, či je táto replikácia prvou replikáciou poznámkového bloku po otvorení alebo nie
 
 - **IsAttachedViaShortcut** – označuje, či je sekcia pripojená cez odkaz alebo nie
 
-- **IsBackgroundSync** – označuje, či ide o synchronizáciu na pozadí alebo nie
+- **IsBackgroundSync** – označuje, či ide o synchronizáciu na pozadí alebo nie
 
 - **IsEncrypted** – označuje, či je sekcia šifrovaná alebo nie
 
@@ -15728,7 +15844,7 @@ Zhromažďujú sa tieto polia:
 
 - **SyncId** – číslo jedinečné pre každú synchronizáciu sekcie
 
-- **SyncWasFirstInSession** – označuje, či je táto synchronizácia prvou synchronizáciou v aktuálnej relácii
+- **SyncWasFirstInSession** – označuje, či je táto synchronizácia prvou synchronizáciou v aktuálnej relácii
 
 - **SyncWasUserInitiated** – označuje, či je táto synchronizácia iniciovaná používateľom alebo nie
 
@@ -15753,7 +15869,7 @@ Zhromažďujú sa tieto polia:
 
 - **Error_Description** – popis chyby
 
-- **Error_Tag** – označuje, kde v kóde došlo k chybe
+- **Error_Tag** – označuje, kde v kóde došlo k chybe
 
 - **Error_Type** – typ chyby, napríklad Win32Error atď.
 
@@ -15787,19 +15903,19 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="onenotestorageconnectivitychanged"></a>OneNote.Storage.ConnectivityChanged
 
-Udalosť zaznamená, či používateľ má alebo nemá internetové pripojenie. Používa sa to na koreláciu ostatných metrík výkonnosti stavu synchronizácie, a to tak, že nám umožňuje ignorovať udalosti, ktoré sa vyskytujú, keď používateľ nemá pripojenie na internet, keďže bez pripojenia na internet sa neočakáva prijateľné oneskorenie služby. Umožňuje nám to vypočítať presný počet relácií pre naše metriky v jednotlivých výsekoch zákazníkov (na jednotlivých nájomníkov, na jednotlivé odvetvia). Používa sa aj na filtrovanie hlásení chýb, keďže existujú početné chyby synchronizácie, pri ktorých očakávame, že sa vyskytnú bez pripojenia k sieti, ktoré si však inak vyžadujú skúmanie.
+Udalosť zaznamená, či používateľ má alebo nemá internetové pripojenie. Používa sa to na koreláciu ostatných metrík výkonnosti stavu synchronizácie, a to tak, že nám umožňuje ignorovať udalosti, ktoré sa vyskytujú, keď používateľ nemá pripojenie na internet, keďže bez pripojenia na internet sa neočakáva prijateľné oneskorenie služby. Umožňuje nám to vypočítať presný počet relácií pre naše metriky v jednotlivých výsekoch zákazníkov (na jednotlivých nájomníkov, na jednotlivé odvetvia). Používa sa aj na filtrovanie hlásení chýb, keďže existujú početné chyby synchronizácie, pri ktorých očakávame, že sa vyskytnú bez pripojenia k sieti, ktoré si však inak vyžadujú skúmanie.
 
 Ak tieto údaje nedostaneme, nebudeme môcť presne monitorovať výkonnosť našich produktov ani určiť, či sa chyby, ktoré sa vyskytnú u používateľa, sú očakávané, alebo si vyžadujú ďalšie skúmanie.
 
 Zhromažďujú sa tieto polia:
 
-- **InternetConnectivityNowAvailable** – ak sa stav pripojenia zmenil a teraz má pripojenie na internet
+- **InternetConnectivityNowAvailable** – ak sa stav pripojenia zmenil a teraz má pripojenie na internet
 
 ### <a name="onenotestoragelegacyinboundlatency"></a>OneNote.Storage.LegacyInboundLatency
 
-Kritický signál, ktorý sa používa na sledovanie výkonu prichádzajúcich synchronizačných operácií, ktoré komunikujú priamo so SharePointom, vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+Kritický signál, ktorý sa používa na sledovanie výkonu prichádzajúcich synchronizačných operácií, ktoré komunikujú priamo so SharePointom, vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
 
-Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému prichádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Ak tieto údaje mať nebudeme, bude nám to brániť v zabezpečení dostatočného výkonu sťahovania, keď používateľ synchronizuje zmeny zo SharePointu s počítačom.
+Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému prichádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Ak tieto údaje mať nebudeme, bude nám to brániť v zabezpečení dostatočného výkonu sťahovania, keď používateľ synchronizuje zmeny zo SharePointu s počítačom.
 
 Zhromažďujú sa tieto polia: 
 
@@ -15807,13 +15923,13 @@ Zhromažďujú sa tieto polia:
 
 - **NotebookId** – ID poznámkového bloku, ktorého súčasťou je toto nahrávanie
 
-- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách potrebný na vykonanie nahrávania
+- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách potrebný na vykonanie nahrávania
 
 ### <a name="onenotestoragelegacyoutboundlatency"></a>OneNote.Storage.LegacyOutboundLatency
 
-Kritický signál, ktorý sa používa na sledovanie výkonu odchádzajúcich synchronizačných operácií, ktoré komunikujú priamo so SharePointom, vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+Kritický signál, ktorý sa používa na sledovanie výkonu odchádzajúcich synchronizačných operácií, ktoré komunikujú priamo so SharePointom, vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
 
-Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému odchádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Ak tieto údaje mať nebudeme, bude nám to brániť v zabezpečení dostatočného výkonu pri synchronizovaní zmien používateľov do SharePointu. 
+Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému odchádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Ak tieto údaje mať nebudeme, bude nám to brániť v zabezpečení dostatočného výkonu pri synchronizovaní zmien používateľov do SharePointu. 
 
 Zhromažďujú sa tieto polia: 
 
@@ -15821,31 +15937,31 @@ Zhromažďujú sa tieto polia:
 
 - **NotebookId** – ID poznámkového bloku, ktorého súčasťou je toto nahrávanie
 
-- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách potrebný na vykonanie nahrávania
+- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách potrebný na vykonanie nahrávania
 
 ### <a name="onenotestoragerealtimefiledataobjectdownload"></a>OneNote.Storage.RealTime.FileDataObjectDownload 
 
-Kritický signál, ktorý sa používa na sledovanie výkonu, keď u používateľa prebieha prichádzajúci prenos dátového objektu súboru (t. j. vložený súbor alebo obrázok), ktorý sa stiahne priamo z našej služby a nie je súčasťou operácie synchronizácie na stránke, v sekcii alebo v poznámkovom bloku. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+Kritický signál, ktorý sa používa na sledovanie výkonu, keď u používateľa prebieha prichádzajúci prenos dátového objektu súboru (t. j. vložený súbor alebo obrázok), ktorý sa stiahne priamo z našej služby a nie je súčasťou operácie synchronizácie na stránke, v sekcii alebo v poznámkovom bloku. Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
 
-Používa sa to na zabezpečenie stavu a výkonu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému sťahovaniu údajov z našej služby a to, ako sú problémy s oneskorením rozšírené v rámci nájomníka, a hlásenie nášho správania v priebehu času, čo nám umožňuje merať trendy výkonu služby. Ak pri objekte súboru zistíme neprijateľné oneskorenie, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa objektu, aby ste mohli vylepšiť proces sťahovania. Údaje tiež rozdeľujeme na základe prípony sťahovaného objektu súboru, pretože máme rozdielne očakávania podľa toho, či je súbor zobrazený ako vnorený v našom plátne (napr. obrázok), alebo ide o nevnorený súbor (napr. textový dokument). Ak tieto údaje nedostaneme, bude nám to brániť v monitorovaní výkonu týchto stiahnutí
+Používa sa to na zabezpečenie stavu a výkonu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému sťahovaniu údajov z našej služby a to, ako sú problémy s oneskorením rozšírené v rámci nájomníka, a hlásenie nášho správania v priebehu času, čo nám umožňuje merať trendy výkonu služby. Ak pri objekte súboru zistíme neprijateľné oneskorenie, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa objektu, aby ste mohli vylepšiť proces sťahovania. Údaje tiež rozdeľujeme na základe prípony sťahovaného objektu súboru, pretože máme rozdielne očakávania podľa toho, či je súbor zobrazený ako vnorený v našom plátne (napr. obrázok), alebo ide o nevnorený súbor (napr. textový dokument). Ak tieto údaje nedostaneme, bude nám to brániť v monitorovaní výkonu týchto stiahnutí
 
 Zhromažďujú sa tieto polia: 
 
-- **FileSizeInBytes** – veľkosť sťahovaného súboru v bajtoch 
+- **FileSizeInBytes** – veľkosť sťahovaného súboru v bajtoch 
 
-- **IsImage** – logická hodnota, ktorá určuje, či sťahovaný súbor má príponou, ktorá sa zhoduje s preddefinovaným zoznamom bežných formátov obrázka (.bmp, .emf, .gif, .jpe, .jpeg, .jpg, .png), ktoré zobrazujeme vnorené v plátne.
+- **IsImage** – logická hodnota, ktorá určuje, či sťahovaný súbor má príponou, ktorá sa zhoduje s preddefinovaným zoznamom bežných formátov obrázka (.bmp, .emf, .gif, .jpe, .jpeg, .jpg, .png), ktoré zobrazujeme vnorené v plátne.
 
-- **TimeToDownload** – dĺžka času potrebného na úspešné stiahnutie dátového objektu súboru z ukladacieho priestoru objektu BLOB do zariadenia 
+- **TimeToDownload** – dĺžka času potrebného na úspešné stiahnutie dátového objektu súboru z ukladacieho priestoru objektu BLOB do zariadenia 
 
 ### <a name="onenotestoragerealtimewebsocketdownload"></a>OneNote.Storage.RealTime.WebSocketDownload
 
-Kritický signál, ktorý sa používa na sledovanie výkonu prichádzajúcich synchronizačných operácií vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon sťahovania údajov zo služby (onenote.com). Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+Kritický signál, ktorý sa používa na sledovanie výkonu prichádzajúcich synchronizačných operácií vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon sťahovania údajov zo služby (onenote.com). Tento signál sa zhromažďuje iba v prípade najhoršieho výkonu sťahovania v priebehu posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
 
-Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov z našej služby, informácie o údajoch, ktoré sťahovali, keď došlo k pomalému prichádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. 
+Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov z našej služby, informácie o údajoch, ktoré sťahovali, keď došlo k pomalému prichádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. 
 
-Ak zistíme neprijateľné oneskorenie v prípade sekcie alebo poznámkového bloku, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa toho istého dokumentu, aby sme identifikovali regresie výkonu na strane klienta, čo nám umožní poskytovať výkonnejšiu službu.
+Ak zistíme neprijateľné oneskorenie v prípade sekcie alebo poznámkového bloku, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa toho istého dokumentu, aby sme identifikovali regresie výkonu na strane klienta, čo nám umožní poskytovať výkonnejšiu službu.
 
-Ak tieto údaje nedostaneme, nebudeme môcť monitorovať výkon tohto aspektu služby a ani vplyv zmien na strane servera, čo môže byť potrebné z hľadiska používania alebo iných faktorov.
+Ak tieto údaje nedostaneme, nebudeme môcť monitorovať výkon tohto aspektu služby a ani vplyv zmien na strane servera, čo môže byť potrebné z hľadiska používania alebo iných faktorov.
 
 Zhromažďujú sa tieto polia:
 
@@ -15863,19 +15979,19 @@ Zhromažďujú sa tieto polia:
 
 - **ServerSessionId** – ID relácie servera, ktorej súčasťou je toto nahrávanie
 
-- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách medzi tým, ako sa používateľ naviguje na stránku, a tým, ako replikačný zásobník potvrdí, že strýnka je synchronizovaná so serverom.
+- **TimeToConfirmSyncedWithServerInMs** – čas v milisekundách medzi tým, ako sa používateľ naviguje na stránku, a tým, ako replikačný zásobník potvrdí, že strýnka je synchronizovaná so serverom.
 
-- **TimeToFirstUpdateInMs** – čas v milisekundách medzi tým, ako synchronizačný modul spustí prichádzajúcu replikáciu stránky, a tým, ako táto operácia replikácie dosiahne stavom synchronizácie so serverom.
+- **TimeToFirstUpdateInMs** – čas v milisekundách medzi tým, ako synchronizačný modul spustí prichádzajúcu replikáciu stránky, a tým, ako táto operácia replikácie dosiahne stavom synchronizácie so serverom.
 
 ### <a name="onenotestoragerealtimewebsocketupload"></a>OneNote.Storage.RealTime.WebSocketUpload
 
-Kritický signál, ktorý sa používa na sledovanie výkonu odchádzajúcich synchronizačných operácií vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby (onenote.com).
+Kritický signál, ktorý sa používa na sledovanie výkonu odchádzajúcich synchronizačných operácií vrátane korelácie informácií, ktoré nám umožňujú monitorovať a skúmať výkon nahrávania údajov do služby (onenote.com).
 
-Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému odchádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Tieto údaje použijeme aj na sledovanie vplyvu a efektivity našich vylepšení klientov a služieb. 
+Používa sa to na zabezpečenie stavu služby, pretože tak vieme zistiť, u ktorých nájomníkov dochádza k neprijateľne pomalému prenosu prichádzajúcich údajov do našej služby, informácie o údajoch, ktoré nahrávajú, keď dochádza k pomalému odchádzajúcemu prenosu, a o tom, ako sú problémy s oneskorením rozšírené v rámci nájomníka. Používa sa aj na hlásenie stavu a výkonu služby u našich zákazníkov na meranie trendov v priebehu čase a automatické upozorňovanie na problémy na ich technické zmiernenie. Tieto údaje použijeme aj na sledovanie vplyvu a efektivity našich vylepšení klientov a služieb. 
 
-Ak zistíme neprijateľné oneskorenie v prípade sekcie alebo poznámkového bloku, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa toho istého dokumentu, aby sme identifikovali regresie výkonu, čo nám umožní poskytovať výkonnejšie prostredie.
+Ak zistíme neprijateľné oneskorenie v prípade sekcie alebo poznámkového bloku, použijeme tieto údaje aj na koreláciu s inými signálmi, ktoré vyšle klient a služba a týkajú sa toho istého dokumentu, aby sme identifikovali regresie výkonu, čo nám umožní poskytovať výkonnejšie prostredie.
 
-Ak tieto údaje nedostaneme, nebudeme môcť monitorovať výkon tohto aspektu služby a ani vplyv zmien na strane servera, čo môže byť potrebné z hľadiska používania alebo iných faktorov.
+Ak tieto údaje nedostaneme, nebudeme môcť monitorovať výkon tohto aspektu služby a ani vplyv zmien na strane servera, čo môže byť potrebné z hľadiska používania alebo iných faktorov.
 
 Zhromažďujú sa tieto polia: 
 
@@ -15885,7 +16001,7 @@ Zhromažďujú sa tieto polia:
 
 - **IsHierarchyResource** – logická hodnota, ktorá označuje, či zdroj je hierarchickým zdrojom
 
-- **IsWorstTime** – logická hodnota, ktorá označuje, či ide bežný čas pri udalosti nahrávania, alebo najhorší čas, ktorý sme zistili v rámci tohto klienta za posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
+- **IsWorstTime** – logická hodnota, ktorá označuje, či ide bežný čas pri udalosti nahrávania, alebo najhorší čas, ktorý sme zistili v rámci tohto klienta za posledných 300 sekúnd (počet sekúnd môže konfigurovať spoločnosť Microsoft v závislosti od výkonu a stavu služby).
 
 - **NotebookId** – ID poznámkového bloku, ktorého súčasťou je toto nahrávanie
 
@@ -15899,25 +16015,25 @@ Zhromažďujú sa tieto polia:
 
 - **ServerSessionId** – ID relácie servera, ktorej súčasťou je toto nahrávanie
 
-- **UploadNonSuspendedTimeInMs** – čas v milisekundách potrebný na vykonanie nahrávanie okrem času, keď bola aplikácia pozastavená
+- **UploadNonSuspendedTimeInMs** – čas v milisekundách potrebný na vykonanie nahrávanie okrem času, keď bola aplikácia pozastavená
 
-- **UploadTimeInMs** – čas v milisekundách potrebný vykonanie nahrávania v skutočnosti
+- **UploadTimeInMs** – čas v milisekundách potrebný vykonanie nahrávania v skutočnosti
 
-- **WaitTimeInMs** – čas v milisekundách medzi požiadavkou na nahrávanie a začatím nahrávania
+- **WaitTimeInMs** – čas v milisekundách medzi požiadavkou na nahrávanie a začatím nahrávania
 
 - **WebUrl** – WebUrl adresa nahrávania (zaznamená sa ako PiiWz)
 
 ### <a name="onenotestoragesynchealth"></a>OneNote.Storage.SyncHealth
 
-Kritický signál, ktorý sa používa na sledovanie chýb a výnimiek, ktoré sa vyskytli vo vnútri synchronizačného zásobníka v klientovi OneNotu, čo nám umožňuje monitorovať a zmierňovať tieto neočakávané stavy.
+Kritický signál, ktorý sa používa na sledovanie chýb a výnimiek, ktoré sa vyskytli vo vnútri synchronizačného zásobníka v klientovi OneNotu, čo nám umožňuje monitorovať a zmierňovať tieto neočakávané stavy.
 
-Táto možnosť sa používa na zabezpečenie stavu služby tým, že nám umožňuje zobraziť správy o chybách klientov v reálnom čase, vďaka čomu môžeme reagovať na problémy so synchronizáciou pri ich vzniku. Používa sa aj na zisťovanie rozšírenia a závažnosti problému pomocou krížového odkazovania na značku chyby s kódom klienta na identifikáciu zdroja zlyhania. Tieto údaje zoskupujeme aj na to, aby sme získali informácie o našom výkone v priebehu času a o vplyve a efektivite našich vylepšení klientov a služieb. Ak tieto údaje mať nebudeme, nebudeme môcť aktívne reagovať na chybové stavy v našej synchronizačnej službe bez eskalácie zákazníkov.
+Táto možnosť sa používa na zabezpečenie stavu služby tým, že nám umožňuje zobraziť správy o chybách klientov v reálnom čase, vďaka čomu môžeme reagovať na problémy so synchronizáciou pri ich vzniku. Používa sa aj na zisťovanie rozšírenia a závažnosti problému pomocou krížového odkazovania na značku chyby s kódom klienta na identifikáciu zdroja zlyhania. Tieto údaje zoskupujeme aj na to, aby sme získali informácie o našom výkone v priebehu času a o vplyve a efektivite našich vylepšení klientov a služieb. Ak tieto údaje mať nebudeme, nebudeme môcť aktívne reagovať na chybové stavy v našej synchronizačnej službe bez eskalácie zákazníkov.
 
 Zhromažďujú sa tieto polia: 
 
 - **Service** – synchronizačná služba, ktorú klient používal, keď sa vyskytla chyba (staršia alebo moderná synchronizácia)
 
-- **Tag** – značka (identifikačná hodnota) predstavujúca chybu, ktorá sa vyskytla u klienta počas operácie synchronizácie
+- **Tag** – značka (identifikačná hodnota) predstavujúca chybu, ktorá sa vyskytla u klienta počas operácie synchronizácie
 
 ### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
  
@@ -15970,7 +16086,7 @@ Spoločnosť Microsoft toto používa na získanie stavu funkcií, úspešnosti 
 
 Zhromažďujú sa tieto polia:
 
-- **OperationTimeInMs** – čas potrebný na dokončenie operácie nákupu (long – v milisekundách)
+- **OperationTimeInMs** – čas potrebný na dokončenie operácie nákupu (long – v milisekundách)
 
 - **PaywallOperationResult** – úspešnosť/kód chyby/používateľ zrušil (Enum/int – konečná hodnota)
 
@@ -16080,7 +16196,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officesystemprivacyfallbacktosettingsstore"></a>Office.System.PrivacyFallbackToSettingsStore
 
-Používa sa na určenie, či sa vyskytnú zlyhania pri čítaní nastavení ochrany osobných údajov používateľa z roamingového ukladacieho priestoru.
+Používa sa na určenie, či sa vyskytnú zlyhania pri čítaní nastavení ochrany osobných údajov používateľa z roamingového ukladacieho priestoru.
 
 Zhromažďujú sa tieto polia:
 
@@ -16284,7 +16400,7 @@ Zhromažďujú sa tieto polia:
 
   - **DeviceProcessorModel** – model procesora zariadenia, v ktorom je Office spustený.
 
-  - **DigitizerInfo** – informácie o digitalizátore pripojenom k zariadeniu, v ktorom je Office spustený.
+  - **DigitizerInfo** – informácie o digitalizátore pripojenom k zariadeniu, v ktorom je Office spustený.
 
   - **DomainName** – názov domény, do ktorej je pripojené zariadenie, v ktorom je Office spustený (ak je pripojené).
 
@@ -16362,13 +16478,13 @@ Zhromažďujú sa tieto polia:
 
   - **AppState** – identifikátor stavu, v ktorom sa aplikácia balíka Office nachádza.
 
-  - **Click2RunPackageVersionBuild** – verzia zostavy inštalačného balíka Klikni a spusti.
+  - **Click2RunPackageVersionBuild** – verzia zostavy inštalačného balíka Klikni a spusti.
 
-  - **Click2RunPackageVersionMajor** – hlavná verzia inštalačného balíka Klikni a spusti.
+  - **Click2RunPackageVersionMajor** – hlavná verzia inštalačného balíka Klikni a spusti.
 
-  - **Click2RunPackageVersionMinor** – vedľajšia verzia inštalačného balíka Klikni a spusti.
+  - **Click2RunPackageVersionMinor** – vedľajšia verzia inštalačného balíka Klikni a spusti.
 
-  - **Click2RunPackageVersionRevision** – revízia zostavy inštalačného balíka Klikni a spusti.
+  - **Click2RunPackageVersionRevision** – revízia zostavy inštalačného balíka Klikni a spusti.
 
   - **DistributionChannel** – kanál, cez ktorý bol balík Office distribuovaný.
 
@@ -16432,7 +16548,7 @@ Zhromažďujú sa tieto polia:
 
   - **ComputerSystemProductUuidHash** – jednosmerný hash identifikátora UUID základnej dosky.
 
-  - **DeviceClass** – identifikátor typu zariadenia, v ktorom je Office spustený.
+  - **DeviceClass** – identifikátor typu zariadenia, v ktorom je Office spustený.
 
   - **DeviceMake** – identifikátor rodiny hardvérového systému zariadenia, v ktorom je Office spustený.
 
@@ -16440,7 +16556,7 @@ Zhromažďujú sa tieto polia:
 
   - **DeviceModel** – model zariadenia, v ktorom je Office spustený.
 
-  - **DigitizerInfo** – informácie o digitalizátore pripojenom k zariadeniu, v ktorom je Office spustený.
+  - **DigitizerInfo** – informácie o digitalizátore pripojenom k zariadeniu, v ktorom je Office spustený.
 
   - **IsLaptop** – či zariadenie, v ktorom je Office spustený, je notebook.
 
@@ -16472,13 +16588,13 @@ Zhromažďujú sa tieto polia:
 
   - **RamMB** – množstvo pamäte RAM dostupnej v zariadení, v ktorom je Office spustený.
 
-  - **SusClientId** – identifikátor služby Windows Update zariadenia, v ktorom je Office spustený.
+  - **SusClientId** – identifikátor služby Windows Update zariadenia, v ktorom je Office spustený.
 
   - **SystemFamily** – identifikátor rodiny hardvérového systému zariadenia, v ktorom je Office spustený.
 
   - **SystemSKU** – identifikátor jednotky SKU hardvérového systému zariadenia, v ktorom je Office spustený.
 
-  - **SysVolFreeSpaceMB** – množstvo voľného miesta dostupného v systémovom zväzku v megabajtoch.
+  - **SysVolFreeSpaceMB** – množstvo voľného miesta dostupného v systémovom zväzku v megabajtoch.
 
   - **SysVolSizeMB** – veľkosť systémového zväzku v megabajtoch.
 
@@ -16504,7 +16620,7 @@ Zhromažďujú sa tieto polia:
 
   - **DeviceProcessorModel** – model procesora zariadenia, v ktorom je Office spustený.
 
-  - **DigitizerInfo** – informácie o digitalizátore pripojenom k zariadeniu, v ktorom je Office spustený.
+  - **DigitizerInfo** – informácie o digitalizátore pripojenom k zariadeniu, v ktorom je Office spustený.
 
   - **HasSpectreFix** – či procesor zariadenia, v ktorom je Office spustený, má opravu Spectre.
 
@@ -16536,9 +16652,9 @@ Zhromažďujú sa tieto polia:
 
   - **RamMB** – množstvo pamäte RAM dostupnej v zariadení, v ktorom je Office spustený.
 
-  - **SusClientId** – identifikátor služby Windows Update zariadenia, v ktorom je Office spustený.
+  - **SusClientId** – identifikátor služby Windows Update zariadenia, v ktorom je Office spustený.
 
-  - **SysVolFreeSpaceMB** – množstvo voľného miesta dostupného v systémovom zväzku v megabajtoch.
+  - **SysVolFreeSpaceMB** – množstvo voľného miesta dostupného v systémovom zväzku v megabajtoch.
 
   - **SysVolSizeMB** – veľkosť systémového zväzku v megabajtoch.
 
@@ -16594,7 +16710,7 @@ Zhromažďujú sa tieto polia:
 
   - **DeviceModel** – model zariadenia, v ktorom je Office spustený.
 
-  - **DigitizerInfo** – informácie o digitalizátore pripojenom k zariadeniu, v ktorom je Office spustený.
+  - **DigitizerInfo** – informácie o digitalizátore pripojenom k zariadeniu, v ktorom je Office spustený.
 
   - **IsLaptop** – či zariadenie, v ktorom je Office spustený, je notebook.
 
@@ -16644,7 +16760,7 @@ Zhromažďujú sa tieto polia:
 
   - **ServicePackMinorVer** – vedľajšia verzia balíka Service Pack operačného systému.
 
-  - **SysVolFreeSpaceMB** – množstvo voľného miesta dostupného v systémovom zväzku v megabajtoch.
+  - **SysVolFreeSpaceMB** – množstvo voľného miesta dostupného v systémovom zväzku v megabajtoch.
 
   - **SysVolSizeMB** – veľkosť systémového zväzku v megabajtoch.
 
@@ -16702,7 +16818,7 @@ Zhromažďujú sa tieto polia:
 
   - **SystemLocaleTag** – predvolené miestne nastavenie operačného systému.
 
-  - **TimeZoneBiasInMinutes** –rozdiel v minútach medzi miestnym časom a UTC.
+  - **TimeZoneBiasInMinutes** –rozdiel v minútach medzi miestnym časom a UTC.
 
   - **VerticalResolution** – zvislé rozlíšenie obrazovky.
 
@@ -16762,7 +16878,7 @@ Zhromažďujú sa tieto polia:
 
   - **SystemLocaleTag** – predvolené miestne nastavenie operačného systému.
 
-  - **TimeZoneBiasInMinutes** –rozdiel v minútach medzi miestnym časom a UTC.
+  - **TimeZoneBiasInMinutes** –rozdiel v minútach medzi miestnym časom a UTC.
 
   - **VerticalResolution** – zvislé rozlíšenie obrazovky.
 
@@ -16806,7 +16922,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officesystemsystemhealthsessionstarttime"></a>Office.System.SystemHealthSessionStartTime
 
-Používa sa s údajmi o zlyhaní na oddelenie skorších a neskorších zlyhaní (t. j. určenie, či používateľ pred zlyhaním už aplikáciu určitý čas používal).
+Používa sa s údajmi o zlyhaní na oddelenie skorších a neskorších zlyhaní (t. j. určenie, či používateľ pred zlyhaním už aplikáciu určitý čas používal).
 
 Zhromažďujú sa tieto polia:
 
@@ -16814,7 +16930,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officesystemsystemhealthungracefulappexitdesktop"></a>Office.System.SystemHealthUngracefulAppExitDesktop
 
-Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončení pomocou Správcu úloh, zablokovaní aplikácie a podobne) klientskych aplikácií Office, ako je napríklad Word, Excel, PowerPoint alebo Outlook. Metriky neočakávaného ukončenia aplikácií používame na meranie stavu klientskych produktov Office. Ide o signál so zásadnou dôležitosťou pre firemnú prevádzku, ktorý sa používa na posúdenie stability produktov.
+Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončení pomocou Správcu úloh, zablokovaní aplikácie a podobne) klientskych aplikácií Office, ako je napríklad Word, Excel, PowerPoint alebo Outlook. Metriky neočakávaného ukončenia aplikácií používame na meranie stavu klientskych produktov Office. Ide o signál so zásadnou dôležitosťou pre firemnú prevádzku, ktorý sa používa na posúdenie stability produktov.
 
 Zhromažďujú sa tieto polia:
 
@@ -17001,7 +17117,7 @@ Zhromažďujú sa tieto polia:
 
 ### <a name="officesystemsystemhealthungracefulapplicationexitwin32"></a>Office.System.SystemHealthUngracefulApplicationExitWin32
 
-Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončení pomocou Správcu úloh, zablokovaní aplikácie a podobne) klientskych aplikácií Office, ako je napríklad Word, Excel, PowerPoint alebo Outlook. Na meranie stavu klientskych produktov Office používame metriky neočakávaného ukončenia aplikácií. Ide o signál so zásadnou dôležitosťou pre firemnú prevádzku, na základe ktorého môžu technici zaoberajúci sa produktmi Office posudzovať stabilitu produktov.
+Udalosť sa aktivuje pri abnormálnom ukončení (napríklad pri tvrdom ukončení pomocou Správcu úloh, zablokovaní aplikácie a podobne) klientskych aplikácií Office, ako je napríklad Word, Excel, PowerPoint alebo Outlook. Na meranie stavu klientskych produktov Office používame metriky neočakávaného ukončenia aplikácií. Ide o signál so zásadnou dôležitosťou pre firemnú prevádzku, na základe ktorého môžu technici zaoberajúci sa produktmi Office posudzovať stabilitu produktov.
 
 Zhromažďujú sa tieto polia:
 
@@ -17059,7 +17175,7 @@ Zhromažďujú sa tieto polia:
 
   - **HexCrashTag** – jedinečný identifikátor kódu zlyhania. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
-  - **HexExceptionAddress** – adresa v programe, kde došlo k zlyhaniu, v hexadecimálnom formáte. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
+  - **HexExceptionAddress** – adresa v programe, kde došlo k zlyhaniu, v hexadecimálnom formáte. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
   - **HexExceptionCode** – identifikátor výnimky v hexadecimálnom formáte. *[Toto pole sa odstránilo z aktuálnych zostáv balíka Office, ale stále sa môže zobraziť v starších zostavách.]*
 
@@ -17536,15 +17652,15 @@ Zhromažďujú sa tieto polia:
 
   - **CollectionTime** – čas, kedy boli zhromaždené údaje o nahratí pravidla.
 
-  - **LatencyGE201LE400** – počet nahratí s latenciou väčšou alebo rovnou 201 ms a menšou alebo rovnou 400 ms
+  - **LatencyGE201LE400** – počet nahratí s latenciou väčšou alebo rovnou 201 ms a menšou alebo rovnou 400 ms
 
-  - **LatencyGE3001** – počet nahratí s latenciou väčšou alebo rovnou 3001 ms
+  - **LatencyGE3001** – počet nahratí s latenciou väčšou alebo rovnou 3001 ms
 
-  - **LatencyGE401LE600** – počet nahratí s latenciou väčšou alebo rovnou 401 ms a menšou alebo rovnou 600 ms
+  - **LatencyGE401LE600** – počet nahratí s latenciou väčšou alebo rovnou 401 ms a menšou alebo rovnou 600 ms
 
-  - **LatencyGE601LE800** – počet nahratí s latenciou väčšou alebo rovnou 601 ms a menšou alebo rovnou 800 ms
+  - **LatencyGE601LE800** – počet nahratí s latenciou väčšou alebo rovnou 601 ms a menšou alebo rovnou 800 ms
 
-  - **LatencyLE200** – počet nahratí s latenciou menšou alebo rovnou 200 ms
+  - **LatencyLE200** – počet nahratí s latenciou menšou alebo rovnou 200 ms
 
   - **MaxLatency** – najvyššia pozorovaná latencia.
 
