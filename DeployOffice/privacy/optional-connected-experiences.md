@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: V tomto článku správcovia služieb Office získajú informácie o voliteľné pripojených funkciách, vrátane toho, aké podmienky používania sa na ne vzťahujú.
 hideEdit: true
-ms.openlocfilehash: 8a5f236c3dbb2cb3bb61a9a987f764880987a189
-ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
+ms.openlocfilehash: 3583b22e9df50a3cdaff5e4cd3f6e695ab447498
+ms.sourcegitcommit: b906a2ca706cd4441964f09e1f4adf2e8b94d6be
 ms.translationtype: HT
 ms.contentlocale: sk-SK
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51914960"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52957662"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Prehľad voliteľných pripojených funkcií v balíku Office
 
@@ -28,7 +28,8 @@ ms.locfileid: "51914960"
 Ak máte pracovné alebo školské konto, správca vo vašej organizácii vám možno poskytol možnosť používať jednu alebo viacero cloudových služieb (ďalej len „voliteľné pripojené funkcie“) pri používaní aplikácií balíka Office, ako napríklad Word alebo Excel, ktoré sú súčasťou Aplikácií Microsoft 365 pre veľké organizácie (predchádzajúci názov Office 365 ProPlus). Tieto cloudové služby sú voliteľné. Ich používanie je na vás. Poskytujú sa na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia o ochrane osobných údajov](https://privacy.microsoft.com/). V niektorých prípadoch sa môžu uplatňovať aj ďalšie podmienky. Tento článok obsahuje zoznam cloudových služieb, vysvetlenie ich podmienok používania a informácie o tom, ako ich môžete kedykoľvek zapnúť alebo vypnúť.
 
 > [!NOTE]
-> Ak ste správca, pozrite si časť [Ovládacie prvky správcu pre voliteľné online funkcie](#admin-controls-for-optional-connected-experiences).
+> - Ak ste správca, pozrite si časť [Ovládacie prvky správcu pre voliteľné online funkcie](#admin-controls-for-optional-connected-experiences).
+> - V prípade Microsoft Teams si pozrite tému [Prehľad voliteľných pripojených funkcií v Microsoft Teams](/microsoftteams/teams-privacy-oce-overview)
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Ak používate služby, s akými podmienkami používania musíte súhlasiť?
 
@@ -42,7 +43,7 @@ Bing využívajú nasledovné funkcie v Outlooku pre iOS a Android:
 
 - **Návrhy polohy:**   Keď do položky kalendára pridáte verejné miesto s adresou, do poľa Miesto sa zahrnie celá adresa.
 - **Zaujímavé kalendáre:**   Môžete sa [prihlásiť na odber](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) kalendárov o svojich obľúbených športových tímoch alebo televíznych seriáloch.
-- **Odhady časov cestovania na karte Nadchádzajúce:** Vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). V Outlooku pre Android táto možnosť vyžaduje, aby Mapy Bing poskytli odhadované časy cestovania.
+- **Odhady časov cestovania na karte Nadchádzajúce:** Vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). V Outlooku pre Android táto možnosť vyžaduje, aby Mapy Bing poskytli odhadované časy cestovania.
 - **Počasie v kalendári:** [Predpoveď počasia](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) pre vašu aktuálne lokalitu sa zobrazí v hornej časti obrazovky kalendára.
 
  Licencia na tieto funkcie využívajúce Bing sa poskytuje na základe podmienok [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a vzťahuje sa na ne [vyhlásenie o ochrane osobných údajov](https://privacy.microsoft.com/). Všetky vyhľadávacie dotazy, ktoré pri používaní týchto služieb zadáte v Aplikáciách Microsoft 365 pre veľké organizácie, sa odošlú do služby Microsoft Bing. Nie sú vám prepojené organizáciou Bing.
@@ -57,7 +58,7 @@ Poznámka: Vaše [nastavenia ochrany osobných údajov](#your-privacy-settings) 
 
 ### <a name="help--contact-support"></a>Pomocník > Kontaktovať podporu
 
-V Outlooku pre iOS a Android môžete nahlásiť problémy a spojiť sa s tímom podpory prostredníctvom položky **Nastavenia** > **Pomoc a pripomienky** > **Kontaktovať podporu**. Táto skúsenosť vyžaduje službu spoločnosti Microsoft s názvom PowerLift, pričom sa na ňu vzťahujú podmienky [Zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [Vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/).
+V Outlooku pre iOS a Android môžete nahlásiť problémy a spojiť sa s tímom podpory prostredníctvom položky **Nastavenia** > **Pomoc a pripomienky** > **Kontaktovať podporu**. Táto skúsenosť vyžaduje službu spoločnosti Microsoft s názvom PowerLift, pričom sa na ňu vzťahujú podmienky [Zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [Vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/).
 
 ### <a name="help--suggest-a-feature"></a>Pomocník > Navrhnúť funkciu
 
@@ -69,7 +70,7 @@ Funkcia [Vloženie Online videa](https://support.microsoft.com/office/8340EC69-4
 
 ### <a name="microsoft-error-reporting-program-merp"></a>Program na hlásenie chýb spoločnosti Microsoft (Microsoft Error Reporting Program, MERP) 
 
-Pri zlyhaní klientskych aplikácií balíka Office, ktoré sa spúšťajú v zariadeniach Mac, sa program MERP pripojí k službe Watson.microsoft.com a odošle diagnostické údaje. Program vlastní spoločnosť Microsoft a vzťahujú sa naň podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/). Program MERP sa nevzťahuje na klientske aplikácie balíka Office, ktoré sa spúšťajú vo Windowse.
+Pri zlyhaní klientskych aplikácií balíka Office, ktoré sa spúšťajú v zariadeniach Mac, sa program MERP pripojí k službe Watson.microsoft.com a odošle diagnostické údaje. Program vlastní spoločnosť Microsoft a vzťahujú sa naň podmienky [zmluvy o poskytovaní služieb spoločnosti Microsoft](https://www.microsoft.com/servicesagreement) a [vyhlásenia spoločnosti Microsoft o ochrane osobných údajov](https://privacy.microsoft.com/). Program MERP sa nevzťahuje na klientske aplikácie balíka Office, ktoré sa spúšťajú vo Windowse.
 
 ### <a name="office-store"></a>Office Obchod 
 
@@ -88,7 +89,7 @@ Funkcia [Zdroje informácií](https://support.microsoft.com/office/b862efc5-9a7b
 
 ### <a name="travel-time-in-up-next-in-outlook-for-ios"></a>Čas cestovania na karte Nadchádzajúce pre iOS
 
-Pre iOS platí, že vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). Táto funkcia vyžaduje, aby služba Apple Maps od spoločnosti Apple poskytla odhadovaný čas cestovania. Platia [podmienky používania](https://www.apple.com/legal/internet-services/maps/) pre službu Apple Maps a [zásady ochrany osobných údajov](https://www.apple.com/legal/privacy) pre spoločnosť Apple.
+Pre iOS platí, že vaša najbližšia nadchádzajúca udalosť bude zhrnutá na karte v hornej časti vašej e-mailovej schránky s názvom [Nadchádzajúce](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). Táto funkcia vyžaduje, aby služba Apple Maps od spoločnosti Apple poskytla odhadovaný čas cestovania. Platia [podmienky používania](https://www.apple.com/legal/internet-services/maps/) pre službu Apple Maps a [zásady ochrany osobných údajov](https://www.apple.com/legal/privacy) pre spoločnosť Apple.
 
 ### <a name="weather-bar-in-outlook"></a>Panel počasia v Outlooku
 
@@ -98,7 +99,7 @@ Pre iOS platí, že vaša najbližšia nadchádzajúca udalosť bude zhrnutá na
 
 Ak chcete zistiť, či vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office vrátane Aplikácií Microsoft 365 pre veľké organizácie v zariadení s Windowsom, prejdite na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberte položku **Spravovať nastavenia**. Ak vám správca neumožnil používať tieto funkcie, zobrazí sa hlásenie: „Nastavenia ochrany osobných údajov spravuje správca vo vašej organizácii a rozhodol sa zakázať voliteľné pripojené funkcie“.
 
-Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
+Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
 
 Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
@@ -109,7 +110,7 @@ Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, v
 
 Ak vám správca umožnil používať voliteľné pripojené funkcie v aplikáciách balíka Office vrátane Aplikácií Microsoft 365 pre veľké organizácie v zariadení s Windowsom, nastavenia môžete kedykoľvek spravovať tak, že prejdete na položku **Súbor** > **Konto**  >  **Ochrana osobných údajov konta** a vyberiete položku **Spravovať nastavenia**. Keď sú povolené, budete mať možnosť používať služby opísané v tomto článku, keď ich chcete použiť. Keď sú zakázané, nebudú dostupné.
 
-Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
+Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, vyberte ponuku aplikácie (napríklad Wordu alebo Excelu) > a vyberte položky **Predvoľby** > **Ochrana osobných údajov**. Táto akcia otvorí dialógové okno Nastavenia ochrany osobných údajov konta, kde sa zobrazujú možnosti ochrany osobných údajov.
 
 Ďalšie informácie nájdete v téme [Nastavenia ochrany osobných údajov konta](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
@@ -118,11 +119,11 @@ Ak používate Office pre Mac, otvorte ľubovoľnú aplikáciu balíka Office, v
 
 ## <a name="required-service-data"></a>Povinné údaje služieb
 
-Pri používaní voliteľných cloudových služieb opísaných v tomto článku môže spoločnosť Microsoft zhromažďovať [povinné údaje služieb](required-service-data.md) (ako sú napríklad údaje o používaní, chybách a výkone) o výkone služieb pri ich používaní. Tieto povinné údaje služieb môžu obsahovať „osobné údaje“, ako sú definované v článku 4 európskeho nariadenia GDPR. Všetky povinné údaje služieb, ktoré spoločnosť Microsoft zhromažďuje pri používaní akýchkoľvek aplikácií a služieb Aplikácie Microsoft 365 pre veľké organizácie, sú pseudonymizované podľa normy ISO/IEC 19944:2017, sekcie 8.3.3.
+Pri používaní voliteľných cloudových služieb opísaných v tomto článku môže spoločnosť Microsoft zhromažďovať [povinné údaje služieb](required-service-data.md) (ako sú napríklad údaje o používaní, chybách a výkone) o výkone služieb pri ich používaní. Tieto povinné údaje služieb môžu obsahovať „osobné údaje“, ako sú definované v článku 4 európskeho nariadenia GDPR. Všetky povinné údaje služieb, ktoré spoločnosť Microsoft zhromažďuje pri používaní akýchkoľvek aplikácií a služieb Aplikácie Microsoft 365 pre veľké organizácie, sú pseudonymizované podľa normy ISO/IEC 19944:2017, sekcie 8.3.3.
 
 ## <a name="admin-controls-for-optional-connected-experiences"></a>Ovládacie prvky správcu pre voliteľné online funkcie 
 
-Ak ste správcom, pozrite si nasledujúce témy, v ktorých sa dozviete, ako používateľom povoliť alebo zakázať používanie týchto voliteľných online funkcií:
+Ak ste správcom, pozrite si nasledujúce témy, v ktorých sa dozviete, ako používateľom povoliť alebo zakázať používanie týchto voliteľných online funkcií:
 
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Aplikácie Microsoft 365 pre veľké organizácie](manage-privacy-controls.md)
 - [Spravovanie ovládacích prvkov na ochranu osobných údajov pre Office pre Mac pomocou predvolieb](mac-privacy-preferences.md)
